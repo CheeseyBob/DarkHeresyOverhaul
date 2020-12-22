@@ -17,16 +17,12 @@ th, td {
 <h1>Aspects</h1>
 <p>Aspects confer bonuses/penalties to types of actions. They can also prevent or allow certain kinds of actions, if it makes sense. Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.</p>
 
-<p>Typically, each type of Aspect will 
-
-....................................
-
-</p>
+<p>By default, the bonus/penalty applied by an Aspect is ±10. An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. For example, if a character who is <i>Stunned</i> becomes <i>Stunned</i> again, they end up with a single <i>Stunned(20)</i> Aspect. If they then Resist Stun and succeed, they end up merely <i>Stunned</i> and must Resist Stun again to remove the Aspect.</p>
 
 
 
 
-<h2>Examples of Situational Aspects</h2>
+<h2>Basic Situational Aspects</h2>
 
 <table>
 <tr>
@@ -50,7 +46,7 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>The target steels their nerves (Willpower Test).</td>
+<td>Resist Pinning.</td>
 </tr>
 </table>
 <br>
@@ -78,7 +74,7 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Breaking the grappler's grip (Strength Test) or the grappler letting go.</td>
+<td>Grapple (Break) or the grappler lets go.</td>
 </tr>
 </table>
 <br>
@@ -162,7 +158,74 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>The target regains focus (Toughness Test).</td>
+<td>Resist Stun.</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="2"><i>On Fire</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Darkness</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>If target is a character, at the start of their turn, they take 1d5 damage ignoring Armour and Toughness, upgrading the Aspect on a 5. Any other exposed characters must oppose Ignite at the start of their turn. 
+
+
+<br>***** what's a good way to do fire? *****<br>
+
+
+
+
+Exposed objects take 1 AP damage. If this consumes flammable material, the Aspect is upgraded, otherwise the Aspect is downgraded. Any exposed flammable objects become <i>On Fire</i> if the total bonus to Ignite it is at least +50.</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Ignite</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Everything except Extinguish Fire.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Extinguish Fire.</td>
+</tr>
+</table>
+<br>
+
+
+<h2>Other Situational Aspects</h2>
+
+
+<table>
+<tr>
+<th colspan="2"><i>Frenzied</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Becoming <i>Pinned</i>, frightened; etc.</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Anything that benefits from furiosity:<br>Knock Down; Stun Strike; Flurry of Blows; Heavy Blow; Charge; Grapple Attack; Resist Stun; etc.</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Anything requiring clear thought, patience or precision:<br>Dodge; Parry; Ranged Attack; Clear Jam; Reflexes; etc.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Calm Down.</td>
 </tr>
 </table>
 <br>

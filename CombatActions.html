@@ -71,45 +71,80 @@ A Full Action can be:
 <th colspan="3">Basic Main Actions</th>
 </tr>
 <tr>
-<th>Example
+<th>Action
 <th>Type
 <th>Description
+</tr>
 <tr>
 <td>Melee Attack
 <td>Attack
 <td>Test Weapon Skill to make melee hits.
+</tr>
 <tr>
 <td>Ranged Attack
 <td>Attack
 <td>Test Ballistic Skill to make ranged hits.
+</tr>
 <tr>
 <td>Grapple Attack
 <td>Attack
 <td>Test Strength to make melee hits while grappling.
+</tr>
 <tr>
 <td>Grapple
 <td>Create Advantage
 <td>Test Weapon Skill to make the target <i>Grappled</i>.
+</tr>
 <tr>
 <td>Knock Down
 <td>Create Advantage
 <td>Test Strength to make the target <i>Prone</i>.
+</tr>
 <tr>
 <td>Stun Strike
 <td>Create Advantage
 <td>Test Strength to make the target <i>Stunned</i>.
+</tr>
 <tr>
 <td>Grapple (Break)
 <td>Overcome
 <td>Test Strength to overcome being <i>Grappled</i>.
+</tr>
 <tr>
-<td>Manoeuvre
-<td>Overcome
-<td>Test Weapon Skill to force the Target to move.
-<tr>
-<td>Dash
+<td>Run
 <td>Overcome
 <td>Test Agility to increase Movement, then Move.
+</tr>
+<tr>
+<td>Clear Jam
+<td>Overcome
+<td>Test Weapon Skill to overcome a gun being <i>Jammed</i>.
+</tr>
+<tr>
+<td>Calm Down
+<td>Overcome
+<td>Test Willpower to overcome being <i>Frenzied</i>.
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="4">Advanced Main Actions</th>
+</tr>
+<tr>
+<th>Action</th>
+<th>Requirement</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Ignite</td>
+<td>An ignition source</td>
+<td>Create Advantage</td>
+<td>Test Intelligence to make target <i>On Fire</i>.</td>
+</tr>
 </table>
 <br>
 
@@ -119,32 +154,45 @@ A Full Action can be:
 <th colspan="3">Basic Secondary Actions</th>
 </tr>
 <tr>
-<th>Example
+<th>Action
 <th>Description
-<tr>
-<td>Inventory
-<td>Swap held items with items in your inventory; pick up/drop items near you in the world; etc.
+</tr>
 <tr>
 <td>Move
 <td>Move up to your Movement.
+</tr>
 <tr>
 <td>Move To Cover
 <td>Move and then take Full Cover or Half Cover, getting the benefit of Half-Cover during your movement.
+</tr>
 <tr>
 <td>Aim
 <td>Get a +10 bonus to Ranged Attack.
+</tr>
 <tr>
 <td>Bide
 <td>Get a +10 bonus to Melee Attack, Grapple, Knock Down and Stun Strike.
+</tr>
 <tr>
 <td>Defensive Stance
 <td>Get a +10 bonus to Parry and Dodge.
+</tr>
 <tr>
 <td>Feint
 <td>Give a -10 penalty to Parry and Dodge.
+</tr>
 <tr>
 <td>Fend Off
 <td>Give a -10 penalty to Melee Attack.
+</tr>
+<tr>
+<td>Inventory
+<td>Swap held items with items in your inventory; pick up/drop items near you in the world; etc.
+</tr>
+<tr>
+<td>Brace
+<td>Brace a Heavy Weapon against something so it can be fired.
+</tr>
 </table>
 <br>
 
@@ -154,33 +202,87 @@ A Full Action can be:
 <th colspan="3">Basic Full Actions</th>
 </tr>
 <tr>
-<th>Example
+<th>Action
 <th>Type
 <th>Description
+</tr>
 <tr>
 <td>Extended Fire
 <td>Attack
 <td>Ranged Attack with an increased maximum number of hits.
+</tr>
 <tr>
 <td>Flurry of Blows
 <td>Attack
 <td>Melee Attack with an increased maximum number of hits.
+</tr>
 <tr>
 <td>Precise Shot
 <td>Attack
 <td>When the used weapon has a maximum hits of 1, Ranged Attack with a +1 bonus to damage for each Degree of Success.
+</tr>
 <tr>
 <td>Heavy Blow
 <td>Attack
 <td>When the used weapon has a maximum hits of 1, Melee Attack with a +1 bonus to damage for each Degree of Success.
+</tr>
 <tr>
 <td>Charge
 <td>Attack
 <td>Move twice, then Melee Attack with a +1 bonus to damage for each meter of bonus Movement you currently have.
+</tr>
 <tr>
-<td>Run
+<td>Tackle
+<td>Attack
+<td>Move twice, then Knock Down with a +10 bonus for each meter of bonus Movement you currently have.
+</tr>
+<tr>
+<td>Manoeuvre
+<td>Attack
+<td>Melee Attack with each Degree of Success moving the target 1m (up to target's Movement); Move with the target.
+</tr>
+<tr>
+<td>Full Run
 <td>Overcome
-<td>Dash with a +10 bonus and an extra Move.
+<td>Run with a +10 bonus and an extra Move.
+</tr>
+<tr>
+<td>Reload
+<td>Extended Secondary
+<td>Reload a wielded weapon with ammo from your inventory.
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="4">Advanced Full Actions</th>
+</tr>
+<tr>
+<th>Action
+<th>Requirement
+<th>Type
+<th>Description
+</tr>
+<tr>
+<td>Sweeping Blow
+<td>Talent
+<td>Attack
+<td>When the used weapon has a maximum hits of 1, Melee Attack with an extra hit on a different target for each Degree of Success.
+</tr>
+<tr>
+<td>Assault Fire
+<td>Talent
+<td>Attack
+<td>Move twice and Ranged Attack during the movement.
+</tr>
+<tr>
+<td>Agile Strike
+<td>Talent
+<td>Attack
+<td>Move twice and Melee Attack during the movement.
+</tr>
 </table>
 <br>
 
@@ -190,7 +292,7 @@ A Full Action can be:
 <th colspan="3">Basic Reactions</th>
 </tr>
 <tr>
-<th>Example
+<th>Reaction
 <th>Description
 <tr>
 <td>Dodge
@@ -219,7 +321,7 @@ A Full Action can be:
 <th colspan="3">Basic Passive Opposition</th>
 </tr>
 <tr>
-<th>Example
+<th>Opposition
 <th>Description
 </tr>
 <tr>
@@ -234,25 +336,16 @@ A Full Action can be:
 <td>Reflexes
 <td>When Waiting, Test Perception to take action before another character.
 </tr>
-</table>
-<br>
-<table>
-<tr>
-<th colspan="3">Other Passive Opposition</th>
-</tr>
-<tr>
-<th>Example
-<th>Description
-</tr>
 <tr>
 <td>Resist Pinning
 <td>Test Toughness to oppose becoming <i>Pinned</i>.
 </tr>
 </table>
+<br>
 
 
 <h3>Stacking Bonuses</h3>
-<p>The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. This doesn't apply to taking the same Secondary Action twice in one turn, as doing so counts as a single action, so gives a ±20 bonus/penalty until your next Action or Reaction. Bonuses you get from Advantages last until the Advantage is overcome somehow. All bonuses and penalties stack.</p>
+<p>The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. This doesn't apply to taking the same Secondary Action twice in one turn, as doing so counts as a single action giving a ±20 bonus/penalty until your next Action or Reaction. Bonuses you get from Advantages last until the Advantage is overcome somehow. All bonuses and penalties stack.</p>
 
 
 <h3>Movement</h3>
@@ -260,7 +353,9 @@ A Full Action can be:
 
 <p>If you are moving, then your action can be resolved at any point along that movement, if it makes sense. For example, moving past an open doorway and shooting inside as you go past.</p>
 
-<p>When making a Test to increase your Movement, the increase is one meter plus one per Degree of Success. This bonus Movement stacks up to your base Movement and resets to zero if you move less than double your Movement on your turn.</p>
+<p>When making a Test to increase your Movement, the increase is one meter plus one per Degree of Success. This bonus Movement stacks up to your base Movement and resets to zero if you move less than double your Movement on your turn, or if you spend your Reaction.</p>
+
+<p>If your movement is impeeded but still possible (for example, when you are <i>Prone</i>), then your Movement is 1 and bonus Movement resets to zero each turn.</p>
 
 <p>If you are to far away to Charge a target, so you take the Run action towards the target instead, but this increases your Movement to the point that you can now reach the target, you can act as if you had taken the Charge action and reached the target.</p>
 
