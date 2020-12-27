@@ -19,10 +19,69 @@ th, td {
 
 <p>By default, the bonus/penalty applied by an Aspect is ±10. An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. For example, if a character who is <i>Stunned</i> becomes <i>Stunned</i> again, they end up with a single <i>Stunned(20)</i> Aspect. If they then Resist Stun and succeed, they end up merely <i>Stunned</i> and must Resist Stun again to remove the Aspect.</p>
 
-
+<p>Rule of thumb:
+<ul>
+<li>Bonuses/penalties apply only to the target. Anything benefits other characters get against the target should be modelled using penalites to the target opposing that action (and vice versa).</li>
+<li>The target of an aspect should get one opportunity to oppose the effects of an Aspect per round, including one before the effect is applied (either at the start of their turn or when opposing the creation of the Aspect).</li>
+</ul>
+</p>
 
 
 <h2>Basic Situational Aspects</h2>
+
+<table>
+<tr>
+<th colspan="2"><i>Concealed</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Being automatically seen.</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>Opposition to Spot with Conceal(???).</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Anything which benefits from being obscured:<br>Cover; etc.</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Target leaves their place of concealment.</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th colspan="2"><i>Encumbered</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Anything made harder by restricted movement:<br>Run; Melee Attack; Ranged Attack; Dodge; Parry; etc.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Removing the encumbering item.</td>
+</tr>
+</table>
+<br>
 
 <table>
 <tr>
@@ -169,22 +228,51 @@ th, td {
 
 <table>
 <tr>
-<th colspan="2"><i>On Fire</i></th>
+<th colspan="2"><i>Burning</i></th>
 </tr>
 <tr>
 <th>Prevents</th>
-<td>Darkness</td>
+<td>Darkness in a radius of 1m per Aspect level.</td>
 </tr>
 <tr>
 <th>Allows</th>
-<td>If target is a character, at the start of their turn, they take 1d5 damage ignoring Armour and Toughness, upgrading the Aspect on a 5. Any other exposed characters must oppose Ignite at the start of their turn. Each round that the fire is able to consume flammable material, it grows (upgrading the Aspect), otherwise it shrinks (downgrading the Aspect). Exposed objects with AP up to the level of the Aspect take AP damage, becoming <i>On Fire</i> if they are flammable.</tr>
+<td>At the start of their turn, the target takes 1d5+x Energy damage (where x is the Aspect's level) ignoring Armour and Toughness, upgrading the Aspect on a 5. A <i>Burning</i> target who dies creates an area of <i>Fire</i>.</tr>
 <tr>
 <th>Bonus To</th>
 <td>Ignite</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Everything except Extinguish Fire.</td>
+<td>-</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Extinguish Fire; target dying.</td>
+</tr>
+</table>
+<br>
+
+<br>*** Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
+
+
+<table>
+<tr>
+<th colspan="2"><i>Fire</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Darkness in a radius of 1m per Aspect level.</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>The Fire will Ignite exposed targets at the start of their turn (after damage from <i>Burning</i>). Once per round, it will upgrade if it can consume flammable material, otherwise it will downgrade. Then it will deal AP damage to objects with AP up to the <i>Fire</i> level and spread to any adjacent area with flammable objects.</tr>
+<tr>
+<th>Bonus To</th>
+<td>Ignite</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -435,7 +523,7 @@ th, td {
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Anything that xxxxxx:<br>xxxxxxx; etc.</td>
+<td>Anything which benefits from being obscured:<br>Cover; Dodge; etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
@@ -463,7 +551,7 @@ th, td {
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Anything that benefits from concealment:<br>Cover; etc.</td>
+<td>Anything which benefits from being obscured:<br>Cover; Dodge; etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
