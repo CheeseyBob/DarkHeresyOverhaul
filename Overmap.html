@@ -7,6 +7,9 @@ table {
 th, td {
   padding: 4px;
 }
+div {
+  column-count: 2;
+}
 </style>
 <title>Overmap - Dark Heresy Overhaul</title>
 
@@ -15,67 +18,162 @@ th, td {
 
 
 <h1>Overmap</h1>
-*** travel 1 hex per hour<br>
-*** Test Navigation in difficult terrain - on a failure, take an extra hour; on a critical failure, stray off course, stumble upon danger<br>
-*** Stray off course - end up in a hex left/right of your intended path.<br>
-
-
-*** FINDING LOCATIONS - unfamiliar locations are found using encounter checks.<br>
-- roll 1d10 to determine if/which previously encountered location is encountered. If the roll is 10 or is over the number of previously encountered locations in the area, then a new location is generated and encountered. Otherwise count down the list of existing locations by the rolled number to determine the location encountered.<br>
-
-
-<br>*** ENCOUNTER CHECKS
-<br> - If the characters are stationary, ignore results for locations
-<br> - 50% location; 50% other encounter?
-<br> - small chance of rolling twice and combining results?
-<br> - roll spot distances & surprise
-<br> - roll disposition scale
-
-
-<br> ** Combining multiple results can be done in various ways - for example, a camp of mutants plus a heretek cabal could be taken to mean either the mutants are working with the hereteks, or are in confict with the hereteks, or even that the hereteks are themselves mutants.
-
-
-<br>*** A list of current events & procedures for generating events; rumour table:
-<br> "The current rumor table is part of the Campaign Status document. It’s generated based on the activities of PCs in previous sessions and by randomly generating hex numbers and creating rumors based on the contents of the generated hex."
-<br> Events -> Rumours
-
-
-<h2>Events</h2>
-** Roll twice and combine the results? Separate roll for complications?<br>
-?? Use a list of goings-on with fixed  number of spaces - each session, if there is space, add something with a chance to connect to existing goings-on. E.g. If there is already "xeno artifact" and then "daemon cult" is connected to that, it could mean the cult tries to seize the artifact.<br>
-?? Alternatively, separate goings-on and the forces behind them, and roll to mix and match.<br>
+<p>The map is divided into three layers:
 <ul>
-<li>A tech-priest expedition discovers something at the hive bottom.</li>
-<li>A hive-quake collapses a large section of the underhive or middle hive.</li>
-<li>Industrial accident in the middle-hive - flood; gas leak; etc.</li>
-<li>Mutants united by a leader are making substantial raids into the underhive.</li>
-<li>Escalating psyker emergances.</li>
-<li>A Xeno artifact is discovered.</li>
-<li>Xenos have infiltrated the hive.</li>
-<li>A not-quite domesticated xeno has escaped.</li>
-<li>Outbreak of a xeno disease.</li>
-<li>Xeno raid/invasion.</li>
-<li>Xeno items entering circulation - tech; chems.</li>
-<li>Heretical knowledge/texts entering circulation.</li>
-<li>Warp-tainted items entering circulation.</li>
-<li>Cult worshiping xeno gods.</li>
-<li>Cult worshiping xenos as gods.</li>
-<li>Cult worshiping daemons.</li>
-<li>Cult devoted to heretical practises.</li>
-<li>Riots erupting.</li>
-<li>Organised sedition/rebellion.</li>
-<li>Rival inquisitor('s acolytes) getting up to something.</li>
-<li>A convicted noble seeks a champion for their trial by combat.</li>
-<li>A duel between nobles attracts a large crowd.</li>
-<li>A noble has a valuable relic stolen and wants it recovered.</li>
-<li>A noble house or merchant overlord is attempting a hostile takeover of a rival's holdings.</li>
-<li>The Imperial Tithe is being collected (troops for the Guard or manufactured resources).</li>
-<li>The Black Ships arrive to collect the tithe of psykers for sanctioning.</li>
-<li>A day/week of religious importance - Feast of the Emperor's Ascention; Saint's Days; etc.</li>
-<li>A cleric's teachings drifting into heretical ideas.</li>
-<li>A corrupt priest intentionally manipulating their flock into heresy.</li>
-<li>A Deacon of the Redemption bringing their crusade to the hive and holding a large stake-burning event.</li>
+<li>Upper Hive</li>
+<li>Middle Hive</li>
+<li>Underhive</li>
 </ul>
+Each layer is divided into areas, arranged as a hex grid. Each area has:</p>
+<ul>
+<li>One Main Location</li>
+<li>One or more states of Disrepair (for the Underhive)</li>
+<li>A list of additional locations</li>
+</ul>
+The Main Location and Disrepair should be determined when the area is generated. Additional locations are added as they are encountered.</p>
+
+<p>Travelling to an adjacent area (or between layers) generally takes an hour. Each hour of travelling, roll one Location Encounter and one Encounter. If not travelling, roll 1d10 each hour and on a 10, roll one Encounter.</p>
+
+<p><i>The GM may wish to roll results for the Encounter and Location Encounter tables ahead of time, in order to save time preparing the encounters.</i></p>
+
+
+<h3>Difficult and Dangerous Travel</h1>
+<p>Travelling in difficult or dangerous terrain requires a Navigate roll. Resolve the roll using the following tables.</p>
+
+<table>
+<tr>
+<th colspan="4">Navigation</th>
+</tr>
+<tr>
+<th></th><th>Success</th><th>Failure</th><th>Critical Failure</th>
+</tr>
+<tr>
+<th>Polluted or heavily polluted</th><td>Travel</td><td>Travel<br>(caught in pollution)</td><td>Travel<br>(caught in pollution)</td>
+</tr>
+<tr>
+<th>Poorly lit or no power</th><td>Travel</td><td>Travel<br>(become lost)</td><td>Travel<br>(become lost)</td>
+</tr>
+<tr>
+<th>Partially collapsed or flooded</th><td>Travel</td><td>Travel<br>(takes 2 hours)</td><td>No progess<br>(takes 1 hour)</td>
+</tr>
+<tr>
+<th>Totally collapsed or flooded</th><td>Travel<br>(takes 2 hours)</td><td>No progess<br>(takes 1 hour)</td><td>Progess appears impossible<br>(takes 1 hour)</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="4">Becoming Lost</th>
+</tr>
+<tr>
+<th>Roll</th><th>Result</th>
+</tr>
+<tr>
+<td>01-10</td><td>Travel up a layer</td>
+</tr>
+<tr>
+<td>11-20</td><td>Travel 2 areas left of the intended area</td>
+</tr>
+<tr>
+<td>21-45</td><td>Travel 1 area left of the intended area</td>
+</tr>
+<tr>
+<td>46-55</td><td>Travel in circles (don't change area)</td>
+</tr>
+<tr>
+<td>56-80</td><td>Travel 1 area right of the intended area</td>
+</tr>
+<tr>
+<td>81-90</td><td>Travel 2 areas right of the intended area</td>
+</tr>
+<tr>
+<td>91-00</td><td>Travel down a layer</td>
+</tr>
+<tr>
+<td colspan="2">Reroll invalid results (such as going up a layer in the Upper Hive)</td>
+</tr>
+</table>
+<br>
+
+
+<h3>Location Encounters</h1>
+<p>When rolling a location encounter, do the following:
+<ol>
+<li>Roll a d10.</li>
+<li>On a 10, or if the number rolled is higher than the number of additional locations listed for the area, roll a new location on the Encountered Location table and add it to the list. This is the location encountered.</li>
+<li>Otherwise, count down the list by the rolled number (wrapping if needed) from the last location encountered. The location you end up on is the location encountered.</li>
+</ol>
+
+
+<h3>Encounters</h1>
+When rolling an encounter, do the following:
+<ol>
+<li>Determine encounter distance using the table.</li>
+<li>Determine the disposition of the encountered characters using the table (if relevant).</li>
+<li>Determine whether the party or the encountered party is surprised by having the characters do Spot or Hear and Move Silently or Conceal Self (whichever is relevant, if any).</li>
+</ol>
+
+
+<div>
+<table>
+<tr>
+<th colspan="2">Encounter Distance</th>
+</tr>
+<tr>
+<td>Upper Hive</td><td>6d10m</td>
+</tr>
+<tr>
+<td>Middle Hive</td><td>5d10m</td>
+</tr>
+<tr>
+<td>Underhive</td><td>4d10m</td>
+</tr>
+<tr>
+<td>Collapsed Area</td><td>3d10m</td>
+</tr>
+<tr>
+<td>Totally Collapsed Area</td><td>2d10m</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th>Roll</th><th>NPC Disposition</th>
+</tr>
+<tr>
+<td>01-10</td><td>Affectionate</td>
+</tr>
+<tr>
+<td>11-20</td><td>Trusting</td>
+</tr>
+<tr>
+<td>21-30</td><td>Loyal</td>
+</tr>
+<tr>
+<td>31-40</td><td>Frightened</td>
+</tr>
+<tr>
+<td>41-60</td><td>Indifferent</td>
+</tr>
+<tr>
+<td>61-70</td><td>Contemptful</td>
+</tr>
+<tr>
+<td>71-80</td><td>Resentful</td>
+</tr>
+<tr>
+<td>81-90</td><td>Sceptical</td>
+</tr>
+<tr>
+<td>91-00</td><td>Daring</td>
+</tr>
+</table>
+<br>
+</div>
 
 
 <h2>Upper Hive</h2>
@@ -87,10 +185,10 @@ th, td {
 <th>Roll</th><th>Location</th>
 </tr>
 <tr>
-<td>01-50</td><td>Noble spire "house ___ spire"</td>
+<td>01-50</td><td>Noble Spire</td>
 </tr>
 <tr>
-<td>51-60</td><td>Spaceport "port ___"</td>
+<td>51-60</td><td>Spaceport</td>
 </tr>
 <tr>
 <td>61-67</td><td>Planetary Defence Force complex</td>
@@ -105,7 +203,7 @@ th, td {
 <td>78-80</td><td>Adeptus Mechanicus spire</td>
 </tr>
 <tr>
-<td>81-84</td><td>Adeptus Administratum spire</td>
+<td>81-84</td><td>Adeptus Administratum spire (offices and archive halls)</td>
 </tr>
 <tr>
 <td>85-87</td><td>Magistratum Bloodsquare (executions and trials by combat)</td>
@@ -196,25 +294,46 @@ th, td {
 <td>01-10</td><td>Roll twice and combine the results</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Nobles</td>
+<td>11-15</td><td>Quiet streets</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Ministorum Preachers</td>
+<td>16-40</td><td>Procession of nobles</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Merchant magnate</td>
+<td>41-50</td><td>Procession of ministorum priests</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Arbitrators - patrolling; escorting perp; mid-arrest; searching a building</td>
+<td>51-60</td><td>Servo-skulls doing surveillance</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Tech-priests - </td>
+<td>61-70</td><td>Servitors cleaning the streets</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Servitors - performing maintenance; cherub servitors doing Ministorum stuff (deliveries?)</td>
+<td>71-74</td><td>Cherub servitor delivering a message-scroll</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Administratum scribes - taking records</td>
+<td>75</td><td>Cherub servitor delivering an item</td>
+</tr>
+<tr>
+<td>76-80</td><td>Tech-priests maintaining infrastructure</td>
+</tr>
+<tr>
+<td>81-85</td><td>Administratum scribes auditing businesses</td>
+</tr>
+<tr>
+<td>86-92</td><td>Arbitrators on patrol</td>
+</tr>
+<tr>
+<td>93-94</td><td>Arbitrators on patrol in a vehicle</td>
+</tr>
+<tr>
+<td>95-97</td><td>Arbitrators escorting a detainee to the cells</td>
+</tr>
+<tr>
+<td>98-99</td><td>Arbitrators searching a building</td>
+</tr>
+<tr>
+<td>00</td><td>Assassin stalking a noble</td>
 </tr>
 </table>
 
@@ -346,46 +465,143 @@ th, td {
 <td>01-10</td><td>Roll twice and combine the results</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Street fight / bar brawl</td>
+<td>11-15</td><td>Street urchins</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Entertainers - busking; gambling; performing stunts</td>
+<td>16-20</td><td>Beggars</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Preachers / confessors </td>
+<td>21-23</td><td>Gamblers</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Urchins / beggars</td>
+<td>24-26</td><td>Entertainers performing stunts (juggling knives, etc.)</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Street vendors</td>
+<td>27-30</td><td>Entertainers busking</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Servitors - performing maintenance</td>
+<td>31-37</td><td>Scum brawling</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Tech-priests - </td>
+<td>38-40</td><td>Scum knife-fighting</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Administratum scribes - taking records</td>
+<td>41-43</td><td>Petty criminals pickpocketing people on the street</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Enforcers (maybe arbitrators) - patrolling; escorting perp; mid-arrest; roughing someone up; searching a building</td>
+<td>44-45</td><td>Petty criminals mugging people in an alleyway</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Kill Squad Troopers - enforcing an execution warrant</td>
+<td>46-50</td><td>Street vendors selling food</td>
 </tr>
 <tr>
-<td>xx-xx</td><td>Criminal - robbing an NPC; attempts to rob a PC</td>
+<td>51-54</td><td>Street vendors selling trinkets</td>
 </tr>
 <tr>
-<td>00</td><td>An emergant psyker</td>
+<td>55-58</td><td>Street vendors selling random items</td>
+</tr>
+<tr>
+<td>59-60</td><td>Street vendors selling illicit goods</td>
+</tr>
+<tr>
+<td>61-70</td><td>Ministorum confessors preaching to the masses</td>
+</tr>
+<tr>
+<td>71-74</td><td>Servitors hauling goods</td>
+</tr>
+<tr>
+<td>75-78</td><td>Servitors hauling refuse</td>
+</tr>
+<tr>
+<td>79-80</td><td>Tech-priests maintaining infrastructure</td>
+</tr>
+<tr>
+<td>81-83</td><td>Administratum scribes auditing businesses</td>
+</tr>
+<tr>
+<td>84-85</td><td>Administratum scribes collecting taxes</td>
+</tr>
+<tr>
+<td>86-90</td><td>Enforcers on patrol</td>
+</tr>
+<tr>
+<td>91-93</td><td>Enforcers escorting a detainee to the cells</td>
+</tr>
+<tr>
+<td>94-95</td><td>Enforcers roughing someone up</td>
+</tr>
+<tr>
+<td>96-97</td><td>Enforcers searching a building</td>
+</tr>
+<tr>
+<td>98</td><td>Arbitrators escorting a captured psyker to the cells</td>
+</tr>
+<tr>
+<td>99</td><td>Kill Squad Troopers enforcing an execution warrant</td>
+</tr>
+<tr>
+<td>00</td><td>Unsactioned psyker energance</td>
 </tr>
 </table>
 
 
 <h2>Underhive</h2>
-<p>** Roll for disrepair and power/lighting</p>
+<table>
+<tr>
+<th colspan="2">Underhive Disrepair</th>
+</tr>
+<tr>
+<th>Roll</th><th>Disrepair</th>
+</tr>
+<tr>
+<td>01-10</td><td>Roll twice and combine the results</td>
+</tr>
+<tr>
+<td>11-20</td><td>partially collapsed</td>
+</tr>
+<tr>
+<td>21-25</td><td>totally collapsed</td>
+</tr>
+<tr>
+<td>26-35</td><td>partially flooded</td>
+</tr>
+<tr>
+<td>36-40</td><td>totally flooded</td>
+</tr>
+<tr>
+<td>41-48</td><td>polluted (sewage)</td>
+</tr>
+<tr>
+<td>49-50</td><td>heavily polluted (sewage)</td>
+</tr>
+<tr>
+<td>51-58</td><td>polluted (toxic liquid)</td>
+</tr>
+<tr>
+<td>59-60</td><td>heavily polluted (toxic liquid)</td>
+</tr>
+<tr>
+<td>61-68</td><td>polluted (toxic gas)</td>
+</tr>
+<tr>
+<td>69-70</td><td>heavily polluted (toxic gas)</td>
+</tr>
+<tr>
+<td>71-78</td><td>polluted (radiation)</td>
+</tr>
+<tr>
+<td>79-80</td><td>heavily polluted (radiation)</td>
+</tr>
+<tr>
+<td>81-95</td><td>Poorly lit</td>
+</tr>
+<tr>
+<td>96-00</td><td>No power</td>
+</tr>
+</table>
+<br>
+
+
 <table>
 <tr>
 <th colspan="2">Underhive Main Locations</th>
@@ -564,7 +780,26 @@ th, td {
 
 
 <h2>Hive Floor / Catacombs</h2>
-<p>** Roll for disrepair</p>
+<table>
+<tr>
+<th colspan="2">Hive Floor Disrepair</th>
+</tr>
+<tr>
+<th>Roll</th><th>Disrepair</th>
+</tr>
+<tr>
+<td>01-50</td><td>No power and totally collapsed, in addition to the disrepair of the above underhive area</td>
+</tr>
+<tr>
+<td>51-80</td><td>No power and totally collapsed, in addition to the disrepair of the above underhive area, but the disrepair is worse (partially flooded becomes totally flooded, etc.)</td>
+</tr>
+<tr>
+<td>81-00</td><td>No power and totally collapsed, in addition to the disrepair of the above underhive area, but the disrepair is worse (roll an additional effect on the Underhive Disrepair table)</td>
+</tr>
+</table>
+<br>
+
+
 <table>
 <tr>
 <th colspan="2">Hive Floor Locations</th>
@@ -663,3 +898,4 @@ th, td {
 <br>
 
 
+</html>
