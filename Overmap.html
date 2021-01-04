@@ -8,7 +8,7 @@ th, td {
   padding: 4px;
 }
 div {
-  column-count: 2;
+  column-count: 3;
 }
 </style>
 <title>Overmap - Dark Heresy Overhaul</title>
@@ -32,17 +32,33 @@ Each layer is divided into areas, arranged as a hex grid. Each area has:</p>
 </ul>
 The Main Location and Disrepair should be determined when the area is generated. Additional locations are added as they are encountered.</p>
 
-<p>Travelling to an adjacent area (or between layers) generally takes an hour. Each hour of travelling, roll one Location Encounter and one Encounter. If not travelling, roll 1d10 each hour and on a 10, roll one Encounter.</p>
+<p>Travelling to an adjacent area or between layers takes an hour. Once in an area, travelling to a specific location takes an hour, except the Main Location, which takes a negligible amount of time. So travelling to a specific location in an adjacent area takes 2 hours, for example. Apply navigation difficulties for the area being moved into.</p>
+
+<p>Each hour of travelling, there is one Location Encounter and one Encounter. Roll a d10. On a roll of 1, the Encounter and Location Encounter happen together. If not travelling, there is no Location Encounter and the Encounter only occurs on a roll of 1.</p>
+
+<p>Before rolling a Location Encounter, roll a d10. On a 10, or if the number rolled is higher than the number of additional locations listed for the area, roll a new Encountered Location and add it to the list. Otherwise, count down the list by the rolled number (wrapping if needed) from the last location encountered to determine which location is encountered. For (non-location) Encounters, simply roll on the Encounter table.</p>
 
 <p><i>The GM may wish to roll results for the Encounter and Location Encounter tables ahead of time, in order to save time preparing the encounters.</i></p>
 
 
-<h3>Difficult and Dangerous Travel</h1>
-<p>Travelling in difficult or dangerous terrain requires a Navigate roll. Resolve the roll using the following tables.</p>
+
+<h3>Procedure</h3>
+<ol>
+<li>PCs decide what they are doing - note whether it is travel or non-travel.</li>
+<li>Use naviation difficulties for the area being moved into.</li>
+<li>Resolve this action. Failure to Navigate may change the area moved to if the characters become lost or make no progress.</li>
+<li>Determine whether the encounters happen together (if travelling) or at all (if not travelling).</li>
+<li>Determine if the Location Encounter is a repeat.</li>
+<li>Determine non-repeat encounters using the tables for the area moved into.</li>
+<li>Determine encounter distance and NPC disposition (if relevant).</li>
+<li>Determine whether the party and/or encountered party is surprised (if relevant).</li>
+<li>Run the encounter.</li>
+</ol>
+
 
 <table>
 <tr>
-<th colspan="4">Navigation</th>
+<th colspan="4">Navigate Difficult or Dangerous Areas</th>
 </tr>
 <tr>
 <th></th><th>Success</th><th>Failure</th><th>Critical Failure</th>
@@ -98,24 +114,6 @@ The Main Location and Disrepair should be determined when the area is generated.
 <br>
 
 
-<h3>Location Encounters</h1>
-<p>When rolling a location encounter, do the following:
-<ol>
-<li>Roll a d10.</li>
-<li>On a 10, or if the number rolled is higher than the number of additional locations listed for the area, roll a new location on the Encountered Location table and add it to the list. This is the location encountered.</li>
-<li>Otherwise, count down the list by the rolled number (wrapping if needed) from the last location encountered. The location you end up on is the location encountered.</li>
-</ol>
-
-
-<h3>Encounters</h1>
-When rolling an encounter, do the following:
-<ol>
-<li>Determine encounter distance using the table.</li>
-<li>Determine the disposition of the encountered characters using the table (if relevant).</li>
-<li>Determine whether the party or the encountered party is surprised by having the characters do Spot or Hear and Move Silently or Conceal Self (whichever is relevant, if any).</li>
-</ol>
-
-
 <div>
 <table>
 <tr>
@@ -137,7 +135,6 @@ When rolling an encounter, do the following:
 <td>Totally Collapsed Area</td><td>2d10m</td>
 </tr>
 </table>
-<br>
 
 
 <table>
@@ -145,31 +142,50 @@ When rolling an encounter, do the following:
 <th>Roll</th><th>NPC Disposition</th>
 </tr>
 <tr>
-<td>01-10</td><td>Affectionate</td>
+<td>01-20</td><td>Indifferent</td>
 </tr>
 <tr>
-<td>11-20</td><td>Trusting</td>
+<td>21-30</td><td>Trusting</td>
 </tr>
 <tr>
-<td>21-30</td><td>Loyal</td>
+<td>31-40</td><td>Suspicious</td>
 </tr>
 <tr>
-<td>31-40</td><td>Frightened</td>
+<td>41-50</td><td>Affectionate</td>
 </tr>
 <tr>
-<td>41-60</td><td>Indifferent</td>
+<td>51-60</td><td>Contemptful</td>
 </tr>
 <tr>
-<td>61-70</td><td>Contemptful</td>
+<td>61-70</td><td>Loyal</td>
 </tr>
 <tr>
-<td>71-80</td><td>Resentful</td>
+<td>71-80</td><td>Disloyal</td>
 </tr>
 <tr>
-<td>81-90</td><td>Sceptical</td>
+<td>81-90</td><td>Frightened</td>
 </tr>
 <tr>
 <td>91-00</td><td>Daring</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th colspan="2">Surprise</th>
+</tr>
+<tr>
+<th>Detection Skill</th><th>Opposing Skill</th>
+</tr>
+<tr>
+<td>Spot</td><td>Conceal Self*</td>
+</tr>
+<tr>
+<td>Hear</td><td>Move Silently</td>
+</tr>
+<tr>
+<td colspan="2">*Done in preparation to provide penalty to detection skill.</td>
 </tr>
 </table>
 <br>
