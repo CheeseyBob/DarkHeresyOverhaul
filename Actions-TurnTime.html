@@ -17,452 +17,15 @@ th, td {
 <h1>Turn-Time Actions</h1>
 <p>Each character can take 1 Main Action and 1 Secondary Action on their turn (in any order). Anything involving a Test will typically be a Main Action; anything simple enough to not need a test will typically be a Secondary Action. A character can take Full Action, which is equivalent to a combined Main Action and Secondary Action, instead of taking those actions separately.</p>
 
-<p>Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and can provide Passive Opposition any number of times. Reactions cover things done in opposition to another character's Action. Passive Opposition covers opposition which doesn't require the character to do anything (for example, resisting fear).</p>
+<p>Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and take Passive Actions any number of times. Reactions cover things done in opposition to another character's Action. Passive Action covers anything which doesn't require the character to do anything (for example, resisting fear).</p>
 
-<p>In general, a Main Action can be:
-<ul>
-<li>A Test to Attack.</li>
-<li>A Test to Create Advantage.</li>
-<li>A Test to Overcome.</li>
-<li>Any Secondary Action.</li>
-</ul>
-A Secondary Action can be:
-<ul>
-<li>A temporary ±10 modifier to something.</li>
-<li>Movement or some simple movement-like action (standing up, mounting, etc.).</li>
-<li>Inventory (picking up, dropping or switching items).</li>
-<li>Some other simple action.</li>
-</ul>
-A Full Action can be:
-<ul>
-<li>A Main Action with a temporary ±10 modifier to something, which can be the Test of the Main Action.</li>
-<li>A Main Action with Degrees of Success giving some extra effect (e.g. extra hits).</li>
-<li>Any extended Secondary Action (equivalent to making the same Secondary Action twice).</li>
-</ul>
-</p>
+<p>In general, a Main Action is a Test to either hit a target with an attack, create an advantage, or overcome an Aspect. You can take any Secondary Action instead of a Main Action.</p>
 
-<p>A Reaction is a Test to oppose an Attack, Create Advantage or Overcome, typically using one of the following Characteristics:
-<ul>
-<li>Weapon Skill</li>
-<li>Ballistic Skill</li>
-<li>Strength</li>
-<li>Agility</li>
-<li>Intelligence?</li>
-<li>Fellowship?</li>
-</ul>
-</p>
+<p>A Secondary Action is either a simple action which doesn't require a Test, or a supplementary action which gives a temporary ±10 modifier to something.</p>
 
-<p>Passive Opposition is a Test to oppose an Attack, Create Advantage or Overcome, typically using one of the following Characteristics:
-<ul>
-<li>Toughness</li>
-<li>Intelligence?</li>
-<li>Perception</li>
-<li>Willpower</li>
-<li>Fellowship?</li>
-</ul>
-</p>
+<p>A Full Action is an improved Main Action - either with a +10 bonus to the Test, or with Degrees of Success giving some extra effect. Alternatively, any Secondary Action can be taken as a Full Action - this applies the effect twice, but counts as a single Action.</p>
 
-
-<table>
-<tr>
-<th colspan="3">Basic Main Actions</th>
-</tr>
-<tr>
-<th>Action
-<th>Type
-<th>Description
-</tr>
-<tr>
-<td>Melee Attack
-<td>Attack
-<td>Test Weapon Skill to make melee hits.
-</tr>
-<tr>
-<td>Ranged Attack
-<td>Attack
-<td>Test Ballistic Skill to make ranged hits.
-</tr>
-<tr>
-<td>Strength Attack
-<td>Attack
-<td>Test Strength to make melee hits while grappling.
-</tr>
-<tr>
-<td>Grapple
-<td>Create Advantage
-<td>Test Weapon Skill to make the target <i>Grappled</i>.
-</tr>
-<tr>
-<td>Knock Down
-<td>Create Advantage
-<td>Test Strength to make the target <i>Prone</i>.
-</tr>
-<tr>
-<td>Stun Strike
-<td>Create Advantage
-<td>Test Weapon Skill to make the target <i>Stunned</i>.
-</tr>
-<tr>
-<td>Conceal Self
-<td>Create Advantage
-<td>Test Agility to become <i>Concealed</i>.
-</tr>
-<tr>
-<td>Conceal Item
-<td>Create Advantage
-<td>Test Intelligence to make a target Item <i>Concealed</i>.
-</tr>
-<tr>
-<td>Plant Explosives
-<td>Create Advantage
-<td>Test Intelligence to make an explosive <i>Planted</i>.
-</tr>
-<tr>
-<td>Grapple (Break)
-<td>Overcome
-<td>Test Strength to overcome being <i>Grappled</i>.
-</tr>
-<tr>
-<td>Run
-<td>Overcome
-<td>Test Agility to increase Movement, then Move.
-</tr>
-<tr>
-<td>Move Silently
-<td>Overcome
-<td>Test Agility to not be heard during Move.
-</tr>
-<tr>
-<td>Clear Jam
-<td>Overcome
-<td>Test Weapon Skill to overcome a gun being <i>Jammed</i>.
-</tr>
-<tr>
-<td>Extinguish Fire
-<td>Overcome
-<td>Test Agility to overcome being <i>On Fire</i>.
-</tr>
-<tr>
-<td>Break Bonds
-<td>Overcome
-<td>Test Strength to overcome being <i>Ensnared</i>.
-</tr>
-<tr>
-<td>Wriggle Free
-<td>Overcome
-<td>Test Agility to overcome being <i>Ensnared</i>.
-</tr>
-<tr>
-<td>Use Tech
-<td>Varies
-<td>Test Intelligence to use a piece of technology.
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="4">Advanced Main Actions</th>
-</tr>
-<tr>
-<th>Action</th>
-<th>Requirement</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>Administer Drug</td>
-<td>Skill and Tool</td>
-<td>Create Advantage</td>
-<td>Test Intelligence to administer a dose of a drug.</td>
-</tr>
-<tr>
-<td>Open Lock</td>
-<td>Skill and Tool</td>
-<td>Overcome</td>
-<td>Test Intelligence to overcome target being <i>Locked</i>.</td>
-</tr>
-<tr>
-<td>Tie Up</td>
-<td>Tool</td>
-<td>Create Advantage</td>
-<td>Test Strength (or Intelligence?) to make the target <i>Ensnared</i> or <i>Teathered</i>.</td>
-</tr>
-<tr>
-<td>Ignite</td>
-<td>An ignition source</td>
-<td>Create Advantage</td>
-<td>Test Intelligence (if the target is an object) or Agility (if the target is a character) to make the target <i>Burning</i>.</td>
-</tr>
-<tr>
-<td>Invoke</td>
-<td>Skill</td>
-<td>Create Advantage</td>
-<td>Test Willpower to become <i>????</i>.</td>
-</tr>
-<tr>
-<td>Defuse Explosives</td>
-<td>Skill</td>
-<td>Overcome</td>
-<td>Test Intelligence to overcome an explosive being <i>Planted</i>. A critical failure means the explosive detonates instantly.</td>
-</tr>
-<tr>
-<td>Plant Explosives (Detonator)</td>
-<td>Skill</td>
-<td>Create Advantage</td>
-<td>Test Intelligence to make an explosive item become <i>Planted</i>, to be detonated by remote detonator. Make the Test when the detonator is activated. A failed Test means the explosive detonates in 1d10 rounds (if this is 10, the explosives fail to go off).</td>
-</tr>
-<tr>
-<td>Plant Explosives (Timer)</td>
-<td>Skill</td>
-<td>Create Advantage</td>
-<td>Test Intelligence to make an explosive item become <i>Planted</i>, to be detonated by a timer (choose a number of rounds, minutes or hours). A failed Test means the number increases by 1d10 (if this is 10, the explosives fail to go off).</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Basic Secondary Actions</th>
-</tr>
-<tr>
-<th>Action
-<th>Description
-</tr>
-<tr>
-<td>Move
-<td>Move up to your Movement.
-</tr>
-<tr>
-<td>Move To Cover
-<td>Move and then take Full Cover or Half Cover, getting the benefit of Half-Cover during your movement.
-</tr>
-<tr>
-<td>Aim
-<td>Get a +10 bonus to Ranged Attack.
-</tr>
-<tr>
-<td>Bide
-<td>Get a +10 bonus to Melee Attack, Grapple, Knock Down and Stun Strike.
-</tr>
-<tr>
-<td>Defensive Stance
-<td>Get a +10 bonus to Parry and Dodge.
-</tr>
-<tr>
-<td>Feint
-<td>Give a -10 penalty to Parry and Dodge.
-</tr>
-<tr>
-<td>Fend Off
-<td>Give a -10 penalty to Melee Attack.
-</tr>
-<tr>
-<td>Inventory
-<td>Swap held items with items in your inventory; pick up/drop items near you in the world; etc.
-</tr>
-<tr>
-<td>Brace
-<td>Brace a Heavy Weapon against something so it can be fired.
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Basic Full Actions</th>
-</tr>
-<tr>
-<th>Action
-<th>Type
-<th>Description
-</tr>
-<tr>
-<td>Extended Fire
-<td>Attack
-<td>Ranged Attack with an increased maximum number of hits.
-</tr>
-<tr>
-<td>Flurry of Blows
-<td>Attack
-<td>Melee Attack with an increased maximum number of hits.
-</tr>
-<tr>
-<td>Precise Shot
-<td>Attack
-<td>When the used weapon has a maximum hits of 1, Ranged Attack with a +1 bonus to damage for each Degree of Success.
-</tr>
-<tr>
-<td>Heavy Blow
-<td>Attack
-<td>When the used weapon has a maximum hits of 1, Melee Attack with a +1 bonus to damage for each Degree of Success.
-</tr>
-<tr>
-<td>Charge
-<td>Attack
-<td>Move twice, then Melee Attack with a +1 bonus to damage for each meter of bonus Movement you currently have.
-</tr>
-<tr>
-<td>Tackle
-<td>Attack
-<td>Move twice, then Knock Down with a +10 bonus for each meter of bonus Movement you currently have.
-</tr>
-<tr>
-<td>Manoeuvre
-<td>Attack
-<td>Melee Attack with each Degree of Success moving the target 1m (up to target's Movement); Move with the target.
-</tr>
-<tr>
-<td>Drag Object
-<td>Overcome
-<td>Test Strength to drag a large object 1m plus 1m per Degree of Success (up to your Movement).
-</tr>
-<tr>
-<td>Full Run
-<td>Overcome
-<td>Run with a +10 bonus and an extra Move.
-</tr>
-<tr>
-<td>Hurry Quietly
-<td>Overcome
-<td>Move Silently with an extra Move.
-</tr>
-<tr>
-<td>Creep Silently
-<td>Overcome
-<td>Move Silently with a +10 bonus.
-</tr>
-<tr>
-<td>Reload
-<td>Extended Secondary
-<td>Reload a wielded weapon with ammo from your inventory.
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="4">Advanced Full Actions</th>
-</tr>
-<tr>
-<th>Action
-<th>Requirement
-<th>Type
-<th>Description
-</tr>
-<tr>
-<td>Sweeping Blow
-<td>Talent
-<td>Attack
-<td>When the used weapon has a maximum hits of 1, Melee Attack with an extra hit on a different target for each Degree of Success.
-</tr>
-<tr>
-<td>Assault Fire
-<td>Talent
-<td>Attack
-<td>Move twice and Ranged Attack during the movement.
-</tr>
-<tr>
-<td>Agile Strike
-<td>Talent
-<td>Attack
-<td>Move twice and Melee Attack during the movement.
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Basic Reactions</th>
-</tr>
-<tr>
-<th>Reaction</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>Dodge</td>
-<td>Test Agility to oppose a Ranged Attack or Melee Attack.</td>
-</tr>
-<tr>
-<td>Parry</td>
-<td>Test Weapon Skill to oppose a Melee Attack.</td>
-</tr>
-<tr>
-<td>Steady</td>
-<td>Test Strength to oppose Knock Down.</td>
-</tr>
-<tr>
-<td>Pin Down</td>
-<td>When target is <i>Prone</i>, Test Strength to oppose standing up or moving.</td>
-</tr>
-<tr>
-<td>Duck</td>
-<td>When in Half Cover, Cover with a +10 bonus, then take Full Cover.</td>
-</tr>
-<tr>
-<td>Brace</td>
-<td>Resist Stun with a +10 bonus.</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Advanced Reactions</th>
-</tr>
-<tr>
-<th>Reaction</th>
-<th>Requirement</th>
-<th>Description</th>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Basic Passive Opposition</th>
-</tr>
-<tr>
-<th>Opposition
-<th>Description
-</tr>
-<tr>
-<td>Resist Stun
-<td>Test Toughness to oppose Stun Strike.
-</tr>
-<tr>
-<td>Cover
-<td>Test Cover to oppose a Ranged Attack.
-</tr>
-<tr>
-<td>Reflexes
-<td>When Waiting, Test Perception to take action before another character.
-</tr>
-<tr>
-<td>Calm Down
-<td>Test Willpower to overcome being <i>Frenzied</i> or <i>Pinned</i>.
-</tr>
-<tr>
-<td>Resist Poison
-<td>Test Toughness to oppose the effects of <i>Poison (Any)</i>.
-</tr>
-<tr>
-<td>Spot
-<td>Test Perception to oppose Conceal.
-</tr>
-<tr>
-<td>Hear
-<td>Test Perception to oppose Move Silently.
-</tr>
-</table>
-<br>
+<p>Reactions and Passive Actions are a Test to oppose another character's Action or to overcome an Aspect on the character. Alternatively, a Reaction can be a +10 bonus to something.</p>
 
 
 <h3>Stacking Bonuses</h3>
@@ -470,13 +33,9 @@ A Full Action can be:
 
 
 <h3>Movement</h3>
-<p>If an action inherantly involves moving, then that action can include the movement in addition to its primary benefit. For example, if you charge, then you move and get a bonus to melee attacks.</p>
+<p>When making a Test to increase your Movement, the bonus Movement stacks up to your base Movement and resets to zero if you move less than double your Movement on your turn, or if you spend your Reaction.</p>
 
-<p>If you are moving, then your action can be resolved at any point along that movement, if it makes sense. For example, moving past an open doorway and shooting inside as you go past.</p>
-
-<p>When making a Test to increase your Movement, the increase is one meter plus one per Degree of Success. This bonus Movement stacks up to your base Movement and resets to zero if you move less than double your Movement on your turn, or if you spend your Reaction.</p>
-
-<p>If your movement is impeeded but still possible (for example, when you are <i>Prone</i>), then your Movement is 1 and bonus Movement resets to zero each turn.</p>
+<p>If your movement is impeeded but still possible (for example, when you are <i>Prone</i>), then your Movement is 1. You can still Run, but bonus Movement resets to zero each turn.</p>
 
 <p>If you are to far away to Charge a target, so you take the Run action towards the target instead, but this increases your Movement to the point that you can now reach the target, you can act as if you had taken the Charge action and reached the target.</p>
 
@@ -488,6 +47,416 @@ If this is at the same time as another character's action, Reflexes
 
 
 Test Agility against that character's Agility to determine who's action is resolved first. For example, you may choose to shoot at an enemy when they pop out of cover on their turn. This would be waiting with a Ranged Attack action and you would make a Test to see if your shot is resolved before their action.</p>
+
+
+
+
+<table>
+<tr>
+<th colspan="5">Actions</th>
+</tr>
+<tr>
+<th>Action</th>
+<th>Type</th>
+<th>Requirement</th>
+<th>Test</th>
+<th>Result</th>
+</tr>
+<tr>
+<th colspan="1">Fight Actions</th>
+</tr>
+<tr>
+<td>Attack (Melee)</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Target takes a hit</td>
+</tr>
+<tr>
+<td>Attack Repeatedly (Melee)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Target takes a hit; +1 hit per DoS (max determined by weapon)</td>
+</tr>
+<tr>
+<td>Attack Heavily (Melee)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Target takes a hit; +1 damage per DoS</td>
+</tr>
+<tr>
+<td>Manoeuvre</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Attack (Melee); move target 1m + 1m per DoS (move with target)</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Move twice, then Attack (Melee); +1 damage per bonus movement.</td>
+</tr>
+<tr>
+<td>Attack (Ranged)</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Ballistic Skill</td>
+<td>Target takes a hit</td>
+</tr>
+<tr>
+<td>Attack Repeatedly (Ranged)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Ballistic Skill</td>
+<td>Target takes a hit; +1 hit per DoS (max determined by weapon)</td>
+</tr>
+<tr>
+<td>Attack Precisely (Ranged)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Ballistic Skill</td>
+<td>Target takes a hit; -10 penalty to target's Cover per DoS</td>
+</tr>
+<tr>
+<td>Grapple (Initiate)</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Target becomes <i>Grappled</i></td>
+</tr>
+<tr>
+<td>Grapple</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Upgrade or overcome <i>Grappled</i></td>
+</tr>
+<tr>
+<td>Knock Down</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Target becomes <i>Prone</i></td>
+</tr>
+<tr>
+<td>Tackle</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Move twice, then Knock Down; +10 bonus per bonus movement</td>
+</tr>
+<tr>
+<td>Stun</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Target becomes <i>Stunned</i></td>
+</tr>
+<tr>
+<td>Aim</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Get a +10 bonus to an Attack</td>
+</tr>
+<tr>
+<td>Defend</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Get a +10 bonus to a Reaction</td>
+</tr>
+<tr>
+<td>Fend Off</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Give a -10 penalty to an Attack</td>
+</tr>
+<tr>
+<td>Feint</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Give a -10 penalty to a Reaction</td>
+</tr>
+<tr>
+<td>Use Cover</td>
+<td>Passive Opposition</td>
+<td>Basic</td>
+<td>Cover</td>
+<td>Avoid a hit; -1 hit per DoS</td>
+</tr>
+<tr>
+<td>Duck</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>Cover</td>
+<td>Use Cover with a +10 bonus, then get Full Cover</td>
+</tr>
+<tr>
+<td>Dodge</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Avoid a hit; -1 hit per DoS</td>
+</tr>
+<tr>
+<td>Parry</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>Weapon Skill</td>
+<td>Avoid a hit; -1 hit per DoS</td>
+</tr>
+<tr>
+<td>Steady</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Oppose becoming <i>Prone</i></td>
+</tr>
+<tr>
+<th colspan="1">Movement Actions</th>
+</tr>
+<tr>
+<td>Move</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Move up to Movement (AB)</td>
+</tr>
+<tr>
+<td>Move And [Action]</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>*</td>
+<td>Move and [Main/Secondary Action] during the movement.</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Move; +1 bonus movement +1 per DoS (max = Movement)</td>
+</tr>
+<tr>
+<td>Run (Full)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Run with a +10 bonus and extra Move</td>
+</tr>
+<tr>
+<th colspan="1">Stealth Actions</th>
+</tr>
+<tr>
+<td>Sneak</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Avoid being noticed during Move</td>
+</tr>
+<tr>
+<td>Sneak (Full)</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Sneak with an extra Move</td>
+</tr>
+<tr>
+<td>Conceal Self</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Agility</td>
+<td>Become <i>Concealed</i></td>
+</tr>
+<tr>
+<td>Conceal Object</td>
+<td>Main Action</td>
+<td>Basic</td>
+<td>Intelligence</td>
+<td>Target becomes <i>Concealed</i></td>
+</tr>
+<tr>
+<th colspan="1">General Actions</th>
+</tr>
+<tr>
+<td>[Action] Carefully</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>*</td>
+<td>Main Action with a +10 bonus</td>
+</tr>
+<tr>
+<td>Use Inventory</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Take out, put away, place or pick up an item (per hand)</td>
+</tr>
+<tr>
+<td>Drag Object</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Move target up to Movement; +1m per DoS; -1m on failure</td>
+</tr>
+<tr>
+<td>Drag Heavy Object</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Move target 1m; +1m per DoS; no move on failure</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Get a +10 bonus to an Action</td>
+</tr>
+<tr>
+<td>Distract</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Give a -10 penalty to an Action</td>
+</tr>
+<tr>
+<td>Brace</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>-</td>
+<td>Resist with a +10 bonus</td>
+</tr>
+<tr>
+<td>Reflex</td>
+<td>Reaction</td>
+<td>Basic</td>
+<td>Perception</td>
+<td>Act before another character when waiting</td>
+</tr>
+<tr>
+<td>Notice</td>
+<td>Passive Opposition</td>
+<td>Basic Skill</td>
+<td>Perception</td>
+<td>Detect the presence of something hidden</td>
+</tr>
+<tr>
+<td>Resist (Physical)</td>
+<td>Passive Opposition</td>
+<td>Basic</td>
+<td>Toughness</td>
+<td>Oppose becoming or overcome being <i>Stunned</i>, <i>Poisoned</i>, etc.</td>
+</tr>
+<tr>
+<td>Resist (Mental)</td>
+<td>Passive Opposition</td>
+<td>Basic</td>
+<td>Willpower</td>
+<td>Oppose becoming or overcome being <i>Frenzied</i>, <i>Frightened</i>, <i>Pinned</i>, etc.</td>
+</tr>
+<tr>
+<td>Understand Language</td>
+<td>Passive Opposition</td>
+<td>Basic Skill</td>
+<td>Intelligence</td>
+<td>Understand a distorted, alien, or otherwise difficult communication</td>
+</tr>
+<tr>
+<td>Inspire</td>
+<td>Main Action</td>
+<td>Basic Skill</td>
+<td>Fellowship</td>
+<td>Target becomes <i>Inspired</i></td>
+</tr>
+<tr>
+<td>Intimidate</td>
+<td>Main Action</td>
+<td>Basic Skill</td>
+<td>Strength</td>
+<td>Target becomes <i>Intimidated</i></td>
+</tr>
+<tr>
+<td>Command</td>
+<td>Main Action</td>
+<td>Basic Skill</td>
+<td>Fellowship</td>
+<td>Order allies into combat or other dangerous situations</td>
+</tr>
+<tr>
+<td>Recall Common Lore</td>
+<td>Passive Action</td>
+<td>Basic Skill</td>
+<td>Intelligence</td>
+<td>Recall general information about a topic</td>
+</tr>
+<tr>
+<th colspan="1">Advanced Actions</th>
+</tr>
+<tr>
+<td>Open Lock</td>
+<td>Main Action</td>
+<td>Skill</td>
+<td>Intelligence</td>
+<td>Overcome target being <i>Locked</i></td>
+</tr>
+<tr>
+<td>Sense Immaterium</td>
+<td>Passive Opposition</td>
+<td>Skill</td>
+<td>Perception</td>
+<td>Detect the presence of something warp-related</td>
+</tr>
+<tr>
+<td>Sweeping Blow</td>
+<td>Full Action</td>
+<td>Talent</td>
+<td>Weapon Skill</td>
+<td>Attack (Melee); +1 hit on another target per DoS</td>
+</tr>
+<tr>
+<td>Agile Strike</td>
+<td>Full Action</td>
+<td>Talent</td>
+<td>Weapon Skill</td>
+<td>Move And Attack (Melee) with an extra Move</td>
+</tr>
+<tr>
+<td>Assault Fire</td>
+<td>Full Action</td>
+<td>Talent</td>
+<td>Ballistic Skill</td>
+<td>Move And Attack (Ranged) with an extra Move</td>
+</tr>
+<tr>
+<th colspan="1">???</th>
+</tr>
+<tr>
+<td>Plant Explosives</td>
+<td>Main Action</td>
+<td>Skill</td>
+<td>Intelligence</td>
+<td>Target becomes <i>Planted</i></td>
+</tr>
+<tr>
+<td>Use Tech</td>
+<td>Main Action</td>
+<td>Skill</td>
+<td>Intelligence</td>
+<td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+</table>
+<br>
+
+
+** Reloading - there should be some Test to reduce the time taken.<br>
+
 
 
 </html>
