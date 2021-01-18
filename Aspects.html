@@ -29,6 +29,34 @@ th, td {
 
 <h2>Basic Situational Aspects</h2>
 
+
+<table>
+<tr>
+<th colspan="2"><i>Bleeding Out</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>At the start of their turn, the target makes a Toughness Test. On a failure, the aspect is upgraded. On a critical failure, target also becomes <i>Fatigued</i>. If the aspect level exceeds double their Toughness Bonus, the target dies.</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Rest</td>
+</tr>
+</table>
+<br>
+
 <table>
 <tr>
 <th colspan="2"><i>Concealed</i></th>
@@ -43,15 +71,42 @@ th, td {
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Anything which benefits target from being obscured:<br>Cover; etc.</td>
+<td>Anything which benefits from target being obscured:<br>Cover; etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Notice target; Conceal target</td>
+<td>Notice target; upgrading this aspect</td>
 </tr>
 <tr>
 <th>Overcome After</th>
 <td>Target leaves their place of concealment</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th colspan="2"><i>Disguised</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Target being automatically perceived as who they are</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Deceive (when the deception involves the disguise)</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>upgrading this aspect</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Target removes the disguise</td>
 </tr>
 </table>
 <br>
@@ -87,6 +142,62 @@ th, td {
 
 <table>
 <tr>
+<th colspan="2"><i>Wounded</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Rest</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Rest</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="2"><i>Treated</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Effects of Bleeding Out</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Rest</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Treat Wounds</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Rest; becoming <i>Wounded</i></td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
 <th colspan="2"><i>Inspired</i></th>
 </tr>
 <tr>
@@ -103,7 +214,7 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>-</td>
+<td>upgrading this aspect</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -219,7 +330,7 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>The target rests for an hour.</td>
+<td>Rest</td>
 </tr>
 </table>
 <br>
@@ -239,7 +350,7 @@ th, td {
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Anything improved by having a low profile:<br>...................................; etc.</td>
+<td>Anything improved by having a low profile:<br>Conceal (Self); etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
@@ -248,6 +359,34 @@ th, td {
 <tr>
 <th>Overcome After</th>
 <td>Standing up</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="2"><i>Dazzled</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Anything requiring sight:<br> (most actions).</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physical)</td>
 </tr>
 </table>
 <br>
@@ -271,11 +410,11 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Anything requiring focus:<br>Melee Attack; Ranged Attack; Clear Jam; Calm Down; Dodge; Parry; Reflexes; etc.</td>
+<td>Anything requiring focus:<br>Melee Attack; Ranged Attack; Resist (Mental); Dodge; Parry; Reflex; Use Tech; etc.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Resist Stun.</td>
+<td>Resist (Physical)</td>
 </tr>
 </table>
 <br>
@@ -378,7 +517,7 @@ th, td {
 </tr>
 <tr>
 <th>Allows</th>
-<td>At the start of their turn, the target does Resist Poison to overcome the Aspect. On a critical failure, their Agility and Perception are permenantly reduced by 1.</td>
+<td>At the start of their turn, the target does Resist (Physical) to overcome the Aspect. On a critical failure, target takes 1 Agility damage and 1 Perception damage.</td>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -434,7 +573,7 @@ th, td {
 </tr>
 <tr>
 <th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect.</td>
+<td>At the start of their turn,  the target does Resist (Physical) to overcome the Aspect.</td>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -616,7 +755,7 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Open Lock; the item being destroyed.</td>
+<td>Open Lock</td>
 </tr>
 </table>
 <br>
@@ -729,34 +868,6 @@ th, td {
 <tr>
 <th>Overcome After</th>
 <td>Calm Down.</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Dazzled</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Anything requiring sight:<br> (most actions).</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Toughness Test (Passive Opposition).</td>
 </tr>
 </table>
 <br>
