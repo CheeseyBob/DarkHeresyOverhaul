@@ -57,6 +57,34 @@ th, td {
 </table>
 <br>
 
+
+<table>
+<tr>
+<th colspan="2"><i>Burning</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Darkness in a radius of 1m per Aspect level.</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>At the end of their turn, the target takes Energy damage equal to the Aspect level, ignoring Armour and Toughness. A <i>Burning</i> target who dies creates an area of <i>Fire</i>.</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>All actions except attempting to extinguish the fire</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Extinguish Fire (Agility)</td>
+</tr>
+</table>
+<br>
+
+
 <table>
 <tr>
 <th colspan="2"><i>Concealed</i></th>
@@ -84,6 +112,34 @@ th, td {
 </table>
 <br>
 
+
+<table>
+<tr>
+<th colspan="2"><i>Dazzled</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Anything requiring sight:<br> (most actions)</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physical)</td>
+</tr>
+</table>
+<br>
+
 <table>
 <tr>
 <th colspan="2"><i>Disguised</i></th>
@@ -102,7 +158,7 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>upgrading this aspect</td>
+<td>Upgrading this aspect</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -142,7 +198,7 @@ th, td {
 
 <table>
 <tr>
-<th colspan="2"><i>Wounded</i></th>
+<th colspan="2"><i>Fatigued</i></th>
 </tr>
 <tr>
 <th>Prevents</th>
@@ -158,7 +214,7 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Rest</td>
+<td>Anything requiring physical exhertion:<br>Any Strength test; Melee Attack; Grapple; Run; Dodge; Parry; etc.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -170,27 +226,27 @@ th, td {
 
 <table>
 <tr>
-<th colspan="2"><i>Treated</i></th>
+<th colspan="2"><i>Grappled</i></th>
 </tr>
 <tr>
 <th>Prevents</th>
-<td>Effects of Bleeding Out</td>
+<td>Grappler and target being separated or taking reactions.</td>
 </tr>
 <tr>
 <th>Allows</th>
-<td>-</td>
+<td>Grappler to use Strength to Melee Attack or Stun.<br>Grappler to oppose actions target takes such as Move, Run, Use Inventory, etc.<br>Grappler to use target as cover.</td>
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Rest</td>
+<td>Anything against target made easier by them being held:<br>Melee Attack; Ranged Attack; Knock Down; etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Treat Wounds</td>
+<td>Anything made harder while grappled/grappling:<br>Melee Attack; Ranged Attack; Knock Down; etc.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Rest; becoming <i>Wounded</i></td>
+<td>Target breaks the grapple or the grappler lets go.</td>
 </tr>
 </table>
 <br>
@@ -270,67 +326,11 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Anything requiring concentration:<br>...................................; etc.</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Resist Pinning.</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Grappled</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>Grappler and target being separated or taking reactions.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>Grappler to use Strength to Melee Attack or Stun.<br>Grappler to oppose actions target takes such as Move, Run, Use Inventory, etc.<br>Grappler to use target as cover.</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>Anything against target made easier by them being held:<br>Melee Attack; Ranged Attack; Knock Down; etc.</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Anything made harder while grappled/grappling:<br>Melee Attack; Ranged Attack; Knock Down; etc.</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Target breaks the grapple or the grappler lets go.</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Fatigued</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
 <td>-</td>
 </tr>
 <tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Anything requiring physical exhertion:<br>Any Strength test; Melee Attack; Grapple; Run; Dodge; Parry; etc.</td>
-</tr>
-<tr>
 <th>Overcome After</th>
-<td>Rest</td>
+<td>Resist (Mental)</td>
 </tr>
 </table>
 <br>
@@ -342,7 +342,7 @@ th, td {
 </tr>
 <tr>
 <th>Prevents</th>
-<td>Anything requiring being on your feet:<br>...................................; etc.</td>
+<td>Anything requiring being on your feet:<br>Manoeuvre; Charge; Run; Tackle; etc.</td>
 </tr>
 <tr>
 <th>Allows</th>
@@ -350,43 +350,15 @@ th, td {
 </tr>
 <tr>
 <th>Bonus To</th>
-<td>Anything improved by having a low profile:<br>Conceal (Self); etc.</td>
+<td>Anything improved by having a low profile:<br>Use Cover; Conceal (Self); etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Anything requiring freedom of movement:<br>...................................; etc.</td>
+<td>Anything requiring freedom of movement:<br>Attack (Melee); Grapple (Initiate); Knock Down; Stun; Dodge; Parry; etc.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Standing up</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Dazzled</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Anything requiring sight:<br> (most actions).</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Resist (Physical)</td>
+<td>Stand Up (Secondary Action)</td>
 </tr>
 </table>
 <br>
@@ -415,6 +387,62 @@ th, td {
 <tr>
 <th>Overcome After</th>
 <td>Resist (Physical)</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="2"><i>Treated</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>Effects of Bleeding Out</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>Rest</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Treat Wounds</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Rest; becoming <i>Wounded</i></td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
+<th colspan="2"><i>Wounded</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>Rest</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Rest</td>
 </tr>
 </table>
 <br>
@@ -592,33 +620,6 @@ th, td {
 
 
 <h2>Other Situational Aspects</h2>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Burning</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>Darkness in a radius of 1m per Aspect level.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn, the target takes 1d5+x Energy damage (where x is the Aspect's level) ignoring Armour and Toughness, upgrading the Aspect on a 5. A <i>Burning</i> target who dies creates an area of <i>Fire</i>.</tr>
-<tr>
-<th>Bonus To</th>
-<td>Ignite</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Extinguish Fire; target dying.</td>
-</tr>
-</table>
-<br>
 
 
 <table>
