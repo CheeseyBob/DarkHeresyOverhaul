@@ -122,18 +122,25 @@ Test Agility against that character's Agility to determine who's action is resol
 <td>Target takes a hit; -10 penalty to target's Cover per DoS</td>
 </tr>
 <tr>
-<td>Grapple (Initiate)</td>
+<td>Reload (Main)</td>
 <td>Main Action</td>
-<td>Basic Skill</td>
-<td>Weapon Skill</td>
-<td>Target becomes <i>Grappled</i></td>
+<td>Basic</td>
+<td>Ballistic Skill</td>
+<td>Get 2 steps towards reloading a firearm; 1 on a failure</td>
 </tr>
 <tr>
 <td>Grapple</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Strength</td>
-<td>Upgrade or overcome <i>Grappled</i></td>
+<td>Target becomes <i>Grappled</i></td>
+</tr>
+<tr>
+<td>Grapple (Break)</td>
+<td>Main Action</td>
+<td>Basic Skill</td>
+<td>Strength</td>
+<td>Overcome <i>Grappled</i></td>
 </tr>
 <tr>
 <td>Knock Down</td>
@@ -185,6 +192,13 @@ Test Agility against that character's Agility to determine who's action is resol
 <td>Give a -10 penalty to Parry or Dodge</td>
 </tr>
 <tr>
+<td>Reload (Secondary)</td>
+<td>Secondary Action</td>
+<td>Basic</td>
+<td>-</td>
+<td>Get 1 step towards reloading a firearm</td>
+</tr>
+<tr>
 <td>Duck</td>
 <td>Reaction</td>
 <td>Basic</td>
@@ -214,7 +228,7 @@ Test Agility against that character's Agility to determine who's action is resol
 </tr>
 <tr>
 <td>Use Cover</td>
-<td>Passive Opposition</td>
+<td>Passive</td>
 <td>Basic</td>
 <td>Cover</td>
 <td>Avoid a hit; -1 hit per DoS</td>
@@ -342,21 +356,21 @@ Test Agility against that character's Agility to determine who's action is resol
 </tr>
 <tr>
 <td>Notice</td>
-<td>Passive Opposition</td>
+<td>Passive</td>
 <td>Basic Skill</td>
 <td>Perception</td>
 <td>Detect the presence of something hidden</td>
 </tr>
 <tr>
 <td>Resist Physically</td>
-<td>Passive Opposition</td>
+<td>Passive</td>
 <td>Basic</td>
 <td>Toughness</td>
 <td>Oppose becoming or overcome being <i>Stunned</i>, <i>Poisoned</i>, etc.</td>
 </tr>
 <tr>
 <td>Resist Mentally</td>
-<td>Passive Opposition</td>
+<td>Passive</td>
 <td>Basic</td>
 <td>Willpower</td>
 <td>Oppose becoming or overcome being <i>Frenzied</i>, <i>Frightened</i>, <i>Pinned</i>, etc.</td>
@@ -384,55 +398,27 @@ Test Agility against that character's Agility to determine who's action is resol
 </tr>
 <tr>
 <td>Deceive</td>
-<td>Passive Action</td>
+<td>Passive</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
 <td>Come across as speaking truthfully</td>
 </tr>
 <tr>
 <td>Read Person</td>
-<td>Passive Action</td>
+<td>Passive</td>
 <td>Basic Skill</td>
 <td>Perception</td>
 <td>Gain insight into a person's truthfullness, temperament or personality</td>
 </tr>
 <tr>
 <td>Recall Common Lore</td>
-<td>Passive Action</td>
+<td>Passive</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
 <td>Recall general information about a topic</td>
 </tr>
 <tr>
 <th colspan="1">Advanced Actions</th>
-</tr>
-<tr>
-<td>Recall Forbidden Lore</td>
-<td>Passive Action</td>
-<td>Skill</td>
-<td>Intelligence</td>
-<td>Recall hidden or proscribed knowledge about a topic</td>
-</tr>
-<tr>
-<td>Recall Scholastic Lore</td>
-<td>Passive Action</td>
-<td>Skill</td>
-<td>Intelligence</td>
-<td>Recall deep or specialised knowledge about a topic</td>
-</tr>
-<tr>
-<td>Sense Immaterium</td>
-<td>Passive Opposition</td>
-<td>Skill</td>
-<td>Perception</td>
-<td>Detect the presence of something warp-related</td>
-</tr>
-<tr>
-<td>Sweeping Blow</td>
-<td>Full Action</td>
-<td>Talent</td>
-<td>Weapon Skill</td>
-<td>Attack (Melee); +1 hit on another target per DoS</td>
 </tr>
 <tr>
 <td>Agile Strike</td>
@@ -449,11 +435,39 @@ Test Agility against that character's Agility to determine who's action is resol
 <td>Move And Attack (Ranged) with an extra Move</td>
 </tr>
 <tr>
-<td>Use Tech</td>
-<td>Main Action</td>
+<td>Focus Power</td>
+<td>*</td>
+<td>Talent</td>
+<td>Willpower</td>
+<td>Test Willpower to use a Psychic Power</td>
+</tr>
+<tr>
+<td>Recall Forbidden Lore</td>
+<td>Passive</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Use a difficult tech item</td>
+<td>Recall hidden or proscribed knowledge about a topic</td>
+</tr>
+<tr>
+<td>Recall Scholastic Lore</td>
+<td>Passive</td>
+<td>Skill</td>
+<td>Intelligence</td>
+<td>Recall deep or specialised knowledge about a topic</td>
+</tr>
+<tr>
+<td>Sense Immaterium</td>
+<td>Passive</td>
+<td>Skill</td>
+<td>Perception</td>
+<td>Detect the presence of something warp-related</td>
+</tr>
+<tr>
+<td>Sweeping Blow</td>
+<td>Full Action</td>
+<td>Talent</td>
+<td>Weapon Skill</td>
+<td>Attack (Melee); +1 hit on another target per DoS</td>
 </tr>
 <tr>
 <td>Treat Wounds (First Aid)</td>
@@ -461,6 +475,13 @@ Test Agility against that character's Agility to determine who's action is resol
 <td>Skill</td>
 <td>Intelligence</td>
 <td>Target becomes <i>Treated</i> (max 1 level)</td>
+</tr>
+<tr>
+<td>Use Tech</td>
+<td>Main Action</td>
+<td>Skill</td>
+<td>Intelligence</td>
+<td>Use a difficult tech item</td>
 </tr>
 </table>
 <br>

@@ -32,12 +32,13 @@ th, td {
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Sprinter:</b> Your maximum bonus Movement is three times your base Movement, rather than two times.</td>
+<td>Agility</td>
+<td>200</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>xxxxx:</b>
+xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
 </tr>
@@ -53,12 +54,14 @@ th, td {
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>xxxxx:</b>
+xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>xxxxx:</b>
+xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
 </tr>
@@ -74,9 +77,9 @@ th, td {
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Leap Up:</b> You can stand up without spending a Secondary Action.</td>
+<td>Agility</td>
+<td>200</td>
 </tr>
 <tr>
 <td><b>xxxxx:</b> xxxxx</td>
@@ -112,18 +115,108 @@ th, td {
 <table>
 <tr>
 <th>Talent</th>
+<th>Requirement</th>
 <th>Aptitude</th>
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Psyker:</b> xxxxx</td>
+<td><b>Sanctioned Psyker:</b>
+You can take Psy Rating Talents and Psychic Powers. You aquire the Sense Immaterium Skill when you take this Talent.</td>
+<td>Adeptus Astra Telepathica Background</td>
 <td>Willpower</td>
-<td>xxx</td>
+<td>400</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Unsanctioned Psyker:</b>
+You can take Psy Rating Talents and Psychic Powers. You aquire the Sense Immaterium Skill and get 1d10+5 Corruption points when you take this Talent.</td>
+<td>35 Willpower</td>
+<td>Willpower</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Psy Rating 1:</b> You can Focus Power with a Psy Rating of 1.</td>
+<td>Sanctioned Psyker or Unsanctioned Psyker</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Psy Rating 2:</b>
+You can Focus Power with a Psy Rating of 2.</td>
+<td>Psy Rating 1</td>
+<td>Willpower</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Psy Rating 3:</b>
+You can Focus Power with a Psy Rating of 3.</td>
+<td>Psy Rating 2</td>
+<td>Willpower</td>
+<td>1200</td>
+</tr>
+<tr>
+<td><b>Psy Rating 4:</b>
+You can Focus Power with a Psy Rating of 4.</td>
+<td>Psy Rating 3</td>
+<td>Willpower</td>
+<td>1600</td>
+</tr>
+<tr>
+<td><b>Psy Rating 5:</b>
+You can Focus Power with a Psy Rating of 5.</td>
+<td>Psy Rating 4</td>
+<td>Willpower</td>
+<td>2000</td>
+</tr>
+<tr>
+<td><b>Draw Deeper:</b>
+When you Focus Power, you can add a number of d10 up to your Willpower Bonus to the Potency roll. For each die you add, you give a +10 bonus to Psychic Phenomena.</td>
+<td>Psy Rating 2</td>
+<td>Willpower</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Mastered ([Psychic Power]):</b>
+Get a +20 bonus to Focus Power for the chosen Psychic Power.
+<br>*XP cost is the same as the chosen Psychic Power. 
+</td>
+<td>-</td>
+<td>Willpower</td>
+<td>*</td>
+</tr>
+<tr>
+<td><b>Power Juggler:</b>
+You can keep multiple Psychic Powers sustained simultaneously, splitting your Psy Rating between them how you wish.</td>
+<td>Psy Rating 2</td>
+<td>Willpower</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Subtle Psyker:</b>
+When you Focus Power, other characters cannot tell you are doing anything unless they are already directly observing you and they successfully Inspect (you can Deceive to oppose).</td>
+<td>40 Willpower</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Strong Connection:</b>
+When you Focus Power, you add your Willpower Bonus to the Potency roll.</td>
+<td>Psy Rating 1</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Strong Mind:</b>
+Get a +20 bonus to Resist (Mental) against Psychic Powers.</td>
+<td>-</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>The Constant Threat:</b>
+When a character within 10m triggers Psychic Phenomena, you can use Reflex to take your turn before the phenomena is resolved.</td>
+<td>-</td>
+<td>Perception</td>
+<td>400</td>
 </tr>
 </table>
 <br>
@@ -347,9 +440,8 @@ th, td {
 <li><b>Lightning Attack:</b> Get a +10 bonus to Flurry of Blows.</li>
 <li><b>Quick Dagger:</b> Small bladed weapons get (+1|+2) hits.</li>
 <li><b>Quick Blade:</b> Standard bladed weapons get (+0|+1) hits.</li>
-<li><b>Sprinter:</b> Your maximum bonus Movement is three times your base Movement, rather than two times.</li>
+
 <li><b>Quick Draw:</b> Draw your weapon without spending an Action.</li>
-<li><b>Leap Up:</b> Stand without spending an Action.</li>
 <li><b>Precision Strike:</b> With a Small bladed weapon, Melee Attack with maximum hits reduced to 1 and a +1 bonus to damage for each Degree of Success.</li>
 <li><b>Careful Shot:</b> Get an extra +10 when applying a bonus from Aim.</li>
 <li><b>Careful Strike:</b> Get an extra +10 when applying a bonus from Bide.</li>
@@ -368,7 +460,6 @@ th, td {
 <li><b>Independent Targeting:</b> When wielding two ranged weapons, you can Ranged Attack against two targets, assigning hits from one weapon to the second target.</li>
 <li><b>Fast Retargeting:</b> You can Extended Fire against two targets, assigning each hit to either of the targets.</li>
 <li><b>Blood Filters:</b>You can selectively choose not to Resist Chems if you wish, in which case the Aspect is downgraded once per hour.</li>
-<li><b>Leap Up:</b> You can stand up without spending a Secondary Action.</li>
 <li><b>:</b></li>
 <li><b>:</b></li>
 <li><b>:</b></li>
@@ -697,7 +788,7 @@ th, td {
 <td>200</td>
 </tr>
 <tr>
-<td><b>Unveiled Secrets (Psykers):</b> You can use Recall Forbidden Lore regarding psykers, the effects of their powers, their dangers and the extent of their capabilities.</li></td>
+<td><b>Unveiled Secrets (Psykers):</b> You can use Recall Forbidden Lore regarding psykers, the effects of their powers, their dangers and the extent of their capabilities.</td>
 <td>Intelligence</td>
 <td>200</td>
 </tr>

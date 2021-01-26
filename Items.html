@@ -15,43 +15,594 @@ th, td {
 
 
 <h1>Items</h1>
+<p>A character can wear 1 Clothing Item, 1 Armour Item and 4 Apparel Items, and can hold an Item in each hand. Wearing more than this makes the character become <i>Encumbered</i> for each extra Item. Some Apparel Items can hold other Items when worn. Tricial sized Items can always be carried or worn without penalty.</p>
 
 
-
-***** Inventory system & Item Sizes *****
-> Armour 1 Item
-> Clothing 1 Item
-> Wield: 2 Standard Size Items / 1 Bulky Item
-> Inventory: 5(??) Size Total
-
+<h3>Sizes</h3>
 <table>
 <tr>
-<th>Item Size</th>
+<th>Size</th>
+<th>Items</th>
+<th>Characters</th>
+<th>To Hit</th>
+<th>Stealth</th>
+<th>Movement</th>
 <th>Examples</th>
 </tr>
 <tr>
-<td>Trivial(0)</td>
-<td>Pocket watch; ID card; jewelery</td>
+<td>0</td>
+<td>Trivial</td>
+<td>Negligable</td>
+<td>-40</td>
+<td>+40</td>
+<td>AB-4</td>
+<td>Jewelery; Flies</td>
 </tr>
 <tr>
-<td>Small(1)</td>
-<td>Pistol; grenade; dagger; hip flask</td>
+<td>1</td>
+<td>Small</td>
+<td>Miniscule</td>
+<td>-30</td>
+<td>+30</td>
+<td>AB-3</td>
+<td>Pistol; Large Rat</td>
 </tr>
 <tr>
-<td>Regular(2)</td>
-<td>Rifle; sword</td>
+<td>2</td>
+<td>Standard</td>
+<td>Puny</td>
+<td>-20</td>
+<td>+20</td>
+<td>AB-2</td>
+<td>Rifle; Dog</td>
 </tr>
 <tr>
-<td>Bulky(3)</td>
-<td>Heavy machine gun; rocket launcher;</td>
+<td>3</td>
+<td>Bulky</td>
+<td>Scrawny</td>
+<td>-10</td>
+<td>+10</td>
+<td>AB-1</td>
+<td>Rocket Launcher; Child</td>
 </tr>
 <tr>
-<td>Large(4)</td>
-<td>Power Armour Backpack</td>
+<td>4</td>
+<td>Large</td>
+<td>Average</td>
+<td>+0</td>
+<td>+0</td>
+<td>AB</td>
+<td>Suit of Armour; Human</td>
 </tr>
 <tr>
-<td>Massive(5+)</td>
+<td>5</td>
+<td>Very Large</td>
+<td>Hulking</td>
+<td>+10</td>
+<td>-10</td>
+<td>AB+1</td>
+<td>Motorbike; Human in Power Armour</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Massive</td>
+<td>Massive</td>
+<td>+20</td>
+<td>-20</td>
+<td>AB+2</td>
+<td>Car</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Massive</td>
+<td>Massive</td>
+<td>+30</td>
+<td>-30</td>
+<td>AB+3</td>
+<td>Van</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Massive</td>
+<td>Massive</td>
+<td>+40</td>
+<td>-40</td>
+<td>AB+4</td>
+<td>Battle Tank</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Massive</td>
+<td>Massive</td>
+<td>+50</td>
+<td>-50</td>
+<td>AB+5</td>
+<td>House</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Massive</td>
+<td>Massive</td>
+<td>+60</td>
+<td>-60</td>
+<td>AB+6</td>
+<td>Large Building</td>
+</tr>
+</table>
+<br>
+
+<p>A characer can wield with one hand items 3 steps smaller than they are (Average character can wield Small(1) items). Using both hands, a character can haul objects up to their own size. Larger objects can only be dragged.</p>
+
+
+<h3>Aquiring Items - Purchase and Requisition</h3>
+<p>Characters can aquire items and services either through payment and barter, or by using their influence and authority to requisition what is needed. Requisition is affected by:</p>
+<ul>
+<li>The justification you give.</li>
+<li>Whether you reveal you are working for the Inquisition.</li>
+<li>The NPC's disposition towards you.</li>
+</ul>
+
+
+<table>
+<tr>
+<th>Availability</th>
+<th>Modifier</th>
+<th>Price Bracket</th>
+<th>Price Roll</th>
+</tr>
+<tr>
+<td>Ubiquitous</td>
+<td>Automatic</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Abundant</td>
+<td>+30</td>
+<td>1-10</td>
+<td>1d10</td>
+</tr>
+<tr>
+<td>Plentiful</td>
+<td>+20</td>
+<td>10-30</td>
+<td>1d10+10</td>
+</tr>
+<tr>
+<td>Common</td>
+<td>+10</td>
+<td>30-100</td>
+<td>3d10+30</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>+0</td>
+<td>100-300</td>
+<td>10 x (1d10 + 10)</td>
+</tr>
+<tr>
+<td>Scarce</td>
+<td>-10</td>
+<td>300-1000</td>
+<td>10 x (3d10 + 30)</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>-20</td>
+<td>1000-3000</td>
+<td>100 x (1d10 + 10)</td>
+</tr>
+<tr>
+<td>Very Rare</td>
+<td>-30</td>
+<td>3000-10,000</td>
+<td>100 x (3d10 + 30)</td>
+</tr>
+<tr>
+<td>Extremely Rare</td>
+<td>-40</td>
+<td>10,000-30,000</td>
+<td>1,000 x (1d10 + 10)</td>
+</tr>
+<tr>
+<td>Near Unique</td>
+<td>-50</td>
+<td>30,000-100,000</td>
+<td>1,000 x (3d10 + 30)</td>
+</tr>
+<tr>
+<td>Unique</td>
+<td>-60</td>
+<td>100,000+</td>
+<td>10,000 x (1d10 + 10)</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Social Class</th>
+<th>Baseline Gelt/Day</th>
+<th>Peak Gelt/Day</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Outcasts</td>
+<td>-</td>
+<td>-</td>
+<td>Those that have no rightful place within the structure of Imperial society, living below even the lowest classes.</td>
+</tr>
+<tr>
+<td>Drudging Classes</td>
+<td>5</td>
+<td>10</td>
+<td>Those that work in the fields, factoriums and hives of the Imperium, by far making up the bulk of mankind.</td>
+</tr>
+<tr>
+<td>Military Class</td>
+<td>10</td>
+<td>20</td>
+<td>Those that fight.</td>
+</tr>
+<tr>
+<td>Supine Class</td>
+<td>15</td>
+<td>30</td>
+<td>Those that serve classes better than themselves, benefiting from the wealth of their masters.</td>
+</tr>
+<tr>
+<td>Learned Class</td>
+<td>20</td>
+<td>50</td>
+<td>Those that make their way with knowledge.</td>
+</tr>
+<tr>
+<td>Trading Class</td>
+<td>25</td>
+<td>75</td>
+<td>Those that buy and sell or have specialist trades with which to make their living.</td>
+</tr>
+<tr>
+<td>Mechanicus</td>
+<td>30</td>
+<td>90</td>
+<td>Those that follow the Machine God are a class unto themselves.</td>
+</tr>
+<tr>
+<td>Ministorum</td>
+<td>40</td>
+<td>120</td>
+<td>Those of the Cult of the Emperor and benefit greatly from the uncounted wealth of His domain.</td>
+</tr>
+<tr>
+<td>Nobility</td>
+<td>500</td>
+<td>-</td>
+<td>Those born to wealth and power by right of blood.</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Services</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Labourer (1 Day's Work)</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Soldier (1 Day's Work)</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Skilled Artisan (1 Day's Work)</td>
+<td>Common</td>
+</tr>
+<tr>
+<th>Provisions</th>
+</tr>
+<tr>
+<td>Poor Provisions (1 Meal)</td>
+<td>Ubiquitous</td>
+</tr>
+<tr>
+<td>Standard Provisions (1 Meal)</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Good Provisions (1 Meal)</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Best Provisions (1 Meal)</td>
+<td>Common</td>
+</tr>
+<tr>
+<th>Accomodation</th>
+</tr>
+<tr>
+<td>Poor Accomodation (1 Night)</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Standard Accomodation (1 Night)</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<th>Transportation</th>
+</tr>
+<tr>
+<td>Poor Transportation (1 Journey)</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Standard Transportation (1 Journey)</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<th>Medical Care</th>
+</tr>
+<tr>
+<td>Poor Medical Care (1 Day/Visit)</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Standard Medical Care (1 Day/Visit)</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Good Medical Care (1 Day/Visit)</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Excellent Medical Care (1 Day/Visit)</td>
+<td>Scarce</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Quality</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Poor</td>
+<td>Increase 1 step</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Good</td>
+<td>Decrease 1 step</td>
+</tr>
+<tr>
+<td>Best</td>
+<td>Decrease 2 steps</td>
+</tr>
+</table>
+<br>
+
+
+<h3>Identifying Items</h3>
+<ul>
+<li>Recall Common/Forbidden/Scholastic Lore to determine how much the character knows.</li>
+<li>Scrutinise to determine how much the character can discover through observation.</li>
+<li>Contemplate to determine how much the character can piece together through deduction.</li>
+</ul>
+
+
+<h3>Crafting</h3>
+<ul>
+<li>Materials and designs: all creations require materials; tech items also require designs.</li>
+<li>Number of steps to craft: 1-5 for simple items; 5-10 for more complicated items; 10+ for very complicated items.</li>
+<li>Difficulty: Typically a +0 bonus, but could be anything from +30 to -30 depending on how complex the item is.</li>
+</ul>
+
+
+<h2>Ranged Weapons</h2>
+<table>
+<tr>
+<th>[Item Name]</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: [Size]</td>
+</tr>
+<tr><td><table>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>Rm</td>
+<td>2Rm</td>
+<td>3Rm</td>
+<td>4Rm</td>
+</tr>
+<tr>
+<td>Bonus:</td>
+<td>+30</td>
+<td>+10</td>
+<td>+0</td>
+<td>-10</td>
+<td>-30</td>
+</tr>
+</table></td></tr>
+<tr>
+<td>RoF: [RoF]</td>
+</tr>
+<tr>
+<td>Capacity: [Capacity] [Ammo Type]</td>
+</tr>
+<tr>
+<td>Reload: [Reload]</td>
+</tr>
+<tr>
+<td>Damage: [Damage] [Type]</td>
+</tr>
+<tr>
+<td><b>[Ability Name]</b>
+<br>[Ability Description]</td>
+</tr>
+</table>
+<br>
+
+<p><b>Range:</b> When you Attack, you get a bonus or penalty for range, according to the table on the weapon card. Use the highest bonus for which the target is within the corresponding distance (for example, you always get a +30 bonus to a target 3m away). Firing at a target beyond the maximum range is ineffective.</p>
+
+<table>
+<tr>
+<th>Type</th>
+<th colspan="6">Range Brackets</th>
+</tr>
+<tr>
 <td></td>
+<td>+30</td>
+<td>+10</td>
+<td>+0</td>
+<td>-10</td>
+<td>-30</td>
+</tr>
+<tr>
+<td>Very Short:</td>
+<td>3m</td>
+<td>8m</td>
+<td>15m</td>
+<td>30m</td>
+<td>60m</td>
+</tr>
+<tr>
+<td>Short:</td>
+<td>3m</td>
+<td>15m</td>
+<td>30m</td>
+<td>60m</td>
+<td>120m</td>
+</tr>
+<tr>
+<td>Average:</td>
+<td>3m</td>
+<td>30m</td>
+<td>60m</td>
+<td>120m</td>
+<td>240m</td>
+</tr>
+<tr>
+<td>Long:</td>
+<td>3m</td>
+<td>50m</td>
+<td>100m</td>
+<td>200m</td>
+<td>400m</td>
+</tr>
+<tr>
+<td>Very Long:</td>
+<td>3m</td>
+<td>75m</td>
+<td>150m</td>
+<td>300m</td>
+<td>600m</td>
+</tr>
+<tr>
+<td>Extreme:</td>
+<td>3m</td>
+<td>150m</td>
+<td>300m</td>
+<td>600m</td>
+<td>1,200m</td>
+</tr>
+</table>
+<br>
+
+<p><b>RoF (Rate of Fire):</b> This is the maximum number of shots fired by the weapon in one turn. One shot is fired when you Attack, whereas Attack Repeatedly fires a number of shots equal to the weapon's RoF.</p>
+
+<p><b>Capacity:</b> How much ammo the weapon can hold.</p>
+
+<p><b>Reload:</b> How many Secondary Actions it takes to reload the weapon. You can also Reload as a Main Action to speed this up.</p>
+
+<p><b>Damage:</b> The damage the target takes from each hit. The Type determines how effective armour is and what effects there are if critical damage is inflicted.</p>
+
+<p><b>Availability:</b> The base availability for Ranged Weapons is Plentiful.</p>
+
+<table>
+<tr>
+<th colspan="9">Availability Bonuses and Penalties</th>
+</tr>
+<tr>
+<th>Av.</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+</tr>
+<tr>
+<td>+3</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Extreme<br>(10)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>+2</td>
+<td>Large<br>(4)</td>
+<td>Very Short<br>(15m)</td>
+<td>Very Slow<br>(1)</td>
+<td>Very Low<br>(1x RoF)</td>
+<td>Very Slow<br>(6)</td>
+<td>Very Low<br>(1d10)</td>
+</tr>
+<tr>
+<td>+1</td>
+<td>Bulky<br>(3)</td>
+<td>Short<br>(30m)</td>
+<td>Slow<br>(2)</td>
+<td>Low<br>(2x RoF)</td>
+<td>Slow<br>(4)</td>
+<td>Low<br>(1d10+1)</td>
+</tr>
+<tr>
+<td>+0</td>
+<td>Standard<br>(2)</td>
+<td>Average<br>(60m)</td>
+<td>Average<br>(3)</td>
+<td>Average<br>(3x RoF)</td>
+<td>Average<br>(2)</td>
+<td>Average<br>(1d10+2)</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>Small<br>(1)</td>
+<td>Long<br>(100m)</td>
+<td>Fast<br>(6)</td>
+<td>High<br>(6x RoF)</td>
+<td>Fast<br>(1)</td>
+<td>High<br>(1d10+3)</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>-</td>
+<td>Very Long<br>(150m)</td>
+<td>Very Fast<br>(10)</td>
+<td>Very High<br>(10x RoF)</td>
+<td>-</td>
+<td>Very High<br>(1d10+6)</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>-</td>
+<td>Extreme<br>(300m)</td>
+<td>-</td>
+<td>Extreme<br>(20x RoF)</td>
+<td>-</td>
+<td>Extreme<br>(1d10+10)</td>
 </tr>
 </table>
 <br>
@@ -59,63 +610,519 @@ th, td {
 
 <table>
 <tr>
-<th></th>
-<th>Holdable</th>
-<th>Usable</th>
+<th colspan="10">Negative Special Rules (Availability +1)</th>
 </tr>
 <tr>
-<th>One Hand</th>
-<td>Regular(2)</td>
-<td>Small(1)</td>
+<td><b>External Ammo</b>
+<br>This weapon draws ammo from a separate item, which must be kept next to the weapon for it to fuction.</td>
 </tr>
 <tr>
-<th>Both Hands</th>
-<td>Large(4)</td>
-<td>Regular(2)</td>
+<td><b>Incremental Reload</b>
+<br>Only one shot is loaded with each completed reload.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -1)</th>
+</tr>
+<tr>
+<td><b>Accurate</b>
+<br>Get an extra +10 bonus when you Attack Carefully or after you Aim.</td>
+</tr>
+<tr>
+<td><b>Armour Damage</b>
+<br>Each point of damage reduced by cover or armour deals 1 AP damage to that cover or armour.</td>
+</tr>
+<tr>
+<td><b>Penetrating</b>
+<br>If Armour would not reduce a hit's damage to zero, the damage is not reduced.</td>
+</tr>
+<tr>
+<td><b>Tearing</b>
+<br>Roll two d10 for damage and use the highest.</td>
+</tr>
+<tr>
+<td><b>Melee Attack</b>
+<br>When you Attack (Melee) with this weapon, use the following stats:
+<br>Bonus: +20
+<br>Hits: 2
+<br>Damage: 1d10+SB+1 Rending</td>
+</tr>
+<tr>
+<td><b>Laser Sight</b>
+<br>The +30 range bonus applies up to 6m.</td>
+</tr>
+<tr>
+<td><b>Reliable</b>
+<br>This weapon can oppose becoming <i>Jammed</i> with a Test against a Characteristic of 90.</td>
+</tr>
+<tr>
+<td><b>Scoped</b>
+<br>If you Aim as a Full Action, you ignore penalties for range.</td>
+</tr>
+<tr>
+<td><b>Spray (Short)</b>
+<br>When you Attack (Ranged), all characters within 8m in a 30 degree arc are hit.</td>
+</tr>
+<tr>
+<td><b>Suppressor</b>
+<br>Give a -20 penalty to Notice where this weapon was fired from.</td>
+</tr>
+<tr>
+<td><b>Suppressing Fire</b>
+<br>When you Attack Repeatedly (Ranged) with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within the +0 range in a 45 degree arc become <i>Pinned</i>.</td>
+</tr>
+<tr>
+<td><b>Volley</b>
+<br>When you Attack Repeatedly (Ranged), choose an extra target within a 30 degree arc of the first. Each hit rolled gives one hit on both targets.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -2)</th>
+</tr>
+<tr>
+<td><b>Devastating</b>
+<br>This weapon gets an extra 1d10 damage.</td>
+</tr>
+<tr>
+<td><b>Scatter Shot</b>
+<br>Within the +30 range, each hit counts as three hits. Within the +10 range, each hit counts as two hits. The weapon is ineffective beyond the -10 range.</td>
+</tr>
+<tr>
+<td><b>Spray (Long)</b>
+<br>When you Attack (Ranged), all characters within 15m in a 30 degree arc are hit.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -3)</th>
+</tr>
+<tr>
+<td><b>Devastating(2)</b>
+<br>This weapon gets an extra 2d10 damage.</td>
 </tr>
 </table>
+<br>
 
 
-<p>Using an item above the usable size gives a -20 penalty per step. Items over the holdable size can only be dragged (Drag Object).</p>
+<table>
+<tr>
+<th colspan="3">Variations</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Change</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Old -</td>
+<td>- Reliable</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Shoddy -</td>
+<td>RoF -1</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Weak -</td>
+<td>Damage -1</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Belt-Fed -</td>
+<td>+External Ammo; Capacity +3; Reload -2</td>
+<td>+0</td>
+</tr>
+<tr>
+<td>- with Bayonet</td>
+<td>+Melee Attack</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>- with Laser Sight</td>
+<td>+Laser Sight</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>New -</td>
+<td>+Reliable</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Scoped -</td>
+<td>+Scoped</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Strong -</td>
+<td>Damage +1</td>
+<td>-1</td>
+</tr>
+</table>
+<br>
 
 
-<br>*** I'm not happy with how melee weapon sizes work out like this - keep sizes, but have hand requirement seperate?? ***<br>
+<table>
+<tr>
+<th colspan="10">Ranged Weapons - Las (Energy Damage)</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Las Carbine</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Slow</td>
+<td>Very High</td>
+<td>Average</td>
+<td>Low</td>
+<td>Reliable</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Laspistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Slow</td>
+<td>Very High</td>
+<td>Average</td>
+<td>Low</td>
+<td>Reliable</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Lasgun</td>
+<td>Standard</td>
+<td>Long</td>
+<td>Average</td>
+<td>High</td>
+<td>Average</td>
+<td>Low</td>
+<td>Reliable</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Long-Las</td>
+<td>Standard</td>
+<td>Very Long</td>
+<td>Very Slow</td>
+<td>High</td>
+<td>Average</td>
+<td>High</td>
+<td>Accurate; Reliable</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Lascannon</td>
+<td>Bulky</td>
+<td>Extreme</td>
+<td>Very Slow</td>
+<td>Average</td>
+<td>Slow</td>
+<td>Extreme</td>
+<td>Armour Damage; Devastating(2)</td>
+<td>Very Rare</td>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Solid Projectile (Impact Damage)</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Double-Barrelled Shotgun</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Slow</td>
+<td>Very Low</td>
+<td>Average</td>
+<td>High</td>
+<td>Reliable; Scatter Shot</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Stub Revolver</td>
+<td>Small</td>
+<td>Average</td>
+<td>Slow</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Incremental Reload; Reliable</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Stubber</td>
+<td>Standard</td>
+<td>Long</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>-</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Stub Pistol</td>
+<td>Small</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>-</td>
+<td>Plentiful</td>
+</tr>
+<tr>
+<td>Autopistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Fast</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Suppressing Fire</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Pump-Action Shotgun</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Slow</td>
+<td>High</td>
+<td>Fast</td>
+<td>High</td>
+<td>Incremental Reload; Scatter Shot</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Stub Rifle</td>
+<td>Standard</td>
+<td>Long</td>
+<td>Slow</td>
+<td>Low</td>
+<td>Average</td>
+<td>High</td>
+<td>Accurate; Reliable</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>Autogun</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Fast</td>
+<td>High</td>
+<td>Average</td>
+<td>Average</td>
+<td>Suppressing Fire</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Combat Shotgun</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Average</td>
+<td>High</td>
+<td>Fast</td>
+<td>Average</td>
+<td>Scatter Shot</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Belt-Fed Heavy Stubber</td>
+<td>Bulky</td>
+<td>Long</td>
+<td>Fast</td>
+<td>Extreme</td>
+<td>Very Slow</td>
+<td>Very High</td>
+<td>External Ammo; Suppressing Fire</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Heavy Stubber</td>
+<td>Bulky</td>
+<td>Long</td>
+<td>Fast</td>
+<td>Average</td>
+<td>Average</td>
+<td>Very High</td>
+<td>Suppressing Fire</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Hunting Rifle</td>
+<td>Standard</td>
+<td>Very Long</td>
+<td>Slow</td>
+<td>Low</td>
+<td>Average</td>
+<td>Very High</td>
+<td>Accurate; Reliable</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Belt-Fed Storm Gun</td>
+<td>Bulky</td>
+<td>Long</td>
+<td>Very Fast</td>
+<td>Extreme</td>
+<td>Extreme</td>
+<td>Very High</td>
+<td>External Ammo; Suppressing Fire; Volley</td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>Storm Gun</td>
+<td>Bulky</td>
+<td>Long</td>
+<td>Very Fast</td>
+<td>Average</td>
+<td>Slow</td>
+<td>Very High</td>
+<td>Suppressing Fire; Volley</td>
+<td>Rare</td>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Bolt (Explosive Damage)</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Bolt Pistol</td>
+<td>Small</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Very High</td>
+<td>Penetrating; Tearing</td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>Bolter</td>
+<td>Standard</td>
+<td>Long</td>
+<td>Average</td>
+<td>High</td>
+<td>Average</td>
+<td>Very High</td>
+<td>Penetrating; Tearing</td>
+<td>Very Rare</td>
+</tr>
+<tr>
+<td>Heavy Bolter</td>
+<td>Bulky</td>
+<td>Very Long</td>
+<td>High</td>
+<td>High</td>
+<td>Long</td>
+<td>Extreme</td>
+<td>Penetrating; Tearing</td>
+<td>Extremely Rare</td>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Flame</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Exotic</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+</table>
+<br>
 
 
-<br>***** unify Item & Character sizes?? *****<br>
+** THESE NEED REVIEWING **
+
+<br>
+<br>
+<a href="ItemCards/Autopistol-Exterminator.html" target="_blank">Autopistol with Exterminator Cartridge</a>
+<br>
+<a href="ItemCards/StubPistol-Compact.html" target="_blank">Compact Stub Pistol</a>
+<br>
+<a href="ItemCards/InfernoPistol.html" target="_blank">Inferno Pistol</a>
+<br>
+<a href="ItemCards/MeltaGun-FeedLine.html" target="_blank">Melta Gun with Feed Line</a>
+<br>
+<a href="ItemCards/PlasmaPistol.html" target="_blank">Plasma Pistol</a>
+<br>
+<a href="ItemCards/PlasmaGun.html" target="_blank">Plasma Gun</a>
+<br>
+<a href="ItemCards/PlasmaGun-FeedLine.html" target="_blank">Plasma Gun with Feed Line</a>
+<br>
+<a href="ItemCards/HandFlamer.html" target="_blank">Hand Flamer</a>
+<br>
+<a href="ItemCards/Flamer.html" target="_blank">Flamer</a>
+<br>
+<a href="ItemCards/Flamer-FeedLine.html" target="_blank">Flamer with Feed Line</a>
+<br>
+<a href="ItemCards/HandBow.html" target="_blank">Hand Bow</a>
+<br>
+<a href="ItemCards/FlintlockPistol.html" target="_blank">Flintlock Pistol</a>
+<br>
+<a href="ItemCards/Musket.html" target="_blank">Musket</a>
+<br>
+<a href="ItemCards/Bow.html" target="_blank">Bow</a>
+<br>
+<a href="ItemCards/Crossbow.html" target="_blank">Crossbow</a>
+<br>
+<a href="ItemCards/NeedlePistol.html" target="_blank">Needle Pistol</a>
+<br>
+<a href="ItemCards/NeedleRifle.html" target="_blank">Needle Rifle</a>
+<br>
+<a href="ItemCards/WebPistol.html" target="_blank">Web Pistol</a>
+<br>
+<a href="ItemCards/Webber.html" target="_blank">Webber</a>
+<br>
+<a href="ItemCards/GrenadeLauncher.html" target="_blank">Grenade Launcher</a>
+<br>
+<a href="ItemCards/RPGLauncher.html" target="_blank">RPG Launcher</a>
+<br>
 
 
-<br>***** Weapon damage types *****<br>
-
-
-<br>**** item price *****<br>
-
-** As a rough guide, a +10 bonus costs ~100 ?
-
-
-<br>***** item rarity *****<br>
-
-
-
-
-<h3>Crafting</h3>
-
-** Number of Steps to craft<br>
-
-** Difficulty<br>
-
-** Materials and designs<br>
-
-
-
-
-<h2>Ranged Weapons</h2>
-<p>*** Prices need rethinking ***</p>
-
-
-<p><b>Weapon Jams:</b> Whenever you fire a ranged weapon, a roll of 97-100 is an automatic miss and indicates your weapon has <i>Jammed</i>. For Extended Fire, this happens on a roll of 93-100.</p>
-
-<p><b>Range:</b> Use the table to determine the bonus you get to hit when shooting. Use the highest bonus for which the target is within the corresponding distance (for example, you always get a +30 bonus to a target 3m away). Firing at a target beyond the maximum range is ineffective.</p>
 
 
 <table>
@@ -181,293 +1188,132 @@ th, td {
 <td>32m</td>
 <td>40m</td>
 </tr>
-<tr>
-<th colspan="6">Firearms</th>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>R/2</td>
-<td>2R</td>
-<td>4R</td>
-<td>8R</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>5m</td>
-<td>20m</td>
-<td>40m</td>
-<td>80m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>8m</td>
-<td>30m</td>
-<td>60m</td>
-<td>120m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>10m</td>
-<td>40m</td>
-<td>80m</td>
-<td>160m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>15m</td>
-<td>60m</td>
-<td>120m</td>
-<td>240m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>20m</td>
-<td>80m</td>
-<td>160m</td>
-<td>320m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>25m</td>
-<td>100m</td>
-<td>200m</td>
-<td>400m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>30m</td>
-<td>120m</td>
-<td>240m</td>
-<td>480m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>40m</td>
-<td>160m</td>
-<td>320m</td>
-<td>640m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>50m</td>
-<td>200m</td>
-<td>400m</td>
-<td>800m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>60m</td>
-<td>240m</td>
-<td>480m</td>
-<td>960m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>75m</td>
-<td>300m</td>
-<td>600m</td>
-<td>1200m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>90m</td>
-<td>360m</td>
-<td>720m</td>
-<td>1440m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>100m</td>
-<td>400m</td>
-<td>800m</td>
-<td>1600m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>150m</td>
-<td>600m</td>
-<td>1200m</td>
-<td>2400m</td>
-</tr>
 </table>
-
-<p><b>RoF (Rate of Fire):</b> This is the number of shots fired when making an attack with the weapon, which is also the maximum number of hits for that attack. The first number is the standard rate of fire; the second number is the increased rate of fire, used for Extended Fire actions.</p>
-
-<p><b>Ammo:</b> Reloading a weapon takes a Full Action. You can make attacks if you don't have enough ammo loaded - just use the actual number of shots fired for the maximum number of hits.</p>
-
-<table>
-<tr>
-<th colspan="6">[Item Name]</th>
-</tr>
-<tr>
-<td colspan="3">Ranged Weapon</td>
-<td colspan="3">Size: [Size]</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>[R/2]</td>
-<td>[2R]</td>
-<td>[4R]</td>
-<td>[8R]</td>
-</tr>
-<tr>
-<td>Bonus:</td>
-<td>+30</td>
-<td>+10</td>
-<td>+0</td>
-<td>-10</td>
-<td>-30</td>
-</tr>
-<tr>
-<td colspan="3">RoF: [RoF1] | [RoF2]</td>
-<td colspan="3">[Ammo Type]: ____/[Clip Size]</td>
-</tr>
-<tr>
-<td colspan="6">Damage: [Damage] ([Type])</td>
-</tr>
-<tr>
-<td colspan="6"><b>[Ability Name]</b>
-<br>[Ability Description]</td>
-</tr>
-<tr>
-<td colspan="3">Price: [Price]</td>
-<td colspan="3">Rarity: [Rarity]</td>
-</tr>
-</table>
-
-<br>
-<a href="ItemCards/Laspistol.html" target="_blank">Laspistol</a>
-<br>
-<a href="ItemCards/LasCarbine.html" target="_blank">Las Carbine</a>
-<br>
-<a href="ItemCards/Lasgun-Bayonet.html" target="_blank">Lasgun with Bayonet</a>
-<br>
-<a href="ItemCards/LongLas-Scoped.html" target="_blank">Scoped Long Las</a>
-<br>
-<a href="ItemCards/Lascannon.html" target="_blank">Lascannon</a>
-<br>
-<a href="ItemCards/Autopistol.html" target="_blank">Autopistol</a>
-<br>
-<a href="ItemCards/Autopistol-Exterminator.html" target="_blank">Autopistol with Exterminator Cartridge</a>
-<br>
-<a href="ItemCards/StubRevolver.html" target="_blank">Stub Revolver</a>
-<br>
-<a href="ItemCards/StubPistol.html" target="_blank">Stub Pistol</a>
-<br>
-<a href="ItemCards/StubPistol-Silencer.html" target="_blank">Stub Pistol with Silencer</a>
-<br>
-<a href="ItemCards/StubPistol-Compact.html" target="_blank">Compact Stub Pistol</a>
-<br>
-<a href="ItemCards/Autogun.html" target="_blank">Autogun</a>
-<br>
-<a href="ItemCards/Autogun-LaserSight.html" target="_blank">Autogun with Laser Sight</a>
-<br>
-<a href="ItemCards/Stubber.html" target="_blank">Stubber</a>
-<br>
-<a href="ItemCards/HuntingRifle.html" target="_blank">Hunting Rifle</a>
-<br>
-<a href="ItemCards/Shotgun.html" target="_blank">Double-Barrelled Shotgun</a>
-<br>
-<a href="ItemCards/PumpActionShotgun.html" target="_blank">Pump-Action Shotgun</a>
-<br>
-<a href="ItemCards/CombatShotgun.html" target="_blank">Combat Shotgun</a>
-<br>
-<a href="ItemCards/HeavyStubber-DrumFed-Bipod.html" target="_blank">Drum-Fed Heavy Stubber with Bipod</a>
-<br>
-<a href="ItemCards/HeavyStubber-BeltFed-PintleMount.html" target="_blank">Belt-Fed Heavy Stubber with Pintle Mount</a>
-<br>
-<a href="ItemCards/BoltPistol.html" target="_blank">Bolt Pistol</a>
-<br>
-<a href="ItemCards/Bolter.html" target="_blank">Bolter</a>
-<br>
-<a href="ItemCards/HeavyBolter.html" target="_blank">HeavyBolter</a>
-<br>
-<a href="ItemCards/InfernoPistol.html" target="_blank">Inferno Pistol</a>
-<br>
-<a href="ItemCards/MeltaGun-FeedLine.html" target="_blank">Melta Gun with Feed Line</a>
-<br>
-<a href="ItemCards/PlasmaPistol.html" target="_blank">Plasma Pistol</a>
-<br>
-<a href="ItemCards/PlasmaGun.html" target="_blank">Plasma Gun</a>
-<br>
-<a href="ItemCards/PlasmaGun-FeedLine.html" target="_blank">Plasma Gun with Feed Line</a>
-<br>
-<a href="ItemCards/HandFlamer.html" target="_blank">Hand Flamer</a>
-<br>
-<a href="ItemCards/Flamer.html" target="_blank">Flamer</a>
-<br>
-<a href="ItemCards/Flamer-FeedLine.html" target="_blank">Flamer with Feed Line</a>
-<br>
-<a href="ItemCards/HandBow.html" target="_blank">Hand Bow</a>
-<br>
-<a href="ItemCards/FlintlockPistol.html" target="_blank">Flintlock Pistol</a>
-<br>
-<a href="ItemCards/Musket.html" target="_blank">Musket</a>
-<br>
-<a href="ItemCards/Bow.html" target="_blank">Bow</a>
-<br>
-<a href="ItemCards/Crossbow.html" target="_blank">Crossbow</a>
-<br>
-<a href="ItemCards/NeedlePistol.html" target="_blank">Needle Pistol</a>
-<br>
-<a href="ItemCards/NeedleRifle.html" target="_blank">Needle Rifle</a>
-<br>
-<a href="ItemCards/WebPistol.html" target="_blank">Web Pistol</a>
-<br>
-<a href="ItemCards/Webber.html" target="_blank">Webber</a>
-<br>
-<a href="ItemCards/GrenadeLauncher.html" target="_blank">Grenade Launcher</a>
-<br>
-<a href="ItemCards/RPGLauncher.html" target="_blank">RPG Launcher</a>
 <br>
 
 
 <h2>Melee Weapons</h2>
-<p>*** Prices need rethinking ***</p>
+<table>
+<tr>
+<th>[Item Name]</th>
+</tr>
+<tr>
+<td>Melee Weapon</td>
+</tr>
+<tr>
+<td>Size: [Size]</td>
+</tr>
+<tr>
+<td>Bonus: [Bonus]</td>
+</tr>
+<tr>
+<td>Hits: [Hits]</td>
+</tr>
+<tr>
+<td>Damage: [Damage] [Type]</td>
+</tr>
+<tr>
+<td><b>[Ability Name]</b>
+<br>[Ability Description]</td>
+</tr>
+</table>
+<br>
 
-<p><b>Hits:</b> This is the number of hits when making an attack with the weapon. The first number is the standard value; the second number is the increased value, used for Flurry of Blows actions.</p>
+<p><b>Hits:</b> This is the maximum number of hits by the weapon in one turn. If you Attack, you get up to one hit, whereas if you Attack Repeatedly, you can get a number of hits up to the weapon's Hits value.</p>
+
+<p><b>Damage:</b> All Melee Weapons add the wielder's Strength Bonus to the damage.</p>
+
+<p><b>Improvised weapons and fighting unarmed:</b> Stats for improvised weapons and unarmed fighting are given below.</p>
 
 <table>
 <tr>
-<th colspan="6">[Item Name]</th>
+<th>Unarmed</th>
 </tr>
 <tr>
-<td colspan="3">Melee Weapon</td>
-<td colspan="3">Size: [Size]</td>
+<td>Melee Weapon</td>
 </tr>
 <tr>
-<td colspan="6">Hits: [Hits]</td>
+<td>Size: n/a</td>
 </tr>
 <tr>
-<td colspan="6">Damage: [Damage] ([Type])</td>
+<td>Bonus: +20</td>
 </tr>
 <tr>
-<td colspan="6"><b>[Ability Name]</b>
-<br>[Ability Description]</td>
+<td>Hits: 2</td>
 </tr>
 <tr>
-<td colspan="3">Price: [Price]</td>
-<td colspan="3">Rarity: [Rarity]</td>
+<td>Damage: 1d10+SB Impact</td>
 </tr>
 </table>
-
 <br>
+
+<table>
+<tr>
+<th>Small Improvised Weapon</th>
+</tr>
+<tr>
+<td>Melee Weapon</td>
+</tr>
+<tr>
+<td>Size: 1 (Small)</td>
+</tr>
+<tr>
+<td>Bonus: +10</td>
+</tr>
+<tr>
+<td>Hits: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+SB+1 Impact</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Standard Improvised Weapon</th>
+</tr>
+<tr>
+<td>Melee Weapon</td>
+</tr>
+<tr>
+<td>Size: 2 (Standard)</td>
+</tr>
+<tr>
+<td>Bonus: +20</td>
+</tr>
+<tr>
+<td>Hits: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+SB+2 Impact</td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Bulky Improvised Weapon</th>
+</tr>
+<tr>
+<td>Melee Weapon</td>
+</tr>
+<tr>
+<td>Size: 3 (Bulky)</td>
+</tr>
+<tr>
+<td>Bonus: +30</td>
+</tr>
+<tr>
+<td>Hits: 1</td>
+</tr>
+<tr>
+<td>Damage: 1d10+SB+3 Impact</td>
+</tr>
+</table>
+<br>
+
+
 <a href="ItemCards/Axe.html" target="_blank">Axe</a>
 <br>
 <a href="ItemCards/Club.html" target="_blank">Club</a>
