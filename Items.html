@@ -399,8 +399,8 @@ th, td {
 <h3>Crafting</h3>
 <ul>
 <li>Materials and designs: all creations require materials; tech items also require designs.</li>
-<li>Number of steps to craft: 1-5 for simple items; 5-10 for more complicated items; 10+ for very complicated items.</li>
-<li>Difficulty: Typically a +0 bonus, but could be anything from +30 to -30 depending on how complex the item is.</li>
+<li>Number of steps to craft: 1-5 for simple items; 5-10 for more complicated items; 10+ for very complicated items.(??)</li>
+<li>Difficulty: use the availablity bonus/penalty.</li>
 </ul>
 
 
@@ -526,7 +526,7 @@ th, td {
 
 <p><b>Damage:</b> The damage the target takes from each hit. The Type determines how effective armour is and what effects there are if critical damage is inflicted.</p>
 
-<p><b>Availability:</b> The base availability for Ranged Weapons is Plentiful.</p>
+<p><b>Availability:</b> The base availability for Ranged Weapons is Abundant.</p>
 
 <table>
 <tr>
@@ -552,7 +552,7 @@ th, td {
 </tr>
 <tr>
 <td>+2</td>
-<td>Large<br>(4)</td>
+<td>Bulky<br>(3)</td>
 <td>Very Short<br>(15m)</td>
 <td>Very Slow<br>(1)</td>
 <td>Very Low<br>(1x RoF)</td>
@@ -561,7 +561,7 @@ th, td {
 </tr>
 <tr>
 <td>+1</td>
-<td>Bulky<br>(3)</td>
+<td>-</td>
 <td>Short<br>(30m)</td>
 <td>Slow<br>(2)</td>
 <td>Low<br>(2x RoF)</td>
@@ -579,7 +579,7 @@ th, td {
 </tr>
 <tr>
 <td>-1</td>
-<td>Small<br>(1)</td>
+<td>-</td>
 <td>Long<br>(100m)</td>
 <td>Fast<br>(6)</td>
 <td>High<br>(6x RoF)</td>
@@ -588,12 +588,12 @@ th, td {
 </tr>
 <tr>
 <td>-2</td>
-<td>-</td>
+<td>Small<br>(1)</td>
 <td>Very Long<br>(150m)</td>
 <td>Very Fast<br>(10)</td>
 <td>Very High<br>(10x RoF)</td>
 <td>-</td>
-<td>Very High<br>(1d10+6)</td>
+<td>Very High<br>(1d10+5)</td>
 </tr>
 <tr>
 <td>-3</td>
@@ -602,7 +602,7 @@ th, td {
 <td>-</td>
 <td>Extreme<br>(20x RoF)</td>
 <td>-</td>
-<td>Extreme<br>(1d10+10)</td>
+<td>Extreme<br>(1d10+8)</td>
 </tr>
 </table>
 <br>
@@ -621,30 +621,33 @@ th, td {
 <br>Only one shot is loaded with each completed reload.</td>
 </tr>
 <tr>
+<td><b>Overheats</b>
+<br>When this weapon jams, roll a d10:
+<br>1-5: The Aspect is upgraded to <i>Jammed(20)</i>. You take 1d10 Energy Damage unless you choose to drop the weapon.
+<br>6-8: The Aspect is upgraded to <i>Jammed(30)</i>. You take 1d10+2 Energy Damage and drop the weapon.
+<br>9-0: The weapon explodes and is destroyed. You and anyone within 4m takes a hit from the weapon.</td>
+</tr>
+<tr>
 <th colspan="10">Positive Special Rules (Availability -1)</th>
 </tr>
 <tr>
 <td><b>Accurate</b>
-<br>Get an extra +10 bonus when you Attack Carefully or after you Aim.</td>
+<br>Get an extra +10 bonus when you Attack after you Aim or when you Attack Carefully.</td>
 </tr>
 <tr>
 <td><b>Armour Damage</b>
 <br>Each point of damage reduced by cover or armour deals 1 AP damage to that cover or armour.</td>
 </tr>
 <tr>
-<td><b>Penetrating</b>
-<br>If Armour would not reduce a hit's damage to zero, the damage is not reduced.</td>
-</tr>
-<tr>
-<td><b>Tearing</b>
-<br>Roll two d10 for damage and use the highest.</td>
+<td><b>Tearing(X)</b>
+<br>Roll X extra d10 for damage and use the highest.</td>
 </tr>
 <tr>
 <td><b>Melee Attack</b>
 <br>When you Attack (Melee) with this weapon, use the following stats:
 <br>Bonus: +20
 <br>Hits: 2
-<br>Damage: 1d10+SB+1 Rending</td>
+<br>Damage: 1d10+SB+(??) Rending</td>
 </tr>
 <tr>
 <td><b>Laser Sight</b>
@@ -659,8 +662,8 @@ th, td {
 <br>If you Aim as a Full Action, you ignore penalties for range.</td>
 </tr>
 <tr>
-<td><b>Spray (Short)</b>
-<br>When you Attack (Ranged), all characters within 8m in a 30 degree arc are hit.</td>
+<td><b>Storm(N)</b>
+<br>Get a +10 x N bonus to Attack Repeatedly (Ranged) and give a -10 x N penalty to oppose becoming <i>Pinned</i> when you use Suppressing Fire.</td>
 </tr>
 <tr>
 <td><b>Suppressor</b>
@@ -671,88 +674,27 @@ th, td {
 <br>When you Attack Repeatedly (Ranged) with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within the +0 range in a 45 degree arc become <i>Pinned</i>.</td>
 </tr>
 <tr>
-<td><b>Volley</b>
-<br>When you Attack Repeatedly (Ranged), choose an extra target within a 30 degree arc of the first. Each hit rolled gives one hit on both targets.</td>
-</tr>
-<tr>
 <th colspan="10">Positive Special Rules (Availability -2)</th>
 </tr>
 <tr>
-<td><b>Devastating</b>
-<br>This weapon gets an extra 1d10 damage.</td>
+<td><b>Devastating(N)</b>
+<br>This weapon gets an extra Nd10 damage.</td>
+</tr>
+<tr>
+<td><b>Flame Attack</b>
+<br>Each hit with this weapon that inflicts a Wound makes the target become <i>Burning</i>.</td>
+</tr>
+<tr>
+<td><b>Overcharge (N)</b>
+<br>Before you Attack with this weapon, you can spend up to N ammo to get an Nd10 bonus to damage. Doing so reduces the RoF to 1 for that attack and counts as firing N shots when determining jamming.</td>
 </tr>
 <tr>
 <td><b>Scatter Shot</b>
 <br>Within the +30 range, each hit counts as three hits. Within the +10 range, each hit counts as two hits. The weapon is ineffective beyond the -10 range.</td>
 </tr>
 <tr>
-<td><b>Spray (Long)</b>
-<br>When you Attack (Ranged), all characters within 15m in a 30 degree arc are hit.</td>
-</tr>
-<tr>
-<th colspan="10">Positive Special Rules (Availability -3)</th>
-</tr>
-<tr>
-<td><b>Devastating(2)</b>
-<br>This weapon gets an extra 2d10 damage.</td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="3">Variations</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Change</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Old -</td>
-<td>- Reliable</td>
-<td>+1</td>
-</tr>
-<tr>
-<td>Shoddy -</td>
-<td>RoF -1</td>
-<td>+1</td>
-</tr>
-<tr>
-<td>Weak -</td>
-<td>Damage -1</td>
-<td>+1</td>
-</tr>
-<tr>
-<td>Belt-Fed -</td>
-<td>+External Ammo; Capacity +3; Reload -2</td>
-<td>+0</td>
-</tr>
-<tr>
-<td>- with Bayonet</td>
-<td>+Melee Attack</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>- with Laser Sight</td>
-<td>+Laser Sight</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>New -</td>
-<td>+Reliable</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>Scoped -</td>
-<td>+Scoped</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>Strong -</td>
-<td>Damage +1</td>
-<td>-1</td>
+<td><b>Spray</b>
+<br>When you Attack, each shot fired hits all characters within the +10 range in a 30 degree arc. If you fail or critically fail the Test, you give a +10 or +30 bonus to oppose. Range bonuses apply as penalties to each target, instead of to you. The weapon is ineffective beyond the +10 range.</td>
 </tr>
 </table>
 <br>
@@ -789,7 +731,7 @@ th, td {
 <td>Small</td>
 <td>Short</td>
 <td>Slow</td>
-<td>Very High</td>
+<td>High</td>
 <td>Average</td>
 <td>Low</td>
 <td>Reliable</td>
@@ -798,11 +740,11 @@ th, td {
 <tr>
 <td>Lasgun</td>
 <td>Standard</td>
-<td>Long</td>
+<td>Average</td>
 <td>Average</td>
 <td>High</td>
 <td>Average</td>
-<td>Low</td>
+<td>Average</td>
 <td>Reliable</td>
 <td>Common</td>
 </tr>
@@ -823,9 +765,9 @@ th, td {
 <td>Extreme</td>
 <td>Very Slow</td>
 <td>Average</td>
-<td>Slow</td>
+<td>Very Slow</td>
 <td>Extreme</td>
-<td>Armour Damage; Devastating(2)</td>
+<td>Armour Damage; Devastating(3)</td>
 <td>Very Rare</td>
 </tr>
 <tr>
@@ -856,7 +798,7 @@ th, td {
 <tr>
 <td>Stub Revolver</td>
 <td>Small</td>
-<td>Average</td>
+<td>Short</td>
 <td>Slow</td>
 <td>Average</td>
 <td>Average</td>
@@ -878,24 +820,13 @@ th, td {
 <tr>
 <td>Stub Pistol</td>
 <td>Small</td>
-<td>Average</td>
+<td>Short</td>
 <td>Average</td>
 <td>Average</td>
 <td>Average</td>
 <td>Average</td>
 <td>-</td>
 <td>Plentiful</td>
-</tr>
-<tr>
-<td>Autopistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Fast</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Suppressing Fire</td>
-<td>Common</td>
 </tr>
 <tr>
 <td>Pump-Action Shotgun</td>
@@ -920,7 +851,18 @@ th, td {
 <td>Common</td>
 </tr>
 <tr>
-<td>Autogun</td>
+<td>Autopistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Fast</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Suppressing Fire</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Autostubber</td>
 <td>Standard</td>
 <td>Average</td>
 <td>Fast</td>
@@ -928,6 +870,17 @@ th, td {
 <td>Average</td>
 <td>Average</td>
 <td>Suppressing Fire</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Autostubber (Fast)</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Very Fast</td>
+<td>Average</td>
+<td>Average</td>
+<td>Low</td>
+<td>Suppressing Fire; Storm(1)</td>
 <td>Average</td>
 </tr>
 <tr>
@@ -945,24 +898,24 @@ th, td {
 <td>Belt-Fed Heavy Stubber</td>
 <td>Bulky</td>
 <td>Long</td>
-<td>Fast</td>
-<td>Extreme</td>
+<td>Very Fast</td>
+<td>Very High</td>
 <td>Very Slow</td>
 <td>Very High</td>
-<td>External Ammo; Suppressing Fire</td>
+<td>External Ammo; Suppressing Fire;<br> Storm</td>
 <td>Scarce</td>
-</tr>
+</tr> 
 <tr>
 <td>Heavy Stubber</td>
 <td>Bulky</td>
 <td>Long</td>
-<td>Fast</td>
+<td>Very Fast</td>
 <td>Average</td>
-<td>Average</td>
+<td>Slow</td>
 <td>Very High</td>
-<td>Suppressing Fire</td>
+<td>Suppressing Fire; Storm</td>
 <td>Scarce</td>
-</tr>
+</tr> 
 <tr>
 <td>Hunting Rifle</td>
 <td>Standard</td>
@@ -975,26 +928,15 @@ th, td {
 <td>Scarce</td>
 </tr>
 <tr>
-<td>Belt-Fed Storm Gun</td>
+<td>Armour Rifle</td>
 <td>Bulky</td>
-<td>Long</td>
-<td>Very Fast</td>
 <td>Extreme</td>
-<td>Extreme</td>
-<td>Very High</td>
-<td>External Ammo; Suppressing Fire; Volley</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td>Storm Gun</td>
-<td>Bulky</td>
-<td>Long</td>
-<td>Very Fast</td>
-<td>Average</td>
 <td>Slow</td>
+<td>Low</td>
+<td>Average</td>
 <td>Very High</td>
-<td>Suppressing Fire; Volley</td>
-<td>Rare</td>
+<td>Accurate; Devastating(1)</td>
+<td>Scarce</td>
 </tr>
 <tr>
 <th colspan="10">Ranged Weapons - Bolt (Explosive Damage)</th>
@@ -1013,38 +955,38 @@ th, td {
 <tr>
 <td>Bolt Pistol</td>
 <td>Small</td>
-<td>Average</td>
+<td>Short</td>
 <td>Average</td>
 <td>Average</td>
 <td>Average</td>
 <td>Very High</td>
-<td>Penetrating; Tearing</td>
+<td>Tearing(2)</td>
 <td>Rare</td>
 </tr>
 <tr>
 <td>Bolter</td>
 <td>Standard</td>
-<td>Long</td>
+<td>Average</td>
 <td>Average</td>
 <td>High</td>
 <td>Average</td>
 <td>Very High</td>
-<td>Penetrating; Tearing</td>
-<td>Very Rare</td>
+<td>Tearing(2)</td>
+<td>Rare</td>
 </tr>
 <tr>
 <td>Heavy Bolter</td>
 <td>Bulky</td>
-<td>Very Long</td>
+<td>Long</td>
 <td>High</td>
 <td>High</td>
 <td>Long</td>
 <td>Extreme</td>
-<td>Penetrating; Tearing</td>
-<td>Extremely Rare</td>
+<td>Tearing(3)</td>
+<td>Very Rare</td>
 </tr>
 <tr>
-<th colspan="10">Ranged Weapons - Flame</th>
+<th colspan="10">Ranged Weapons - Flame and Plasma (Energy Damage)</th>
 </tr>
 <tr>
 <th>Name</th>
@@ -1056,6 +998,72 @@ th, td {
 <th>Damage</th>
 <th>Special Rules</th>
 <th>Availability</th>
+</tr>
+<tr>
+<td>Flamer</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>High</td>
+<td>Flame Attack; Spray</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Flamer with Feed Line</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Average</td>
+<td>Very High</td>
+<td>Slow</td>
+<td>High</td>
+<td>External Ammo; Flame Attack;<br> Spray</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Hand Flamer</td>
+<td>Small</td>
+<td>Very Short</td>
+<td>Low</td>
+<td>Average</td>
+<td>Average</td>
+<td>High</td>
+<td>Flame Attack; Spray</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Plasma Gun</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Average</td>
+<td>High</td>
+<td>Slow</td>
+<td>Very High</td>
+<td>Armour Damage; Overcharge(2);<br> Overheats</td>
+<td>Very Rare</td>
+</tr>
+<tr>
+<td>Plasma Gun with Feed Line</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Average</td>
+<td>Extreme</td>
+<td>Very Slow</td>
+<td>Very High</td>
+<td>Armour Damage; External Ammo;<br> Overcharge(2); Overheats</td>
+<td>Very Rare</td>
+</tr>
+<tr>
+<td>Plasma Pistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Average</td>
+<td>Average</td>
+<td>Slow</td>
+<td>Very High</td>
+<td>Armour Damage; Overcharge(2);<br> Overheats</td>
+<td>Very Rare</td>
 </tr>
 <tr>
 <th colspan="10">Ranged Weapons - Exotic</th>
@@ -1075,6 +1083,64 @@ th, td {
 <br>
 
 
+<table>
+<tr>
+<th colspan="3">Variations</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Change</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Old -</td>
+<td>- Reliable</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Shoddy -</td>
+<td>RoF -1</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Weak -</td>
+<td>Damage -1</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Belt-Fed -</td>
+<td>+External Ammo; Capacity +2; Reload -1</td>
+<td>+0</td>
+</tr>
+<tr>
+<td>Scoped -</td>
+<td>- Accurate; +Scoped</td>
+<td>+0</td>
+</tr>
+<tr>
+<td>- with Bayonet</td>
+<td>+Melee Attack</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>- with Laser Sight</td>
+<td>+Laser Sight</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>New -</td>
+<td>+Reliable</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Strong -</td>
+<td>Damage +1</td>
+<td>-1</td>
+</tr>
+</table>
+<br>
+
+
 ** THESE NEED REVIEWING **
 
 <br>
@@ -1086,18 +1152,6 @@ th, td {
 <a href="ItemCards/InfernoPistol.html" target="_blank">Inferno Pistol</a>
 <br>
 <a href="ItemCards/MeltaGun-FeedLine.html" target="_blank">Melta Gun with Feed Line</a>
-<br>
-<a href="ItemCards/PlasmaPistol.html" target="_blank">Plasma Pistol</a>
-<br>
-<a href="ItemCards/PlasmaGun.html" target="_blank">Plasma Gun</a>
-<br>
-<a href="ItemCards/PlasmaGun-FeedLine.html" target="_blank">Plasma Gun with Feed Line</a>
-<br>
-<a href="ItemCards/HandFlamer.html" target="_blank">Hand Flamer</a>
-<br>
-<a href="ItemCards/Flamer.html" target="_blank">Flamer</a>
-<br>
-<a href="ItemCards/Flamer-FeedLine.html" target="_blank">Flamer with Feed Line</a>
 <br>
 <a href="ItemCards/HandBow.html" target="_blank">Hand Bow</a>
 <br>
@@ -1244,6 +1298,10 @@ th, td {
 <tr>
 <td>Damage: 1d10+SB Impact</td>
 </tr>
+<tr>
+<td><b>Low Lethality</b>
+<br>Roll two d10 for damage and use the lowest.</td>
+</tr>
 </table>
 <br>
 
@@ -1264,7 +1322,7 @@ th, td {
 <td>Hits: 2</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB+1 Impact</td>
+<td>Damage: 1d10+SB Impact</td>
 </tr>
 </table>
 <br>
@@ -1286,7 +1344,7 @@ th, td {
 <td>Hits: 2</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB+2 Impact</td>
+<td>Damage: 1d10+SB+1 Impact</td>
 </tr>
 </table>
 <br>
@@ -1308,7 +1366,7 @@ th, td {
 <td>Hits: 1</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB+3 Impact</td>
+<td>Damage: 1d10+SB+2 Impact</td>
 </tr>
 </table>
 <br>
