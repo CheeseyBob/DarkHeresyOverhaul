@@ -650,6 +650,10 @@ th, td {
 <br>This weapon adds your Strength Bonus to damage against targets within the +10 range. You need 30 Strength to hit targets beyond the +0 range and need 40 Strength to hit targets beyond the -10 range.</td>
 </tr>
 <tr>
+<td><b>Non-Lethal</b>
+<br>Hits from this weapon cannot inflict more than 1 Wound.</td>
+</tr>
+<tr>
 <th colspan="10">Positive Special Rules (Availability -1)</th>
 </tr>
 <tr>
@@ -735,11 +739,29 @@ th, td {
 <br>When you Attack, each shot fired hits all characters within the +10 range in a 30 degree arc. If you fail or critically fail the Test, you give a +10 or +30 bonus to oppose. Range bonuses apply as penalties to each target, instead of to you. The weapon is ineffective beyond the +10 range.</td>
 </tr>
 <tr>
-<th colspan="10">Positive Special Rules (Availability -2)</th>
+<th colspan="10">Positive Special Rules (Availability -3)</th>
+</tr>
+<tr>
+<td><b>3m Blast</b>
+<br>All characters wthin 3m of the target are also hit. Targets cannot Dodge to avoid the hit.</td>
 </tr>
 <tr>
 <td><b>Strong Lethal Poison</b>
 <br>Each Wound this weapon inflicts makes the target become <i>Poisoned (Lethal)</i>.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -4)</th>
+</tr>
+<tr>
+<td><b>Ensnaring</b>
+<br>Each hit makes the target become <i>Ensnared</i>.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -5)</th>
+</tr>
+<tr>
+<td><b>5m Blast</b>
+<br>All characters wthin 5m of the target are also hit. Targets cannot Dodge to avoid the hit.</td>
 </tr>
 </table>
 <br>
@@ -1155,7 +1177,7 @@ th, td {
 <td>Extremely Rare</td>
 </tr>
 <tr>
-<th colspan="10">Ranged Weapons - Rending Damage</th>
+<th colspan="10">Ranged Weapons (Rending Damage)</th>
 </tr>
 <tr>
 <th>Name</th>
@@ -1200,6 +1222,86 @@ th, td {
 <td>Very Low</td>
 <td>Accurate; Felling; Limited Damage;<br> Strong Lethal Poison </td>
 <td>Very Rare</td>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Special</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Size</th>
+<th>Range</th>
+<th>RoF</th>
+<th>Capacity</th>
+<th>Reload</th>
+<th>Damage</th>
+<th>Special Rules</th>
+<th>Availability</th>
+</tr>
+<tr>
+<td>Webber</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Slow</td>
+<td>Average</td>
+<td>Average</td>
+<td>Average</td>
+<td>Ensnaring; Non-Lethal;<br> Scatter Shot</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Web Pistol</td>
+<td>Small</td>
+<td>Very Short</td>
+<td>Slow</td>
+<td>Low</td>
+<td>Average</td>
+<td>Average</td>
+<td>Ensnaring; Non-Lethal;<br> Scatter Shot</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Frag Grenade Launcher</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Very Slow</td>
+<td>High</td>
+<td>Average</td>
+<td>Average</td>
+<td>3m Blast; Devastating(1);<br> Incremental Reload;</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Frag Missile Launcher</td>
+<td>Bulky</td>
+<td>Very Long</td>
+<td>Very Slow</td>
+<td>Very Low</td>
+<td>Average</td>
+<td>High</td>
+<td>5m Blast; Devastating(1)</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Krak Grenade Launcher</td>
+<td>Standard</td>
+<td>Average</td>
+<td>Very Slow</td>
+<td>High</td>
+<td>Average</td>
+<td>Extreme</td>
+<td>Armour Damage; Devastating(1);<br> Incremental Reload;</td>
+<td>Scarce</td>
+</tr>
+<tr>
+<td>Krak Missile Launcher</td>
+<td>Bulky</td>
+<td>Very Long</td>
+<td>Very Slow</td>
+<td>Very Low</td>
+<td>Average</td>
+<td>Extreme</td>
+<td>Armour Damage; Devastating(2)</td> 
+<td>Scarce</td>
 </tr>
 </table>
 <br>
@@ -1263,21 +1365,6 @@ th, td {
 <br>
 
 
-** THESE NEED REVIEWING **
-
-<br>
-<a href="ItemCards/WebPistol.html" target="_blank">Web Pistol</a>
-<br>
-<a href="ItemCards/Webber.html" target="_blank">Webber</a>
-<br>
-<a href="ItemCards/GrenadeLauncher.html" target="_blank">Grenade Launcher</a>
-<br>
-<a href="ItemCards/RPGLauncher.html" target="_blank">RPG Launcher</a>
-<br>
-
-
-
-
 <h2>Melee Weapons</h2>
 <table>
 <tr>
@@ -1304,6 +1391,8 @@ th, td {
 </tr>
 </table>
 <br>
+
+<p><b>Bonus:</b> This is the bonus you get to Weapon Skill when you Attack with the weapon.</p>
 
 <p><b>Hits:</b> This is the maximum number of hits by the weapon in one turn. If you Attack, you get up to one hit, whereas if you Attack Repeatedly, you can get a number of hits up to the weapon's Hits value.</p>
 
