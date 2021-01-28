@@ -610,6 +610,17 @@ th, td {
 
 <table>
 <tr>
+<th colspan="10">Negative Special Rules (Availability +2)</th>
+</tr>
+<tr>
+<td><b>Limited Damage</b>
+<br>Hits from this weapon cannot inflict more than 5 Wounds.</td>
+</tr>
+<tr>
+<td><b>Very Limited Range</b>
+<br>The weapon is ineffective beyond the +0 range.</td>
+</tr>
+<tr>
 <th colspan="10">Negative Special Rules (Availability +1)</th>
 </tr>
 <tr>
@@ -621,11 +632,22 @@ th, td {
 <br>Only one shot is loaded with each completed reload.</td>
 </tr>
 <tr>
+<td><b>Limited Range</b>
+<br>The weapon is ineffective beyond the -10 range.</td>
+</tr>
+<tr>
 <td><b>Overheats</b>
 <br>When this weapon jams, roll a d10:
 <br>1-5: The Aspect is upgraded to <i>Jammed(20)</i>. You take 1d10 Energy Damage unless you choose to drop the weapon.
 <br>6-8: The Aspect is upgraded to <i>Jammed(30)</i>. You take 1d10+2 Energy Damage and drop the weapon.
 <br>9-0: The weapon explodes and is destroyed. You and anyone within 4m takes a hit from the weapon.</td>
+</tr>
+<tr>
+<th colspan="10">Neutral Special Rules (Availability +0)</th>
+</tr>
+<tr>
+<td><b>Muscle-Powered</b>
+<br>This weapon adds your Strength Bonus to damage against targets within the +10 range. You need 30 Strength to hit targets beyond the +0 range and need 40 Strength to hit targets beyond the -10 range.</td>
 </tr>
 <tr>
 <th colspan="10">Positive Special Rules (Availability -1)</th>
@@ -639,8 +661,16 @@ th, td {
 <br>Each point of damage reduced by cover or armour deals 1 AP damage to that cover or armour.</td>
 </tr>
 <tr>
-<td><b>Tearing(X)</b>
-<br>Roll X extra d10 for damage and use the highest.</td>
+<td><b>Compact</b>
+<br>Get a +20 bonus to Conceal this item.</td>
+</tr>
+<tr>
+<td><b>Melta(N)</b>
+<br>Get an Nd10 bonus to damage if the target is within the +10 range.</td>
+</tr>
+<tr>
+<td><b>Tearing(N)</b>
+<br>Roll N extra d10 for damage and use the highest.</td>
 </tr>
 <tr>
 <td><b>Melee Attack</b>
@@ -654,8 +684,12 @@ th, td {
 <br>The +30 range bonus applies up to 6m.</td>
 </tr>
 <tr>
+<td><b>Lethal Poison</b>
+<br>Each hit with this weapon that inflicts a Wound makes the target become <i>Poisoned (Lethal)</i>.</td>
+</tr>
+<tr>
 <td><b>Reliable</b>
-<br>This weapon can oppose becoming <i>Jammed</i> with a Test against a Characteristic of 90.</td>
+<br>This weapon cannot become <i>Jammed</i>.</td>
 </tr>
 <tr>
 <td><b>Scoped</b>
@@ -678,7 +712,11 @@ th, td {
 </tr>
 <tr>
 <td><b>Devastating(N)</b>
-<br>This weapon gets an extra Nd10 damage.</td>
+<br>Get an Nd10 bonus to damage.</td>
+</tr>
+<tr>
+<td><b>Felling</b>
+<br>Damage from this weapon is not reduced by the target's Toughness Bonus.</td>
 </tr>
 <tr>
 <td><b>Flame Attack</b>
@@ -695,6 +733,13 @@ th, td {
 <tr>
 <td><b>Spray</b>
 <br>When you Attack, each shot fired hits all characters within the +10 range in a 30 degree arc. If you fail or critically fail the Test, you give a +10 or +30 bonus to oppose. Range bonuses apply as penalties to each target, instead of to you. The weapon is ineffective beyond the +10 range.</td>
+</tr>
+<tr>
+<th colspan="10">Positive Special Rules (Availability -2)</th>
+</tr>
+<tr>
+<td><b>Strong Lethal Poison</b>
+<br>Each Wound this weapon inflicts makes the target become <i>Poisoned (Lethal)</i>.</td>
 </tr>
 </table>
 <br>
@@ -805,6 +850,17 @@ th, td {
 <td>Average</td>
 <td>Incremental Reload; Reliable</td>
 <td>Abundant</td>
+</tr>
+<tr>
+<td>Compact Stub Pistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Average</td>
+<td>Low</td>
+<td>Average</td>
+<td>Average</td>
+<td>Compact</td>
+<td>Plentiful</td>
 </tr>
 <tr>
 <td>Stubber</td>
@@ -982,11 +1038,11 @@ th, td {
 <td>High</td>
 <td>Long</td>
 <td>Extreme</td>
-<td>Tearing(3)</td>
+<td>Suppressing Fire; Tearing(2)</td>
 <td>Very Rare</td>
 </tr>
 <tr>
-<th colspan="10">Ranged Weapons - Flame and Plasma (Energy Damage)</th>
+<th colspan="10">Ranged Weapons - Flame, Melta and Plasma (Energy Damage)</th>
 </tr>
 <tr>
 <th>Name</th>
@@ -1033,6 +1089,28 @@ th, td {
 <td>Scarce</td>
 </tr>
 <tr>
+<td>Melta Gun</td>
+<td>Standard</td>
+<td>Very Short</td>
+<td>Very Slow</td>
+<td>High</td>
+<td>Average</td>
+<td>Extreme</td>
+<td>Armour Damage; Devastating(1);<br> Limited Range; Melta(4)</td>
+<td>Very Rare</td>
+</tr>
+<tr>
+<td>Melta Gun with Feed Line</td>
+<td>Standard</td>
+<td>Very Short</td>
+<td>Very Slow</td>
+<td>Extreme</td>
+<td>Slow</td>
+<td>Extreme</td>
+<td>Armour Damage; External Ammo;<br> Devastating(1); Limited Range; Melta(4)</td>
+<td>Very Rare</td>
+</tr>
+<tr>
 <td>Plasma Gun</td>
 <td>Standard</td>
 <td>Average</td>
@@ -1066,7 +1144,18 @@ th, td {
 <td>Very Rare</td>
 </tr>
 <tr>
-<th colspan="10">Ranged Weapons - Exotic</th>
+<td>Inferno Pistol</td>
+<td>Small</td>
+<td>Very Short</td>
+<td>Very Slow</td>
+<td>Average</td>
+<td>Average</td>
+<td>Extreme</td>
+<td>Armour Damage; Devastating(1);<br> Limited Range; Melta(4)</td>
+<td>Extremely Rare</td>
+</tr>
+<tr>
+<th colspan="10">Ranged Weapons - Rending Damage</th>
 </tr>
 <tr>
 <th>Name</th>
@@ -1078,6 +1167,39 @@ th, td {
 <th>Damage</th>
 <th>Special Rules</th>
 <th>Availability</th>
+</tr>
+<tr>
+<td>Bow</td>
+<td>Standard</td>
+<td>Short</td>
+<td>Very Slow</td>
+<td>Very Low</td>
+<td>Fast</td>
+<td>Low</td>
+<td>Limited Damage; Muscle-Powered;<br> Reliable</td>
+<td>Abundant</td>
+</tr>
+<tr>
+<td>Needle Pistol</td>
+<td>Small</td>
+<td>Short</td>
+<td>Slow</td>
+<td>Average</td>
+<td>Average</td>
+<td>Very Low</td>
+<td>Accurate; Felling; Limited Damage;<br> Strong Lethal Poison </td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>Needle Rifle</td>
+<td>Standard</td>
+<td>Very Long</td>
+<td>Slow</td>
+<td>Average</td>
+<td>Average</td>
+<td>Very Low</td>
+<td>Accurate; Felling; Limited Damage;<br> Strong Lethal Poison </td>
+<td>Very Rare</td>
 </tr>
 </table>
 <br>
@@ -1144,29 +1266,6 @@ th, td {
 ** THESE NEED REVIEWING **
 
 <br>
-<br>
-<a href="ItemCards/Autopistol-Exterminator.html" target="_blank">Autopistol with Exterminator Cartridge</a>
-<br>
-<a href="ItemCards/StubPistol-Compact.html" target="_blank">Compact Stub Pistol</a>
-<br>
-<a href="ItemCards/InfernoPistol.html" target="_blank">Inferno Pistol</a>
-<br>
-<a href="ItemCards/MeltaGun-FeedLine.html" target="_blank">Melta Gun with Feed Line</a>
-<br>
-<a href="ItemCards/HandBow.html" target="_blank">Hand Bow</a>
-<br>
-<a href="ItemCards/FlintlockPistol.html" target="_blank">Flintlock Pistol</a>
-<br>
-<a href="ItemCards/Musket.html" target="_blank">Musket</a>
-<br>
-<a href="ItemCards/Bow.html" target="_blank">Bow</a>
-<br>
-<a href="ItemCards/Crossbow.html" target="_blank">Crossbow</a>
-<br>
-<a href="ItemCards/NeedlePistol.html" target="_blank">Needle Pistol</a>
-<br>
-<a href="ItemCards/NeedleRifle.html" target="_blank">Needle Rifle</a>
-<br>
 <a href="ItemCards/WebPistol.html" target="_blank">Web Pistol</a>
 <br>
 <a href="ItemCards/Webber.html" target="_blank">Webber</a>
@@ -1177,73 +1276,6 @@ th, td {
 <br>
 
 
-
-
-<table>
-<tr>
-<th colspan="6">Range Modifiers</th>
-</tr>
-<tr>
-<td>Bonus:</td>
-<td>+30</td>
-<td>+10</td>
-<td>+0</td>
-<td>-10</td>
-<td>-30</td>
-</tr>
-<tr>
-<th colspan="6">Thrown Weapons</th>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>2R</td>
-<td>3R</td>
-<td>4R</td>
-<td>5R</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>6m</td>
-<td>9m</td>
-<td>12m</td>
-<td>15m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>8m</td>
-<td>12m</td>
-<td>16m</td>
-<td>20m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>10m</td>
-<td>15m</td>
-<td>20m</td>
-<td>25m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>12m</td>
-<td>18m</td>
-<td>24m</td>
-<td>32m</td>
-</tr>
-<tr>
-<td>Range:</td>
-<td>3m</td>
-<td>16m</td>
-<td>24m</td>
-<td>32m</td>
-<td>40m</td>
-</tr>
-</table>
-<br>
 
 
 <h2>Melee Weapons</h2>
@@ -1299,7 +1331,7 @@ th, td {
 <td>Damage: 1d10+SB Impact</td>
 </tr>
 <tr>
-<td><b>Low Lethality</b>
+<td><b>Blunt</b>
 <br>Roll two d10 for damage and use the lowest.</td>
 </tr>
 </table>
@@ -1322,7 +1354,11 @@ th, td {
 <td>Hits: 2</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB Impact</td>
+<td>Damage: 1d10+SB+1 Impact</td>
+</tr>
+<tr>
+<td><b>Blunt</b>
+<br>Roll two d10 for damage and use the lowest.</td>
 </tr>
 </table>
 <br>
@@ -1344,7 +1380,11 @@ th, td {
 <td>Hits: 2</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB+1 Impact</td>
+<td>Damage: 1d10+SB+2 Impact</td>
+</tr>
+<tr>
+<td><b>Blunt</b>
+<br>Roll two d10 for damage and use the lowest.</td>
 </tr>
 </table>
 <br>
@@ -1366,7 +1406,11 @@ th, td {
 <td>Hits: 1</td>
 </tr>
 <tr>
-<td>Damage: 1d10+SB+2 Impact</td>
+<td>Damage: 1d10+SB+3 Impact</td>
+</tr>
+<tr>
+<td><b>Blunt</b>
+<br>Roll two d10 for damage and use the lowest.</td>
 </tr>
 </table>
 <br>
@@ -1440,6 +1484,75 @@ th, td {
 <td colspan="3">Rarity: [Rarity]</td>
 </tr>
 </table>
+
+
+
+<table>
+<tr>
+<th colspan="6">Range Modifiers</th>
+</tr>
+<tr>
+<td>Bonus:</td>
+<td>+30</td>
+<td>+10</td>
+<td>+0</td>
+<td>-10</td>
+<td>-30</td>
+</tr>
+<tr>
+<th colspan="6">Thrown Weapons</th>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>2R</td>
+<td>3R</td>
+<td>4R</td>
+<td>5R</td>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>6m</td>
+<td>9m</td>
+<td>12m</td>
+<td>15m</td>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>8m</td>
+<td>12m</td>
+<td>16m</td>
+<td>20m</td>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>10m</td>
+<td>15m</td>
+<td>20m</td>
+<td>25m</td>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>12m</td>
+<td>18m</td>
+<td>24m</td>
+<td>32m</td>
+</tr>
+<tr>
+<td>Range:</td>
+<td>3m</td>
+<td>16m</td>
+<td>24m</td>
+<td>32m</td>
+<td>40m</td>
+</tr>
+</table>
+<br>
+
 
 <br>
 <a href="ItemCards/FragHandGrenade.html" target="_blank">Frag Hand-Grenade</a>
