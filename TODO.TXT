@@ -1,0 +1,61 @@
+	TO DO LIST
+
+> simplify a few things I wrote previously (wounds, inventory, etc.)
+
+> review item/character sizes (unify)
+
+> continue with item review
+
+> specify some crafting materials??
+
+> get rid of the Infuence characteristic
+
+> mechanicus implants and other bionics
+
+> polish and balance the character creation process
+
+> continue with psychic powers
+
+> comprehensive talent list
+
+
+	~~
+
+100 perils - get sucked into the warp for 1d10 turns; return after drifting in random direction
+
+Warp exposure - 1d10+10 corruption & insanity per turn
+
+receiving insanity - DoS gives amount to reduce by.
+
+
+wytchcraft power - inflict corruption
+telepathy power - inflict insanity
+biomancy power - inflict characteristic damage
+
+
+archeotech item which removes corruption
+
+	~~
+
+
+
+
+	~~ MapTool ~~
+
+> Character sheet XP and Advance log
+> Character sheet "edit mode" for removing/editing values (main section)
+
+
+Make a "training course" in MapTool
+> Melee combat
+> Ranged combat
+> Mixed combat
+> Sniping
+> Grenades
+> Fire
+> Stealth
+> Setting up defences
+> Mobility (using grapnels etc.)
+> Scenario where a Lascutter can be used(?)
+
+
