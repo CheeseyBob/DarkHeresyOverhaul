@@ -1,8 +1,8 @@
 	TO DO LIST
 
-> simplify a few things I wrote previously (wounds, inventory, etc.)
+> Apply changes to item sizes to the items.
 
-> review item/character sizes (unify)
+> See if items can be simplified in other ways.
 
 > continue with item review
 
