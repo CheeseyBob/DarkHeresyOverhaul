@@ -1,14 +1,16 @@
 	TO DO LIST
 
-> Apply changes to item sizes to the items.
+> Apply changes to item sizes and ranges to the items.
 
 > See if items can be simplified in other ways.
 
 > continue with item review
 
+> Figure out electricity, then look at las weapons
+
 > specify some crafting materials??
 
-> get rid of the Infuence characteristic
+> get rid of the Infuence characteristic(?)
 
 > mechanicus implants and other bionics
 

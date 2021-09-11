@@ -7,6 +7,9 @@ table {
 th, td {
   padding: 4px;
 }
+.multicolContainer {
+  column-width: 300px;
+}
 </style>
 <title>Items - Ranged Weapons - Dark Heresy Overhaul</title>
 
@@ -25,24 +28,9 @@ th, td {
 <tr>
 <td>Size: [Size]</td>
 </tr>
-<tr><td><table>
 <tr>
-<td>Range:</td>
-<td>3m</td>
-<td>Rm</td>
-<td>2Rm</td>
-<td>3Rm</td>
-<td>4Rm</td>
+<td>Range: [Range]</td>
 </tr>
-<tr>
-<td>Bonus:</td>
-<td>+30</td>
-<td>+10</td>
-<td>+0</td>
-<td>-10</td>
-<td>-30</td>
-</tr>
-</table></td></tr>
 <tr>
 <td>RoF: [RoF]</td>
 </tr>
@@ -62,74 +50,45 @@ th, td {
 </table>
 <br>
 
-<p><b>Range:</b> When you Attack, you get a bonus or penalty for range, according to the table on the weapon card. Use the highest bonus for which the target is within the corresponding distance (for example, you always get a +30 bonus to a target 3m away). Firing at a target beyond the maximum range is ineffective.</p>
+
+<p><b>Range:</b> 
+The maximum effective range of the weapon. Apply a bonus/penalty for the range of the target based on the table below.
+</p>
+
 
 <table>
 <tr>
-<th colspan="6">Ranged Weapon Ranges</th>
+<th colspan="11">Range Bonuses/Penalites (Ranged Weapons)</th>
 </tr>
 <tr>
-<th>Type</th>
-<th colspan="5">Range Bonus</th>
+<th>Range</th>
+<td>2m</td>
+<td>5m</td>
+<td>10m</td>
+<td>20m</td>
+<td>40m</td>
+<td>80m</td>
+<td>160m</td>
+<td>320m</td>
+<td>640m</td>
+<td>1280m</td>
 </tr>
 <tr>
-<td></td>
+<th>Bonus</th>
 <td>+30</td>
+<td>+20</td>
 <td>+10</td>
 <td>+0</td>
 <td>-10</td>
+<td>-20</td>
 <td>-30</td>
-</tr>
-<tr>
-<td>Very Short:</td>
-<td>3m</td>
-<td>8m</td>
-<td>15m</td>
-<td>30m</td>
-<td>60m</td>
-</tr>
-<tr>
-<td>Short:</td>
-<td>3m</td>
-<td>15m</td>
-<td>30m</td>
-<td>60m</td>
-<td>120m</td>
-</tr>
-<tr>
-<td>Average:</td>
-<td>3m</td>
-<td>30m</td>
-<td>60m</td>
-<td>120m</td>
-<td>240m</td>
-</tr>
-<tr>
-<td>Long:</td>
-<td>3m</td>
-<td>50m</td>
-<td>100m</td>
-<td>200m</td>
-<td>400m</td>
-</tr>
-<tr>
-<td>Very Long:</td>
-<td>3m</td>
-<td>75m</td>
-<td>150m</td>
-<td>300m</td>
-<td>600m</td>
-</tr>
-<tr>
-<td>Extreme:</td>
-<td>3m</td>
-<td>150m</td>
-<td>300m</td>
-<td>600m</td>
-<td>1,200m</td>
+<td>-40</td>
+<td>-50</td>
+<td>-60</td>
 </tr>
 </table>
 <br>
+
 
 <p><b>RoF (Rate of Fire):</b> This is the maximum number of shots fired by the weapon in one turn. One shot is fired when you Attack, whereas Attack Repeatedly fires a number of shots equal to the weapon's RoF.</p>
 
@@ -140,6 +99,263 @@ th, td {
 <p><b>Damage:</b> The damage the target takes from each hit. The Type determines how effective armour is and what effects there are if critical damage is inflicted.</p>
 
 <p><b>Availability:</b> The base availability for Ranged Weapons is Abundant.</p>
+
+
+<h3>Examples</h3>
+<ul>
+<li>Stubber (Plentiful)</li>
+<li>Pistol (Plentiful)</li>
+<li>Autopistol (Common)</li>
+<li>Pump-Action Shotgun (Common)</li>
+<li>Autostubber (Average)</li>
+<li>Hunting Rifle (Scarce)</li>
+<li>Heavy Stubber (Scarce)</li>
+</ul>
+
+
+<div class="multicolContainer">
+
+
+<table>
+<tr>
+<th>Stubber</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 3</td>
+</tr>
+<tr>
+<td>Range: 320m</td>
+</tr>
+<tr>
+<td>RoF: 3</td>
+</tr>
+<tr>
+<td>Capacity: 9 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+2 Impact</td>
+</tr>
+<tr>
+<td><b>No Special Rules</b>
+<br></td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Pistol</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Range: 80m</td>
+</tr>
+<tr>
+<td>RoF: 3</td>
+</tr>
+<tr>
+<td>Capacity: 9 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+2 Impact</td>
+</tr>
+<tr>
+<td><b>No Special Rules</b>
+<br></td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Autopistol</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Range: 80m</td>
+</tr>
+<tr>
+<td>RoF: 6</td>
+</tr>
+<tr>
+<td>Capacity: 18 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+1 Impact</td>
+</tr>
+<tr>
+<td><b>Suppressing Fire</b>
+<br>When you Attack Repeatedly with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within 20m in a 45 degree arc become Pinned.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Pump-Action Shotgun</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 3</td>
+</tr>
+<tr>
+<td>Range: 40m</td>
+</tr>
+<tr>
+<td>RoF: 2</td>
+</tr>
+<tr>
+<td>Capacity: 12 Shells</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+3 Impact</td>
+</tr>
+<tr>
+<td><b>Scatter Shot</b>
+<br>Within 10m, each hit counts as 2 hits. Within 5m each hit counts as 3 hits</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Autostubber</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Range: 320m</td>
+</tr>
+<tr>
+<td>RoF: 6</td>
+</tr>
+<tr>
+<td>Capacity: 36 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+2 Impact</td>
+</tr>
+<tr>
+<td><b>Suppressing Fire</b>
+<br>When you Attack Repeatedly with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within 20m in a 45 degree arc become Pinned.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Hunting Rifle</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Range: 640m</td>
+</tr>
+<tr>
+<td>RoF: 2</td>
+</tr>
+<tr>
+<td>Capacity: 6 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+5 Impact</td>
+</tr>
+<tr>
+<td><b>Accurate</b>
+<br>Get an extra +10 bonus when you Attack after you Aim.</td>
+</tr>
+<tr>
+<td><b>Reliable</b>
+<br>This weapon cannot become <i>Jammed</i>.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>[Item Name]</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: [Size]</td>
+</tr>
+<tr>
+<td>Range: [Range]</td>
+</tr>
+<tr>
+<td>RoF: [RoF]</td>
+</tr>
+<tr>
+<td>Capacity: [Capacity] [Ammo Type]</td>
+</tr>
+<tr>
+<td>Reload: [Reload]</td>
+</tr>
+<tr>
+<td>Damage: [Damage] [Type]</td>
+</tr>
+<tr>
+<td><b>[Ability Name]</b>
+<br>[Ability Description]</td>
+</tr>
+</table>
+<p>
+
+
+</div>
+
+
+<h3>GM Guide For Item Creation</h3>
+
 
 <table>
 <tr>
@@ -157,7 +373,7 @@ th, td {
 <tr>
 <td>+3</td>
 <td>-</td>
-<td>-</td>
+<td>Close<br>(20m)</td>
 <td>-</td>
 <td>-</td>
 <td>Extreme<br>(10)</td>
@@ -166,7 +382,7 @@ th, td {
 <tr>
 <td>+2</td>
 <td>Large<br>(5)</td>
-<td>Very Short<br>(15m)</td>
+<td>Very Short<br>(40m)</td>
 <td>Very Slow<br>(1)</td>
 <td>Very Low<br>(1x RoF)</td>
 <td>Very Slow<br>(6)</td>
@@ -175,7 +391,7 @@ th, td {
 <tr>
 <td>+1</td>
 <td>Largish<br>(4)</td>
-<td>Short<br>(30m)</td>
+<td>Short<br>(80m)</td>
 <td>Slow<br>(2)</td>
 <td>Low<br>(2x RoF)</td>
 <td>Slow<br>(4)</td>
@@ -184,7 +400,7 @@ th, td {
 <tr>
 <td>+0</td>
 <td>Standard<br>(3)</td>
-<td>Average<br>(60m)</td>
+<td>Average<br>(160m)</td>
 <td>Average<br>(3)</td>
 <td>Average<br>(3x RoF)</td>
 <td>Average<br>(2)</td>
@@ -193,7 +409,7 @@ th, td {
 <tr>
 <td>-1</td>
 <td>Smallish<br>(2)</td>
-<td>Long<br>(100m)</td>
+<td>Long<br>(320m)</td>
 <td>Fast<br>(6)</td>
 <td>High<br>(6x RoF)</td>
 <td>Fast<br>(1)</td>
@@ -202,7 +418,7 @@ th, td {
 <tr>
 <td>-2</td>
 <td>Small<br>(1)</td>
-<td>Very Long<br>(150m)</td>
+<td>Very Long<br>(640m)</td>
 <td>Very Fast<br>(10)</td>
 <td>Very High<br>(10x RoF)</td>
 <td>-</td>
@@ -211,16 +427,26 @@ th, td {
 <tr>
 <td>-3</td>
 <td>-</td>
-<td>Extreme<br>(300m)</td>
+<td>Extreme<br>(1280m)</td>
 <td>-</td>
 <td>Extreme<br>(20x RoF)</td>
 <td>-</td>
 <td>Extreme<br>(1d10+8)</td>
 </tr>
 </table>
-<br>
- 
+<p>
 
+
+
+
+
+
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 <table>
 <tr>
 <th colspan="10">Ranged Weapons - Las (Energy Damage)</th>
