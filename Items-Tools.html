@@ -7,6 +7,9 @@ table {
 th, td {
   padding: 4px;
 }
+.multicolContainer {
+  column-width: 300px;
+}
 </style>
 <title>Items - Tools - Dark Heresy Overhaul</title>
 
@@ -38,47 +41,12 @@ th, td {
 </table>
 <br>
 
-<p><b>Bonus and Description:</b> The bonus you get to relevant Tests when using the tool. The description outlines what the tool can be used for.</p>
+<p><b>Bonus:</b> The bonus you get to relevant Tests when using the tool.</p>
 
-<p><b>Availability:</b> The base availability for Tools is Plentiful, so a Small Tool with a +20 bonus has an Common availability.</p>
+<p><b>Description:</b> What the tool can be used for.</p>
 
 
-<table>
-<tr>
-<th colspan="9">Availability Bonuses and Penalties</th>
-</tr>
-<tr>
-<th>Av.</th>
-<th>Size</th>
-<th>Bonus</th>
-</tr>
-<tr>
-<td>+2</td>
-<td>Large</td>
-<td>None (+0)</td>
-</tr>
-<tr>
-<td>+1</td>
-<td>Bulky</td>
-<td>Poor (+10)</td>
-</tr>
-<tr>
-<td>+0</td>
-<td>Standard</td>
-<td>Average (+20)</td>
-</tr>
-<tr>
-<td>-1</td>
-<td>Small</td>
-<td>Good (+30)</td>
-</tr>
-<tr>
-<td>-2</td>
-<td>Trivial</td>
-<th>-</th>
-</tr>
-</table>
-<br>
+<h2>Examples</h2>
 
 
 <table>
@@ -126,10 +94,10 @@ th, td {
 <td>Plentiful</td>
 </tr>
 <tr>
-<td>Indistrial Lascutter</td>
-<td>Used to cut through or weld shut hard materials like steel and rock.</td>
-<td>Standard</td>
-<td>+20</td>
+<td>Psy-Focus</td>
+<td>Used to help psykers focus their minds on the warp.</td>
+<td>Small</td>
+<td>+10</td>
 <td>-</td>
 <td>Plentiful</td>
 </tr>
@@ -166,6 +134,14 @@ th, td {
 <td>Common</td>
 </tr>
 <tr>
+<td>Indistrial Lascutter</td>
+<td>Used to cut through or weld shut hard materials like steel and rock.</td>
+<td>Standard</td>
+<td>+40</td>
+<td>-</td>
+<td>Common</td>
+</tr>
+<tr>
 <td>Lascutter</td>
 <td>Used to cut through or weld shut hard materials like steel and rock.</td>
 <td>Small</td>
@@ -191,14 +167,72 @@ th, td {
 </tr>
 <tr>
 <td>Stummer</td>
-<td>Used to reduce noise in a small area.</td>
+<td>Used to aid moving silently.</td>
 <td>Small</td>
 <td>+20</td>
 <td>-</td>
 <td>Common</td>
 </tr>
+<tr>
+<td>Cameleoline Cloak</td>
+<td>Used to aid concealment.</td>
+<td>Smallish</td>
+<td>+40</td>
+<td>-</td>
+<td>Average</td>
+</tr>
 </table>
 <br>
+
+
+<h2>GM Guide For Item Creation</h2>
+<p>For Tools, apply modifiers from the table below to a base availability of +3 (Abundant). Modifiers should also be applied for special rules the item has.</p>
+
+
+<table>
+<tr>
+<th colspan="9">Availability Bonuses and Penalties</th>
+</tr>
+<tr>
+<th>Av.</th>
+<th>Size</th>
+<th>Bonus</th>
+</tr>
+<tr>
+<td>+2</td>
+<td>Large (5)</td>
+<td>Basic (+0)</td>
+</tr>
+<tr>
+<td>+1</td>
+<td>Largish (4)</td>
+<td>Poor (+10)</td>
+</tr>
+<tr>
+<td>+0</td>
+<td>Standard (3)</td>
+<td>Average (+20)</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>Smallish (2)</td>
+<td>Good (+30)</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>Small (1)</td>
+<td>Very Good (+40)</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>Trivial (0)</td>
+<td>Excellent (+50)</td>
+</tr>
+</table>
+<br>
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 <br>** think about electrical power
@@ -207,39 +241,6 @@ th, td {
 
 <br>** include trade tools for all trades
 
-
-
-<a href="ItemCards/Grapnel.html" target="_blank">Grapnel</a>
-<br>
-
-
-<h2>Additional Equipment</h2>
-
-<p>Additional Equipment can be worn without restriction, as long as it makes sense.</p>
-
-<p>Rule of Thumb: these items should give penalties as well as bonuses, so that wearing one is a meaningful choice. Alternatively, have limited uses.</p>
-
-<br>
-<a href="ItemCards/FiltrationPlugs.html" target="_blank">Filtration Plugs</a>
-<br>
-<a href="ItemCards/ExplosiveCollar.html" target="_blank">Explosive Collar</a>
-<br>
-<a href="ItemCards/ReBreather.html" target="_blank">Re-Breather</a>
-<br>
-<a href="ItemCards/InfraRedGoggles.html" target="_blank">Infra-Red Goggles</a>
-<br>
-<a href="ItemCards/MicroBead.html" target="_blank">Micro-Bead</a>
-<br>
-<a href="ItemCards/MicroBead-Encrypted.html" target="_blank">Encrypted Micro-Bead</a>
-<br>
-<a href="ItemCards/PhotoVisor.html" target="_blank">Photo-Visor</a>
-<br>
-<a href="ItemCards/Respirator.html" target="_blank">Respirator</a>
-<br>
-<a href="ItemCards/RecoilGloves.html" target="_blank">Recoil Gloves</a>
-<br>
-<a href="ItemCards/Chrono.html" target="_blank">Chrono</a>
-<br>
 
 
 </html>

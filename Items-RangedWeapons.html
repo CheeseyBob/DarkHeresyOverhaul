@@ -98,18 +98,22 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 
 <p><b>Damage:</b> The damage the target takes from each hit. The Type determines how effective armour is and what effects there are if critical damage is inflicted.</p>
 
-<p><b>Availability:</b> The base availability for Ranged Weapons is Abundant.</p>
 
-
-<h3>Examples</h3>
+<h2>Examples</h2>
 <ul>
-<li>Stubber (Plentiful)</li>
+<li>Laspistol (Plentiful)</li>
 <li>Pistol (Plentiful)</li>
+<li>Stubber (Plentiful)</li>
 <li>Autopistol (Common)</li>
+<li>Lasgun (Common)</li>
 <li>Pump-Action Shotgun (Common)</li>
 <li>Autostubber (Average)</li>
 <li>Hunting Rifle (Scarce)</li>
 <li>Heavy Stubber (Scarce)</li>
+<li>Belt-Fed Heavy Stubber (Scarce)</li>
+<li>Lascannon (Very Rare)</li>
+<li>Plasma Gun (Very Rare)</li>
+<li>Plasma Gun with Feed Line (Very Rare)</li>
 </ul>
 
 
@@ -118,16 +122,53 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 
 <table>
 <tr>
-<th>Stubber</th>
+<th>Laspistol</th>
 </tr>
 <tr>
 <td>Ranged Weapon</td>
 </tr>
 <tr>
-<td>Size: 3</td>
+<td>Size: 1</td>
 </tr>
 <tr>
-<td>Range: 320m</td>
+<td>Range: 80m</td>
+</tr>
+<tr>
+<td>RoF: 2</td>
+</tr>
+<tr>
+<td>Capacity: 12 Power</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+1 Energy</td>
+</tr>
+<tr>
+<td><b>Electric Power(1)</b>
+<br>This weapon uses 1 electric power per shot instead of consuming ammo.</td>
+</tr>
+<tr>
+<td><b>Reliable</b>
+<br>This weapon cannot become Jammed.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Pistol</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Range: 80m</td>
 </tr>
 <tr>
 <td>RoF: 3</td>
@@ -151,16 +192,16 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 
 <table>
 <tr>
-<th>Pistol</th>
+<th>Stubber</th>
 </tr>
 <tr>
 <td>Ranged Weapon</td>
 </tr>
 <tr>
-<td>Size: 1</td>
+<td>Size: 3</td>
 </tr>
 <tr>
-<td>Range: 80m</td>
+<td>Range: 320m</td>
 </tr>
 <tr>
 <td>RoF: 3</td>
@@ -217,6 +258,43 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 
 <table>
 <tr>
+<th>Lasgun</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 3</td>
+</tr>
+<tr>
+<td>Range: 160m</td>
+</tr>
+<tr>
+<td>RoF: 3</td>
+</tr>
+<tr>
+<td>Capacity: 18 Power</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+2 Energy</td>
+</tr>
+<tr>
+<td><b>Electric Power(1)</b>
+<br>This weapon uses 1 electric power per shot instead of consuming ammo.</td>
+</tr>
+<tr>
+<td><b>Reliable</b>
+<br>This weapon cannot become Jammed.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
 <th>Pump-Action Shotgun</th>
 </tr>
 <tr>
@@ -242,7 +320,7 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 </tr>
 <tr>
 <td><b>Scatter Shot</b>
-<br>Within 10m, each hit counts as 2 hits. Within 5m each hit counts as 3 hits</td>
+<br>Within 10m, each hit counts as 2 hits. Within 5m each hit counts as 3 hits.</td>
 </tr>
 </table>
 <p>
@@ -312,7 +390,7 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 </tr>
 <tr>
 <td><b>Reliable</b>
-<br>This weapon cannot become <i>Jammed</i>.</td>
+<br>This weapon cannot become Jammed.</td>
 </tr>
 </table>
 <p>
@@ -320,32 +398,247 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 
 <table>
 <tr>
-<th>[Item Name]</th>
+<th>Heavy Stubber</th>
 </tr>
 <tr>
 <td>Ranged Weapon</td>
 </tr>
 <tr>
-<td>Size: [Size]</td>
+<td>Size: 5</td>
 </tr>
 <tr>
-<td>Range: [Range]</td>
+<td>Range: 320m</td>
 </tr>
 <tr>
-<td>RoF: [RoF]</td>
+<td>RoF: 10</td>
 </tr>
 <tr>
-<td>Capacity: [Capacity] [Ammo Type]</td>
+<td>Capacity: 60 Bullets</td>
 </tr>
 <tr>
-<td>Reload: [Reload]</td>
+<td>Reload: 4</td>
 </tr>
 <tr>
-<td>Damage: [Damage] [Type]</td>
+<td>Damage: 1d10+3 Impact</td>
 </tr>
 <tr>
-<td><b>[Ability Name]</b>
-<br>[Ability Description]</td>
+<td><b>Suppressing Fire</b>
+<br>When you Attack Repeatedly with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within 20m in a 45 degree arc become Pinned.</td>
+</tr>
+<tr>
+<td><b>Storm(1)</b>
+<br>Get a +10 bonus to Attack Repeatedly (Ranged) and give a -10 penalty to oppose becoming Pinned when you use Suppressing Fire.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Belt-Fed Heavy Stubber</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 5</td>
+</tr>
+<tr>
+<td>Range: 320m</td>
+</tr>
+<tr>
+<td>RoF: 10</td>
+</tr>
+<tr>
+<td>Capacity: 200 Bullets</td>
+</tr>
+<tr>
+<td>Reload: 6</td>
+</tr>
+<tr>
+<td>Damage: 1d10+3 Impact</td>
+</tr>
+<tr>
+<td><b>Suppressing Fire</b>
+<br>When you Attack Repeatedly with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within 20m in a 45 degree arc become Pinned.</td>
+</tr>
+<tr>
+<td><b>Storm(1)</b>
+<br>Get a +10 bonus to Attack Repeatedly (Ranged) and give a -10 penalty to oppose becoming Pinned when you use Suppressing Fire.</td>
+</tr>
+<tr>
+<td><b>Belt-Fed</b>
+<br>Ammo is not contained in the weapon, but drawn from a container which must be placed beside the weapon.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Long Las</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Range: 640m</td>
+</tr>
+<tr>
+<td>RoF: 1</td>
+</tr>
+<tr>
+<td>Capacity: 20 Power</td>
+</tr>
+<tr>
+<td>Reload: 2</td>
+</tr>
+<tr>
+<td>Damage: 1d10+3 Energy</td>
+</tr>
+<tr>
+<td><b>Electric Power(2)</b>
+<br>This weapon uses 2 electric power per shot instead of consuming ammo.</td>
+</tr>
+<tr>
+<td><b>Accurate</b>
+<br>Get an extra +10 bonus when you Attack after you Aim.</td>
+</tr>
+<tr>
+<td><b>Reliable</b>
+<br>This weapon cannot become Jammed.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Lascannon</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 5</td>
+</tr>
+<tr>
+<td>Range: 1280m</td>
+</tr>
+<tr>
+<td>RoF: 1</td>
+</tr>
+<tr>
+<td>Capacity: 20 Power</td>
+</tr>
+<tr>
+<td>Reload: 4</td>
+</tr>
+<tr>
+<td>Damage: 4d10+5 Energy</td>
+</tr>
+<tr>
+<td><b>Electric Power(5)</b>
+<br>This weapon uses 4 electric power per shot instead of consuming ammo.</td>
+</tr>
+<tr>
+<td><b>Armour Damage</b>
+<br>Each point of damage reduced by cover or armour reduces the AP of that cover or armour.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Plasma Gun</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Range: 320m</td>
+</tr>
+<tr>
+<td>RoF: 3</td>
+</tr>
+<tr>
+<td>Capacity: 18 Plasma</td>
+</tr>
+<tr>
+<td>Reload: 4</td>
+</tr>
+<tr>
+<td>Damage: 1d10+5 Energy</td>
+</tr>
+<tr>
+<td><b>Overheats</b>
+<br>When this weapon jams, roll a d10:
+<br>1-5: The Jammed aspect is upgraded. You take 1d10 Energy damage unless you drop the weapon.
+<br>6-9: The weapon becomes Damaged. You take 1d10+2 Energy damage and drop the weapon.
+<br>10: The weapon explodes and is destroyed. You and anyone within 4m takes a hit from the weapon.</td>
+</tr>
+<tr>
+<td><b>Armour Damage</b>
+<br>Each point of damage reduced by cover or armour reduces the AP of that cover or armour.</td>
+</tr>
+<tr>
+<td><b>Overcharge(3)</b>
+<br>Before you Attack, you can spend up to 3 additional ammo. Doing so reduces the RoF to 1 for that attack and gives a 1d10 bonus to damage for each additional ammo spent. The additional ammo spent counts towards jamming.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Plasma Gun with Feed Line</th>
+</tr>
+<tr>
+<td>Ranged Weapon</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Range: 320m</td>
+</tr>
+<tr>
+<td>RoF: 3</td>
+</tr>
+<tr>
+<td>Capacity: 60 Plasma</td>
+</tr>
+<tr>
+<td>Reload: 10</td>
+</tr>
+<tr>
+<td>Damage: 1d10+5 Energy</td>
+</tr>
+<tr>
+<td><b>Overheats</b>
+<br>When this weapon jams, roll a d10:
+<br>1-5: The Jammed aspect is upgraded. You take 1d10 Energy damage unless you drop the weapon.
+<br>6-9: The weapon becomes Damaged. You take 1d10+2 Energy damage and drop the weapon.
+<br>10: The weapon explodes and is destroyed. You and anyone within 4m takes a hit from the weapon.</td>
+</tr>
+<tr>
+<td><b>Armour Damage</b>
+<br>Each point of damage reduced by cover or armour reduces the AP of that cover or armour.</td>
+</tr>
+<tr>
+<td><b>Overcharge(3)</b>
+<br>Before you Attack, you can spend up to 3 additional ammo. Doing so reduces the RoF to 1 for that attack and gives a 1d10 bonus to damage for each additional ammo spent. The additional ammo spent counts towards jamming.</td>
+</tr>
+<tr>
+<td><b>Feed Line</b>
+<br>Ammo is not contained in the weapon, but drawn from a container via a feed line.</td>
 </tr>
 </table>
 <p>
@@ -354,7 +647,8 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 </div>
 
 
-<h3>GM Guide For Item Creation</h3>
+<h2>GM Guide For Item Creation</h2>
+<p>For Ranged Weapons, apply modifiers from the table below to a base availability of +3 (Abundant). Modifiers should also be applied for special rules the item has.</p>
 
 
 <table>
@@ -437,554 +731,63 @@ The maximum effective range of the weapon. Apply a bonus/penalty for the range o
 <p>
 
 
-
-
-
-
-
-
-
-
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 <table>
 <tr>
-<th colspan="10">Ranged Weapons - Las (Energy Damage)</th>
+<th colspan="3">Special Rules</th>
 </tr>
 <tr>
 <th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
+<th>Av.</th>
+<th>Description</th>
 </tr>
 <tr>
-<td>Las Carbine</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Slow</td>
-<td>Very High</td>
-<td>Average</td>
-<td>Low</td>
-<td>Reliable</td>
-<td>Plentiful</td>
+<td><b>Belt-Fed</b></td>
+<td>+1</td>
+<td>Ammo is not contained in the weapon, but drawn from a container which must be placed beside the weapon.</td>
 </tr>
 <tr>
-<td>Laspistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Slow</td>
-<td>High</td>
-<td>Average</td>
-<td>Low</td>
-<td>Reliable</td>
-<td>Plentiful</td>
+<td><b>Electric Power(N)</b></td>
+<td>+N-1</td>
+<td>This weapon uses N electric power per shot instead of consuming ammo.</td>
 </tr>
 <tr>
-<td>Lasgun</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Average</td>
-<td>High</td>
-<td>Average</td>
-<td>Average</td>
-<td>Reliable</td>
-<td>Common</td>
+<td><b>Feed Line</b></td>
+<td>+0</td>
+<td>Ammo is not contained in the weapon, but drawn from a container via a feed line.</td>
 </tr>
 <tr>
-<td>Long-Las</td>
-<td>Standard</td>
-<td>Very Long</td>
-<td>Very Slow</td>
-<td>High</td>
-<td>Average</td>
-<td>High</td>
-<td>Accurate; Reliable</td>
-<td>Scarce</td>
+<td><b>Accurate</b></td>
+<td>-1</td>
+<td>Get an extra +10 bonus when you Attack after you Aim.</td>
 </tr>
 <tr>
-<td>Lascannon</td>
-<td>Bulky</td>
-<td>Extreme</td>
-<td>Very Slow</td>
-<td>Average</td>
-<td>Very Slow</td>
-<td>Extreme</td>
-<td>Armour Damage; Devastating(3)</td>
-<td>Very Rare</td>
+<td><b>Reliable</b></td>
+<td>-1</td>
+<td>This weapon cannot become Jammed.</td>
 </tr>
 <tr>
-<th colspan="10">Ranged Weapons - Solid Projectile (Impact Damage)</th>
+<td><b>Overcharge(N)</b></td>
+<td>-2N+1</td>
+<td>Before you Attack, you can spend up to N additional ammo. Doing so reduces the RoF to 1 for that attack and gives a 1d10 bonus to damage for each additional ammo spent. The additional ammo spent counts towards jamming.</td>
 </tr>
 <tr>
-<th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
+<td><b>Suppressing Fire</b></td>
+<td>-1</td>
+<td>When you Attack Repeatedly with this weapon, you can spend your Reaction to fire twice as many shots and make all characters within 20m in a 45 degree arc become Pinned.</td>
 </tr>
 <tr>
-<td>Double-Barrelled Shotgun</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Slow</td>
-<td>Very Low</td>
-<td>Average</td>
-<td>High</td>
-<td>Reliable; Scatter Shot</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Stub Revolver</td>
-<td>Small</td>
-<td>Short</td>
-<td>Slow</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Incremental Reload; Reliable</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Compact Stub Pistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Average</td>
-<td>Low</td>
-<td>Average</td>
-<td>Average</td>
-<td>Compact</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Stubber</td>
-<td>Standard</td>
-<td>Long</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>-</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Stub Pistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>-</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Pump-Action Shotgun</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Slow</td>
-<td>High</td>
-<td>Fast</td>
-<td>High</td>
-<td>Incremental Reload; Scatter Shot</td>
-<td>Common</td>
-</tr>
-<tr>
-<td>Stub Rifle</td>
-<td>Standard</td>
-<td>Long</td>
-<td>Slow</td>
-<td>Low</td>
-<td>Average</td>
-<td>High</td>
-<td>Accurate; Reliable</td>
-<td>Common</td>
-</tr>
-<tr>
-<td>Autopistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Fast</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Suppressing Fire</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Autostubber</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Fast</td>
-<td>High</td>
-<td>Average</td>
-<td>Average</td>
-<td>Suppressing Fire</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Autostubber (Fast)</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Very Fast</td>
-<td>Average</td>
-<td>Average</td>
-<td>Low</td>
-<td>Suppressing Fire; Storm(1)</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Combat Shotgun</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Average</td>
-<td>High</td>
-<td>Average</td>
-<td>High</td>
-<td>Scatter Shot</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Belt-Fed Heavy Stubber</td>
-<td>Bulky</td>
-<td>Long</td>
-<td>Very Fast</td>
-<td>Very High</td>
-<td>Very Slow</td>
-<td>Very High</td>
-<td>External Ammo; Suppressing Fire;<br> Storm</td>
-<td>Scarce</td>
-</tr> 
-<tr>
-<td>Heavy Stubber</td>
-<td>Bulky</td>
-<td>Long</td>
-<td>Very Fast</td>
-<td>Average</td>
-<td>Slow</td>
-<td>Very High</td>
-<td>Suppressing Fire; Storm</td>
-<td>Scarce</td>
-</tr> 
-<tr>
-<td>Hunting Rifle</td>
-<td>Standard</td>
-<td>Very Long</td>
-<td>Slow</td>
-<td>Low</td>
-<td>Average</td>
-<td>Very High</td>
-<td>Accurate; Reliable</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Armour Rifle</td>
-<td>Bulky</td>
-<td>Extreme</td>
-<td>Slow</td>
-<td>Low</td>
-<td>Average</td>
-<td>Very High</td>
-<td>Accurate; Devastating(1)</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<th colspan="10">Ranged Weapons - Bolt (Explosive Damage)</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Bolt Pistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Very High</td>
-<td>Tearing(2)</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td>Bolter</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Average</td>
-<td>High</td>
-<td>Average</td>
-<td>Very High</td>
-<td>Tearing(2)</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td>Heavy Bolter</td>
-<td>Bulky</td>
-<td>Long</td>
-<td>High</td>
-<td>High</td>
-<td>Long</td>
-<td>Extreme</td>
-<td>Suppressing Fire; Tearing(2)</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<th colspan="10">Ranged Weapons - Flame, Melta and Plasma (Energy Damage)</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Flamer</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>High</td>
-<td>Flame Attack; Spray</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Flamer with Feed Line</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Average</td>
-<td>Very High</td>
-<td>Slow</td>
-<td>High</td>
-<td>External Ammo; Flame Attack;<br> Spray</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Hand Flamer</td>
-<td>Small</td>
-<td>Very Short</td>
-<td>Low</td>
-<td>Average</td>
-<td>Average</td>
-<td>High</td>
-<td>Flame Attack; Spray</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Melta Gun</td>
-<td>Standard</td>
-<td>Very Short</td>
-<td>Very Slow</td>
-<td>High</td>
-<td>Average</td>
-<td>Extreme</td>
-<td>Armour Damage; Devastating(1);<br> Limited Range; Melta(4)</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>Melta Gun with Feed Line</td>
-<td>Standard</td>
-<td>Very Short</td>
-<td>Very Slow</td>
-<td>Extreme</td>
-<td>Slow</td>
-<td>Extreme</td>
-<td>Armour Damage; External Ammo;<br> Devastating(1); Limited Range; Melta(4)</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>Plasma Gun</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Average</td>
-<td>High</td>
-<td>Slow</td>
-<td>Very High</td>
-<td>Armour Damage; Overcharge(2);<br> Overheats</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>Plasma Gun with Feed Line</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Average</td>
-<td>Extreme</td>
-<td>Very Slow</td>
-<td>Very High</td>
-<td>Armour Damage; External Ammo;<br> Overcharge(2); Overheats</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>Plasma Pistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Average</td>
-<td>Average</td>
-<td>Slow</td>
-<td>Very High</td>
-<td>Armour Damage; Overcharge(2);<br> Overheats</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>Inferno Pistol</td>
-<td>Small</td>
-<td>Very Short</td>
-<td>Very Slow</td>
-<td>Average</td>
-<td>Average</td>
-<td>Extreme</td>
-<td>Armour Damage; Devastating(1);<br> Limited Range; Melta(4)</td>
-<td>Extremely Rare</td>
-</tr>
-<tr>
-<th colspan="10">Ranged Weapons (Rending Damage)</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Bow</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Very Slow</td>
-<td>Very Low</td>
-<td>Fast</td>
-<td>Low</td>
-<td>Limited Damage; Muscle-Powered;<br> Reliable</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Needle Pistol</td>
-<td>Small</td>
-<td>Short</td>
-<td>Slow</td>
-<td>Average</td>
-<td>Average</td>
-<td>Very Low</td>
-<td>Accurate; Felling; Limited Damage;<br> Strong Lethal Poison </td>
-<td>Rare</td>
-</tr>
-<tr>
-<td>Needle Rifle</td>
-<td>Standard</td>
-<td>Very Long</td>
-<td>Slow</td>
-<td>Average</td>
-<td>Average</td>
-<td>Very Low</td>
-<td>Accurate; Felling; Limited Damage;<br> Strong Lethal Poison </td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<th colspan="10">Ranged Weapons - Special</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Size</th>
-<th>Range</th>
-<th>RoF</th>
-<th>Capacity</th>
-<th>Reload</th>
-<th>Damage</th>
-<th>Special Rules</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Webber</td>
-<td>Standard</td>
-<td>Short</td>
-<td>Slow</td>
-<td>Average</td>
-<td>Average</td>
-<td>Average</td>
-<td>Ensnaring; Non-Lethal;<br> Scatter Shot</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Web Pistol</td>
-<td>Small</td>
-<td>Very Short</td>
-<td>Slow</td>
-<td>Low</td>
-<td>Average</td>
-<td>Average</td>
-<td>Ensnaring; Non-Lethal;<br> Scatter Shot</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Frag Grenade Launcher</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Very Slow</td>
-<td>High</td>
-<td>Average</td>
-<td>Average</td>
-<td>3m Blast; Frag(1);<br> Incremental Reload;</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Frag Missile Launcher</td>
-<td>Bulky</td>
-<td>Very Long</td>
-<td>Very Slow</td>
-<td>Very Low</td>
-<td>Average</td>
-<td>High</td>
-<td>5m Blast; Frag(1)</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Krak Grenade Launcher</td>
-<td>Standard</td>
-<td>Average</td>
-<td>Very Slow</td>
-<td>High</td>
-<td>Average</td>
-<td>Extreme</td>
-<td>Armour Damage; Devastating(1);<br> Incremental Reload;</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Krak Missile Launcher</td>
-<td>Bulky</td>
-<td>Very Long</td>
-<td>Very Slow</td>
-<td>Very Low</td>
-<td>Average</td>
-<td>Extreme</td>
-<td>Armour Damage; Devastating(2)</td> 
-<td>Scarce</td>
+<td><b>Scatter Shot</b></td>
+<td>-3</td>
+<td>Within 10m, each hit counts as 2 hits. Within 5m each hit counts as 3 hits.</td>
 </tr>
 </table>
-<br>
+<p>
+
+
+<h3>Notes</h3>
+<ul>
+<li>An extra hit / an extra d10 of damage is worth 2 availability.</li>
+</ul>
 
 
 <table>
@@ -1013,7 +816,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 </tr>
 <tr>
 <td>Belt-Fed -</td>
-<td>+External Ammo; Capacity +2; Reload -1</td>
+<td>+Belt-Fed; Capacity +2; Reload -1</td>
+<td>+0</td>
+</tr>
+<tr>
+<td>- with Feed Line</td>
+<td>+Feed Line; Capacity +2; Reload -2</td>
 <td>+0</td>
 </tr>
 <tr>

@@ -7,6 +7,9 @@ table {
 th, td {
   padding: 4px;
 }
+.multicolContainer {
+  column-width: 300px;
+}
 </style>
 <title>Items - Ammo - Dark Heresy Overhaul</title>
 
@@ -29,97 +32,141 @@ th, td {
 <td colspan="6">Capacity: [Capacity]</td>
 </tr>
 <tr>
-<td colspan="6">Damage: [Damage]</td>
-</tr>
-<tr>
 <td colspan="6"><b>[Ability Name]</b>
 <br>[Ability Description]</td>
 </tr>
 </table>
-<br>
+<p>
 
 
-<p><b>Availability:</b> The base availability for Ammo is the weapon's availability +3.</p>
+<h2>Examples</h2>
+<ul>
+<li>Stubber Mag (Abundant)</li>
+<li>Pistol Mag (Abundant)</li>
+<li>Heavy Stubber Mag (Common)</li>
+<li>Heavy Stubber Belt Box (Average)</li>
+<li>Plasma Gun Canister (Scarce)</li>
+<li>Plasma Gun Tank (Rare)</li>
+</ul>
+
+
+<div class="multicolContainer">
 
 
 <table>
 <tr>
-<th colspan="10">Ammo</th>
+<th>Stubber Mag</th>
 </tr>
 <tr>
-<th>Name</th>
-<th>Size</th>
-<th>Special Rules</th>
-<th>Weapon Availability</th>
-<th>Availability</th>
+<td>Ammo</td>
 </tr>
 <tr>
-<td>Las Carbine Charge Pack</td>
-<td>Small</td>
-<td>Rechargable</td>
-<td>Plentiful</td>
-<td>Plentiful</td>
+<td>Size: 1</td>
 </tr>
 <tr>
-<td>Laspistol Charge Pack</td>
-<td>Small</td>
-<td>Rechargable</td>
-<td>Plentiful</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Stub Pistol Magazine</td>
-<td>Small</td>
-<td>-</td>
-<td>Plentiful</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Box of Shotgun Shells</td>
-<td>Small</td>
-<td>-</td>
-<td>Common</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Combat Shotgun Magazine</td>
-<td>Small</td>
-<td>-</td>
-<td>Average</td>
-<td>Common</td>
-</tr>
-<tr>
-<td>Heavy Stubber Magazine</td>
-<td>Small</td>
-<td>-</td>
-<td>Scarce</td>
-<td>Common</td>
-</tr>
-<tr>
-<td>Heavy Stubber Belt Case</td>
-<td>Standard</td>
-<td>-</td>
-<td>Scarce</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Bolt Pistol Magazine</td>
-<td>Small</td>
-<td>-</td>
-<td>Rare</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td>Melta Gun Canister</td>
-<td>Small</td>
-<td>-</td>
-<td>Very Rare</td>
-<td>Rare</td>
+<td>Capacity: 9 Bullets</td>
 </tr>
 </table>
-<br>
+<p>
 
 
+<table>
+<tr>
+<th>Pistol Mag</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Capacity: 9 Bullets</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Heavy Stubber Mag</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 2</td>
+</tr>
+<tr>
+<td>Capacity: 60 Bullets</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Heavy Stubber Belt Box</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Capacity: 200 Bullets</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Plasma Gun Canister</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 2</td>
+</tr>
+<tr>
+<td>Capacity: 18 Plasma</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Plasma Gun Tank</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 4</td>
+</tr>
+<tr>
+<td>Capacity: 60 Plasma</td>
+</tr>
+</table>
+<p>
+
+
+</div>
+
+
+<h3>Availability</h3>
+<ul>
+<li>The base availability for Ammo is the weapon's availability +2, to a maximum of Abundant (+3).</li>
+<li>Ammo for weapons which are Belt-Fed or have a Feed Line instead use the weapon's availability +1.</li>
+<li>Ammo for weapons which use Electric Power instead use the weapon's availability +0.</li>
+</ul>
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 <br>
@@ -127,15 +174,7 @@ th, td {
 <br>
 <a href="ItemCards/Bullets.html" target="_blank">Bullets</a>
 <br>
-<a href="ItemCards/Bullets-Dumdum.html" target="_blank">Dumdum Bullets</a>
-<br>
-<a href="ItemCards/Bullets-Piercing.html" target="_blank">Piercing Bullets</a>
-<br>
 <a href="ItemCards/Shells.html" target="_blank">Shells</a>
-<br>
-<a href="ItemCards/Shells-Inferno.html" target="_blank">Inferno Shells</a>
-<br>
-<a href="ItemCards/Shells-Slugs.html" target="_blank">Shotgun Slugs</a>
 <br>
 <a href="ItemCards/Laspistol-ChargePack.html" target="_blank">Laspistol Charge Pack</a>
 <br>
@@ -143,23 +182,9 @@ th, td {
 <br>
 <a href="ItemCards/Lasgun-ChargePack.html" target="_blank">Lasgun Charge Pack</a>
 <br>
-<a href="ItemCards/Lasgun-ChargePack-Overcharge.html" target="_blank">Lasgun Overcharge Pack</a>
-<br>
-<a href="ItemCards/Lasgun-ChargePack-HotShot.html" target="_blank">Lasgun Hot-Shot Charge Pack</a>
-<br>
 <a href="ItemCards/LongLas-ChargePack.html" target="_blank">Long-Las Charge Pack</a>
 <br>
 <a href="ItemCards/Lascannon-ChargePack.html" target="_blank">Lascannon Charge Pack</a>
-<br>
-<a href="ItemCards/HeavyStubberBeltCase.html" target="_blank">Heavy Stubber Ammo-Belt Case</a>
-<br>
-<a href="ItemCards/AutopistolMagazine.html" target="_blank">Autopistol Magazine</a>
-<br>
-<a href="ItemCards/StubPistol-Magazine-Dumdum.html" target="_blank">Stub Pistol Magazine of Dumdum Bullets</a>
-<br>
-<a href="ItemCards/BoltPistol-Magazine.html" target="_blank">Bolt Pistol Magazine</a>
-<br>
-<a href="ItemCards/LauncherGrenade-Frag.html" target="_blank">Frag Grenade (Launcher Ammo)</a>
 <br>
 
 

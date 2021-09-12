@@ -20,8 +20,16 @@
 
 > comprehensive talent list
 
+	~~ Power/Electricity ~~
 
-	~~
+* For basic powered items, have running out of power be a "critical fail" result.
+* For some items, tracking power use will be important:
+- Las weapons: 1 unit of power = 1 lasgun shot.
+- Power Armour: ??
+* Charging at power outlets....how fast?
+
+
+	~~ Memos ~~
 
 100 perils - get sucked into the warp for 1d10 turns; return after drifting in random direction
 
