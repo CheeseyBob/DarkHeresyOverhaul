@@ -17,11 +17,11 @@ th, td {
 <h1>Aspects</h1>
 <p>Aspects confer bonuses/penalties to types of actions. They can also prevent or allow certain kinds of actions, if it makes sense. Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.</p>
 
-<p>By default, the bonus/penalty applied by an Aspect is ±10. An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. For example, if a character who is <i>Stunned</i> becomes <i>Stunned</i> again, they end up with a single <i>Stunned(20)</i> Aspect. If they then Resist Stun and succeed, they end up merely <i>Stunned</i> and must Resist Stun again to remove the Aspect.</p>
+<p>By default, the bonus/penalty applied by an Aspect is ±10. An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. For example, if a character who is <i>Stunned</i> becomes <i>Stunned</i> again, they end up with a single <i>Stunned(2)</i> Aspect. If they then Resist Stun and succeed, they end up merely <i>Stunned</i> and must Resist Stun again to remove the Aspect.</p>
 
 <p>Rule of thumb:
 <ul>
-<li>Bonuses/penalties apply only to the target. Anything benefits other characters get against the target should be modelled using penalites to the target opposing that action (and vice versa).</li>
+<li>Bonuses/penalties apply only to the target. Any benefits other characters get against the target should be come from penalites to the target opposing that action (and vice versa).</li>
 <li>The target of an aspect should get one opportunity to oppose the effects of an Aspect per round, including one before the effect is applied (either at the start of their turn or when opposing the creation of the Aspect).</li>
 </ul>
 </p>
@@ -414,35 +414,7 @@ th, td {
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Rest; becoming <i>Wounded</i></td>
-</tr>
-</table>
-<br>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Wounded</i></th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Rest</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Rest</td>
+<td>Rest; taking wounds</td>
 </tr>
 </table>
 <br>
@@ -540,6 +512,34 @@ th, td {
 
 <table>
 <tr>
+<th colspan="2"><i>Drugged (De-Tox)</i></th>
+</tr>
+<tr>
+<th>Prevents</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Allows</th>
+<td>At the start of their turn, all poison/drug aspects on the target are downgraded (including this one). The target does Resist Physically, becoming Stunned on failure and additionally becoming Fatigued on critical failure.</td>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>-</td>
+</tr>
+</table>
+<br>
+
+
+<table>
+<tr>
 <th colspan="2"><i>Drugged (Frenzon)</i></th>
 </tr>
 <tr>
@@ -548,7 +548,7 @@ th, td {
 </tr>
 <tr>
 <th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect. They become <i>Frenzied</i> if they fail.</td>
+<td>At the start of their turn, the target does Resist Poison to overcome the Aspect. They become <i>Frenzied</i> if they fail.</td>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -656,7 +656,7 @@ th, td {
 </tr>
 <tr>
 <th>Prevents</th>
-<td>Penalties from <i>Fatigue</i>, <i>Stunned</i> and <i>Wounded</i>.</td>
+<td>Penalties from <i>Fatigue</i> and <i>Stunned</i>.</td>
 </tr>
 <tr>
 <th>Allows</th>

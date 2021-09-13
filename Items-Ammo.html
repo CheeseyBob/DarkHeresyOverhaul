@@ -20,19 +20,19 @@ th, td {
 <h1>Items - Ammo</h1>
 <table>
 <tr>
-<th colspan="6">[Item Name]</th>
+<th>[Item Name]</th>
 </tr>
 <tr>
-<td colspan="3">Ammo</td>
+<td>Ammo</td>
 </tr>
 <tr>
-<td colspan="3">Size: [Size]</td>
+<td>Size: [Size]</td>
 </tr>
 <tr>
-<td colspan="6">Capacity: [Capacity]</td>
+<td>Capacity: [Capacity]</td>
 </tr>
 <tr>
-<td colspan="6"><b>[Ability Name]</b>
+<td><b>[Ability Name]</b>
 <br>[Ability Description]</td>
 </tr>
 </table>
@@ -43,10 +43,16 @@ th, td {
 <ul>
 <li>Stubber Mag (Abundant)</li>
 <li>Pistol Mag (Abundant)</li>
+<li>Pump-Action Shotgun Mag (Abundant)</li>
+<li>Laspistol Power Pack (Plentiful)</li>
 <li>Heavy Stubber Mag (Common)</li>
+<li>Lasgun Power Pack (Common)</li>
 <li>Heavy Stubber Belt Box (Average)</li>
+<li>Long Las Power Pack (Scarce)</li>
 <li>Plasma Gun Canister (Scarce)</li>
 <li>Plasma Gun Tank (Rare)</li>
+<li>Lascannon Power Pack (Very Rare)</li>
+<li>Power Armour Backpack (Very Rare)</li>
 </ul>
 
 
@@ -89,6 +95,44 @@ th, td {
 
 <table>
 <tr>
+<th>Pump-Action Shotgun Mag</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Capacity: 12 Shells</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Laspistol Power Pack</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Capacity: 12 Power</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b>
+<br>This item can be recharged from a power supply.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
 <th>Heavy Stubber Mag</th>
 </tr>
 <tr>
@@ -106,6 +150,27 @@ th, td {
 
 <table>
 <tr>
+<th>Lasgun Power Pack</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Capacity: 18 Power</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b>
+<br>This item can be recharged from a power supply.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
 <th>Heavy Stubber Belt Box</th>
 </tr>
 <tr>
@@ -116,6 +181,31 @@ th, td {
 </tr>
 <tr>
 <td>Capacity: 200 Bullets</td>
+</tr>
+<tr>
+<td><b>External Ammo</b>
+<br>This is designed to be used with a belt-fed weapon.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Long Las Power Pack</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 1</td>
+</tr>
+<tr>
+<td>Capacity: 20 Power</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b>
+<br>This item can be recharged from a power supply.</td>
 </tr>
 </table>
 <p>
@@ -151,6 +241,52 @@ th, td {
 <tr>
 <td>Capacity: 60 Plasma</td>
 </tr>
+<tr>
+<td><b>External Ammo Tank</b>
+<br>This is designed to be used with a weapon with a feed line.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Lascannon Power Pack</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 2</td>
+</tr>
+<tr>
+<td>Capacity: 40 Power</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b>
+<br>This item can be recharged from a power supply.</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th>Power Armour Backpack</th>
+</tr>
+<tr>
+<td>Ammo</td>
+</tr>
+<tr>
+<td>Size: 5</td>
+</tr>
+<tr>
+<td>Capacity: 200 Power</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b>
+<br>This item can be recharged from a power supply.</td>
+</tr>
 </table>
 <p>
 
@@ -158,12 +294,40 @@ th, td {
 </div>
 
 
-<h3>Availability</h3>
-<ul>
-<li>The base availability for Ammo is the weapon's availability +2, to a maximum of Abundant (+3).</li>
-<li>Ammo for weapons which are Belt-Fed or have a Feed Line instead use the weapon's availability +1.</li>
-<li>Ammo for weapons which use Electric Power instead use the weapon's availability +0.</li>
-</ul>
+<h2>GM Guide For Item Creation</h2>
+<p>The base availability for Ammo is the weapon's availability +2, to a maximum of Abundant (+3). Modifiers should also be applied for special rules the item has.</p>
+
+
+<table>
+<tr>
+<th colspan="3">Special Rules</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Av.</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>External Ammo</b></td>
+<td>-1</td>
+<td>This is designed to be used with a belt-fed weapon.</td>
+</tr>
+<tr>
+<td><b>External Ammo Tank</b></td>
+<td>-1</td>
+<td>This is designed to be used with a weapon with a feed line.</td>
+</tr>
+<tr>
+<td><b>Rechargeable</b></td>
+<td>-2</td>
+<td>This item can be recharged from a power supply.</td>
+</tr>
+</table>
+<p>
+
+
+
+
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

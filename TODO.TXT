@@ -1,13 +1,5 @@
 	TO DO LIST
 
-> Apply changes to item sizes and ranges to the items.
-
-> See if items can be simplified in other ways.
-
-> continue with item review
-
-> Figure out electricity, then look at las weapons
-
 > specify some crafting materials??
 
 > get rid of the Infuence characteristic(?)
@@ -24,9 +16,9 @@
 
 * For basic powered items, have running out of power be a "critical fail" result.
 * For some items, tracking power use will be important:
-- Las weapons: 1 unit of power = 1 lasgun shot.
-- Power Armour: ??
-* Charging at power outlets....how fast?
+- Las weapons: 1 unit of power = 1 lasgun shot. Lasgun holds 18 power. Lascannon holds 40 power.
+- Power Armour: backpack contains 200 power... Uses 20+2d10 power/hour?
+* Charging at power outlets....how fast? 1d10/hour?
 
 
 	~~ Memos ~~
