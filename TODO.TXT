@@ -1,8 +1,8 @@
 	TO DO LIST
 
-> specify some crafting materials??
+> get rid of the Infuence characteristic - this will affect character creation
 
-> get rid of the Infuence characteristic(?)
+> specify some crafting materials??
 
 > mechanicus implants and other bionics
 
