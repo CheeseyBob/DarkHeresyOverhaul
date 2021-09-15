@@ -26,7 +26,7 @@
 
 Warp exposure - 1d10+10 corruption & insanity per turn
 
-receiving insanity - DoS gives amount to reduce by.
+receiving insanity - DoS of Resist(Mental) gives amount to reduce by.
 
 
 wytchcraft power - inflict corruption
