@@ -1,16 +1,15 @@
 	TO DO LIST
 
-> get rid of the Infuence characteristic - this will affect character creation
-
-> specify some crafting materials??
-
 > mechanicus implants and other bionics
+
+> comprehensive talent list
 
 > polish and balance the character creation process
 
 > continue with psychic powers
 
-> comprehensive talent list
+> More NPC personality tables
+
 
 	~~ Power/Electricity ~~
 

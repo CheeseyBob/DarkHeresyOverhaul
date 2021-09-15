@@ -274,7 +274,7 @@ A character can carry/equip additional items, as long as each item has size at m
 <td>Drudging Classes</td>
 <td>5</td>
 <td>10</td>
-<td>Those that work in the fields, factoriums and hives of the Imperium, by far making up the bulk of mankind.</td>
+<td>Those that work in the fields, manufactorums and hives of the Imperium, by far making up the bulk of mankind.</td>
 </tr>
 <tr>
 <td>Military Class</td>
@@ -328,10 +328,12 @@ A character can carry/equip additional items, as long as each item has size at m
 <th>Modifier</th>
 <th>Price Bracket</th>
 <th>Price Roll</th>
+<th>Crafting Steps</th>
 </tr>
 <tr>
 <td>Ubiquitous</td>
 <td>Automatic</td>
+<td>1</td>
 <td>1</td>
 <td>1</td>
 </tr>
@@ -340,60 +342,70 @@ A character can carry/equip additional items, as long as each item has size at m
 <td>+30</td>
 <td>1-10</td>
 <td>1d10</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Plentiful</td>
 <td>+20</td>
 <td>10-30</td>
 <td>1d10+10</td>
+<td>4</td>
 </tr>
 <tr>
 <td>Common</td>
 <td>+10</td>
 <td>30-100</td>
 <td>3d10+30</td>
+<td>8</td>
 </tr>
 <tr>
 <td>Average</td>
 <td>+0</td>
 <td>100-300</td>
 <td>10 x (1d10 + 10)</td>
+<td>16</td>
 </tr>
 <tr>
 <td>Scarce</td>
 <td>-10</td>
 <td>300-1000</td>
 <td>10 x (3d10 + 30)</td>
+<td>32</td>
 </tr>
 <tr>
 <td>Rare</td>
 <td>-20</td>
 <td>1000-3000</td>
 <td>100 x (1d10 + 10)</td>
+<td>64</td>
 </tr>
 <tr>
 <td>Very Rare</td>
 <td>-30</td>
 <td>3000-10,000</td>
 <td>100 x (3d10 + 30)</td>
+<td>128</td>
 </tr>
 <tr>
 <td>Extremely Rare</td>
 <td>-40</td>
 <td>10,000-30,000</td>
 <td>1,000 x (1d10 + 10)</td>
+<td>256</td>
 </tr>
 <tr>
 <td>Near Unique</td>
 <td>-50</td>
 <td>30,000-100,000</td>
 <td>1,000 x (3d10 + 30)</td>
+<td>512</td>
 </tr>
 <tr>
 <td>Unique</td>
 <td>-60</td>
 <td>100,000+</td>
 <td>10,000 x (1d10 + 10)</td>
+<td>1024</td>
 </tr>
 </table>
 <br>
@@ -500,10 +512,41 @@ Trade:
 
 Requisition:
 <ul>
-<li>Give a justification to the NPC. This will apply a bonus/penalty: no/poor justification (-20), decent justification (+20), excellent justification (+40)</li>
-<li>If you reveal you are working for the Inquisition, you......</li>
-<li>The NPC's disposition towards you.</li>
+<li>Either Command, Deceive, Intimidate or Persuade the NPC. This will affect their Disposition, but not whether .</li>
+<li>The NPC makes a Disposition Test to determine if they give you the item(s). This is modified by the justification given (see the below table), the availability of the item and whether you reveal you are working for the Inquisition (+30).</li>
 </ul>
+
+<table>
+<tr>
+<th>Justification</th>
+<th>Modifier</th>
+</tr>
+<tr>
+<td>completely nonsensical</td>
+<td>automatic failure</td>
+</tr>
+<tr>
+<td>none or very poor</td>
+<td>-30</td>
+</tr>
+<tr>
+<td>poor</td>
+<td>-10</td>
+</tr>
+<tr>
+<td>decent</td>
+<td>+10</td>
+</tr>
+<tr>
+<td>excellent</td>
+<td>+30</td>
+</tr>
+<tr>
+<td>crazy to refuse</td>
+<td>automatic success</td>
+</tr>
+</table>
+<p>
 
 
 <h3>Identifying Items</h3>
@@ -516,9 +559,16 @@ Requisition:
 
 <h3>Crafting</h3>
 <ul>
-<li>Materials and designs: all creations require materials; tech items also require designs.</li>
-<li>Number of steps to craft: 1-5 for simple items; 5-10 for more complicated items; 10+ for very complicated items.(??)</li>
-<li>Difficulty: use the availablity bonus/penalty.</li>
+<li>Materials: all creations require the appropriate amount and kind of materials. The availability of materials is two steps higher than the item itself. The volume of materials required should match the volume of the item.</li>
+<li>Designs: tech items also require designs. The availability of these is one step lower than the item itself.</li>
+<li>Number of steps required to craft the item, and the difficulty of the Craft Test is given in the item availability table.</li>
+<li>For particularly lengthy crafting projects, make one roll each day and multiply the number of steps of progress by the number of hours worked.</li>
+</ul>
+
+
+<h3>Repair</h3>
+<ul>
+<li>xxxxxxxx</li>
 </ul>
 
 
