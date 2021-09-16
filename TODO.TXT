@@ -4,6 +4,8 @@
 
 > comprehensive talent list
 
+> review character creation items (as inventory system has changed)
+
 > polish and balance the character creation process
 
 > continue with psychic powers
