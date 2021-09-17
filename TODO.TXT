@@ -12,6 +12,8 @@
 
 > More NPC personality tables
 
+> make example characters (in particular for services)
+
 
 	~~ Power/Electricity ~~
 
