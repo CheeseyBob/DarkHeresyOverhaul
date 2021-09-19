@@ -29,6 +29,8 @@ th, td {
 <br>
 <a href="Talents.html#Tech">Tech</a>
 <br>
+<a href="Talents.html#TechPriest">Tech-Priest</a>
+<br>
 <a href="Talents.html#Knowledge">Knowledge</a>
 <br>
 <a href="Talents.html#Leadership">Leadership</a>
@@ -53,6 +55,13 @@ th, td {
 <th>XP Cost</th>
 </tr>
 <tr>
+<td><b>Double Team:</b>
+Give double the penalty when you Fend Off or Feint.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>200</td>
+</tr>
+<tr>
 <td><b>Sprinter:</b>
 Your maximum bonus Movement is three times your base Movement, rather than two times.</td>
 <td>-</td>
@@ -61,7 +70,7 @@ Your maximum bonus Movement is three times your base Movement, rather than two t
 </tr>
 <tr>
 <td><b>xxxxx:</b>
-xxxxx</td>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -93,22 +102,15 @@ Use double your Strength Bonus for damage when you Attack Heavily (Melee) with a
 <td>400</td>
 </tr>
 <tr>
-<td><b>Fast Assault:</b>
-Get a +10 bonus to Attack Repeatedly (Melee) with weapons which have a Hits stat of 3 or more.</td>
-<td>-</td>
-<td>Weapon Skill</td>
-<td>400</td>
-</tr>
-<tr>
 <td><b>Follow-Through:</b>
-When you Attack (Melee), you can spend Degrees of Success to get a +10 bonus per DoS to Attack (Melee).</td>
+When you make a melee attack, you can spend Degrees of Success to get a +10 bonus to Attack (Melee).</td>
 <td>Weapon Skill 40</td>
 <td>Weapon Skill</td>
 <td>400</td>
 </tr>
 <tr>
 <td><b>Furious Assault:</b>
-Get a +10 bonus to Attack Repeatedly (Melee) when using two melee weapons.</td>
+Get a +10 bonus to Attack Repeatedly (Melee) when wielding multiple melee weapons.</td>
 <td>-</td>
 <td>Weapon Skill</td>
 <td>400</td>
@@ -142,8 +144,29 @@ Get  a +20 bonus to Grapple.</td>
 <td>400</td>
 </tr>
 <tr>
+<td><b>Gun Master (Choose One):</b>
+Get a +10 bonus to all attacks with the chosen ranged weapon.</td>
+<td>-</td>
+<td>Ballistic Skill</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Weapon Master (Choose One):</b>
+Get a +10 bonus to all attacks with the chosen melee weapon.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Frenzy:</b>
+Secondary Action; Become Frenzied</td>
+<td>-</td>
+<td>Strength</td>
+<td>200</td>
+</tr>
+<tr>
 <td><b>xxxxx:</b>
-xxxxx</td>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -172,7 +195,7 @@ Full Action; Move twice and Attack (Melee) during the movement.</td>
 Full Action; Attack (Melee); damage dice explode on rolls 1 lower per Degree of Success.</td>
 <td>-</td>
 <td>Weapon Skill</td>
-<td>600</td>
+<td>800</td>
 </tr>
 <tr>
 <td><b>Assault Fire:</b>
@@ -197,7 +220,7 @@ Get an extra +10 bonus when you make a melee attack after you Aim.</td>
 </tr>
 <tr>
 <td><b>Dual-Wielder:</b>
-Get a +10 bonus to all melee attacks when using two weapons.</td>
+When you Attack (Melee), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).</td>
 <td>-</td>
 <td>Weapon Skill</td>
 <td>400</td>
@@ -218,10 +241,17 @@ Spend two Degrees of Success on a Parry to not spend your Reaction.</td>
 </tr>
 <tr>
 <td><b>Gunslinger:</b>
-Get a +10 bonus to all ranged attacks when using two weapons.</td>
+When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).</td>
 <td>-</td>
 <td>Ballistic Skill</td>
 <td>400</td>
+</tr>
+<tr>
+<td><b>Independent Targeting:</b>
+When wielding multiple ranged weapons, you can attack a different target with each weapon and can choose which target to assign each hit to.</td>
+<td>Gunslinger</td>
+<td>Ballistic Skill</td>
+<td>600</td>
 </tr>
 <tr>
 <td><b>Leap Up:</b>
@@ -229,6 +259,13 @@ You can stand up without spending a Secondary Action.</td>
 <td>-</td>
 <td>Agility</td>
 <td>200</td>
+</tr>
+<tr>
+<td><b>Master Gunslinger:</b>
+Get a +10 bonus to all ranged attacks when using multiple weapons.</td>
+<td>Gunslinger</td>
+<td>Ballistic Skill</td>
+<td>400</td>
 </tr>
 <tr>
 <td><b>Quick Draw:</b>
@@ -259,8 +296,15 @@ When you Parry, you can spend Degrees of Success to get a +10 bonus per DoS to A
 <td>400</td>
 </tr>
 <tr>
+<td><b>Two-Weapon Master:</b>
+Get a +10 bonus to all melee attacks when using multiple weapons.</td>
+<td>Dual-Wielder</td>
+<td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>xxxxx:</b>
-xxxxx</td>
+xxxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -278,6 +322,48 @@ xxxxx</td>
 <th>XP Cost</th>
 </tr>
 <tr>
+<td><b>Adamantium Will:</b>
+Get a +30 bonus to Resist Pinning and Fear.</td>
+<td>Nerves of Steel</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Constant Vigilance:</b>
+You can use Reflex to act before another character even when you are not waiting.</td>
+<td>-</td>
+<td>Perception</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Deny the Witch:</b>
+Get +20 to Resist psychic powers which affect your mind.</td>
+<td>-</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Die Hard:</b>
+You do not become Fatigued from Bleeding Out.</td>
+<td>Toughness 40</td>
+<td>Toughness</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Disarm:</b>
+Main Action; Weapon Skill Test; Target drops one wielded item plus one per DoS.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Hard Target:</b>
+When you Run or Charge, you give a -20 penalty to all ranged attacks against you.</td>
+<td>Agiliy 40</td>
+<td>Agility</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>Nerves of Steel:</b>
 Get a +20 bonus to Resist Pinning and Fear.</td>
 <td>-</td>
@@ -285,15 +371,8 @@ Get a +20 bonus to Resist Pinning and Fear.</td>
 <td>400</td>
 </tr>
 <tr>
-<td><b>Fearless:</b>
-Immune to Pinning and Fear.</td>
-<td>Nerves of Steel</td>
-<td>Willpower</td>
-<td>800</td>
-</tr>
-<tr>
 <td><b>xxxxx:</b>
-xxxxx</td>
+xxxxxxxxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -476,7 +555,48 @@ When a character within 10m triggers Psychic Phenomena, you can use Reflex to ta
 <td>200</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>xxxxx:</b>
+xxxxxxxxxxxxxxxxxxxxx</td>
+<td>xxxxx</td>
+<td>xxxxx</td>
+<td>xxx</td>
+</tr>
+</table>
+<p>
+
+
+<h2 id="TechPriest">Tech-Priest Talents (Tech)</h2>
+<table>
+<tr>
+<th>Talent</th>
+<th>Requirement</th>
+<th>Aptitude</th>
+<th>XP Cost</th>
+</tr>
+<tr>
+<td><b>Ferric Summons:</b>
+Main Action; Willpower Test; You can use Ferric Lure to pull an item from someone's hands (they oppose with Strength); apply range modifiers.</td>
+<td>Bionic: Ferric Lure</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Prosanguine:</b>
+Long Action; Luminen Capacitor; recover 1 wound for each Power generated; become Fatigued on failure.</td>
+<td>Autosanguine</td>
+<td>Toughness</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Blood Filtration:</b>
+You get a +20 bonus to Resist chemicals affecting you. You can choose to instead apply a -20 penalty.</td>
+<td>Autosanguine</td>
+<td>Toughness</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>xxxxx:</b>
+xxxxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -548,6 +668,13 @@ When a character within 10m triggers Psychic Phenomena, you can use Reflex to ta
 <th>XP Cost</th>
 </tr>
 <tr>
+<td><b>Networking:</b>
+Long Action; Fellowship Test; gain a trusted contact in this area; gain Attention on critical failure</td>
+<td>-</td>
+<td>Fellowship</td>
+<td>200</td>
+</tr>
+<tr>
 <td><b>xxxxx:</b>
 xxxxx</td>
 <td>xxxxx</td>
@@ -580,7 +707,15 @@ xxxxx</td>
 <td>200</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>Tracker:</b>
+Get a +20 bonus to Search when following tracks.</td>
+<td>-</td>
+<td>Perception</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>xxxxx:</b>
+xxxxxxxxxxxxxxxxxxx</td>
 <td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
@@ -594,10 +729,12 @@ xxxxx</td>
 <tr>
 <th>Talent</th>
 <th>Aptitude</th>
+<th>Requirement</th>
 <th>XP Cost</th>
 </tr>
 <tr>
 <td><b>Peer (A Power Group*):</b> Get +20 to all Fellowship and Disposition tests when interacting with members of the chosen group.</td>
+<td>-</td>
 <td>Fellowship</td>
 <td>200</td>
 </tr>
@@ -605,7 +742,44 @@ xxxxx</td>
 <td>*Adeptus Administratum; Adeptus Arbites; Adeptus Astra Telepathica; Adeptus Mechanicus; Adeptus Ministorum; Criminal Cartels; Imperial Guard</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b> xxxxx</td>
+<td><b>Clues from the Crowds:</b>
+Get a +20 bonus to Inquiry when gathering information from a crowd of people.</td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Coordinated Interrogation:</b>
+Get a +20 assistance bonus to Interrogate instead of +10 when the other character also has this Talent.</td>
+<td>-</td>
+<td>Willpower</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Cover-Up:</b>
+Long Action; Fellowship; divert gained Attention away from your group; gain Attention on critical failure</td>
+<td>-</td>
+<td>Fellowship</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Delicate Interrogation:</b>
+You can Interrogate a target in casual conversation, without them realising they are under investigation. No items can give bonuses. On critical failure, the target does realise.</td>
+<td>Interrogate (+20)</td>
+<td>Willpower</td>
+<td>600</td>
+</tr>
+<tr>
+<td><b>Face in a Crowd:</b>
+You can use Fellowship instead of Agility when you Sneak in a populated area.</td>
+<td>-</td>
+<td>Fellowship</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>xxxxx:</b>
+xxxxxxxxxxxxxxxxxxx</td>
+<td>xxxxx</td>
 <td>xxxxx</td>
 <td>xxx</td>
 </tr>
@@ -617,23 +791,26 @@ xxxxx</td>
 ...............UNSORTED & UNREVIEWED.................
 
 <ul>
-<li><b>Independent Targeting:</b> When wielding two ranged weapons, you can Ranged Attack against two targets, assigning hits from one weapon to the second target.</li>
-<li><b>Fast Retargeting:</b> You can Extended Fire against two targets, assigning each hit to either of the targets.</li>
-<li><b>Blood Filters:</b>You can selectively choose not to Resist Chems if you wish, in which case the Aspect is downgraded once per hour.</li>
-<li><b>:</b></li>
-<li><b>:</b></li>
-<li><b>Ferric Summons:</b> Ferric Lure as a Main Action to pry an item out of someone's hands.</li>
-<li><b>:</b></li>
-<li><b>:</b></li>
-<li><b>Tracker:</b> [follow tracks with Search]</li>
-<li><b>xxxxxx:</b> When you [certain CA], one Degree of Success upgrades the [Aspect].</li>
-<li><b>Frenzy:</b> ...............</li>
-<li><b>Jaded:</b> [unaffected by mundane horror]</li>
-<li><b>Catfall:</b> Test Agility to reduce falling damage by one point plus one per Degree of Success. [***need to specify falling damage***]</li>
-<li><b>xxxxxx:</b> Axes get [some bonus].</li>
-<li><b>xxxxxx:</b> Hammers get [some bonus].</li>
-<li><b>xxxxxx:</b> [some weapons] get [some bonus].</li>
-<li><b>Silent Takedown:</b>[Melee Attack which kills silently]</li>
+<li><b>xxxxxx:</b>
+When you [certain CA], one Degree of Success upgrades the [Aspect].</li>
+<li><b>Catfall:</b>
+Test Agility to reduce falling damage by one point plus one per Degree of Success. [***need to specify falling damage***]</li>
+<li><b>xxxxxx:</b>
+Axes get [some bonus].</li>
+<li><b>xxxxxx:</b>
+Hammers get [some bonus].</li>
+<li><b>xxxxxx:</b>
+[some weapons] get [some bonus].</li>
+<li><b>Frenzy:</b>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+<li><b>Battle Rage:</b>
+[parry while frenzied and bonus to resist/snap out]</li>
+<li><b>Halo of Command:</b>
+[affect characters within 100s of meters with Fellowship skills]</li>
+<li><b>Hatred (A Power Group):</b>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+<li><b>xxxxxx:</b>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
 </ul>
 
 
@@ -661,7 +838,7 @@ xxxxx</td>
 <td>200</td>
 </tr>
 <tr>
-<td><b>Trade (Armourer):</b> Ddesign, upgrade and forge weaponry. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</li></td>
+<td><b>Trade (Armourer):</b> Design, upgrade and forge weaponry. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</li></td>
 <td>Tech</td>
 <td>200</td>
 </tr>

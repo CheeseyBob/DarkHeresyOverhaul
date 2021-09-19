@@ -1,8 +1,6 @@
 	TO DO LIST
 
-> mechanicus implants and other bionics
-
-> comprehensive talent list
+> comprehensive talent list (up to Hip Shooting on p128)
 
 > review character creation items (as inventory system has changed)
 
