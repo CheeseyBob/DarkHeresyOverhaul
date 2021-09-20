@@ -29,21 +29,15 @@ th, td {
 <br>
 <a href="Talents.html#Tech">Tech</a>
 <br>
-<a href="Talents.html#TechPriest">Tech-Priest</a>
-<br>
-<a href="Talents.html#Knowledge">Knowledge</a>
-<br>
 <a href="Talents.html#Leadership">Leadership</a>
 <br>
 <a href="Talents.html#Fieldcraft">Fieldcraft</a>
 <br>
 <a href="Talents.html#Social">Social</a>
 <br>
+<a href="Talents.html#Knowledge">Knowledge</a>
+<br>
 <a href="Talents.html#Trade">Trade Talents (General)</a>
-<br>
-<a href="Talents.html#Lore">Lore Talents (Knowledge)</a>
-<br>
-<a href="Talents.html#xxxxxx">xxxxxx</a>
 
 
 <h2 id="General">General Talents</h2>
@@ -55,10 +49,10 @@ th, td {
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Double Team:</b>
-Give double the penalty when you Fend Off or Feint.</td>
+<td><b>Rapid Reload:</b>
+When you Reload, you get double the steps towards reloading your firearm.</td>
 <td>-</td>
-<td>Weapon Skill</td>
+<td>Agility</td>
 <td>200</td>
 </tr>
 <tr>
@@ -69,11 +63,46 @@ Your maximum bonus Movement is three times your base Movement, rather than two t
 <td>200</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Team Fighting:</b>
+Give double the penalty when you Fend Off or Feint.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unarmed Master:</b>
+Get a +10 bonus to all unarmed melee attacks.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Weapon Familiarity (A Ranged Weapon):</b>
+You can clear jams and maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.</td>
+<td>-</td>
+<td>Ballistic Skill</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Weapon Familiarity (A Melee Weapon):</b>
+You can maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Weapon Master (A Melee Weapon):</b>
+Get a +10 bonus to all attacks with the chosen melee weapon.</td>
+<td>Weapon Familiarity</td>
+<td>Weapon Skill</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Weapon Master (A Ranged Weapon):</b>
+Get a +10 bonus to all attacks with the chosen ranged weapon.</td>
+<td>Weapon Familiarity</td>
+<td>Ballistic Skill</td>
+<td>800</td>
 </tr>
 </table>
 <p>
@@ -88,6 +117,20 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
 <th>XP Cost</th>
 </tr>
 <tr>
+<td><b>Assault Fire:</b>
+Full Action; Move and Attack Repeatedly (Ranged) during the movement.</td>
+<td>-</td>
+<td>Ballistic Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Battle Rage:</b>
+You do not take a penalty to Dodge or Parry from being Frenzied and you get a +20 bonus to Resist being Frenzied.</td>
+<td>Frenzy</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>Brutal Charge:</b>
 Get double bonus damage when you Charge.</td>
 <td>-</td>
@@ -96,7 +139,7 @@ Get double bonus damage when you Charge.</td>
 </tr>
 <tr>
 <td><b>Crushing Blow:</b>
-Use double your Strength Bonus for damage when you Attack Heavily (Melee) with a weapon of size 4 or larger.</td>
+Use double your Strength Bonus for damage when you Attack Heavily (Melee).</td>
 <td>Strength 30</td>
 <td>Strength</td>
 <td>400</td>
@@ -107,6 +150,13 @@ When you make a melee attack, you can spend Degrees of Success to get a +10 bonu
 <td>Weapon Skill 40</td>
 <td>Weapon Skill</td>
 <td>400</td>
+</tr>
+<tr>
+<td><b>Frenzy:</b>
+You can become Frenzied as a Secondary Action (max level equal to Willpower Bonus) and you can choose to not Resist being Frenzied.</td>
+<td>-</td>
+<td>Strength</td>
+<td>200</td>
 </tr>
 <tr>
 <td><b>Furious Assault:</b>
@@ -123,9 +173,23 @@ Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of 
 <td>400</td>
 </tr>
 <tr>
+<td><b>Stampede:</b>
+When you Tackle, you can spend Degrees of Success to continue moving, potentially to a new target. You can continue until you run out of movement or Degrees of Success.</td>
+<td>Knock Down (+20)</td>
+<td>Strength</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>Strong Attacks:</b>
 Use double your Strength Bonus for damage when using a melee weapon two-handed.</td>
 <td>-</td>
+<td>Strength</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Stunning Blow:</b>
+Full Action; Attack (Melee) with a weapon which does Impact damage; Target becomes Stunned for each Degree of Success (up to Strength Bonus).</td>
+<td>Strength 30</td>
 <td>Strength</td>
 <td>400</td>
 </tr>
@@ -137,39 +201,25 @@ Full Action; Attack (Melee); all adjacent characters take a hit.</td>
 <td>400</td>
 </tr>
 <tr>
-<td><b>Wrestler:</b>
-Get  a +20 bonus to Grapple.</td>
+<td><b>Thunderous Charge:</b>
+When you Stampede, get a +10 bonus to Attack (Melee) per Degree of Success remaining at the end of your movement.</td>
+<td>Stampede</td>
+<td>Strength</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Iron Fists:</b>
+Your punches and kicks no longer use the Blunt special rule.</td>
 <td>-</td>
 <td>Strength</td>
 <td>400</td>
 </tr>
 <tr>
-<td><b>Gun Master (Choose One):</b>
-Get a +10 bonus to all attacks with the chosen ranged weapon.</td>
-<td>-</td>
-<td>Ballistic Skill</td>
-<td>800</td>
-</tr>
-<tr>
-<td><b>Weapon Master (Choose One):</b>
-Get a +10 bonus to all attacks with the chosen melee weapon.</td>
-<td>-</td>
-<td>Weapon Skill</td>
-<td>800</td>
-</tr>
-<tr>
-<td><b>Frenzy:</b>
-Secondary Action; Become Frenzied</td>
+<td><b>Wrestler:</b>
+Get  a +20 bonus to Grapple.</td>
 <td>-</td>
 <td>Strength</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td>400</td>
 </tr>
 </table>
 <p>
@@ -182,6 +232,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
 <th>Requirement</th>
 <th>Aptitude</th>
 <th>XP Cost</th>
+</tr>
+<tr>
+<td><b>Agile Fighter:</b>
+You can Dodge melee attacks.</td>
+<td>-</td>
+<td>Agility</td>
+<td>400</td>
 </tr>
 <tr>
 <td><b>Agile Strike:</b>
@@ -198,15 +255,8 @@ Full Action; Attack (Melee); damage dice explode on rolls 1 lower per Degree of 
 <td>800</td>
 </tr>
 <tr>
-<td><b>Assault Fire:</b>
-Full Action; Move and Attack Repeatedly (Ranged) during the movement.</td>
-<td>-</td>
-<td>Ballistic Skill</td>
-<td>400</td>
-</tr>
-<tr>
-<td><b>Careful Shot:</b>
-Get an extra +10 bonus when you make a ranged attack after you Aim.</td>
+<td><b>Hip Shooting:</b>
+Full Action; Move twice and Attack (Ranged) during the movement.</td>
 <td>-</td>
 <td>Ballistic Skill</td>
 <td>400</td>
@@ -216,6 +266,13 @@ Get an extra +10 bonus when you make a ranged attack after you Aim.</td>
 Get an extra +10 bonus when you make a melee attack after you Aim.</td>
 <td>-</td>
 <td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Deft Bladesman:</b>
+You can use Agility Bonus instead of Strength Bonus for the damage stat of melee weapons which do Rending damage.</td>
+<td>Agility 30</td>
+<td>Agility</td>
 <td>400</td>
 </tr>
 <tr>
@@ -261,6 +318,20 @@ You can stand up without spending a Secondary Action.</td>
 <td>200</td>
 </tr>
 <tr>
+<td><b>Marksman:</b>
+Get an extra +10 bonus when you make a ranged attack after you Aim.</td>
+<td>-</td>
+<td>Ballistic Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Martial Artist:</b>
+Get a +2 bonus to the Hits stat of your punches and kicks.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>Master Gunslinger:</b>
 Get a +10 bonus to all ranged attacks when using multiple weapons.</td>
 <td>Gunslinger</td>
@@ -275,23 +346,23 @@ Draw your weapon without spending an Action.</td>
 <td>200</td>
 </tr>
 <tr>
-<td><b>Quick Blade:</b>
-Get a +1 bonus to the Hits stat of size 2 and 3 bladed melee weapons.</td>
-<td>-</td>
-<td>Weapon Skill</td>
-<td>400</td>
-</tr>
-<tr>
-<td><b>Quick Dagger:</b>
-Get a +2 bonus to the Hits stat of size 1 bladed melee weapons.</td>
-<td>-</td>
-<td>Weapon Skill</td>
-<td>400</td>
-</tr>
-<tr>
 <td><b>Riposte:</b>
 When you Parry, you can spend Degrees of Success to get a +10 bonus per DoS to Attack (Melee).</td>
 <td>Parry (+20)</td>
+<td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Swift Blade:</b>
+Get a +1 bonus to the Hits stat of size 2 and 3 melee weapons which do Rending damage.</td>
+<td>-</td>
+<td>Weapon Skill</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Swift Dagger:</b>
+Get a +2 bonus to the Hits stat of size 1 melee weapons which do Rending damage.</td>
+<td>-</td>
 <td>Weapon Skill</td>
 <td>400</td>
 </tr>
@@ -301,13 +372,6 @@ Get a +10 bonus to all melee attacks when using multiple weapons.</td>
 <td>Dual-Wielder</td>
 <td>Weapon Skill</td>
 <td>400</td>
-</tr>
-<tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
 </tr>
 </table>
 <p>
@@ -364,6 +428,20 @@ When you Run or Charge, you give a -20 penalty to all ranged attacks against you
 <td>400</td>
 </tr>
 <tr>
+<td><b>Iron Jaw:</b>
+Get a +20 bonus to Resist being or becoming Stunned.</td>
+<td>Toughness 40</td>
+<td>Toughness</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Mental Fortress:</b>
+Get +30 to Resist psychic powers which affect your mind.</td>
+<td>Deny the Witch</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
 <td><b>Nerves of Steel:</b>
 Get a +20 bonus to Resist Pinning and Fear.</td>
 <td>-</td>
@@ -371,11 +449,21 @@ Get a +20 bonus to Resist Pinning and Fear.</td>
 <td>400</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Push Through the Pain:</b>
+You can use Willpower instead of Toughness to Resist being or becoming Stunned.</td>
+<td>Willpower 30</td>
+<td>Willpower</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Resistance (Choose One Area*):</b>
+Get a +20 bonus to Resist the chosen thing.</td>
+<td>-</td>
+<td>Toughness</td>
+<td>200</td>
+</tr>
+<tr>
+<td>*Cold, Heat, Poison, Radiation, Vacuum</td>
 </tr>
 </table>
 <p>
@@ -501,77 +589,47 @@ When a character within 10m triggers Psychic Phenomena, you can use Reflex to ta
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Operate Jump-Pack:</b> You can operate jump-packs using Agility.</td>
+<td><b>Demolitions Expert:</b>
+Get a +20 bonus to Use Tech when planting and defusing explosives.</td>
+<td>Use Tech (+0)</td>
+<td>Intelligence</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Operate (Jump-Pack/Bike/Skimmer):</b> You can operate the chosen vehicle type using Agility.</td>
 <td>-</td>
 <td>Agility</td>
 <td>200</td>
 </tr>
 <tr>
-<td><b>Operate Bike:</b> You can operate bikes using Agility.</td>
-<td>-</td>
-<td>Agility</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Operate Skimmer:</b> You can operate skimmers using Agility.</td>
-<td>-</td>
-<td>Agility</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Operate Wheeled Vehicle:</b> You can operate wheeled vehicles using Intelligence.</td>
+<td><b>Operate (Wheeled/Tracked/Walker/Flier/Spacecraft/Warpship):</b> You can the chosen vehicle type using Intelligence.</td>
 <td>-</td>
 <td>Intelligence</td>
 <td>200</td>
 </tr>
 <tr>
-<td><b>Operate Tracked Vehicle:</b> You can operate tracked vehicles using Intelligence.</td>
-<td>-</td>
+<td><b>Technical Knock:</b>
+Secondary Action; Overcome Jammed on a firearm you are holding.</td>
+<td>Use Tech (+0)</td>
 <td>Intelligence</td>
-<td>200</td>
+<td>400</td>
 </tr>
 <tr>
-<td><b>Operate Walker:</b> You can operate walkers using Intelligence.</td>
-<td>-</td>
+<td><b>Weapon-Tech:</b>
+Get a +20 bonus to Use Tech when you maintain weapons. The weapon does not become Damaged on critical failure when doing so.</td>
+<td>Use Tech (+0)</td>
 <td>Intelligence</td>
-<td>200</td>
+<td>400</td>
 </tr>
 <tr>
-<td><b>Operate Flier:</b> You can operate fliers using Intelligence.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
+<th>Tech-Priest Only</th>
 </tr>
 <tr>
-<td><b>Operate Spacecraft:</b> You can operate spacecraft using Intelligence.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Operate Voidship:</b> You can operate void ships using Intelligence.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
-</tr>
-</table>
-<p>
-
-
-<h2 id="TechPriest">Tech-Priest Talents (Tech)</h2>
-<table>
-<tr>
-<th>Talent</th>
-<th>Requirement</th>
-<th>Aptitude</th>
-<th>XP Cost</th>
+<td><b>Blood Filtration:</b>
+You get a +20 bonus to Resist chemicals affecting you. You can choose to instead apply a -20 penalty.</td>
+<td>Autosanguine</td>
+<td>Toughness</td>
+<td>400</td>
 </tr>
 <tr>
 <td><b>Ferric Summons:</b>
@@ -588,72 +646,35 @@ Long Action; Luminen Capacitor; recover 1 wound for each Power generated; become
 <td>800</td>
 </tr>
 <tr>
-<td><b>Blood Filtration:</b>
-You get a +20 bonus to Resist chemicals affecting you. You can choose to instead apply a -20 penalty.</td>
-<td>Autosanguine</td>
-<td>Toughness</td>
-<td>400</td>
+<td><b>Luminen Blast:</b>
+Main Action; Attack (Ranged) using following stats.<br>
+Range: 10m;<br>
+RoF: 1;<br>
+Damage: 1d10+2 Energy;<br>
+Shocking: Each Wound inflicted makes the target become Stunned;<br>
+Consumes 1 Power.</td>
+<td>Luminen Shock</td>
+<td>Ballistic Skill</td>
+<td>800</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
-</tr>
-</table>
-<p>
-
-
-<h2 id="Knowledge">Knowledge Talents</h2>
-<table>
-<tr>
-<th>Talent</th>
-<th>Requirement</th>
-<th>Aptitude</th>
-<th>XP Cost</th>
+<td><b>Luminen Shock:</b>
+Main Action; Attack (Melee) using the following stats.<br>
+Bonus: +10;<br>
+Hits: 1;<br>
+Damage: 1d10+2 Energy;<br>
+Shocking: Each Wound inflicted makes the target become Stunned;<br>
+Consumes 1 Power.</td>
+<td>Internal Reservoir</td>
+<td>Weapon Skill</td>
+<td>800</td>
 </tr>
 <tr>
-<td><b>Language (Low Gothic):</b> You know Low Gothic, the common tongue of the Imperium.</td>
-<td>-</td>
+<td><b>Maglev Transcendence:</b>
+When using your Maglev Coils, you suffer no fall damage and can raise or lower your hover height by 1m each turn, with no maximum height.</td>
+<td>Maglev Coils</td>
 <td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic):</b> You know High Gothic, the language used by Imperial officials, clergy and nobility.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant):</b> You know Binary Cant, the language of the Machine Spirits.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Language (Imperial Codes):</b> You know the numbers, acronyms and code words of the battle language employed by the Imperial Guard and Imperial Navy.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Language (Chaos Marks):</b> You know the symbols and signs that followers of the Ruinous Powers use to share their dark secrets.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Language (A Xeno Race):</b> You know the language of the chosen xeno race.</td>
-<td>-</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>xxxxx:</b> xxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td>600</td>
 </tr>
 </table>
 <p>
@@ -668,25 +689,53 @@ xxxxxxxxxxxxxxxxxxxxx</td>
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Networking:</b>
-Long Action; Fellowship Test; gain a trusted contact in this area; gain Attention on critical failure</td>
+<td><b>Commanding:</b>
+When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.</td>
+<td>Command (+20)</td>
+<td>Fellowship</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Expanded Network:</b>
+You can maintain an additional number of contacts equal to your Fellowship Bonus. You can take this Talent multiple times.</td>
+<td>Networking</td>
+<td>Fellowship</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Halo of Command:</b>
+You can affect those up to FBx100m away when you Command or Inspire.</td>
+<td>Public Speaker; Fellowship 40</td>
+<td>Fellowship</td>
+<td>800</td>
+</tr>
+<tr>
+<td><b>Inspiring:</b>
+When you Inspire, the maximum aspect level is doubled, to FBx2.</td>
+<td>Inspire (+20)</td>
+<td>Fellowship</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Lead By Example:</b>
+When you overcome Pinning or Fear, allies within FBx10m become Inspired.</td>
 <td>-</td>
 <td>Fellowship</td>
-<td>200</td>
+<td>400</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Networking:</b>
+Long Action; Fellowship Test; gain a trusted contact in this area; gain Attention on critical failure; you can maintain a number of contacts up to your Fellowship Bonus.</td>
+<td>-</td>
+<td>Fellowship</td>
+<td>400</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Public Speaker:</b>
+When making a Fellowship Test targeting a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.</td>
+<td>Fellowship 30</td>
+<td>Fellowship</td>
+<td>400</td>
 </tr>
 </table>
 <p>
@@ -701,7 +750,22 @@ xxxxx</td>
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Ride Beast:</b> You can ride riding animals using Agility.</td>
+<td><b>Catfall:</b>
+Reduce all fall damage by your Agility Bonus.</td>
+<td>Agility 30</td>
+<td>Agility</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>First Aider:</b>
+Get a +20 bonus to Treat Wounds when performing first aid.</td>
+<td>Treat Wounds (+0)</td>
+<td>Intelligence</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Ride Beast:</b>
+You can ride riding animals using Agility.</td>
 <td>-</td>
 <td>Agility</td>
 <td>200</td>
@@ -728,18 +792,16 @@ xxxxxxxxxxxxxxxxxxx</td>
 <table>
 <tr>
 <th>Talent</th>
-<th>Aptitude</th>
 <th>Requirement</th>
+<th>Aptitude</th>
 <th>XP Cost</th>
 </tr>
 <tr>
-<td><b>Peer (A Power Group*):</b> Get +20 to all Fellowship and Disposition tests when interacting with members of the chosen group.</td>
-<td>-</td>
+<td><b>Charming:</b>
+When you Charm, you double the increase to the target's Disposition.</td>
+<td>Charm (+20)</td>
 <td>Fellowship</td>
-<td>200</td>
-</tr>
-<tr>
-<td>*Adeptus Administratum; Adeptus Arbites; Adeptus Astra Telepathica; Adeptus Mechanicus; Adeptus Ministorum; Criminal Cartels; Imperial Guard</td>
+<td>400</td>
 </tr>
 <tr>
 <td><b>Clues from the Crowds:</b>
@@ -777,45 +839,275 @@ You can use Fellowship instead of Agility when you Sneak in a populated area.</t
 <td>200</td>
 </tr>
 <tr>
-<td><b>xxxxx:</b>
-xxxxxxxxxxxxxxxxxxx</td>
-<td>xxxxx</td>
-<td>xxxxx</td>
-<td>xxx</td>
+<td><b>Intimidating:</b>
+When you Intimidate, the maximum aspect level is double your Strength Bonus.</td>
+<td>Intimidate (+20)</td>
+<td>Strength</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Logical Communicator:</b>
+You can Persuade using Intelligence instead of Fellowship.</td>
+<td>Intelligence 30</td>
+<td>Intelligence</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Peer (A Power Group*):</b> Get +20 to all Fellowship and Disposition tests when interacting with members of the chosen group.</td>
+<td>-</td>
+<td>Fellowship</td>
+<td>200</td>
+</tr>
+<tr>
+<td>*Adeptus Administratum; Adeptus Arbites; Adeptus Astra Telepathica; Adeptus Mechanicus; Adeptus Ministorum; Criminal Cartels; Imperial Guard</td>
+</tr>
+<tr>
+<td><b>Persuasive:</b>
+When you Persuade, the maximum bonus to the target's Disposition is doubled, to FBx20.</td>
+<td>Persuade (+20)</td>
+<td>Fellowship</td>
+<td>400</td>
+</tr>
+<tr>
+<td><b>Self-Incrimination:</b>
+You can Read Person (Gain Insight) using Fellowship instead of Perception.</td>
+<td>Fellowship 30</td>
+<td>Fellowship</td>
+<td>400</td>
 </tr>
 </table>
 <p>
 
 
-
-...............UNSORTED & UNREVIEWED.................
-
-<ul>
-<li><b>xxxxxx:</b>
-When you [certain CA], one Degree of Success upgrades the [Aspect].</li>
-<li><b>Catfall:</b>
-Test Agility to reduce falling damage by one point plus one per Degree of Success. [***need to specify falling damage***]</li>
-<li><b>xxxxxx:</b>
-Axes get [some bonus].</li>
-<li><b>xxxxxx:</b>
-Hammers get [some bonus].</li>
-<li><b>xxxxxx:</b>
-[some weapons] get [some bonus].</li>
-<li><b>Frenzy:</b>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-<li><b>Battle Rage:</b>
-[parry while frenzied and bonus to resist/snap out]</li>
-<li><b>Halo of Command:</b>
-[affect characters within 100s of meters with Fellowship skills]</li>
-<li><b>Hatred (A Power Group):</b>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-<li><b>xxxxxx:</b>
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-</ul>
-
+<h2 id="Knowledge">Knowledge Talents</h2>
+<table>
+<tr>
+<th>Talent</th>
+<th>Requirement</th>
+<th>Aptitude</th>
+<th>XP Cost</th>
+</tr>
+<tr>
+<td><b>Language (A Language*):</b>
+You know the chosen language.</td>
+<td>-</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td>*Choose from:<br>
+Low Gothic, the common tongue of the Imperium.<br>
+High Gothic, the language used by Imperial officials, clergy and nobility.<br>
+Binary Cant, the language of the Machine Spirits.<br>
+Imperial Codes, the numbers, acronyms and code words of the battle language employed by the Imperial Guard and Imperial Navy.<br>
+Chaos Marks, the symbols and signs that followers of the Ruinous Powers use to share their dark secrets.<br>
+A Xeno Language.<br>
+</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Adeptus Arbites):</b> Get a +20 bonus to Recall Common Lore regarding the Adeptus Arbites, including details of rank structure, common procedures and the basic tents of Imperial justice.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Adeptus Astra Telepathica):</b> Get a +20 bonus to Recall Common Lore regarding how psykers are gathered and sanctioned, how Astropaths are used throughout the Imperium, and the basics of astro-telepathy.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Adeptus Mechanicus):</b> Get a +20 bonus to Recall Common Lore regarding the symbols and practices that the Cult of the Machine God commonly uses.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Administratum):</b> Get a +20 bonus to Recall Common Lore regarding the labyrinthine workings, rules, traditions and dictates of the Adeptus Administratum.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Calixis Sector):</b> Get a +20 bonus to Recall Common Lore regarding the worlds of the Calixis Sector.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Ecclesiarchy):</b> Get a +20 bonus to Recall Common Lore regarding the structure and general practices of the Adeptus Ministorum and its role in the worship of the Emperor.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Imperial Creed):</b> Get a +20 bonus to Recall Common Lore regarding the rites, practices, festivals and saints of the Imperial Cult.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Imperial Guard):</b> Get a +20 bonus to Recall Common Lore regarding the ranks, logistics and structure of the Imperial Guard, as well as common tactical and strategic practices.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Tech):</b> Get a +20 bonus to Recall Common Lore regarding the simple litanies and rituals to soothe and appease machine spirits.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (Underworld):</b> Get a +20 bonus to Recall Common Lore regarding crime and sedition within the Imperium.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Knowlegable (War):</b> Get a +20 bonus to Recall Common Lore regarding the great battles, famous strategems, heroes, and notable commanders of the endless battles for and against the Imperium.</li></td>
+<td>-</td>
+<td>General</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (A Common Lore Topic):</b> You can use Recall Scholastic Lore regarding that topic.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Astromancy):</b> You can use Recall Scholastic Lore regarding stars, the worlds around them, cosmic phenomena and astrolithic charts.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Beasts):</b> You can use Recall Scholastic Lore regarding the characteristics and appearances of the many animals and beasts found across the sector.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Bureaucracy):</b> You can use Recall Scholastic Lore regarding the rules and regulations, departments and bureaus of the sector's governments and the Adeptus Administratum.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Chymistry):</b> You can use Recall Scholastic Lore regarding chemicals, their alchemical applications, and their prevalence or scarcity throughout the Imperium.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Cryptology):</b> You can use Recall Scholastic Lore regarding codes, ciphers, secret languages and numerical keys.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Heraldry):</b> You can use Recall Scholastic Lore regarding seals and heraldic devices used by noble houses.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Judgement):</b> You can use Recall Scholastic Lore regarding the proper sentences for crimes and heresies punishable by Imperial law.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Legend):</b> You can use Recall Scholastic Lore regarding the momentus portions of mythic history.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Numerology):</b> You can use Recall Scholastic Lore regarding the mysterious links between mathematics and the physical universe.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Occult):</b> You can use Recall Scholastic Lore regarding obscure rituals, theories and superstitions, and the better-known uses of occult items.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Philosophy):</b> You can use Recall Scholastic Lore regarding the theories of thought, belief, existence and other intangibles, including logic, debate and crafting arguments.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Educated (Tactica Imperialis):</b> You can use Recall Scholastic Lore regarding the codified military doctrines, systems of deployment and battle techniques used by the Imperial Guard and Imperial Navy.</li></td>
+<td>Scholastic Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (A Common Lore Topic):</b> You can use Recall Forbidden Lore regarding that topic.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (A Scholastic Lore Topic):</b> You can use Recall Forbidden Lore regarding that topic.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Archeotech):</b> You can use Recall Forbidden Lore regarding the great lost tech devices of times past, and clues to their functions and purposes.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Daemonology):</b> You can use Recall Forbidden Lore regarding warp entities and their twisted manifestations.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Heresy):</b> You can use Recall Forbidden Lore regarding acts and practices deemed heretical by the Imperium.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Mutants):</b> You can use Recall Forbidden Lore regarding various stable and unstable mutations within humanity.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Psykers):</b> You can use Recall Forbidden Lore regarding psykers, the effects of their powers, their dangers and the extent of their capabilities.</td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (The Warp):</b> You can use Recall Forbidden Lore regarding the nature of the Immaterium, its interaction with realspace, and how its tides and eddies affect travel between the stars.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+<tr>
+<td><b>Unveiled Secrets (Xenos):</b> You can use Recall Forbidden Lore regarding the alien species known to the Imperium, the threat they pose to humanity, and their general appearance.</li></td>
+<td>Forbidden Lore (+0)</td>
+<td>Intelligence</td>
+<td>200</td>
+</tr>
+</table>
+<p>
 
 
 <h2 id="Trade">Trade Talents (General)</h2>
+<p>Trade Talents have no requirements, but it is unlikely an Acolyte would have the time to learn a trade while on an Inquisitorial assignment, so these Talents are generally restricted to character creation.</p>
 <table>
 <tr>
 <th>Talent</th>
@@ -966,184 +1258,4 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
 <p>
 
 
-<h2 id="Lore">Lore Talents (Knowledge)</h2>
-<table>
-<tr>
-<th>Talent</th>
-<th>Aptitude</th>
-<th>XP Cost</th>
-</tr>
-</tr>
-<tr>
-<td><b>Knowlegable (Adeptus Arbites):</b> Get a +20 bonus to Recall Common Lore regarding the Adeptus Arbites, including details of rank structure, common procedures and the basic tents of Imperial justice.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Adeptus Astra Telepathica):</b> Get a +20 bonus to Recall Common Lore regarding how psykers are gathered and sanctioned, how Astropaths are used throughout the Imperium, and the basics of astro-telepathy.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Adeptus Mechanicus):</b> Get a +20 bonus to Recall Common Lore regarding the symbols and practices that the Cult of the Machine God commonly uses.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Administratum):</b> Get a +20 bonus to Recall Common Lore regarding the labyrinthine workings, rules, traditions and dictates of the Adeptus Administratum.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Calixis Sector):</b> Get a +20 bonus to Recall Common Lore regarding the worlds of the Calixis Sector.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Ecclesiarchy):</b> Get a +20 bonus to Recall Common Lore regarding the structure and general practices of the Adeptus Ministorum and its role in the worship of the Emperor.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Imperial Creed):</b> Get a +20 bonus to Recall Common Lore regarding the rites, practices, festivals and saints of the Imperial Cult.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Imperial Guard):</b> Get a +20 bonus to Recall Common Lore regarding the ranks, logistics and structure of the Imperial Guard, as well as common tactical and strategic practices.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Tech):</b> Get a +20 bonus to Recall Common Lore regarding the simple litanies and rituals to soothe and appease machine spirits.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (Underworld):</b> Get a +20 bonus to Recall Common Lore regarding crime and sedition within the Imperium.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Knowlegable (War):</b> Get a +20 bonus to Recall Common Lore regarding the great battles, famous strategems, heroes, and notable commanders of the endless battles for and against the Imperium.</li></td>
-<td>General</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (A Common Lore Topic):</b> You can use Recall Scholastic Lore regarding that topic.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Astromancy):</b> You can use Recall Scholastic Lore regarding stars, the worlds around them, cosmic phenomena and astrolithic charts.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Beasts):</b> You can use Recall Scholastic Lore regarding the characteristics and appearances of the many animals and beasts found across the sector.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b> You can use Recall Scholastic Lore regarding the rules and regulations, departments and bureaus of the sector's governments and the Adeptus Administratum.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Chymistry):</b> You can use Recall Scholastic Lore regarding chemicals, their alchemical applications, and their prevalence or scarcity throughout the Imperium.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Cryptology):</b> You can use Recall Scholastic Lore regarding codes, ciphers, secret languages and numerical keys.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Heraldry):</b> You can use Recall Scholastic Lore regarding seals and heraldic devices used by noble houses.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Judgement):</b> You can use Recall Scholastic Lore regarding the proper sentences for crimes and heresies punishable by Imperial law.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Legend):</b> You can use Recall Scholastic Lore regarding the momentus portions of mythic history.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Numerology):</b> You can use Recall Scholastic Lore regarding the mysterious links between mathematics and the physical universe.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Occult):</b> You can use Recall Scholastic Lore regarding obscure rituals, theories and superstitions, and the better-known uses of occult items.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Philosophy):</b> You can use Recall Scholastic Lore regarding the theories of thought, belief, existence and other intangibles, including logic, debate and crafting arguments.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Educated (Tactica Imperialis):</b> You can use Recall Scholastic Lore regarding the codified military doctrines, systems of deployment and battle techniques used by the Imperial Guard and Imperial Navy.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (A Common Lore Topic):</b> You can use Recall Forbidden Lore regarding that topic.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (A Scholastic Lore Topic):</b> You can use Recall Forbidden Lore regarding that topic.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Archeotech):</b> You can use Recall Forbidden Lore regarding the great lost tech devices of times past, and clues to their functions and purposes.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Daemonology):</b> You can use Recall Forbidden Lore regarding warp entities and their twisted manifestations.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Heresy):</b> You can use Recall Forbidden Lore regarding acts and practices deemed heretical by the Imperium.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Mutants):</b> You can use Recall Forbidden Lore regarding various stable and unstable mutations within humanity.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Psykers):</b> You can use Recall Forbidden Lore regarding psykers, the effects of their powers, their dangers and the extent of their capabilities.</td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (The Warp):</b> You can use Recall Forbidden Lore regarding the nature of the Immaterium, its interaction with realspace, and how its tides and eddies affect travel between the stars.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Xenos):</b> You can use Recall Forbidden Lore regarding the alien species known to the Imperium, the threat they pose to humanity, and their general appearance.</li></td>
-<td>Intelligence</td>
-<td>200</td>
-</tr>
-</table>
-<p>
-
-
-** Weapon training/familliarity to give bonus to Clear Jam & maybe other things??<br>
-
-** Forbidden Lore - talents for specific uses of knowledge (performing rituals, etc.)??<br>
-
+</html>

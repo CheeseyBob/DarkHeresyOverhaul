@@ -1,6 +1,14 @@
-	TO DO LIST
+	~~ To Do List ~~
 
-> comprehensive talent list (up to Hip Shooting on p128)
+> Traits
+
+> Fear
+
+> Shooting into melee (connect to Cover mechanics?)
+
+> More Fieldcraft Talents
+
+> Opportunity attacks (can move away but not past; use Reflex - autopass?)
 
 > review character creation items (as inventory system has changed)
 
@@ -11,6 +19,12 @@
 > More NPC personality tables
 
 > make example characters (in particular for services)
+
+> special items granting talents for Forbidden Lore rituals
+
+> Think about how mounts/mounted combat will work. Also interactions with beasts in general.
+
+> System for clues/leads (was it leads?)
 
 
 	~~ Power/Electricity ~~
