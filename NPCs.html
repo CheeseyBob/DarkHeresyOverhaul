@@ -7,6 +7,9 @@ table {
 th, td {
   padding: 4px;
 }
+.multicolContainer {
+  column-width: 350px;
+}
 </style>
 <title>NPCs - Dark Heresy Overhaul</title>
 
@@ -15,21 +18,11 @@ th, td {
 
 
 <h1>NPCs</h1>
-
-
-<h3>Subtlety and Attention</h3>
-<p>Sometimes, the PCs might gain Attention from a hostile group. Each time this happens, the hostile group will take some action against the PCs, escalating each additional time the same group gains Attention. There are thee ways this can happen:</p>
-<ul>
-<li>The PCs fail a Subtlety Test after going about their business.</li>
-<li>The PCs interact with a hostile NPC who realises who they are.</li>
-<li>The PCs enter conflict with a hostile group.</li>
-</ul>
-
-<p>After the PCs go out and about in public, make a Subtlety Test - the PC's Subtlety Characteristic is determined by Table 8-3 in the Second Edition rulebook. If they fail, the PCs gain Attention from a random hostile group.</p>
+<p>In addition to the usual stats that PCs have, NPCs have three special stats: Disposition, Personality and Obscurity.</p>
 
 
 <h3>Disposition</h3>
-<p>An extra Characteristic for NPCs, representing their feelings towards the PCs. When the NPC first encounters the PCs, determine whether they realise who the PCs are (Read Person), then set their Disposition accordingly. If the NPC is hostile to the Inquisition and realises who the PCs are, the PCs gain Attention from the hostile group they belong to.</p>
+<p>This represents the NPC's feelings towards the PCs. When the NPC first encounters the PCs, they Read Person to determine whether they realise who the PCs are. Set their Disposition accordingly. If the NPC is hostile to the Inquisition and realises who the PCs are, the PCs gain Attention from the hostile group they belong to.</p>
 <table>
 <tr>
 <th colspan="4">Starting Disposition</th>
@@ -50,40 +43,159 @@ th, td {
 
 
 <h3>Personality</h3>
-<p>Each use of a social skill is subject to the given modifies and alters the NPC's Disposition by the given amount.</p>
+<p>This is a descriptor with a table which determines the modifier applied and how the NPC's Disposition changes when they are the target of each social Skill, and how the NPC reacts when reaching Disposition 0. Apply the change for success once plus once per Degree of Success. Apply the failure change twice on a critical failure.</p>
+
+
+<p>Example Personalities:</p>
+
+
+<div class="multicolContainer">
+
+
+<table>
+<tr>
+<th colspan="4">Vacant Personality</th>
+</tr>
+<tr>
+<td colspan=4>Becomes unresponsive at Disposition 0.</td>
+</tr>
+<tr>
+<th>Skill</th><th>Modifier</th><th>Success</th><th>Failure</th>
+</tr>
+<tr>
+<td>Charm</td><td>+0</td><td>+10</td><td>-0</td>
+</tr>
+<tr>
+<td>Command</td><td>+0</td><td>+0</td><td>-5</td>
+</tr>
+<tr>
+<td>Deceive</td><td>+0</td><td>+0</td><td>-10</td>
+</tr>
+<tr>
+<td>Inspire</td><td>+0</td><td>+0</td><td>-0</td>
+</tr>
+<tr>
+<td>Inquire</td><td>+0</td><td>+5</td><td>-0</td>
+</tr>
+<tr>
+<td>Intimidate</td><td>+0</td><td>+10</td><td>-10</td>
+</tr>
+<tr>
+<td>Persuade</td><td>+0</td><td>+0</td><td>-5</td>
+</tr>
+<tr>
+<td>Read Person</td><td>+0</td><td>+0</td><td>-0</td>
+</tr>
+</table>
+<p>
+
 
 <table>
 <tr>
 <th colspan="4">Aggressive Personality</th>
 </tr>
 <tr>
+<td colspan=4>Becomes hostile at Disposition 0.</td>
+</tr>
+<tr>
 <th>Skill</th><th>Modifier</th><th>Success</th><th>Failure</th>
 </tr>
 <tr>
-<td>Charm</td><td>-10</td><td>+5 x DoS</td><td>-5</td>
+<td>Charm</td><td>-10</td><td>+5</td><td>-5</td>
 </tr>
 <tr>
-<td>Command</td><td>-10</td><td>+5 x DoS</td><td>-20</td>
+<td>Command</td><td>-10</td><td>+5</td><td>-20</td>
 </tr>
 <tr>
-<td>Deceive</td><td>+10</td><td>-</td><td>-20</td>
+<td>Deceive</td><td>+10</td><td>+0</td><td>-20</td>
 </tr>
 <tr>
-<td>Inquiry</td><td>-10</td><td>-</td><td>-10</td>
+<td>Inspire</td><td>+0</td><td>+0</td><td>-5</td>
 </tr>
 <tr>
-<td>Intimidate</td><td>-10</td><td>+10 x DoS</td><td>-20</td>
+<td>Inquire</td><td>-10</td><td>+5</td><td>-10</td>
 </tr>
 <tr>
-<td>Read Person</td><td>+20</td><td>-</td><td>-5</td>
+<td>Intimidate</td><td>-10</td><td>+10</td><td>-20</td>
+</tr>
+<tr>
+<td>Persuade</td><td>-10</td><td>+0</td><td>-5</td>
+</tr>
+<tr>
+<td>Read Person</td><td>+20</td><td>+0</td><td>-5</td>
 </tr>
 </table>
 <p>
 
-** other personality charts **
+
+</div>
+
+
+** add some more personalities **
+
+
+<h3>Obscurity</h3>
+<p>This applies a bonus/penalty to Recall Lore about the NPC.</p>
+
+
+<table>
+<tr>
+<th>Obscurity</th><th>Modifier</th>
+</tr>
+<tr>
+<td>Ubiquitous</td><td>Automatic</td>
+</tr>
+<tr>
+<td>Legendary</td><td>+30</td>
+</tr>
+<tr>
+<td>Famous</td><td>+20</td>
+</tr>
+<tr>
+<td>Well Known</td><td>+10</td>
+</tr>
+<tr>
+<td>Average</td><td>+0</td>
+</tr>
+<tr>
+<td>Niche</td><td>-10</td>
+</tr>
+<tr>
+<td>Obscure</td><td>-20</td>
+</tr>
+<tr>
+<td>Very Obscure</td><td>-30</td>
+</tr>
+<tr>
+<td>Extremely Obscure</td><td>-40</td>
+</tr>
+<tr>
+<td>Nearly Forgotten</td><td>-50</td>
+</tr>
+<tr>
+<td>Forgotten</td><td>-60</td>
+</tr>
+</table>
+<p>
+
+
+
+<h2>NPC Interactions</h2>
+
+
+<h3>Subtlety and Attention</h3>
+<p>Sometimes, the PCs might gain Attention from a hostile group. Each time this happens, the hostile group will take some action against the PCs, escalating each additional time the same group gains Attention. This can happen for a few reasons:</p>
+<ul>
+<li>The PCs fail a Subtlety Test after going about their business.</li>
+<li>The PCs interact with a hostile NPC who realises who they are.</li>
+<li>The PCs enter conflict with a hostile group.</li>
+<li>The PCs make a big scene in public.</li>
+</ul>
+
+<p>After the PCs go out and about in public, make a Subtlety Test - the PC's Subtlety Characteristic is determined by Table 8-3 in the Second Edition rulebook. If they fail, the PCs gain Attention from a random hostile group.</p>
 
 
 <h3>Reinforcement Characters</h3>
-<p>Once an NPC's Disposition reaches 100, they become available as a reinforcement character.</p>
+<p>Once an NPC's Disposition reaches 100, they become available as a reinforcement character. A reinforcement character can be chosen to play instead of a new or benched character. When doing so, determine the reason the NPC is joining the PCs and </p>
 
 

@@ -1,12 +1,14 @@
 	~~ To Do List ~~
 
-> Frightened aspect
-
 > Insanity & Corruption
 
 > Shooting into melee (connect to Cover mechanics?)
 
 > More Fieldcraft Talents
+
+> Short Rest for removing Fatigue?
+
+> Spook Aspect
 
 > Opportunity attacks (can move away but not past; use Reflex - autopass?)
 
@@ -25,6 +27,8 @@
 > Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
 > System for clues/leads (was it leads?)
+
+> Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 
 
 	~~ Power/Electricity ~~
@@ -51,6 +55,9 @@ biomancy power - inflict characteristic damage
 
 
 archeotech item which removes corruption
+
+
+* Lore Items which have the special rule of allowing Identifiy as a Short Action, possibly with a bonus. Tools?
 
 
 Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
