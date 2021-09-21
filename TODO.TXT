@@ -1,8 +1,8 @@
 	~~ To Do List ~~
 
-> Traits
+> Frightened aspect
 
-> Fear
+> Insanity & Corruption
 
 > Shooting into melee (connect to Cover mechanics?)
 
@@ -52,9 +52,8 @@ biomancy power - inflict characteristic damage
 
 archeotech item which removes corruption
 
-	~~
 
-
+Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
 
 
 	~~ MapTool ~~
