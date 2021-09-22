@@ -1,21 +1,40 @@
 <html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Fear - Dark Heresy Overhaul</title>
+<head>
+	<title>Fear and Insanity - Dark Heresy Overhaul</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
 
 
 <a href="DarkHeresyOverhaul.html">Index</a>
 
 
 <h1>Fear</h1>
-<p>When you are affected by Fear, you Resist (Mentally) to reduce the level of Fear by 1 plus 1 per Degree of Success. On critical failure, you instead increase the level of Fear by 1 and suffer a Mental Trauma. If the level of Fear is reduced below 0, you are unaffected.</p>
+<p>When you are affected by Fear, you are subject to the effect of one of the Fear Levels - by default, this is Fear Level 4, but you Resist (Mentally) in order to change this.
+Apply a modifier to Resist (Mentally) based on the Fear Rating of the thing causing the Fear.</p>
+<ul>
+<li>On success you reduce the Fear Level by 1 plus 1 per Degree of Success.</li>
+<li>On failure, you take Insanity Points equal to 1d10-WB.</li>
+<li>On critical failure, you increase the Fear Level by 1 and take Insanity Points equal to 1d10 plus the Fear Rating.
+</ul>
+
+
+<table>
+<tr>
+<th>Fear Rating</th>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<th>Modifier</th>
+<td>+30</td>
+<td>+20</td>
+<td>+10</td>
+<td>+0</td>
+</tr>
+</table>
+<p>
 
 
 <table>
@@ -25,7 +44,7 @@ th, td {
 </tr>
 <tr>
 <td>0</td>
-<td>You take a -10 penalty to your next Test, as if you were Frightened.</td>
+<td>You take a -10 penalty to your next Test as if you were Frightened.</td>
 </tr>
 <tr>
 <td>1</td>
@@ -33,25 +52,130 @@ th, td {
 </tr>
 <tr>
 <td>2</td>
-<td>You become Frightened(2) and cannot approach the source of your Fear until this is overcome/downgraded.</td>
+<td>You become Frightened(2) and cannot approach the source of your Fear until this is overcome.</td>
 </tr>
 <tr>
 <td>3</td>
-<td>You become Frightened(3) and are frozen by terror until this is overcome/downgraded.</td>
+<td>You become Frightened(3) and are frozen by terror until this is overcome.</td>
 </tr>
 <tr>
 <td>4</td>
-<td>You become Frightened(4) and flee in panic until this is overcome/downgraded.</td>
+<td>You become Frightened(4) and flee in panic until this is overcome.</td>
 </tr>
 <tr>
 <td>5</td>
-<td>You become Frightened(5) and all unconscious until this is overcome/downgraded.</td>
+<td>You become Frightened(5) and are reduced to a babbling mess until this is overcome.</td>
+</tr>
+<tr>
+<td colspan=2>Only one level of Frightened needs to be overcome to end the extra effects.</td>
 </tr>
 </table>
 <p>
 
 
+<h1>Insanity</h1>
+<p>Each time a character gains Insanity Points, check whether they have passed thresholds for taking a Trauma Test or suffering a Mental Disorder - resolve this in the aftermath of the encounter.</p>
 
+
+<table>
+<tr>
+<th colspan=2>The Insanity Track</th>
+</tr>
+<tr>
+<th>Insanity</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td>10</td>
+<td>Trauma Test (+30)</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Trauma Test (+30)</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Trauma Test (+30)</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Trauma Test (+20) and suffer a Mental Disorder</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Trauma Test (+20)</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Trauma Test (+10) and suffer a Mental Disorder</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Trauma Test (+10)</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Trauma Test (+0) and suffer a Mental Disorder</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Trauma Test (+0)</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Terminally Insane - character retires from play</td>
+</tr>
+</table>
+<p>
+
+
+<h2>Mental Trauma</h2>
+<p>When you take a Trauma Test, you are subject to the effect of one of the Trauma Levels - by default, this is Trauma Level 4, but you Resist (Mentally) in order to change this.
+Apply a modifier to Resist (Mentally) as specified on the Insanity Track.</p>
+<ul>
+<li>On success you reduce the Trauma Level by 1 plus 1 per Degree of Success.</li>
+<li>On critical failure, you increase the Trauma Level by 1.
+</ul>
+
+
+
+<p>When you take a Trauma Test, you Resist (Mentally) to reduce the Trauma Level by 1 plus 1 per Degree of Success. On critical failure, you increase the Trauma Level by 1.</p>
+
+
+<table>
+<tr>
+<th>Trauma Level</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td>0</td>
+<td>The character becomes withdrawn and quiet. [penalty to fellowship]</td>
+</tr>
+<tr>
+<td>1</td>
+<td>The character is constantly fearful and is extremely jumpy, seeing danger everywhere. [willpower penalty; perception bonus]</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The character compulsively performs an action (such as fevered praying, frantically cleaning a weapon, etc.) and pays little attention to anything else. [penalty to Intelligence Perception and Fellowship]</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The character reacts to the slightest pressure by becoming extremely agitated. [penalty to all tests out of combat after failing a willpower test / all tests in combat]</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The character suffers vivid and extreme nightmares [fatigue after sleeping]</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The character becomes completely traumatised and virtually unresponsive. They cannot initiate actions, but can be gently led.</td>
+</tr>
+</table>
+<p>
+
+
+* Talent - Resilient Mind - Get a +20 bonus to Trauma Tests.
 
 
 </html>

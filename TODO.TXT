@@ -2,8 +2,6 @@
 
 > Insanity & Corruption
 
-> Shooting into melee (connect to Cover mechanics?)
-
 > More Fieldcraft Talents
 
 > Short Rest for removing Fatigue?
@@ -22,13 +20,15 @@
 
 > make example characters (in particular for services)
 
+> System for clues/leads (was it leads?) - this may end up tying back into actions and Talents
+
 > special items granting talents for Forbidden Lore rituals
 
 > Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
-> System for clues/leads (was it leads?)
-
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
+
+> See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
 
 
 	~~ Power/Electricity ~~
