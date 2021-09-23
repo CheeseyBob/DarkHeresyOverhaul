@@ -1,0 +1,36 @@
+html {
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+/* This removes the spacine between a list and the preceeding paragraph. */
+p {
+    margin-bottom: 10px;
+}
+p + ul {
+    margin-top: -10px;
+}
+
+table {
+	border: 1px solid black;
+	
+	/* Tables are centred by setting the left and right margins to auto. */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	padding: 4px;
+}
+
+.multicolContainer {
+	column-count: 2;
+}
