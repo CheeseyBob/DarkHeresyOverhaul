@@ -1,12 +1,8 @@
 	~~ To Do List ~~
 
-> Corruption & Mutation
+> Spook Aspect
 
 > More Fieldcraft Talents
-
-> Short Rest for removing Fatigue?
-
-> Spook Aspect
 
 > Opportunity attacks (can move away but not past; use Reflex - autopass?)
 
@@ -61,6 +57,8 @@ archeotech item which removes corruption
 
 
 Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
+
+Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its long toungue to grab prey which gets too close. Size(5); Unnatural Senses(10m) and high Perception; Strength 30; crushing bite attack with large bonus to Strength; good concealment.
 
 
 	~~ MapTool ~~
