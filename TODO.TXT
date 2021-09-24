@@ -1,26 +1,34 @@
 	~~ To Do List ~~
 
-> Spook Aspect
+> vacuum and zero-G environmental aspects
+
+> Lore skills are also used to LEARN information - codify this
+
+> Chemical Critical Damage = does Characteristic damage at even the lowest levels
+
+> review character creation items (as inventory system has changed)
+
+> System for clues/leads (was it leads?) - this may end up tying back into actions and Talents
+
+> Think about how mounts/mounted combat will work. Also interactions with beasts in general.
+
+> polish and balance the character creation process
+
+> Lore Items which have the special rule of allowing Identifiy as a Short Action, possibly with a bonus. Tools?
+
+> special items granting talents for Forbidden Lore rituals
 
 > More Fieldcraft Talents
 
 > Opportunity attacks (can move away but not past; use Reflex - autopass?)
 
-> review character creation items (as inventory system has changed)
-
-> polish and balance the character creation process
+> Psychic Phenomena & Perils tables
 
 > continue with psychic powers
 
 > More NPC personality tables
 
 > make example characters (in particular for services)
-
-> System for clues/leads (was it leads?) - this may end up tying back into actions and Talents
-
-> special items granting talents for Forbidden Lore rituals
-
-> Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 
@@ -34,6 +42,15 @@
 - Las weapons: 1 unit of power = 1 lasgun shot. Lasgun holds 18 power. Lascannon holds 40 power.
 - Power Armour: backpack contains 200 power... Uses 20+2d10 power/hour?
 * Charging at power outlets....how fast? 1d10/hour?
+
+
+	~~ Test Scenarios ~~
+
+> Shootout in Darkness with Energy damage / Fire weapons.
+
+> Something in vacuum & zero gravity
+
+> Something involving drugs & poisons
 
 
 	~~ Memos ~~
@@ -52,8 +69,6 @@ biomancy power - inflict characteristic damage
 
 archeotech item which removes corruption
 
-
-* Lore Items which have the special rule of allowing Identifiy as a Short Action, possibly with a bonus. Tools?
 
 
 Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.

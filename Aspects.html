@@ -1,33 +1,41 @@
 <html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Aspects - Dark Heresy Overhaul</title>
+<head>
+	<title>Aspects - Dark Heresy Overhaul</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
 
 
 <a href="DarkHeresyOverhaul.html">Index</a>
 
 
 <h1>Aspects</h1>
-<p>Aspects confer bonuses/penalties to types of actions. They can also prevent or allow certain kinds of actions, if it makes sense. Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.</p>
+<p>Aspects confer bonuses/penalties to types of actions.
+They can also have special effects.
+Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.</p>
 
-<p>By default, the bonus/penalty applied by an Aspect is ±10. An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. For example, if a character who is Stunned becomes Stunned again, they end up with a single Stunned(2) Aspect. If they then Resist Stun and succeed, they end up merely Stunned and must Resist Stun again to remove the Aspect.</p>
+<p>By default, the bonus/penalty applied by an Aspect is ±10.
+An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10.
+When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded.
+When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed.
+For example, if a character who is Stunned becomes Stunned again, they end up with a single Stunned(2) Aspect.
+If they successfully Resist Stun, they end up merely Stunned and must Resist Stun again to remove the Aspect.</p>
 
-<p>Rule of thumb:
+<p>By default, Create Advantage Actions cannot increase an Aspect's level past the Characteristic Bonus of the Characteristic used for the Test.
+In addition to this, Aspects cannot be upgraded past level 10.</p>
+
+
+<p>Rule of thumb:</p>
 <ul>
 <li>Bonuses/penalties apply only to the target. Any benefits other characters get against the target should be come from penalites to the target opposing that action (and vice versa). The exception to this is when the Aspect is providing a static difficulty to something, for example a Concealed character or a Locked container simply makes it harder to Notice or Open rather than actively opposing.</li>
 <li>The target of an aspect should get one opportunity to oppose the effects of an Aspect per round, including one before the effect is applied (either at the start of their turn or when opposing the creation of the Aspect).</li>
 </ul>
-</p>
+
+
+<b>AL = Aspect Level</b>
 
 
 <h2>Common Aspects for Characters</h2>
+<div class="multicolContainer">
 
 
 <table>
@@ -35,20 +43,18 @@ th, td {
 <th colspan="2">Bleeding Out</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn, the target makes a Toughness Test. On a failure, the aspect is upgraded. On a critical failure, the aspect is upgraded twice. If the aspect level exceeds double their Toughness Bonus, the target dies.</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>-</td>
+<td>All Tests</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>The target makes a Toughness Test once per turn.
+On failure, this aspect is upgraded.
+When AL exceeds double the target's TB, they die.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -63,19 +69,18 @@ th, td {
 <th colspan="2">Burning</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Darkness in a radius of 1m per Aspect level.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the end of their turn, the target takes Energy damage equal to the Aspect level, ignoring Armour and Toughness. A Burning target who dies creates an area of Fire.</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>All actions except attempting to extinguish the fire</td>
+<td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents effects of Darkness up to ALx1m away.
+The target takes 1d10+AL Energy damage once per turn.
+If the target dies, they create an area of Fire.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -90,20 +95,16 @@ th, td {
 <th colspan="2">Concealed</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Target being automatically detected.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Notice target or Search target</td>
+<td>Notice or Search vs target</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>The target can only be detected with a successful Notice or Search.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -118,24 +119,20 @@ th, td {
 <th colspan="2">Dazzled</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Anything requiring sight:<br> (most actions)</td>
+<td>Anything requiring sight:<br>Weapon Skill, Ballistic Skill, Agility and Perception Tests.</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>-</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Resist (Physical)</td>
+<td>Resist (Physically), once per turn</td>
 </tr>
 </table>
 <p>
@@ -145,20 +142,16 @@ th, td {
 <th colspan="2">Disguised</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Target being automatically perceived as who they are</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>Deceive (when the deception involves the disguise)</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Inspect target</td>
+<td>Read Person or Inspect vs target</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Characters think the target is who they are disguised as unless they successfully Read Person or Inspect.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -173,20 +166,16 @@ th, td {
 <th colspan="2">Encumbered</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Anything made harder by restricted movement:<br>Weapon Skill, Ballistic Skill and Agility Tests.</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>-</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -201,14 +190,6 @@ th, td {
 <th colspan="2">Fatigued</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -217,8 +198,12 @@ th, td {
 <td>Anything requiring physical exhertion:<br>Weapon Skill, Strength and Agility Tests.</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>-</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Rest; hour rest with a meal</td>
+<td>Consuming Food (Long Action Toughness Test)</td>
 </tr>
 </table>
 <p>
@@ -229,14 +214,6 @@ th, td {
 <th colspan="2">Frenzied</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Becoming Intimidated, Frightened, Pinned or Stunned.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>Anything that benefits from furiosity:<br>Weapon Skill and Strength Tests</td>
 </tr>
@@ -245,8 +222,12 @@ th, td {
 <td>Anything requiring clear thought, patience or precision:<br>Ballistic Skill, Intelligence, Perception and Fellowship Tests</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>Prevents target becoming Intimidated Frightened, Pinned or Stunned.</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist (Mentally)</td>
+<td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
 <p>
@@ -257,14 +238,6 @@ th, td {
 <th colspan="2">Frightened</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -273,8 +246,12 @@ th, td {
 <td>Anything requiring composure:<br>Weapon Skill, Ballistic Skill, Strength, Intelligence, Perception, Willpower and Fellowship Tests.</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>-</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist (Mentally)</td>
+<td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
 <p>
@@ -285,20 +262,16 @@ th, td {
 <th colspan="2">Grappled</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>Grappler to use Strength to Attack (Melee), Stun or disarm.<br>Grappler to use Strength to oppose physical actions target takes such as Move, Run, Use Inventory, etc.</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Anything made harder while grappled:<br>Weapon Skill, Ballistic Skill and Agility Tests</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Allows the grappler to use Strength to Attack (Melee), Stun or disarm, and to oppose physical actions target takes.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -313,14 +286,6 @@ th, td {
 <th colspan="2">Inspired</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>Anything improved with confidence:<br>Willpower and Fellowship Tests</td>
 </tr>
@@ -329,8 +294,12 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>-</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Becoming Intimidated, Frightened or Pinned; an hour</td>
+<td>Becoming Intimidated, Frightened or Pinned; automatically, once per hour.</td>
 </tr>
 </table>
 <p>
@@ -341,14 +310,6 @@ th, td {
 <th colspan="2">Intimidated</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -357,8 +318,12 @@ th, td {
 <td>Any hostile action against the intimidator.</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>-</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist (Mentally)</td>
+<td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
 <p>
@@ -369,14 +334,6 @@ th, td {
 <th colspan="2">Pinned</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Staying in or moving into the open in the line of fire of the suppressor.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -385,8 +342,12 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>The target cannot stay in or move into the open in the line of fire of the suppressor.</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist (Mentally)</td>
+<td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
 <p>
@@ -397,20 +358,16 @@ th, td {
 <th colspan="2">Prone</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>Anything improved by having a low profile:<br>Use Cover; Conceal (Self); etc.</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Anything requiring freedom of movement:<br>Weapon Skill and Agility Tests</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>This aspect cannot be upgraded beyond level 1, but provides a +20 bonus / -20 penalty.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -425,14 +382,6 @@ th, td {
 <th colspan="2">Stunned</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -441,8 +390,12 @@ th, td {
 <td>Anything requiring focus:<br>Weapon Skill, Ballistic Skill, Agility, Intelligence Perception, Willpower and Fellowship Tests.</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>-</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist (Physically)</td>
+<td>Resist (Physically), once per turn</td>
 </tr>
 </table>
 <p>
@@ -453,20 +406,16 @@ th, td {
 <th colspan="2">Treated</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Effects of Bleeding Out</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>Rest</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the effects of Bleeding Out</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -476,20 +425,14 @@ th, td {
 <p>
 
 
+</div>
 <h2>Common Aspects for Items</h2>
+<div class="multicolContainer">
 
 
 <table>
 <tr>
 <th colspan="2">Damaged</th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>The item being used.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -498,6 +441,11 @@ th, td {
 <tr>
 <th>Penalty To</th>
 <td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item being used.
+The item is destroyed when the aspect level exceeds the Size of the item.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -512,10 +460,6 @@ th, td {
 <th colspan="2">Encrypted</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>The data in the item being accessed.</td>
-</tr>
-<tr>
 <th>Allows</th>
 <td>-</td>
 </tr>
@@ -526,6 +470,10 @@ th, td {
 <tr>
 <th>Penalty To</th>
 <td>Hack</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item being used.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -540,20 +488,16 @@ th, td {
 <th colspan="2">Jammed</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>The item being used.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item being used.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -568,20 +512,16 @@ th, td {
 <th colspan="2">Locked</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>The item being opened.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Open Lock</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item being opened.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -596,20 +536,16 @@ th, td {
 <th colspan="2">Maintained</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>The item becoming Jammed or Out Of Power.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item becoming Jammed or Out Of Power.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -624,20 +560,16 @@ th, td {
 <th colspan="2">Out Of Power</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>The item being used.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Prevents the item being used.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -652,20 +584,16 @@ th, td {
 <th colspan="2">Planted</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>The explosives to detonate after a set amount of time, or as a Reaction by using a Remote Detonator.</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Use Tech (Defuse Explosives)</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Allows the explosives to be detonated after a set amount of time, or as a Reaction by using a Remote Detonator.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -675,7 +603,9 @@ th, td {
 <p>
 
 
+</div>
 <h2>Drug/Poison Aspects</h2>
+<div class="multicolContainer">
 
 
 <table>
@@ -788,11 +718,13 @@ th, td {
 </tr>
 <tr>
 <th>Special</th>
-<td>On becoming this, the target takes 2 Insanity Points and </td>
+<td>While the target has this aspect, they have the Psy Rating 1 Talent and 1 psychic power with no requirements.
+They take 1 Insanity Point each time they use this power.
+If the target is a psyker, they instead increase their Psy Rating by 1 and must use all their Psy Rating to increase potency when they Focus Power.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Resist (Physically) once per hour</td>
+<td>Resist (Physically), once per hour</td>
 </tr>
 </table>
 <p>
@@ -803,14 +735,6 @@ th, td {
 <th colspan="2">Drugged (Stimm)</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Penalties from Fatigue and Stunned.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn,  the target does Resist (Physical) to overcome the Aspect.</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -819,64 +743,12 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
-<th>Overcome After</th>
-<td>-</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2">Poisoned (Deadly)</th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect. They receive a number of Wounds equal to the Aspect level (ignoring Armour and Toughness) if they fail.</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>-</td>
+<th>Special</th>
+<td>Prevents penalties from Bleeding Out, Fatigue and Stunned.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Resist Physically</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2">Poisoned (Lethal)</th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect. They 1 receive Wound (ignoring Armour and Toughness) if they fail.</td>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Resist Physically</td>
+<td>Resist (Physically), once per turn</td>
 </tr>
 </table>
 <p>
@@ -887,14 +759,6 @@ th, td {
 <th colspan="2">Poisoned (Fatigue)</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect. They become Fatigued if they fail.</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
@@ -903,8 +767,12 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>If the target fails to Resist, they become Fatigued (maximum level is this aspect level).</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist Physically.</td>
+<td>Resist (Physically), once per turn</td>
 </tr>
 </table>
 <p>
@@ -912,15 +780,7 @@ th, td {
 
 <table>
 <tr>
-<th colspan="2">Poisoned (Stunning)</th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>At the start of their turn,  the target does Resist Poison to overcome the Aspect. They become Stunned if they fail.</td>
+<th colspan="2">Poisoned (Lingering Fatigue)</th>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -931,14 +791,116 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>If the target fails to Resist, they become Fatigued (maximum level is this aspect level).</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Resist Physically</td>
+<td>Resist (Physically), once per hour</td>
 </tr>
 </table>
 <p>
 
 
+<table>
+<tr>
+<th colspan="2">Poisoned (Lethal)</th>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>If the target fails to Resist, they take Strength and Toughness Damage equal to the aspect level.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physically), once per turn</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th colspan="2">Poisoned (Neurotoxin)</th>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>If the target fails to Resist, they take Intelligence, Perception and Willpower Damage equal to the aspect level.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physically), once per turn</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th colspan="2">Poisoned (Paralyzing)</th>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>If the target fails to Resist, they take Weapon Skill, Ballistic Skill and Agility Damage equal to the aspect level.</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physically), once per turn</td>
+</tr>
+</table>
+<p>
+
+
+<table>
+<tr>
+<th colspan="2">Poisoned (Pain)</th>
+</tr>
+<tr>
+<th>Bonus To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Penalty To</th>
+<td>-</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>If the target fails to Resist, they become Stunned (maximum level is this aspect level).</td>
+</tr>
+<tr>
+<th>Overcome After</th>
+<td>Resist (Physically), once per turn</td>
+</tr>
+</table>
+<p>
+
+
+</div>
 <h2>Environmental Aspects</h2>
+<div class="multicolContainer">
 
 
 <table>
@@ -946,20 +908,16 @@ th, td {
 <th colspan="2">Darkness</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
-<td>Anything which benefits from being obscured:<br>Cover; Dodge; etc.</td>
+<td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>Anything that relies on vision:<br>Weapon Skill; Ballistic Skill; Perception; etc.</td>
+<td>Anything that relies on vision:<br>Weapon Skill, Ballistic Skill, Agility and Perception Tests</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>-</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -974,20 +932,16 @@ th, td {
 <th colspan="2">Difficult Terrain</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>-</td>
-</tr>
-<tr>
 <th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>Agility (including movement)</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>-</td>
 </tr>
 <tr>
 <th>Overcome After</th>
@@ -1002,13 +956,6 @@ th, td {
 <th colspan="2">Fire</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Darkness in a radius of 1m per Aspect level.</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>The Fire will Ignite exposed targets at the start of their turn (after damage from Burning). Once per round, it will upgrade if it can consume flammable material, otherwise it will downgrade. Then it will deal AP damage to objects with AP up to the Fire level and spread to any adjacent area with flammable objects.</tr>
-<tr>
 <th>Bonus To</th>
 <td>Ignite</td>
 </tr>
@@ -1017,8 +964,14 @@ th, td {
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>Prevents effects of Darkness up to ALx1m away.
+This aspect will Ignite exposed characters once per turn (Test 10xAL; target becomes Burning).
+Once per turn, this aspect will consume flammable material and upgrade itself.</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Extinguish Fire.</td>
+<td>Extinguish Fire (Agility); no flammable material</td>
 </tr>
 </table>
 <p>
@@ -1026,15 +979,7 @@ th, td {
 
 <table>
 <tr>
-<th colspan="2">Gas (Lethal Poison)</th>
-</tr>
-<tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>Any character ending their turn in the area does Resist Poison. If they fail, they become Poisoned (Lethal).</td>
+<th colspan="2">Gas (X)</th>
 </tr>
 <tr>
 <th>Bonus To</th>
@@ -1042,11 +987,15 @@ th, td {
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>-</td>
+<td>Resist effects of this aspect</td>
+</tr>
+<tr>
+<th>Special</th>
+<td>Characters in this area Resist (Physically) once per turn, becoming X if they fail.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Each round, the Aspect may be downgraded as the gas dissipates: (10% in enclosed spaces; 50% in open space; 90% in rough weather).</td>
+<td>Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round</td>
 </tr>
 </table>
 <p>
@@ -1057,24 +1006,20 @@ th, td {
 <th colspan="2">Smoke</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>Line of sight through the area beyond Perception Bonus in meters.</td>
-</tr>
-<tr>
-<th>Allows</th>
+<th>Bonus To</th>
 <td>-</td>
 </tr>
 <tr>
-<th>Bonus To</th>
-<td>Anything which benefits from being obscured:<br>Cover; Dodge; etc.</td>
+<th>Penalty To</th>
+<td>Anything that relies on vision:<br>Weapon Skill, Ballistic Skill, Agility and Perception Tests</td>
 </tr>
 <tr>
-<th>Penalty To</th>
-<td>Anything that requires visibility:<br>Ranged Attack; Dodge (vs ranged attacks); etc.</td>
+<th>Special</th>
+<td>Characters cannot see through the area beyond PBx1m</td>
 </tr>
 <tr>
 <th>Overcome After</th>
-<td>Each round, the Aspect may be downgraded as the smoke dissipates: (10% in enclosed spaces; 50% in open space; 90% in rough weather).</td>
+<td>Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round</td>
 </tr>
 </table>
 <p>
@@ -1085,27 +1030,26 @@ th, td {
 <th colspan="2">Weakened Veil</th>
 </tr>
 <tr>
-<th>Prevents</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Allows</th>
-<td>Extra d10 to all Potency rolls for Psychic Powers per level</td>
-</tr>
-<tr>
 <th>Bonus To</th>
-<td>Dissipate; Focus Power; Psychic Phenomena</td>
+<td>Focus Power and Psychic Phenomena</td>
 </tr>
 <tr>
 <th>Penalty To</th>
 <td>-</td>
 </tr>
 <tr>
+<th>Special</th>
+<td>Extra d10 per aspect level to Potency rolls for Psychic Powers</td>
+</tr>
+<tr>
 <th>Overcome After</th>
-<td>Dissipate (20%)</td>
+<td>Dissipate (Test 20), once per round</td>
 </tr>
 </table>
 <p>
+
+
+</div>
 
 
 </html>
