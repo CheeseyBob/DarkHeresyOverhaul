@@ -1,14 +1,8 @@
 <html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Turn-By-Turn Actions - Dark Heresy Overhaul</title>
+<head>
+	<title>Quick-Time Actions - Dark Heresy Overhaul</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
 
 
 <a href="DarkHeresyOverhaul.html">Index</a>
@@ -40,33 +34,14 @@ For example, you may choose to shoot at an enemy when they pop out of cover on t
 This would be waiting with a Ranged Attack action and you would make a Test to see if your shot is resolved before their action.</p>
 
 
-<h3>Movement</h3>
-<p>When making a Test to increase your Movement, the bonus Movement stacks up to your base Movement and resets to zero if you move less than double your Movement on your turn, or if you spend your Reaction.</p>
-
-<p>If your movement is impeeded but still possible (for example, when you are <i>Prone</i>), then your Movement is 1. You can still Run, but bonus Movement resets to zero each turn.</p>
-
-<p>If you are to far away to Charge a target, so you take the Run action towards the target instead, but this increases your Movement to the point that you can now reach the target, you can act as if you had taken the Charge action and reached the target.</p>
+<h3>Moving Past Opponents</h3>
+<p>If your movement puts you adjacent to another character at any point (besides the spot where you started), they can choose to take their next turn immediately (before you continue your movement), unless you end your movement at that point.
+This applies to the entire movement on your turn, not just a single Move Secondary Action.</p>
 
 
-<h3>Moving Past Opponents and Opportunity Attacks</h3>
-<p>If a hostile character is adjacent to you and they move more than 1m while remaining adjacent to you............. **need to think about this**</p>
-
-
-<h3>Climbing, Jumping and Falling</h3>
-<p>Just do Agility Tests when it seems appropriate.
-Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
-
-
-<h3>Lore Skills</h3>
-<li>Common Lore - general knowledge.</li>
-<li>Scholastic Lore - deep or specialised knowledge.</li>
-<li>Forbidden Lore - hidden or proscribed knowledge.</li>
-
-<p>The Lore Skills can be used in two ways - to Identify something or to Assist (which can be assisting both others and yourself). When you Identify, you reveal points of information such as Characteristics, Traits, Talents, Personality, etc. When you Assist, you create an Aspect which gives a bonus to something, such as decrypting a message, operating an archeotech device, parrying attacks from a xeno beast, etc. In either case, the item's Availibility or the character's Obscurity will give a modifier to the Test.</p>
-
-<p>Point-by-point identification should only be done for unique items and characters, or those that are sufficiently unusual (e.g. xenos, xeno-tech and daemons). Less unusual items and character types can be revealed in whole with a successful Test, while reasonable common items and character types do not need to be identified.</p>
-
-<p>You Identify automatically when you encounter something, after which you cannot Identify the same thing again. The points of info revealed by different characters won't overlap. Assist can be attempted only after successfully Identifying, but can be attempted repeatedly by the same character (or a different character who also successfully Identified). As per the normal rules, the Aspect created can be upgraded to a maximum of the character's Intelligence Bonus.</p>
+<h3>Slow Movement</h3>
+<p>If your Agility Bonus is 0, then you can still Move 1m, but you cannot Run.
+If your Agility is 0, then you are unable to move.</p>
 
 
 <table>
@@ -88,14 +63,14 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Main Action</td>
 <td>Basic</td>
 <td>Weapon Skill</td>
-<td>Target takes a hit</td>
+<td>Target takes hits; 1 per weapon</td>
 </tr>
 <tr>
 <td>Attack Repeatedly (Melee)</td>
 <td>Full Action</td>
 <td>Basic</td>
 <td>Weapon Skill</td>
-<td>Attack (Melee); +1 hit per DoS (max determined by weapon)</td>
+<td>Attack (Melee); increased hits</td>
 </tr>
 <tr>
 <td>Attack Heavily (Melee)</td>
@@ -109,28 +84,28 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Full Action</td>
 <td>Basic</td>
 <td>Weapon Skill</td>
-<td>Attack (Melee); move target 1m + 1m per DoS (move with target)</td>
+<td>Attack (Melee); move target 1m + 1m per DoS</td>
 </tr>
 <tr>
 <td>Charge</td>
 <td>Full Action</td>
 <td>Basic</td>
 <td>Weapon Skill</td>
-<td>Move twice then Attack (Melee); +1 damage per bonus movement.</td>
+<td>Move twice then Attack (Melee); +1 damage per bonus movement</td>
 </tr>
 <tr>
 <td>Attack (Ranged)</td>
 <td>Main Action</td>
 <td>Basic</td>
 <td>Ballistic Skill</td>
-<td>Target takes a hit</td>
+<td>Target takes hits; 1 per weapon</td>
 </tr>
 <tr>
 <td>Attack Repeatedly (Ranged)</td>
 <td>Full Action</td>
 <td>Basic</td>
 <td>Ballistic Skill</td>
-<td>Attack (Ranged); +1 hit per DoS (max determined by weapon)</td>
+<td>Attack (Ranged); increased hits</td>
 </tr>
 <tr>
 <td>Attack Precisely (Ranged)</td>
@@ -144,21 +119,21 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Strength</td>
-<td>Target becomes <i>Grappled</i></td>
+<td>Target becomes Grappled</td>
 </tr>
 <tr>
 <td>Grapple (Break)</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Strength</td>
-<td>Overcome <i>Grappled</i></td>
+<td>Overcome Grappled</td>
 </tr>
 <tr>
 <td>Knock Down</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Strength</td>
-<td>Target becomes <i>Prone</i></td>
+<td>Target becomes Prone</td>
 </tr>
 <tr>
 <td>Tackle</td>
@@ -172,35 +147,7 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Weapon Skill</td>
-<td>Target becomes <i>Stunned</i></td>
-</tr>
-<tr>
-<td>Aim</td>
-<td>Secondary Action</td>
-<td>Basic</td>
-<td>-</td>
-<td>Get a +10 bonus to an Attack</td>
-</tr>
-<tr>
-<td>Defend</td>
-<td>Secondary Action</td>
-<td>Basic</td>
-<td>-</td>
-<td>Get a +10 bonus to a Reaction</td>
-</tr>
-<tr>
-<td>Fend Off</td>
-<td>Secondary Action</td>
-<td>Basic</td>
-<td>-</td>
-<td>Give a -10 penalty to Attack</td>
-</tr>
-<tr>
-<td>Feint</td>
-<td>Secondary Action</td>
-<td>Basic</td>
-<td>-</td>
-<td>Give a -10 penalty to Parry</td>
+<td>Target becomes Stunned</td>
 </tr>
 <tr>
 <td>Reload</td>
@@ -221,31 +168,38 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Reaction</td>
 <td>Basic Skill</td>
 <td>Agility</td>
-<td>Avoid a ranged hit ; -1 hit per DoS</td>
+<td>Avoid ranged hits</td>
 </tr>
 <tr>
 <td>Parry</td>
 <td>Reaction</td>
 <td>Basic Skill</td>
 <td>Weapon Skill</td>
-<td>Avoid a melee hit; -1 hit per DoS</td>
+<td>Avoid melee hits</td>
 </tr>
 <tr>
 <td>Steady</td>
 <td>Reaction</td>
 <td>Basic</td>
 <td>Strength</td>
-<td>Oppose becoming <i>Prone</i></td>
+<td>Oppose becoming Prone</td>
 </tr>
 <tr>
 <td>Use Cover</td>
 <td>Passive</td>
 <td>Basic</td>
 <td>Cover</td>
-<td>Avoid a hit; -1 hit per DoS</td>
+<td>Avoid ranged hits</td>
 </tr>
 <tr>
 <th colspan="1">Movement Actions</th>
+</tr>
+<tr>
+<td>Drag Heavy Object</td>
+<td>Full Action</td>
+<td>Basic</td>
+<td>Strength</td>
+<td>Move target 1m; +1m per DoS</td>
 </tr>
 <tr>
 <td>Move</td>
@@ -266,14 +220,14 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Agility</td>
-<td>Move; +1 bonus movement +1 per DoS</td>
+<td>Move then become Running</td>
 </tr>
 <tr>
 <td>Run (Full)</td>
 <td>Full Action</td>
 <td>Basic Skill</td>
 <td>Agility</td>
-<td>Run with a +10 bonus and extra Move</td>
+<td>Move twice become Running</td>
 </tr>
 <tr>
 <th colspan="1">Stealth Actions</th>
@@ -283,21 +237,21 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Agility</td>
-<td>Avoid being noticed during your next Action.</td>
+<td>Avoid being noticed during your next Action</td>
 </tr>
 <tr>
 <td>Conceal (Self)</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Agility</td>
-<td>Become <i>Concealed</i></td>
+<td>Become Concealed</td>
 </tr>
 <tr>
 <td>Conceal (Object)</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Target becomes <i>Concealed</i></td>
+<td>Target becomes Concealed</td>
 </tr>
 <tr>
 <th colspan="1">General Actions</th>
@@ -314,35 +268,28 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Secondary Action</td>
 <td>Basic</td>
 <td>-</td>
-<td>Take out, put away, place or pick up an item (per hand)</td>
-</tr>
-<tr>
-<td>Drag Heavy Object</td>
-<td>Full Action</td>
-<td>Basic</td>
-<td>Strength</td>
-<td>Move target 1m; +1m per DoS; no move on failure</td>
+<td>Take out, put away, place or pick up items; 1 per hand</td>
 </tr>
 <tr>
 <td>Focus</td>
 <td>Secondary Action</td>
 <td>Basic</td>
 <td>-</td>
-<td>Get a +10 bonus to an Action</td>
+<td>Get a +10 bonus to an Action or Reaction</td>
 </tr>
 <tr>
 <td>Distract</td>
 <td>Secondary Action</td>
 <td>Basic</td>
 <td>-</td>
-<td>Give a -10 penalty to an Action</td>
+<td>Give a -10 penalty to an Action or Reaction</td>
 </tr>
 <tr>
 <td>Brace</td>
 <td>Reaction</td>
 <td>Basic</td>
 <td>-</td>
-<td>Resist with a +10 bonus</td>
+<td>Get a +10 bonus to a passive Reaction</td>
 </tr>
 <tr>
 <td>Reflex</td>
@@ -356,49 +303,49 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Passive</td>
 <td>Basic Skill</td>
 <td>Perception</td>
-<td>Detect the presence of something hidden</td>
+<td>Get Clues or Detect something</td>
 </tr>
 <tr>
 <td>Resist (Physically)</td>
 <td>Passive</td>
 <td>Basic</td>
 <td>Toughness</td>
-<td>Oppose becoming or overcome being <i>Stunned</i>, <i>Poisoned</i>, etc.</td>
+<td>Oppose becoming or overcome being Poisoned, Stunned, etc.</td>
 </tr>
 <tr>
 <td>Resist (Mentally)</td>
 <td>Passive</td>
 <td>Basic</td>
 <td>Willpower</td>
-<td>Oppose becoming or overcome being <i>Frenzied</i>, <i>Frightened</i>, <i>Pinned</i>, etc.</td>
+<td>Oppose becoming or overcome being Frenzied, Frightened, Pinned, etc.</td>
 </tr>
 <tr>
 <td>Administer Drug</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Target is affected by the drug administered.</td>
+<td>Use a drug item (effect depends on the item)</td>
 </tr>
 <tr>
 <td>Command</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Get a +10 bonus to Disposition when giving orders to subordinates; +10 per DoS</td>
+<td>Get a bonus to Disposition</td>
 </tr>
 <tr>
 <td>Inspire</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Target becomes <i>Inspired</i></td>
+<td>Target becomes Inspired</td>
 </tr>
 <tr>
 <td>Intimidate</td>
 <td>Main Action</td>
 <td>Basic Skill</td>
 <td>Strength</td>
-<td>Target becomes <i>Intimidated</i></td>
+<td>Target becomes Intimidated</td>
 </tr>
 <tr>
 <td>Deceive</td>
@@ -426,7 +373,7 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>Passive</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Get 1 point of info plus 1 per DoS</td>
+<td>Get Info</td>
 </tr>
 <tr>
 <th colspan="1">Advanced Actions</th>
@@ -436,60 +383,58 @@ Fall damage is 1d10 Impact damage, plus 1 per meter fallen.</p>
 <td>*</td>
 <td>Talent</td>
 <td>Willpower</td>
-<td>Test Willpower to use a Psychic Power</td>
+<td>Use a Psychic Power</td>
 </tr>
 <tr>
-<td>Recall Forbidden Lore (Assist)</td>
+<td>Reference Forbidden Lore (Assist)</td>
 <td>Main Action</td>
 <td>Skill</td>
 <td>Intelligence</td>
 <td>Create an Aspect which gives a bonus</td>
 </tr>
 <tr>
-<td>Recall Forbidden Lore (Identify)</td>
+<td>Reference Forbidden Lore (Identify)</td>
 <td>Passive</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Get 1 point of info plus 1 per DoS</td>
+<td>Get Info</td>
 </tr>
 <tr>
-<td>Recall Scholastic Lore (Assist)</td>
+<td>Reference Scholastic Lore (Assist)</td>
 <td>Main Action</td>
 <td>Skill</td>
 <td>Intelligence</td>
 <td>Create an Aspect which gives a bonus</td>
 </tr>
 <tr>
-<td>Recall Scholastic Lore (Identify)</td>
+<td>Reference Scholastic Lore (Identify)</td>
 <td>Passive</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Get 1 point of info plus 1 per DoS</td>
+<td>Get Info</td>
 </tr>
 <tr>
 <td>Sense Immaterium</td>
 <td>Passive</td>
 <td>Skill</td>
 <td>Perception</td>
-<td>Detect the presence of something warp-related</td>
+<td>Get Clues or Detect something</td>
 </tr>
 <tr>
 <td>Treat Wounds (First Aid)</td>
 <td>Main Action</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Target becomes <i>Treated</i> (max 1 level)</td>
+<td>Target becomes Treated (max 1 level)</td>
 </tr>
 <tr>
 <td>Use Tech</td>
 <td>Main Action</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Use a difficult tech item</td>
+<td>Use a tech item (effect depends on the item)</td>
 </tr>
 </table>
-<p>
-
 
 
 </html>

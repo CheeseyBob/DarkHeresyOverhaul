@@ -1,18 +1,11 @@
 <html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Hour-By-Hour Actions - Dark Heresy Overhaul</title>
+<head>
+	<title>Downtime Actions - Dark Heresy Overhaul</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
 
 
 <a href="DarkHeresyOverhaul.html">Index</a>
-
 
 
 <h1>Hour-By-Hour Actions</h1>
@@ -47,7 +40,7 @@ th, td {
 <td>Long</td>
 <td>Basic</td>
 <td>Strength</td>
-<td>Travel for 1 hour while carrying a heavy object; become <i>Fatigued</i> on failure</td>
+<td>Travel for 1 hour while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel</td>
 </tr>
 <tr>
 <td>Navigate</td>
@@ -78,21 +71,21 @@ th, td {
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Improve target individual's disposition</td>
+<td>Increase target's Disposition (amount depends on personality)</td>
 </tr>
 <tr>
 <td>Contemplate</td>
 <td>Long</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Obtain Leads by thinking carefully</td>
+<td>Obtain Leads</td>
 </tr>
 <tr>
 <td>Craft</td>
 <td>Long</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Get 1 step of progress towards crafting something; +1 step per DoS (max = Intelligence Bonus)</td>
+<td>Get progress towards crafting</td>
 </tr>
 <tr>
 <td>Disguise</td>
@@ -106,84 +99,84 @@ th, td {
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Get a discount on a purchase (10% + 10% per DoS)</td>
+<td>Get a discount on a purchase; 10% + 10% per DoS</td>
 </tr>
 <tr>
 <td>Inspect</td>
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Perception</td>
-<td>Get Clues by carefully observing an object</td>
+<td>Get Clues</td>
 </tr>
 <tr>
 <td>Inquire</td>
 <td>Long</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Get Clues by asking around; gain Attention on critical failure</td>
+<td>Get Clues; gain Attention on critical failure</td>
 </tr>
 <tr>
 <td>Interrogate</td>
 <td>Long</td>
 <td>Basic Skill</td>
 <td>Willpower</td>
-<td>Get Clues from an unwilling subject; subject is killed on critical failure</td>
+<td>Get Clues; subject is killed on critical failure</td>
 </tr>
 <tr>
 <td>Persuade</td>
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Fellowship</td>
-<td>Get a +10 bonus to Disposition when making a request or changing someone's mind; +10 per DoS</td>
+<td>Get a bonus to Disposition</td>
 </tr>
 <tr>
 <td>Read Person (Gain Insight)</td>
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Perception</td>
-<td>Get 1 point of info plus 1 per DoS</td>
+<td>Get Info</td>
 </tr>
 <tr>
-<td>Recall Common Lore</td>
-<td>Passive</td>
+<td>Reference Common Lore (Research)</td>
+<td>Short</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Get Clues by remembering information</td>
+<td>Get Clues/Info</td>
 </tr>
 <tr>
-<td>Recall Forbidden Lore</td>
-<td>Passive</td>
+<td>Reference Forbidden Lore (Research)</td>
+<td>Short</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Get Clues by remembering information</td>
+<td>Get Clues/Info</td>
 </tr>
 <tr>
-<td>Recall Scholasic Lore</td>
-<td>Passive</td>
+<td>Reference Scholasic Lore (Research)</td>
+<td>Short</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Get Clues by remembering information</td>
+<td>Get Clues/Info</td>
 </tr>
 <tr>
 <td>Rest</td>
 <td>Extended</td>
 <td>Basic</td>
 <td>Toughness</td>
-<td>Takes 10-TB hours; Overcome Blood Loss (maximum 1 level); reduce wounds by 1 plus 1 per DoS</td>
+<td>Takes 10-TB hours; Overcome Blood Loss (maximum 1 level); reduce Wounds</td>
 </tr>
 <tr>
 <td>Search</td>
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Perception</td>
-<td>Get Clues/items by searching an area</td>
+<td>Get Clues/items</td>
 </tr>
 <tr>
 <td>Set Trap</td>
 <td>Short</td>
 <td>Basic Skill</td>
 <td>Intelligence</td>
-<td>Creates an environmental aspect</td>
+<td>Create an environmental aspect</td>
 </tr>
 <tr>
 <th colspan="1">Advanced Actions</th>
@@ -207,42 +200,42 @@ th, td {
 <td>Long</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Reduce Characteristic Damage of Target by 1 plus 1 per DoS; each point inflicts 1 wound; critical failure inflicts 1d10 Rending Critical Damage</td>
+<td>Reduce Characteristic Damage of Target by 1 plus 1 per DoS; always inflicts 1d10 Wounds; critical failure inflicts 1d10 Rending Critical Damage</td>
 </tr>
 <tr>
 <td>Perform Surgery (Attach Bionic)</td>
 <td>Long</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Attach a bionic to the Target; inflicts 1d10 Wounds; critical failure additionally inflicts 1d10 Rending Critical Damage</td>
+<td>Attach a bionic to the Target; always inflicts 1d10 Wounds; on critical failure, also inflict 1d10 Rending Critical Damage</td>
 </tr>
 <tr>
 <td>Repair</td>
 <td>Long</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Overcome target being Damaged; consumes a Component; target becomes Damaged on critical failure</td>
+<td>Overcome target being Damaged; consumes 1 Component per level downgraded; on critical failure, target becomes Damaged</td>
 </tr>
 <tr>
 <td>Treat Wounds</td>
 <td>Long</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Target becomes <i>Treated</i></td>
+<td>Target becomes Treated</td>
 </tr>
 <tr>
 <td>Use Tech (Maintainance)</td>
 <td>Long</td>
 <td>Skill</td>
 <td>Intelligence</td>
-<td>Target item becomes Maintained; target becomes Damaged on critical failure</td>
+<td>Target item becomes Maintained; on critical failure, target becomes Damaged</td>
 </tr>
 <tr>
 <td>Wrangle</td>
 <td>Short</td>
 <td>Skill</td>
 <td>Fellowship</td>
-<td>Interact with creatures; improve target creature's disposition or train a friendly creature</td>
+<td>Get a bonus to Disposition</td>
 </tr>
 </table>
 <br>

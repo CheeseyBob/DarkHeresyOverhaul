@@ -1,30 +1,24 @@
 	~~ To Do List ~~
 
+>>> review character creation items (as inventory system has changed)
+
+>>> skill descriptions in the skills section
+
+> Lore items (allow extra Identify / bonuses / rituals / allow spending XP)
+
 > vacuum and zero-G environmental aspects
-
-> Lore skills are also used to LEARN information - codify this
-
-> Chemical Critical Damage = does Characteristic damage at even the lowest levels
-
-> review character creation items (as inventory system has changed)
-
-> System for clues/leads (was it leads?) - this may end up tying back into actions and Talents
 
 > Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
-> polish and balance the character creation process
-
-> Lore Items which have the special rule of allowing Identifiy as a Short Action, possibly with a bonus. Tools?
-
-> special items granting talents for Forbidden Lore rituals
+>>> polish and balance the character creation process
+	- Move info about buying advances into the Skills section
 
 > More Fieldcraft Talents
+	- stuff about Beasts / wrangling / mounted combat
 
-> Opportunity attacks (can move away but not past; use Reflex - autopass?)
+>>> Psychic Phenomena & Perils tables
 
-> Psychic Phenomena & Perils tables
-
-> continue with psychic powers
+>>> continue with psychic powers
 
 > More NPC personality tables
 
@@ -33,6 +27,14 @@
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 
 > See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
+
+
+	~~ Usage Examples ~~
+
+The acolytes are trying to obtain an item from the local enforcers' evidence vault.
+- Recall Common Lore (Assist) wrt Adeptus Arbites to remember the proper procedures for accessing the evidence vault.
+- Disguise as a magistrate, as they are permitted access.
+- Deceive with a bonus from the Assist when interacting with the enforcers.
 
 
 	~~ Power/Electricity ~~

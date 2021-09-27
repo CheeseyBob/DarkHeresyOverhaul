@@ -1,32 +1,170 @@
 <html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Skills - Dark Heresy Overhaul</title>
+<head>
+	<title>Character Advancement - Dark Heresy Overhaul</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
 
 
 <a href="DarkHeresyOverhaul.html">Index</a>
 
 
-<h1>Skills</h1>
+<h1>Character Advancement</h1>
+<p>Each different Advance has an XP cost and two associated Aptitudes.
+When you take an Advance, the amount of XP you spend depends on how many matching Aptitudes you have:</p>
+<ul>
+<li>Both Aptitues: you spend half the written XP cost.</li>
+<li>One Aptitue: you spend the written XP cost.</li>
+<li>Neither Aptitue: you spend double the written XP cost.</li>
+</ul>
 
-Skills give a bonus to the action of the same name when taken by the character with the Skill. Some skills are Basic, which means all characters are assumed to have the skill at +0.
+<p>There are three different kinds of Advance:</p>
+<ul>
+<li><b>Characteristic Advances</b> increase a Characteristic by 5.
+You can take this up to 5 times for each Characteristic, with the XP cost going up each time.
+The XP cost and Aptitudes are shown in the tables below.</li>
+<li><b>Skill Advances</b> increase the bonus for a Skill by 10, or aquire a non-basic skill at a +0 bonus.
+You can take this up to a +30 bonus for each skill.
+Skills, their XP costs and Aptitudes are shown in the tables below.</li>
+<li><b>Talent Advances</b> give your character the benefit of a Talent.
+Talents, their XP costs and Aptitudes are listed in the Talents section.</li>
+</ul>
 
 
+<h2>Advancement After Character Creation</h2>
+<p>During play, taking Advances should be justified by the character's actions in one of the following ways.</p>
+<ul>
+<li><b>Experience:</b> After the character uses a Characteristic or Skill, they can take an Advance for that Characteristic or Skill.</li>
+<li><b>Inspiration:</b> Before taking an action, you can spend a Fate Point to allow the character to take a Talent Advance and then use that Talent.</li>
+<li><b>Training:</b> The character can spend time training or studying.
+If they have access to the appropriate resources, a successful Long Action Test using the appropriate Characteristic allows them to take any Advance.</li>
+</ul>
 
-<br>***** Advancements - spend XP after attempting the action you are improving. Spend a Fate Point to attempt an Advanced Action you don't have the skill for in order to get the opportunity to purchase it with XP. Also can spend XP by spending time training.
+
+<h2>Characteristics</h2>
+
+
+<div class="multicolContainer">
+
+
+<table>
+<tr>
+<th colspan="3">Characteristic Aptitudes</th>
+</tr>
+<tr>
+<th>Characteristic</th>
+<th>Aptitude 1</th>
+<th>Aptitude 2</th>
+</tr>
+<tr>
+<td>Weapon Skill</td>
+<td>Weapon Skill</td>
+<td>Offence</td>
+</tr>
+<tr>
+<td>Ballistic Skill</td>
+<td>Ballistic Skill</td>
+<td>Finesse</td>
+</tr>
+<tr>
+<td>Strength</td>
+<td>Strength</td>
+<td>Offence</td>
+</tr>
+<tr>
+<td>Toughness</td>
+<td>Toughness</td>
+<td>Defence</td>
+</tr>
+<tr>
+<td>Agility</td>
+<td>Agility</td>
+<td>Finesse</td>
+</tr>
+<tr>
+<td>Intelligence</td>
+<td>Intelligence</td>
+<td>Knowledge</td>
+</tr>
+<tr>
+<td>Perception</td>
+<td>Perception</td>
+<td>Fieldcraft</td>
+</tr>
+<tr>
+<td>Willpower</td>
+<td>Willpower</td>
+<td>Psyker</td>
+</tr>
+<tr>
+<td>Fellowship</td>
+<td>Fellowship</td>
+<td>Social</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th colspan="3">Characteristic Advances</th>
+</tr>
+<tr>
+<th>Advance</th>
+<th>XP Cost</th>
+</tr>
+<tr>
+<th>1st</th>
+<td>200 XP</td>
+</tr>
+<tr>
+<th>2nd</th>
+<td>400 XP</td>
+</tr>
+<tr>
+<th>3rd</th>
+<td>800 XP</td>
+</tr>
+<tr>
+<th>4th</th>
+<td>1600 XP</td>
+</tr>
+<tr>
+<th>5th</th>
+<td>3200 XP</td>
+</tr>
+</table>
+
+
+</div>
+
+
+<h2>Skills</h2>
+<p>If a Skill is labelled as basic, all characters are assumed to have the Skill at +0.
+This means the Skill does not need to be aquired with an Advance.</p>
+
+
+<table>
+<tr>
+<th colspan="4">Skill Advances</th>
+</tr>
+<tr>
+<th>Aquire</th>
+<th>+10</th>
+<th>+20</th>
+<th>+30</th>
+</tr>
+<tr>
+<td>400 XP</td>
+<td>200 XP</td>
+<td>400 XP</td>
+<td>800 XP</td>
+</tr>
+</table>
 
 
 <table>
 <tr>
 <th>Skill</th>
-<th>Aptitude 1<br>(Characteristic Used)</th>
+<th>Aptitude 1</th>
 <th>Aptitude 2</th>
 <th>Basic</th>
 <th>Duration</th>
@@ -247,7 +385,7 @@ Skills give a bonus to the action of the same name when taken by the character w
 <td>Agility</td>
 <td>Finesse</td>
 <td>No</td>
-<td>Action/Long</td>
+<td>*</td>
 </tr>
 <tr>
 <th colspan="1">Specialist Skills</th>
@@ -323,10 +461,10 @@ Skills give a bonus to the action of the same name when taken by the character w
 <td>Short</td>
 </tr>
 <tr>
-<td colspan="4">*Requires a Talent for each area of use</td>
+<td colspan="5">*Requires a Talent for each area of use</td>
 </tr>
 <tr>
-<td colspan="4">**Hack requires Use Tech; Perform Surgery requires Treat Wounds</td>
+<td colspan="5">**Hack requires Use Tech; Perform Surgery requires Treat Wounds</td>
 </tr>
 </table>
 

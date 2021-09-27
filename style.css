@@ -21,9 +21,19 @@ p {
     margin-bottom: 10px;
 }
 
+ol {
+	margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 ul {
 	margin-top: 0px;
     margin-bottom: 10px;
+}
+
+p + ol {
+	/* This removes the spacine between a list and the preceeding paragraph. */
+    margin-top: -10px;
 }
 
 p + ul {
