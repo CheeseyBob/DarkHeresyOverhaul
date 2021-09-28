@@ -58,3 +58,7 @@ th, td {
 .multicolContainer {
 	column-count: 2;
 }
+
+.box {
+    break-inside: avoid;
+}

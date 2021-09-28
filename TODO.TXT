@@ -1,17 +1,14 @@
 	~~ To Do List ~~
 
->>> review character creation items (as inventory system has changed)
-
->>> skill descriptions in the skills section
-
-> Lore items (allow extra Identify / bonuses / rituals / allow spending XP)
+> Lore
+	- differences between Scholasic & Common lore on the same topic - doesn't make sense for common to get a bonus and scholastic not if they are otherwise the same.
+	- items (allow extra Identify / bonuses / rituals / allow spending XP)
 
 > vacuum and zero-G environmental aspects
 
 > Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
->>> polish and balance the character creation process
-	- Move info about buying advances into the Skills section
+> bring the character to life section of chargen
 
 > More Fieldcraft Talents
 	- stuff about Beasts / wrangling / mounted combat
@@ -24,9 +21,10 @@
 
 > make example characters (in particular for services)
 
-> Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
-
 > See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
+
+> Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
+	- Skills descriptions
 
 
 	~~ Usage Examples ~~
@@ -35,15 +33,6 @@ The acolytes are trying to obtain an item from the local enforcers' evidence vau
 - Recall Common Lore (Assist) wrt Adeptus Arbites to remember the proper procedures for accessing the evidence vault.
 - Disguise as a magistrate, as they are permitted access.
 - Deceive with a bonus from the Assist when interacting with the enforcers.
-
-
-	~~ Power/Electricity ~~
-
-* For basic powered items, have running out of power be a "critical fail" result.
-* For some items, tracking power use will be important:
-- Las weapons: 1 unit of power = 1 lasgun shot. Lasgun holds 18 power. Lascannon holds 40 power.
-- Power Armour: backpack contains 200 power... Uses 20+2d10 power/hour?
-* Charging at power outlets....how fast? 1d10/hour?
 
 
 	~~ Test Scenarios ~~
