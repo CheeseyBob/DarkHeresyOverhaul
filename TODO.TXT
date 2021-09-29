@@ -1,7 +1,7 @@
 	~~ To Do List ~~
 
 > Lore
-	- differences between Scholasic & Common lore on the same topic - doesn't make sense for common to get a bonus and scholastic not if they are otherwise the same.
+	- separate Scholastic/Forbidden and Common Lore areas as in 1st ed.
 	- items (allow extra Identify / bonuses / rituals / allow spending XP)
 
 > vacuum and zero-G environmental aspects
