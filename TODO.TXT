@@ -1,7 +1,6 @@
 	~~ To Do List ~~
 
 > Lore
-	- separate Scholastic/Forbidden and Common Lore areas as in 1st ed.
 	- items (allow extra Identify / bonuses / rituals / allow spending XP)
 
 > vacuum and zero-G environmental aspects
