@@ -18,7 +18,8 @@
 
 > More NPC personality tables
 
-> make example characters (in particular for services)
+>>> make example characters (in particular for services)
+	- also include unranked characters, such as Arbites' K9s and Mechanicus Servitors.
 
 > See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
 
