@@ -12,13 +12,15 @@
 
 
 
-<h2>Tests</h2>
-
-<br>**d100 vs some Characteristic;
-<br>**success = (roll<=number);
-<br>**DoS= tens of the roll (if successful); 
-<br>**critical fail = (roll > 90 + Characteristic Bonus)
-
+<h3>Tests</h3>
+<p>A Characteristic Test (for some Characteristic) is done as follows:</p>
+<ol>
+	<li>Roll a d100 and compare to the Characteristic (plus/minus modifiers).</li>
+	<li>If the roll is <= Characteristic, the Test is a success.</li>
+	<li>If the roll is > 90 + Characteristic Bonus, the Test is a critical failure.</li>
+	<li>Otherwise the test is a failure.</li>
+	<li>If the Test is a success, the Degrees of Success = tens digit of the roll.</li>
+</ol>
 
 
 <h2>Attacks</h2>
@@ -67,13 +69,18 @@ Each character takes one hit plus one per Degree of Success - if the character i
 
 
 <h3>Cover</h3>
-<p>If a character is partially concealed behind an object, they are in Half Cover; if they are totally concealed, they are in Full Cover. Some objects will not be able to totally conceal a character (for example, a lamp-post cannot be Full Cover for a human). Cover is relative to each given line of sight, so a character in cover from one direction may not be in cover from another direction.</p>
+<p>If a character is partially concealed behind an object, they are in Half Cover; if they are totally concealed, they are in Full Cover.
+Some objects will not be able to totally conceal a character (for example, railings or a thin pillar).
+Cover is relative to each given line of sight, so a character in cover from one direction may not be in cover from another direction.</p>
 
-<p>When a character is behind an object, ducking behind it to take Full Cover or popping out to take Half Cover are quick enough to not require spending an Action. A character can be in Full Cover at the start of their turn, pop out of cover to shoot, then duck back down to end their turn in Full Cover again - but if their action is interrupted (by another character doing Reflex), they will only count as having Half Cover.</p>
+<p>When a character is behind an object, ducking behind it to take Full Cover or popping out to take Half Cover are quick enough to not require spending an Action.
+A character can be in Full Cover at the start of their turn, pop out of cover to shoot, then duck back down to end their turn in Full Cover again - but if their action is interrupted (by another character doing Reflex), they will only count as having Half Cover.</p>
 
-<p>A Cover Test depends on whether the target is in Half Cover or Full Cover. Full Cover automatically affects all hits. For Half Cover, make a Test against a base Cover Characteristic of 50 (plus any modifiers) to determine the number of hits affected - one plus one per Degree of Success.</p>
+<p>A Cover Test depends on whether the target is in Half Cover or Full Cover.
+Full Cover automatically affects all hits.
+For Half Cover, make a Test against a base Cover Characteristic of 50 (plus any modifiers) to determine the number of hits affected - one plus one per Degree of Success.</p>
 
-<p>A hit affected by cover has its damage reduced by the cover's Armour Points (AP). After reducing the damage, if it is not reduced to zero, the cover's AP is reduced by 1. Once the cover's AP reaches zero, the object is destroyed.</p>
+<p>A hit affected by cover has its damage reduced by the cover's Armour Points in addition to the target's Armour Points.</p>
 
 <table>
 <tr>
@@ -85,7 +92,7 @@ Each character takes one hit plus one per Degree of Success - if the character i
 </tr>
 <tr>
 <td>4</td>
-<td>Light Wood, Armour-glas, Light Metal</td>
+<td>Light Wood, Armour-glass, Light Metal</td>
 </tr>
 <tr>
 <td>8</td>
@@ -100,13 +107,19 @@ Each character takes one hit plus one per Degree of Success - if the character i
 <td>Plasteel, Armaplas</td>
 </table>
 
-<p>When it is necessary to work out damage against non-solid objects (weapons, tools, etc.), use an AP value as if they were cover, except they take 1 AP damage if the damage exceeds half the AP, in addition to the AP damage described above.</p>
 
-<p>A character can oppose with Cover even when they are not in any cover, for example if they are in <i>Darkness</i> or <i>Thick Smoke</i>. In these instances, apply bonuses/penalties to a base Cover Characteristic of 0.</p>
+<h3>Damaging Cover and Items</h3>
+<p>Some weapons can damage cover.
+When a piece of cover is hit by such a weapon, the AP is reduced by the damage at the same time as the damage is reduced by the AP.
+Once the AP reaches 0, the cover is destroyed.</p>
+
+<p>When an item is hit by such a weapon, give it an AP value using the table.
+For each multiple of the AP value it takes in damage, the item becomes Damaged.
+Worn armour becomes Damaged if the damage exceeds the AP.</p>
 
 
 <h3>Weapon Jams</h3>
-<p>Whenever you fire a ranged weapon, a roll of 90-100 indicates a possible weapon jam. Add the number of shots fired with the weapon that turn to the roll. If this is 100 or higher, the weapon becomes <i>Jammed</i> and the attack misses.</p>
+<p>Whenever you fire a ranged weapon, if the number of shots fired that turn plus the roll is higher than 100, the weapon becomes Jammed.</p>
 
 
 <h3>Powered Items</h3>

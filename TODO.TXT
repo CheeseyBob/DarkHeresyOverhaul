@@ -1,5 +1,7 @@
 	~~ To Do List ~~
 
+> Look into Bootstrap framework
+
 > Lore items/talents for rituals
 
 > vacuum and zero-G environmental aspects
