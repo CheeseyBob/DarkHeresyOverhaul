@@ -1,7 +1,6 @@
 	~~ To Do List ~~
 
-> Lore
-	- items (allow extra Identify / bonuses / rituals / allow spending XP)
+> Lore items/talents for rituals
 
 > vacuum and zero-G environmental aspects
 
@@ -25,14 +24,6 @@
 
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 	- Skills descriptions
-
-
-	~~ Usage Examples ~~
-
-The acolytes are trying to obtain an item from the local enforcers' evidence vault.
-- Recall Common Lore (Assist) wrt Adeptus Arbites to remember the proper procedures for accessing the evidence vault.
-- Disguise as a magistrate, as they are permitted access.
-- Deceive with a bonus from the Assist when interacting with the enforcers.
 
 
 	~~ Test Scenarios ~~
