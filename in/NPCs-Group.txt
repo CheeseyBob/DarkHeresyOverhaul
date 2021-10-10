@@ -1,0 +1,13 @@
+!TOP
+
+
+!RANK_STRUCTURE
+
+
+<h2 class="pt-3 text-center">Character Sheets</h2>
+
+
+!CHARACTER_SHEETS
+
+
+!TAIL

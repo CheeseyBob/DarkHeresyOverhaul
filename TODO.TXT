@@ -1,6 +1,6 @@
 	~~ To Do List ~~
 
-> Look into Bootstrap framework
+> Convert everything to generated HTML documents which use Bootstrap
 
 > Lore items/talents for rituals
 

@@ -1,0 +1,65 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#!!@CHARACTER_ID!!">
+			<h4>!!@CHARACTER_NAME!!</h4>
+		</button>
+		<div id="!!@CHARACTER_ID!!" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 0/11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+					<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+				</tr>
+				<tr>
+					<th>35</th><th>35</th><th>30</th><th>30</th><th>30</th>
+					<th>30</th><th>30</th><th>30</th><th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Language (Low Gothic):</b>
+					You know the common tongue of the Imperium.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>No Skills</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Trooper Uniform</li>
+							<li>Flack Jacket</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Club [3]</li>
+							<li>Pistol [1]</li>
+							<li>Pistol Mag [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
