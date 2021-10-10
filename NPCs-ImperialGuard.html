@@ -5,13 +5,115 @@
 </head>
 
 
+<a href="DarkHeresyOverhaul.html">Index</a>
+
+
 <h1>Imperial Guard NPCs</h1>
-<div class="multicolContainer">
+<table>
+<tr>
+	<th colspan="6">Imperial Guard Rank Structure</th>
+</tr>
+<tr>
+	<th>Rank</th><th>XP</th>
+	<th>Entry Path</th><th>Elite Path</th><th>Leadership Path</th><th>Scout Path</th>
+</tr>
+<tr>
+	<th>1</th><th>0-4</th>
+	<th>Conscript<br>↓</th>
+</tr>
+<tr>
+	<th>2</th><th>5-9</th>
+	<th>Guard<br>↓</th>
+</tr>
+<tr>
+	<th>3</th><th>10-19</th>
+	<th>Specialist(*)<br>↓</th>
+</tr>
+<tr>
+	<th>4</th><th>20-29</th>
+	<th>Sergeant<br>↓</th>
+</tr>
+<tr>
+	<th>5</th><th>30-59</th>
+	<th>Veteran</th><th>↴</th><th>↴</th><th>↴</th>
+</tr>
+<tr>
+	<th>6</th><th>60-79</th>
+	<th></th><th>Assault Veteran<br>↓</th><th>Lieutenant<br>↓</th><th>Scout<br>↓</th>
+</tr>
+<tr>
+	<th>7</th><th>80-99</th>
+	<th></th><th>Shock Trooper<br>↓</th><th>Captain<br>↓</th><th>Marksman<br>↓</th>
+</tr>
+<tr>
+	<th>8</th><th>100-150</th>
+	<th></th><th>Storm Trooper</th><th>Commander</th><th>Sniper</th>
+</tr>
+</table>
+
+
+<h3>Rank Descriptions</h3>
+<ol>
+	<li>
+		<ul>
+			<li><b>Conscript:</b> Trains, performs menial duties and, if necessary, fights.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Guard:</b> Fights on the front lines.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Specialist(Armsman):</b> Uses specialised weapons.</li>
+			<li><b>Specialist(Comms):</b> Operates comms devices.</li>
+			<li><b>Specialist(Demolitions):</b> Uses explosives.</li>
+			<li><b>Specialist(Driver):</b> Operates vehicles.</li>
+			<li><b>Specialist(Medic):</b> Provides first aid.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Sergeant:</b> Ensures orders are relayed to and carried out by their squad.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Veteran:</b> Fights in units that can be relied upon to hold their ground.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Assault Veteran:</b> Fights in units that can be relied upon to take ground.</li>
+			<li><b>Lieutenant:</b> Leads their unit, either of Veterans or of several squads led by Sergeants.</li>
+			<li><b>Scout:</b> Locates and observes enemy forces using stealth.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Shock Trooper:</b> Fights in high-stakes maneuvers such as storming bunkers.</li>
+			<li><b>Captain:</b> Commands large formations and battle groups.</li>
+			<li><b>Marksman:</b> Provides long-range fire support, digging in and picking off the enemy.</li>
+		</ul>
+	</li>
+	<li>
+		<ul>
+			<li><b>Storm Trooper:</b> Fights in high-stakes special operations.</li>
+			<li><b>Commander:</b> Controls the flow of battle from planning to execution.</li>
+			<li><b>Sniper:</b> Provides long-range fire support, killing key targets then melting away from view.</li>
+		</ul>
+	</li>
+</ol>
+
+
+<h2>NPC Stats</h2>
+<div style="column-count:1">
 
 
 <table>
 <tr>
-	<th><h3>Citizen</h3></th>
+	<th><h3>Conscript</h3></th>
 </tr>
 <tr>
 	<td>
@@ -21,7 +123,7 @@
 				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
 			</tr>
 			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
+				<th>35</th><th>35</th><th>30</th><th>30</th><th>30</th>
 				<th>30</th><th>30</th><th>30</th><th>30</th>
 			</tr>
 		</table>
@@ -52,8 +154,8 @@
 	<th>Talents & Traits</th>
 </tr>
 <tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
 </tr>
 <tr>
 	<th>Clothing, Armour and Held Items</th>
@@ -62,18 +164,22 @@ You know the common tongue of the Imperium.</td>
 	<td>
 		<div class="multicolContainer">
 		<ul>
-			<li>Coveralls</li>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
 		</ul>
 		</div>
 	</td>
 </tr>
 <tr>
-	<th>Inventory [capacity 14, max size 4]</th>
+	<th>Inventory [capacity 14, max size SB+1]</th>
 </tr>
 <tr>
 	<td>
 		<div class="multicolContainer">
 		<ul>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x2</li>
+			<li>Knife [1]</li>
 			<li>5 Gelt [0]</li>
 		</ul>
 		</div>
@@ -84,7 +190,1865 @@ You know the common tongue of the Imperium.</td>
 </tr>
 <tr>
 	<td>
-		0 XP
+		Imperial Guard 1st Rank, 4 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Guard</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>40</th><th>30</th><th>30</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>None</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x3</li>
+			<li>Frag Hand-Grenade [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 2nd Rank, 8 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Specialist (Armsman)</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>45</th><th>30</th><th>30</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>None</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Weapon Familiarity (Heavy Stubber):</b>
+	You can clear jams and maintain the chosen weapon without the Use Tech skill.
+	The weapon does not become Damaged on critical failure when doing so.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Heavy Stubber [5]</li>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1]</li>
+			<li>Heavy Stubber Mag [2] x2</li>
+			<li>Frag Hand-Grenade [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 3rd Rank, 18 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Specialist (Comms)</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>40</th><th>40</th><th>30</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Use Tech(+0)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Vox Caster [6]</li>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 3rd Rank, 18 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Specialist (Demolitions)</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>40</th><th>30</th><th>30</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Use Tech(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Demolitions Expert:</b>
+	Get a +20 bonus to Use Tech when planting and defusing explosives.</td>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Explosive Charge [1] x5</li>
+			<li>Remote Detonator [1]</li>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1]</li>
+			<li>Krak Hand-Grenade [1] x2</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 3rd Rank, 18 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Specialist (Driver)</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>40</th><th>30</th><th>30</th><th>30</th>
+				<th>40</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>None</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Knowledgable (Tech):</b>
+	Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Operate (Wheeled/Tracked/Walker/Flier):</b>
+	You can operate the chosen vehicle type using Intelligence.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 3rd Rank, 18 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Specialist (Medic)</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>40</th><th>30</th><th>30</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Administer Drug(+10)</li>
+			<li>Treat Wounds(+0)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>First Aider:</b>
+	Get a +20 bonus to Treat Wounds when performing first aid.</td>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Medkit [2]</li>
+			<li>Injector(Stimm) [1] x3</li>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 3rd Rank, 18 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Sergeant</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>35</th><th>45</th><th>35</th><th>35</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/11<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Weapon Familiarity (A Ranged Weapon):</b>
+	You can clear jams and maintain the chosen weapon without the Use Tech skill.
+	The weapon does not become Damaged on critical failure when doing so.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Heavy Stubber [5]</li>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x3</li>
+			<li>Frag Hand-Grenade [1]</li>
+			<li>Knife [1]</li>
+			<li>Hand-Vox [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 4th Rank, 28 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Veteran</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+10)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x4</li>
+			<li>Frag Hand-Grenade [1] x2</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 5th Rank, 58 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Assault Veteran</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>35</th>
+				<th>30</th><th>30</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+10)</li>
+			<li>Reflex(+10)</li>
+			<li>Run(+20)</li>
+			<li>Parry(+20)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Assault Fire:</b>
+	Full Action; Move and Attack Repeatedly (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Hip Shooting:</b>
+	Full Action; Move twice and Attack (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Chainsword [3]</li>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x3</li>
+			<li>Frag Hand-Grenade [1] x2</li>
+			<li>Krak Hand-Grenade [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 6th Rank, Elite Path, 78 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Lieutenant</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>35</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+20)</li>
+			<li>Navigate(+20)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Commanding:</b>
+	When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.</td>
+</tr>
+<tr>
+	<td><b>Language (Imperial Codes + Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Melee Shooting:</b>
+	You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Laspistol):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Longsword [1]</li>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1] x2</li>
+			<li>Hand-Vox [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 6th Rank, Leadership Path, 78 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Scout</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>35</th>
+				<th>30</th><th>35</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Dodge(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+			<li>Run(+20)</li>
+			<li>Sneak(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Sprinter:</b>
+	Your maximum bonus Movement is three times your Agility Bonus, rather than two times.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Lasgun [3]</li>
+			<li>Lasgun Power Pack [1] x3</li>
+			<li>Grapnel [3]</li>
+			<li>Magnoculars [1]</li>
+			<li>Hand-Vox [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 6th Rank, Scout Path, 78 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Shock Trooper</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>45</th><th>45</th><th>40</th><th>40</th><th>40</th>
+				<th>30</th><th>35</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Dodge(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+10)</li>
+			<li>Reflex(+20)</li>
+			<li>Run(+20)</li>
+			<li>Parry(+20)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Assault Fire:</b>
+	Full Action; Move and Attack Repeatedly (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Hip Shooting:</b>
+	Full Action; Move twice and Attack (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Chainsword [3]</li>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x2</li>
+			<li>Frag Hand-Grenade [1]</li>
+			<li>Krak Hand-Grenade [1]</li>
+			<li>Gas Mask [2]</li>
+			<li>Photo-Visor [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 7th Rank, Elite Path, 98 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Captain</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>30</th>
+				<th>30</th><th>30</th><th>30</th><th>40</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+20)</li>
+			<li>Navigate(+20)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Commanding:</b>
+	When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.</td>
+</tr>
+<tr>
+	<td><b>Experienced (Imperial Guard + War):</b>
+	Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+</tr>
+<tr>
+	<td><b>Knowledgable (Imperial Guard + War):</b>
+	Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+</tr>
+<tr>
+	<td><b>Language (Imperial Codes + Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Melee Shooting:</b>
+	You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Public Speaker:</b>
+	When making a Fellowship Test targeting a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Laspistol):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Longsword [1]</li>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1] x2</li>
+			<li>Hand-Vox [1]</li>
+			<li>Magnoculars [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 7th Rank, Leadership Path, 98 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Marksman</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>50</th><th>40</th><th>40</th><th>35</th>
+				<th>30</th><th>35</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Dodge(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+			<li>Run(+20)</li>
+			<li>Sneak(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Marksman:</b>
+	Get an extra +10 bonus when you make a ranged attack after you Aim.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Sprinter:</b>
+	Your maximum bonus Movement is three times your Agility Bonus, rather than two times.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Long Las [4]</li>
+			<li>Long Las Power Pack [1] x3</li>
+			<li>Grapnel [3]</li>
+			<li>Magnoculars [1]</li>
+			<li>Hand-Vox [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 7th Rank, Scout Path, 98 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Storm Trooper</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>45</th><th>45</th><th>40</th><th>40</th><th>40</th>
+				<th>30</th><th>40</th><th>35</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Dodge(+30)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+30)</li>
+			<li>Run(+20)</li>
+			<li>Parry(+30)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Adamantium Will:</b>
+	Get a +30 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Assault Fire:</b>
+	Full Action; Move and Attack Repeatedly (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Constant Vigilance:</b>
+	You can use Reflex to act before another character even when you are not waiting.</td>
+</tr>
+<tr>
+	<td><b>Hip Shooting:</b>
+	Full Action; Move twice and Attack (Ranged) during the movement.</td>
+</tr>
+<tr>
+	<td><b>Language (Imperial Codes + Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Mono-Shortsword [2]</li>
+			<li>Lasgun with Bayonet [3]</li>
+			<li>Lasgun Power Pack [1] x2</li>
+			<li>Gas Hand-Grenade (Pain Poison) [1] x2</li>
+			<li>Gas Mask [2]</li>
+			<li>Infra-Red Goggles [2]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 8th Rank, Elite Path, 150 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Commander</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>45</th><th>40</th><th>40</th><th>30</th>
+				<th>35</th><th>35</th><th>35</th><th>40</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+30)</li>
+			<li>Navigate(+20)</li>
+			<li>Notice(+20)</li>
+			<li>Reference Common Lore(+20)</li>
+			<li>Reference Scholastic Lore(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Commanding:</b>
+	When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.</td>
+</tr>
+<tr>
+	<td><b>Educated (Tactica Imperialis):</b>
+	You can Reference Scholastic Lore regarding the chosen area.</td>
+</tr>
+<tr>
+	<td><b>Experienced (Imperial Guard + War):</b>
+	Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+</tr>
+<tr>
+	<td><b>Expert (Tactica Imperialis):</b>
+	Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
+</tr>
+<tr>
+	<td><b>Halo of Command:</b>
+	You can affect those up to FBx100m away when you Command or Inspire.</td>
+</tr>
+<tr>
+	<td><b>Into the Jaws of Hell:</b>
+	Allies within FBx10m who can see you get a +20 bonus to Resist being or becoming Frightened, Intimidated or Pinned.</td>
+</tr>
+<tr>
+	<td><b>Iron Discipline:</b>
+	Get a +20 bonus to Command to overcome the target being Frightened, Intimidated or Pinned.</td>
+</tr>
+<tr>
+	<td><b>Knowledgable (Imperial Guard + War):</b>
+	Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+</tr>
+<tr>
+	<td><b>Language (Imperial Codes + Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Melee Shooting:</b>
+	You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Public Speaker:</b>
+	When making a Fellowship Test targeting a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Laspistol):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Mono-Longsword [1]</li>
+			<li>Laspistol [1]</li>
+			<li>Laspistol Power Pack [1] x2</li>
+			<li>Hand-Vox [1]</li>
+			<li>Magnoculars [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 8th Rank, Leadership Path, 150 XP
+	</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th><h3>Sniper</h3></th>
+</tr>
+<tr>
+	<td>
+		<table>
+			<tr>
+				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
+				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+			</tr>
+			<tr>
+				<th>40</th><th>55</th><th>40</th><th>40</th><th>35</th>
+				<th>30</th><th>35</th><th>30</th><th>30</th>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<th>
+		<div style="column-count:3">
+			Wounds: 0/13<br>
+			Insanity: 0<br>
+			Corruption: 0<br>
+		</div>
+	</th>
+</tr>
+<tr>
+	<th>Skills</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Command(+10)</li>
+			<li>Conceal(+20)</li>
+			<li>Dodge(+10)</li>
+			<li>Navigate(+10)</li>
+			<li>Notice(+20)</li>
+			<li>Reflex(+10)</li>
+			<li>Parry(+10)</li>
+			<li>Run(+20)</li>
+			<li>Sneak(+20)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Talents & Traits</th>
+</tr>
+<tr>
+	<td><b>Language (Low Gothic):</b>
+	You know the common tongue of the Imperium.</td>
+</tr>
+<tr>
+	<td><b>Marksman:</b>
+	Get an extra +10 bonus when you make a ranged attack after you Aim.</td>
+</tr>
+<tr>
+	<td><b>Nerves of Steel:</b>
+	Get a +20 bonus to Resist Intimidation, Fear and Pinning.</td>
+</tr>
+<tr>
+	<td><b>Rapid Reload:</b>
+	When you Reload, you get double the steps towards reloading your firearm.</td>
+</tr>
+<tr>
+	<td><b>Recoil Compensation:</b>
+	Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.</td>
+</tr>
+<tr>
+	<td><b>Sniper Shot:</b>
+	Full Action; Attack (Ranged); damage dice explode on rolls 1 lower per Degree of Success.</td>
+</tr>
+<tr>
+	<td><b>Sprinter:</b>
+	Your maximum bonus Movement is three times your Agility Bonus, rather than two times.</td>
+</tr>
+<tr>
+	<td><b>Weapon Master (Lasgun):</b>
+	Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.</td>
+</tr>
+<tr>
+	<th>Clothing, Armour and Held Items</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Military Uniform</li>
+			<li>Flack Armour (3 AP; 5 vs Explosive)</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Inventory [capacity 14, max size SB+1]</th>
+</tr>
+<tr>
+	<td>
+		<div class="multicolContainer">
+		<ul>
+			<li>Scoped Long Las [4]</li>
+			<li>Long Las Power Pack [1] x3</li>
+			<li>Grapnel [3]</li>
+			<li>Magnoculars [1]</li>
+			<li>Hand-Vox [1]</li>
+			<li>Knife [1]</li>
+			<li>Pack of Lho-Sticks [0]</li>
+			<li>5 Gelt [0]</li>
+		</ul>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Notes</th>
+</tr>
+<tr>
+	<td>
+		Imperial Guard 8th Rank, Scout Path, 148 XP
 	</td>
 </tr>
 </table>

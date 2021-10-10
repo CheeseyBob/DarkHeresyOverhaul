@@ -20,7 +20,7 @@ When an upgraded Aspect is overcome, it is downgraded by one increment instead o
 For example, if a character who is Stunned becomes Stunned again, they end up with a single Stunned(2) Aspect.
 If they successfully Resist Stun, they end up merely Stunned and must Resist Stun again to remove the Aspect.</p>
 
-<p>By default, Create Advantage Actions cannot increase an Aspect's level past the Characteristic Bonus of the Characteristic used for the Test.
+<p>By default, Create Advantage Actions cannot increase the Aspect's level (AL) past the Characteristic Bonus of the Characteristic used for the Test.
 In addition to this, Aspects cannot be upgraded past level 10.</p>
 
 
@@ -30,9 +30,6 @@ In addition to this, Aspects cannot be upgraded past level 10.</p>
 <li>Bonuses/penalties apply to Tests but don't affect the Characteristic Bonus.</li>
 <li>The target of an aspect should get an opportunity to oppose the creation of the Aspect, either directly (if the Aspect was created automatically) or implicitly (by opposing the Action made to create it).</li>
 </ul>
-
-
-<b>AL = Aspect Level</b>
 
 
 <h2>Common Aspects for Characters</h2>
@@ -49,20 +46,20 @@ In addition to this, Aspects cannot be upgraded past level 10.</p>
 </tr>
 <tr>
 <th>Penalty To</th>
-<td>All Tests</td>
+<td>Opposing Bleeding Out</td>
 </tr>
 <tr>
 <th>Special</th>
 <td>The target makes a Toughness Test once per turn.
-On failure, this aspect is upgraded.
-When AL exceeds double the target's TB, they die.</td>
+On failure, the target takes 1 Wound.
+On critical failure the target instead takes 2 Wounds.
+The target dies if this causes their Wounds to exceed double their Maximum Wounds.</td>
 </tr>
 <tr>
 <th>Overcome After</th>
 <td>Rest</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -88,7 +85,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Extinguish Fire (Agility)</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -112,7 +108,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Target leaves their place of concealment</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -136,7 +131,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 <table>
 <tr>
@@ -159,7 +153,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Target removes the disguise</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -183,7 +176,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Removing the encumbering item.</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -207,7 +199,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Consuming Food (Long Action Toughness Test)</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -231,7 +222,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -255,7 +245,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -279,7 +268,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Grapple (Break) or the grappler lets go.</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -303,7 +291,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Becoming Intimidated, Frightened or Pinned; automatically, once per hour.</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -327,7 +314,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -351,7 +337,6 @@ If the target dies, they create an area of Fire.</td>
 <td>Resist (Mentally), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -376,7 +361,6 @@ Also gives a -20 penalty to Agility for Movement.</td>
 <td>Stand Up (Secondary Action)</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -400,7 +384,6 @@ Also gives a -20 penalty to Agility for Movement.</td>
 <td>The target takes an Action other than Run.</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -424,7 +407,6 @@ Also gives a -20 penalty to Agility for Movement.</td>
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -448,7 +430,6 @@ Also gives a -20 penalty to Agility for Movement.</td>
 <td>Rest; taking Wounds</td>
 </tr>
 </table>
-<p>
 
 
 </div>
@@ -478,7 +459,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Repair</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -506,7 +486,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Hack</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -530,7 +509,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Use Tech</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -554,7 +532,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Open Lock</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -578,7 +555,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>The item becomes Damaged, Jammed or Out Of Power.</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -602,7 +578,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Being charged with Power equal to the item's Size</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -626,7 +601,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Use Tech (Defuse Explosives)</td>
 </tr>
 </table>
-<p>
 
 
 </div>
@@ -655,7 +629,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Automatically, once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -679,7 +652,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -703,7 +675,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Resist (Physically), once per hour</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -727,7 +698,6 @@ The item is destroyed when the aspect level exceeds the Size of the item.</td>
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -753,7 +723,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per hour</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -777,7 +746,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -801,7 +769,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -825,7 +792,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per hour</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -849,7 +815,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -873,7 +838,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -897,7 +861,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -921,7 +884,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>Resist (Physically), once per turn</td>
 </tr>
 </table>
-<p>
 
 
 </div>
@@ -950,7 +912,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>-</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -974,7 +935,6 @@ If the target is a psyker, they instead increase their Psy Rating by 1 and must 
 <td>-</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -1000,7 +960,6 @@ Once per turn, this aspect will consume flammable material and upgrade itself.</
 <td>Extinguish Fire (Agility); no flammable material</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -1024,7 +983,6 @@ Once per turn, this aspect will consume flammable material and upgrade itself.</
 <td>Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -1048,7 +1006,6 @@ Once per turn, this aspect will consume flammable material and upgrade itself.</
 <td>Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round</td>
 </tr>
 </table>
-<p>
 
 
 <table>
@@ -1072,7 +1029,6 @@ Once per turn, this aspect will consume flammable material and upgrade itself.</
 <td>Dissipate (Test 20), once per round</td>
 </tr>
 </table>
-<p>
 
 
 </div>
