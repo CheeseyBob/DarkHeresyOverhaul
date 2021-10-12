@@ -1,6 +1,8 @@
 	~~ To Do List ~~
 
 > Convert everything to generated HTML documents which use Bootstrap
+	- Special Rules for Arbites ranks
+	- Rank structure diagrams
 
 > Lore items/talents for rituals
 

@@ -36,11 +36,13 @@ class Item {
 	public static final Item chainsword = new Item("Chainsword", 3);
 	public static final Item longsword = new Item("Longsword", 3);
 	public static final Item shockMaul = new Item("Shock Maul", 3);
+	public static final Item shockMaul_mastercrafted = new Item("Mastercrafted Shock Maul", 3);
 	
 	// Ranged Weapons //
 	public static final Item laspistol = new Item("Laspistol", 1);
 	public static final Item laspistol_powerPack = new Item("Laspistol Power Pack", 1);
 	public static final Item pistol = new Item("Pistol", 1);
+	public static final Item pistol_arbites = new Item("Arbites Pistol", 1);
 	public static final Item pistol_mag = new Item("Pistol Mag", 1);
 	public static final Item stubber = new Item("Stubber", 3);
 	public static final Item stubber_mag = new Item("Stubber Mag", 1);
@@ -79,6 +81,10 @@ class Item {
 	public static final Item plasmaPistol = new Item("Plasma Pistol", 2);
 	public static final Item plasmaPistol_canister = new Item("Plasma Pistol Canister", 1);
 	
+	public static final Item boltPistol = new Item("Bolt Pistol", 2);
+	public static final Item boltPistol_mag = new Item("Bolt Pistol Mag", 1);
+	
+	
 	// Thrown Weapons //
 	public static final Item fragHandGrenade = new Item("Frag Hand-Grenade", 1);
 	public static final Item oversizedFragHandGrenade = new Item("Oversized Frag Hand-Grenade", 2);
@@ -99,7 +105,7 @@ class Item {
 	// Tools //
 	public static final Item dataSlate = new Item("Data-Slate", 1);
 	public static final Item pictRecorder = new Item("Pict Recorder", 1);
-	public static final Item writing = new Item("Writing Kit", 1);
+	public static final Item writingKit = new Item("Writing Kit", 1);
 	public static final Item dataSlate_lore = new Item("Data-Slate (A Lore Topic)", 1);
 	public static final Item lockpick = new Item("Lockpick", 0);
 	public static final Item psyFocus = new Item("Psy-Focus", 1);
@@ -140,6 +146,7 @@ class Item {
 	// Misc Items //
 	public static final Item gelt = new Item("Gelt", 0);
 	public static final Item lhoSticks = new Item("Pack of Lho-Sticks", 0);
+	public static final Item lhoSticks_quality = new Item("Pack of Quality Lho-Sticks", 0);
 	public static final Item bombTimer = new Item("Bomb Timer", 1);
 	public static final Item chrono = new Item("Chrono", 0);
 	public static final Item filtrationPlugs = new Item("Filtration Plugs", 0);

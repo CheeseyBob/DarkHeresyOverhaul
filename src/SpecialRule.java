@@ -26,5 +26,5 @@ class SpecialRule {
 		return new SpecialRule(name, parameter, description);
 	}
 	
-	public static final SpecialRule language = new SpecialRule("Language", "You know the chosen language.");
+	public static final SpecialRule language = new SpecialRule("Language", "You know this language.");
 }
