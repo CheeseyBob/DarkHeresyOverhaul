@@ -7,26 +7,37 @@
 			
 			<table class="table text-white text-center">
 				<tr>
-					<th>Wounds: 0/11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+					<th>Wounds: !!@CHARACTER_WOUNDS!!</th><th>Insanity: !!@CHARACTER_INSANITY!!</th><th>Corruption: !!@CHARACTER_CORRUPTION!!</th>
 				</tr>
 			</table>
 			
 			<table class="table text-white text-center">
 				<tr>
-					<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-					<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
 				</tr>
 				<tr>
-					<th>35</th><th>35</th><th>30</th><th>30</th><th>30</th>
-					<th>30</th><th>30</th><th>30</th><th>30</th>
+					<th>!!@CHARACTER_WS!!</th>
+					<th>!!@CHARACTER_BS!!</th>
+					<th>!!@CHARACTER_S!!</th>
+					<th>!!@CHARACTER_T!!</th>
+					<th>!!@CHARACTER_AG!!</th>
+					<th>!!@CHARACTER_INT!!</th>
+					<th>!!@CHARACTER_PER!!</th>
+					<th>!!@CHARACTER_WP!!</th>
+					<th>!!@CHARACTER_FEL!!</th>
 				</tr>
 			</table>
 			
 			<table class="table text-white">
-				<tr>
-					<td><b>Language (Low Gothic):</b>
-					You know the common tongue of the Imperium.</td>
-				</tr>
+!SPECIAL_RULE_LIST
 			</table>
 			
 			<div class="container-fluid">
@@ -34,25 +45,21 @@
 					<div class="col-md p-2 border">
 						<h6 class="text-center"><b>Skills</b></h6>
 						<ul>
-							<li>No Skills</li>
+!SKILL_LIST
 						</ul>
 					</div>
 					<div class="col-md p-2 border">
 						<h6 class="text-center"><b>Equipped Items</b>
 						<br><small>Useable Size: SB</small></h6>
 						<ul>
-							<li>Trooper Uniform</li>
-							<li>Flack Jacket</li>
+!EQUIPPED_ITEM_LIST
 						</ul>
 					</div>
 					<div class="col-md p-2 border">
 						<h6 class="text-center"><b>Inventory</b>
 						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
 						<ul>
-							<li>Club [3]</li>
-							<li>Pistol [1]</li>
-							<li>Pistol Mag [1]</li>
-							<li>Gelt [0]</li>
+!INVENTORY_LIST
 						</ul>
 					</div>
 				</div>

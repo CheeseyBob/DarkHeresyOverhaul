@@ -1,15 +1,21 @@
 import java.util.LinkedList;
 
 class NPC {
-	String id;
-	String name;
+	String id, name;
 	
-	int wounds, maxWounds, insanity, corruption;
+	int wounds, insanity, corruption;
 	int weaponSkill, ballisticSkill, strength, toughness, agility, intelligence, perception, willpower, fellowship;
 	
 	LinkedList<SpecialRule> specialRuleList = new LinkedList<SpecialRule>();
+	LinkedList<Skill> skillList = new LinkedList<Skill>();
+	LinkedList<Item> equippedItemList = new LinkedList<Item>();
+	LinkedList<Item> inventoryList = new LinkedList<Item>();
 	
 	// TODO - inventory //
+	
+	private static String assignID(String name) {
+		return name.replace(" ", "_");
+	}
 	
 	NPC(String name, String stats) {
 		this.id = assignID(name);
@@ -17,12 +23,8 @@ class NPC {
 		assignStats(stats);
 	}
 	
-	private String assignID(String name) {
-		return name.replace(" ", "_");
-	}
-	
 	private void assignStats(String stats) {
-		String[] statList = stats.split(" ");
+		String[] statList = stats.split(",");
 		weaponSkill = Integer.parseInt(statList[0]);
 		ballisticSkill = Integer.parseInt(statList[1]);
 		strength = Integer.parseInt(statList[2]);
@@ -32,7 +34,7 @@ class NPC {
 		perception = Integer.parseInt(statList[6]);
 		willpower = Integer.parseInt(statList[7]);
 		fellowship = Integer.parseInt(statList[8]);
-		maxWounds = 5 + 2*(toughness/10);
+		wounds = 5 + 2*(toughness/10);
 		insanity = 0;
 		corruption = 0;
 	}

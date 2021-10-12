@@ -1,0 +1,4 @@
+				<tr>
+					<td><b>!!@SPECIAL_NAME!!:</b>
+					!!@SPECIAL_DESCRIPTION!!</td>
+				</tr>

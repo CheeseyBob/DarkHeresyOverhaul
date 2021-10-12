@@ -16,39 +16,75 @@ import files.TextFileHandler;
 class DarkHeresyOverhaul {
 	private static PrintWriter pw = null;
 	private static String title = "";
+	private static NPCGroup npcGroup = null;
 	private static NPC npc = null;
+	private static SpecialRule special = null;
+	private static Skill skill = null;
+	private static Item item = null;
+	private static boolean isItemEquipped = false;
 	
 	public static void main(String[] args) {
 		
-		pw = TextFileHandler.startWritingToFile("out/testFile.html");
-		title = "Adeptus Arbites NPCs";
-		processFile("NPCs-Group");
-		pw.close();
+		NPCGroup[] npcGroupList = {NPCGroup.adeptusAdministratum, NPCGroup.adeptusArbites};
+		for(NPCGroup group : npcGroupList) {
+			printNPCGroupFile(group);
+		}
 		
 	}
 	
 	private static void printCharacterSheets() {
-		
-		// TODO - set NPCs based on Group. //
-		
-		NPC[] npcList = new NPC[11];
-		npcList[0] = new NPC("Trooper", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[1] = new NPC("Enforcer", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[2] = new NPC("Regulator", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[3] = new NPC("Investigator", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[4] = new NPC("Arbitrator", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[5] = new NPC("Proctor", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[6] = new NPC("Intelligencer", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[7] = new NPC("Marshall", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[8] = new NPC("Magistrate", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[9] = new NPC("Lord Marshall", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		npcList[10] = new NPC("Justicar", "30, 30, 30, 30, 30, 30, 30, 30, 30");
-		
-		for(NPC npc : npcList) {
+		for(NPC npc : npcGroup.npcList) {
 			DarkHeresyOverhaul.npc = npc;
 			processFile("characterSheet");
 			pw.println();
 			pw.println();
+		}
+	}
+	
+	private static void printEquippedItemList() {
+		isItemEquipped = true;
+		if(npc.equippedItemList.isEmpty()) {
+			processFile("NO_ITEMS");
+		}
+		for(Item item : npc.equippedItemList) {
+			DarkHeresyOverhaul.item = item;
+			processFile("ITEM");
+		}
+	}
+	
+	private static void printInventoryList() {
+		isItemEquipped = false;
+		if(npc.inventoryList.isEmpty()) {
+			processFile("NO_ITEMS");
+		}
+		for(Item item : npc.inventoryList) {
+			DarkHeresyOverhaul.item = item;
+			processFile("ITEM");
+		}
+	}
+	
+	private static void printNPCGroupFile(NPCGroup group) {
+		npcGroup = group;
+		pw = TextFileHandler.startWritingToFile("out/NPCs-"+group.id+".html");
+		title = group.name+" NPCs";
+		processFile("NPCs-GROUP");
+		pw.close();
+	}
+	
+	private static void printSpecialRuleList() {
+		for(SpecialRule special : npc.specialRuleList) {
+			DarkHeresyOverhaul.special = special;
+			processFile("SPECIAL");
+		}
+	}
+	
+	private static void printSkillList() {
+		if(npc.skillList.isEmpty()) {
+			processFile("NO_SKILLS");
+		}
+		for(Skill skill : npc.skillList) {
+			DarkHeresyOverhaul.skill = skill;
+			processFile("SKILL");
 		}
 	}
 	
@@ -77,7 +113,8 @@ class DarkHeresyOverhaul {
 	}
 	
 	private enum Command {
-		TOP, TAIL, RANK_STRUCTURE, CHARACTER_SHEETS;
+		TOP, TAIL, RANK_STRUCTURE, 
+		CHARACTER_SHEETS, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
 		
 		private void run() {
 			switch(this) {
@@ -86,6 +123,18 @@ class DarkHeresyOverhaul {
 				break;
 			case RANK_STRUCTURE:
 				processFile("rankStructure");
+				break;
+			case SPECIAL_RULE_LIST:
+				printSpecialRuleList();
+				break;
+			case SKILL_LIST:
+				printSkillList();
+				break;
+			case EQUIPPED_ITEM_LIST:
+				printEquippedItemList();
+				break;
+			case INVENTORY_LIST:
+				printInventoryList();
 				break;
 			case TAIL:
 				processFile("tail");
@@ -100,7 +149,11 @@ class DarkHeresyOverhaul {
 	}
 	
 	private enum Variable {
-		TITLE, CHARACTER_ID, CHARACTER_NAME;
+		TITLE, 
+		CHARACTER_ID, CHARACTER_NAME,
+		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
+		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
+		SPECIAL_NAME, SPECIAL_DESCRIPTION, SKILL_NAME, ITEM_NAME;
 		
 		private String get() {
 			switch (this) {
@@ -108,6 +161,38 @@ class DarkHeresyOverhaul {
 				return npc.id;
 			case CHARACTER_NAME:
 				return npc.name;
+			case CHARACTER_WOUNDS:
+				return ""+npc.wounds;
+			case CHARACTER_INSANITY:
+				return ""+npc.insanity;
+			case CHARACTER_CORRUPTION:
+				return ""+npc.corruption;
+			case CHARACTER_WS:
+				return ""+npc.weaponSkill;
+			case CHARACTER_BS:
+				return ""+npc.ballisticSkill;
+			case CHARACTER_S:
+				return ""+npc.strength;
+			case CHARACTER_T:
+				return ""+npc.toughness;
+			case CHARACTER_AG:
+				return ""+npc.agility;
+			case CHARACTER_INT:
+				return ""+npc.intelligence;
+			case CHARACTER_PER:
+				return ""+npc.perception;
+			case CHARACTER_WP:
+				return ""+npc.willpower;
+			case CHARACTER_FEL:
+				return ""+npc.fellowship;
+			case SPECIAL_NAME:
+				return special.getFullName();
+			case SPECIAL_DESCRIPTION:
+				return special.description;
+			case SKILL_NAME:
+				return skill.getFullName();
+			case ITEM_NAME:
+				return item.getFullName(isItemEquipped);
 			case TITLE:
 				return title;
 			default:
