@@ -35,7 +35,7 @@ abstract class NPCGroup {
 			NPC npc;
 			
 			npc = new NPC("Trooper", "35,35,30,30,30,30,30,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakJacket);
 			npc.inventoryList.add(MeleeWeapon.club);
@@ -45,7 +45,7 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Enforcer", "35,35,35,35,30,30,30,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakCoat);
 			npc.inventoryList.add(MeleeWeapon.club);
@@ -57,7 +57,7 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Regulator", "35,35,35,35,30,30,30,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.knockDown.withBonus(10));
 			npc.skillList.add(Skill.notice.withBonus(10));
@@ -76,7 +76,8 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Investigator", "35,35,35,35,35,30,35,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(10));
 			npc.skillList.add(Skill.inspect.withBonus(10));
@@ -96,7 +97,9 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Arbitrator", "40,40,40,40,35,35,35,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(10));
 			npc.skillList.add(Skill.inspect.withBonus(10));
@@ -120,7 +123,11 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Proctor", "40,40,40,40,35,35,35,30,30");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.dominatingBellow);
+			npc.specialRuleList.add(Talent.intimidating);
+			npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.command.withBonus(20));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(10));
@@ -146,7 +153,10 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Intelligencer", "40,40,40,40,35,40,40,30,35");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.coordinatedInterrogation);
+			npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.contemplate.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(20));
 			npc.skillList.add(Skill.inspect.withBonus(10));
@@ -171,7 +181,13 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Marshall", "40,40,40,40,35,35,35,35,35");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.dominatingBellow);
+			npc.specialRuleList.add(Talent.intimidating);
+			npc.specialRuleList.add(Talent.nervesOfSteel);
+			npc.specialRuleList.add(Talent.publicSpeaker);
+			npc.specialRuleList.add(Talent.educated.withParameter("Judgement + Tactica Imperialis"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.command.withBonus(30));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(10));
@@ -194,7 +210,10 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Magistrate", "40,40,40,40,35,45,40,35,35");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.coordinatedInterrogation);
+			npc.specialRuleList.add(Talent.expert.withParameter("Judgement"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.contemplate.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(20));
 			npc.skillList.add(Skill.inspect.withBonus(10));
@@ -213,7 +232,13 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Lord Marshall", "45,45,45,50,35,35,35,35,35");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.dominatingBellow);
+			npc.specialRuleList.add(Talent.intimidating);
+			npc.specialRuleList.add(Talent.nervesOfSteel);
+			npc.specialRuleList.add(Talent.publicSpeaker);
+			npc.specialRuleList.add(Talent.educated.withParameter("Judgement + Tactica Imperialis"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 			npc.skillList.add(Skill.command.withBonus(30));
 			npc.skillList.add(Skill.grapple.withBonus(10));
 			npc.skillList.add(Skill.inquire.withBonus(10));
@@ -236,7 +261,11 @@ abstract class NPCGroup {
 			npcList.add(npc);
 			
 			npc = new NPC("Justicar", "40,40,40,40,35,45,40,35,35");
-			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.coordinatedInterrogation);
+			npc.specialRuleList.add(Talent.expert.withParameter("Judgement"));
+			npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
+			npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
+			npc.specialRuleList.add(Talent.specialistKnowledge);
 			npc.skillList.add(Skill.contemplate.withBonus(30));
 			npc.skillList.add(Skill.inquire.withBonus(30));
 			npc.skillList.add(Skill.inspect.withBonus(10));

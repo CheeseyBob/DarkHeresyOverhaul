@@ -1,8 +1,9 @@
 	~~ To Do List ~~
 
 > Convert everything to generated HTML documents which use Bootstrap
-	- Special Rules for Arbites ranks
 	- Rank structure diagrams
+	- Special Rules
+	- NPC ranks for the Adeptus Administratum
 
 > Lore items/talents for rituals
 
