@@ -36,24 +36,24 @@ abstract class NPCGroup {
 			
 			npc = new NPC("Trooper", "35,35,30,30,30,30,30,30,30");
 			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
-			npc.equippedItemList.add(Item.enforcerUniform);
+			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakJacket);
-			npc.inventoryList.add(Item.club);
-			npc.inventoryList.add(Item.pistol);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.club);
+			npc.inventoryList.add(RangedWeapon.pistol);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Enforcer", "35,35,35,35,30,30,30,30,30");
 			npc.specialRuleList.add(SpecialRule.language.withParameter("Low Gothic"));
-			npc.equippedItemList.add(Item.enforcerUniform);
+			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakCoat);
-			npc.inventoryList.add(Item.club);
-			npc.inventoryList.add(Item.pistol);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.club);
+			npc.inventoryList.add(RangedWeapon.pistol);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Regulator", "35,35,35,35,30,30,30,30,30");
@@ -62,17 +62,17 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.knockDown.withBonus(10));
 			npc.skillList.add(Skill.notice.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.enforcerUniform);
+			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakCoat);
-			npc.inventoryList.add(Item.club);
-			npc.inventoryList.add(Item.pumpActionShotgun);
-			npc.inventoryList.add(Item.pumpActionShotgun_mag);
-			npc.inventoryList.add(Item.pistol);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.handVox);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.club);
+			npc.inventoryList.add(RangedWeapon.pumpActionShotgun);
+			npc.inventoryList.add(Ammo.pumpActionShotgun_mag);
+			npc.inventoryList.add(RangedWeapon.pistol);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.handVox);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Investigator", "35,35,35,35,35,30,35,30,30");
@@ -84,15 +84,15 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.knockDown.withBonus(10));
 			npc.skillList.add(Skill.notice.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.enforcerUniform);
+			npc.equippedItemList.add(Clothing.enforcerUniform);
 			npc.equippedItemList.add(Armour.flakCoat);
-			npc.inventoryList.add(Item.club);
-			npc.inventoryList.add(Item.pistol);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.handVox);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.club);
+			npc.inventoryList.add(RangedWeapon.pistol);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.handVox);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Arbitrator", "40,40,40,40,35,35,35,30,30");
@@ -106,17 +106,17 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.arbitesUniform);
+			npc.equippedItemList.add(Clothing.arbitesUniform);
 			npc.equippedItemList.add(Armour.carapaceChestplate);
-			npc.inventoryList.add(Item.shockMaul);
-			npc.inventoryList.add(Item.arbitesShotgun);
-			npc.inventoryList.add(Item.arbitesShotgun_mag);
-			npc.inventoryList.add(Item.pistol_arbites);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.microBead);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.shockMaul);
+			npc.inventoryList.add(RangedWeapon.arbitesShotgun);
+			npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+			npc.inventoryList.add(RangedWeapon.pistol_arbites);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.microBead);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Proctor", "40,40,40,40,35,35,35,30,30");
@@ -132,17 +132,17 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.arbitesUniform);
+			npc.equippedItemList.add(Clothing.arbitesUniform);
 			npc.equippedItemList.add(Armour.carapaceArmour);
-			npc.inventoryList.add(Item.shockMaul);
-			npc.inventoryList.add(Item.arbitesShotgun);
-			npc.inventoryList.add(Item.arbitesShotgun_mag);
-			npc.inventoryList.add(Item.pistol_arbites);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.microBead);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.shockMaul);
+			npc.inventoryList.add(RangedWeapon.arbitesShotgun);
+			npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+			npc.inventoryList.add(RangedWeapon.pistol_arbites);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.microBead);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Intelligencer", "40,40,40,40,35,40,40,30,35");
@@ -157,17 +157,17 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
 			npc.skillList.add(Skill.run.withBonus(10));
 			npc.skillList.add(Skill.search.withBonus(10));
-			npc.equippedItemList.add(Item.arbitesUniform);
+			npc.equippedItemList.add(Clothing.arbitesUniform);
 			npc.equippedItemList.add(Armour.carapaceChestplate);
-			npc.inventoryList.add(Item.shockMaul);
-			npc.inventoryList.add(Item.arbitesShotgun);
-			npc.inventoryList.add(Item.arbitesShotgun_mag);
-			npc.inventoryList.add(Item.pistol_arbites);
-			npc.inventoryList.add(Item.pistol_mag);
-			npc.inventoryList.add(Item.manacles);
-			npc.inventoryList.add(Item.microBead);
-			npc.inventoryList.add(Item.lhoSticks);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.shockMaul);
+			npc.inventoryList.add(RangedWeapon.arbitesShotgun);
+			npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+			npc.inventoryList.add(RangedWeapon.pistol_arbites);
+			npc.inventoryList.add(Ammo.pistol_mag);
+			npc.inventoryList.add(MiscItem.manacles);
+			npc.inventoryList.add(MiscItem.microBead);
+			npc.inventoryList.add(MiscItem.lhoSticks);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Marshall", "40,40,40,40,35,35,35,35,35");
@@ -183,14 +183,14 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.arbitesUniform);
+			npc.equippedItemList.add(Clothing.arbitesUniform);
 			npc.equippedItemList.add(Armour.heavyCarapace);
-			npc.inventoryList.add(Item.shockMaul_mastercrafted);
-			npc.inventoryList.add(Item.boltPistol);
-			npc.inventoryList.add(Item.boltPistol_mag);// times 2
-			npc.inventoryList.add(Item.microBead);
-			npc.inventoryList.add(Item.lhoSticks_quality);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.shockMaul_mastercrafted);
+			npc.inventoryList.add(RangedWeapon.boltPistol);
+			npc.inventoryList.add(Ammo.boltPistol_mag.times(2));
+			npc.inventoryList.add(MiscItem.microBead);
+			npc.inventoryList.add(MiscItem.lhoSticks_quality);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Magistrate", "40,40,40,40,35,45,40,35,35");
@@ -205,11 +205,11 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
 			npc.skillList.add(Skill.run.withBonus(10));
 			npc.skillList.add(Skill.search.withBonus(10));
-			npc.equippedItemList.add(Item.imperialRobes);
-			npc.equippedItemList.add(Armour.staff);
-			npc.inventoryList.add(Item.dataTome_lore);//Judgement
-			npc.inventoryList.add(Item.writingKit);
-			npc.inventoryList.add(Item.gelt);
+			npc.equippedItemList.add(Clothing.imperialRobes);
+			npc.equippedItemList.add(MeleeWeapon.staff);
+			npc.inventoryList.add(Tool.dataTome_judgement);
+			npc.inventoryList.add(Tool.writingKit);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Lord Marshall", "45,45,45,50,35,35,35,35,35");
@@ -225,14 +225,14 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
 			npc.skillList.add(Skill.run.withBonus(10));
-			npc.equippedItemList.add(Item.arbitesUniform);
+			npc.equippedItemList.add(Clothing.arbitesUniform);
 			npc.equippedItemList.add(Armour.heavyCarapace);
-			npc.inventoryList.add(Item.shockMaul_mastercrafted);
-			npc.inventoryList.add(Item.boltPistol);
-			npc.inventoryList.add(Item.boltPistol_mag);// times 2
-			npc.inventoryList.add(Item.microBead);
-			npc.inventoryList.add(Item.lhoSticks_quality);
-			npc.inventoryList.add(Item.gelt);
+			npc.inventoryList.add(MeleeWeapon.shockMaul_mastercrafted);
+			npc.inventoryList.add(RangedWeapon.boltPistol);
+			npc.inventoryList.add(Ammo.boltPistol_mag.times(2));
+			npc.inventoryList.add(MiscItem.microBead);
+			npc.inventoryList.add(MiscItem.lhoSticks_quality);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 			npc = new NPC("Justicar", "40,40,40,40,35,45,40,35,35");
@@ -247,11 +247,11 @@ abstract class NPCGroup {
 			npc.skillList.add(Skill.referenceScholasticLore.withBonus(30));
 			npc.skillList.add(Skill.run.withBonus(10));
 			npc.skillList.add(Skill.search.withBonus(10));
-			npc.equippedItemList.add(Item.imperialRobes);
-			npc.equippedItemList.add(Armour.staff);
-			npc.inventoryList.add(Item.dataTome_lore);//Judgement
-			npc.inventoryList.add(Item.writingKit);
-			npc.inventoryList.add(Item.gelt);
+			npc.equippedItemList.add(Clothing.imperialRobes);
+			npc.equippedItemList.add(MeleeWeapon.staff);
+			npc.inventoryList.add(Tool.dataTome_judgement);
+			npc.inventoryList.add(Tool.writingKit);
+			npc.inventoryList.add(MiscItem.gelt);
 			npcList.add(npc);
 			
 		}
