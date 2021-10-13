@@ -31,8 +31,56 @@ class Talent {
 	// General //
 	public static final SpecialRule intimidating = new SpecialRule("Intimidating",
 			"When you Intimidate, the maximum aspect level is double your Strength Bonus.");
+	public static final SpecialRule rapidReload = new SpecialRule("Rapid Reload",
+			"When you Reload, you get double the steps towards reloading your firearm.");
+	public static final SpecialRule sprinter = new SpecialRule("Sprinter",
+			"Your maximum bonus Movement is three times your Agility Bonus, rather than two times.");
+	public static final SpecialRule teamFighting = new SpecialRule("Team Fighting",
+			"Give double the penalty when you Fend Off or Feint.");
+	public static final SpecialRule unarmedMaster = new SpecialRule("Unarmed Master",
+			"Get a +10 bonus to all unarmed melee attacks.");
+	public static final SpecialRule weaponFamiliarity_ranged = new SpecialRule("Weapon Familiarity",
+			"You can clear jams and maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.");
+	public static final SpecialRule weaponFamiliarity_melee = new SpecialRule("Weapon Familiarity",
+			"You can maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.");
+	public static final SpecialRule weaponMaster_ranged = new SpecialRule("Weapon Master",
+			"Get a +10 bonus to Weapon Skill when using the chosen melee weapon.");
+	public static final SpecialRule weaponMaster_melee = new SpecialRule("Weapon Master",
+			"Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.");
+	public static final SpecialRule wrestler = new SpecialRule("Wrestler",
+			"Get a +10 bonus to Grapple per free hand.");
 	
 	// Offence //
+	public static final SpecialRule assaultFire = new SpecialRule("Assault Fire",
+			"Full Action; Move and Attack Repeatedly (Ranged) during the movement.");
+	public static final SpecialRule battleRage = new SpecialRule("Battle Rage",
+			"You do not take a penalty to Dodge or Parry from being Frenzied and you get a +20 bonus to Resist being Frenzied.");
+	public static final SpecialRule brutalCharge = new SpecialRule("Brutal Charge",
+			"Get double bonus damage when you Charge.");
+	public static final SpecialRule crushingBlow = new SpecialRule("Crushing Blow",
+			"Get double bonus damage when you Attack Heavily (Melee) with a weapon which does Impact damage.");
+	public static final SpecialRule followThrough = new SpecialRule("Follow-Through",
+			"When you make a melee attack, you can spend Degrees of Success to get a +10 bonus to Attack (Melee).");
+	public static final SpecialRule frenzy = new SpecialRule("Frenzy",
+			"You can become Frenzied as a Secondary Action (max level equal to Willpower Bonus) and you can choose to not Resist being Frenzied.");
+	public static final SpecialRule furiousAssault = new SpecialRule("Furious Assault",
+			"Get a +10 bonus to Attack Repeatedly (Melee) when wielding multiple melee weapons.");
+	public static final SpecialRule ironFists = new SpecialRule("Iron Fists",
+			"Your punches and kicks no longer use the Blunt special rule.");
+	public static final SpecialRule meleeShooting = new SpecialRule("Melee Shooting",
+			"You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.");
+	public static final SpecialRule recoilCompensation = new SpecialRule("Recoil Compensation",
+			"Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.");
+	public static final SpecialRule stampede = new SpecialRule("Stampede",
+			"When you Tackle, you can spend Degrees of Success to continue moving, potentially to a new target. You can continue until you run out of movement or Degrees of Success.");
+	public static final SpecialRule strongAttacks = new SpecialRule("Strong Attacks",
+			"Use double your Strength Bonus for damage when using a melee weapon two-handed.");
+	public static final SpecialRule stunningBlow = new SpecialRule("Stunning Blow",
+			"Full Action; Attack (Melee) with a weapon which does Impact damage; Target becomes Stunned for each Degree of Success (up to Strength Bonus).");
+	public static final SpecialRule sweepingAttack = new SpecialRule("Sweeping Attack",
+			"Full Action; Attack (Melee); all adjacent characters take a hit.");
+	public static final SpecialRule thunderousCharge = new SpecialRule("Thunderous Charge",
+			"When you Stampede, get a +10 bonus to Attack (Melee) per Degree of Success remaining at the end of your movement.");
 	
 	// Finesse //
 	public static final SpecialRule agileFighter = new SpecialRule("Agile Fighter",
@@ -163,6 +211,22 @@ class Talent {
 			"When making a Fellowship Test targeting a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.");
 	
 	// Fieldcraft //
+	public static final SpecialRule accustomedToDarkness = new SpecialRule("Accustomed to Darkness",
+			"You reduce penalties from Darkness by 30.");
+	public static final SpecialRule accustomedToZeroGravity = new SpecialRule("Accustomed to Zero Gravity",
+			"You reduce penalties from Zero Gravity by 30.");
+	public static final SpecialRule catfall = new SpecialRule("Catfall",
+			"Reduce all fall damage by your Agility Bonus.");
+	public static final SpecialRule firstAider = new SpecialRule("First Aider",
+			"Get a +20 bonus to Treat Wounds when performing first aid.");
+	public static final SpecialRule rideBeast = new SpecialRule("Ride Beast",
+			"You can ride riding animals using Agility.");
+	public static final SpecialRule tracker = new SpecialRule("Tracker",
+			"Get a +20 bonus to Search when following tracks.");
+	public static final SpecialRule quickEntry = new SpecialRule("Quick Entry",
+			"You can Open Lock in combat as a Full Action.");
+	public static final SpecialRule spotWeakness = new SpecialRule("Spot Weakness",
+			"Main Action Perception Test; Create an Aspect which gives a bonus.");
 	
 	// Social //
 	public static final SpecialRule coordinatedInterrogation = new SpecialRule("Coordinated Interrogation",

@@ -64,7 +64,7 @@
 			
 			<div class="row">
 				<div class="col-4 text-center">
-					<h5>↙</h5>
+					<h5>↓</h5>
 					<h5>Shock Trooper<br><small>Rank 7 | Elite Path | 81-100 XP</small></h5>
 					<p>Fights in high-stakes maneuvers such as storming bunkers.</p>
 				</div>
@@ -74,7 +74,7 @@
 					<p>Commands large formations and battle groups.</p>
 				</div>
 				<div class="col-4 text-center">
-					<h5>↘</h5>
+					<h5>↓</h5>
 					<h5>Marksman<br><small>Rank 7 | Scout Path | 81-100 XP</small></h5>
 					<p>Provides long-range fire support, digging in and picking off the enemy.</p>
 				</div>
@@ -82,7 +82,7 @@
 			
 			<div class="row">
 				<div class="col-4 text-center">
-					<h5>↙</h5>
+					<h5>↓</h5>
 					<h5>Storm Trooper<br><small>Rank 8 | Elite Path | 101-150 XP</small></h5>
 					<p>Fights in high-stakes special operations.</p>
 				</div>
@@ -92,7 +92,7 @@
 					<p>Controls the flow of battle from planning to execution.</p>
 				</div>
 				<div class="col-4 text-center">
-					<h5>↘</h5>
+					<h5>↓</h5>
 					<h5>Sniper<br><small>Rank 8 | Scout Path | 101-150 XP</small></h5>
 					<p>Provides long-range fire support, killing key targets then melting away from view.</p>
 				</div>

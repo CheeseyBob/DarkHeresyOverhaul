@@ -61,8 +61,10 @@ class MeleeWeapon extends Item {
 	public static final Item greatWarHammer = new Item("Great War Hammer", 4);
 	public static final Item shortsword = new Item("Shortsword", 2);
 	public static final Item chainsword = new Item("Chainsword", 3);
+	public static final Item chainsword_mono = new Item("Mono-Chainsword", 3);
 	public static final Item chainsword_mastercrafted = new Item("Mastercrafted Chainsword", 3);
 	public static final Item longsword = new Item("Longsword", 3);
+	public static final Item longsword_mono = new Item("Mono-Longsword", 3);
 	public static final Item shockMaul = new Item("Shock Maul", 3);
 	public static final Item shockMaul_mastercrafted = new Item("Mastercrafted Shock Maul", 3);
 }
@@ -92,6 +94,7 @@ class RangedWeapon extends Item {
 	public static final Item heavyStubber = new Item("Heavy Stubber", 5);
 	public static final Item heavyStubber_beltFed = new Item("Belt-Fed Heavy Stubber", 5);
 	public static final Item longLas = new Item("Long Las", 4);
+	public static final Item longLas_scoped = new Item("Scoped Long Las", 4);
 	public static final Item lascannon = new Item("Lascannon", 5);
 	public static final Item plasmaGun = new Item("Plasma Gun", 4);
 	public static final Item plasmaGun_feedLine = new Item("Plasma Gun with Feed Line", 4);
@@ -136,6 +139,8 @@ class ThrownWeapon extends Item {
 	public static final Item fragHandGrenade = new Item("Frag Hand-Grenade", 1);
 	public static final Item oversizedFragHandGrenade = new Item("Oversized Frag Hand-Grenade", 2);
 	public static final Item krakHandGrenade = new Item("Krak Hand-Grenade", 1);
+	public static final Item gasHandGrenade_painPoison = new Item("Gas Hand-Grenade (Pain Poison)", 1);
+	
 }
 
 class Armour extends Item {
@@ -182,13 +187,14 @@ class Clothing extends Item {
 	
 	public static final Item ragCastings = new Item("Rag Castings", 3);
 	public static final Item coveralls = new Item("Coveralls", 3);
+	public static final Item uniform = new Item("Uniform", 3);
 	public static final Item arbitesUniform = new Item("Arbites Uniform", 3);
 	public static final Item enforcerUniform = new Item("Enforcer Uniform", 3);
-	public static final Item uniform = new Item("Uniform", 3);
+	public static final Item militaryUniform = new Item("Military Uniform", 3);
 	public static final Item bodyglove = new Item("Bodyglove", 3);
+	public static final Item imperialRobes = new Item("Imperial Robes", 3);
 	public static final Item administratumRobes = new Item("Administratum Robes", 3);
 	public static final Item chirurgeonRobes = new Item("Chirurgeon Robes", 3);
-	public static final Item imperialRobes = new Item("Imperial Robes", 3);
 	public static final Item mechanicusRobes = new Item("Mechanicus Robes", 3);
 	public static final Item ministorumRobes = new Item("Ministorum Robes", 3);
 	public static final Item streetClothes = new Item("Street Clothes", 3);
