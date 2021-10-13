@@ -1,0 +1,88 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Technographer<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Identifies and catalogues technology and assists with repairs.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Mech-Wright<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Conducts heavy repairs and tends dangerous manufactorum processes.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Electro-Priest<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Learns the animating principals of machine spirits and how they can be appeased.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Engine-Seer<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Tends complicated machines, finding faults and removing errors from all manner of technology.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Tech-Priest<br><small>Rank 5 | 31-60 XP</small></h5>
+					<p>Seeks out the many forms of the Omnissiah to add more knowledge to the data crypts of the Adeptus Mechanicus.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↙</h5>
+					<h5>Technomancer<br><small>Rank 6 | Scholastic Path | 61-80 XP</small></h5>
+					<p>Extracts information that may be of use to the Machine Cult.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↘</h5>
+					<h5>Mech-Deacon<br><small>Rank 6 | Errant Path | 61-80 XP</small></h5>
+					<p>Deals with those ignorant of the Omnissiah, either by providing aid or by delivering punishments.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Cyber-Seer<br><small>Rank 7 | Scholastic Path | 81-100 XP</small></h5>
+					<p>Delves into forbidden and occult matters in their quest for knowledge.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Omniprophet<br><small>Rank 7 | Errant Path | 81-100 XP</small></h5>
+					<p>Spreads the ways of the Cult Mechanicus to all manner of Imperial subjects and also watches for items or matters of interest.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Magos<br><small>Rank 8 | Scholastic Path | 101-150 XP</small></h5>
+					<p>Leads divisions of the Adeptus Mechanicus with their enormour accumulated knowledge.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Magos Errant<br><small>Rank 8 | Errant Path | 101-150 XP</small></h5>
+					<p>Goes forth to explore new frontiers, worlds and technologies.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

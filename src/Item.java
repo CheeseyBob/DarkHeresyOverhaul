@@ -185,6 +185,8 @@ class Clothing extends Item {
 	public static final Item enforcerUniform = new Item("Enforcer Uniform", 3);
 	public static final Item uniform = new Item("Uniform", 3);
 	public static final Item bodyglove = new Item("Bodyglove", 3);
+	public static final Item administratumRobes = new Item("Administratum Robes", 3);
+	public static final Item chirurgeonRobes = new Item("Chirurgeon Robes", 3);
 	public static final Item imperialRobes = new Item("Imperial Robes", 3);
 	public static final Item streetClothes = new Item("Street Clothes", 3);
 	public static final Item billowRobe = new Item("Billow Robe", 3);
@@ -201,6 +203,7 @@ class Consumable extends Item {
 	public static final Item rationBox = new Item("Ration Box", 1);
 	public static final Item qualityMeal = new Item("Quality Meal", 1);
 	public static final Item injector_stimm = new Item("Injector (Stimm)", 1);
+	public static final Item injector_deTox = new Item("Injector (De-Tox)", 1);
 	public static final Item bioPatch_stimm = new Item("Bio-Patch (Stimm)", 1);
 	public static final Item medkit = new Item("Medkit", 2);
 	public static final Item multiInjector_stimm = new Item("Multi-Injector (Stimm)", 2);
@@ -217,11 +220,11 @@ class Tool extends Item {
 	public static final Item dataSlate = new Item("Data-Slate", 1);
 	public static final Item pictRecorder = new Item("Pict Recorder", 1);
 	public static final Item writingKit = new Item("Writing Kit", 1);
-	public static final Item dataSlate_lore = new Item("Data-Slate (A Lore Topic)", 1);
+	public static final Item dataSlate_lore = new Item("Data-Slate (A Lore Area)", 1);
 	public static final Item lockpick = new Item("Lockpick", 0);
 	public static final Item psyFocus = new Item("Psy-Focus", 1);
 	public static final Item smallRelic = new Item("Small Relic", 1);
-	public static final Item scroll_lore = new Item("Scroll (A Lore Topic)", 1);
+	public static final Item scroll_lore = new Item("Scroll (A Lore Area)", 1);
 	public static final Item auspex = new Item("Auspex", 1);
 	public static final Item autoquill = new Item("Autoquill", 1);
 	public static final Item combiTool = new Item("Combi-Tool", 1);
@@ -235,9 +238,9 @@ class Tool extends Item {
 	public static final Item smallishRelic = new Item("Smallish Relic", 2);
 	public static final Item stummer = new Item("Stummer", 1);
 	public static final Item surgicalTools = new Item("Surgical Tools", 1);
-	public static final Item tome_lore = new Item("Tome (A Lore Topic)", 2);
+	public static final Item tome_lore = new Item("Tome (A Lore Area)", 2);
 	public static final Item cameleolineCloak = new Item("Cameleoline Cloak", 2);
-	public static final Item dataTome_lore = new Item("Data-Tome (A Lore Topic)", 1);
+	public static final Item dataTome_lore = new Item("Data-Tome (A Lore Area)", 1);
 	public static final Item dataTome_judgement = new Item("Data-Tome (Judgement)", 1);
 	public static final Item industrialLascutter = new Item("Industrial Lascutter", 3);
 	public static final Item photoVisor = new Item("Photo-Visor", 1);

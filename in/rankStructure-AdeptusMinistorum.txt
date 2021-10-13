@@ -1,0 +1,88 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Novice<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Serves those higher than themselves in the Ecclesiarchy.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Initiate<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Assists and learns from those above them and fights for the Ecclesiarchy when required.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Priest<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Tends to a temple and assists Preachers.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Preacher<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Preaches in and around temples.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Cleric<br><small>Rank 5 | 31-60 XP</small></h5>
+					<p>Provides leadership and inspiration in the other Adepta.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↙</h5>
+					<h5>Confessor<br><small>Rank 6 | Leadership Path | 61-80 XP</small></h5>
+					<p>Watches for weakness, heresy and doubt in the population.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↘</h5>
+					<h5>Exorcist<br><small>Rank 6 | Errant Path | 61-80 XP</small></h5>
+					<p>Roots out Chaos and heresy from Imperial citizens.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Bishop<br><small>Rank 7 | Leadership Path | 81-100 XP</small></h5>
+					<p>Advises those in positions of power and runs Ecclesiarchy business.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Zealot<br><small>Rank 7 | Errant Path | 81-100 XP</small></h5>
+					<p>Roots out Chaos and heresy in the Imperium.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Heirophant<br><small>Rank 8 | Leadership Path | 101-150 XP</small></h5>
+					<p>Presides over a cathedral and advises the governor.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Redemptionist<br><small>Rank 8 | Errant Path | 101-150 XP</small></h5>
+					<p>Travels far and wide to root out Chaos and heresy in all corners of the Imperium.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

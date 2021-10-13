@@ -1,0 +1,103 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Conscript<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Trains, performs menial duties. Fights if necessary.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Guard<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Keeps order in the day-to-day running of the Imperium.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Specialist<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Performs a specialist role, such as using heavy weapons or operating vehicles.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Sergeant<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Ensures orders are relayed to and carried out by their squad.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Veteran<br><small>Rank 5 | 31-60 XP</small></h5>
+					<p>Fights in units that can be relied upon to hold their ground.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Assault Veteran<br><small>Rank 6 | Elite Path | 61-80 XP</small></h5>
+					<p>Fights in units that can be relied upon to take ground.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Lieutenant<br><small>Rank 6 | Leadership Path | 61-80 XP</small></h5>
+					<p>Leads their unit, either of Veterans or of several squads led by Sergeants.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Scout<br><small>Rank 6 | Scout Path | 61-80 XP</small></h5>
+					<p>Locates and observes enemy forces using stealth.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Shock Trooper<br><small>Rank 7 | Elite Path | 81-100 XP</small></h5>
+					<p>Fights in high-stakes maneuvers such as storming bunkers.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Captain<br><small>Rank 7 | Leadership Path | 81-100 XP</small></h5>
+					<p>Commands large formations and battle groups.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Marksman<br><small>Rank 7 | Scout Path | 81-100 XP</small></h5>
+					<p>Provides long-range fire support, digging in and picking off the enemy.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Storm Trooper<br><small>Rank 8 | Elite Path | 101-150 XP</small></h5>
+					<p>Fights in high-stakes special operations.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Commander<br><small>Rank 8 | Leadership Path | 101-150 XP</small></h5>
+					<p>Controls the flow of battle from planning to execution.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Sniper<br><small>Rank 8 | Scout Path | 101-150 XP</small></h5>
+					<p>Provides long-range fire support, killing key targets then melting away from view.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

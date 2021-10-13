@@ -25,7 +25,14 @@ class DarkHeresyOverhaul {
 	
 	public static void main(String[] args) {
 		
-		NPCGroup[] npcGroupList = {NPCGroup.adeptusAdministratum, NPCGroup.adeptusArbites};
+		NPCGroup[] npcGroupList = {
+				new NPCGroup_AdeptusAdministratum(),
+				new NPCGroup_AdeptusArbites(),
+				new NPCGroup_AdeptusAstraTelepathica(),
+				new NPCGroup_AdeptusMechanicus(),
+				new NPCGroup_ImperialGuard(),
+				new NPCGroup_Ministorum(),
+				new NPCGroup_Outcasts()};
 		for(NPCGroup group : npcGroupList) {
 			printNPCGroupFile(group);
 		}
@@ -122,7 +129,7 @@ class DarkHeresyOverhaul {
 				printCharacterSheets();
 				break;
 			case RANK_STRUCTURE:
-				processFile("rankStructure");
+				processFile("rankStructure-"+npcGroup.id);
 				break;
 			case SPECIAL_RULE_LIST:
 				printSpecialRuleList();

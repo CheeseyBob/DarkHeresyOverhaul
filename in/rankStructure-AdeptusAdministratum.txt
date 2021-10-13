@@ -1,0 +1,108 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Archivist<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Tends to the needs of those higher up the ranks.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Scrivener<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Deals with scrolls, books and data-slates.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Scribe<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Collects and extracts information.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↙</h5>
+					<h5>Auditor<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Conducts audits to record data and ensure regulations are followed.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↘</h5>
+					<h5>Medicator<br><small>Rank 4 | Medicae Path | 21-30 XP</small></h5>
+					<p>Provides basic medical services.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Scholar<br><small>Rank 5 | Scholastic Path | 31-60 XP</small></h5>
+					<p>Studies their field in depth and sometimes provide expert advice to those in positions of power.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Operator<br><small>Rank 5 | Tech Path | 31-60 XP</small></h5>
+					<p>Operates the machines and vehicles within the Imperium's civilian infrastructure.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Chirurgeon<br><small>Rank 5 | Medicae Path | 31-60 XP</small></h5>
+					<p>Performs advanced medical procedures.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Lexographer<br><small>Rank 6 | Scholastic Path | 61-80 XP</small></h5>
+					<p>Studies multiple fields and the connections between them.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Comptroller<br><small>Rank 6 | Tech Path | 61-80 XP</small></h5>
+					<p>Directs the flow of information as it passes through the Administratum, and manage its most complicated systems.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Master Chirurgeon<br><small>Rank 6 | Medicae Path | 61-80 XP</small></h5>
+					<p>Provides top medical services, often to the nobility.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Loremaster<br><small>Rank 7 | Scholastic Path | 81-100 XP</small></h5>
+					<p>Studies deeper mysteries and knowledge that has been hidden or forgotten.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Logister<br><small>Rank 7 | Tech Path | 81-100 XP</small></h5>
+					<p>Solves tough administrative problems.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Sage Loremaster<br><small>Rank 8 | Scholastic Path | 101-150 XP</small></h5>
+					<p>Delves into the deepest secrets and mysteries of the galaxy.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Sage Logister<br><small>Rank 8 | Tech Path | 101-150 XP</small></h5>
+					<p>Solves the toughest and widest reaching administration problems.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
