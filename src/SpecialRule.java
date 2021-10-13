@@ -35,6 +35,46 @@ class Talent {
 	// Offence //
 	
 	// Finesse //
+	public static final SpecialRule agileFighter = new SpecialRule("Agile Fighter",
+			"You can Dodge melee attacks.");
+	public static final SpecialRule agileStrike = new SpecialRule("Agile Strike",
+			"Full Action; Move twice and Attack (Melee) during the movement.");
+	public static final SpecialRule assassinStrike = new SpecialRule("Assassin Strike",
+			"Full Action; Attack (Melee); damage dice explode on rolls 1 lower per Degree of Success.");
+	public static final SpecialRule hipShooting = new SpecialRule("Hip Shooting",
+			"Full Action; Move twice and Attack (Ranged) during the movement.");
+	public static final SpecialRule carefulStrike = new SpecialRule("Careful Strike",
+			"Get an extra +10 bonus when you make a melee attack after you Aim.");
+	public static final SpecialRule deftBladesman = new SpecialRule("Deft Bladesman",
+			"You can use Agility Bonus instead of Strength Bonus for the damage stat of melee weapons which do Rending damage.");
+	public static final SpecialRule dualWielder = new SpecialRule("Dual-Wielder",
+			"When you Attack (Melee), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).");
+	public static final SpecialRule effortlessDodge = new SpecialRule("Effortless Dodge",
+			"Spend two Degrees of Success on a Dodge to not spend your Reaction.");
+	public static final SpecialRule effortlessParry = new SpecialRule("Effortless Parry",
+			"Spend two Degrees of Success on a Parry to not spend your Reaction.");
+	public static final SpecialRule gunslinger = new SpecialRule("Gunslinger",
+			"When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).");
+	public static final SpecialRule independentTargeting = new SpecialRule("Independent Targeting",
+			"When wielding multiple ranged weapons, you can attack a different target with each weapon and can choose which target to assign each hit to.");
+	public static final SpecialRule leapUp = new SpecialRule("Leap Up",
+			"You can stand up without spending a Secondary Action.");
+	public static final SpecialRule marksman = new SpecialRule("Marksman",
+			"Get an extra +10 bonus to Attack (Ranged) when you do so Carefully or after you Focus.");
+	public static final SpecialRule martialArtist = new SpecialRule("Martial Artist",
+			"The Hits stat of your unarmed attacks are doubled.");
+	public static final SpecialRule masterGunslinger = new SpecialRule("Master Gunslinger",
+			"Get a +10 bonus to all ranged attacks when using multiple weapons.");
+	public static final SpecialRule quickDraw = new SpecialRule("Quick Draw",
+			"Draw your weapon without spending an Action.");
+	public static final SpecialRule riposte = new SpecialRule("Riposte",
+			"When you Parry, you can spend Degrees of Success to get a +10 bonus per DoS to Attack (Melee).");
+	public static final SpecialRule sniperShot = new SpecialRule("Sniper Shot",
+			"Full Action; Attack (Ranged); damage dice explode on rolls 1 lower per Degree of Success.");
+	public static final SpecialRule swiftBlade = new SpecialRule("Swift Blade",
+			"Double the Hits stat of melee weapons which do Rending damage.");
+	public static final SpecialRule twoWeaponMaster = new SpecialRule("Two-Weapon Master",
+			"Get a +10 bonus to all melee attacks when using multiple weapons.");
 	
 	// Defence //
 	public static final SpecialRule nervesOfSteel = new SpecialRule("Nerves of Steel",
@@ -43,12 +83,40 @@ class Talent {
 	// Psyker //
 	
 	// Tech //
+	public static final SpecialRule demolitionsExpert = new SpecialRule("Demolitions Expert",
+			"Get a +20 bonus to Use Tech when planting and defusing explosives.");
 	public static final SpecialRule operate = new SpecialRule("Operate",
 			"You can operate this vehicle type.");
 	public static final SpecialRule operate_ag = new SpecialRule("Operate",
 			"You can operate this vehicle type using Agility.");
 	public static final SpecialRule operate_int = new SpecialRule("Operate",
 			"You can operate this vehicle type using Intelligence.");
+	public static final SpecialRule technicalKnock = new SpecialRule("Technical Knock",
+			"Secondary Action; Overcome Jammed on a firearm you are holding.");
+	public static final SpecialRule weaponTech = new SpecialRule("Weapon-Tech",
+			"Get a +20 bonus to Use Tech when you maintain weapons. The weapon does not become Damaged on critical failure when doing so.");
+	public static final SpecialRule bloodFiltration = new SpecialRule("Blood Filtration",
+			"You get a +20 bonus to Resist chemicals affecting you. You can choose to instead apply a -20 penalty.");
+	public static final SpecialRule ferricSummons = new SpecialRule("Ferric Summons",
+			"Main Action; Willpower Test; You can use Ferric Lure to pull an item from someone's hands (they oppose with Strength); apply range modifiers.");
+	public static final SpecialRule luminenBlast = new SpecialRule("Luminen Blast",
+			"Main Action; Attack (Ranged) using following stats.\n" + 
+			"Range: 10m;\n" + 
+			"RoF: 1;\n" + 
+			"Damage: 1d10+2 Energy;\n" + 
+			"Shocking: Each Wound inflicted makes the target become Stunned;\n" + 
+			"Consumes 1 Power.");
+	public static final SpecialRule luminenShock = new SpecialRule("Luminen Shock",
+			"Main Action; Attack (Melee) using the following stats.\n" + 
+			"Bonus: +10;\n" + 
+			"Hits: 1;\n" + 
+			"Damage: 1d10+2 Energy;\n" + 
+			"Shocking: Each Wound inflicted makes the target become Stunned;\n" + 
+			"Consumes 1 Power.");
+	public static final SpecialRule maglevTranscendence = new SpecialRule("Maglev Transcendence",
+			"When using your Maglev Coils, you suffer no fall damage and can raise or lower your hover height by 1m each turn, with no maximum height.");
+	public static final SpecialRule prosanguine = new SpecialRule("Prosanguine",
+			"Long Action; Luminen Capacitor; recover 1 wound for each Power generated; become Fatigued on failure.");
 	
 	// Leadership //
 	public static final SpecialRule dominatingBellow = new SpecialRule("Dominating Bellow",
@@ -74,7 +142,7 @@ class Talent {
 	public static final SpecialRule knowledgable = new SpecialRule("Knowledgable",
 			"Get a +20 bonus to Reference Common Lore for this area.");
 	public static final SpecialRule experienced = new SpecialRule("Experienced",
-			"For this area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).");
+			"Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).");
 	public static final SpecialRule educated = new SpecialRule("Educated",
 			"You can Reference Scholastic Lore for this area.");
 	public static final SpecialRule expert = new SpecialRule("Expert",
@@ -87,6 +155,8 @@ class Talent {
 			"For this area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).");
 	
 	// Trades //
+	public static final SpecialRule trade = new SpecialRule("Trade",
+			"You can Craft and Repair and get a +20 bonus to other Tests when relevant.");
 	public static final SpecialRule trade_agriWorker = new SpecialRule("Trade (Agri Worker)",
 			"Grow, care for, and harvest crops and animals. You can Craft and Repair and get a +20 bonus to other Tests when relevant.");
 	public static final SpecialRule trade_apothecary = new SpecialRule("Trade (Apothecary)",
@@ -147,6 +217,66 @@ class Talent {
 
 class Bionic {
 	// Replacements //
+	public static final SpecialRule bionicArm_poorQuality = new SpecialRule("Bionic Arm (Poor Quality)",
+			"Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Take a -10 penalty to Weapon Skill, Ballistic Skill and Agility when using this arm.");
+	public static final SpecialRule bionicArm = new SpecialRule("Bionic Arm",
+			"Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm.");
+	public static final SpecialRule bionicArm_goodQuality = new SpecialRule("Bionic Arm (Good Quality)",
+			"Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.");
+	public static final SpecialRule bionicArm_bestQuality = new SpecialRule("Bionic Arm (Best Quality)",
+			"Functions and appears as a regular arm (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.");
+	public static final SpecialRule bionicLeg_poorQuality = new SpecialRule("Bionic Leg (Poor Quality)",
+			"Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Take a -10 penalty to any Agility Test involving the use of legs. Fall Prone on critical failures.");
+	public static final SpecialRule bionicLeg = new SpecialRule("Bionic Leg",
+			"Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg.");
+	public static final SpecialRule bionicLeg_goodQuality = new SpecialRule("Bionic Leg (Good Quality)",
+			"Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.");
+	public static final SpecialRule bionicLeg_bestQuality = new SpecialRule("Bionic Leg (Best QUality)",
+			"Functions and appears as a regular leg (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.");
+	public static final SpecialRule bionicEye_poorQuality = new SpecialRule("Bionic Eye (Poor Quality)",
+			"Functions as a regular eye. You take at most a -10 penalty from being Dazzled. Take a -10 penalty to any Test which would typically involve vision.");
+	public static final SpecialRule bionicEye_pair_poorQuality = new SpecialRule("Bionic Eye (Poor Quality)",
+			"Functions as a regular eye. You are immune to becoming Dazzled. Take a -10 penalty to any Test which would typically involve vision.");
+	public static final SpecialRule bionicEye = new SpecialRule("Bionic Eye",
+			"Functions as a regular eye. You take at most a -10 penalty from being Dazzled.");
+	public static final SpecialRule bionicEye_pair = new SpecialRule("Pair of Bionic Eyes",
+			"Functions as a regular pair of eyes. You are immune to becoming Dazzled.");
+	public static final SpecialRule bionicEye_goodQuality = new SpecialRule("Bionic Eye (Good Quality)",
+			"Functions as a regular eye. You take at most a -10 penalty from being Dazzled. Get a +10 bonus to all Perception Tests involving vision.");
+	public static final SpecialRule bionicEye_bestQuality = new SpecialRule("Bionic Eye (Best Quality)",
+			"Functions and appears as a regular eye (Inspect is required to tell the difference). You take at most a -10 penalty from being Dazzled. Get a +10 bonus to all Perception Tests involving vision.");
+	public static final SpecialRule bionicHearing_poorQuality = new SpecialRule("Bionic Hearing (Poor Quality)",
+			"Functions as a regular ear. Take a -10 penalty to any Test which would typically involve hearing.");
+	public static final SpecialRule bionicHearing = new SpecialRule("Bionic Hearing",
+			"Functions as a regular ear.");
+	public static final SpecialRule bionicHearing_goodQuality = new SpecialRule("Bionic Hearing (Good Quality)",
+			"Functions as regular ears. Get a +10 bonus to all Perception Tests involving hearing.");
+	public static final SpecialRule bionicHearing_bestQuality = new SpecialRule("Bionic Hearing (Best Quality)",
+			"Functions and appears as regular ears (Inspect is required to tell the difference). Get a +10 bonus to all Perception Tests involving hearing.");
+	public static final SpecialRule bionicLungs_poorQuality = new SpecialRule("Bionic Lungs (Poor Quality)",
+			"Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases. Take a -10 penalty to Sneak and to Resist becoming Fatigued.");
+	public static final SpecialRule bionicLungs = new SpecialRule("Bionic Lungs",
+			"Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.");
+	public static final SpecialRule bionicLungs_goodQuality = new SpecialRule("Bionic Lungs (Good Quality)",
+			"Functions as a pair of lungs. Get a +30 bonus to Resist harmful gases.");
+	public static final SpecialRule bionicLungs_bestQuality = new SpecialRule("Bionic Lungs (Best quality)",
+			"Functions as a pair of lungs. Get a +40 bonus to Resist harmful gases.");
+	public static final SpecialRule cerebralImplant_poorQuality = new SpecialRule("Cerebral Implant (Poor Quality)",
+			"Restores brain function, but destroys your personality and memories. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10.");
+	public static final SpecialRule cerebralImplant = new SpecialRule("Cerebral Implant",
+			"Restores brain function. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10+10.");
+	public static final SpecialRule cerebralImplant_goodQuality = new SpecialRule("Cerebral Implant (Good Quality)",
+			"Restores brain function. Intelligence and Fellowship are set to 2d10+20.");
+	public static final SpecialRule cerebralImplant_bestQuality = new SpecialRule("Cerebral Implant (Best Quality)",
+			"Restores brain function. Intelligence and Fellowship are set to 2d10+40.");
+	public static final SpecialRule vocalImplant_poorQuality = new SpecialRule("Vocal Implant (Poor Quality)",
+			"Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate. Take a -10 penalty to Fellowship.");
+	public static final SpecialRule vocalImplant = new SpecialRule("Vocal Implant",
+			"Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.");
+	public static final SpecialRule bionicEverything = new SpecialRule("Bionic Everything",
+			"You are immune to becoming Bleeding Out, Dazzled or Stunned. Get a +20 bonus to Resist harmful gases. Get a +10 bonus to Intimidate.");
+	public static final SpecialRule bionicEverything_goodQuality = new SpecialRule("Bionic Everything (Good Quality)",
+			"You are immune to becoming Bleeding Out, Dazzled or Stunned. Get a +20 bonus to Resist harmful gases. Get a +10 bonus to Intimidate. Your Strength, Agility and Perception is increased by 10");
 	
 	// Augmentations //
 	public static final SpecialRule augurArray_poorQuality = new SpecialRule("Augur Array (Poor Quality)",
@@ -175,5 +305,27 @@ class Bionic {
 			"You do not become Stunned or Bleeding Out from critical damage to the body.");
 	
 	// Mechanicus //
+	public static final SpecialRule mechanicusImplants = new SpecialRule("Mechanicus Implants",
+			"You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.");
+	public static final SpecialRule autosanguine = new SpecialRule("Autosanguine",
+			"When you Rest, you automatically pass the Toughness Test with the maximum possible Degrees of Success.");
+	public static final SpecialRule ferricLure = new SpecialRule("Ferric Lure",
+			"Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.");
+	public static final SpecialRule internalReservoir = new SpecialRule("Internal Reservoir",
+			"You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.");
+	public static final SpecialRule luminenCapacitor = new SpecialRule("Luminen Capacitor",
+			"Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.");
+	public static final SpecialRule maglevCoils = new SpecialRule("Maglev Coils",
+			"You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.");
+	public static final SpecialRule mechadendrite_ballistic = new SpecialRule("Mechadendrite (Ballistic)",
+			"Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.");
+	public static final SpecialRule mechadendrite_manipulator = new SpecialRule("Mechadendrite (Manipulator)",
+			"Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).");
+	public static final SpecialRule mechadendrite_medicae = new SpecialRule("Mechadendrite (Medicae)",
+			"Counts as a Tool (+20 bonus) used to treat wounds, perform surgery and administer drugs. Includes a set of 5 injectors.");
+	public static final SpecialRule mechadendrite_optical = new SpecialRule("Mechadendrite (Optical)",
+			"Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.");
+	public static final SpecialRule mechadendrite_utility = new SpecialRule("Mechadendrite (Utility)",
+			"Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.");
 	
 }

@@ -61,6 +61,7 @@ class MeleeWeapon extends Item {
 	public static final Item greatWarHammer = new Item("Great War Hammer", 4);
 	public static final Item shortsword = new Item("Shortsword", 2);
 	public static final Item chainsword = new Item("Chainsword", 3);
+	public static final Item chainsword_mastercrafted = new Item("Mastercrafted Chainsword", 3);
 	public static final Item longsword = new Item("Longsword", 3);
 	public static final Item shockMaul = new Item("Shock Maul", 3);
 	public static final Item shockMaul_mastercrafted = new Item("Mastercrafted Shock Maul", 3);
@@ -188,6 +189,7 @@ class Clothing extends Item {
 	public static final Item administratumRobes = new Item("Administratum Robes", 3);
 	public static final Item chirurgeonRobes = new Item("Chirurgeon Robes", 3);
 	public static final Item imperialRobes = new Item("Imperial Robes", 3);
+	public static final Item mechanicusRobes = new Item("Mechanicus Robes", 3);
 	public static final Item streetClothes = new Item("Street Clothes", 3);
 	public static final Item billowRobe = new Item("Billow Robe", 3);
 }
