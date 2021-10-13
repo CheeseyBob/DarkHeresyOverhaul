@@ -151,6 +151,34 @@ class Talent {
 			"Get a +20 bonus to Resist this.");
 	
 	// Psyker //
+	public static final SpecialRule sanctionedPsyker = new SpecialRule("Sanctioned Psyker",
+			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) when you take this Talent.");
+	public static final SpecialRule unsanctionedPsyker = new SpecialRule("Unsanctioned Psyker",
+			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) and get 1d10+5 Corruption and Insanity Points when you take this Talent.");
+	public static final SpecialRule psyRating1 = new SpecialRule("Psy Rating 1",
+			"You can Focus Power with a Psy Rating of 1.");
+	public static final SpecialRule psyRating2 = new SpecialRule("Psy Rating 2",
+			"You can Focus Power with a Psy Rating of 2.");
+	public static final SpecialRule psyRating3 = new SpecialRule("Psy Rating 3",
+			"You can Focus Power with a Psy Rating of 3.");
+	public static final SpecialRule psyRating4 = new SpecialRule("Psy Rating 4",
+			"You can Focus Power with a Psy Rating of 4.");
+	public static final SpecialRule psyRating5 = new SpecialRule("Psy Rating 5",
+			"You can Focus Power with a Psy Rating of 5.");
+	public static final SpecialRule drawDeeper = new SpecialRule("Draw Deeper",
+			"When you Focus Power, you can add a number of d10 up to your Willpower Bonus to the Potency roll. For each die you add, you give a +10 bonus to Psychic Phenomena.");
+	public static final SpecialRule masteredPsychicPower = new SpecialRule("Mastered",
+			"Get a +20 bonus to Focus Power for the chosen Psychic Power.");
+	public static final SpecialRule powerJuggler = new SpecialRule("Power Juggler",
+			"You can keep multiple Psychic Powers sustained simultaneously, splitting your Psy Rating between them how you wish.");
+	public static final SpecialRule subtlePsyker = new SpecialRule("Subtle Psyker",
+			"When you Focus Power, other characters cannot tell you are doing anything unless they successfully Inspect you.");
+	public static final SpecialRule strongConnection = new SpecialRule("Strong Connection",
+			"When you Focus Power, you add your Willpower Bonus to the Potency roll.");
+	public static final SpecialRule strongMind = new SpecialRule("Strong Mind",
+			"Get a +20 bonus to Resist (Mentally) against Psychic Powers.");
+	public static final SpecialRule theConstantThreat = new SpecialRule("The Constant Threat",
+			"When a character within 10m triggers Psychic Phenomena, you can use Reflex to take your turn before the phenomena is resolved.");
 	
 	// Tech //
 	public static final SpecialRule demolitionsExpert = new SpecialRule("Demolitions Expert",
@@ -229,8 +257,28 @@ class Talent {
 			"Main Action Perception Test; Create an Aspect which gives a bonus.");
 	
 	// Social //
+	public static final SpecialRule charming = new SpecialRule("Charming",
+			"When you Charm, you double the increase to the target's Disposition.");
+	public static final SpecialRule cluesFromTheCrowds = new SpecialRule("Clues from the Crowds",
+			"Get a +20 bonus to Inquire when gathering information from a crowd of people.");
+	public static final SpecialRule conversationalist = new SpecialRule("Conversationalist",
+			"Get a +10 bonus to all Fellowship Tests when interacting with a single individual.");
 	public static final SpecialRule coordinatedInterrogation = new SpecialRule("Coordinated Interrogation",
 			"Get a +20 assistance bonus to Interrogate instead of +10 when the other character also has this Talent.");
+	public static final SpecialRule coverUp = new SpecialRule("Cover-Up",
+			"Long Action; Fellowship; divert gained Attention away from your group; gain Attention on critical failure.");
+	public static final SpecialRule delicateInterrogation = new SpecialRule("Delicate Interrogation",
+			"You can Interrogate instead of Inquire when obtaining information from a target through conversation (though you get no bonuses from interrogation tools).");
+	public static final SpecialRule entrapment = new SpecialRule("Entrapment",
+			"You can Read Person (Gain Insight) using Fellowship instead of Perception.");
+	public static final SpecialRule faceInACrowd = new SpecialRule("Face in a Crowd",
+			"You can use Fellowship instead of Agility when you Sneak in a populated area.");
+	public static final SpecialRule logicalCommunicator = new SpecialRule("Logical Communicator",
+			"You can Persuade using Intelligence instead of Fellowship.");
+	public static final SpecialRule persuasive = new SpecialRule("Persuasive",
+			"When you Persuade, the maximum bonus to the target's Disposition is doubled, to FBx20.");
+	public static final SpecialRule peer = new SpecialRule("Peer",
+			"Get +20 to all Disposition tests when interacting with members of the chosen group.");
 	
 	// Knowledge //
 	public static final SpecialRule creativeProblemSolving = new SpecialRule("Creative Problem Solving",
