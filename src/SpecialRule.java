@@ -77,8 +77,30 @@ class Talent {
 			"Get a +10 bonus to all melee attacks when using multiple weapons.");
 	
 	// Defence //
+	public static final SpecialRule adamantiumWill = new SpecialRule("Adamantium Will",
+			"Get a +30 bonus to Resist being Frightened, Intimidated and Pinned.");
+	public static final SpecialRule constantVigilance = new SpecialRule("Constant Vigilance",
+			"You can use Reflex to act before another character even when you are not waiting.");
+	public static final SpecialRule denyTheWitch = new SpecialRule("Deny the Witch",
+			"Get +20 to Resist psychic powers which affect your mind.");
+	public static final SpecialRule dieHard = new SpecialRule("Die Hard",
+			"You get a +20 bonus to the Bleeding Out Toughness Test.");
+	public static final SpecialRule dirtyFighting = new SpecialRule("Dirty Fighting",
+			"When you Stun, the maximum aspect level is double your Weapon Skill Bonus.");
+	public static final SpecialRule disarm = new SpecialRule("Disarm",
+			"Main Action; Weapon Skill Test; Target drops one wielded item plus one per DoS.");
+	public static final SpecialRule hardTarget = new SpecialRule("Hard Target",
+			"When you are Running, you give a -20 penalty to all ranged attacks against you.");
+	public static final SpecialRule ignorePain = new SpecialRule("Ignore Pain",
+			"You can use Willpower instead of Toughness to Resist being or becoming Stunned.");
+	public static final SpecialRule mentalFortress = new SpecialRule("Mental Fortress",
+			"Get +30 to Resist psychic powers which affect your mind.");
 	public static final SpecialRule nervesOfSteel = new SpecialRule("Nerves of Steel",
 			"Get a +20 bonus to Resist being Frightened, Intimidated and Pinned.");
+	public static final SpecialRule numbToPain = new SpecialRule("Numb to Pain",
+			"Get a +20 bonus to Resist being or becoming Stunned.");
+	public static final SpecialRule resistance = new SpecialRule("Resistance",
+			"Get a +20 bonus to Resist this.");
 	
 	// Psyker //
 	
@@ -119,8 +141,24 @@ class Talent {
 			"Long Action; Luminen Capacitor; recover 1 wound for each Power generated; become Fatigued on failure.");
 	
 	// Leadership //
+	public static final SpecialRule commanding = new SpecialRule("Commanding",
+			"When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.");
 	public static final SpecialRule dominatingBellow = new SpecialRule("Dominating Bellow",
 			"When you Intimidate a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.");
+	public static final SpecialRule expandedNetword = new SpecialRule("Expanded Network",
+			"You can maintain an additional number of contacts equal to your Fellowship Bonus. You can take this Talent multiple times.");
+	public static final SpecialRule haloOfCommand = new SpecialRule("Halo of Command",
+			"You can affect those up to FBx100m away when you Command or Inspire.");
+	public static final SpecialRule inspiring = new SpecialRule("Inspiring",
+			"When you Inspire, the maximum aspect level is doubled, to FBx2.");
+	public static final SpecialRule intoTheJawsOfHell = new SpecialRule("Into the Jaws of Hell",
+			"Allies within FBx10m who can see you get a +20 bonus to Resist being or becoming Frightened, Intimidated or Pinned.");
+	public static final SpecialRule ironDiscipline = new SpecialRule("Iron Discipline",
+			"Get a +20 bonus to Command to overcome the target being Frightened, Intimidated or Pinned.");
+	public static final SpecialRule leadByExample = new SpecialRule("Lead By Example",
+			"When you overcome Pinning or Fear, allies within FBx10m become Inspired.");
+	public static final SpecialRule networking = new SpecialRule("Networking",
+			"Long Action; Fellowship Test; gain a trusted contact in this area; gain Attention on critical failure; you can maintain a number of contacts up to your Fellowship Bonus.");
 	public static final SpecialRule publicSpeaker = new SpecialRule("Public Speaker",
 			"When making a Fellowship Test targeting a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.");
 	

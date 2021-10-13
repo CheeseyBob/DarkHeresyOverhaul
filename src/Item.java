@@ -190,6 +190,7 @@ class Clothing extends Item {
 	public static final Item chirurgeonRobes = new Item("Chirurgeon Robes", 3);
 	public static final Item imperialRobes = new Item("Imperial Robes", 3);
 	public static final Item mechanicusRobes = new Item("Mechanicus Robes", 3);
+	public static final Item ministorumRobes = new Item("Ministorum Robes", 3);
 	public static final Item streetClothes = new Item("Street Clothes", 3);
 	public static final Item billowRobe = new Item("Billow Robe", 3);
 }
@@ -227,6 +228,7 @@ class Tool extends Item {
 	public static final Item psyFocus = new Item("Psy-Focus", 1);
 	public static final Item smallRelic = new Item("Small Relic", 1);
 	public static final Item scroll_lore = new Item("Scroll (A Lore Area)", 1);
+	public static final Item scroll_imperialCreed = new Item("Scroll (Imperial Creed)", 1);
 	public static final Item auspex = new Item("Auspex", 1);
 	public static final Item autoquill = new Item("Autoquill", 1);
 	public static final Item combiTool = new Item("Combi-Tool", 1);
@@ -241,6 +243,7 @@ class Tool extends Item {
 	public static final Item stummer = new Item("Stummer", 1);
 	public static final Item surgicalTools = new Item("Surgical Tools", 1);
 	public static final Item tome_lore = new Item("Tome (A Lore Area)", 2);
+	public static final Item tome_imperialCreed = new Item("Tome (Imperial Creed)", 2);
 	public static final Item cameleolineCloak = new Item("Cameleoline Cloak", 2);
 	public static final Item dataTome_lore = new Item("Data-Tome (A Lore Area)", 1);
 	public static final Item dataTome_judgement = new Item("Data-Tome (Judgement)", 1);

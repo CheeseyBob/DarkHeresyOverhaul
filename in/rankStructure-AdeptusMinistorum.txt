@@ -40,7 +40,7 @@
 				<div class="col-12 text-center">
 					<h5>↓</h5>
 					<h5>Cleric<br><small>Rank 5 | 31-60 XP</small></h5>
-					<p>Provides leadership and inspiration in the other Adepta.</p>
+					<p>Provides leadership and inspiration in the other Adepta. Carries the Hammer of Doctrine and the Blade of Piety.</p>
 				</div>
 			</div>
 			
