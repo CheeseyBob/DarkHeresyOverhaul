@@ -1,2037 +1,1866 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Adeptus Mechanicus NPCs - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
-
-
-<h1>Adeptus Mechanicus NPCs</h1>
-<table>
-<tr>
-	<th colspan="6">Adeptus Mechanicus Rank Structure</th>
-</tr>
-<tr>
-	<th>Rank</th><th>XP</th>
-	<th>Entry Path</th><th>Lore Path</th><th>Roaming Path</th>
-</tr>
-<tr>
-	<th>1</th><th>0-4</th>
-	<th>Technographer<br>↓</th>
-</tr>
-<tr>
-	<th>2</th><th>5-9</th>
-	<th>Mech-Wright<br>↓</th>
-</tr>
-<tr>
-	<th>3</th><th>10-19</th>
-	<th>Electro-Priest<br>↓</th>
-</tr>
-<tr>
-	<th>4</th><th>20-29</th>
-	<th>Engine-Seer<br>↓</th>
-</tr>
-<tr>
-	<th>5</th><th>30-59</th>
-	<th>Tech-Priest</th><th>↴</th><th>↴</th>
-</tr>
-<tr>
-	<th>6</th><th>60-79</th>
-	<th></th><th>Technomancer<br>↓</th><th>Mech-Deacon<br>↓</th>
-</tr>
-<tr>
-	<th>7</th><th>80-99</th>
-	<th></th><th>Cyber-Seer<br>↓</th><th>Omniprophet<br>↓</th>
-</tr>
-<tr>
-	<th>8</th><th>100-150</th>
-	<th></th><th>Magos</th><th>Magos Errant</th>
-</tr>
-</table>
-
-
-<h3>Rank Descriptions</h3>
-<ol>
-	<li>
-		<ul>
-			<li><b>Technographer:</b> Identifies and catalogues technology and assists with repairs.</li>
-		</ul>
+<ul class="nav nav-pills">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
 	</li>
-	<li>
-		<ul>
-			<li><b>Mech-Wright:</b> Conducts heavy repairs and tends dangerous manufactorum processes.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Electro-Priest:</b> Learns the animating principals of machine spirits and how they can be appeased.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Engine-Seer:</b> Tends complicated machines, finding faults and removing errors from all manner of technology.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Tech-Priest:</b> Seeks out the many forms of the Omnissiah to add more knowledge to the data crypts of the Adeptus Mechanicus.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Technomancer:</b> Extract information that may be of use to the Machine Cult.</li>
-			<li><b>Mech-Deacon:</b> Deals with those ignorant of the Omnissiah, either by providing aid or by delivering punishments.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Cyber-Seer:</b> Delves into forbidden and occult matters in their quest for knowledge.</li>
-			<li><b>Omniprophet:</b> Spreads the ways of the Cult Mechanicus to all manner of Imperial subjects and also watches for items or matters of interest.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Magos:</b> Serves the Adeptus Mechanicus with their enormous accumulated knowledge.</li>
-			<li><b>Magos Errant:</b> Goes forth to explore new frontiers, worlds and technologies.</li>
-		</ul>
-	</li>
-</ol>
+</ul>
 
 
-<h2>NPC Stats</h2>
-<div style="column-count:1">
+<h1 class="pt-3 text-center">Adeptus Mechanicus NPCs</h1>
 
 
-<table>
-<tr>
-	<th><h3>Technographer</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>30</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Technographer<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Identifies and catalogues technology and assists with repairs.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Mech-Wright<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Conducts heavy repairs and tends dangerous manufactorum processes.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Electro-Priest<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Learns the animating principals of machine spirits and how they can be appeased.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Engine-Seer<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Tends complicated machines, finding faults and removing errors from all manner of technology.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Tech-Priest<br><small>Rank 5 | 31-60 XP</small></h5>
+					<p>Seeks out the many forms of the Omnissiah to add more knowledge to the data crypts of the Adeptus Mechanicus.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↙</h5>
+					<h5>Technomancer<br><small>Rank 6 | Scholastic Path | 61-80 XP</small></h5>
+					<p>Extracts information that may be of use to the Machine Cult.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↘</h5>
+					<h5>Mech-Deacon<br><small>Rank 6 | Errant Path | 61-80 XP</small></h5>
+					<p>Deals with those ignorant of the Omnissiah, either by providing aid or by delivering punishments.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Cyber-Seer<br><small>Rank 7 | Scholastic Path | 81-100 XP</small></h5>
+					<p>Delves into forbidden and occult matters in their quest for knowledge.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Omniprophet<br><small>Rank 7 | Errant Path | 81-100 XP</small></h5>
+					<p>Spreads the ways of the Cult Mechanicus to all manner of Imperial subjects and also watches for items or matters of interest.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Magos<br><small>Rank 8 | Scholastic Path | 101-150 XP</small></h5>
+					<p>Leads divisions of the Adeptus Mechanicus with their enormour accumulated knowledge.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Magos Errant<br><small>Rank 8 | Errant Path | 101-150 XP</small></h5>
+					<p>Goes forth to explore new frontiers, worlds and technologies.</p>
+				</div>
+			</div>
+			
 		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>None</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Auspex [1]</li>
-			<li>Combi-Tool [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 1st Rank, 4 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Mech-Wright</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>30</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Use Tech(+0)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Auspex [1]</li>
-			<li>Combi-Tool [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 2nd Rank, 8 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Electro-Priest</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>35</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Auspex [1]</li>
-			<li>Hack(+0)</li>
-			<li>Use Tech(+10)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 3rd Rank, 18 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Engine-Seer</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>35</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+10)</li>
-			<li>Hack(+0)</li>
-			<li>Repair(+10)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 4th Rank, 28 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Tech-Priest Chirurgeon</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>40</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administer Drug(+10)</li>
-			<li>Craft(+10)</li>
-			<li>Hack(+0)</li>
-			<li>Inspect(+10)</li>
-			<li>Perform Surgery(+20)</li>
-			<li>Repair(+10)</li>
-			<li>Treat Wounds(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Medicae):</b>
-Counts as a Tool (+20 bonus) used to treat wounds, perform surgery and administer drugs. Includes a set of 5 injectors.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Quality Medkit (3 uses) [3]</li>
-			<li>Surgical Tools [1]</li>
-			<li>Glow-Globe [2]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 5th Rank, 58 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Tech-Priest Militant</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>45</th><th>30</th><th>30</th><th>30</th>
-				<th>35</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+10)</li>
-			<li>Hack(+0)</li>
-			<li>Repair(+10)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Gunslinger:</b>
-When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Luminen Shock:</b>
-Main Action; Attack (Melee) using the following stats.<br>
-Bonus: +10;<br>
-Hits: 1;<br>
-Damage: 1d10+2 Energy;<br>
-Shocking: Each Wound inflicted makes the target become Stunned;<br>
-Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Master Gunslinger:</b>
-Get a +10 bonus to all ranged attacks when using multiple weapons.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Ballistic) x2</b>
-Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mesh Vest</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Lamp Pack [2]</li>
-			<li>Laspistol [1]</li>
-			<li>Laspistol [1]</li>
-			<li>Laspistol Power Pack [1]</li>
-			<li>Laspistol Power Pack [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 5th Rank, 58 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Tech-Priest</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>35</th><th>30</th>
-				<th>40</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inspect(+20)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Repair(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Glow-Globe [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 5th Rank, 58 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Technomancer</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>40</th><th>30</th>
-				<th>45</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/13<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+10)</li>
-			<li>Reference Common Lore(+20)</li>
-			<li>Repair(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Bionic Eye x2:</b>
-Functions as a regular eye. You are immune to becoming Dazzled.</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs:</b>
-Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Data-Slate [1]</li>
-			<li>Glow-Globe [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 6th Rank, 78 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Mech-Deacon</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>35</th><th>35</th><th>30</th><th>35</th><th>30</th>
-				<th>40</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+10)</li>
-			<li>Navigate(+10)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Repair(+30)</li>
-			<li>Search(+10)</li>
-			<li>Use Tech(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Bionic Eye x2:</b>
-Functions as a regular eye. You are immune to becoming Dazzled.</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs:</b>
-Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Ballistic):</b>
-Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mesh Vest</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Plasma Pistol [2]</li>
-			<li>Plasma Pistol Canister [1]</li>
-			<li>Combi-Tool [1]</li>
-			<li>Glow-Globe [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 6th Rank, 78 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Cyber-Seer</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>40</th><th>30</th>
-				<th>45</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/13<br>
-			Insanity: 2<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+20)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+20)</li>
-			<li>Reference Common Lore(+20)</li>
-			<li>Reference Forbidden Lore(+20)</li>
-			<li>Repair(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Archeotech):</b>
-You can Reference Forbidden Lore regarding the chosen area.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array (Good Quality):</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +20 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Bionic Eye (Good Quality) x2:</b>
-Functions as a regular eye.
-You are immune to becoming Dazzled.
-Get a +10 bonus to all Perception Tests involving vision.</td>
-</tr>
-<tr>
-<td><b>Bionic Hearing (Good Quality):</b>
-Functions as regular ears. Get a +10 bonus to all Perception Tests involving hearing.</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs (Good Quality):</b>
-Functions as a pair of lungs. Get a +30 bonus to Resist harmful gases.</td>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Data-Slate [1]</li>
-			<li>Glow-Globe [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 7th Rank, 98 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Omniprophet</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>40</th><th>40</th><th>30</th><th>40</th><th>30</th>
-				<th>40</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/13<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+10)</li>
-			<li>Navigate(+20)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Repair(+30)</li>
-			<li>Search(+20)</li>
-			<li>Use Tech(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-</tr>
-<tr>
-<td><b>Bionic Everything (Arms + Legs + Eyes + Hearing + Lungs):</b>
-You do not become Bleeding Out, Dazzled or Stunned.
-Get a +20 bonus to Resist harmful gases.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Maglev Coils:</b>
-ou can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Ballistic):</b>
-Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mesh Armour</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mastercrafted Chainsword [3]</li>
-			<li>Plasma Pistol [2]</li>
-			<li>Plasma Pistol Canister [1]</li>
-			<li>Combi-Tool [1]</li>
-			<li>Lamp-Pack [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 7th Rank, 98 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Magos</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>40</th><th>40</th><th>40</th>
-				<th>50</th><th>65</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/13<br>
-			Insanity: 20<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+20)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+20)</li>
-			<li>Reference Common Lore(+20)</li>
-			<li>Reference Forbidden Lore(+20)</li>
-			<li>Reference Scholastic Lore(+20)</li>
-			<li>Repair(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Archeotech + The Warp):</b>
-You can Reference Forbidden Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Dark Secrets (Archeotech + The Warp):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Deepest Secrets:</b>
-If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Educated (Astromancy + Chymistry + Cryptology + Numerology):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (Archeotech + The Warp):</b>
-You can Reference Forbidden Lore regarding the chosen area.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array (Good Quality):</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.).
-Your Perception is increased by 20.</td>
-</tr>
-<tr>
-<td><b>Bionic Arms, Legs, Eyes, Voice, Hearing and Lungs (Good Quality):</b>
-You do are immune to becoming Bleeding Out, Dazzled or Stunned.
-Your Strength, Agility and Perception is increased by 10.
-Get a +30 bonus to Resist harmful gases.
-Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable.
-You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator) x2:</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance.
-It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech.
-It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Combi-Tool [1]</li>
-			<li>Data-Slate [1]</li>
-			<li>Glow-Globe [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 8th Rank, 150 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Magos Errant</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>45</th><th>45</th><th>50</th><th>45</th><th>45</th>
-				<th>40</th><th>70</th><th>40</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/13<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Craft(+20)</li>
-			<li>Hack(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Interrogate(+10)</li>
-			<li>Navigate(+20)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Repair(+30)</li>
-			<li>Search(+20)</li>
-			<li>Use Tech(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Experienced (Tech):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Ferric Summons:</b>
-Main Action; Willpower Test; You can use Ferric Lure to pull an item from someone's hands (they oppose with Strength); apply range modifiers.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Binary Cant + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Maglev Transcendence:</b>
-When using your Maglev Coils, you suffer no fall damage and can raise or lower your hover height by 1m each turn, with no maximum height.</td>
-</tr>
-<tr>
-<td><b>Operate (A Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
-You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Augur Array (Good Quality):</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.).
-Your Perception is increased by 20.</td>
-</tr>
-<tr>
-<td><b>Bionic Arms, Legs, Eyes, Voice, Hearing and Lungs (Good Quality):</b>
-You do are immune to becoming Bleeding Out, Dazzled or Stunned.
-Your Strength, Agility and Perception is increased by 10.
-Get a +30 bonus to Resist harmful gases.
-Get a +10 bonus to Intimidate.</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-</tr>
-<tr>
-<td><b>Maglev Coils:</b>
-ou can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Ballistic):</b>
-Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link.
-Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mechanicus Robes</li>
-			<li>Cowled Mesh Armour</li>
-			<li>Mechanicus Staff</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Mastercrafted Chainsword [3]</li>
-			<li>Plasma Pistol [2]</li>
-			<li>Plasma Pistol Canister [1]</li>
-			<li>Power Brick [2]</li>
-			<li>Combi-Tool [1]</li>
-			<li>Lamp-Pack [1]</li>
-			<li>Lascutter [1]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Mechanicus 8th Rank, 150 XP
-	</td>
-</tr>
-</table>
-
-
+	</div>
 </div>
 
 
+<h2 class="pt-3 text-center">Character Sheets</h2>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Technographer">
+			<h4>Technographer</h4>
+		</button>
+		<div id="Technographer" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>No Skills</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Auspex [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Mech-Wright">
+			<h4>Mech-Wright</h4>
+		</button>
+		<div id="Mech-Wright" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Use Tech (+0)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Auspex [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Electro-Priest">
+			<h4>Electro-Priest</h4>
+		</button>
+		<div id="Electro-Priest" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Hack (+0)</li>
+							<li>Use Tech (+0)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Auspex [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Engine-Seer">
+			<h4>Engine-Seer</h4>
+		</button>
+		<div id="Engine-Seer" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+10)</li>
+							<li>Hack (+0)</li>
+							<li>Repair (+10)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Combi-Tool [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Tech-Priest_(Chirurgeon)">
+			<h4>Tech-Priest (Chirurgeon)</h4>
+		</button>
+		<div id="Tech-Priest_(Chirurgeon)" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>40</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Medicae):</b>
+					Counts as a Tool (+20 bonus) used to treat wounds, perform surgery and administer drugs. Includes a set of 5 injectors.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Administer Drug (+10)</li>
+							<li>Craft (+10)</li>
+							<li>Hack (+0)</li>
+							<li>Inspect (+10)</li>
+							<li>Perform Surgery (+20)</li>
+							<li>Repair (+10)</li>
+							<li>Treat Wounds (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Quality Medkit [3]</li>
+							<li>Surgical Tools [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Tech-Priest_(Militant)">
+			<h4>Tech-Priest (Militant)</h4>
+		</button>
+		<div id="Tech-Priest_(Militant)" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>45</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Gunslinger:</b>
+					When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Shock:</b>
+					Main Action; Attack (Melee) using the following stats.
+Bonus: +10;
+Hits: 1;
+Damage: 1d10+2 Energy;
+Shocking: Each Wound inflicted makes the target become Stunned;
+Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Master Gunslinger:</b>
+					Get a +10 bonus to all ranged attacks when using multiple weapons.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+10)</li>
+							<li>Hack (+0)</li>
+							<li>Repair (+10)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>No Items</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>No Items</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Tech-Priest">
+			<h4>Tech-Priest</h4>
+		</button>
+		<div id="Tech-Priest" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>40</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inspect (+20)</li>
+							<li>Ref. Common Lore (+10)</li>
+							<li>Repair (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Combi-Tool [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Technomancer">
+			<h4>Technomancer</h4>
+		</button>
+		<div id="Technomancer" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 13</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>40</th>
+					<th>30</th>
+					<th>45</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Pair of Bionic Eyes:</b>
+					Functions as a regular pair of eyes. You are immune to becoming Dazzled.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+10)</li>
+							<li>Ref. Common Lore (+20)</li>
+							<li>Repair (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Combi-Tool [1]</li>
+							<li>Data-Slate [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Mech-Deacon">
+			<h4>Mech-Deacon</h4>
+		</button>
+		<div id="Mech-Deacon" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>35</th>
+					<th>35</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>40</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Pair of Bionic Eyes:</b>
+					Functions as a regular pair of eyes. You are immune to becoming Dazzled.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+10)</li>
+							<li>Navigate (+10)</li>
+							<li>Ref. Common Lore (+10)</li>
+							<li>Repair (+30)</li>
+							<li>Search (+10)</li>
+							<li>Use Tech (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Mesh Vest [3 AP, 5 vs Energy]</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Plasma Pistol [2]</li>
+							<li>Plasma Pistol Canister [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Cyber-Seer">
+			<h4>Cyber-Seer</h4>
+		</button>
+		<div id="Cyber-Seer" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 13</th><th>Insanity: 2</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>40</th>
+					<th>30</th>
+					<th>45</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Unveiled Secrets (Archeotech):</b>
+					You can Reference Forbidden Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Pair of Bionic Eyes:</b>
+					Functions as a regular pair of eyes. You are immune to becoming Dazzled.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Hearing:</b>
+					Functions as a regular ear.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Lungs:</b>
+					Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Good Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inquire (+20)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+20)</li>
+							<li>Ref. Common Lore (+20)</li>
+							<li>Ref. Forbidden Lore (+20)</li>
+							<li>Repair (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Combi-Tool [1]</li>
+							<li>Data-Slate [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Omniprophet">
+			<h4>Omniprophet</h4>
+		</button>
+		<div id="Omniprophet" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 13</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>40</th>
+					<th>40</th>
+					<th>30</th>
+					<th>40</th>
+					<th>30</th>
+					<th>40</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Everything:</b>
+					You are immune to becoming Bleeding Out, Dazzled or Stunned. Get a +20 bonus to Resist harmful gases. Get a +10 bonus to Intimidate.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Maglev Coils:</b>
+					You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+10)</li>
+							<li>Navigate (+20)</li>
+							<li>Ref. Common Lore (+10)</li>
+							<li>Repair (+30)</li>
+							<li>Search (+20)</li>
+							<li>Use Tech (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Mesh Armour [4 AP, 6 vs Energy]</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Mastercrafted Chainsword [3]</li>
+							<li>Plasma Pistol [2]</li>
+							<li>Plasma Pistol Canister [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Lamp Pack [2]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Magos">
+			<h4>Magos</h4>
+		</button>
+		<div id="Magos" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 13</th><th>Insanity: 20</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>40</th>
+					<th>40</th>
+					<th>40</th>
+					<th>50</th>
+					<th>65</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Dark Secrets (Archeotech + The Warp):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Deepest Secrets:</b>
+					If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Educated (Astronomy + Chymistry + Cryptology + Numerology):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array (GoodQuality):</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +20 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Everything (Good Quality):</b>
+					You are immune to becoming Bleeding Out, Dazzled or Stunned. Get a +20 bonus to Resist harmful gases. Get a +10 bonus to Intimidate. Your Strength, Agility and Perception is increased by 10</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Good Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inquire (+20)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+20)</li>
+							<li>Ref. Common Lore (+20)</li>
+							<li>Ref. Forbidden Lore (+20)</li>
+							<li>Ref. Scholastic Lore (+20)</li>
+							<li>Repair (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Combi-Tool [1]</li>
+							<li>Data-Slate [1]</li>
+							<li>Glow Globe [1]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Magos_Errant">
+			<h4>Magos Errant</h4>
+		</button>
+		<div id="Magos_Errant" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 13</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>45</th>
+					<th>45</th>
+					<th>50</th>
+					<th>45</th>
+					<th>45</th>
+					<th>40</th>
+					<th>70</th>
+					<th>40</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Experienced (Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Summons:</b>
+					Main Action; Willpower Test; You can use Ferric Lure to pull an item from someone's hands (they oppose with Strength); apply range modifiers.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Binary + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Maglev Transcendence:</b>
+					When using your Maglev Coils, you suffer no fall damage and can raise or lower your hover height by 1m each turn, with no maximum height.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type using Intelligence.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Armourer/Mason/Shipwright/Technomat/Wright):</b>
+					You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Everything (Good Quality):</b>
+					You are immune to becoming Bleeding Out, Dazzled or Stunned. Get a +20 bonus to Resist harmful gases. Get a +10 bonus to Intimidate. Your Strength, Agility and Perception is increased by 10</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+				</tr>
+				<tr>
+					<td><b>Maglev Coils:</b>
+					You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
+				</tr>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Good Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Craft (+20)</li>
+							<li>Hack (+20)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+20)</li>
+							<li>Interrogate (+10)</li>
+							<li>Navigate (+20)</li>
+							<li>Ref. Common Lore (+10)</li>
+							<li>Repair (+30)</li>
+							<li>Search (+20)</li>
+							<li>Use Tech (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Mechanicus Robes</li>
+							<li>Coweled Mesh Armour [4 AP, 6 vs Energy & Rending]</li>
+							<li>Staff</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Mastercrafted Chainsword [3]</li>
+							<li>Plasma Pistol [2]</li>
+							<li>Plasma Pistol Canister [1]</li>
+							<li>Combi-Tool [1]</li>
+							<li>Lamp Pack [2]</li>
+							<li>Lascutter [1]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="pt-3"></div>
+
+
+</body>
 </html>

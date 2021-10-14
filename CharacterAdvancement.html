@@ -1,469 +1,483 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Character Advancement - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
-
-
-<h1>Character Advancement</h1>
-<p>Each different Advance has an XP cost and two associated Aptitudes.
-When you take an Advance, the amount of XP you spend depends on how many matching Aptitudes you have:</p>
-<ul>
-<li>Both Aptitues: you spend half the written XP cost.</li>
-<li>One Aptitue: you spend the written XP cost.</li>
-<li>Neither Aptitue: you spend double the written XP cost.</li>
-</ul>
-
-<p>There are three different kinds of Advance:</p>
-<ul>
-<li><b>Characteristic Advances</b> increase a Characteristic by 5.
-You can take this up to 5 times for each Characteristic, with the XP cost going up each time.
-The XP costs and associated Aptitudes are shown in the tables below.</li>
-<li><b>Skill Advances</b> increase the bonus for a Skill by 10, or aquire a non-basic skill at a +0 bonus.
-You can take this up to a +30 bonus for each skill.
-Skills, their XP costs and associated Aptitudes are shown in the tables below.</li>
-<li><b>Talent Advances</b> give your character the benefit of a Talent.
-Talents, their XP costs and associated Aptitudes are listed in the Talents section.</li>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
+	</li>
 </ul>
 
 
-<h2>Advancement After Character Creation</h2>
-<p>During play, taking Advances should be justified by the character's actions in one of the following ways.</p>
-<ul>
-<li><b>Experience:</b> After the character uses a Characteristic or Skill, they can take an Advance for that Characteristic or Skill.</li>
-<li><b>Inspiration:</b> Before taking an action, you can spend a Fate Point to allow the character to take a Talent Advance and then use that Talent.</li>
-<li><b>Training:</b> The character can spend time training or studying.
-If they have access to the appropriate resources, a successful Long Action Test using the appropriate Characteristic allows them to take any Advance.</li>
-</ul>
-
-
-<h2>Characteristics</h2>
-
-
-<div class="multicolContainer">
-
-
-<table>
-<tr>
-<th colspan="3">Characteristic Aptitudes</th>
-</tr>
-<tr>
-<th>Characteristic</th>
-<th>Aptitude 1</th>
-<th>Aptitude 2</th>
-</tr>
-<tr>
-<td>Weapon Skill</td>
-<td>Weapon Skill</td>
-<td>Offence</td>
-</tr>
-<tr>
-<td>Ballistic Skill</td>
-<td>Ballistic Skill</td>
-<td>Finesse</td>
-</tr>
-<tr>
-<td>Strength</td>
-<td>Strength</td>
-<td>Offence</td>
-</tr>
-<tr>
-<td>Toughness</td>
-<td>Toughness</td>
-<td>Defence</td>
-</tr>
-<tr>
-<td>Agility</td>
-<td>Agility</td>
-<td>Finesse</td>
-</tr>
-<tr>
-<td>Intelligence</td>
-<td>Intelligence</td>
-<td>Knowledge</td>
-</tr>
-<tr>
-<td>Perception</td>
-<td>Perception</td>
-<td>Fieldcraft</td>
-</tr>
-<tr>
-<td>Willpower</td>
-<td>Willpower</td>
-<td>Psyker</td>
-</tr>
-<tr>
-<td>Fellowship</td>
-<td>Fellowship</td>
-<td>Social</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-<th colspan="3">Characteristic Advances</th>
-</tr>
-<tr>
-<th>1st (+5)</th>
-<td>2 XP</td>
-</tr>
-<tr>
-<th>2nd (+10)</th>
-<td>4 XP</td>
-</tr>
-<tr>
-<th>3rd (+15)</th>
-<td>8 XP</td>
-</tr>
-<tr>
-<th>4th (+20)</th>
-<td>16 XP</td>
-</tr>
-<tr>
-<th>5th (+25)</th>
-<td>32 XP</td>
-</tr>
-</table>
-
-
+<h1 class="pt-3 text-center">Character Advancement</h1>
+<div class="container-fluid p-3">
+	<p>Each different Advance has an XP cost and two associated Aptitudes.
+	When you take an Advance, the amount of XP you spend depends on how many matching Aptitudes you have:</p>
+	<ul>
+	<li>Both Aptitues: you spend half the written XP cost.</li>
+	<li>One Aptitue: you spend the written XP cost.</li>
+	<li>Neither Aptitue: you spend double the written XP cost.</li>
+	</ul>
+	
+	<p>There are three different kinds of Advance:</p>
+	<ul>
+	<li><b>Characteristic Advances</b> increase a Characteristic by 5.
+	You can take this up to 5 times for each Characteristic, with the XP cost going up each time.
+	The XP costs and associated Aptitudes are shown in the tables below.</li>
+	<li><b>Skill Advances</b> increase the bonus for a Skill by 10, or aquire a non-basic skill at a +0 bonus.
+	You can take this up to a +30 bonus for each skill.
+	Skills, their XP costs and associated Aptitudes are shown in the tables below.</li>
+	<li><b>Talent Advances</b> give your character the benefit of a Talent.
+	Talents, their XP costs and associated Aptitudes are listed in the Talents section.</li>
+	</ul>
+	
+	
+	<h2>Advancement After Character Creation</h2>
+	<p>During play, taking Advances should be justified by the character's actions in one of the following ways.</p>
+	<ul>
+	<li><b>Experience:</b> After the character uses a Characteristic or Skill, they can take an Advance for that Characteristic or Skill.</li>
+	<li><b>Inspiration:</b> Before taking an action, you can spend a Fate Point to allow the character to take a Talent Advance and then use that Talent.</li>
+	<li><b>Training:</b> The character can spend time training or studying.
+	If they have access to the appropriate resources, a successful Long Action Test using the appropriate Characteristic allows them to take any Advance.</li>
+	</ul>
+	
+	
+	<h2>Characteristics</h2>
+	
+	
+	<div class="multicolContainer">
+	
+	
+	<table>
+	<tr>
+	<th colspan="3">Characteristic Aptitudes</th>
+	</tr>
+	<tr>
+	<th>Characteristic</th>
+	<th>Aptitude 1</th>
+	<th>Aptitude 2</th>
+	</tr>
+	<tr>
+	<td>Weapon Skill</td>
+	<td>Weapon Skill</td>
+	<td>Offence</td>
+	</tr>
+	<tr>
+	<td>Ballistic Skill</td>
+	<td>Ballistic Skill</td>
+	<td>Finesse</td>
+	</tr>
+	<tr>
+	<td>Strength</td>
+	<td>Strength</td>
+	<td>Offence</td>
+	</tr>
+	<tr>
+	<td>Toughness</td>
+	<td>Toughness</td>
+	<td>Defence</td>
+	</tr>
+	<tr>
+	<td>Agility</td>
+	<td>Agility</td>
+	<td>Finesse</td>
+	</tr>
+	<tr>
+	<td>Intelligence</td>
+	<td>Intelligence</td>
+	<td>Knowledge</td>
+	</tr>
+	<tr>
+	<td>Perception</td>
+	<td>Perception</td>
+	<td>Fieldcraft</td>
+	</tr>
+	<tr>
+	<td>Willpower</td>
+	<td>Willpower</td>
+	<td>Psyker</td>
+	</tr>
+	<tr>
+	<td>Fellowship</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	</tr>
+	</table>
+	
+	
+	<table>
+	<tr>
+	<th colspan="3">Characteristic Advances</th>
+	</tr>
+	<tr>
+	<th>1st (+5)</th>
+	<td>2 XP</td>
+	</tr>
+	<tr>
+	<th>2nd (+10)</th>
+	<td>4 XP</td>
+	</tr>
+	<tr>
+	<th>3rd (+15)</th>
+	<td>8 XP</td>
+	</tr>
+	<tr>
+	<th>4th (+20)</th>
+	<td>16 XP</td>
+	</tr>
+	<tr>
+	<th>5th (+25)</th>
+	<td>32 XP</td>
+	</tr>
+	</table>
+	
+	
+	</div>
+	
+	
+	<h2>Skills</h2>
+	<p>If a Skill is labelled as basic, all characters are assumed to have the Skill at +0.
+	This means the Skill does not need to be aquired with an Advance.</p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="4">Skill Advances</th>
+	</tr>
+	<tr>
+	<th>Aquire</th>
+	<th>+10</th>
+	<th>+20</th>
+	<th>+30</th>
+	</tr>
+	<tr>
+	<td>4 XP</td>
+	<td>2 XP</td>
+	<td>4 XP</td>
+	<td>8 XP</td>
+	</tr>
+	</table>
+	
+	
+	<table>
+	<tr>
+	<th>Skill</th>
+	<th>Aptitude 1</th>
+	<th>Aptitude 2</th>
+	<th>Basic</th>
+	<th>Duration</th>
+	</tr>
+	<tr>
+	<th colspan="1">General Skills</th>
+	</tr>
+	<tr>
+	<td>Navigate</td>
+	<td>Intelligence</td>
+	<td>Fieldcraft</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Notice</td>
+	<td>Perception</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>Passive</td>
+	</tr>
+	<tr>
+	<td>Reflex</td>
+	<td>Perception</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>Reaction</td>
+	</tr>
+	<tr>
+	<td>Run</td>
+	<td>Agility</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<th colspan="1">Combat Skills</th>
+	</tr>
+	<tr>
+	<td>Dodge</td>
+	<td>Agility</td>
+	<td>Finesse</td>
+	<td>Yes</td>
+	<td>Reaction</td>
+	</tr>
+	<tr>
+	<td>Grapple</td>
+	<td>Strength</td>
+	<td>Offense</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Knock Down</td>
+	<td>Strength</td>
+	<td>Offense</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Parry</td>
+	<td>Weapon Skill</td>
+	<td>Defence</td>
+	<td>Yes</td>
+	<td>Reaction</td>
+	</tr>
+	<tr>
+	<td>Stun</td>
+	<td>Weapon Skill</td>
+	<td>Offense</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<th colspan="1">Investigation Skills</th>
+	</tr>
+	<tr>
+	<td>Contemplate</td>
+	<td>Intelligence</td>
+	<td>Knowledge</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Inquire</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Inspect</td>
+	<td>Perception</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Interrogate</td>
+	<td>Willpower</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Reference Common Lore</td>
+	<td>Intelligence</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>*</td>
+	</tr>
+	<tr>
+	<td>Reference Forbidden Lore*</td>
+	<td>Intelligence</td>
+	<td>Knowledge</td>
+	<td>No</td>
+	<td>*</td>
+	</tr>
+	<tr>
+	<td>Reference Scholastic Lore*</td>
+	<td>Intelligence</td>
+	<td>Knowledge</td>
+	<td>No</td>
+	<td>*</td>
+	</tr>
+	<tr>
+	<td>Search</td>
+	<td>Perception</td>
+	<td>General</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<th colspan="1">Social Skills</th>
+	</tr>
+	<tr>
+	<td>Charm</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Command</td>
+	<td>Fellowship</td>
+	<td>Leadership</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Deceive</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Passive</td>
+	</tr>
+	<tr>
+	<td>Inspire</td>
+	<td>Fellowship</td>
+	<td>Leadership</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Intimidate</td>
+	<td>Strength</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Persuade</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Read Person</td>
+	<td>Perception</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Passive</td>
+	</tr>
+	<tr>
+	<th colspan="1">Stealth Skills</th>
+	</tr>
+	<tr>
+	<td>Conceal</td>
+	<td>Agility</td>
+	<td>Fieldcraft</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Disguise</td>
+	<td>Intelligence</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Hack**</td>
+	<td>Intelligence</td>
+	<td>Tech</td>
+	<td>No</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Open Lock</td>
+	<td>Intelligence</td>
+	<td>Fieldcraft</td>
+	<td>No</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Sneak</td>
+	<td>Agility</td>
+	<td>Finesse</td>
+	<td>Yes</td>
+	<td>*</td>
+	</tr>
+	<tr>
+	<th colspan="1">Specialist Skills</th>
+	</tr>
+	<tr>
+	<td>Administer Drug</td>
+	<td>Intelligence</td>
+	<td>Fieldcraft</td>
+	<td>Yes</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Craft*</td>
+	<td>Intelligence</td>
+	<td>Tech</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Haggle</td>
+	<td>Fellowship</td>
+	<td>Social</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Perform Surgery**</td>
+	<td>Intelligence</td>
+	<td>Knowledge</td>
+	<td>No</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Repair*</td>
+	<td>Intelligence</td>
+	<td>Tech</td>
+	<td>Yes</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Sense Immaterium</td>
+	<td>Perception</td>
+	<td>Psyker</td>
+	<td>No</td>
+	<td>Passive</td>
+	</tr>
+	<tr>
+	<td>Set Trap</td>
+	<td>Intelligence</td>
+	<td>Fieldcraft</td>
+	<td>Yes</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td>Treat Wounds</td>
+	<td>Intelligence</td>
+	<td>Fieldcraft</td>
+	<td>No</td>
+	<td>Long</td>
+	</tr>
+	<tr>
+	<td>Use Tech</td>
+	<td>Intelligence</td>
+	<td>Tech</td>
+	<td>No</td>
+	<td>Action</td>
+	</tr>
+	<tr>
+	<td>Wrangle</td>
+	<td>Fellowship</td>
+	<td>Fieldcraft</td>
+	<td>No</td>
+	<td>Short</td>
+	</tr>
+	<tr>
+	<td colspan="5">*Requires a Talent for each area of use</td>
+	</tr>
+	<tr>
+	<td colspan="5">**Hack requires Use Tech; Perform Surgery requires Treat Wounds</td>
+	</tr>
+	</table>
 </div>
 
 
-<h2>Skills</h2>
-<p>If a Skill is labelled as basic, all characters are assumed to have the Skill at +0.
-This means the Skill does not need to be aquired with an Advance.</p>
-
-
-<table>
-<tr>
-<th colspan="4">Skill Advances</th>
-</tr>
-<tr>
-<th>Aquire</th>
-<th>+10</th>
-<th>+20</th>
-<th>+30</th>
-</tr>
-<tr>
-<td>4 XP</td>
-<td>2 XP</td>
-<td>4 XP</td>
-<td>8 XP</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-<th>Skill</th>
-<th>Aptitude 1</th>
-<th>Aptitude 2</th>
-<th>Basic</th>
-<th>Duration</th>
-</tr>
-<tr>
-<th colspan="1">General Skills</th>
-</tr>
-<tr>
-<td>Navigate</td>
-<td>Intelligence</td>
-<td>Fieldcraft</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Notice</td>
-<td>Perception</td>
-<td>General</td>
-<td>Yes</td>
-<td>Passive</td>
-</tr>
-<tr>
-<td>Reflex</td>
-<td>Perception</td>
-<td>General</td>
-<td>Yes</td>
-<td>Reaction</td>
-</tr>
-<tr>
-<td>Run</td>
-<td>Agility</td>
-<td>General</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<th colspan="1">Combat Skills</th>
-</tr>
-<tr>
-<td>Dodge</td>
-<td>Agility</td>
-<td>Finesse</td>
-<td>Yes</td>
-<td>Reaction</td>
-</tr>
-<tr>
-<td>Grapple</td>
-<td>Strength</td>
-<td>Offense</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Knock Down</td>
-<td>Strength</td>
-<td>Offense</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Parry</td>
-<td>Weapon Skill</td>
-<td>Defence</td>
-<td>Yes</td>
-<td>Reaction</td>
-</tr>
-<tr>
-<td>Stun</td>
-<td>Weapon Skill</td>
-<td>Offense</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<th colspan="1">Investigation Skills</th>
-</tr>
-<tr>
-<td>Contemplate</td>
-<td>Intelligence</td>
-<td>Knowledge</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Inquire</td>
-<td>Fellowship</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Inspect</td>
-<td>Perception</td>
-<td>General</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Interrogate</td>
-<td>Willpower</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Reference Common Lore</td>
-<td>Intelligence</td>
-<td>General</td>
-<td>Yes</td>
-<td>*</td>
-</tr>
-<tr>
-<td>Reference Forbidden Lore*</td>
-<td>Intelligence</td>
-<td>Knowledge</td>
-<td>No</td>
-<td>*</td>
-</tr>
-<tr>
-<td>Reference Scholastic Lore*</td>
-<td>Intelligence</td>
-<td>Knowledge</td>
-<td>No</td>
-<td>*</td>
-</tr>
-<tr>
-<td>Search</td>
-<td>Perception</td>
-<td>General</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<th colspan="1">Social Skills</th>
-</tr>
-<tr>
-<td>Charm</td>
-<td>Fellowship</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Command</td>
-<td>Fellowship</td>
-<td>Leadership</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Deceive</td>
-<td>Fellowship</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Passive</td>
-</tr>
-<tr>
-<td>Inspire</td>
-<td>Fellowship</td>
-<td>Leadership</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Intimidate</td>
-<td>Strength</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Persuade</td>
-<td>Fellowship</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Read Person</td>
-<td>Perception</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Passive</td>
-</tr>
-<tr>
-<th colspan="1">Stealth Skills</th>
-</tr>
-<tr>
-<td>Conceal</td>
-<td>Agility</td>
-<td>Fieldcraft</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Disguise</td>
-<td>Intelligence</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Hack**</td>
-<td>Intelligence</td>
-<td>Tech</td>
-<td>No</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Open Lock</td>
-<td>Intelligence</td>
-<td>Fieldcraft</td>
-<td>No</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Sneak</td>
-<td>Agility</td>
-<td>Finesse</td>
-<td>Yes</td>
-<td>*</td>
-</tr>
-<tr>
-<th colspan="1">Specialist Skills</th>
-</tr>
-<tr>
-<td>Administer Drug</td>
-<td>Intelligence</td>
-<td>Fieldcraft</td>
-<td>Yes</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Craft*</td>
-<td>Intelligence</td>
-<td>Tech</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Haggle</td>
-<td>Fellowship</td>
-<td>Social</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Perform Surgery**</td>
-<td>Intelligence</td>
-<td>Knowledge</td>
-<td>No</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Repair*</td>
-<td>Intelligence</td>
-<td>Tech</td>
-<td>Yes</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Sense Immaterium</td>
-<td>Perception</td>
-<td>Psyker</td>
-<td>No</td>
-<td>Passive</td>
-</tr>
-<tr>
-<td>Set Trap</td>
-<td>Intelligence</td>
-<td>Fieldcraft</td>
-<td>Yes</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>Treat Wounds</td>
-<td>Intelligence</td>
-<td>Fieldcraft</td>
-<td>No</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>Use Tech</td>
-<td>Intelligence</td>
-<td>Tech</td>
-<td>No</td>
-<td>Action</td>
-</tr>
-<tr>
-<td>Wrangle</td>
-<td>Fellowship</td>
-<td>Fieldcraft</td>
-<td>No</td>
-<td>Short</td>
-</tr>
-<tr>
-<td colspan="5">*Requires a Talent for each area of use</td>
-</tr>
-<tr>
-<td colspan="5">**Hack requires Use Tech; Perform Surgery requires Treat Wounds</td>
-</tr>
-</table>
-
-
+</body>
 </html>
 

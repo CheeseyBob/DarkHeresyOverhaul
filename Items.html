@@ -1,556 +1,568 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Items - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
-
-
-<h1>Items</h1>
-
-
-<h3>Sizes</h3>
-<table>
-<tr>
-<th>Size</th>
-<th>Approx. Vol.</th>
-<th>Items</th>
-<th>Characters</th>
-<th>Vehicles</th>
-<th>To Hit</th>
-<th>Stealth</th>
-</tr>
-<tr>
-<td>0</td>
-<td>0L</td>
-<td>Trivial (Jewelery)</td>
-<td>Negligable (Insects)</td>
-<td>-</td>
-<td>-70</td>
-<td>+70</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1L</td>
-<td>Small (Pistol)</td>
-<td>Extremely Tiny (Squirrel)</td>
-<td>-</td>
-<td>-60</td>
-<td>+60</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2L</td>
-<td>Smallish (SMG)</td>
-<td>Very Tiny (Rabbit)</td>
-<td>-</td>
-<td>-50</td>
-<td>+50</td>
-</tr>
-<tr>
-<td>3</td>
-<td>4L</td>
-<td>Standard (Rifle)</td>
-<td>Tiny (Fox)</td>
-<td>-</td>
-<td>-40</td>
-<td>+40</td>
-</tr>
-<tr>
-<td>4</td>
-<td>8L</td>
-<td>Largish (Assault Rifle)</td>
-<td>Very Small (Small Dog)</td>
-<td>-</td>
-<td>-30</td>
-<td>+30</td>
-</tr>
-<tr>
-<td>5</td>
-<td>16L</td>
-<td>Large (HMG)</td>
-<td>Small (Badger)</td>
-<td>-</td>
-<td>-20</td>
-<td>+20</td>
-</tr>
-<tr>
-<td>6</td>
-<td>32L</td>
-<td>Very Large (Rocket Launcher)</td>
-<td>Smallish (Large Dog)</td>
-<td>-</td>
-<td>-10</td>
-<td>+10</td>
-</tr>
-<tr>
-<td>7</td>
-<td>64L</td>
-<td>Massive</td>
-<td>Average (Human)</td>
-<td>Bicycle</td>
-<td>+0</td>
-<td>+0</td>
-</tr>
-<tr>
-<td>8</td>
-<td>120L</td>
-<td>Massive (Power Armour)</td>
-<td>Largish (Lion)</td>
-<td>Motorbike</td>
-<td>+10</td>
-<td>-10</td>
-</tr>
-<tr>
-<td>9</td>
-<td>250L</td>
-<td>Massive</td>
-<td>Large (Brown Bear)</td>
-<td></td>
-<td>+20</td>
-<td>-20</td>
-</tr>
-<tr>
-<td>10</td>
-<td>500L</td>
-<td>Massive</td>
-<td>Very Large (Polar Bear)</td>
-<td></td>
-<td>+30</td>
-<td>-30</td>
-</tr>
-<tr>
-<td>11</td>
-<td>1m3</td>
-<td>Massive</td>
-<td>Extremely Large (Black Rhino)</td>
-<td></td>
-<td>+40</td>
-<td>-40</td>
-</tr>
-<tr>
-<td>12</td>
-<td>2m3</td>
-<td>Massive</td>
-<td>Massive (White Rhino)</td>
-<td>Small Car</td>
-<td>+50</td>
-<td>-50</td>
-</tr>
-<tr>
-<td>13</td>
-<td>4m3</td>
-<td>Massive</td>
-<td>Massive (Elephant)</td>
-<td>Typical Car</td>
-<td>+60</td>
-<td>-60</td>
-</tr>
-<tr>
-<td>14</td>
-<td>8m3</td>
-<td>Massive</td>
-<td>Massive</td>
-<td>Small Van</td>
-<td>+70</td>
-<td>-70</td>
-</tr>
-<tr>
-<td>15</td>
-<td>16m3</td>
-<td>Massive</td>
-<td>Massive</td>
-<td>Large Van</td>
-<td>+80</td>
-<td>-80</td>
-</tr>
-<tr>
-<td>16</td>
-<td>32m3</td>
-<td>Massive (20 Foot Container)</td>
-<td>Massive (Humpback Whale)</td>
-<td>Small Lorry</td>
-<td>+90</td>
-<td>-90</td>
-</tr>
-<tr>
-<td>17</td>
-<td>64m3</td>
-<td>Massive (40 Foot Container)</td>
-<td>Massive</td>
-<td>Bus</td>
-<td>+100</td>
-<td>-100</td>
-</tr>
-<tr>
-<td>18</td>
-<td>128m3</td>
-<td>Massive</td>
-<td>Massive (Blue Whale)</td>
-<td>Double-Decker Bus</td>
-<td>+110</td>
-<td>-110</td>
-</tr>
-</table>
-
-
-<h3>Equipment</h3>
-<ul>
-<li>Left Hand (any 1 item)</li>
-<li>Right Hand (any 1 item)</li>
-<li>Armour (1 Armour item which fits the character's size)</li>
-<li>Clothing (1 Clothing item which fits the character's size)</li>
-</ul>
-
-<p>A character can carry/equip additional items, as long as each item has size at most SB+1 and the sum of the items' sizes does not exceed the character's size.</p>
-
-
-<table>
-<tr>
-<th>Item Size</th>
-<th>One Hand</th>
-</tr>
-<tr>
-<td>SB</td>
-<td>use without penalty</td>
-</tr>
-<tr>
-<td>SB+1</td>
-<td>use with -20 penalty</td>
-</tr>
-<tr>
-<td>SB+2</td>
-<td>can carry but not use</td>
-</tr>
-<tr>
-<td>SB+3</td>
-<td>Haul Heavy Object</td>
-</tr>
-<tr>
-<td>SB+4</td>
-<td>Drag Heavy Object</td>
-</tr>
-<tr>
-<td>SB+5</td>
-<td>can't carry</td>
-</tr>
-<tr>
-<th colspan=2>Treat SB as 1 higher per extra hand or if braced.</th>
-</tr>
-</table>
-
-
-<p>A ranged weapon can be braced against a bipod/tripod or terrain as a Secondary Action.
-Doing so limits the firing angle to a 45 degree arc.</p>
-
-
-<h2>Money</h2>
-
-
-<table>
-<tr>
-<th>Social Class</th>
-<th>Baseline Gelt/Day</th>
-<th>Peak Gelt/Day</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>Outcasts</td>
-<td>-</td>
-<td>-</td>
-<td>Those that have no rightful place within the structure of Imperial society, living below even the lowest classes.</td>
-</tr>
-<tr>
-<td>Drudging Classes</td>
-<td>5</td>
-<td>10</td>
-<td>Those that work in the fields, manufactorums and hives of the Imperium, by far making up the bulk of mankind.</td>
-</tr>
-<tr>
-<td>Military Class</td>
-<td>10</td>
-<td>20</td>
-<td>Those that fight.</td>
-</tr>
-<tr>
-<td>Supine Class</td>
-<td>15</td>
-<td>30</td>
-<td>Those that serve classes better than themselves, benefiting from the wealth of their masters.</td>
-</tr>
-<tr>
-<td>Learned Class</td>
-<td>20</td>
-<td>50</td>
-<td>Those that make their way with knowledge.</td>
-</tr>
-<tr>
-<td>Trading Class</td>
-<td>25</td>
-<td>75</td>
-<td>Those that buy and sell or have specialist trades with which to make their living.</td>
-</tr>
-<tr>
-<td>Mechanicus</td>
-<td>30</td>
-<td>90</td>
-<td>Those that follow the Machine God are a class unto themselves.</td>
-</tr>
-<tr>
-<td>Ministorum</td>
-<td>40</td>
-<td>120</td>
-<td>Those of the Cult of the Emperor and benefit greatly from the uncounted wealth of His domain.</td>
-</tr>
-<tr>
-<td>Nobility</td>
-<td>500</td>
-<td>-</td>
-<td>Those born to wealth and power by right of blood.</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-<th>Availability</th>
-<th>Modifier</th>
-<th>Price Bracket</th>
-<th>Price Roll</th>
-<th>Crafting Steps</th>
-</tr>
-<tr>
-<td>Ubiquitous</td>
-<td>Automatic</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Abundant</td>
-<td>+30</td>
-<td>1-10</td>
-<td>1d10</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Plentiful</td>
-<td>+20</td>
-<td>10-30</td>
-<td>1d10+10</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Common</td>
-<td>+10</td>
-<td>30-100</td>
-<td>3d10+30</td>
-<td>8</td>
-</tr>
-<tr>
-<td>Average</td>
-<td>+0</td>
-<td>100-300</td>
-<td>10 x (1d10 + 10)</td>
-<td>16</td>
-</tr>
-<tr>
-<td>Scarce</td>
-<td>-10</td>
-<td>300-1000</td>
-<td>10 x (3d10 + 30)</td>
-<td>32</td>
-</tr>
-<tr>
-<td>Rare</td>
-<td>-20</td>
-<td>1000-3000</td>
-<td>100 x (1d10 + 10)</td>
-<td>64</td>
-</tr>
-<tr>
-<td>Very Rare</td>
-<td>-30</td>
-<td>3000-10,000</td>
-<td>100 x (3d10 + 30)</td>
-<td>128</td>
-</tr>
-<tr>
-<td>Extremely Rare</td>
-<td>-40</td>
-<td>10,000-30,000</td>
-<td>1,000 x (1d10 + 10)</td>
-<td>256</td>
-</tr>
-<tr>
-<td>Near Unique</td>
-<td>-50</td>
-<td>30,000-100,000</td>
-<td>1,000 x (3d10 + 30)</td>
-<td>512</td>
-</tr>
-<tr>
-<td>Unique</td>
-<td>-60</td>
-<td>100,000+</td>
-<td>10,000 x (1d10 + 10)</td>
-<td>1024</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-<th>Services</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td>Labourer (1 Day's Work)</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Soldier (1 Day's Work)</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Skilled Artisan (1 Day's Work)</td>
-<td>Common</td>
-</tr>
-<tr>
-<th>Provisions</th>
-</tr>
-<tr>
-<td>Poor Provisions (1 Meal)</td>
-<td>Ubiquitous</td>
-</tr>
-<tr>
-<td>Standard Provisions (1 Meal)</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Good Provisions (1 Meal)</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Best Provisions (1 Meal)</td>
-<td>Common</td>
-</tr>
-<tr>
-<th>Accomodation</th>
-</tr>
-<tr>
-<td>Poor Accomodation (1 Night)</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Standard Accomodation (1 Night)</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<th>Transportation</th>
-</tr>
-<tr>
-<td>Poor Transportation (1 Journey)</td>
-<td>Abundant</td>
-</tr>
-<tr>
-<td>Standard Transportation (1 Journey)</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<th>Medical Care</th>
-</tr>
-<tr>
-<td>Poor Medical Care (1 Day/Visit)</td>
-<td>Plentiful</td>
-</tr>
-<tr>
-<td>Standard Medical Care (1 Day/Visit)</td>
-<td>Common</td>
-</tr>
-<tr>
-<td>Good Medical Care (1 Day/Visit)</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>Excellent Medical Care (1 Day/Visit)</td>
-<td>Scarce</td>
-</tr>
-</table>
-
-
-<h3>Aquiring Items - Purchase and Requisition</h3>
-<p>Characters can aquire items and services either through payment and barter, or by using their influence and authority to requisition what is needed. First, they must locate someone or somewhere which has the desired item available.</p>
-
-<p>Locating:</p>
-<ul>
-<li>Travel to an overmap area to search.</li>
-<li>Use Inquire or Search to find a suitable location. The item's availability modifier applies to this roll. The type of area will also affect the difficulty and the potential outcomes.</li>
-</ul>
-<p>Once a location has been found, it can be returned to later.</p>
-
-<p>Trade:</p>
-<ul>
-<li>Roll to determine the starting price.</li>
-<li>Use Haggle action to determine discount.</li>
-<li>Make the trade.</li>
-</ul>
-<p>Haggle can also be used to get a better price when selling items - though the sell price is rolled using the price bracket below the buy price.</p>
-
-<p>Requisition:</p>
-<ul>
-<li>Either Command or Persuade the NPC (possibly after Intimidating or having to Deceive). Succeeding here will give a bonus to their Disposition (critical failure a penalty).</li>
-<li>The NPC makes a Disposition Test to determine if they give you the item(s). This is modified by the justification given (see the below table), the availability of the item and whether you reveal you are working for the Inquisition (+30).</li>
-</ul>
-
-<table>
-<tr>
-<th>Justification</th>
-<th>Modifier</th>
-</tr>
-<tr>
-<td>completely nonsensical</td>
-<td>automatic failure</td>
-</tr>
-<tr>
-<td>none or very poor</td>
-<td>-30</td>
-</tr>
-<tr>
-<td>poor</td>
-<td>-10</td>
-</tr>
-<tr>
-<td>decent</td>
-<td>+10</td>
-</tr>
-<tr>
-<td>excellent</td>
-<td>+30</td>
-</tr>
-<tr>
-<td>crazy to refuse</td>
-<td>automatic success</td>
-</tr>
-</table>
-
-
-<h3>Crafting</h3>
-<ul>
-<li>Materials: all creations require the appropriate amount and kind of materials. The availability of materials is two steps higher than the item itself. The volume of materials required should match the volume of the item.</li>
-<li>Designs: tech items also require designs. The availability of these is one step lower than the item itself.</li>
-<li>Number of steps required to craft the item, and the difficulty of the Craft Test is given in the item availability table.</li>
-<li>For particularly lengthy crafting projects, make one roll each day and multiply the number of steps of progress by the number of hours worked.</li>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
+	</li>
 </ul>
 
 
-<h3>Repair</h3>
-An item can take Damage up to its size.
-<ul>
-<li>[similar to crafting - consumes one component per level of damage; apply the availability modifier; steps??]</li>
-</ul>
+<h1 class="pt-3 text-center">Items</h1>
+<div class="container-fluid p-3">
+	<h3>Sizes</h3>
+	<table>
+	<tr>
+	<th>Size</th>
+	<th>Approx. Vol.</th>
+	<th>Items</th>
+	<th>Characters</th>
+	<th>Vehicles</th>
+	<th>To Hit</th>
+	<th>Stealth</th>
+	</tr>
+	<tr>
+	<td>0</td>
+	<td>0L</td>
+	<td>Trivial (Jewelery)</td>
+	<td>Negligable (Insects)</td>
+	<td>-</td>
+	<td>-70</td>
+	<td>+70</td>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>1L</td>
+	<td>Small (Pistol)</td>
+	<td>Extremely Tiny (Squirrel)</td>
+	<td>-</td>
+	<td>-60</td>
+	<td>+60</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>2L</td>
+	<td>Smallish (SMG)</td>
+	<td>Very Tiny (Rabbit)</td>
+	<td>-</td>
+	<td>-50</td>
+	<td>+50</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>4L</td>
+	<td>Standard (Rifle)</td>
+	<td>Tiny (Fox)</td>
+	<td>-</td>
+	<td>-40</td>
+	<td>+40</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>8L</td>
+	<td>Largish (Assault Rifle)</td>
+	<td>Very Small (Small Dog)</td>
+	<td>-</td>
+	<td>-30</td>
+	<td>+30</td>
+	</tr>
+	<tr>
+	<td>5</td>
+	<td>16L</td>
+	<td>Large (HMG)</td>
+	<td>Small (Badger)</td>
+	<td>-</td>
+	<td>-20</td>
+	<td>+20</td>
+	</tr>
+	<tr>
+	<td>6</td>
+	<td>32L</td>
+	<td>Very Large (Rocket Launcher)</td>
+	<td>Smallish (Large Dog)</td>
+	<td>-</td>
+	<td>-10</td>
+	<td>+10</td>
+	</tr>
+	<tr>
+	<td>7</td>
+	<td>64L</td>
+	<td>Massive</td>
+	<td>Average (Human)</td>
+	<td>Bicycle</td>
+	<td>+0</td>
+	<td>+0</td>
+	</tr>
+	<tr>
+	<td>8</td>
+	<td>120L</td>
+	<td>Massive (Power Armour)</td>
+	<td>Largish (Lion)</td>
+	<td>Motorbike</td>
+	<td>+10</td>
+	<td>-10</td>
+	</tr>
+	<tr>
+	<td>9</td>
+	<td>250L</td>
+	<td>Massive</td>
+	<td>Large (Brown Bear)</td>
+	<td></td>
+	<td>+20</td>
+	<td>-20</td>
+	</tr>
+	<tr>
+	<td>10</td>
+	<td>500L</td>
+	<td>Massive</td>
+	<td>Very Large (Polar Bear)</td>
+	<td></td>
+	<td>+30</td>
+	<td>-30</td>
+	</tr>
+	<tr>
+	<td>11</td>
+	<td>1m3</td>
+	<td>Massive</td>
+	<td>Extremely Large (Black Rhino)</td>
+	<td></td>
+	<td>+40</td>
+	<td>-40</td>
+	</tr>
+	<tr>
+	<td>12</td>
+	<td>2m3</td>
+	<td>Massive</td>
+	<td>Massive (White Rhino)</td>
+	<td>Small Car</td>
+	<td>+50</td>
+	<td>-50</td>
+	</tr>
+	<tr>
+	<td>13</td>
+	<td>4m3</td>
+	<td>Massive</td>
+	<td>Massive (Elephant)</td>
+	<td>Typical Car</td>
+	<td>+60</td>
+	<td>-60</td>
+	</tr>
+	<tr>
+	<td>14</td>
+	<td>8m3</td>
+	<td>Massive</td>
+	<td>Massive</td>
+	<td>Small Van</td>
+	<td>+70</td>
+	<td>-70</td>
+	</tr>
+	<tr>
+	<td>15</td>
+	<td>16m3</td>
+	<td>Massive</td>
+	<td>Massive</td>
+	<td>Large Van</td>
+	<td>+80</td>
+	<td>-80</td>
+	</tr>
+	<tr>
+	<td>16</td>
+	<td>32m3</td>
+	<td>Massive (20 Foot Container)</td>
+	<td>Massive (Humpback Whale)</td>
+	<td>Small Lorry</td>
+	<td>+90</td>
+	<td>-90</td>
+	</tr>
+	<tr>
+	<td>17</td>
+	<td>64m3</td>
+	<td>Massive (40 Foot Container)</td>
+	<td>Massive</td>
+	<td>Bus</td>
+	<td>+100</td>
+	<td>-100</td>
+	</tr>
+	<tr>
+	<td>18</td>
+	<td>128m3</td>
+	<td>Massive</td>
+	<td>Massive (Blue Whale)</td>
+	<td>Double-Decker Bus</td>
+	<td>+110</td>
+	<td>-110</td>
+	</tr>
+	</table>
+	
+	
+	<h3>Equipment</h3>
+	<ul>
+	<li>Left Hand (any 1 item)</li>
+	<li>Right Hand (any 1 item)</li>
+	<li>Armour (1 Armour item which fits the character's size)</li>
+	<li>Clothing (1 Clothing item which fits the character's size)</li>
+	</ul>
+	
+	<p>A character can carry/equip additional items, as long as each item has size at most SB+1 and the sum of the items' sizes does not exceed the character's size.</p>
+	
+	
+	<table>
+	<tr>
+	<th>Item Size</th>
+	<th>One Hand</th>
+	</tr>
+	<tr>
+	<td>SB</td>
+	<td>use without penalty</td>
+	</tr>
+	<tr>
+	<td>SB+1</td>
+	<td>use with -20 penalty</td>
+	</tr>
+	<tr>
+	<td>SB+2</td>
+	<td>can carry but not use</td>
+	</tr>
+	<tr>
+	<td>SB+3</td>
+	<td>Haul Heavy Object</td>
+	</tr>
+	<tr>
+	<td>SB+4</td>
+	<td>Drag Heavy Object</td>
+	</tr>
+	<tr>
+	<td>SB+5</td>
+	<td>can't carry</td>
+	</tr>
+	<tr>
+	<th colspan=2>Treat SB as 1 higher per extra hand or if braced.</th>
+	</tr>
+	</table>
+	
+	
+	<p>A ranged weapon can be braced against a bipod/tripod or terrain as a Secondary Action.
+	Doing so limits the firing angle to a 45 degree arc.</p>
+	
+	
+	<h2>Money</h2>
+	
+	
+	<table>
+	<tr>
+	<th>Social Class</th>
+	<th>Baseline Gelt/Day</th>
+	<th>Peak Gelt/Day</th>
+	<th>Description</th>
+	</tr>
+	<tr>
+	<td>Outcasts</td>
+	<td>-</td>
+	<td>-</td>
+	<td>Those that have no rightful place within the structure of Imperial society, living below even the lowest classes.</td>
+	</tr>
+	<tr>
+	<td>Drudging Classes</td>
+	<td>5</td>
+	<td>10</td>
+	<td>Those that work in the fields, manufactorums and hives of the Imperium, by far making up the bulk of mankind.</td>
+	</tr>
+	<tr>
+	<td>Military Class</td>
+	<td>10</td>
+	<td>20</td>
+	<td>Those that fight.</td>
+	</tr>
+	<tr>
+	<td>Supine Class</td>
+	<td>15</td>
+	<td>30</td>
+	<td>Those that serve classes better than themselves, benefiting from the wealth of their masters.</td>
+	</tr>
+	<tr>
+	<td>Learned Class</td>
+	<td>20</td>
+	<td>50</td>
+	<td>Those that make their way with knowledge.</td>
+	</tr>
+	<tr>
+	<td>Trading Class</td>
+	<td>25</td>
+	<td>75</td>
+	<td>Those that buy and sell or have specialist trades with which to make their living.</td>
+	</tr>
+	<tr>
+	<td>Mechanicus</td>
+	<td>30</td>
+	<td>90</td>
+	<td>Those that follow the Machine God are a class unto themselves.</td>
+	</tr>
+	<tr>
+	<td>Ministorum</td>
+	<td>40</td>
+	<td>120</td>
+	<td>Those of the Cult of the Emperor and benefit greatly from the uncounted wealth of His domain.</td>
+	</tr>
+	<tr>
+	<td>Nobility</td>
+	<td>500</td>
+	<td>-</td>
+	<td>Those born to wealth and power by right of blood.</td>
+	</tr>
+	</table>
+	
+	
+	<table>
+	<tr>
+	<th>Availability</th>
+	<th>Modifier</th>
+	<th>Price Bracket</th>
+	<th>Price Roll</th>
+	<th>Crafting Steps</th>
+	</tr>
+	<tr>
+	<td>Ubiquitous</td>
+	<td>Automatic</td>
+	<td>1</td>
+	<td>1</td>
+	<td>1</td>
+	</tr>
+	<tr>
+	<td>Abundant</td>
+	<td>+30</td>
+	<td>1-10</td>
+	<td>1d10</td>
+	<td>2</td>
+	</tr>
+	<tr>
+	<td>Plentiful</td>
+	<td>+20</td>
+	<td>10-30</td>
+	<td>1d10+10</td>
+	<td>4</td>
+	</tr>
+	<tr>
+	<td>Common</td>
+	<td>+10</td>
+	<td>30-100</td>
+	<td>3d10+30</td>
+	<td>8</td>
+	</tr>
+	<tr>
+	<td>Average</td>
+	<td>+0</td>
+	<td>100-300</td>
+	<td>10 x (1d10 + 10)</td>
+	<td>16</td>
+	</tr>
+	<tr>
+	<td>Scarce</td>
+	<td>-10</td>
+	<td>300-1000</td>
+	<td>10 x (3d10 + 30)</td>
+	<td>32</td>
+	</tr>
+	<tr>
+	<td>Rare</td>
+	<td>-20</td>
+	<td>1000-3000</td>
+	<td>100 x (1d10 + 10)</td>
+	<td>64</td>
+	</tr>
+	<tr>
+	<td>Very Rare</td>
+	<td>-30</td>
+	<td>3000-10,000</td>
+	<td>100 x (3d10 + 30)</td>
+	<td>128</td>
+	</tr>
+	<tr>
+	<td>Extremely Rare</td>
+	<td>-40</td>
+	<td>10,000-30,000</td>
+	<td>1,000 x (1d10 + 10)</td>
+	<td>256</td>
+	</tr>
+	<tr>
+	<td>Near Unique</td>
+	<td>-50</td>
+	<td>30,000-100,000</td>
+	<td>1,000 x (3d10 + 30)</td>
+	<td>512</td>
+	</tr>
+	<tr>
+	<td>Unique</td>
+	<td>-60</td>
+	<td>100,000+</td>
+	<td>10,000 x (1d10 + 10)</td>
+	<td>1024</td>
+	</tr>
+	</table>
+	
+	
+	<table>
+	<tr>
+	<th>Services</th>
+	<th>Availability</th>
+	</tr>
+	<tr>
+	<td>Labourer (1 Day's Work)</td>
+	<td>Abundant</td>
+	</tr>
+	<tr>
+	<td>Soldier (1 Day's Work)</td>
+	<td>Plentiful</td>
+	</tr>
+	<tr>
+	<td>Skilled Artisan (1 Day's Work)</td>
+	<td>Common</td>
+	</tr>
+	<tr>
+	<th>Provisions</th>
+	</tr>
+	<tr>
+	<td>Poor Provisions (1 Meal)</td>
+	<td>Ubiquitous</td>
+	</tr>
+	<tr>
+	<td>Standard Provisions (1 Meal)</td>
+	<td>Abundant</td>
+	</tr>
+	<tr>
+	<td>Good Provisions (1 Meal)</td>
+	<td>Plentiful</td>
+	</tr>
+	<tr>
+	<td>Best Provisions (1 Meal)</td>
+	<td>Common</td>
+	</tr>
+	<tr>
+	<th>Accomodation</th>
+	</tr>
+	<tr>
+	<td>Poor Accomodation (1 Night)</td>
+	<td>Abundant</td>
+	</tr>
+	<tr>
+	<td>Standard Accomodation (1 Night)</td>
+	<td>Plentiful</td>
+	</tr>
+	<tr>
+	<th>Transportation</th>
+	</tr>
+	<tr>
+	<td>Poor Transportation (1 Journey)</td>
+	<td>Abundant</td>
+	</tr>
+	<tr>
+	<td>Standard Transportation (1 Journey)</td>
+	<td>Plentiful</td>
+	</tr>
+	<tr>
+	<th>Medical Care</th>
+	</tr>
+	<tr>
+	<td>Poor Medical Care (1 Day/Visit)</td>
+	<td>Plentiful</td>
+	</tr>
+	<tr>
+	<td>Standard Medical Care (1 Day/Visit)</td>
+	<td>Common</td>
+	</tr>
+	<tr>
+	<td>Good Medical Care (1 Day/Visit)</td>
+	<td>Average</td>
+	</tr>
+	<tr>
+	<td>Excellent Medical Care (1 Day/Visit)</td>
+	<td>Scarce</td>
+	</tr>
+	</table>
+	
+	
+	<h3>Aquiring Items - Purchase and Requisition</h3>
+	<p>Characters can aquire items and services either through payment and barter, or by using their influence and authority to requisition what is needed. First, they must locate someone or somewhere which has the desired item available.</p>
+	
+	<p>Locating:</p>
+	<ul>
+	<li>Travel to an overmap area to search.</li>
+	<li>Use Inquire or Search to find a suitable location. The item's availability modifier applies to this roll. The type of area will also affect the difficulty and the potential outcomes.</li>
+	</ul>
+	<p>Once a location has been found, it can be returned to later.</p>
+	
+	<p>Trade:</p>
+	<ul>
+	<li>Roll to determine the starting price.</li>
+	<li>Use Haggle action to determine discount.</li>
+	<li>Make the trade.</li>
+	</ul>
+	<p>Haggle can also be used to get a better price when selling items - though the sell price is rolled using the price bracket below the buy price.</p>
+	
+	<p>Requisition:</p>
+	<ul>
+	<li>Either Command or Persuade the NPC (possibly after Intimidating or having to Deceive). Succeeding here will give a bonus to their Disposition (critical failure a penalty).</li>
+	<li>The NPC makes a Disposition Test to determine if they give you the item(s). This is modified by the justification given (see the below table), the availability of the item and whether you reveal you are working for the Inquisition (+30).</li>
+	</ul>
+	
+	<table>
+	<tr>
+	<th>Justification</th>
+	<th>Modifier</th>
+	</tr>
+	<tr>
+	<td>completely nonsensical</td>
+	<td>automatic failure</td>
+	</tr>
+	<tr>
+	<td>none or very poor</td>
+	<td>-30</td>
+	</tr>
+	<tr>
+	<td>poor</td>
+	<td>-10</td>
+	</tr>
+	<tr>
+	<td>decent</td>
+	<td>+10</td>
+	</tr>
+	<tr>
+	<td>excellent</td>
+	<td>+30</td>
+	</tr>
+	<tr>
+	<td>crazy to refuse</td>
+	<td>automatic success</td>
+	</tr>
+	</table>
+	
+	
+	<h3>Crafting</h3>
+	<ul>
+	<li>Materials: all creations require the appropriate amount and kind of materials. The availability of materials is two steps higher than the item itself. The volume of materials required should match the volume of the item.</li>
+	<li>Designs: tech items also require designs. The availability of these is one step lower than the item itself.</li>
+	<li>Number of steps required to craft the item, and the difficulty of the Craft Test is given in the item availability table.</li>
+	<li>For particularly lengthy crafting projects, make one roll each day and multiply the number of steps of progress by the number of hours worked.</li>
+	</ul>
+	
+	
+	<h3>Repair</h3>
+	An item can take Damage up to its size.
+	<ul>
+	<li>[similar to crafting - consumes one component per level of damage; apply the availability modifier; steps??]</li>
+	</ul>
+</div>
 
 
+</body>
 </html>

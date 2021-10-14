@@ -1,0 +1,7 @@
+<tr>
+<td><b>!!@TALENT_NAME!!:</b>
+!!@TALENT_DESCRIPTION!!</td>
+<td>!!@TALENT_REQUIREMENT!!</td>
+<td>!!@TALENT_APTITUDE!!</td>
+<td>!!@TALENT_XP!!</td>
+</tr>

@@ -11,14 +11,8 @@ class NPC {
 	LinkedList<Item> equippedItemList = new LinkedList<Item>();
 	LinkedList<Item> inventoryList = new LinkedList<Item>();
 	
-	// TODO - inventory //
-	
-	private static String assignID(String name) {
-		return name.replace(" ", "_");
-	}
-	
 	NPC(String name, String stats) {
-		this.id = assignID(name);
+		this.id = DarkHeresyOverhaul.stringToID(name);
 		this.name = name;
 		assignStats(stats);
 	}

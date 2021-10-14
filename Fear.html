@@ -1,355 +1,368 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Fear and Insanity - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<title>Fear - Dark Heresy Overhaul</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
+	</li>
+</ul>
 
 
-<h1>Fear</h1>
-<p>When you are affected by Fear, you make a Fear Test (Willpower) in order to determine how you are affected.
-Apply a modifier to the Fear Test based on the Fear Rating of the thing causing the Fear.
-Only one level of Frightened needs to be overcome to end the extra effects.</p>
-
-
-<table>
-<tr>
-<th>Fear Rating</th>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr>
-<th>Modifier</th>
-<td>+30</td>
-<td>+20</td>
-<td>+10</td>
-<td>+0</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan=2>Effects of a Fear Test</th>
-</tr>
-<tr>
-<th>Over 3 DoS</th>
-<td>You are unaffected.</td>
-</tr>
-<tr>
-<th>3 DoS</th>
-<td>You take a -10 penalty to your next Test as if you were Frightened.</td>
-</tr>
-<tr>
-<th>2 DoS</th>
-<td>You become Frightened.</td>
-</tr>
-<tr>
-<th>1 DoS</th>
-<td>You become Frightened(2) and cannot approach the source of your Fear until this is overcome.</td>
-</tr>
-<tr>
-<th>0 DoS</th>
-<td>You become Frightened(3) and are frozen by terror until this is overcome.</td>
-</tr>
-<tr>
-<th>Failure</th>
-<td>You become Frightened(4) and flee in panic until this is overcome.<br>
-You also take 1d10-WB Insanity Points.</td>
-</tr>
-<tr>
-<th>Critical Failure</th>
-<td>You become Frightened(5) and are reduced to a babbling mess until this is overcome.<br>
-You also take Insanity Points equal to 1d10 plus the Fear Rating.</td>
-</tr>
-</table>
-<p>
-
-
-<h1>Insanity</h1>
-<p>Each time a character gains Insanity Points, check whether they have passed thresholds for taking a Trauma Test or suffering a Mental Disorder - resolve this in the aftermath of the encounter.</p>
-
-
-<table>
-<tr>
-<th colspan=2>The Insanity Track</th>
-</tr>
-<tr>
-<th>Insanity</th>
-<th>Effect</th>
-</tr>
-<tr>
-<td>10</td>
-<td>Trauma Test (+30)</td>
-</tr>
-<tr>
-<td>20</td>
-<td>Trauma Test (+30)</td>
-</tr>
-<tr>
-<td>30</td>
-<td>Trauma Test (+30)</td>
-</tr>
-<tr>
-<td>40</td>
-<td>Trauma Test (+20) and Mental Disorder</td>
-</tr>
-<tr>
-<td>50</td>
-<td>Trauma Test (+20)</td>
-</tr>
-<tr>
-<td>60</td>
-<td>Trauma Test (+10) and Mental Disorder</td>
-</tr>
-<tr>
-<td>70</td>
-<td>Trauma Test (+10)</td>
-</tr>
-<tr>
-<td>80</td>
-<td>Trauma Test (+0) and Mental Disorder</td>
-</tr>
-<tr>
-<td>90</td>
-<td>Trauma Test (+0)</td>
-</tr>
-<tr>
-<td>100</td>
-<td>Terminally Insane - the character becomes unplayable</td>
-</tr>
-</table>
-<p>
-
-
-<h2>Mental Trauma</h2>
-<p>A Trauma Test is a Willpower Test with the modifier specified on the Insanity Track.
-How you are affected is specfied in the table below.</p>
-
-
-<table>
-<tr>
-<th colspan=2>Effects of a Trauma Test</th>
-</tr>
-<tr>
-<th>Over 3 DoS</th>
-<td>You are unaffected.</td>
-</tr>
-<tr>
-<th>3 DoS</th>
-<td>You become Jumpy.</td>
-</tr>
-<tr>
-<th>2 DoS</th>
-<td>You become Withdrawn.</td>
-</tr>
-<tr>
-<th>1 DoS</th>
-<td>You become Sleepless.</td>
-</tr>
-<tr>
-<th>0 DoS</th>
-<td>You become Agitated.</td>
-</tr>
-<tr>
-<th>Failure</th>
-<td>You become Dishevelled.</td>
-</tr>
-<tr>
-<th>Critical Failure</th>
-<td>You become Traumatised.</td>
-</tr>
-</table>
-<p>
-
-
-<h3>Trauma Aspects</h3>
-
-
-<div class="multicolContainer">
-
-
-<table>
-<tr>
-<th colspan="2"><i>Jumpy</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>Perception Tests</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Willpower Tests</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Withdrawn</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>Fellowship Tests</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Sleepless</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>Target becomes Fatigued after they Rest</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Agitated</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>Target must succeed a Willpower Test before any Action or take a -10 penalty.</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Dishevelled</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>All Tests</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
-<table>
-<tr>
-<th colspan="2"><i>Traumatised</i></th>
-</tr>
-<tr>
-<th>Bonus To</th>
-<td>-</td>
-</tr>
-<tr>
-<th>Penalty To</th>
-<td>All Tests</td>
-</tr>
-<tr>
-<th>Special</th>
-<td>Target must succeed a Willpower Test in order to take any Action besides Move.</td>
-</tr>
-<tr>
-<th>Overcome After</th>
-<td>Willpower Test (once per day)</td>
-</tr>
-</table>
-<p>
-
-
+<h1 class="pt-3 text-center">Fear</h1>
+<div class="container-fluid p-3">
+	<p>When you are affected by Fear, you make a Fear Test (Willpower) in order to determine how you are affected.
+	Apply a modifier to the Fear Test based on the Fear Rating of the thing causing the Fear.
+	Only one level of Frightened needs to be overcome to end the extra effects.</p>
+	
+	
+	<table>
+	<tr>
+	<th>Fear Rating</th>
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	</tr>
+	<tr>
+	<th>Modifier</th>
+	<td>+30</td>
+	<td>+20</td>
+	<td>+10</td>
+	<td>+0</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan=2>Effects of a Fear Test</th>
+	</tr>
+	<tr>
+	<th>Over 3 DoS</th>
+	<td>You are unaffected.</td>
+	</tr>
+	<tr>
+	<th>3 DoS</th>
+	<td>You take a -10 penalty to your next Test as if you were Frightened.</td>
+	</tr>
+	<tr>
+	<th>2 DoS</th>
+	<td>You become Frightened.</td>
+	</tr>
+	<tr>
+	<th>1 DoS</th>
+	<td>You become Frightened(2) and cannot approach the source of your Fear until this is overcome.</td>
+	</tr>
+	<tr>
+	<th>0 DoS</th>
+	<td>You become Frightened(3) and are frozen by terror until this is overcome.</td>
+	</tr>
+	<tr>
+	<th>Failure</th>
+	<td>You become Frightened(4) and flee in panic until this is overcome.<br>
+	You also take 1d10-WB Insanity Points.</td>
+	</tr>
+	<tr>
+	<th>Critical Failure</th>
+	<td>You become Frightened(5) and are reduced to a babbling mess until this is overcome.<br>
+	You also take Insanity Points equal to 1d10 plus the Fear Rating.</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<h1>Insanity</h1>
+	<p>Each time a character gains Insanity Points, check whether they have passed thresholds for taking a Trauma Test or suffering a Mental Disorder - resolve this in the aftermath of the encounter.</p>
+	
+	
+	<table>
+	<tr>
+	<th colspan=2>The Insanity Track</th>
+	</tr>
+	<tr>
+	<th>Insanity</th>
+	<th>Effect</th>
+	</tr>
+	<tr>
+	<td>10</td>
+	<td>Trauma Test (+30)</td>
+	</tr>
+	<tr>
+	<td>20</td>
+	<td>Trauma Test (+30)</td>
+	</tr>
+	<tr>
+	<td>30</td>
+	<td>Trauma Test (+30)</td>
+	</tr>
+	<tr>
+	<td>40</td>
+	<td>Trauma Test (+20) and Mental Disorder</td>
+	</tr>
+	<tr>
+	<td>50</td>
+	<td>Trauma Test (+20)</td>
+	</tr>
+	<tr>
+	<td>60</td>
+	<td>Trauma Test (+10) and Mental Disorder</td>
+	</tr>
+	<tr>
+	<td>70</td>
+	<td>Trauma Test (+10)</td>
+	</tr>
+	<tr>
+	<td>80</td>
+	<td>Trauma Test (+0) and Mental Disorder</td>
+	</tr>
+	<tr>
+	<td>90</td>
+	<td>Trauma Test (+0)</td>
+	</tr>
+	<tr>
+	<td>100</td>
+	<td>Terminally Insane - the character becomes unplayable</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<h2>Mental Trauma</h2>
+	<p>A Trauma Test is a Willpower Test with the modifier specified on the Insanity Track.
+	How you are affected is specfied in the table below.</p>
+	
+	
+	<table>
+	<tr>
+	<th colspan=2>Effects of a Trauma Test</th>
+	</tr>
+	<tr>
+	<th>Over 3 DoS</th>
+	<td>You are unaffected.</td>
+	</tr>
+	<tr>
+	<th>3 DoS</th>
+	<td>You become Jumpy.</td>
+	</tr>
+	<tr>
+	<th>2 DoS</th>
+	<td>You become Withdrawn.</td>
+	</tr>
+	<tr>
+	<th>1 DoS</th>
+	<td>You become Sleepless.</td>
+	</tr>
+	<tr>
+	<th>0 DoS</th>
+	<td>You become Agitated.</td>
+	</tr>
+	<tr>
+	<th>Failure</th>
+	<td>You become Dishevelled.</td>
+	</tr>
+	<tr>
+	<th>Critical Failure</th>
+	<td>You become Traumatised.</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<h3>Trauma Aspects</h3>
+	
+	
+	<div class="multicolContainer">
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Jumpy</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>Perception Tests</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>Willpower Tests</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Withdrawn</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>Fellowship Tests</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Sleepless</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>Target becomes Fatigued after they Rest</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Agitated</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>Target must succeed a Willpower Test before any Action or take a -10 penalty.</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Dishevelled</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>All Tests</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	<table>
+	<tr>
+	<th colspan="2"><i>Traumatised</i></th>
+	</tr>
+	<tr>
+	<th>Bonus To</th>
+	<td>-</td>
+	</tr>
+	<tr>
+	<th>Penalty To</th>
+	<td>All Tests</td>
+	</tr>
+	<tr>
+	<th>Special</th>
+	<td>Target must succeed a Willpower Test in order to take any Action besides Move.</td>
+	</tr>
+	<tr>
+	<th>Overcome After</th>
+	<td>Willpower Test (once per day)</td>
+	</tr>
+	</table>
+	<p>
+	
+	
+	</div>
+	
+	
+	<h2>Mental Disorers</h2>
+	<p>When you take a Mental Disorder, it should (if possible) be linked in some way to the cause.
+	You can either take a new Mental Disorder or increase the severity of an existing one.</p>
+	
+	
+	<ul>
+	<li><b>Phobia (The Dead/Insects/etc.):</b>
+	You must succeed a Willpower Test to interact with this thing.
+	Forced or gratuitous exposure causes a Fear Test.</li>
+	<li><b>Compulsion (Kleptomania/Self-Mortification/The Flesh Is Weak/etc.):</b>
+	You must succeed a Willpower Test to not act upon the compulsion.</li>
+	<li><b>Hallucinations (Dead Comrade/Flashbacks/etc.):</b>
+	You see and hear things which are not there.</li>
+	<li><b>Delusion (Invulnerability/Righteousness/etc.):</b>
+	You believe something false, despite evidence and your better judgement.</li>
+	<li><b>Horrific Nightmares:</b>
+	When you Rest after any stressful situation, you must succeed a Willpower Test or become Fatigued.</li>
+	</ul>
+	
+	
+	<h3>Only the Insane Shall Prosper</h3>
+	<p>When you take your first/second/third Mental Disorder, you also take the following Talent (at level 1/2/3 respectively).</p>
+	
+	
+	<ul>
+	<li><b>Only the Insane Shall Prosper (1/2/3):</b>
+	You are unaffected by Fear Rating 1/2/3 and under.</li>
+	</ul>
 </div>
 
 
-<h2>Mental Disorers</h2>
-<p>When you take a Mental Disorder, it should (if possible) be linked in some way to the cause.
-You can either take a new Mental Disorder or increase the severity of an existing one.</p>
-
-
-<ul>
-<li><b>Phobia (The Dead/Insects/etc.):</b>
-You must succeed a Willpower Test to interact with this thing.
-Forced or gratuitous exposure causes a Fear Test.</li>
-<li><b>Compulsion (Kleptomania/Self-Mortification/The Flesh Is Weak/etc.):</b>
-You must succeed a Willpower Test to not act upon the compulsion.</li>
-<li><b>Hallucinations (Dead Comrade/Flashbacks/etc.):</b>
-You see and hear things which are not there.</li>
-<li><b>Delusion (Invulnerability/Righteousness/etc.):</b>
-You believe something false, despite evidence and your better judgement.</li>
-<li><b>Horrific Nightmares:</b>
-When you Rest after any stressful situation, you must succeed a Willpower Test or become Fatigued.</li>
-</ul>
-
-
-<h3>Only the Insane Shall Prosper</h3>
-<p>When you take your first/second/third Mental Disorder, you also take the following Talent (at level 1/2/3 respectively).</p>
-
-
-<ul>
-<li><b>Only the Insane Shall Prosper (1/2/3):</b>
-You are unaffected by Fear Rating 1/2/3 and under.</li>
-</ul>
-
-
-
+</body>
 </html>

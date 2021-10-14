@@ -1,0 +1,12 @@
+<div class="container-fluid pt-2">
+	<h3 class="pt-3">Categories</p>
+!TALENT_CATEGORY_CONTENTS
+
+
+	<div class="pt-3"></div>
+	
+	
+!TALENT_LIST
+</div>
+
+

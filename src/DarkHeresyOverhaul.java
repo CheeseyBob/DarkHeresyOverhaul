@@ -118,6 +118,17 @@ class DarkHeresyOverhaul {
 		}
 		pw.println(line);
 	}
+	public static String stringToID(String string) {
+		String idString = "";
+		for(char c : string.toCharArray()) {
+			if(Character.isLetterOrDigit(c)) {
+				idString += c;
+			} else {
+				idString += "";
+			}
+		}
+		return idString;
+	}
 	
 	private enum Command {
 		TOP, TAIL, RANK_STRUCTURE, 

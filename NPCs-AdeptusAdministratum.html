@@ -1,1696 +1,1619 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Adeptus Administratum NPCs - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
-
-
-<h1>Adeptus Administratum NPCs</h1>
-<table>
-<tr>
-	<th colspan="6">Adeptus Administratum Rank Structure</th>
-</tr>
-<tr>
-	<th>Rank</th><th>XP</th>
-	<th>Entry Path</th><th>Scholasic Path</th><th>Tech Path</th><th>Medicae Path</th>
-</tr>
-<tr>
-	<th>1</th><th>0-4</th>
-	<th>Archivist<br>↓</th>
-</tr>
-<tr>
-	<th>2</th><th>5-9</th>
-	<th>Scrivener<br>↓</th>
-</tr>
-<tr>
-	<th>3</th><th>10-19</th>
-	<th>Scribe<br>↓</th><th>→<br><br></th><th>→<br><br></th><th>↴<br><br></th>
-</tr>
-<tr>
-	<th>4</th><th>20-29</th>
-	<th>Auditor</th><th>↴</th><th>↴</th><th>Medicator<br>↓</th>
-</tr>
-<tr>
-	<th>5</th><th>30-59</th>
-	<th></th><th>Scholar<br>↓</th><th>Operator<br>↓</th><th>Chirurgeon<br>↓</th>
-</tr>
-<tr>
-	<th>6</th><th>60-79</th>
-	<th></th><th>Lexographer<br>↓</th><th>Comptroller<br>↓</th><th>Master Chirurgeon</th>
-</tr>
-<tr>
-	<th>7</th><th>80-99</th>
-	<th></th><th>Loremaster<br>↓</th><th>Logister<br>↓</th><th></th>
-</tr>
-<tr>
-	<th>8</th><th>100-150</th>
-	<th></th><th>Sage Loremaster</th><th>Sage Logister</th><th></th>
-</tr>
-</table>
-
-
-<h3>Rank Descriptions</h3>
-<ol>
-	<li>
-		<ul>
-			<li><b>Archivists:</b> Tend to the needs of those higher up the ranks.</li>
-		</ul>
+<ul class="nav nav-pills">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
 	</li>
-	<li>
-		<ul>
-			<li><b>Scriveners:</b> Deal with scrolls, books and data-slates.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Scribes:</b> Collect and extract information.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Auditors:</b> Conducts audits to record data and ensure regulations are followed.</li>
-			<li><b>Medicators:</b> Provide medical services.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Scholars:</b> Study their field in depth and sometimes provide expert advice to those in positions of power.</li>
-			<li><b>Operators:</b> Operate the machines and vehicles within the Imperium's civilian infrastructure.</li>
-			<li><b>Chirurgeons:</b> Perform advanced medical procedures.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Lexographers:</b> Study multiple fields and the connections between them.</li>
-			<li><b>Comptrollers:</b> Direct the flow of information as it passes through the Administratum, and manage its most complicated systems.</li>
-			<li><b>Master Chirurgeons:</b> Top medical practitioners who are often employed by the nobility.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Loremasters:</b> Study deeper mysteries and knowledge that has been hidden or forgotten.</li>
-			<li><b>Logisters:</b> Apply their phenomenal powers of reasoning to the toughest problems the Administratum has to deal with.</li>
-		</ul>
-	</li>
-	<li>
-		<ul>
-			<li><b>Sage Loremasters:</b> Delve into the deepest secrets and mysteries of the galaxy.</li>
-			<li><b>Sage Logisters:</b> Apply their phenomenal powers of reasoning to the toughest problems the Administratum has to deal with.</li>
-		</ul>
-	</li>
-</ol>
+</ul>
 
 
-<div style="column-count:1">
+<h1 class="pt-3 text-center">Adeptus Administratum NPCs</h1>
 
 
-<table>
-<tr>
-	<th><h3>Archivist</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>30</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#RankStructure">
+			<h4>Rank Structure</h4>
+		</button>
+		<div id="RankStructure" class="collapse p-2 bg-dark border">
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>Archivist<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Tends to the needs of those higher up the ranks.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Scrivener<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Deals with scrolls, books and data-slates.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h5>↓</h5>
+					<h5>Scribe<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Collects and extracts information.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↙</h5>
+					<h5>Auditor<br><small>Rank 4 | 21-30 XP</small></h5>
+					<p>Conducts audits to record data and ensure regulations are followed.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↘</h5>
+					<h5>Medicator<br><small>Rank 4 | Medicae Path | 21-30 XP</small></h5>
+					<p>Provides basic medical services.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Scholar<br><small>Rank 5 | Scholastic Path | 31-60 XP</small></h5>
+					<p>Studies their field in depth and sometimes provide expert advice to those in positions of power.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Operator<br><small>Rank 5 | Tech Path | 31-60 XP</small></h5>
+					<p>Operates the machines and vehicles within the Imperium's civilian infrastructure.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Chirurgeon<br><small>Rank 5 | Medicae Path | 31-60 XP</small></h5>
+					<p>Performs advanced medical procedures.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Lexographer<br><small>Rank 6 | Scholastic Path | 61-80 XP</small></h5>
+					<p>Studies multiple fields and the connections between them.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Comptroller<br><small>Rank 6 | Tech Path | 61-80 XP</small></h5>
+					<p>Directs the flow of information as it passes through the Administratum, and manage its most complicated systems.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Master Chirurgeon<br><small>Rank 6 | Medicae Path | 61-80 XP</small></h5>
+					<p>Provides top medical services, often to the nobility.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Loremaster<br><small>Rank 7 | Scholastic Path | 81-100 XP</small></h5>
+					<p>Studies deeper mysteries and knowledge that has been hidden or forgotten.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Logister<br><small>Rank 7 | Tech Path | 81-100 XP</small></h5>
+					<p>Solves tough administrative problems.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Sage Loremaster<br><small>Rank 8 | Scholastic Path | 101-150 XP</small></h5>
+					<p>Delves into the deepest secrets and mysteries of the galaxy.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Sage Logister<br><small>Rank 8 | Tech Path | 101-150 XP</small></h5>
+					<p>Solves the toughest and widest reaching administration problems.</p>
+				</div>
+			</div>
+			
 		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>None</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 1st Rank, 2 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Scrivener</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>30</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>None</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Writing Kit [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 2nd Rank, 6 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Scribe</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>30</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Scholastic Lore(+0)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Autoquill [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 3rd Rank, 16 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Auditor</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>35</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Scholastic Lore(+10)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 2 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Autoquill [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 4th Rank, 26 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Medicator</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>35</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administer Drug(+10)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Scholastic Lore(+0)</li>
-			<li>Treat Wounds(+10)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Medkit(3 uses) [2]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 4th Rank, Medicae Path, 26 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Scholar</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>40</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+10)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Scholastic Lore(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 2 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Expert (2 Topics):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Specialist Knowledge:</b>
-If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Data-Tome (A Topic) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 5th Rank, Scholastic Path, 52 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Operator</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>35</th>
-				<th>40</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Reference Scholastic Lore(+10)</li>
-			<li>Use Tech(+0)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 2 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum + Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (One Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 5th Rank, Tech Path, 44 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Chirurgeon</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>45</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administer Drug(+10)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Perform Surgery(+10)</li>
-			<li>Reference Scholastic Lore(+0)</li>
-			<li>Treat Wounds(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Surgical Tools [1]</li>
-			<li>Quality Medkit(5 uses) [2]</li>
-			<li>Injector(De-Tox) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 5th Rank, Medicae Path, 56 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Lexographer</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>45</th><th>30</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Scholastic Lore(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 3 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Expert (3 Topics):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Specialist Knowledge:</b>
-If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Data-Tome (A Topic) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 6th Rank, Scholastic Path, 78 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Comptroller</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>35</th>
-				<th>45</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Inquire(+20)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Common Lore(+20)</li>
-			<li>Reference Scholastic Lore(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 2 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (1 Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 6th Rank, Tech Path, 72 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Master Chirurgeon</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>45</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administer Drug(+20)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+20)</li>
-			<li>Perform Surgery(+30)</li>
-			<li>Reference Scholastic Lore(+0)</li>
-			<li>Treat Wounds(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic):</b>
-The language used by Imperial officials, clergy and nobility.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Surgical Tools [1]</li>
-			<li>Quality Medkit(5 uses) [2]</li>
-			<li>Injector(De-Tox) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 6th Rank, Medicae Path, 80 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Loremaster</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>45</th><th>30</th><th>35</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 4<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+30)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Forbidden Lore(+10)</li>
-			<li>Reference Scholastic Lore(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 3 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Expert (3 Topics):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Specialist Knowledge:</b>
-If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (2 Topics):</b>
-You can Reference Forbidden Lore regarding the chosen area.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Data-Tome (A Topic) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 7th Rank, Scholastic Path, 98 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Logister</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>35</th>
-				<th>50</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+20)</li>
-			<li>Inquire(+20)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Common Lore(+20)</li>
-			<li>Reference Scholastic Lore(+20)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 4 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (1 Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 7th Rank, Tech Path, 98 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Sage Loremaster</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>30</th>
-				<th>50</th><th>30</th><th>40</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 20<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+30)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Forbidden Lore(+30)</li>
-			<li>Reference Scholastic Lore(+30)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Dark Secrets (2 Topics):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Deepest Secrets:</b>
-If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Expert (3 Topics):</b>
-Regarding the chosen area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Specialist Knowledge:</b>
-If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Data-Tome (A Topic) [1]</li>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 8th Rank, Scholastic Path, 146 XP
-	</td>
-</tr>
-</table>
-
-
-<table>
-<tr>
-	<th><h3>Sage Logister</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>30</th><th>30</th><th>30</th><th>30</th><th>35</th>
-				<th>50</th><th>35</th><th>30</th><th>30</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 6<br>
-			Corruption: 0<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Contemplate(+30)</li>
-			<li>Inquire(+30)</li>
-			<li>Inspect(+10)</li>
-			<li>Reference Common Lore(+30)</li>
-			<li>Reference Forbidden Lore(+10)</li>
-			<li>Reference Scholastic Lore(+30)</li>
-			<li>Use Tech(+20)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Educated (Bureaucracy + 7 Topics):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (High Gothic + Low Gothic):</b>
-You know the chosen language.</td>
-</tr>
-<tr>
-<td><b>Operate (1 Vehicle Type):</b>
-You can operate the chosen vehicle type using Intelligence.</td>
-</tr>
-<tr>
-<td><b>Trade (Copyist):</b>
-Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
-</tr>
-<tr>
-<td><b>Unveiled Secrets (3 Topics):</b>
-You can Reference Forbidden Lore regarding the chosen area.</td>
-</tr>
-<tr>
-	<th>Bionics</th>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Administratum Robes</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Chrono [0]</li>
-			<li>Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		Adeptus Administratum 8th Rank, Tech Path, 148 XP
-	</td>
-</tr>
-</table>
-
-
+	</div>
 </div>
 
 
+<h2 class="pt-3 text-center">Character Sheets</h2>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Archivist">
+			<h4>Archivist</h4>
+		</button>
+		<div id="Archivist" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>No Skills</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Scrivener">
+			<h4>Scrivener</h4>
+		</button>
+		<div id="Scrivener" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>No Skills</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Writing Kit [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Scribe">
+			<h4>Scribe</h4>
+		</button>
+		<div id="Scribe" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+0)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Autoquill [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Auditor">
+			<h4>Auditor</h4>
+		</button>
+		<div id="Auditor" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy + 2 Areas):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+10)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Autoquill [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Medicator">
+			<h4>Medicator</h4>
+		</button>
+		<div id="Medicator" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Administer Drug (+10)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+0)</li>
+							<li>Treat Wounds (+10)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Chirurgeon Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Medkit [2]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Scholar">
+			<h4>Scholar</h4>
+		</button>
+		<div id="Scholar" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>40</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Expert (2 Areas):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Specialist Knowledge:</b>
+					If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+10)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Data-Tome (A Lore Area) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Operator">
+			<h4>Operator</h4>
+		</button>
+		<div id="Operator" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>40</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy + 2 Areas):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum + Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+10)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Chirurgeon">
+			<h4>Chirurgeon</h4>
+		</button>
+		<div id="Chirurgeon" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>45</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Administer Drug (+10)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+20)</li>
+							<li>Perform Surgery (+10)</li>
+							<li>Ref. Scholastic Lore (+0)</li>
+							<li>Treat Wounds (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Chirurgeon Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Surgical Tools [1]</li>
+							<li>Quality Medkit [3]</li>
+							<li>Injector (De-Tox) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Lexographer">
+			<h4>Lexographer</h4>
+		</button>
+		<div id="Lexographer" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>45</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Expert (3 Areas):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Specialist Knowledge:</b>
+					If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+20)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Scholastic Lore (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Data-Tome (A Lore Area) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Comptroller">
+			<h4>Comptroller</h4>
+		</button>
+		<div id="Comptroller" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>45</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy + 2 Areas):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Inquire (+20)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Common Lore (+20)</li>
+							<li>Ref. Scholastic Lore (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Master_Chirurgeon">
+			<h4>Master Chirurgeon</h4>
+		</button>
+		<div id="Master_Chirurgeon" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>45</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Administer Drug (+20)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+20)</li>
+							<li>Perform Surgery (+30)</li>
+							<li>Ref. Scholastic Lore (+0)</li>
+							<li>Treat Wounds (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Chirurgeon Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Surgical Tools [1]</li>
+							<li>Quality Medkit [3]</li>
+							<li>Injector (De-Tox) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Loremaster">
+			<h4>Loremaster</h4>
+		</button>
+		<div id="Loremaster" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 4</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>45</th>
+					<th>30</th>
+					<th>35</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Expert (3 Areas):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Specialist Knowledge:</b>
+					If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Unveiled Secrets (2 Areas):</b>
+					You can Reference Forbidden Lore for this area.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+30)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Forbidden Lore (+10)</li>
+							<li>Ref. Scholastic Lore (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Data-Tome (A Lore Area) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Logister">
+			<h4>Logister</h4>
+		</button>
+		<div id="Logister" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>50</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy + 4 Areas):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Good Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+20)</li>
+							<li>Inquire (+20)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Common Lore (+20)</li>
+							<li>Ref. Scholastic Lore (+20)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Sage_Loremaster">
+			<h4>Sage Loremaster</h4>
+		</button>
+		<div id="Sage_Loremaster" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 20</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>50</th>
+					<th>30</th>
+					<th>40</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Dark Secrets (2 Areas):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Deepest Secrets:</b>
+					If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Educated (Bureaucracy):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Expert (3 Areas):</b>
+					For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Specialist Knowledge:</b>
+					If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+30)</li>
+							<li>Inquire (+10)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Forbidden Lore (+30)</li>
+							<li>Ref. Scholastic Lore (+30)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Data-Tome (A Lore Area) [1]</li>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Sage_Logister">
+			<h4>Sage Logister</h4>
+		</button>
+		<div id="Sage_Logister" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 11</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>35</th>
+					<th>50</th>
+					<th>35</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>Educated (Bureaucracy + 7 Areas):</b>
+					You can Reference Scholastic Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Knowledgable (Administratum + Calixis Sector + Tech):</b>
+					Get a +20 bonus to Reference Common Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Language (High Gothic + Low Gothic):</b>
+					You know this language.</td>
+				</tr>
+				<tr>
+					<td><b>Operate (1 Vehicle Type):</b>
+					You can operate this vehicle type.</td>
+				</tr>
+				<tr>
+					<td><b>Trade (Copyist):</b>
+					Copy text, illuminate manuscripts and forge written material. You can Craft and Repair and get a +20 bonus to other Tests when relevant.</td>
+				</tr>
+				<tr>
+					<td><b>Unveiled Secrets (3 Areas):</b>
+					You can Reference Forbidden Lore for this area.</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Best Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +30 bonus to any Test to communicate with or control the thing you are linked to.</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Contemplate (+30)</li>
+							<li>Inquire (+30)</li>
+							<li>Inspect (+10)</li>
+							<li>Ref. Common Lore (+30)</li>
+							<li>Ref. Forbidden Lore (+10)</li>
+							<li>Ref. Scholastic Lore (+30)</li>
+							<li>Use Tech (+20)</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Administratum Robes</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Chrono [0]</li>
+							<li>Gelt [0]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="pt-3"></div>
+
+
+</body>
 </html>

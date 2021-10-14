@@ -12,7 +12,7 @@
 <body class="bg-dark text-white">
 
 
-<ul class="nav nav-pills">
+<ul class="nav">
 	<li class="nav-item">
 		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
 	</li>

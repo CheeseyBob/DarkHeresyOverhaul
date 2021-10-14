@@ -1,196 +1,105 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Character Sheet - Dark Heresy Overhaul</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<title>Example Character Sheet - Dark Heresy Overhaul</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
+	</li>
+</ul>
 
 
-<h1>Example Character Sheet</h1>
-<hr>
-
-
-<table>
-<tr>
-	<th><h3>Unnamed Arbitrator</h3></th>
-</tr>
-<tr>
-	<td>
-		<table>
-			<tr>
-				<th>WS</th><th>BS</th><th>S</th><th>T</th><th>Ag</th>
-				<th>Int</th><th>Per</th><th>WP</th><th>Fel</th>
-			</tr>
-			<tr>
-				<th>36</th><th>36</th><th>36</th><th>36</th><th>31</th>
-				<th>31</th><th>31</th><th>31</th><th>31</th>
-			</tr>
-		</table>
-	</td>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:3">
-			Wounds: 0/11<br>
-			Insanity: 0<br>
-			Corruption: 0<br>
+<h1 class="pt-3 text-center">Example Character Sheet</h1>
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#CHARACTER_ID">
+			<h4>CHARACTER NAME</h4>
+		</button>
+		<div id="CHARACTER_ID" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: 5+2xTB</th><th>Insanity: 0</th><th>Corruption: 0</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+					<th>30</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+				<tr>
+					<td><b>SPECIAL_NAME:</b>
+					SPECIAL_DESCRIPTION</td>
+				</tr>
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+							<li>Skill</li>
+							<li>Skill</li>
+							<li>Skill</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+							<li>Item</li>
+							<li>Item</li>
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+							<li>Item</li>
+							<li>Item</li>
+							<li>Item</li>
+							<li>Item</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
 		</div>
-	</th>
-</tr>
-<tr>
-	<th>Skills</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Grapple(+10)</li>
-			<li>Inquire(+10)</li>
-			<li>Inspect(+10)</li>
-			<li>Interrogate(+20)</li>
-			<li>Knock Down(+10)</li>
-			<li>Notice(+10)</li>
-			<li>Reference Common Lore(+10)</li>
-			<li>Reference Scholastic Lore(+10)</li>
-			<li>Run(+10)</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Talents & Traits</th>
-</tr>
-<tr>
-<td><b>Disarm:</b>
-Main Action; Weapon Skill Test; Target drops one wielded item plus one per DoS.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Arbites):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Knowledgable (Underworld):</b>
-Get a +20 bonus to Reference Common Lore regarding the chosen area.</td>
-</tr>
-<tr>
-<td><b>Language (Low Gothic):</b>
-You know the common tongue of the Imperium.</td>
-</tr>
-<tr>
-<td><b>Operate (Bike):</b>
-You can operate bikes using Agility.</td>
-</tr>
-<tr>
-<td><b>Educated (Judgement):</b>
-You can Reference Scholastic Lore regarding the chosen area.</td>
-</tr>
-<tr>
-	<th>Clothing, Armour and Held Items</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Carapace Chestplate (4 AP; 6 vs Impact)</li>
-			<li>Arbites Uniform</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Inventory [capacity 14, max size 4]</th>
-</tr>
-<tr>
-	<td>
-		<div class="multicolContainer">
-		<ul>
-			<li>Shock Maul [3]</li>
-			<li>Arbites Shotgun [3]</li>
-			<li>Arbites Shotgun Mag [1]</li>
-			<li>Arbites Shotgun Mag [1]</li>
-			<li>Pistol [1]</li>
-			<li>Pistol Mag [1]</li>
-			<li>Manacles [1]</li>
-			<li>Pack of Lho-Sticks [0]</li>
-			<li>50 Gelt [0]</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Notes</th>
-</tr>
-<tr>
-	<td>
-		.............
-	</td>
-</tr>
-</table>
+	</div>
+</div>
 
 
-<table>
-<tr>
-	<th><h3>Advancement</h3></th>
-</tr>
-<tr>
-	<th>
-		<div style="column-count:2">
-			XP Total: 31<br>
-			XP Spent: 31<br>
-		</div>
-	</th>
-</tr>
-<tr>
-	<th>Aptitudes</th>
-</tr>
-<tr>
-	<td>
-		<div style="column-count:4">
-		<ul>
-			<li>General</li>
-			<li>Offence</li>
-			<li>Defence</li>
-			<li>Social</li>
-			<li>Toughness</li>
-			<li>Perception</li>
-			<li>Willpower</li>
-			<li>Fellowship</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-<tr>
-	<th>Advances</th>
-</tr>
-<tr>
-	<td>
-		<div style="column-count:2">
-		<ul>
-			<li>Weapon Skill +5 : 2 XP</li>
-			<li>Ballistic Skill +5 : 4 XP</li>
-			<li>Strength +5 : 2 XP</li>
-			<li>Toughness +5 : 1 XP</li>
-			<li>Inspect(+10) : 1 XP</li>
-			<li>Interrogate(+10) : 1 XP</li>
-			<li>Interrogate(+20) : 2 XP</li>
-			<li>Knock Down(+10) : 2 XP</li>
-			<li>Reference Common Lore(+10) : 2 XP</li>
-			<li>Reference Scholastic Lore(+10) : 4 XP</li>
-			<li>Run(+10) : 2 XP</li>
-			<li>Disarm : 4 XP</li>
-			<li>Educated(Judgement) : 4 XP</li>
-		</ul>
-		</div>
-	</td>
-</tr>
-</table>
-
-
-
-
-
-
-
-
+</body>
+</html>

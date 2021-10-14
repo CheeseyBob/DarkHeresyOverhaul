@@ -1,9 +1,14 @@
 	~~ To Do List ~~
 
 > Convert everything to generated HTML documents which use Bootstrap
-	- Rank structure diagrams
-	- Special Rules
-	- NPC ranks for the Adeptus Administratum
+	- multicol divs need updating
+	- replace with generated HTML document:
+		- Bionics.html
+		- all the item types
+		- PsychicPowers.html
+		- Talents.html
+		- Traits.html
+		
 
 > Lore items/talents for rituals
 
