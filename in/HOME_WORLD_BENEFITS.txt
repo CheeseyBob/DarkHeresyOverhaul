@@ -1,0 +1,6 @@
+		<div class="col-6">
+			<h5 class="text-center">!!@HOME_WORLD_NAME!!</h5>
+			<table class="table table-sm table-dark">
+!SPECIAL_RULE_LIST
+			</table>
+		</div>

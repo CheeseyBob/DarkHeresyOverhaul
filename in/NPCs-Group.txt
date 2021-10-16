@@ -1,4 +1,4 @@
-!TOP
+!PROCESS:TOP
 
 
 !RANK_STRUCTURE
@@ -7,10 +7,10 @@
 <h2 class="pt-3 text-center">Character Sheets</h2>
 
 
-!CHARACTER_SHEETS
+!CHARACTER_SHEET_LIST
 
 
 <div class="pt-3"></div>
 
 
-!TAIL
+!PROCESS:TAIL

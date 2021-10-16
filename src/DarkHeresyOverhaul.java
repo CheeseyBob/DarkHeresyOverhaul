@@ -14,8 +14,15 @@ import files.TextFileHandler;
  *
  */
 class DarkHeresyOverhaul {
+	// General //
 	private static PrintWriter pw = null;
 	private static String title = "";
+	private static LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
+	
+	// Character Creation //
+	private static HomeWorld homeWorld = null;
+	
+	// NPC Groups //
 	private static NPCGroup npcGroup = null;
 	private static NPC npc = null;
 	private static SpecialRule special = null;
@@ -24,7 +31,10 @@ class DarkHeresyOverhaul {
 	private static boolean isItemEquipped = false;
 	
 	public static void main(String[] args) {
+		// Character Creation //
+		printCharacterCreationFile();
 		
+		// NPC Groups //
 		NPCGroup[] npcGroupList = {
 				new NPCGroup_AdeptusAdministratum(),
 				new NPCGroup_AdeptusArbites(),
@@ -36,13 +46,32 @@ class DarkHeresyOverhaul {
 		for(NPCGroup group : npcGroupList) {
 			printNPCGroupFile(group);
 		}
-		
 	}
 	
-	private static void printCharacterSheets() {
+	public static String idFrom(String string) {
+		String idString = "";
+		for(char c : string.toCharArray()) {
+			if(Character.isLetterOrDigit(c)) {
+				idString += c;
+			} else {
+				idString += "";
+			}
+		}
+		return idString;
+	}
+	
+	private static void printCharacterCreationFile() {
+		pw = TextFileHandler.startWritingToFile("out/CharacterCreation.html");
+		title = "Character Creation";
+		processFile("CharacterCreation");
+		pw.close();
+	}
+	
+	private static void printCharacterSheetList() {
 		for(NPC npc : npcGroup.npcList) {
 			DarkHeresyOverhaul.npc = npc;
-			processFile("characterSheet");
+			DarkHeresyOverhaul.specialRuleList = npc.specialRuleList;
+			processFile("CHARACTER_SHEET");
 			pw.println();
 			pw.println();
 		}
@@ -56,6 +85,24 @@ class DarkHeresyOverhaul {
 		for(Item item : npc.equippedItemList) {
 			DarkHeresyOverhaul.item = item;
 			processFile("ITEM");
+		}
+	}
+	
+	private static void printHomeWorldBenefitsList() {
+		HomeWorld[] homeWorldList = {
+				new HomeWorld_Feral(),
+				new HomeWorld_Forge(),
+				new HomeWorld_Highborn(),
+				new HomeWorld_Hive(),
+				new HomeWorld_Shrine(),
+				new HomeWorld_Tithe(),
+				new HomeWorld_Void(),
+				new HomeWorld_War()
+		};
+		for(HomeWorld homeWorld : homeWorldList) {
+			DarkHeresyOverhaul.homeWorld = homeWorld;
+			DarkHeresyOverhaul.specialRuleList = homeWorld.specialRuleList;
+			processFile("HOME_WORLD_BENEFITS");
 		}
 	}
 	
@@ -79,7 +126,7 @@ class DarkHeresyOverhaul {
 	}
 	
 	private static void printSpecialRuleList() {
-		for(SpecialRule special : npc.specialRuleList) {
+		for(SpecialRule special : specialRuleList) {
 			DarkHeresyOverhaul.special = special;
 			processFile("SPECIAL");
 		}
@@ -101,7 +148,7 @@ class DarkHeresyOverhaul {
 			if(line.contains("!!")){
 				processLineWithCommand(line);
 			} else if(line.startsWith("!")) {
-				Command.valueOf(line.substring(1)).run();
+				Command.run(line.substring(1));
 			} else {
 				pw.println(line);
 			}
@@ -118,29 +165,37 @@ class DarkHeresyOverhaul {
 		}
 		pw.println(line);
 	}
-	public static String stringToID(String string) {
-		String idString = "";
-		for(char c : string.toCharArray()) {
-			if(Character.isLetterOrDigit(c)) {
-				idString += c;
-			} else {
-				idString += "";
-			}
-		}
-		return idString;
-	}
 	
 	private enum Command {
-		TOP, TAIL, RANK_STRUCTURE, 
-		CHARACTER_SHEETS, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
+		PROCESS,
+		HOME_WORLD_BENEFITS_LIST, HOME_WORLD_BENEFITS,
+		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
 		
-		private void run() {
+		private static void run(String commandCode) {
+			String[] partList = commandCode.split(":");
+			String[] parameterList = new String[partList.length - 1];
+			for(int i = 0; i < parameterList.length; i ++) {
+				parameterList[i] = partList[i+1];
+			}
+			Command.valueOf(partList[0]).run(parameterList);
+		}
+		
+		private void run(String[] parameterList) {
 			switch(this) {
-			case CHARACTER_SHEETS:
-				printCharacterSheets();
+			case PROCESS:
+				processFile(parameterList[0]);
+				break;
+			case HOME_WORLD_BENEFITS_LIST:
+				printHomeWorldBenefitsList();
+				break;
+			case HOME_WORLD_BENEFITS:
+				processFile("HOME_WORLD_BENEFITS");
+				break;
+			case CHARACTER_SHEET_LIST:
+				printCharacterSheetList();
 				break;
 			case RANK_STRUCTURE:
-				processFile("rankStructure-"+npcGroup.id);
+				processFile("RANK_STRUCTURE-"+npcGroup.id);
 				break;
 			case SPECIAL_RULE_LIST:
 				printSpecialRuleList();
@@ -154,12 +209,6 @@ class DarkHeresyOverhaul {
 			case INVENTORY_LIST:
 				printInventoryList();
 				break;
-			case TAIL:
-				processFile("tail");
-				break;
-			case TOP:
-				processFile("top");
-				break;
 			default:
 				throw new RuntimeException("Undefined Command: "+this);
 			}
@@ -167,7 +216,8 @@ class DarkHeresyOverhaul {
 	}
 	
 	private enum Variable {
-		TITLE, 
+		TITLE,
+		HOME_WORLD_NAME, 
 		CHARACTER_ID, CHARACTER_NAME,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
@@ -175,6 +225,8 @@ class DarkHeresyOverhaul {
 		
 		private String get() {
 			switch (this) {
+			case HOME_WORLD_NAME:
+				return homeWorld.name;
 			case CHARACTER_ID:
 				return npc.id;
 			case CHARACTER_NAME:

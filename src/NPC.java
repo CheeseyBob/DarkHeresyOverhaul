@@ -12,7 +12,7 @@ class NPC {
 	LinkedList<Item> inventoryList = new LinkedList<Item>();
 	
 	NPC(String name, String stats) {
-		this.id = DarkHeresyOverhaul.stringToID(name);
+		this.id = DarkHeresyOverhaul.idFrom(name);
 		this.name = name;
 		assignStats(stats);
 	}

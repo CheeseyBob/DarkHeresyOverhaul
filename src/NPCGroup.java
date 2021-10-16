@@ -5,7 +5,7 @@ abstract class NPCGroup {
 	LinkedList<NPC> npcList = new LinkedList<NPC>();
 	
 	NPCGroup(String name) {
-		this.id = DarkHeresyOverhaul.stringToID(name);
+		this.id = DarkHeresyOverhaul.idFrom(name);
 		this.name = name;
 		setNPCList();
 	}

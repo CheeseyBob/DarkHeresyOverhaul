@@ -154,7 +154,7 @@ class Armour extends Item {
 	@Override
 	public String getFullName(boolean isItemEquipped) {
 		if(isItemEquipped) {
-			return name+" ["+armour+"]";
+			return name+"<br>["+armour+"]";
 		} else {
 			return name+" ["+size+"]";
 		}
