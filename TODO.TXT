@@ -1,6 +1,8 @@
 	~~ To Do List ~~
 
 > Convert everything to generated HTML documents which use Bootstrap
+	- character creation:
+		- up to Mechanicus Background benefits
 	- multicol divs need updating
 	- replace with generated HTML document:
 		- Bionics.html

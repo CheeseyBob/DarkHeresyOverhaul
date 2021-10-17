@@ -467,6 +467,8 @@ class Bionic {
 			"Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.");
 	public static final SpecialRule maglevCoils = new SpecialRule("Maglev Coils",
 			"You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.");
+	public static final SpecialRule mechadendrite = new SpecialRule("Mechadendrite",
+			"You have the chosen mechadendrite.");
 	public static final SpecialRule mechadendrite_ballistic = new SpecialRule("Mechadendrite (Ballistic)",
 			"Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.");
 	public static final SpecialRule mechadendrite_manipulator = new SpecialRule("Mechadendrite (Manipulator)",

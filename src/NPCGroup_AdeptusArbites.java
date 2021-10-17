@@ -87,7 +87,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.equippedItemList.add(Armour.carapaceChestplate);
 		npc.inventoryList.add(MeleeWeapon.shockMaul);
 		npc.inventoryList.add(RangedWeapon.arbitesShotgun);
-		npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+		npc.inventoryList.add(Ammo.shotgun_arbites_mag);
 		npc.inventoryList.add(RangedWeapon.pistol_arbites);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.manacles);
@@ -117,7 +117,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.equippedItemList.add(Armour.carapaceArmour);
 		npc.inventoryList.add(MeleeWeapon.shockMaul);
 		npc.inventoryList.add(RangedWeapon.arbitesShotgun);
-		npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+		npc.inventoryList.add(Ammo.shotgun_arbites_mag);
 		npc.inventoryList.add(RangedWeapon.pistol_arbites);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.manacles);
@@ -145,7 +145,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.equippedItemList.add(Armour.carapaceChestplate);
 		npc.inventoryList.add(MeleeWeapon.shockMaul);
 		npc.inventoryList.add(RangedWeapon.arbitesShotgun);
-		npc.inventoryList.add(Ammo.arbitesShotgun_mag);
+		npc.inventoryList.add(Ammo.shotgun_arbites_mag);
 		npc.inventoryList.add(RangedWeapon.pistol_arbites);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.manacles);

@@ -115,6 +115,13 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.hack.withBonus(0));
 		npc.skillList.add(Skill.repair.withBonus(10));
 		npc.skillList.add(Skill.useTech.withBonus(20));
+		npc.equippedItemList.add(Clothing.mechanicusRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff);
+		npc.inventoryList.add(RangedWeapon.laspistol);
+		npc.inventoryList.add(Ammo.laspistol_powerPack.times(2));
+		npc.inventoryList.add(Tool.auspex);
+		npc.inventoryList.add(MiscItem.glowGlobe);
+		npc.inventoryList.add(MiscItem.gelt);
 		npcList.add(npc);
 		
 		npc = new NPC("Tech-Priest", "30,30,30,35,30,40,35,30,30");

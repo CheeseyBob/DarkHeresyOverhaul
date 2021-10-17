@@ -56,6 +56,8 @@ class MeleeWeapon extends Item {
 	public static final Item spear = new Item("Spear", 3);
 	public static final Item spear_savage = new Item("Savage Spear", 3);
 	public static final Item staff = new Item("Staff", 3);
+	public static final Item staff_astraTelepathica = new Item("Astra Telepathica Staff", 3);
+	public static final Item staff_mechanicus = new Item("Mechanicus Staff", 3);
 	public static final Item longDagger = new Item("Long Dagger", 1);
 	public static final Item warHammer = new Item("War Hammer", 3);
 	public static final Item greatWarHammer = new Item("Great War Hammer", 4);
@@ -111,11 +113,12 @@ class Ammo extends Item {
 	
 	public static final Item laspistol_powerPack = new Item("Laspistol Power Pack", 1);
 	public static final Item pistol_mag = new Item("Pistol Mag", 1);
+	public static final Item pistol_arbites_mag = new Item("Arbites Pistol Mag", 1);
 	public static final Item stubber_mag = new Item("Stubber Mag", 1);
 	public static final Item autopistol_mag = new Item("Autopistol Mag", 1);
 	public static final Item lasgun_powerPack = new Item("Lasgun Power Pack", 1);
 	public static final Item pumpActionShotgun_mag = new Item("Pump-Action Shotgun Mag", 1);
-	public static final Item arbitesShotgun_mag = new Item("Arbites Shotgun Mag", 1);
+	public static final Item shotgun_arbites_mag = new Item("Arbites Shotgun Mag", 1);
 	public static final Item autostubber_mag = new Item("Autostubber Mag", 1);
 	public static final Item combatShotgun_mag = new Item("Combat Shotgun Mag", 1);
 	public static final Item flamer_canister = new Item("Flamer Canister", 1);

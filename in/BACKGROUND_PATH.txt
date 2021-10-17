@@ -1,0 +1,4 @@
+			<div class="col-!!@BACKGROUND_PATH_COL_SIZE!!">
+				<h5>!!@BACKGROUND_PATH_NAME!!</h5>
+!BACKGROUND_PATH_BENEFITS_LIST
+			</div>

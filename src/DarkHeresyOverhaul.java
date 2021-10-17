@@ -21,6 +21,8 @@ class DarkHeresyOverhaul {
 	
 	// Character Creation //
 	private static HomeWorld homeWorld = null;
+	private static Background background = null;
+	private static Background.BackgroundPath backgroundPath = null;
 	
 	// NPC Groups //
 	private static NPCGroup npcGroup = null;
@@ -60,6 +62,59 @@ class DarkHeresyOverhaul {
 		return idString;
 	}
 	
+	private static void printBackgroundBenefitsList() {
+		for(Background background : Background.list) {
+			DarkHeresyOverhaul.background = background;
+			processFile("BACKGROUND_BENEFITS");
+		}
+	}
+	
+	private static void printBackgroundPathList() {
+		for(Background.BackgroundPath backgroundPath : background.backgroundPathList) {
+			DarkHeresyOverhaul.backgroundPath = backgroundPath;
+			processFile("BACKGROUND_PATH");
+		}
+	}
+	
+	private static void printBackgroundPathBenefitsList() {
+		pw.println("				<b>Characteristic Increases</b>");
+		pw.println("				<ul>");
+		for(String characteristicIncrease : DarkHeresyOverhaul.backgroundPath.characteristicsIncreaseList) {
+			pw.println("					<li>"+characteristicIncrease+"</li>");
+		}
+		if(DarkHeresyOverhaul.backgroundPath.characteristicsIncreaseList.length == 0) {
+			pw.println("					<li>None</li>");
+		}
+		pw.println("				</ul>");
+		pw.println("				<b>Talents</b>");
+		pw.println("				<ul>");
+		for(SpecialRule special : DarkHeresyOverhaul.backgroundPath.specialRuleList) {
+			pw.println("					<li>"+special.getFullName()+"</li>");
+		}
+		if(DarkHeresyOverhaul.backgroundPath.specialRuleList.length == 0) {
+			pw.println("					<li>None</li>");
+		}
+		pw.println("				</ul>");
+		pw.println("				<b>Skills</b>");
+		pw.println("				<ul>");
+		for(Skill skill : DarkHeresyOverhaul.backgroundPath.skillList) {
+			pw.println("					<li>"+skill.getFullName()+"</li>");
+		}
+		if(DarkHeresyOverhaul.backgroundPath.skillList.length == 0) {
+			pw.println("					<li>None</li>");
+		}
+		pw.println("				</ul>");
+		pw.println("				<b>Items</b>");
+		pw.println("				<ul>");
+		for(Item item : DarkHeresyOverhaul.backgroundPath.itemList) {
+			pw.println("					<li>"+item.getFullName(false)+"</li>");
+		}
+		if(DarkHeresyOverhaul.backgroundPath.itemList.length == 0) {
+			pw.println("					<li>None</li>");
+		}
+		pw.println("				</ul>");
+	}
+	
 	private static void printCharacterCreationFile() {
 		pw = TextFileHandler.startWritingToFile("out/CharacterCreation.html");
 		title = "Character Creation";
@@ -89,17 +144,7 @@ class DarkHeresyOverhaul {
 	}
 	
 	private static void printHomeWorldBenefitsList() {
-		HomeWorld[] homeWorldList = {
-				new HomeWorld_Feral(),
-				new HomeWorld_Forge(),
-				new HomeWorld_Highborn(),
-				new HomeWorld_Hive(),
-				new HomeWorld_Shrine(),
-				new HomeWorld_Tithe(),
-				new HomeWorld_Void(),
-				new HomeWorld_War()
-		};
-		for(HomeWorld homeWorld : homeWorldList) {
+		for(HomeWorld homeWorld : HomeWorld.list) {
 			DarkHeresyOverhaul.homeWorld = homeWorld;
 			DarkHeresyOverhaul.specialRuleList = homeWorld.specialRuleList;
 			processFile("HOME_WORLD_BENEFITS");
@@ -168,7 +213,7 @@ class DarkHeresyOverhaul {
 	
 	private enum Command {
 		PROCESS,
-		HOME_WORLD_BENEFITS_LIST, HOME_WORLD_BENEFITS,
+		HOME_WORLD_BENEFITS_LIST, HOME_WORLD_BENEFITS, BACKGROUND_BENEFITS_LIST, BACKGROUND_PATH_LIST, BACKGROUND_PATH_BENEFITS_LIST,
 		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
 		
 		private static void run(String commandCode) {
@@ -190,6 +235,15 @@ class DarkHeresyOverhaul {
 				break;
 			case HOME_WORLD_BENEFITS:
 				processFile("HOME_WORLD_BENEFITS");
+				break;
+			case BACKGROUND_BENEFITS_LIST:
+				printBackgroundBenefitsList();
+				break;
+			case BACKGROUND_PATH_LIST:
+				printBackgroundPathList();
+				break;
+			case BACKGROUND_PATH_BENEFITS_LIST:
+				printBackgroundPathBenefitsList();
 				break;
 			case CHARACTER_SHEET_LIST:
 				printCharacterSheetList();
@@ -217,7 +271,7 @@ class DarkHeresyOverhaul {
 	
 	private enum Variable {
 		TITLE,
-		HOME_WORLD_NAME, 
+		HOME_WORLD_NAME, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
 		CHARACTER_ID, CHARACTER_NAME,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
@@ -227,6 +281,14 @@ class DarkHeresyOverhaul {
 			switch (this) {
 			case HOME_WORLD_NAME:
 				return homeWorld.name;
+			case BACKGROUND_NAME:
+				return background.name;
+			case BACKGROUND_APTITUDE:
+				return background.aptitude;
+			case BACKGROUND_PATH_NAME:
+				return backgroundPath.name;
+			case BACKGROUND_PATH_COL_SIZE:
+				return ""+(12/background.backgroundPathList.size());
 			case CHARACTER_ID:
 				return npc.id;
 			case CHARACTER_NAME:
