@@ -282,16 +282,40 @@ class Background {
 			.withStartingPaths(
 					new BackgroundPath("Cleric",
 							new String[] {
-									
+									"Weapon Skill +5",
+									"Ballistic Skill +5",
+									"Strength +5",
+									"Toughness +5",
+									"Agility +5",
+									"Intelligence +5",
+									"Perception +5",
+									"Willpower +5",
+									"Fellowship +10",
 							},
 							new Skill[] {
-									
+									Skill.craft.withBonus(10),
+									Skill.command.withBonus(10),
+									Skill.inquire.withBonus(10),
+									Skill.inspire.withBonus(10),
+									Skill.persuade.withBonus(10),
+									Skill.referenceCommonLore.withBonus(10),
+									Skill.treatWounds.withBonus(0),
 							},
 							new SpecialRule[] {
-									
+									Talent.experienced.withParameter("Imperial Creed"),
+									Talent.knowledgable.withParameter("Adeptus Ministorum"),
+									Talent.language.withParameter("High Gothic + Low Gothic"),
+									Talent.publicSpeaker,
+									Talent.trade_copyist,
+									Talent.trade_loremancer,
 							},
 							new Item[] {
-									
+									Clothing.ministorumRobes,
+									Armour.chainCoat,
+									MeleeWeapon.warHammer_ecclesiarchy,
+									MeleeWeapon.shortsword_ecclesiarchy,
+									Tool.tome_imperialCreed,
+									new Item("Aquilla Necklace", 0),
 							}
 							)
 					),
@@ -299,16 +323,34 @@ class Background {
 			.withStartingPaths(
 					new BackgroundPath("Veteran",
 							new String[] {
-									
+									"Weapon Skill +10",
+									"Ballistic Skill +15",
+									"Strength +10",
+									"Toughness +10",
 							},
 							new Skill[] {
-									
+									Skill.command.withBonus(10),
+									Skill.navigate.withBonus(10),
+									Skill.notice.withBonus(10),
+									Skill.reflex.withBonus(10),
+									Skill.parry.withBonus(10),
 							},
 							new SpecialRule[] {
-									
+									Talent.language.withParameter("Low Gothic"),
+									Talent.nervesOfSteel,
+									Talent.rapidReload,
+									Talent.recoilCompensation,
+									Talent.weaponFamiliarity_ranged.withParameter("Lasgun"),
+									Talent.weaponMaster_ranged.withParameter("Lasgun"),
 							},
 							new Item[] {
-									
+									Clothing.militaryUniform,
+									Armour.flakArmour,
+									RangedWeapon.lasgun_bayonet,
+									Ammo.lasgun_powerPack,
+									ThrownWeapon.fragHandGrenade,
+									MeleeWeapon.knife,
+									MiscItem.lhoSticks,
 							}
 							)
 					),

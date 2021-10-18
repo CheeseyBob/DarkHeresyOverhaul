@@ -1,7 +1,7 @@
 class HomeWorld_Feral extends HomeWorld {
 
 	HomeWorld_Feral() {
-		super("Feral World");
+		super("Feral World", Characteristic.S, Characteristic.T, Characteristic.Fel);
 	}
 
 	@Override

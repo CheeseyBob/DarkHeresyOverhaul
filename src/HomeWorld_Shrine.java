@@ -1,7 +1,7 @@
 class HomeWorld_Shrine extends HomeWorld {
 
 	HomeWorld_Shrine() {
-		super("Shrine World");
+		super("Shrine World", Characteristic.WP, Characteristic.Fel, Characteristic.Per);
 	}
 
 	@Override

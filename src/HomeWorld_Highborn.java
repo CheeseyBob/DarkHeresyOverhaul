@@ -1,7 +1,7 @@
 class HomeWorld_Highborn extends HomeWorld {
 
 	HomeWorld_Highborn() {
-		super("Highborn");
+		super("Highborn", Characteristic.Int, Characteristic.Fel, Characteristic.T);
 	}
 
 	@Override

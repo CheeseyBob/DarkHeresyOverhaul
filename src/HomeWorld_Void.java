@@ -1,7 +1,7 @@
 class HomeWorld_Void extends HomeWorld {
 
 	HomeWorld_Void() {
-		super("Void Born");
+		super("Void Born", Characteristic.Int, Characteristic.WP, Characteristic.S);
 	}
 
 	@Override

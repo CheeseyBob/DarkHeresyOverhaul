@@ -1,7 +1,13 @@
-	<div class="container-fluid">
-		<h4 class="text-center">!!@BACKGROUND_NAME!!</h4>
-		<p><b>Aptitude:</b> !!@BACKGROUND_APTITUDE!!</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#!!@BACKGROUND_ID!!">
+				<h4>!!@BACKGROUND_NAME!!</h4>
+			</button>
+		</div>
+		<div id="!!@BACKGROUND_ID!!" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> !!@BACKGROUND_APTITUDE!!</p>
+			<div class="row">
 !BACKGROUND_PATH_LIST
+			</div>
 		</div>
 	</div>

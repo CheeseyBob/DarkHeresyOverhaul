@@ -1,7 +1,7 @@
 class HomeWorld_Forge extends HomeWorld {
 
 	HomeWorld_Forge() {
-		super("Forge World");
+		super("Forge World", Characteristic.T, Characteristic.Int, Characteristic.Ag);
 	}
 
 	@Override

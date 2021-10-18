@@ -60,8 +60,10 @@ class MeleeWeapon extends Item {
 	public static final Item staff_mechanicus = new Item("Mechanicus Staff", 3);
 	public static final Item longDagger = new Item("Long Dagger", 1);
 	public static final Item warHammer = new Item("War Hammer", 3);
+	public static final Item warHammer_ecclesiarchy = new Item("Hammer of Doctrine", 3);
 	public static final Item greatWarHammer = new Item("Great War Hammer", 4);
 	public static final Item shortsword = new Item("Shortsword", 2);
+	public static final Item shortsword_ecclesiarchy = new Item("Blade of Piety", 2);
 	public static final Item chainsword = new Item("Chainsword", 3);
 	public static final Item chainsword_mono = new Item("Mono-Chainsword", 3);
 	public static final Item chainsword_mastercrafted = new Item("Mastercrafted Chainsword", 3);

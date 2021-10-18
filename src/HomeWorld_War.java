@@ -1,7 +1,7 @@
 class HomeWorld_War extends HomeWorld {
 
 	HomeWorld_War() {
-		super("War World");
+		super("War World", Characteristic.Ag, Characteristic.Per, Characteristic.Fel);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 class HomeWorld_Hive extends HomeWorld {
 
 	HomeWorld_Hive() {
-		super("Hive World");
+		super("Hive World", Characteristic.Per, Characteristic.Fel, Characteristic.T);
 	}
 
 	@Override

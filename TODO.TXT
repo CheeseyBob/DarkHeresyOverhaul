@@ -1,8 +1,6 @@
 	~~ To Do List ~~
 
-> Convert everything to generated HTML documents which use Bootstrap
-	- character creation:
-		- up to Mechanicus Background benefits
+>>> Convert everything to generated HTML documents which use Bootstrap
 	- multicol divs need updating
 	- replace with generated HTML document:
 		- Bionics.html
@@ -10,7 +8,19 @@
 		- PsychicPowers.html
 		- Talents.html
 		- Traits.html
-		
+
+>>> NPC Groups:
+	- Astra Telepathica
+	- Outcasts
+	- Misc/unranked characters such as Arbites K9s and Mechanicus Servitors
+
+>>> Character Creation:
+	- Astra Telepathica and Outcast Backgrounds
+	- bring the character to life section
+
+>>> Psychic Phenomena & Perils tables
+
+>>> Psychic Powers
 
 > Lore items/talents for rituals
 
@@ -18,19 +28,10 @@
 
 > Think about how mounts/mounted combat will work. Also interactions with beasts in general.
 
-> bring the character to life section of chargen
-
 > More Fieldcraft Talents
 	- stuff about Beasts / wrangling / mounted combat
 
->>> Psychic Phenomena & Perils tables
-
->>> continue with psychic powers
-
 > More NPC personality tables
-
->>> make example characters (in particular for services)
-	- also include unranked characters, such as Arbites' K9s and Mechanicus Servitors.
 
 > See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
 
@@ -39,6 +40,10 @@
 
 
 	~~ Test Scenarios ~~
+
+> Demonstration of cover & pinning
+
+> Demonstration of charging and melee
 
 > Shootout in Darkness with Energy damage / Fire weapons.
 

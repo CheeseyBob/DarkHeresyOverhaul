@@ -1,7 +1,7 @@
 class HomeWorld_Tithe extends HomeWorld {
 
 	HomeWorld_Tithe() {
-		super("Tithe World");
+		super("Tithe World", Characteristic.S, Characteristic.Ag, Characteristic.Int);
 	}
 
 	@Override
