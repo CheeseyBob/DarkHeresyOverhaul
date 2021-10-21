@@ -1,13 +1,13 @@
 	~~ To Do List ~~
 
 >>> Convert everything to generated HTML documents which use Bootstrap
-	- multicol divs need updating
 	- replace with generated HTML document:
 		- Bionics.html
 		- all the item types
 		- PsychicPowers.html
 		- Talents.html
 		- Traits.html
+		- Aspects.html
 
 >>> NPC Groups:
 	- Astra Telepathica

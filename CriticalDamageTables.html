@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Critical Damage Tables - Dark Heresy Overhaul</title>
+	<title>Critical Damage - Dark Heresy Overhaul</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -19,7 +19,7 @@
 </ul>
 
 
-<h1 class="pt-3 text-center">Critical Damage Tables</h1>
+<h1 class="pt-3 text-center">Critical Damage</h1>
 <div class="container-fluid p-3">
 	<p>When a character's Wounds exceed their Maximum Wounds, any damage they take causes Critical Damage in addition to inflicting Wounds - this includes the hit which first causes them to exceed their Maximum Wounds.
 	Determine the location hit and apply the result from the relevant table.
@@ -27,840 +27,823 @@
 	</p>
 	
 	
-	<h3>Determining Critical Damage Location</h3>
-	<div class="multicolContainer">
-	
-	
-	<table>
-	<tr>
-	<th colspan="2">Critical Damage Location<br>(Humanoids)</th>
-	</tr>
-	<tr>
-	<th>d10</th>
-	<th>Location</th>
-	</tr>
-	<tr>
-	<td>1-5</td>
-	<td>Body</td>
-	</tr>
-	<tr>
-	<td>6</td>
-	<td>Left Arm</td>
-	</tr>
-	<tr>
-	<td>7</td>
-	<td>Right Arm</td>
-	</tr>
-	<tr>
-	<td>8</td>
-	<td>Left Leg</td>
-	</tr>
-	<tr>
-	<td>9</td>
-	<td>Right Leg</td>
-	</tr>
-	<tr>
-	<td>10</td>
-	<td>Head</td>
-	</tr>
-	</table>
-	
-	
-	<table>
-	<tr>
-	<th colspan="2">Critical Damage Location<br>(Non-Humanoids)</th>
-	</tr>
-	<tr>
-	<td>
-	<p>Roll a d10 for each limb in order: arms then legs then heads.</p>
-	<ol>
-	<li>Roll a d10 for each arm.
-	On a 10, that arm is hit.</li>
-	<li>If an arm is not hit, roll a d10 for each leg.
-	On a 10, that leg is hit.</li>
-	<li>If a leg is not hit, roll a d10 for each head.
-	On a 10, that head is hit.</li>
-	<li>If a head is not hit, the body is hit.</li>
-	</ol>
-	</td>
-	</tr>
-	</table>
-	
-	
+	<h2 class="pt-3 text-center">Critical Damage Location</h2>
+	<div class="row">
+		<div class="col">
+			<h4>Humanoids</h4>
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th>d10</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1-5</td>
+						<td>Body</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Left Arm</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Right Arm</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Left Leg</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Right Leg</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Head</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col">
+			<h4>Non-Humanoids</h4>
+			<ol>
+				<li>Roll a d10 for each arm.
+				On a 10, that arm is hit.</li>
+				<li>If an arm is not hit, roll a d10 for each leg.
+				On a 10, that leg is hit.</li>
+				<li>If a leg is not hit, roll a d10 for each head.
+				On a 10, that head is hit.</li>
+				<li>If a head is not hit, the body is hit.</li>
+			</ol>
+		</div>
 	</div>
 	
 	
-	<h2>Chemical Critical Damage</h2>
-	<div class="multicolContainer">
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Chemical Critical Damage Effects - Arm</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; drop held item; 1d10 WS and BS damage</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2); drop held item; 1d10 WS and BS damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3); drop held item; 1d10+5 WS and BS damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4); held item becomes Damaged; 1d10+10 WS and BS damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5); held item becomes Damaged(2); 1d10+15 WS and BS damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>As above, plus permenantly reduce WS and BS by the amount of critical damage taken</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Chemical Critical Damage Effects - Body</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; 1 Strength and Toughness damage</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2); 1d10 Strength and Toughness damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3); 1d10 Strength and Toughness damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4); 1d10+5 Strength and Toughness damage and permenant reduction; worn items become Damaged</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5); 1d10+10 Strength and Toughness damage and permenant reduction; worn items become Damaged(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>As above, plus permenantly reduce Strength and Toughness by the amount of critical damage taken</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Chemical Critical Damage Effects - Head</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Dazzled; 1d10 Perception and Fellowship damage</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Dazzled(2); 1d10 Perception and Fellowship damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Dazzled(3); 1d10+5 Perception and Fellowship damage and permenant reduction (if 9-10, gain <b>Lost Eye</b>)</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Dazzled(4); 1d10+10 Perception and Fellowship damage and permenant reduction; gain <b>Blind</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Dazzled(5); 1d10+15 Perception and Fellowship damage and permenant reduction; gain <b>Blind</b> and <b>Deaf</b></td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>As above, plus permenantly reduce Perception and Fellowship by the amount of critical damage taken</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Chemical Critical Damage Effects - Leg</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone; 1d10 Agility damage</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone; 1d10 Agility damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone; 1d10+5 Agility damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone; 1d10+10 Agility damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Prone; 1d10+15 Agility damage and permenant reduction</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>As above, plus permenantly reduce Agility by the amount of critical damage taken</td>
-	</tr>
-	</table>
-	<p>
-	
-	
+	<h2 class="pt-3 text-center">Chemical</h2>
+	<div class="row">
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Chemical Critical Damage Effects - Arm</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned; drop held item; 1d10 WS and BS damage</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2); drop held item; 1d10 WS and BS damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3); drop held item; 1d10+5 WS and BS damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4); held item becomes Damaged; 1d10+10 WS and BS damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5); held item becomes Damaged(2); 1d10+15 WS and BS damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>As above, plus permenantly reduce WS and BS by the amount of critical damage taken</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Chemical Critical Damage Effects - Body</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+				<th>1-2</th>
+				<td>Become Stunned; 1 Strength and Toughness damage</td>
+				</tr>
+				<tr>
+				<th>3-4</th>
+				<td>Become Stunned(2); 1d10 Strength and Toughness damage</td>
+				</tr>
+				<tr>
+				<th>5-6</th>
+				<td>Become Stunned(3); 1d10 Strength and Toughness damage and permenant reduction</td>
+				</tr>
+				<tr>
+				<th>7-8</th>
+				<td>Become Stunned(4); 1d10+5 Strength and Toughness damage and permenant reduction; worn items become Damaged</td>
+				</tr>
+				<tr>
+				<th>9-10</th>
+				<td>Become Stunned(5); 1d10+10 Strength and Toughness damage and permenant reduction; worn items become Damaged(2)</td>
+				</tr>
+				<tr>
+				<th>11+</th>
+				<td>As above, plus permenantly reduce Strength and Toughness by the amount of critical damage taken</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Chemical Critical Damage Effects - Head</th>
+					</tr>
+					<tr>
+					<th>Damage</th>
+					<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Dazzled; 1d10 Perception and Fellowship damage</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Dazzled(2); 1d10 Perception and Fellowship damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Dazzled(3); 1d10+5 Perception and Fellowship damage and permenant reduction (if 9-10, gain <b>Lost Eye</b>)</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Dazzled(4); 1d10+10 Perception and Fellowship damage and permenant reduction; gain <b>Blind</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Dazzled(5); 1d10+15 Perception and Fellowship damage and permenant reduction; gain <b>Blind</b></td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>As above, plus permenantly reduce Perception and Fellowship by the amount of critical damage taken</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Chemical Critical Damage Effects - Leg</th>
+					</tr>
+					<tr>
+					<th>Damage</th>
+					<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone; 1d10 Agility damage</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone; 1d10 Agility damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone; 1d10+5 Agility damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone; 1d10+10 Agility damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Prone; 1d10+15 Agility damage and permenant reduction</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>As above, plus permenantly reduce Agility by the amount of critical damage taken</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	
 	
-	<h2>Energy Critical Damage</h2>
-	<div class="multicolContainer">
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Energy Critical Damage Effects - Arm</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; drop held item</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2); drop held item; 1d10 WS and BS damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3); drop held item; permenantly reduce WS and BS by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4); held item becomes Damaged; gain <b>Lost Hand</b>; become Burning</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5); held item is destroyed; gain <b>Lost Arm</b>; become Burning(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; area of Fire created</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Energy Critical Damage Effects - Body</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Burning</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Burning(2); 1d10 Strength and Toughness damage</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Burning(3); permenantly reduce Strength and Toughness by 1d10; worn items become Damaged</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Burning(4); permenantly reduce Strength and Toughness by 1d10+5; worn items are destroyed</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; area of Fire created; all carried items are destroyed</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Energy Critical Damage Effects - Head</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Dazzled</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Dazzled(2); 1d10 Perception and Fellowship damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Dazzled(3); permenantly reduce Perception and Fellowship by 1d10 (if 9-10, gain <b>Lost Eye</b>)</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Dazzled(4); permenantly reduce Fellowship by 1d10+5; gain <b>Blind</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Immediate death</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; area of Fire created</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Energy Critical Damage Effects - Leg</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone; 1d10 Agility damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone; permenantly reduce Agility by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone; gain <b>Lost Foot</b>; become Burning</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Prone; gain <b>Lost Leg</b>; become Burning(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; area of Fire created</td>
-	</tr>
-	</table>
-	<p>
-	
-	
+	<h2 class="pt-3 text-center">Energy</h2>
+	<div class="row">
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Energy Critical Damage Effects - Arm</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned; drop held item</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2); drop held item; 1d10 WS and BS damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3); drop held item; permenantly reduce WS and BS by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4); held item becomes Damaged; gain <b>Lost Hand</b>; become Burning</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5); held item is destroyed; gain <b>Lost Arm</b>; become Burning(2)</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; area of Fire created</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Energy Critical Damage Effects - Body</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Burning</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Burning(2); 1d10 Strength and Toughness damage</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Burning(3); permenantly reduce Strength and Toughness by 1d10; worn items become Damaged</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Burning(4); permenantly reduce Strength and Toughness by 1d10+5; worn items are destroyed</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; area of Fire created; all carried items are destroyed</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Energy Critical Damage Effects - Head</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Dazzled</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Dazzled(2); 1d10 Perception and Fellowship damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Dazzled(3); permenantly reduce Perception and Fellowship by 1d10 (if 9-10, gain <b>Lost Eye</b>)</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Dazzled(4); permenantly reduce Fellowship by 1d10+5; gain <b>Blind</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Immediate death</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; area of Fire created</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Energy Critical Damage Effects - Leg</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone; 1d10 Agility damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone; permenantly reduce Agility by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone; gain <b>Lost Foot</b>; become Burning</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Prone; gain <b>Lost Leg</b>; become Burning(2)</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; area of Fire created</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	
 	
-	<h2>Explosive Critical Damage</h2>
-	<div class="multicolContainer">
+	<h2 class="pt-3 text-center">Explosive</h2>
+	<div class="row">
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Explosive Critical Damage Effects - Arm</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned; drop held item</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2); held item is flung 1d10m; 1d10 WS and BS damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3); held item is flung 1d10+5m and becomes Damaged; permenantly reduce WS and BS by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4); held item is flung 1d10+10m and becomes Damaged; gain <b>Lost Hand</b>; become Bleeding Out</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5); held item is destroyed; gain <b>Lost Arm</b>; become Bleeding Out(2)</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Explosive Critical Damage Effects - Body</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone; flung 1d5m</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone; flung 2d5m; 1d10 Strength and Toughness damage; worn items become Damaged</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone and Bleeding Out; flung 3d5m; permenantly reduce Strength and Toughness by 1d10; worn items become Damaged</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(4) and Prone and Bleeding Out(2); flung 4d5m; permenantly reduce Strength and Toughness by 1d10+5; worn items are destroyed</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Explosive Critical Damage Effects - Head</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Dazzled</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Dazzled(2); 1d10 Intelligence, Perception and Fellowship damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Dazzled(3); permenantly reduce Intelligence, Perception and Fellowship by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Dazzled(4); permenantly reduce Intelligence and Fellowship by 1d10+5; gain <b>Deaf</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Immediate death</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Explosive Critical Damage Effects - Leg</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone; flung 1d5m; 1d10 Agility damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone; flung 1d5m; permenantly reduce Agility by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone; flung 2d5m; gain <b>Lost Foot</b>; become Bleeding Out</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Prone; flung 3d5m; gain <b>Lost Leg</b>; become Bleeding Out(2)</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6"></div>
 	
 	
-	<table>
-	<tr>
-	<th colspan="5">Explosive Critical Damage Effects - Arm</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; drop held item</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2); held item is flung 1d10m; 1d10 WS and BS damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3); held item is flung 1d10+5m and becomes Damaged; permenantly reduce WS and BS by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4); held item is flung 1d10+10m and becomes Damaged; gain <b>Lost Hand</b>; become Bleeding Out</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5); held item is destroyed; gain <b>Lost Arm</b>; become Bleeding Out(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Explosive Critical Damage Effects - Body</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone; flung 1d5m</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone; flung 2d5m; 1d10 Strength and Toughness damage; worn items become Damaged</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone and Bleeding Out; flung 3d5m; permenantly reduce Strength and Toughness by 1d10; worn items become Damaged</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(4) and Prone and Bleeding Out(2); flung 4d5m; permenantly reduce Strength and Toughness by 1d10+5; worn items are destroyed</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Explosive Critical Damage Effects - Head</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Dazzled</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Dazzled(2); 1d10 Intelligence, Perception and Fellowship damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Dazzled(3); permenantly reduce Intelligence, Perception and Fellowship by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Dazzled(4); permenantly reduce Intelligence and Fellowship by 1d10+5; gain <b>Deaf</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Immediate death</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Explosive Critical Damage Effects - Leg</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone; flung 1d5m; 1d10 Agility damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone; flung 1d5m; permenantly reduce Agility by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone; flung 2d5m; gain <b>Lost Foot</b>; become Bleeding Out</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Prone; flung 3d5m; gain <b>Lost Leg</b>; become Bleeding Out(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; carried explosives detonate and all other carried items are destroyed</td>
-	</tr>
-	</table>
-	<p>
-	
+	<h2 class="pt-3 text-center">Impact</h2>
+	<div class="row">
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Impact Critical Damage Effects - Arm</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned; drop held item</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2); held item flung 1d10m; 1d10 WS and BS damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3); held item flung 1d10+5m and becomes Damaged; permenantly reduce WS and BS by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Bleeding Out; held item flung 1d10+5m and becomes Damaged; gain <b>Lost Hand</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Bleeding Out(2); held item flung 1d10+10m and is destroyed; gain <b>Lost Arm</b></td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; if holding a firearm, severed arm does Attack Repeatedly (Ranged) in a random direction with Ballistic Skill 5</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Impact Critical Damage Effects - Body</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Fatigued</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Fatigued(2) and Prone; flung 1d5m; 1d10 Strength and Toughness damage</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Fatigued(3) and Prone; flung 2d5m; permenantly reduce Strength and Toughness by 1d10</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Fatigued(4) and Prone and Bleeding Out; flung 3d5m; permenantly reduce Strength and Toughness by 1d10+5</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Impact Critical Damage Effects - Head</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned(2)</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(4); stagger 1d5m; 1d10 Intelligence and Fellowship damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(6) and Prone; flung 1d5m; permenantly reduce Intelligence and Fellowship by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(8) and Prone; flung 2d5m; permenantly reduce Intelligence, Perception and Fellowship by 1d10+5</td>
+				<tr>
+					<th>9-10</th>
+					<td>Immediate death</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Impact Critical Damage Effects - Leg</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone; 1d10 Agility damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone; permenantly reduce Agility by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone; gain <b>Lost Foot</b>; become Bleeding Out</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Prone; gain <b>Lost Leg</b>; become Bleeding Out(2)</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	
 	
-	<h2>Impact Critical Damage</h2>
-	<div class="multicolContainer">
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Impact Critical Damage Effects - Arm</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; drop held item</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2); held item flung 1d10m; 1d10 WS and BS damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3); held item flung 1d10+5m and becomes Damaged; permenantly reduce WS and BS by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Bleeding Out; held item flung 1d10+5m and becomes Damaged; gain <b>Lost Hand</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Bleeding Out(2); held item flung 1d10+10m and is destroyed; gain <b>Lost Arm</b></td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; if holding a firearm, severed arm does Attack Repeatedly (Ranged) in a random direction with Ballistic Skill 5</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Impact Critical Damage Effects - Body</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Fatigued</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Fatigued(2) and Prone; flung 1d5m; 1d10 Strength and Toughness damage</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Fatigued(3) and Prone; flung 2d5m; permenantly reduce Strength and Toughness by 1d10</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Fatigued(4) and Prone and Bleeding Out; flung 3d5m; permenantly reduce Strength and Toughness by 1d10+5</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Impact Critical Damage Effects - Head</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned(2)</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(4); stagger 1d5m; 1d10 Intelligence and Fellowship damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(6) and Prone; flung 1d5m; permenantly reduce Intelligence and Fellowship by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(8) and Prone; flung 2d5m; permenantly reduce Intelligence, Perception and Fellowship by 1d10+5</td>
-	<tr>
-	<th>9-10</th>
-	<td>Immediate death</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Impact Critical Damage Effects - Leg</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone; 1d10 Agility damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone; permenantly reduce Agility by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone; gain <b>Lost Foot</b>; become Bleeding Out</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Prone; gain <b>Lost Leg</b>; become Bleeding Out(2)</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
+	<h2 class="pt-3 text-center">Rending</h2>
+	<div class="row">
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Rending Critical Damage Effects - Arm</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned; drop held item</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Bleeding Out; drop held item; 1d10 WS and BS damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Bleeding Out(2); drop held item; permenantly reduce WS and BS by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Bleeding Out(3); drop held item; gain <b>Lost Hand</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Bleeding Out(4); drop held item; gain <b>Lost Arm</b></td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death; if holding a firearm, severed arm does Attack Repeatedly (Ranged) in a random direction with Ballistic Skill 5</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Rending Critical Damage Effects - Body</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Bleeding Out</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Bleeding Out(2); 1d10 Strength and Toughness damage</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Bleeding Out(3); permenantly reduce Strength and Toughness by 1d10</td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Bleeding Out(4); permenantly reduce Strength and Toughness by 1d10+5</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Rending Critical Damage Effects - Head</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Bleeding Out</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Bleeding Out(2); 1d10 Fellowship damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Bleeding Out(3); permenantly reduce Fellowship by 1d10 (if 9-10, gain <b>Lost Eye</b>)</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Bleeding Out(4); permenantly reduce Fellowship by 1d10+5 (if 9-12, gain <b>Lost Eye</b>, if 13-15, gain <b>Mute</b>, if 16-20, gain <b>Blind</b>)</td>
+				<tr>
+					<th>9-10</th>
+					<td>Immediate death</td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-6">
+			<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+						<th colspan="5">Rending Critical Damage Effects - Leg</th>
+					</tr>
+					<tr>
+						<th>Damage</th>
+						<th>Effect</th>
+					</tr>
+				</thead>
+				<tr>
+					<th>1-2</th>
+					<td>Become Stunned and Prone</td>
+				</tr>
+				<tr>
+					<th>3-4</th>
+					<td>Become Stunned(2) and Prone and Bleeding Out; 1d10 Agility damage</td>
+				</tr>
+				<tr>
+					<th>5-6</th>
+					<td>Become Stunned(3) and Prone and Bleeding Out(2); permenantly reduce Agility by 1d10</td>
+				</tr>
+				<tr>
+					<th>7-8</th>
+					<td>Become Stunned(4) and Prone and Bleeding Out(3); gain <b>Lost Foot</b></td>
+				</tr>
+				<tr>
+					<th>9-10</th>
+					<td>Become Stunned(5) and Prone and Bleeding Out(4); gain <b>Lost Leg</b></td>
+				</tr>
+				<tr>
+					<th>11+</th>
+					<td>Immediate death</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	
 	
-	<h2>Rending Critical Damage</h2>
-	<div class="multicolContainer">
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Rending Critical Damage Effects - Arm</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned; drop held item</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Bleeding Out; drop held item; 1d10 WS and BS damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Bleeding Out(2); drop held item; permenantly reduce WS and BS by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Bleeding Out(3); drop held item; gain <b>Lost Hand</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Bleeding Out(4); drop held item; gain <b>Lost Arm</b></td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death; if holding a firearm, severed arm does Attack Repeatedly (Ranged) in a random direction with Ballistic Skill 5</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Rending Critical Damage Effects - Body</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Bleeding Out</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Bleeding Out(2); 1d10 Strength and Toughness damage</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Bleeding Out(3); permenantly reduce Strength and Toughness by 1d10</td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Bleeding Out(4); permenantly reduce Strength and Toughness by 1d10+5</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Rending Critical Damage Effects - Head</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Bleeding Out</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Bleeding Out(2); 1d10 Fellowship damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Bleeding Out(3); permenantly reduce Fellowship by 1d10 (if 9-10, gain <b>Lost Eye</b>)</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Bleeding Out(4); permenantly reduce Fellowship by 1d10+5 (if 9-12, gain <b>Lost Eye</b>, if 13-15, gain <b>Mute</b>, if 16-20, gain <b>Blind</b>)</td>
-	<tr>
-	<th>9-10</th>
-	<td>Immediate death</td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	<table>
-	<tr>
-	<th colspan="5">Rending Critical Damage Effects - Leg</th>
-	</tr>
-	<tr>
-	<th>Damage</th>
-	<th>Effect</th>
-	</tr>
-	<tr>
-	<th>1-2</th>
-	<td>Become Stunned and Prone</td>
-	</tr>
-	<tr>
-	<th>3-4</th>
-	<td>Become Stunned(2) and Prone and Bleeding Out; 1d10 Agility damage</td>
-	</tr>
-	<tr>
-	<th>5-6</th>
-	<td>Become Stunned(3) and Prone and Bleeding Out(2); permenantly reduce Agility by 1d10</td>
-	</tr>
-	<tr>
-	<th>7-8</th>
-	<td>Become Stunned(4) and Prone and Bleeding Out(3); gain <b>Lost Foot</b></td>
-	</tr>
-	<tr>
-	<th>9-10</th>
-	<td>Become Stunned(5) and Prone and Bleeding Out(4); gain <b>Lost Leg</b></td>
-	</tr>
-	<tr>
-	<th>11+</th>
-	<td>Immediate death</td>
-	</tr>
-	</table>
-	<p>
-	
-	
-	</div>
-	
-	
-	<h2>Critical Damage Aspects</h2>
-	<ul>
-	<li><b>Lost Hand:</b>
-	Take a -20 penalty to any Test which would typically involve 2 hands, or where you have strapped an item to your hand in place of holding it.</li>
-	<li><b>Lost Arm:</b>
-	Take a -20 penalty to any Test which would typically involve 2 hands.</li>
-	<li><b>Lost Foot:</b>
-	Take a -10 penalty to any Agility Test involving the use of legs. Fall Prone on critical failures.</li>
-	<li><b>Lost Leg:</b>
-	Take a -10 penalty to any Agility Test involving the use of legs. Fall Prone on critical failures. Walking requires an Agility Test.</li>
-	<li><b>Lost Eye:</b>
-	Take a -10 penalty to any Test which would typically involve vision.</li>
-	<li><b>Blind:</b>
-	Take a -30 penalty to any Test which would typically involve vision and automatically fail any Test which relies on it.</li>
-	<li><b>Deaf:</b>
-	Take a -30 penalty to any Test which would typically involve hearing and automatically fail any Test which relies on it.</li>
-	<li><b>Mute:</b>
-	Take a -30 penalty to any Test which would typically involve speaking and automatically fail any Test which relies on it.</li>
-	</ul>
 </div>
 
 

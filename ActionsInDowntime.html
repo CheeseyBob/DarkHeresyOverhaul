@@ -26,222 +26,224 @@
 	<p>Extended Actions take multiple hours.</p>
 	
 	
-	<table>
-	<tr>
-	<th colspan="5">Actions</th>
-	</tr>
-	<tr>
-	<th>Action</th>
-	<th>Type</th>
-	<th>Requirement</th>
-	<th>Test</th>
-	<th>Result</th>
-	</tr>
-	<tr>
-	<th colspan="1">Movement Actions</th>
-	</tr>
-	<tr>
-	<td>Travel</td>
-	<td>Long</td>
-	<td>Basic</td>
-	<td>-</td>
-	<td>Travel for 1 hour</td>
-	</tr>
-	<tr>
-	<td>Haul Heavy Object</td>
-	<td>Long</td>
-	<td>Basic</td>
-	<td>Strength</td>
-	<td>Travel for 1 hour while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel</td>
-	</tr>
-	<tr>
-	<td>Navigate</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Travel for 1 hour through difficult terrain (effects determined by terrain)</td>
-	</tr>
-	<tr>
-	<td>Sneak (Follow Carefully)</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Agility</td>
-	<td>Follow a target unseen for 1 hour; lose target on failure; spotted on critical failure</td>
-	</tr>
-	<tr>
-	<td>Sneak (Follow Closely)</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Agility</td>
-	<td>Follow a target unseen for 1 hour; spotted on failure; lose target on critical failure</td>
-	</tr>
-	<tr>
-	<th colspan="1">Basic Actions</th>
-	</tr>
-	<tr>
-	<td>Charm</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Fellowship</td>
-	<td>Increase target's Disposition (amount depends on personality)</td>
-	</tr>
-	<tr>
-	<td>Contemplate</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Obtain Leads</td>
-	</tr>
-	<tr>
-	<td>Craft</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Get progress towards crafting</td>
-	</tr>
-	<tr>
-	<td>Disguise</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Become Disguised</td>
-	</tr>
-	<tr>
-	<td>Haggle</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Fellowship</td>
-	<td>Get a discount on a purchase; 10% + 10% per DoS</td>
-	</tr>
-	<tr>
-	<td>Inspect</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Perception</td>
-	<td>Get Clues</td>
-	</tr>
-	<tr>
-	<td>Inquire</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Fellowship</td>
-	<td>Get Clues; gain Attention on critical failure</td>
-	</tr>
-	<tr>
-	<td>Interrogate</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Willpower</td>
-	<td>Get Clues; subject is killed on critical failure</td>
-	</tr>
-	<tr>
-	<td>Persuade</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Fellowship</td>
-	<td>Get a bonus to Disposition</td>
-	</tr>
-	<tr>
-	<td>Read Person (Gain Insight)</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Perception</td>
-	<td>Get Info</td>
-	</tr>
-	<tr>
-	<td>Reference Forbidden Lore (Research)</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Get Clues/Info</td>
-	</tr>
-	<tr>
-	<td>Reference Scholasic Lore (Research)</td>
-	<td>Long</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Get Clues/Info</td>
-	</tr>
-	<tr>
-	<td>Rest</td>
-	<td>Extended</td>
-	<td>Basic</td>
-	<td>Toughness</td>
-	<td>Takes 10-TB hours; Overcome Bleeding Out completely; reduce Wounds</td>
-	</tr>
-	<tr>
-	<td>Search</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Perception</td>
-	<td>Get Clues/items</td>
-	</tr>
-	<tr>
-	<td>Set Trap</td>
-	<td>Short</td>
-	<td>Basic Skill</td>
-	<td>Intelligence</td>
-	<td>Create an environmental aspect</td>
-	</tr>
-	<tr>
-	<th colspan="1">Advanced Actions</th>
-	</tr>
-	<tr>
-	<td>Hack</td>
-	<td>Short</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Overcome target being Encrypted</td>
-	</tr>
-	<tr>
-	<td>Open Lock</td>
-	<td>Short</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Overcome target being Locked</td>
-	</tr>
-	<tr>
-	<td>Perform Surgery</td>
-	<td>Long</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Reduce Characteristic Damage of Target by 1 plus 1 per DoS; always inflicts 1d10 Wounds; critical failure inflicts 1d10 Rending Critical Damage</td>
-	</tr>
-	<tr>
-	<td>Perform Surgery (Attach Bionic)</td>
-	<td>Long</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Attach a bionic to the Target; always inflicts 1d10 Wounds; on critical failure, also inflict 1d10 Rending Critical Damage</td>
-	</tr>
-	<tr>
-	<td>Repair</td>
-	<td>Long</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Overcome target being Damaged; consumes 1 Component per level downgraded; on critical failure, target becomes Damaged</td>
-	</tr>
-	<tr>
-	<td>Treat Wounds</td>
-	<td>Long</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Target becomes Treated</td>
-	</tr>
-	<tr>
-	<td>Use Tech (Maintain)</td>
-	<td>Long</td>
-	<td>Skill</td>
-	<td>Intelligence</td>
-	<td>Target item becomes Maintained; on critical failure, target becomes Damaged</td>
-	</tr>
-	<tr>
-	<td>Wrangle</td>
-	<td>Short</td>
-	<td>Skill</td>
-	<td>Fellowship</td>
-	<td>Get a bonus to Disposition</td>
-	</tr>
+	<h2 class="pt-3 text-center">Actions Summary</h2>
+	<table class="table table-sm table-dark table-striped">
+		<thead>
+			<tr>
+				<th>Action</th>
+				<th>Type</th>
+				<th>Requirement</th>
+				<th>Test</th>
+				<th>Result</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="5">Movement Actions</th>
+			</tr>
+			<tr>
+				<td>Travel</td>
+				<td>Long</td>
+				<td>Basic</td>
+				<td>-</td>
+				<td>Travel for 1 hour</td>
+			</tr>
+			<tr>
+				<td>Haul</td>
+				<td>Long</td>
+				<td>Basic</td>
+				<td>Strength</td>
+				<td>Travel for 1 hour while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel</td>
+			</tr>
+			<tr>
+				<td>Navigate</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Travel for 1 hour through difficult terrain (effects determined by terrain)</td>
+			</tr>
+			<tr>
+				<td>Sneak (Follow Carefully)</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Agility</td>
+				<td>Follow a target unseen for 1 hour; lose target on failure; spotted on critical failure</td>
+			</tr>
+			<tr>
+				<td>Sneak (Follow Closely)</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Agility</td>
+				<td>Follow a target unseen for 1 hour; spotted on failure; lose target on critical failure</td>
+			</tr>
+			<tr>
+				<th colspan="5">Basic Actions</th>
+			</tr>
+			<tr>
+				<td>Charm</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Fellowship</td>
+				<td>Increase target's Disposition (amount depends on personality)</td>
+			</tr>
+			<tr>
+				<td>Contemplate</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Obtain Leads</td>
+			</tr>
+			<tr>
+				<td>Craft</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Get progress towards crafting</td>
+			</tr>
+			<tr>
+				<td>Disguise</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Become Disguised</td>
+			</tr>
+			<tr>
+				<td>Haggle</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Fellowship</td>
+				<td>Get a discount on a purchase; 10% + 10% per DoS</td>
+			</tr>
+			<tr>
+				<td>Inspect</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Perception</td>
+				<td>Get Clues</td>
+			</tr>
+			<tr>
+				<td>Inquire</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Fellowship</td>
+				<td>Get Clues; gain Attention on critical failure</td>
+			</tr>
+			<tr>
+				<td>Interrogate</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Willpower</td>
+				<td>Get Clues; subject is killed on critical failure</td>
+			</tr>
+			<tr>
+				<td>Persuade</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Fellowship</td>
+				<td>Get a bonus to Disposition</td>
+			</tr>
+			<tr>
+				<td>Read Person (Gain Insight)</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Perception</td>
+				<td>Get Info</td>
+			</tr>
+			<tr>
+				<td>Reference Forbidden Lore (Research)</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Get Clues/Info</td>
+			</tr>
+			<tr>
+				<td>Reference Scholasic Lore (Research)</td>
+				<td>Long</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Get Clues/Info</td>
+			</tr>
+			<tr>
+				<td>Rest</td>
+				<td>Extended</td>
+				<td>Basic</td>
+				<td>Toughness</td>
+				<td>Takes 10-TB hours; Overcome Bleeding Out completely; reduce Wounds</td>
+			</tr>
+			<tr>
+				<td>Search</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Perception</td>
+				<td>Get Clues/items</td>
+			</tr>
+			<tr>
+				<td>Set Trap</td>
+				<td>Short</td>
+				<td>Basic Skill</td>
+				<td>Intelligence</td>
+				<td>Create an environmental aspect</td>
+			</tr>
+			<tr>
+				<th colspan="5">Advanced Actions</th>
+			</tr>
+			<tr>
+				<td>Hack</td>
+				<td>Short</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Overcome target being Encrypted</td>
+			</tr>
+			<tr>
+				<td>Open Lock</td>
+				<td>Short</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Overcome target being Locked</td>
+			</tr>
+			<tr>
+				<td>Perform Surgery</td>
+				<td>Long</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Reduce Characteristic Damage of Target by 1 plus 1 per DoS; always inflicts 1d10 Wounds; critical failure inflicts 1d10 Rending Critical Damage</td>
+			</tr>
+			<tr>
+				<td>Perform Surgery (Attach Bionic)</td>
+				<td>Long</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Attach a bionic to the Target; always inflicts 1d10 Wounds; on critical failure, also inflict 1d10 Rending Critical Damage</td>
+			</tr>
+			<tr>
+				<td>Repair</td>
+				<td>Long</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Overcome target being Damaged; consumes 1 Component per level downgraded; on critical failure, target becomes Damaged</td>
+			</tr>
+			<tr>
+				<td>Treat Wounds</td>
+				<td>Long</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Target becomes Treated</td>
+			</tr>
+			<tr>
+				<td>Use Tech (Maintain)</td>
+				<td>Long</td>
+				<td>Skill</td>
+				<td>Intelligence</td>
+				<td>Target item becomes Maintained; on critical failure, target becomes Damaged</td>
+			</tr>
+			<tr>
+				<td>Wrangle</td>
+				<td>Short</td>
+				<td>Skill</td>
+				<td>Fellowship</td>
+				<td>Get a bonus to Disposition</td>
+			</tr>
+		</tbody>
 	</table>
 </div>
 

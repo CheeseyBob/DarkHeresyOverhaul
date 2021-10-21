@@ -25,13 +25,6 @@
 <div class="container-fluid p-3">
 	<h2 class="text-center">1. Roll Up The Character</h2>
 	<p>After rolling a character, you can Burn a Fate Point to bench that character and roll a new one.</p>
-	<ol>
-		<li>Roll a Home World using the table below.</li>
-		<li>Roll a Background using the table below.</li>
-		<li>Roll a Role using the table below.</li>
-		<li>Roll 2d10 + 20 for each Characteristic. For Characteristics in the bonus column for the Home World, reroll and keep the highest. For Characteristics in the penalty column, reroll and keep the lowest.</li>
-		<li>Set your Maximum Wounds to 5 + 2x Toughness Bonus.</li>
-	</ol>
 	
 	
 	<h4 class="text-center">Determine Home World</h4>
@@ -95,6 +88,17 @@
 			</tr>
 		</tbody>
 	</table>
+	
+	
+	<h4 class="text-center">Determine Characteristics</h4>
+	<ol>
+		<li>Roll 2d10+20 to determine each of the 9 Characteristics.</li>
+		<ul>
+			<li>For Characteristics in the bonus column on the Determine Home World table, reroll and keep the highest.</li>
+			<li>For Characteristics in the penalty column, reroll and keep the lowest.</li>
+		</ul>
+		<li>Set your Maximum Wounds to 5 + 2x Toughness Bonus.</li>
+	</ol>
 	
 	
 	<h4 class="text-center">Determine Background</h4>
@@ -293,14 +297,16 @@
 	</table>
 	
 	
-	<h2 class="text-center">2. Home World Benefits</h2>
-	<ol>
-		<li>Pick one of the two Characteristics in the bonus column for your homeworld to take as an Aptitude.</li>
-		<li>Pick one Talent listed under your Home World.</li>
-	</ol>
-	<div class="row">
-		<div class="col-6">
-			<h5 class="text-center">Feral World</h5>
+	<h2 class="text-center">Home World</h2>
+	<p>Choose an Aptitude and a Talent listed under your Home World.</p>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#FeralWorld">
+				<h4>Feral World</h4>
+			</button>
+		</div>
+		<div id="FeralWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Strength or Toughness</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Abhuman:</b>
@@ -332,8 +338,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Forge World</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#ForgeWorld">
+				<h4>Forge World</h4>
+			</button>
+		</div>
+		<div id="ForgeWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Toughness or Intelligence</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Knowledgable (Tech):</b>
@@ -365,8 +378,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Highborn</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Highborn">
+				<h4>Highborn</h4>
+			</button>
+		</div>
+		<div id="Highborn" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Intelligence or Fellowship</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Educated (2 Areas):</b>
@@ -402,8 +422,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Hive World</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#HiveWorld">
+				<h4>Hive World</h4>
+			</button>
+		</div>
+		<div id="HiveWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Perception or Fellowship</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Accustomed to Darkness:</b>
@@ -435,8 +462,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Shrine World</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#ShrineWorld">
+				<h4>Shrine World</h4>
+			</button>
+		</div>
+		<div id="ShrineWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Willpower or Fellowship</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Knowledgable (Calixis Sector):</b>
@@ -464,8 +498,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Tithe World</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#TitheWorld">
+				<h4>Tithe World</h4>
+			</button>
+		</div>
+		<div id="TitheWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Strength or Agility</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Operate (Wheeled/Tracked/Walker):</b>
@@ -497,8 +538,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">Void Born</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#VoidBorn">
+				<h4>Void Born</h4>
+			</button>
+		</div>
+		<div id="VoidBorn" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Intelligence or Willpower</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>Accustomed to Darkness:</b>
@@ -534,8 +582,15 @@
 				</tr>
 			</table>
 		</div>
-		<div class="col-6">
-			<h5 class="text-center">War World</h5>
+	</div>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#WarWorld">
+				<h4>War World</h4>
+			</button>
+		</div>
+		<div id="WarWorld" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Agility or Perception</p>
 			<table class="table table-sm table-dark">
 				<tr>
 					<td><b>First Aider:</b>
@@ -564,226 +619,576 @@
 			</table>
 		</div>
 	</div>
+
+
+	<div class="pt-3"></div>
 	
 	
-	<h2 class="text-center">3. Background</h2>
-	<p>Choose one of the aptitudes and starting paths listed under your Background.</p>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Adeptus Administratum</h4>
-		<p><b>Aptitude:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<h2 class="text-center">Background</h2>
+	<p>Choose an Aptitude and a starting package listed under your Background.</p>
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#AdeptusAdministratum">
+				<h4>Adeptus Administratum</h4>
+			</button>
+		</div>
+		<div id="AdeptusAdministratum" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Knowledge or Social</p>
+			<div class="row">
 			<div class="col-4">
-				<h5 class="text-center">Scholar</h5>
+				<h5>Scholar</h5>
+				<b>Characteristic Increases</b>
 				<ul>
-					<b>Characteristics</b>
-					<li>+10 Intelligence</li>
-					<b>Skills</b>
-					<li>Contemplate (+10)</li>
-					<li>Inquire (+10)</li>
-					<li>Inspect (+10)</li>
-					<li>Ref. Scholastic Lore (+20)</li>
-					<b>Talents</b>
+					<li>Intelligence +10</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
 					<li>Educated (Bureaucracy)</li>
 					<li>Expert (2 Areas)</li>
 					<li>Knowledgable (Administratum)</li>
 					<li>Language (High Gothic + Low Gothic)</li>
 					<li>Specialist Knowledge</li>
 					<li>Trade (Copyist)</li>
-					<b>Equipment</b>
-					<li>Administratum Robes</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Contemplate (+10)</li>
+					<li>Inquire (+10)</li>
+					<li>Inspect (+10)</li>
+					<li>Ref. Scholastic Lore (+20)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Administratum Robes [3]</li>
 					<li>Data-Tome (A Lore Area) [1]</li>
 					<li>Chrono [0]</li>
-					<li>Gelt [0]</li>
 				</ul>
 			</div>
 			<div class="col-4">
-				<h5 class="text-center">Operator</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Operator</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Agility +5</li>
+					<li>Intelligence +10</li>
+					<li>Perception +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Educated (Bureaucracy + 2 Areas)</li>
+					<li>Knowledgable (Administratum + Tech)</li>
+					<li>Language (High Gothic + Low Gothic)</li>
+					<li>Operate (1 Vehicle Type)</li>
+					<li>Trade (Copyist)</li>
+					<li>Interface Port</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Inquire (+10)</li>
+					<li>Inspect (+10)</li>
+					<li>Ref. Scholastic Lore (+10)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Administratum Robes [3]</li>
+					<li>Chrono [0]</li>
+				</ul>
 			</div>
 			<div class="col-4">
-				<h5 class="text-center">Chirurgeon</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Chirurgeon</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Intelligence +15</li>
+					<li>Perception +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Educated (Bureaucracy)</li>
+					<li>Knowledgable (Administratum)</li>
+					<li>Language (High Gothic + Low Gothic)</li>
+					<li>Trade (Copyist)</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Administer Drug (+10)</li>
+					<li>Inquire (+10)</li>
+					<li>Inspect (+20)</li>
+					<li>Perform Surgery (+10)</li>
+					<li>Ref. Scholastic Lore (+0)</li>
+					<li>Treat Wounds (+20)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Chirurgeon Robes [3]</li>
+					<li>Surgical Tools [1]</li>
+					<li>Quality Medkit [3]</li>
+					<li>Injector (De-Tox) [1]</li>
+					<li>Chrono [0]</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Adeptus Arbites</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#AdeptusArbites">
+				<h4>Adeptus Arbites</h4>
+			</button>
+		</div>
+		<div id="AdeptusArbites" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Offence or Defence</p>
+			<div class="row">
 			<div class="col-12">
-				<h5 class="text-center">Arbitrator</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Arbitrator</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Weapon Skill +10</li>
+					<li>Ballistic Skill +10</li>
+					<li>Strenth + 10</li>
+					<li>Toughness +10</li>
+					<li>Agility +5</li>
+					<li>Intelligence +5</li>
+					<li>Perception +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Educated (Judgement)</li>
+					<li>Knowledgable (Underworld)</li>
+					<li>Language (Low Gothic)</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Grapple (+10)</li>
+					<li>Inquire (+10)</li>
+					<li>Inspect (+10)</li>
+					<li>Interrogate (+10)</li>
+					<li>Knock Down (+10)</li>
+					<li>Notice (+10)</li>
+					<li>Ref. Common Lore (+10)</li>
+					<li>Ref. Scholastic Lore (+10)</li>
+					<li>Run (+10)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Arbites Uniform [3]</li>
+					<li>Carapace Chestplate [5]</li>
+					<li>Shock Maul [3]</li>
+					<li>Arbites Shotgun [3]</li>
+					<li>Arbites Shotgun Mag [1]</li>
+					<li>Arbites Pistol [1]</li>
+					<li>Arbites Pistol Mag [1]</li>
+					<li>Manacles [1]</li>
+					<li>Hand-Vox [1]</li>
+					<li>Pack of Lho-Sticks [0]</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Adeptus Astra Telepathica</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#AdeptusAstraTelepathica">
+				<h4>Adeptus Astra Telepathica</h4>
+			</button>
+		</div>
+		<div id="AdeptusAstraTelepathica" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Defense or Psyker</p>
+			<div class="row">
 			<div class="col-12">
-				<h5 class="text-center">xxxxxxxx</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>xxxxxxxxxx</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>None</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Adeptus Mechanicus</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#AdeptusMechanicus">
+				<h4>Adeptus Mechanicus</h4>
+			</button>
+		</div>
+		<div id="AdeptusMechanicus" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Knowledge or Tech</p>
+			<div class="row">
 			<div class="col-4">
-				<h5 class="text-center">Tech-Priest</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Tech-Priest</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Toughness +5</li>
+					<li>Intelligence +10</li>
+					<li>Perception +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Experienced (Tech)</li>
+					<li>Language (Binary + Low Gothic)</li>
+					<li>Operate (1 Vehicle Type)</li>
+					<li>Trade (Armourer/Mason/Shipwright/Technomat/Wright)</li>
+					<li>Ferric Lure</li>
+					<li>Interface Port</li>
+					<li>Luminen Capacitor</li>
+					<li>Mechanicus Implants</li>
+					<li>Mechadendrite (Manipulator/Optical/Utility)</li>
+					<li>Mind Impulse Unit</li>
+					<li>Vocal Implant</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Craft (+20)</li>
+					<li>Hack (+20)</li>
+					<li>Inspect (+20)</li>
+					<li>Ref. Common Lore (+10)</li>
+					<li>Repair (+20)</li>
+					<li>Use Tech (+20)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Mechanicus Robes [3]</li>
+					<li>Mechanicus Staff [3]</li>
+					<li>Auspex [1]</li>
+					<li>Combi-Tool [1]</li>
+					<li>Glow Globe [1]</li>
+					<li>Lascutter [1]</li>
+				</ul>
 			</div>
 			<div class="col-4">
-				<h5 class="text-center">Tech-Priest Chirurgeon</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Tech-Chirurgeon</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Intelligence +10</li>
+					<li>Perception +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Experienced (Tech)</li>
+					<li>Language (Binary + Low Gothic)</li>
+					<li>Operate (1 Vehicle Type)</li>
+					<li>Trade (Chymist/Morticator/Technomat)</li>
+					<li>Augur Array</li>
+					<li>Interface Port</li>
+					<li>Luminen Capacitor</li>
+					<li>Mechanicus Implants</li>
+					<li>Mechadendrite (Medicae)</li>
+					<li>Vocal Implant</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Administer Drug (+10)</li>
+					<li>Craft (+10)</li>
+					<li>Hack (+10)</li>
+					<li>Inspect (+10)</li>
+					<li>Perform Surgery (+20)</li>
+					<li>Repair (+10)</li>
+					<li>Treat Wounds (+20)</li>
+					<li>Use Tech (+20)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Mechanicus Robes [3]</li>
+					<li>Mechanicus Staff [3]</li>
+					<li>Quality Medkit [3]</li>
+					<li>Surgical Tools [1]</li>
+					<li>Glow Globe [1]</li>
+				</ul>
 			</div>
 			<div class="col-4">
-				<h5 class="text-center">Tech-Priest Militant</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Tech-Militant</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Ballistic Skill +15</li>
+					<li>Intelligence +5</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Gunslinger</li>
+					<li>Knowledgable (Tech)</li>
+					<li>Language (Binary + Low Gothic)</li>
+					<li>Luminen Shock</li>
+					<li>Master Gunslinger</li>
+					<li>Operate (1 Vehicle Type)</li>
+					<li>Trade (Armourer)</li>
+					<li>Interface Port</li>
+					<li>Internal Reservoir</li>
+					<li>Luminen Capacitor</li>
+					<li>Mechanicus Implants</li>
+					<li>Mechadendrite (Ballistic)</li>
+					<li>Mind Impulse Unit</li>
+					<li>Vocal Implant</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Craft (+10)</li>
+					<li>Hack (+0)</li>
+					<li>Repair (+10)</li>
+					<li>Use Tech (+20)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Mechanicus Robes [3]</li>
+					<li>Mesh Vest [3]</li>
+					<li>Mechanicus Staff [3]</li>
+					<li>Laspistol [1]</li>
+					<li>Laspistol Power Pack [1] x2</li>
+					<li>Auspex [1]</li>
+					<li>Lamp Pack [2]</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Adeptus Ministorum</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#AdeptusMinistorum">
+				<h4>Adeptus Ministorum</h4>
+			</button>
+		</div>
+		<div id="AdeptusMinistorum" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Leadership or Social</p>
+			<div class="row">
 			<div class="col-12">
-				<h5 class="text-center">Cleric</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Cleric</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Weapon Skill +5</li>
+					<li>Ballistic Skill +5</li>
+					<li>Strength +5</li>
+					<li>Toughness +5</li>
+					<li>Agility +5</li>
+					<li>Intelligence +5</li>
+					<li>Perception +5</li>
+					<li>Willpower +5</li>
+					<li>Fellowship +10</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Experienced (Imperial Creed)</li>
+					<li>Knowledgable (Adeptus Ministorum)</li>
+					<li>Language (High Gothic + Low Gothic)</li>
+					<li>Public Speaker</li>
+					<li>Trade (Copyist)</li>
+					<li>Trade (Loremancer)</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Craft (+10)</li>
+					<li>Command (+10)</li>
+					<li>Inquire (+10)</li>
+					<li>Inspire (+10)</li>
+					<li>Persuade (+10)</li>
+					<li>Ref. Common Lore (+10)</li>
+					<li>Treat Wounds (+0)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Ministorum Robes [3]</li>
+					<li>Chain Coat [5]</li>
+					<li>Hammer of Doctrine [3]</li>
+					<li>Blade of Piety [2]</li>
+					<li>Tome (Imperial Creed) [2]</li>
+					<li>Aquilla Necklace [0]</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Imperial Guard</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#ImperialGuard">
+				<h4>Imperial Guard</h4>
+			</button>
+		</div>
+		<div id="ImperialGuard" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Fieldcraft or Leadership</p>
+			<div class="row">
 			<div class="col-12">
-				<h5 class="text-center">Veteran</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>Veteran</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>Weapon Skill +10</li>
+					<li>Ballistic Skill +15</li>
+					<li>Strength +10</li>
+					<li>Toughness +10</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>Language (Low Gothic)</li>
+					<li>Nerves of Steel</li>
+					<li>Rapid Reload</li>
+					<li>Recoil Compensation</li>
+					<li>Weapon Familiarity (Lasgun)</li>
+					<li>Weapon Master (Lasgun)</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>Command (+10)</li>
+					<li>Navigate (+10)</li>
+					<li>Notice (+10)</li>
+					<li>Reflex (+10)</li>
+					<li>Parry (+10)</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>Military Uniform [3]</li>
+					<li>Flak Armour [6]</li>
+					<li>Lasgun with Bayonet [3]</li>
+					<li>Lasgun Power Pack [1]</li>
+					<li>Frag Hand-Grenade [1]</li>
+					<li>Knife [1]</li>
+					<li>Pack of Lho-Sticks [0]</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="container-fluid">
-		<h4 class="text-center">Outcast</h4>
-		<p><b>Aptitudes:</b> xxxxxx or xxxxxx</p>
-		<div class="row">
+	<div class="container-fluid pt-2">
+		<div class="card">
+			<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#Outcast">
+				<h4>Outcast</h4>
+			</button>
+		</div>
+		<div id="Outcast" class="collapse p-2 bg-dark border">
+			<p><b>Aptitude:</b> Fieldcraft or Social</p>
+			<div class="row">
 			<div class="col-12">
-				<h5 class="text-center">xxxxxxxx</h5>
-				<p><b>Skills:</b> xxxxxxxxxxxx</p>
-				<p><b>Talents:</b> xxxxxxxxxxxx</p>
-				<p><b>Equipment:</b> xxxxxxxxxxxx</p>
+				<h5>xxxxxxxxxx</h5>
+				<b>Characteristic Increases</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Talents</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Skills</b>
+				<ul>
+					<li>None</li>
+				</ul>
+				<b>Items</b>
+				<ul>
+					<li>None</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 	</div>
+
+
+	<div class="pt-3"></div>
 	
 	
-	<h2 class="text-center">4. Role</h2>
+	<h2 class="text-center">Role</h2>
 	<p>You get all the Aptitudes listed under your Role, plus General (the Aptitude representing things common to all character types).</p>
 	
 	
 	<table class="table table-sm table-dark">
-	<tr>
-	<th>Assassin Aptitudes</th>
-	<th>Desperado Aptitudes</th>
-	<th>Healer Aptitudes</th>
-	<th>Herald Aptitudes</th>
-	</tr>
-	<tr>
-	<td>
-	<li>Agility</li>
-	<li>Ballistic Skill or Weapon Skill</li>
-	<li>Fieldcraft</li>
-	<li>Finesse</li>
-	<li>Perception</li>
-	</td>
-	<td>
-	<li>Agility</li>
-	<li>Ballistic Skill</li>
-	<li>Defence</li>
-	<li>Fellowship</li>
-	<li>Finesse</li>
-	</td>
-	<td>
-	<li>Fieldcraft</li>
-	<li>Intelligence</li>
-	<li>Knowledge</li>
-	<li>Strength</li>
-	<li>Toughness</li>
-	</td>
-	<td>
-	<li>Fellowship</li>
-	<li>Offence</li>
-	<li>Social</li>
-	<li>Toughness</li>
-	<li>Willpower</li>
-	</td>
-	</tr>
-	<tr>
-	<th>Mystic Aptitudes</th>
-	<th>Sage Aptitudes</th>
-	<th>Seeker Aptitudes</th>
-	<th>Warrior Aptitudes</th>
-	</tr>
-	<tr>
-	<td>
-	<li>Psyker</li>
-	<li>Intelligence</li>
-	<li>Knowledge</li>
-	<li>Perception</li>
-	<li>Willpower</li>
-	</td>
-	<td>
-	<li>Intelligence</li>
-	<li>Knowledge</li>
-	<li>Perception</li>
-	<li>Tech</li>
-	<li>Willpower</li>
-	</td>
-	<td>
-	<li>Fellowship</li>
-	<li>Intelligence</li>
-	<li>Perception</li>
-	<li>Social</li>
-	<li>Tech</li>
-	</td>
-	<td>
-	<li>Ballistic Skill</li>
-	<li>Defence</li>
-	<li>Offence</li>
-	<li>Strength</li>
-	<li>Weapon Skill</li>
-	</td>
-	</tr>
+		<tr>
+			<th>Assassin Aptitudes</th>
+			<th>Desperado Aptitudes</th>
+			<th>Healer Aptitudes</th>
+			<th>Herald Aptitudes</th>
+		</tr>
+		<tr>
+		<td>
+			<ul>
+				<li>Agility</li>
+				<li>Ballistic Skill or Weapon Skill</li>
+				<li>Fieldcraft</li>
+				<li>Finesse</li>
+				<li>Perception</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Agility</li>
+			<li>Ballistic Skill</li>
+			<li>Defence</li>
+			<li>Fellowship</li>
+			<li>Finesse</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Fieldcraft</li>
+			<li>Intelligence</li>
+			<li>Knowledge</li>
+			<li>Strength</li>
+			<li>Toughness</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Fellowship</li>
+			<li>Offence</li>
+			<li>Social</li>
+			<li>Toughness</li>
+			<li>Willpower</li>
+			</ul>
+		</td>
+		</tr>
+		<tr>
+			<ul>
+			<th>Mystic Aptitudes</th>
+			<th>Sage Aptitudes</th>
+			<th>Seeker Aptitudes</th>
+			<th>Warrior Aptitudes</th>
+			</ul>
+		</tr>
+		<tr>
+		<td>
+			<ul>
+			<li>Psyker</li>
+			<li>Intelligence</li>
+			<li>Knowledge</li>
+			<li>Perception</li>
+			<li>Willpower</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Intelligence</li>
+			<li>Knowledge</li>
+			<li>Perception</li>
+			<li>Tech</li>
+			<li>Willpower</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Fellowship</li>
+			<li>Intelligence</li>
+			<li>Perception</li>
+			<li>Social</li>
+			<li>Tech</li>
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Ballistic Skill</li>
+			<li>Defence</li>
+			<li>Offence</li>
+			<li>Strength</li>
+			<li>Weapon Skill</li>
+			</ul>
+		</td>
+		</tr>
 	</table>
 	
 	
-	<h2 class="text-center">5. Spend Experience and Equip Gear</h2>
+	<h2 class="text-center">2. Spend Experience and Equip Gear</h2>
 	<p>Each character should have 8 different Aptitudes, including General.
 	If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.</p>
 	
@@ -802,7 +1207,7 @@
 	</ul>
 	
 	
-	<h2 class="text-center">6. Bringing the Character to Life</h2>
+	<h2 class="text-center">3. Bringing the Character to Life</h2>
 	<p>xxxxxx</p>
 </div>
 
