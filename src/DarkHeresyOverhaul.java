@@ -235,6 +235,7 @@ class DarkHeresyOverhaul {
 		pw.println("	</div>");
 		pw.println();
 		pw.println();
+		
 		printHeader_collapsible("Offence");
 		processFile("TABLE_TOP_TALENTS");
 		printTalent(Talent.assaultFire);
@@ -329,7 +330,22 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Tech");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.demolitionsExpert);
+		printTalent(Talent.operate_ag.withParameter("Specify*"));
+		printTableNote("*Jump-Pack, Bike, Skimmer");
+		printTalent(Talent.operate_int.withParameter("Specify*"));
+		printTableNote("*Wheeled, Tracked, Walker, Flier, Spacecraft, Voidship");
+		printTalent(Talent.technicalKnock);
+		printTalent(Talent.weaponTech);
+		processFile("TABLE_TAIL");
+		printSubheader("Adeptus Mechanicus");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.bloodFiltration);
+		printTalent(Talent.ferricSummons);
+		printTalent(Talent.luminenBlast);
+		printTalent(Talent.luminenShock);
+		printTalent(Talent.maglevTranscendence);
+		printTalent(Talent.prosanguine);
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();
@@ -337,7 +353,16 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Leadership");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.commanding);
+		printTalent(Talent.dominatingBellow);
+		printTalent(Talent.expandedNetword);
+		printTalent(Talent.haloOfCommand);
+		printTalent(Talent.inspiring);
+		printTalent(Talent.intoTheJawsOfHell);
+		printTalent(Talent.ironDiscipline);
+		printTalent(Talent.leadByExample);
+		printTalent(Talent.network);
+		printTalent(Talent.publicSpeaker);
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();
@@ -345,7 +370,14 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Fieldcraft");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.accustomedToDarkness);
+		printTalent(Talent.accustomedToZeroGravity);
+		printTalent(Talent.catfall);
+		printTalent(Talent.firstAider);
+		printTalent(Talent.rideBeast);
+		printTalent(Talent.tracker);
+		printTalent(Talent.quickEntry);
+		printTalent(Talent.spotWeakness);
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();
@@ -353,7 +385,27 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Social");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.charming);
+		printTalent(Talent.cluesFromTheCrowds);
+		printTalent(Talent.conversationalist);
+		printTalent(Talent.coordinatedInterrogation);
+		printTalent(Talent.coverUp);
+		printTalent(Talent.delicateInterrogation);
+		printTalent(Talent.entrapment);
+		printTalent(Talent.faceInACrowd);
+		printTalent(Talent.logicalCommunicator);
+		printTalent(Talent.persuasive);
+		printTalent(Talent.peer.withParameter("Specify*"));
+		printTableNote("*A power group:" + "\n"
+				+ "<ul>" + "\n"
+				+ "<li>Adeptus Administratum: The vast beaurocracy that administers the domains of the Imperium.</li>" + "\n"
+				+ "<li>Adeptus Arbites: The keepers of Imperial law and enforcers of loyalty to the Golden Throne.</li>" + "\n"
+				+ "<li>Adeptus Astra Telepathica: The organisation that trains and sanctions Imperial psykers.</li>" + "\n"
+				+ "<li>Adeptus Mechanicus: The disciples of the Machine God, who are the preservers and fabricators of technology.</li>" + "\n" 
+				+ "<li>Adeptus Ministorum: The keepers of faith in the Emperor's divinity, also known as the Ecclesiarchy.</li>" + "\n"
+				+ "<li>Imperial Guard: The Imperium's immesurable armies, fighting andless battles across the galaxy.</li>" + "\n"
+				+ "<li>Underworld: The many organisations that operate outside the bounds of Imperial legal authorities.</li>" + "\n"
+				+ "</ul>");
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();
@@ -361,7 +413,65 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Knowledge");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.creativeProblemSolving);
+		printTalent(Talent.deepestSecrets);
+		printTalent(Talent.specialistKnowledge);
+		printTalent(Talent.language.withParameter("Specify*"));
+		printTableNote("*A language:" + "\n"
+				+ "<ul>" + "\n"
+				+ "<li>Low Gothic: The common tongue of the Imperium.</li>" + "\n"
+				+ "<li>High Gothic: The language used by Imperial officials, clergy and nobility.</li>" + "\n"
+				+ "<li>Binary Cant: The language of the Machine Spirits. Communicating with Machine Spirits uses Intelligence instead of Fellowship.</li>" + "\n"
+				+ "<li>Imperial Codes: The numbers, acronyms and code words of the battle language employed by the Imperial Guard and Imperial Navy.</li>" + "\n"
+				+ "<li>Chaos Marks: The symbols and signs that followers of the Ruinous Powers use to share their dark secrets.</li>" + "\n"
+				+ "<li>A Xeno Language.</li>" + "\n"
+				+ "</ul>");
+		printTalent(Talent.knowledgable.withParameter("Specify*"));
+		printTalent(Talent.experienced.withParameter("Specify*"));
+		printTableNote("*A common lore area:" + "\n"
+				+ "<ul>" + "\n"
+				+ "<li>Adeptus Administratum: The vast beaurocracy that administers the domains of the Imperium, including its labyrinthine workings, rules, traditions and dictates.</li>" + "\n"
+				+ "<li>Adeptus Arbites: The keepers of Imperial law and enforcers of loyalty to the Golden Throne, including details of rank structure, common procedures and the basic tents of Imperial justice.</li>" + "\n"
+				+ "<li>Adeptus Astra Telepathica: The organisation that trains and sanctions Imperial psykers, including how psykers are gathered and sanctioned, how Astropaths are used throughout the Imperium, and the basics of astro-telepathy.</li>" + "\n"
+				+ "<li>Adeptus Mechanicus: The disciples of the Omnissiah, who are the preservers and fabricators of technology, including the symbols and practices that the Cult of the Machine God commonly uses.</li>" + "\n"
+				+ "<li>Adeptus Ministorum: The keepers of faith in the Emperor's divinity, also known as the Ecclesiarchy, including its structure and general practices, and its role in the worship of the Emperor.</li>" + "\n"
+				+ "<li>Calixis Sector: The various worlds and power groups of the Calixis Sector, including their history and culture.</li>" + "\n"
+				+ "<li>Imperial Creed: The rites, practices, festivals and saints of the Imperial Cult, as preached by the Ecclesiarchy.</li>" + "\n"
+				+ "<li>Imperial Guard: The Imperium's immesurable armies, fighting endless battles across the galaxy, including its ranks, logistics and structure, as well as common tactical and strategic practices.</li>" + "\n"
+				+ "<li>Tech: Revered technology, including the simple litanies and rituals to soothe and appease machine spirits.</li>" + "\n"
+				+ "<li>Underworld: Crime and sedition within the Imperium, including the many organisations that operate outside the bounds of Imperial legal authorities.</li>" + "\n" 
+				+ "<li>War: The great battles, famous strategems, heroes, and notable commanders of the endless battles for and against the Imperium.</li>" + "\n"
+				+ "</ul>");
+		printTalent(Talent.educated.withParameter("Specify*"));
+		printTalent(Talent.expert.withParameter("Specify*"));
+		printTalent(Talent.naturalExpertise.withParameter("Specify*"));
+		printTableNote("*A scholastic lore area:" + "\n"
+				+ "<ul>" + "\n"
+				+ "<li>Astromancy: Stars, the worlds around them, cosmic phenomena and astrolithic charts.</li>" + "\n"
+				+ "<li>Beasts: The many animals and beasts found across the sector.</li>" + "\n"
+				+ "<li>Bureaucracy: Governments and the Administratum, their rules, regulations, policies, forms and departments.</li>" + "\n"
+				+ "<li>Chymistry: Chemicals, their alchemical applications, and their prevalence or scarcity throughout the Imperium.</li>" + "\n"
+				+ "<li>Cryptology: Codes, ciphers, secret languages and numerical keys.</li>" + "\n"
+				+ "<li>Heraldry: The seals and heraldic devices used by noble houses.</li>" + "\n"
+				+ "<li>Judgement: The proper sentences for the myriad crimes and heresies punishable by Imperial law.</li>" + "\n"
+				+ "<li>Numerology: The mysterious links between mathematics and the physical universe.</li>" + "\n"
+				+ "<li>Occult: Obscure rituals, theories and superstitions, and the better-known uses of occult items.</li>" + "\n"
+				+ "<li>Philosophy: Theories of thought, belief, existence and other intangibles, including logic, debate and crafting arguments.</li>" + "\n"
+				+ "<li>Tactica Imperialis: The codified military doctrines of the Imperial Guard, including theories of war, troop deployment and battle techniques.</li>" + "\n"
+				+ "<li>Theology: The rituals of the Ecclesiarchy, the construction of their temples and the finer points of liturgy.</li>" + "\n"
+				+ "</ul>");
+		printTalent(Talent.unveiledSecrets.withParameter("Specify*"));
+		printTalent(Talent.darkSecrets.withParameter("Specify*"));
+		printTableNote("*A forbidden lore area:" + "\n"
+				+ "<ul>" + "\n"
+				+ "<li>Archeotech: The great lost tech devices of times past, and clues to their functions and purposes.</li>" + "\n"
+				+ "<li>Daemonology: Warp entities and their twisted manifestations.</li>" + "\n"
+				+ "<li>Heresy: The acts and practices deemed heretical by the Imperium.</li>" + "\n"
+				+ "<li>Mutants: The various stable and unstable mutations within humanity.</li>" + "\n"
+				+ "<li>Psykers: Psykers, the effects of their powers, their dangers and the extent of their capabilities.</li>" + "\n"
+				+ "<li>The Warp: The nature of the Immaterium, its interaction with realspace, and how its tides and eddies affect travel between the stars.</li>" + "\n"
+				+ "<li>Xenos: The alien species known to the Imperium, the threat they pose to humanity, and their general appearance.</li>" + "\n"
+				+ "</ul>");
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();
@@ -369,7 +479,34 @@ class DarkHeresyOverhaul {
 		
 		printHeader_collapsible("Trades (General)");
 		processFile("TABLE_TOP_TALENTS");
-		// TODO //
+		printTalent(Talent.trade_agriWorker);
+		printTalent(Talent.trade_apothecary);
+		printTalent(Talent.trade_archeologist);
+		printTalent(Talent.trade_armourer);
+		printTalent(Talent.trade_astrographer);
+		printTalent(Talent.trade_cartographer);
+		printTalent(Talent.trade_chymist);
+		printTalent(Talent.trade_cryptographer);
+		printTalent(Talent.trade_cook);
+		printTalent(Talent.trade_copyist);
+		printTalent(Talent.trade_linguist);
+		printTalent(Talent.trade_loremancer);
+		printTalent(Talent.trade_mason);
+		printTalent(Talent.trade_merchant);
+		printTalent(Talent.trade_miner);
+		printTalent(Talent.trade_morticator);
+		printTalent(Talent.trade_performer);
+		printTalent(Talent.trade_prospector);
+		printTalent(Talent.trade_scrimshaw);
+		printTalent(Talent.trade_sculptor);
+		printTalent(Talent.trade_shipwright);
+		printTalent(Talent.trade_soothsayer);
+		printTalent(Talent.trade_survivalist);
+		printTalent(Talent.trade_swindler);
+		printTalent(Talent.trade_technomat);
+		printTalent(Talent.trade_valet);
+		printTalent(Talent.trade_voidfarer);
+		printTalent(Talent.trade_wright);
 		processFile("TABLE_TAIL");
 		pw.println("	</div>");
 		pw.println();

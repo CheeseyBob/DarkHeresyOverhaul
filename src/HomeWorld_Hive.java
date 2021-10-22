@@ -13,7 +13,7 @@ class HomeWorld_Hive extends HomeWorld {
 		specialRuleList.add(Talent.cluesFromTheCrowds);
 		specialRuleList.add(Talent.faceInACrowd);
 		specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		specialRuleList.add(Talent.networking);
+		specialRuleList.add(Talent.network);
 		specialRuleList.add(Talent.trade_cook);
 	}
 }

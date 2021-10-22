@@ -5,7 +5,6 @@
 		- Bionics.html
 		- all the item types
 		- PsychicPowers.html
-		- Talents.html
 		- Traits.html
 		- Aspects.html
 
