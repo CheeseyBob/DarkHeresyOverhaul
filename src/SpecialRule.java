@@ -8,12 +8,6 @@ class SpecialRule {
 		this.description = description;
 	}
 	
-	SpecialRule(String name, String parameter, String description) {
-		this.name = name;
-		this.parameter = parameter;
-		this.description = description;
-	}
-	
 	public String getFullName() {
 		if(parameter == null) {
 			return name;
@@ -23,162 +17,260 @@ class SpecialRule {
 	}
 	
 	public SpecialRule withParameter(String parameter) {
-		return new SpecialRule(name, parameter, description);
+		SpecialRule ruleWithParameter = new SpecialRule(name, description);
+		ruleWithParameter.parameter = parameter;
+		return ruleWithParameter;
 	}
 }
 
-class Talent {
+class Talent extends SpecialRule {
+	public static final String UPGRADE_MARK = "†";
+	
+	String requirement;
+	String aptitude;
+	int xp;
+	
+	Talent(String name, String description, String requirement, String aptitude, int xp){
+		super(name, description);
+		this.requirement = requirement;
+		this.aptitude = aptitude;
+		this.xp = xp;
+	}
+	
+	@Override
+	public Talent withParameter(String parameter) {
+		Talent ruleWithParameter = new Talent(name, description, requirement, aptitude, xp);
+		ruleWithParameter.parameter = parameter;
+		return ruleWithParameter;
+	}
+	
 	// General //
-	public static final SpecialRule intimidating = new SpecialRule("Intimidating",
-			"When you Intimidate, the maximum aspect level is double your Strength Bonus.");
-	public static final SpecialRule rapidReload = new SpecialRule("Rapid Reload",
-			"When you Reload, you get double the steps towards reloading your firearm.");
-	public static final SpecialRule sprinter = new SpecialRule("Sprinter",
-			"Your maximum bonus Movement is three times your Agility Bonus, rather than two times.");
-	public static final SpecialRule teamFighting = new SpecialRule("Team Fighting",
-			"Give double the penalty when you Fend Off or Feint.");
-	public static final SpecialRule unarmedMaster = new SpecialRule("Unarmed Master",
-			"Get a +10 bonus to all unarmed melee attacks.");
-	public static final SpecialRule weaponFamiliarity_ranged = new SpecialRule("Weapon Familiarity",
-			"You can clear jams and maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.");
-	public static final SpecialRule weaponFamiliarity_melee = new SpecialRule("Weapon Familiarity",
-			"You can maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.");
-	public static final SpecialRule weaponMaster_ranged = new SpecialRule("Weapon Master",
-			"Get a +10 bonus to Weapon Skill when using the chosen melee weapon.");
-	public static final SpecialRule weaponMaster_melee = new SpecialRule("Weapon Master",
-			"Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.");
-	public static final SpecialRule wrestler = new SpecialRule("Wrestler",
-			"Get a +10 bonus to Grapple per free hand.");
+	public static final Talent intimidating = new Talent("Intimidating",
+			"When you Intimidate, the maximum aspect level is double your Strength Bonus.",
+			"Intimidate (+20)", "Strength", 4);
+	public static final Talent rapidReload = new Talent("Rapid Reload",
+			"When you Reload, you get double the steps towards reloading your firearm.",
+			"-", "Agility", 2);
+	public static final Talent sprinter = new Talent("Sprinter",
+			"Your maximum bonus Movement is three times your Agility Bonus, rather than two times.",
+			"-", "Agility", 2);
+	public static final Talent teamFighting = new Talent("Team Fighting",
+			"Give double the penalty when you Fend Off or Feint.",
+			"-", "Weapon Skill", 2);
+	public static final Talent unarmedMaster = new Talent("Unarmed Master",
+			"Get a +10 bonus to all unarmed melee attacks.",
+			"-", "Weapon Skill", 8);
+	public static final Talent weaponFamiliarity_melee = new Talent("Weapon Familiarity",
+			"You can maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.",
+			"-", "Weapon Skill", 2);
+	public static final Talent weaponFamiliarity_ranged = new Talent("Weapon Familiarity",
+			"You can clear jams and maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.",
+			"-", "Ballistic Skill", 2);
+	public static final Talent weaponMaster_melee = new Talent("Weapon Master",
+			"Get a +10 bonus to Weapon Skill when using the chosen melee weapon.",
+			"Weapon Familiarity", "Weapon Skill", 4);
+	public static final Talent weaponMaster_ranged = new Talent("Weapon Master",
+			"Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.",
+			"Weapon Familiarity", "Ballistic Skill", 4);
+	public static final Talent wrestler = new Talent("Wrestler",
+			"Get a +10 bonus to Grapple per free hand.",
+			"Grapple (+20)", "Strength", 4);
 	
 	// Offence //
-	public static final SpecialRule assaultFire = new SpecialRule("Assault Fire",
-			"Full Action; Move and Attack Repeatedly (Ranged) during the movement.");
-	public static final SpecialRule battleRage = new SpecialRule("Battle Rage",
-			"You do not take a penalty to Dodge or Parry from being Frenzied and you get a +20 bonus to Resist being Frenzied.");
-	public static final SpecialRule brutalCharge = new SpecialRule("Brutal Charge",
-			"Get double bonus damage when you Charge.");
-	public static final SpecialRule crushingBlow = new SpecialRule("Crushing Blow",
-			"Get double bonus damage when you Attack Heavily (Melee) with a weapon which does Impact damage.");
-	public static final SpecialRule followThrough = new SpecialRule("Follow-Through",
-			"When you make a melee attack, you can spend Degrees of Success to get a +10 bonus to Attack (Melee).");
-	public static final SpecialRule frenzy = new SpecialRule("Frenzy",
-			"You can become Frenzied as a Secondary Action (max level equal to Willpower Bonus) and you can choose to not Resist being Frenzied.");
-	public static final SpecialRule furiousAssault = new SpecialRule("Furious Assault",
-			"Get a +10 bonus to Attack Repeatedly (Melee) when wielding multiple melee weapons.");
-	public static final SpecialRule ironFists = new SpecialRule("Iron Fists",
-			"Your punches and kicks no longer use the Blunt special rule.");
-	public static final SpecialRule meleeShooting = new SpecialRule("Melee Shooting",
-			"You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.");
-	public static final SpecialRule recoilCompensation = new SpecialRule("Recoil Compensation",
-			"Get a +10 bonus to Attack Repeatedly (Ranged) with weapons which have a Rate of Fire of 3 or more.");
-	public static final SpecialRule stampede = new SpecialRule("Stampede",
-			"When you Tackle, you can spend Degrees of Success to continue moving, potentially to a new target. You can continue until you run out of movement or Degrees of Success.");
-	public static final SpecialRule strongAttacks = new SpecialRule("Strong Attacks",
-			"Use double your Strength Bonus for damage when using a melee weapon two-handed.");
-	public static final SpecialRule stunningBlow = new SpecialRule("Stunning Blow",
-			"Full Action; Attack (Melee) with a weapon which does Impact damage; Target becomes Stunned for each Degree of Success (up to Strength Bonus).");
-	public static final SpecialRule sweepingAttack = new SpecialRule("Sweeping Attack",
-			"Full Action; Attack (Melee); all adjacent characters take a hit.");
-	public static final SpecialRule thunderousCharge = new SpecialRule("Thunderous Charge",
-			"When you Stampede, get a +10 bonus to Attack (Melee) per Degree of Success remaining at the end of your movement.");
+	public static final Talent assaultFire = new Talent("Assault Fire",
+			"Full Action; Move and Attack Repeatedly (Ranged) during the movement.",
+			"-", "Ballistic Skill", 4);
+	public static final Talent battleRage = new Talent("Battle Rage",
+			"You do not take a penalty to Dodge or Parry from being Frenzied and you get a +20 bonus to Resist being Frenzied.",
+			"Frenzy", "Willpower", 4);
+	public static final Talent brutalCharge = new Talent("Brutal Charge",
+			"Get double bonus damage when you Charge.",
+			"-", "Weapon Skill", 4);
+	public static final Talent crushingBlow = new Talent("Crushing Blow",
+			"Get double bonus damage when you Attack Heavily (Melee) with a weapon which does Impact damage.",
+			"Strength 30", "Strength", 4);
+	public static final Talent followThrough = new Talent("Follow-Through",
+			"When you make a melee attack, you can spend Degrees of Success to get a +10 bonus to Attack (Melee).",
+			"Weapon Skill 40", "Weapon Skill", 4);
+	public static final Talent frenzy = new Talent("Frenzy",
+			"You can become Frenzied as a Secondary Action (max level equal to Willpower Bonus) and you can choose to not Resist being Frenzied.",
+			"-", "Strength", 2);
+	public static final Talent furiousAssault = new Talent("Furious Assault",
+			"Get a +10 bonus to Attack Repeatedly (Melee) when wielding multiple melee weapons.",
+			"-", "Weapon Skill", 4);
+	public static final Talent ironFists = new Talent("Iron Fists",
+			"Your punches and kicks no longer use the Blunt special rule.",
+			"Strength 30", "Strength", 4);
+	public static final Talent meleeShooting = new Talent("Melee Shooting",
+			"You do not take a penalty for using ranged weapons of Size 1 and 2 in close combat.",
+			"-", "Ballistic Skill", 4);
+	public static final Talent recoilCompensation = new Talent("Recoil Compensation",
+			"Get a +10 bonus to Attack Repeatedly (Ranged) when you fire 3 or more shots with a ranged weapon.",
+			"-", "Ballistic Skill", 4);
+	public static final Talent stampede = new Talent("Stampede",
+			"When you Tackle, you can spend Degrees of Success to continue moving, potentially to a new target. You can continue until you run out of movement or Degrees of Success.",
+			"Knock Down (+20)", "Strength", 4);
+	public static final Talent strongAttacks = new Talent("Strong Attacks",
+			"Use double your Strength Bonus for damage when using a melee weapon two-handed.",
+			"-", "Strength", 4);
+	public static final Talent stunningBlow = new Talent("Stunning Blow",
+			"Full Action; Attack (Melee) with a weapon which does Impact damage; Target becomes Stunned for each Degree of Success (up to Strength Bonus).",
+			"Strength 30", "Strength", 4);
+	public static final Talent sweepingAttack = new Talent("Sweeping Attack",
+			"Full Action; Attack (Melee); all adjacent characters take a hit.",
+			"-", "Weapon Skill", 4);
+	public static final Talent thunderousCharge = new Talent("Thunderous Charge",
+			"When you Stampede, get a +10 bonus to Attack (Melee) per Degree of Success remaining at the end of your movement.",
+			"Stampede", "Strength", 4);
 	
 	// Finesse //
-	public static final SpecialRule agileFighter = new SpecialRule("Agile Fighter",
-			"You can Dodge melee attacks.");
-	public static final SpecialRule agileStrike = new SpecialRule("Agile Strike",
-			"Full Action; Move twice and Attack (Melee) during the movement.");
-	public static final SpecialRule assassinStrike = new SpecialRule("Assassin Strike",
-			"Full Action; Attack (Melee); damage dice explode on rolls 1 lower per Degree of Success.");
-	public static final SpecialRule hipShooting = new SpecialRule("Hip Shooting",
-			"Full Action; Move twice and Attack (Ranged) during the movement.");
-	public static final SpecialRule carefulStrike = new SpecialRule("Careful Strike",
-			"Get an extra +10 bonus when you make a melee attack after you Aim.");
-	public static final SpecialRule deftBladesman = new SpecialRule("Deft Bladesman",
-			"You can use Agility Bonus instead of Strength Bonus for the damage stat of melee weapons which do Rending damage.");
-	public static final SpecialRule dualWielder = new SpecialRule("Dual-Wielder",
-			"When you Attack (Melee), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).");
-	public static final SpecialRule effortlessDodge = new SpecialRule("Effortless Dodge",
-			"Spend two Degrees of Success on a Dodge to not spend your Reaction.");
-	public static final SpecialRule effortlessParry = new SpecialRule("Effortless Parry",
-			"Spend two Degrees of Success on a Parry to not spend your Reaction.");
-	public static final SpecialRule gunslinger = new SpecialRule("Gunslinger",
-			"When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).");
-	public static final SpecialRule independentTargeting = new SpecialRule("Independent Targeting",
-			"When wielding multiple ranged weapons, you can attack a different target with each weapon and can choose which target to assign each hit to.");
-	public static final SpecialRule leapUp = new SpecialRule("Leap Up",
-			"You can stand up without spending a Secondary Action.");
-	public static final SpecialRule marksman = new SpecialRule("Marksman",
-			"Get an extra +10 bonus to Attack (Ranged) when you do so Carefully or after you Focus.");
-	public static final SpecialRule martialArtist = new SpecialRule("Martial Artist",
-			"The Hits stat of your unarmed attacks are doubled.");
-	public static final SpecialRule masterGunslinger = new SpecialRule("Master Gunslinger",
-			"Get a +10 bonus to all ranged attacks when using multiple weapons.");
-	public static final SpecialRule quickDraw = new SpecialRule("Quick Draw",
-			"Draw your weapon without spending an Action.");
-	public static final SpecialRule riposte = new SpecialRule("Riposte",
-			"When you Parry, you can spend Degrees of Success to get a +10 bonus per DoS to Attack (Melee).");
-	public static final SpecialRule sniperShot = new SpecialRule("Sniper Shot",
-			"Full Action; Attack (Ranged); damage dice explode on rolls 1 lower per Degree of Success.");
-	public static final SpecialRule swiftBlade = new SpecialRule("Swift Blade",
-			"Double the Hits stat of melee weapons which do Rending damage.");
-	public static final SpecialRule twoWeaponMaster = new SpecialRule("Two-Weapon Master",
-			"Get a +10 bonus to all melee attacks when using multiple weapons.");
+	public static final Talent agileFighter = new Talent("Agile Fighter",
+			"You can Dodge melee attacks.",
+			"-", "Agility", 4);
+	public static final Talent agileStrike = new Talent("Agile Strike",
+			"Full Action; Move twice and Attack (Melee) during the movement.",
+			"-", "Agility", 4);
+	public static final Talent assassinStrike = new Talent("Assassin Strike",
+			"Full Action; Attack (Melee); damage dice explode on rolls 1 lower per Degree of Success.",
+			"Weapon Skill 40", "Weapon Skill", 8);
+	public static final Talent hipShooting = new Talent("Hip Shooting",
+			"Full Action; Move twice and Attack (Ranged) during the movement.",
+			"-", "Ballistic Skill", 4);
+	public static final Talent carefulStrikes = new Talent("Careful Strikes",
+			"Get an extra +10 bonus when you make a melee attack after you Aim.",
+			"-", "Weapon Skill", 4);
+	public static final Talent deftBladesman = new Talent("Deft Bladesman",
+			"You can use Agility Bonus instead of Strength Bonus for the damage stat of melee weapons which do Rending damage.",
+			"-", "Agility", 4);
+	public static final Talent dualWielder = new Talent("Dual-Wielder",
+			"When you Attack (Melee), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).",
+			"-", "Weapon Skill", 4);
+	public static final Talent effortlessDodge = new Talent("Effortless Dodge",
+			"Spend two Degrees of Success on a Dodge to not spend your Reaction.",
+			"Dodge (+20)", "Agility", 6);
+	public static final Talent effortlessParry = new Talent("Effortless Parry",
+			"Spend two Degrees of Success on a Parry to not spend your Reaction.",
+			"Parry (+20)", "Weapon Skill", 6);
+	public static final Talent gunslinger = new Talent("Gunslinger",
+			"When you Attack (Ranged), you can spend Degrees of Success to inflict hits from additional weapons you are holding (up to one per weapon).",
+			"-", "Ballistic Skill", 4);
+	public static final Talent independentTargeting = new Talent("Independent Targeting",
+			"When wielding multiple ranged weapons, you can attack a different target with each weapon and can choose which target to assign each hit to.",
+			"Gunslinger", "Ballistic Skill", 6);
+	public static final Talent leapUp = new Talent("Leap Up",
+			"You can stand up without spending a Secondary Action.",
+			"-", "Agility", 2);
+	public static final Talent marksman = new Talent("Marksman",
+			"Get an extra +10 bonus to Attack (Ranged) when you do so Carefully or after you Focus.",
+			"-", "Ballistic Skill", 4);
+	public static final Talent martialArtist = new Talent("Martial Artist",
+			"The Hits stat of your unarmed attacks are doubled.",
+			"-", "Weapon Skill", 4);
+	public static final Talent masterGunslinger = new Talent("Master Gunslinger",
+			"Get a +10 bonus to all ranged attacks when using multiple weapons.",
+			"Gunslinger", "Ballistic Skill", 4);
+	public static final Talent quickDraw = new Talent("Quick Draw",
+			"Draw your weapon without spending an Action.",
+			"-", "Agility", 2);
+	public static final Talent riposte = new Talent("Riposte",
+			"When you Parry, you can spend Degrees of Success to get a +10 bonus per DoS to Attack (Melee).",
+			"Parry (+20)", "Weapon Skill", 4);
+	public static final Talent sniperShot = new Talent("Sniper Shot",
+			"Full Action; Attack (Ranged); damage dice explode on rolls 1 lower per Degree of Success.",
+			"Ballistic Skill 40", "Ballistic Skill", 8);
+	public static final Talent swiftBlade = new Talent("Swift Blade",
+			"Double the Hits stat of melee weapons which do Rending damage.",
+			"-", "Weapon Skill", 4);
+	public static final Talent twoWeaponMaster = new Talent("Two-Weapon Master",
+			"Get a +10 bonus to all melee attacks when using multiple weapons.",
+			"Dual-Wieler", "Weapon Skill", 4);
 	
 	// Defence //
-	public static final SpecialRule adamantiumWill = new SpecialRule("Adamantium Will",
-			"Get a +30 bonus to Resist being Frightened, Intimidated and Pinned.");
-	public static final SpecialRule constantVigilance = new SpecialRule("Constant Vigilance",
-			"You can use Reflex to act before another character even when you are not waiting.");
-	public static final SpecialRule denyTheWitch = new SpecialRule("Deny the Witch",
-			"Get +20 to Resist psychic powers which affect your mind.");
-	public static final SpecialRule dieHard = new SpecialRule("Die Hard",
-			"You get a +20 bonus to the Bleeding Out Toughness Test.");
-	public static final SpecialRule dirtyFighting = new SpecialRule("Dirty Fighting",
-			"When you Stun, the maximum aspect level is double your Weapon Skill Bonus.");
-	public static final SpecialRule disarm = new SpecialRule("Disarm",
-			"Main Action; Weapon Skill Test; Target drops one wielded item plus one per DoS.");
-	public static final SpecialRule hardTarget = new SpecialRule("Hard Target",
-			"When you are Running, you give a -20 penalty to all ranged attacks against you.");
-	public static final SpecialRule ignorePain = new SpecialRule("Ignore Pain",
-			"You can use Willpower instead of Toughness to Resist being or becoming Stunned.");
-	public static final SpecialRule mentalFortress = new SpecialRule("Mental Fortress",
-			"Get +30 to Resist psychic powers which affect your mind.");
-	public static final SpecialRule nervesOfSteel = new SpecialRule("Nerves of Steel",
-			"Get a +20 bonus to Resist being Frightened, Intimidated and Pinned.");
-	public static final SpecialRule numbToPain = new SpecialRule("Numb to Pain",
-			"Get a +20 bonus to Resist being or becoming Stunned.");
-	public static final SpecialRule resistance = new SpecialRule("Resistance",
-			"Get a +20 bonus to Resist this.");
+	public static final Talent adamantiumWill = new Talent("Adamantium Will",
+			"Get a +30 bonus to Resist being Frightened, Intimidated and Pinned.",
+			"Nerves of Steel"+UPGRADE_MARK, "Willpower", 4);
+	public static final Talent constantVigilance = new Talent("Constant Vigilance",
+			"You can use Reflex to act before another character even when you are not waiting.",
+			"-", "Perception", 8);
+	public static final Talent denyTheWitch = new Talent("Deny the Witch",
+			"Get +20 to Resist psychic powers which affect your mind.",
+			"-", "Willpower", 4);
+	public static final Talent dieHard = new Talent("Die Hard",
+			"You get a +20 bonus to the Bleeding Out Toughness Test.",
+			"-", "Toughness", 2);
+	public static final Talent dirtyFighting = new Talent("Dirty Fighting",
+			"When you Stun, the maximum aspect level is double your Weapon Skill Bonus.",
+			"Stun (+20)", "Weapon Skill", 4);
+	public static final Talent disarm = new Talent("Disarm",
+			"Main Action; Weapon Skill Test; Target drops wielded item.",
+			"-", "Weapon Skill", 4);
+	public static final Talent hardTarget = new Talent("Hard Target",
+			"When you are Running, you give a -20 penalty to all ranged attacks against you.",
+			"Agility 40", "Agility", 4);
+	public static final Talent ignorePain = new Talent("Ignore Pain",
+			"You can use Willpower instead of Toughness to Resist being or becoming Stunned.",
+			"-", "Willpower", 4);
+	public static final Talent mentalFortress = new Talent("Mental Fortress",
+			"Get +30 to Resist psychic powers which affect your mind.",
+			"Deny the Witch"+UPGRADE_MARK, "Willpower", 4);
+	public static final Talent nervesOfSteel = new Talent("Nerves of Steel",
+			"Get a +20 bonus to Resist being Frightened, Intimidated and Pinned.",
+			"-", "Willpower", 4);
+	public static final Talent numbToPain = new Talent("Numb to Pain",
+			"Get a +20 bonus to Resist being or becoming Stunned.",
+			"-", "Toughness", 4);
+	public static final Talent resistance = new Talent("Resistance",
+			"Get a +20 bonus to Resist this.",
+			"-", "Toughness", 2);
 	
 	// Psyker //
-	public static final SpecialRule sanctionedPsyker = new SpecialRule("Sanctioned Psyker",
-			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) when you take this Talent.");
-	public static final SpecialRule unsanctionedPsyker = new SpecialRule("Unsanctioned Psyker",
-			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) and get 1d10+5 Corruption and Insanity Points when you take this Talent.");
-	public static final SpecialRule psyRating1 = new SpecialRule("Psy Rating 1",
-			"You can Focus Power with a Psy Rating of 1.");
-	public static final SpecialRule psyRating2 = new SpecialRule("Psy Rating 2",
-			"You can Focus Power with a Psy Rating of 2.");
-	public static final SpecialRule psyRating3 = new SpecialRule("Psy Rating 3",
-			"You can Focus Power with a Psy Rating of 3.");
-	public static final SpecialRule psyRating4 = new SpecialRule("Psy Rating 4",
-			"You can Focus Power with a Psy Rating of 4.");
-	public static final SpecialRule psyRating5 = new SpecialRule("Psy Rating 5",
-			"You can Focus Power with a Psy Rating of 5.");
-	public static final SpecialRule drawDeeper = new SpecialRule("Draw Deeper",
-			"When you Focus Power, you can add a number of d10 up to your Willpower Bonus to the Potency roll. For each die you add, you give a +10 bonus to Psychic Phenomena.");
-	public static final SpecialRule masteredPsychicPower = new SpecialRule("Mastered",
-			"Get a +20 bonus to Focus Power for the chosen Psychic Power.");
-	public static final SpecialRule powerJuggler = new SpecialRule("Power Juggler",
-			"You can keep multiple Psychic Powers sustained simultaneously, splitting your Psy Rating between them how you wish.");
-	public static final SpecialRule subtlePsyker = new SpecialRule("Subtle Psyker",
-			"When you Focus Power, other characters cannot tell you are doing anything unless they successfully Inspect you.");
-	public static final SpecialRule strongConnection = new SpecialRule("Strong Connection",
-			"When you Focus Power, you add your Willpower Bonus to the Potency roll.");
-	public static final SpecialRule strongMind = new SpecialRule("Strong Mind",
-			"Get a +20 bonus to Resist (Mentally) against Psychic Powers.");
-	public static final SpecialRule theConstantThreat = new SpecialRule("The Constant Threat",
-			"When a character within 10m triggers Psychic Phenomena, you can use Reflex to take your turn before the phenomena is resolved.");
+	public static final Talent psyker = new Talent("Psyker",
+			"You can take Psy Rating Talents and Psychic Powers.",
+			"Willpower 30", "Willpower", 4);
+	@Deprecated
+	public static final Talent sanctionedPsyker = new Talent("Sanctioned Psyker",
+			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) when you take this Talent.",
+			"Adeptus Astra Telepathica Background", "Willpower", 4);
+	@Deprecated
+	public static final Talent unsanctionedPsyker = new Talent("Unsanctioned Psyker",
+			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) and get 1d10+5 Corruption and Insanity Points when you take this Talent.",
+			"Willpower 30", "Willpower", 4);
+	public static final Talent psyRating1 = new Talent("Psy Rating 1",
+			"You can Focus Power with a Psy Rating of 1.",
+			"Psyker", "Willpower", 4);
+	public static final Talent psyRating2 = new Talent("Psy Rating 2",
+			"You can Focus Power with a Psy Rating of 2.",
+			"Psy Rating 1", "Willpower", 8);
+	public static final Talent psyRating3 = new Talent("Psy Rating 3",
+			"You can Focus Power with a Psy Rating of 3.",
+			"Psy Rating 2", "Willpower", 12);
+	public static final Talent psyRating4 = new Talent("Psy Rating 4",
+			"You can Focus Power with a Psy Rating of 4.",
+			"Psy Rating 3", "Willpower", 16);
+	public static final Talent psyRating5 = new Talent("Psy Rating 5",
+			"You can Focus Power with a Psy Rating of 5.",
+			"Psy Rating 4", "Willpower", 20);
+	public static final Talent drawDeeper = new Talent("Draw Deeper",
+			"When you Focus Power, you can add a number of d10 up to your Willpower Bonus to the Potency roll. For each die you add, you give a +10 bonus to Psychic Phenomena.",
+			"Psy Rating 2", "Willpower", 8);
+	public static final Talent masteredPsychicPower = new Talent("Mastered",
+			"Get a +20 bonus to Focus Power for the chosen Psychic Power.",
+			"A Psychic Power", "-", 0);
+	public static final Talent powerJuggler = new Talent("Power Juggler",
+			"You can keep multiple Psychic Powers sustained simultaneously, splitting your Psy Rating between them how you wish.",
+			"Psy Rating 2", "Willpower", 8);
+	public static final Talent subtlePsyker = new Talent("Subtle Psyker",
+			"When you Focus Power, other characters cannot tell you are doing anything unless they successfully Inspect you.",
+			"Willpower 40", "Willpower", 4);
+	public static final Talent strongConnection = new Talent("Strong Connection",
+			"When you Focus Power, you add your Willpower Bonus to the Potency roll.",
+			"Psy Rating 1", "Willpower", 4);
+	public static final Talent strongMind = new Talent("Strong Mind",
+			"Get a +20 bonus to Resist (Mentally) against Psychic Powers.",
+			"-", "Willpower", 4);
+	public static final Talent theConstantThreat = new Talent("The Constant Threat",
+			"When a character within 10m triggers Psychic Phenomena, you can use Reflex to take your turn before the phenomena is resolved.",
+			"Adeptus Astra Telepathica Background", "Perception", 4);
 	
 	// Tech //
 	public static final SpecialRule demolitionsExpert = new SpecialRule("Demolitions Expert",

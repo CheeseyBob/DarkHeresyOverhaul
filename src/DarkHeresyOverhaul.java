@@ -16,7 +16,7 @@ import files.TextFileHandler;
 class DarkHeresyOverhaul {
 	// General //
 	private static PrintWriter pw = null;
-	private static String title = "";
+	private static String title = "", header = "", note = "";
 	private static LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
 	
 	// Character Creation //
@@ -35,6 +35,9 @@ class DarkHeresyOverhaul {
 	public static void main(String[] args) {
 		// Character Creation //
 		printCharacterCreationFile();
+		
+		// Talents //
+		printTalentsFile();
 		
 		// NPC Groups //
 		NPCGroup[] npcGroupList = {
@@ -143,6 +146,16 @@ class DarkHeresyOverhaul {
 		}
 	}
 	
+	private static void printHeader(String header) {
+		DarkHeresyOverhaul.header = header;
+		processFile("HEADER");
+	}
+	
+	private static void printHeader_collapsible(String header) {
+		DarkHeresyOverhaul.header = header;
+		processFile("HEADER_COLLAPSIBLE");
+	}
+	
 	private static void printHomeWorldBenefitsList() {
 		for(HomeWorld homeWorld : HomeWorld.list) {
 			DarkHeresyOverhaul.homeWorld = homeWorld;
@@ -185,6 +198,185 @@ class DarkHeresyOverhaul {
 			DarkHeresyOverhaul.skill = skill;
 			processFile("SKILL");
 		}
+	}
+	
+	private static void printSubheader(String subheader) {
+		DarkHeresyOverhaul.header = subheader;
+		processFile("SUBHEADER");
+	}
+	
+	private static void printTableNote(String note) {
+		DarkHeresyOverhaul.note = note;
+		processFile("TABLE_NOTE");
+	}
+	
+	private static void printTalent(Talent talent) {
+		DarkHeresyOverhaul.special = talent;
+		processFile("TALENT");
+	}
+	
+	private static void printTalentsFile() {
+		pw = TextFileHandler.startWritingToFile("out/Talents.html");
+		title = "Talents";
+		processFile("TOP");
+		printHeader_collapsible("General");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.intimidating);
+		printTalent(Talent.rapidReload);
+		printTalent(Talent.sprinter);
+		printTalent(Talent.teamFighting);
+		printTalent(Talent.unarmedMaster);
+		printTalent(Talent.weaponFamiliarity_melee);
+		printTalent(Talent.weaponFamiliarity_ranged);
+		printTalent(Talent.weaponMaster_melee);
+		printTalent(Talent.weaponMaster_ranged);
+		printTalent(Talent.wrestler);
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		printHeader_collapsible("Offence");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.assaultFire);
+		printTalent(Talent.battleRage);
+		printTalent(Talent.brutalCharge);
+		printTalent(Talent.crushingBlow);
+		printTalent(Talent.followThrough);
+		printTalent(Talent.frenzy);
+		printTalent(Talent.furiousAssault);
+		printTalent(Talent.ironFists);
+		printTalent(Talent.meleeShooting);
+		printTalent(Talent.recoilCompensation);
+		printTalent(Talent.stampede);
+		printTalent(Talent.strongAttacks);
+		printTalent(Talent.stunningBlow);
+		printTalent(Talent.sweepingAttack);
+		printTalent(Talent.thunderousCharge);
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Finesse");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.agileFighter);
+		printTalent(Talent.agileStrike);
+		printTalent(Talent.assassinStrike);
+		printTalent(Talent.hipShooting);
+		printTalent(Talent.carefulStrikes);
+		printTalent(Talent.deftBladesman);
+		printTalent(Talent.dualWielder);
+		printTalent(Talent.effortlessDodge);
+		printTalent(Talent.effortlessParry);
+		printTalent(Talent.gunslinger);
+		printTalent(Talent.independentTargeting);
+		printTalent(Talent.leapUp);
+		printTalent(Talent.marksman);
+		printTalent(Talent.martialArtist);
+		printTalent(Talent.masterGunslinger);
+		printTalent(Talent.quickDraw);
+		printTalent(Talent.riposte);
+		printTalent(Talent.sniperShot);
+		printTalent(Talent.swiftBlade);
+		printTalent(Talent.twoWeaponMaster);
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Defence");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.adamantiumWill);
+		printTalent(Talent.constantVigilance);
+		printTalent(Talent.denyTheWitch);
+		printTalent(Talent.dieHard);
+		printTalent(Talent.dirtyFighting);
+		printTalent(Talent.disarm);
+		printTalent(Talent.hardTarget);
+		printTalent(Talent.ignorePain);
+		printTalent(Talent.mentalFortress);
+		printTalent(Talent.nervesOfSteel);
+		printTalent(Talent.numbToPain);
+		printTalent(Talent.resistance.withParameter("Specify*"));
+		printTableNote("*Cold, Heat, Poison, Radiation, Vacuum");
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Psyker");
+		processFile("TABLE_TOP_TALENTS");
+		printTalent(Talent.psyker.withParameter("Specify*"));
+		printTableNote("*Sanctioned: You aquire the Sense Immaterium Skill. Adeptus Astra Telepathica Background only.");
+		printTableNote("*Unsanctioned: You aquire the Sense Immaterium Skill. You gain 1d10+5 Corruption and Insanity Points.");
+		printTalent(Talent.psyRating1);
+		printTalent(Talent.psyRating2);
+		printTalent(Talent.psyRating3);
+		printTalent(Talent.psyRating4);
+		printTalent(Talent.psyRating5);
+		printTalent(Talent.drawDeeper);
+		printTalent(Talent.masteredPsychicPower.withParameter("Specify*"));
+		printTableNote("*Any Psychic Power you have. The XP cost is the same as that Psychic Power.");
+		printTalent(Talent.powerJuggler);
+		printTalent(Talent.subtlePsyker);
+		printTalent(Talent.strongConnection);
+		printTalent(Talent.strongMind);
+		printTalent(Talent.theConstantThreat);
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Tech");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Leadership");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Fieldcraft");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Social");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Knowledge");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		printHeader_collapsible("Trades (General)");
+		processFile("TABLE_TOP_TALENTS");
+		// TODO //
+		processFile("TABLE_TAIL");
+		pw.println("	</div>");
+		pw.println();
+		pw.println();
+		
+		processFile("TAIL");
+		pw.close();
 	}
 	
 	private static void processFile(String filename) {
@@ -270,15 +462,24 @@ class DarkHeresyOverhaul {
 	}
 	
 	private enum Variable {
-		TITLE,
+		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE,
 		HOME_WORLD_ID, HOME_WORLD_NAME, HOME_WORLD_APTITUDE, BACKGROUND_ID, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
 		CHARACTER_ID, CHARACTER_NAME,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
-		SPECIAL_NAME, SPECIAL_DESCRIPTION, SKILL_NAME, ITEM_NAME;
+		SPECIAL_NAME, SPECIAL_DESCRIPTION, SKILL_NAME, ITEM_NAME,
+		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP;
 		
 		private String get() {
 			switch (this) {
+			case TITLE:
+				return title;
+			case HEADER:
+				return header;
+			case HEADER_ID:
+				return idFrom(header);
+			case NOTE:
+				return note;
 			case HOME_WORLD_ID:
 				return homeWorld.id;
 			case HOME_WORLD_NAME:
@@ -323,16 +524,20 @@ class DarkHeresyOverhaul {
 				return ""+npc.willpower;
 			case CHARACTER_FEL:
 				return ""+npc.fellowship;
-			case SPECIAL_NAME:
+			case SPECIAL_NAME: case TALENT_NAME:
 				return special.getFullName();
-			case SPECIAL_DESCRIPTION:
+			case SPECIAL_DESCRIPTION: case TALENT_DESCRIPTION:
 				return special.description;
+			case TALENT_REQUIREMENT:
+				return ((Talent)special).requirement;
+			case TALENT_APTITUDE:
+				return ((Talent)special).aptitude;
+			case TALENT_XP:
+				return ""+((Talent)special).xp;
 			case SKILL_NAME:
 				return skill.getFullName();
 			case ITEM_NAME:
 				return item.getFullName(isItemEquipped);
-			case TITLE:
-				return title;
 			default:
 				throw new RuntimeException("Undefined Variable: "+this);
 			}

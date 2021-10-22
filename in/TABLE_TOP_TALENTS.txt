@@ -1,0 +1,10 @@
+		<table class="table table-sm table-dark table-striped">
+			<thead>
+				<tr>
+					<th>Talent</th>
+					<th>Requirement</th>
+					<th>Aptitude</th>
+					<th>XP</th>
+				</tr>
+			</thead>
+			<tbody>

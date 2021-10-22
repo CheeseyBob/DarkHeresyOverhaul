@@ -1,7 +1,6 @@
 !PROCESS:TOP
 
 
-<div class="container-fluid p-3">
 	<h2 class="text-center">1. Roll Up The Character</h2>
 	<p>After rolling a character, you can Burn a Fate Point to bench that character and roll a new one.</p>
 	
@@ -411,10 +410,6 @@
 	
 	<h2 class="text-center">3. Bringing the Character to Life</h2>
 	<p>xxxxxx</p>
-</div>
-
-
-<div class="pt-3"></div>
-
-
+	
+	
 !PROCESS:TAIL

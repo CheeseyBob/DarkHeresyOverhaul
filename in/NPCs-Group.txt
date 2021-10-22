@@ -10,7 +10,4 @@
 !CHARACTER_SHEET_LIST
 
 
-<div class="pt-3"></div>
-
-
 !PROCESS:TAIL

@@ -19,4 +19,5 @@
 </ul>
 
 
-<h1 class="pt-3 text-center">!!@TITLE!!</h1>
+<h1 class="display-3 pt-3 text-center">!!@TITLE!!</h1>
+<div class="container-fluid p-3">
