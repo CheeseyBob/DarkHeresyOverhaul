@@ -6,7 +6,7 @@ class Bionics implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printTop("Bionics");
+		printer.printFileTop("Bionics");
 		printer.println("<p>Mechanically, bionics are Talents, but they cannot be aquired by spending XP. "
 				+ "Rather, they are purchased as if they are Items and must be installed by a capable chirurgeon in a proper medical facility (see <a href=\"Items.html\">Items</a> for availability of medical care).</p>");
 		printer.println("<p>The difficulty of installing a bionic is the modifier for its availability and -10 per wound. "
@@ -81,6 +81,6 @@ class Bionics implements Printable {
 		printer.println("	</div>");
 		printer.println();
 		printer.println();
-		printer.printTail();
+		printer.printFileTail();
 	}
 }

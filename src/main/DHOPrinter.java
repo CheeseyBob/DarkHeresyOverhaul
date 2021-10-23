@@ -11,6 +11,7 @@ public class DHOPrinter {
 	
 	// General //
 	private String title = "", header = "", note = "";
+	private int colSize = 1;
 	private LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
 	
 	// Character Creation //
@@ -120,6 +121,23 @@ public class DHOPrinter {
 			pw.println();
 		}
 	}
+	
+	public void printCollapsibleTail() {
+		processFile("COLLAPSIBLE_TAIL");
+	}
+	
+	public void printCollapsibleTop() {
+		processFile("COLLAPSIBLE_TOP");
+	}
+	
+	public void printColTail() {
+		processFile("COL_TAIL");
+	}
+	
+	public void printColTop(int colSize) {
+		this.colSize = colSize;
+		processFile("COL_TOP");
+	}
 
 	@Deprecated
 	private void printEquippedItemList() {
@@ -133,6 +151,15 @@ public class DHOPrinter {
 		}
 	}
 	
+	public void printFileTail() {
+		processFile("FILE_TAIL");
+	}
+	
+	public void printFileTop(String title) {
+		this.title = title;
+		processFile("FILE_TOP");
+	}
+	
 	public void printHeader(String header) {
 		this.header = header;
 		processFile("HEADER");
@@ -141,15 +168,6 @@ public class DHOPrinter {
 	public void printHeader_collapsible(String header) {
 		this.header = header;
 		processFile("HEADER_COLLAPSIBLE");
-	}
-
-	@Deprecated
-	private void printHomeWorldBenefitsList() {
-		for(HomeWorld homeWorld : HomeWorld.list) {
-			this.homeWorld = homeWorld;
-			this.specialRuleList = homeWorld.specialRuleList;
-			processFile("HOME_WORLD_BENEFITS");
-		}
 	}
 
 	@Deprecated
@@ -162,6 +180,22 @@ public class DHOPrinter {
 			this.item = item;
 			processFile("ITEM");
 		}
+	}
+	
+	public void printList(Object[] list, boolean ordered) {
+		pw.println(ordered ? "<ol>" : "<ul>");
+		for(Object item : list) {
+			pw.println("<li>"+item+"</li>");
+		}
+		pw.println(ordered ? "</ol>" : "</ul>");
+	}
+	
+	public void printList(LinkedList<? extends Object> list, boolean ordered) {
+		pw.println(ordered ? "<ol>" : "<ul>");
+		for(Object item : list) {
+			pw.println("<li>"+item+"</li>");
+		}
+		pw.println(ordered ? "</ol>" : "</ul>");
 	}
 	
 	public void println() {
@@ -179,6 +213,18 @@ public class DHOPrinter {
 		title = group.name+" NPCs";
 		processFile("NPCs-GROUP");
 		pw.close();
+	}
+	
+	public void printParagraph(String x) {
+		pw.println("<p>"+x+"</p>");
+	}
+	
+	public void printRowTail() {
+		processFile("ROW_TAIL");
+	}
+	
+	public void printRowTop() {
+		processFile("ROW_TOP");
 	}
 
 	@Deprecated
@@ -205,8 +251,26 @@ public class DHOPrinter {
 		processFile("SUBHEADER");
 	}
 	
-	public void printTail() {
-		processFile("TAIL");
+	public void printSubheader_collapsible(String subheader) {
+		this.header = subheader;
+		processFile("SUBHEADER_COLLAPSIBLE");
+	}
+	
+	public void printSubSubheader(String subheader) {
+		this.header = subheader;
+		processFile("SUBSUBHEADER");
+	}
+	
+	public void printTableRow(String[] entryList) {
+		pw.println("<tr>");
+		for(String entry : entryList) {
+			pw.println("<td>"+entry+"</td>");
+		}
+		pw.println("</tr>");
+	}
+	
+	public void printTableRow(String e1, String e2, String e3, String e4) {
+		printTableRow(new String[] {e1, e2, e3, e4});
 	}
 	
 	public void printTableRow_bionic(Bionic bionic) {
@@ -217,6 +281,11 @@ public class DHOPrinter {
 	public void printTableRow_note(String note) {
 		this.note = note;
 		processFile("TABLE_ROW_NOTE");
+	}
+	
+	public void printTableRow_specialRule(SpecialRule special) {
+		this.special = special;
+		processFile("TABLE_ROW_SPECIAL_RULE");
 	}
 	
 	public void printTableRow_subheader(String subheader) {
@@ -233,17 +302,39 @@ public class DHOPrinter {
 		processFile("TABLE_TAIL");
 	}
 	
+	public void printTableTop(String[] headerList, boolean wide, boolean striped) {
+		String tableType = wide ? "_WIDE" : "_NARROW";
+		tableType += striped ? "_STRIPED" : "_UNSTRIPED";
+		processFile("TABLE_TOP"+tableType);
+		for(String header : headerList) {
+			this.header = header;
+			processFile("TABLE_HEADER");
+		}
+		processFile("TABLE_BODY_TOP");
+	}
+	
+	public void printTableTop(boolean wide, boolean striped) {
+		printTableTop(new String[] {}, wide, striped);
+	}
+	
+	public void printTableTop(String header1, boolean wide, boolean striped) {
+		printTableTop(new String[] {header1}, wide, striped);
+	}
+	
+	public void printTableTop(String header1, String header2, boolean wide, boolean striped) {
+		printTableTop(new String[] {header1, header2}, wide, striped);
+	}
+	
+	public void printTableTop(String header1, String header2, String header3, String header4, boolean wide, boolean striped) {
+		printTableTop(new String[] {header1, header2, header3, header4}, wide, striped);
+	}
+	
 	public void printTableTop_bionics() {
-		processFile("TABLE_TOP_BIONICS");
+		printTableTop("Bionic", "Availability", true, true);
 	}
 	
 	public void printTableTop_talents() {
-		processFile("TABLE_TOP_TALENTS");
-	}
-	
-	public void printTop(String title) {
-		this.title = title;
-		processFile("TOP");
+		printTableTop("Talent", "Requirement", "Aptitude", "XP", true, true);
 	}
 	
 	private void processFile(String filename) {
@@ -284,21 +375,6 @@ public class DHOPrinter {
 		case PROCESS:
 			processFile(parameterList[0]);
 			break;
-		case HOME_WORLD_BENEFITS_LIST:
-			printHomeWorldBenefitsList();
-			break;
-		case HOME_WORLD_BENEFITS:
-			processFile("HOME_WORLD_BENEFITS");
-			break;
-		case BACKGROUND_BENEFITS_LIST:
-			printBackgroundBenefitsList();
-			break;
-		case BACKGROUND_PATH_LIST:
-			printBackgroundPathList();
-			break;
-		case BACKGROUND_PATH_BENEFITS_LIST:
-			printBackgroundPathBenefitsList();
-			break;
 		case CHARACTER_SHEET_LIST:
 			printCharacterSheetList();
 			break;
@@ -332,6 +408,8 @@ public class DHOPrinter {
 			return idFrom(header);
 		case NOTE:
 			return note;
+		case COL_SIZE:
+			return ""+colSize;
 		case HOME_WORLD_ID:
 			return homeWorld.id;
 		case HOME_WORLD_NAME:
@@ -399,18 +477,18 @@ public class DHOPrinter {
 	
 	private enum Command {
 		PROCESS,
-		HOME_WORLD_BENEFITS_LIST, HOME_WORLD_BENEFITS, BACKGROUND_BENEFITS_LIST, BACKGROUND_PATH_LIST, BACKGROUND_PATH_BENEFITS_LIST,
 		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
 	}
 	
 	private enum Variable {
-		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE,
+		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE, COL_SIZE,
 		HOME_WORLD_ID, HOME_WORLD_NAME, HOME_WORLD_APTITUDE, BACKGROUND_ID, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
 		CHARACTER_ID, CHARACTER_NAME,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
-		SPECIAL_NAME, SPECIAL_DESCRIPTION, SKILL_NAME, ITEM_NAME,
+		SPECIAL_NAME, SPECIAL_DESCRIPTION,
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
-		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY;
+		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
+		SKILL_NAME, ITEM_NAME;
 	}
 }

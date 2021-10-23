@@ -1,10 +1,11 @@
 package main;
+
 import java.util.LinkedList;
 
-class Background {
-	String id, name;
-	String aptitude;
-	LinkedList<BackgroundPath> backgroundPathList = new LinkedList<BackgroundPath>();
+public class Background {
+	public String id, name;
+	public String aptitude;
+	public LinkedList<BackgroundPath> backgroundPathList = new LinkedList<BackgroundPath>();
 	
 	Background(String name, String aptitude) {
 		this.id = DHOPrinter.idFrom(name);
@@ -373,13 +374,22 @@ class Background {
 							)
 					)
 	};
+	public static final String[][] roleRollList = {
+			{"01-02", "03", "04-28", "29-48", "49", "50-79", "80-99", "00"},
+			{"01-15", "16-30", "31", "32-39", "40", "41-45", "46-75", "76-00"},
+			{"01-02", "03", "04-08", "09", "10-89", "90-94", "95-99", "00"},
+			{"01-05", "06-10", "11-35", "36-39", "40", "41-65", "66-90", "91-00"},
+			{"01-05", "06-10", "11-30", "31-65", "66", "67-70", "71-85", "86-00"},
+			{"01-10", "11-20", "21-25", "26-32", "33", "34", "35", "36-00"},
+			{"01-30", "31-60", "61", "62-63", "64", "65", "66-95", "96-00"},
+	};
 	
-	static class BackgroundPath {
-		String name;
-		String[] characteristicsIncreaseList;
-		Skill[] skillList;
-		SpecialRule[] specialRuleList;
-		Item[] itemList;
+	public static class BackgroundPath {
+		public String name;
+		public String[] characteristicsIncreaseList;
+		public Skill[] skillList;
+		public SpecialRule[] specialRuleList;
+		public Item[] itemList;
 		
 		BackgroundPath(String name, String[] characteristicsIncreaseList, Skill[] skillList, SpecialRule[] specialRuleList, Item[] equipmentList) {
 			this.name = name;

@@ -20,6 +20,11 @@ class Skill {
 		return new Skill(name, bonus);
 	}
 	
+	@Override
+	public String toString() {
+		return getFullName();
+	}
+	
 	// General Skills //
 	public static final Skill navigate = new Skill("Navigate");
 	public static final Skill notice = new Skill("Notice");

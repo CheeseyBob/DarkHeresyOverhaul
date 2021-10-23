@@ -20,6 +20,11 @@ class Item {
 		return new ItemStack(this, amount);
 	}
 	
+	@Override
+	public String toString() {
+		return getFullName(false);
+	}
+	
 	class ItemStack extends Item {
 		int amount;
 		

@@ -1,5 +1,5 @@
 package main;
-class SpecialRule {
+public class SpecialRule {
 	String name;
 	String parameter = null;
 	String description;
@@ -21,5 +21,10 @@ class SpecialRule {
 		SpecialRule ruleWithParameter = new SpecialRule(name, description);
 		ruleWithParameter.parameter = parameter;
 		return ruleWithParameter;
+	}
+	
+	@Override
+	public String toString() {
+		return getFullName();
 	}
 }

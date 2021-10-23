@@ -6,7 +6,7 @@ class Talents implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printTop("Talents");
+		printer.printFileTop("Talents");
 		printer.printHeader_collapsible("General");
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.intimidating);
@@ -289,6 +289,6 @@ class Talents implements Printable {
 		printer.println("	</div>");
 		printer.println();
 		printer.println();
-		printer.printTail();
+		printer.printFileTail();
 	}
 }
