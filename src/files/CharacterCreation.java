@@ -68,7 +68,7 @@ class CharacterCreation implements Printable {
 				"			<li>For Characteristics in the bonus column on the Determine Home World table, reroll and keep the highest.</li>" + "\n" + 
 				"			<li>For Characteristics in the penalty column, reroll and keep the lowest.</li>" + "\n" + 
 				"		</ul>" + "\n" + 
-				"		<li>Set your Maximum Wounds to 5 + 2x Toughness Bonus.</li>" + "\n" + 
+				"		<li>Set your Maximum Wounds to 7.</li>" + "\n" + 
 				"	</ol>");
 		printer.println();
 		printer.println();

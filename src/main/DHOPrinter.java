@@ -46,70 +46,6 @@ public class DHOPrinter {
 		}
 		return idString;
 	}
-	
-	@Deprecated
-	private void printBackgroundBenefitsList() {
-		for(Background background : Background.list) {
-			this.background = background;
-			processFile("BACKGROUND_BENEFITS");
-		}
-	}
-
-	@Deprecated
-	private void printBackgroundPathList() {
-		for(Background.BackgroundPath backgroundPath : background.backgroundPathList) {
-			this.backgroundPath = backgroundPath;
-			processFile("BACKGROUND_PATH");
-		}
-	}
-
-	@Deprecated
-	private void printBackgroundPathBenefitsList() {
-		pw.println("				<b>Characteristic Increases</b>");
-		pw.println("				<ul>");
-		for(String characteristicIncrease : this.backgroundPath.characteristicsIncreaseList) {
-			pw.println("					<li>"+characteristicIncrease+"</li>");
-		}
-		if(this.backgroundPath.characteristicsIncreaseList.length == 0) {
-			pw.println("					<li>None</li>");
-		}
-		pw.println("				</ul>");
-		pw.println("				<b>Talents</b>");
-		pw.println("				<ul>");
-		for(SpecialRule special : this.backgroundPath.specialRuleList) {
-			pw.println("					<li>"+special.getFullName()+"</li>");
-		}
-		if(this.backgroundPath.specialRuleList.length == 0) {
-			pw.println("					<li>None</li>");
-		}
-		pw.println("				</ul>");
-		pw.println("				<b>Skills</b>");
-		pw.println("				<ul>");
-		for(Skill skill : this.backgroundPath.skillList) {
-			pw.println("					<li>"+skill.getFullName()+"</li>");
-		}
-		if(this.backgroundPath.skillList.length == 0) {
-			pw.println("					<li>None</li>");
-		}
-		pw.println("				</ul>");
-		pw.println("				<b>Items</b>");
-		pw.println("				<ul>");
-		for(Item item : this.backgroundPath.itemList) {
-			pw.println("					<li>"+item.getFullName(false)+"</li>");
-		}
-		if(this.backgroundPath.itemList.length == 0) {
-			pw.println("					<li>None</li>");
-		}
-		pw.println("				</ul>");
-	}
-
-	@Deprecated
-	private void printCharacterCreationFile() {
-		pw = TextFileHandler.startWritingToFile("out/CharacterCreation.html");
-		title = "Character Creation";
-		processFile("CharacterCreation");
-		pw.close();
-	}
 
 	@Deprecated
 	private void printCharacterSheetList() {
@@ -296,6 +232,11 @@ public class DHOPrinter {
 	public void printTableRow_talent(Talent talent) {
 		this.special = talent;
 		processFile("TABLE_ROW_TALENT");
+	}
+	
+	public void printTableRow_trait(Trait trait) {
+		this.special = trait;
+		processFile("TABLE_ROW_SPECIAL_RULE"); // Nothing different about traits. //
 	}
 	
 	public void printTableTail() {

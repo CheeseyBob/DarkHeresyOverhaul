@@ -19,6 +19,7 @@ class DarkHeresyOverhaul {
 //		printCharacterCreationFile();
 		printFile(FileList.characterCreation, "CharacterCreation.html");
 		printFile(FileList.talents, "Talents.html");
+		printFile(FileList.traits, "Traits.html");
 		printFile(FileList.bionics, "Bionics.html");
 		
 		// NPC Groups //

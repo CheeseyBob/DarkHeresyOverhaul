@@ -1,4 +1,5 @@
 package main;
+
 public class Talent extends SpecialRule {
 	public static final String UPGRADE_MARK = "†";
 	

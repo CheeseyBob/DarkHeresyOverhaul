@@ -8,6 +8,7 @@ class Talents implements Printable {
 	public void print(DHOPrinter printer) {
 		printer.printFileTop("Talents");
 		printer.printHeader_collapsible("General");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.intimidating);
 		printer.printTableRow_talent(Talent.rapidReload);
@@ -20,10 +21,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.weaponMaster_ranged);
 		printer.printTableRow_talent(Talent.wrestler);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Offence");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.assaultFire);
 		printer.printTableRow_talent(Talent.battleRage);
@@ -41,10 +43,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.sweepingAttack);
 		printer.printTableRow_talent(Talent.thunderousCharge);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Finesse");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.agileFighter);
 		printer.printTableRow_talent(Talent.agileStrike);
@@ -67,10 +70,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.swiftBlade);
 		printer.printTableRow_talent(Talent.twoWeaponMaster);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Defence");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.adamantiumWill);
 		printer.printTableRow_talent(Talent.constantVigilance);
@@ -86,10 +90,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.resistance.withParameter("Specify*"));
 		printer.printTableRow_note("*Cold, Heat, Poison, Radiation, Vacuum");
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Psyker");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.psyker.withParameter("Specify*"));
 		printer.printTableRow_note("*Sanctioned: You aquire the Sense Immaterium Skill. Adeptus Astra Telepathica Background only.");
@@ -108,10 +113,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.strongMind);
 		printer.printTableRow_talent(Talent.theConstantThreat);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Tech");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.demolitionsExpert);
 		printer.printTableRow_talent(Talent.operate_ag.withParameter("Specify*"));
@@ -130,10 +136,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.maglevTranscendence);
 		printer.printTableRow_talent(Talent.prosanguine);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Leadership");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.commanding);
 		printer.printTableRow_talent(Talent.dominatingBellow);
@@ -146,10 +153,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.network);
 		printer.printTableRow_talent(Talent.publicSpeaker);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Fieldcraft");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.accustomedToDarkness);
 		printer.printTableRow_talent(Talent.accustomedToZeroGravity);
@@ -160,10 +168,11 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.quickEntry);
 		printer.printTableRow_talent(Talent.spotWeakness);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Social");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.charming);
 		printer.printTableRow_talent(Talent.cluesFromTheCrowds);
@@ -187,10 +196,11 @@ class Talents implements Printable {
 				+ "<li>Underworld: The many organisations that operate outside the bounds of Imperial legal authorities.</li>" + "\n"
 				+ "</ul>");
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Knowledge");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.creativeProblemSolving);
 		printer.printTableRow_talent(Talent.deepestSecrets);
@@ -252,10 +262,11 @@ class Talents implements Printable {
 				+ "<li>Xenos: The alien species known to the Imperium, the threat they pose to humanity, and their general appearance.</li>" + "\n"
 				+ "</ul>");
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Trades (General)");
+		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.trade_agriWorker);
 		printer.printTableRow_talent(Talent.trade_apothecary);
@@ -286,7 +297,7 @@ class Talents implements Printable {
 		printer.printTableRow_talent(Talent.trade_voidfarer);
 		printer.printTableRow_talent(Talent.trade_wright);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printFileTail();

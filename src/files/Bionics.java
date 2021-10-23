@@ -13,6 +13,7 @@ class Bionics implements Printable {
 				+ "Installing a bionic takes a full day and inflicts 1d10 Rending damage, ignoring Armour and Toughness. "
 				+ "On a critical failure, an additional 1d10 Wounds are inflicted as Rending critical damage to the appropriate location.</p>");
 		printer.printHeader_collapsible("Replacements");
+		printer.printCollapsibleTop();
 		printer.printTableTop_bionics();
 		printer.printTableRow_bionic(Bionic.bionicArm_poorQuality);
 		printer.printTableRow_bionic(Bionic.bionicArm);
@@ -42,10 +43,11 @@ class Bionics implements Printable {
 		printer.printTableRow_bionic(Bionic.vocalImplant_poorQuality);
 		printer.printTableRow_bionic(Bionic.vocalImplant);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Augmentations");
+		printer.printCollapsibleTop();
 		printer.printTableTop_bionics();
 		printer.printTableRow_bionic(Bionic.augurArray_poorQuality);
 		printer.printTableRow_bionic(Bionic.augurArray);
@@ -60,10 +62,11 @@ class Bionics implements Printable {
 		printer.printTableRow_bionic(Bionic.mindImpulseUnit_bestQuality);
 		printer.printTableRow_bionic(Bionic.subskinArmour);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Mechanicus Implants");
+		printer.printCollapsibleTop();
 		printer.printTableTop_bionics();
 		printer.printTableRow_bionic(Bionic.mechanicusImplants);
 		printer.printTableRow_bionic(Bionic.autosanguine);
@@ -78,7 +81,7 @@ class Bionics implements Printable {
 		printer.printTableRow_bionic(Bionic.mechadendrite_optical);
 		printer.printTableRow_bionic(Bionic.mechadendrite_utility);
 		printer.printTableTail();
-		printer.println("	</div>");
+		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printFileTail();
