@@ -1,10 +1,8 @@
 		<table class="table table-sm table-dark table-striped">
 			<thead>
 				<tr>
-					<th class="text-center">Talent</th>
-					<th>Requirement</th>
-					<th>Aptitude</th>
-					<th>XP</th>
+					<th class="text-center">Bionic</th>
+					<th>Availability</th>
 				</tr>
 			</thead>
 			<tbody>

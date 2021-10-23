@@ -1,3 +1,4 @@
+package main;
 class NPCGroup_Ministorum extends NPCGroup {
 
 	NPCGroup_Ministorum() {

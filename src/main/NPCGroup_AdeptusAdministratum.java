@@ -1,3 +1,5 @@
+package main;
+
 class NPCGroup_AdeptusAdministratum extends NPCGroup {
 
 	NPCGroup_AdeptusAdministratum() {

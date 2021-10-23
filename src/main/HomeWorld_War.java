@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_War extends HomeWorld {
 
 	HomeWorld_War() {

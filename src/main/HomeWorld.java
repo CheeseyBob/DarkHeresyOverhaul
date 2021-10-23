@@ -1,3 +1,4 @@
+package main;
 import java.util.LinkedList;
 
 abstract class HomeWorld {
@@ -6,7 +7,7 @@ abstract class HomeWorld {
 	LinkedList<SpecialRule> specialRuleList = new LinkedList<SpecialRule>();
 	
 	HomeWorld(String name, Characteristic bonus1, Characteristic bonus2, Characteristic penalty) {
-		this.id = DarkHeresyOverhaul.idFrom(name);
+		this.id = DHOPrinter.idFrom(name);
 		this.name = name;
 		this.bonusCharacteristic1 = bonus1;
 		this.bonusCharacteristic2 = bonus2;

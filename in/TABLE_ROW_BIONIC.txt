@@ -1,0 +1,5 @@
+				<tr>
+					<td><b>!!@BIONIC_NAME!!:</b>
+					!!@BIONIC_DESCRIPTION!!</td>
+					<td>!!@BIONIC_AVAILABILITY!!</td>
+				</tr>

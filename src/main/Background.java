@@ -1,3 +1,4 @@
+package main;
 import java.util.LinkedList;
 
 class Background {
@@ -6,7 +7,7 @@ class Background {
 	LinkedList<BackgroundPath> backgroundPathList = new LinkedList<BackgroundPath>();
 	
 	Background(String name, String aptitude) {
-		this.id = DarkHeresyOverhaul.idFrom(name);
+		this.id = DHOPrinter.idFrom(name);
 		this.name = name;
 		this.aptitude = aptitude;
 	}

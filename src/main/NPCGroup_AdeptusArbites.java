@@ -1,3 +1,4 @@
+package main;
 class NPCGroup_AdeptusArbites extends NPCGroup {
 
 	NPCGroup_AdeptusArbites() {

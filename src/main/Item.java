@@ -1,3 +1,4 @@
+package main;
 class Item {
 	String name;
 	int size;

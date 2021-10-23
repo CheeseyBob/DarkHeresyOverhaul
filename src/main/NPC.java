@@ -1,3 +1,4 @@
+package main;
 import java.util.LinkedList;
 
 class NPC {
@@ -12,7 +13,7 @@ class NPC {
 	LinkedList<Item> inventoryList = new LinkedList<Item>();
 	
 	NPC(String name, String stats) {
-		this.id = DarkHeresyOverhaul.idFrom(name);
+		this.id = DHOPrinter.idFrom(name);
 		this.name = name;
 		assignStats(stats);
 	}

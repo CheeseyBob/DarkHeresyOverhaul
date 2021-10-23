@@ -1,324 +1,355 @@
-<html>
-<font face="sans">
-<style>
-table {
-  border: 1px solid black;
-}
-th, td {
-  padding: 4px;
-}
-</style>
-<title>Bionics - Dark Heresy Overhaul</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bionics - Dark Heresy Overhaul</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Include Bootstrap from the jsDelivr CND -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body class="bg-dark text-white">
 
 
-<a href="DarkHeresyOverhaul.html">Index</a>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="DarkHeresyOverhaul.html">Index</a>
+	</li>
+</ul>
 
 
-<h1>Bionics</h1>
+<h1 class="display-3 pt-3 text-center">Bionics</h1>
+<div class="container-fluid p-3">
 <p>Mechanically, bionics are Talents, but they cannot be aquired by spending XP. Rather, they are purchased as if they are Items and must be installed by a capable chirurgeon in a proper medical facility (see <a href="Items.html">Items</a> for availability of medical care).</p>
-
 <p>The difficulty of installing a bionic is the modifier for its availability and -10 per wound. Installing a bionic takes a full day and inflicts 1d10 Rending damage, ignoring Armour and Toughness. On a critical failure, an additional 1d10 Wounds are inflicted as Rending critical damage to the appropriate location.</p>
+	<div class="row">
+		<div class="col-2">
+			<h4 class="pt-3">
+				<a data-bs-toggle="collapse" href="#Replacements">
+					<small class="badge rounded-pill bg-secondary">▼▲</small>
+				</a>
+			</h4>
+		</div>
+		<div class="col-8">
+			<h2 class="pt-3 text-center">Replacements</h2>
+		</div>
+	</div>
+	<div id="Replacements" class="collapse">
+		<table class="table table-sm table-dark table-striped">
+			<thead>
+				<tr>
+					<th class="text-center">Bionic</th>
+					<th>Availability</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>Bionic Arm (Poor Quality):</b>
+					Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Take a -10 penalty to Weapon Skill, Ballistic Skill and Agility when using this arm.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Arm:</b>
+					Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Arm (Good Quality):</b>
+					Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Arm (Best Quality):</b>
+					Functions and appears as a regular arm (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Eye (Poor Quality):</b>
+					Functions as a regular eye. You take at most a -10 penalty from being Dazzled. Take a -10 penalty to any Test which would typically involve vision.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Eye:</b>
+					Functions as a regular eye. You take at most a -10 penalty from being Dazzled.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Eye (Good Quality):</b>
+					Functions as a regular eye. You take at most a -10 penalty from being Dazzled. Get a +10 bonus to all Perception Tests involving vision.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Eye (Best Quality):</b>
+					Functions and appears as a regular eye (Inspect is required to tell the difference). You take at most a -10 penalty from being Dazzled. Get a +10 bonus to all Perception Tests involving vision.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td colspan=99>*If your eyes are all bionic, then you are immune to becoming Dazzled.</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Hearing (Poor Quality):</b>
+					Functions as a regular ear. Take a -10 penalty to any Test which would typically involve hearing.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Hearing:</b>
+					Functions as a regular ear.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Hearing (Good Quality):</b>
+					Functions as regular ears. Get a +10 bonus to all Perception Tests involving hearing.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Hearing (Best Quality):</b>
+					Functions and appears as regular ears (Inspect is required to tell the difference). Get a +10 bonus to all Perception Tests involving hearing.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Leg (Poor Quality):</b>
+					Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Take a -10 penalty to any Agility Test involving the use of legs. Fall Prone on critical failures.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Leg:</b>
+					Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Leg (Good Quality):</b>
+					Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Leg (Best QUality):</b>
+					Functions and appears as a regular leg (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Lungs (Poor Quality):</b>
+					Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases. Take a -10 penalty to Sneak and to Resist becoming Fatigued.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Lungs:</b>
+					Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Lungs (Good Quality):</b>
+					Functions as a pair of lungs. Get a +30 bonus to Resist harmful gases.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Bionic Lungs (Best quality):</b>
+					Functions as a pair of lungs. Get a +40 bonus to Resist harmful gases.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cerebral Implant (Poor Quality):</b>
+					Restores brain function, but destroys your personality and memories. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cerebral Implant:</b>
+					Restores brain function. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10+10.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cerebral Implant (Good Quality):</b>
+					Restores brain function. Intelligence and Fellowship are set to 2d10+20.</td>
+					<td>Extremely Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cerebral Implant (Best Quality):</b>
+					Restores brain function. Intelligence and Fellowship are set to 2d10+40.</td>
+					<td>Near Unique</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant (Poor Quality):</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate. Take a -10 penalty to Fellowship.</td>
+					<td>Average</td>
+				</tr>
+				<tr>
+					<td><b>Vocal Implant:</b>
+					Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
+					<td>Scarce</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 
-<h3>Replacements</h3>
-<table>
-<tr>
-<th>Bionic</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td><b>Bionic Arm (Poor Quality):</b>
-Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Take a -10 penalty to Weapon Skill, Ballistic Skill and Agility when using this arm.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Bionic Arm:</b>
-Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Bionic Arm (Good Quality):</b>
-Functions as a regular arm. You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Arm (Best Quality):</b>
-Functions and appears as a regular arm (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this arm. Get a +10 bonus to Strength when using this arm.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Leg (Poor Quality):</b>
-Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Take a -10 penalty to any Agility Test involving the use of legs. Fall Prone on critical failures.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Bionic Leg:</b>
-Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Bionic Leg (Good Quality):</b>
-Functions as a regular leg. You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Leg (Best Quality):</b>
-Functions and appears as a regular leg (Inspect is required to tell the difference). You do not become Stunned or Bleeding Out from critical damage to this leg. Get a +10 bonus to Agility when using this leg.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Eye (Poor Quality):</b>
-Functions as a regular eye.
-You are resistant* to becoming Dazzled.
-Take a -10 penalty to any Test which would typically involve vision.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Bionic Eye:</b>
-Functions as a regular eye.
-You are resistant* to becoming Dazzled.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Bionic Eye (Good Quality):</b>
-Functions as a regular eye.
-You are resistant* to becoming Dazzled.
-Get a +10 bonus to all Perception Tests involving vision.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Eye (Best Quality):</b>
-Functions and appears as a regular eye (Inspect is required to tell the difference).
-You are resistant* to becoming Dazzled.
-Get a +10 bonus to all Perception Tests involving vision.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td>*If you only have bionic eyes: You are immune to becoming Dazzled.<br>
-If you have another biological eye: You take at most a -10 penalty from being Dazzled.</td>
-</tr>
-<tr>
-<td><b>Bionic Hearing (Poor Quality):</b>
-Functions as a regular ear. Take a -10 penalty to any Test which would typically involve hearing.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Bionic Hearing:</b>
-Functions as a regular ear.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Bionic Hearing (Good Quality):</b>
-Functions as regular ears. Get a +10 bonus to all Perception Tests involving hearing.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Hearing (Best Quality):</b>
-Functions and appears as regular ears (Inspect is required to tell the difference). Get a +10 bonus to all Perception Tests involving hearing.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs (Poor Quality):</b>
-Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases. Take a -10 penalty to Sneak and to Resist becoming Fatigued.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs:</b>
-Functions as a pair of lungs. Get a +20 bonus to Resist harmful gases.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs (Good Quality):</b>
-Functions as a pair of lungs. Get a +30 bonus to Resist harmful gases.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Bionic Lungs (Best Quality):</b>
-Functions as a pair of lungs. Get a +30 bonus to Resist harmful gases. Impossible to notice outside of a thorough medical examination.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Cerebral Implant:</b>
-Restores brain function. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10+10.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Cerebral Implant (Good Quality):</b>
-Restores brain function. Intelligence and Fellowship are set to 2d10+20.</td>
-<td>Extremely Rare</td>
-</tr>
-<tr>
-<td><b>Cerebral Implant (Best Quality):</b>
-Restores brain function. Intelligence and Fellowship are set to 2d10+40.</td>
-<td>Near Unique</td>
-</tr>
-<tr>
-<td><b>Cerebral Implant (Poor Quality):</b>
-Restores brain function, but destroys your personality and memories. Permenantly reduces WS, BS and Agility by 1d10. Intelligence and Fellowship are set to 1d10.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Vocal Implant (Poor Quality):</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate. Take a -10 penalty to Fellowship.</td>
-<td>Average</td>
-</tr>
-<tr>
-<td><b>Vocal Implant:</b>
-Functions as a voice, which you can amplify greatly. Get a +10 bonus to Intimidate.</td>
-<td>Scarce</td>
-</tr>
-</table>
-<p>
+	<div class="row">
+		<div class="col-2">
+			<h4 class="pt-3">
+				<a data-bs-toggle="collapse" href="#Augmentations">
+					<small class="badge rounded-pill bg-secondary">▼▲</small>
+				</a>
+			</h4>
+		</div>
+		<div class="col-8">
+			<h2 class="pt-3 text-center">Augmentations</h2>
+		</div>
+	</div>
+	<div id="Augmentations" class="collapse">
+		<table class="table table-sm table-dark table-striped">
+			<thead>
+				<tr>
+					<th class="text-center">Bionic</th>
+					<th>Availability</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>Augur Array (Poor Quality):</b>
+					You can percieve something not normally visible to humans (heat, gases, radiation, etc; choose one). Get a +10 bonus to Perception when looking for this thing.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array:</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array (GoodQuality):</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +20 bonus to Perception.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Augur Array (Best Quality):</b>
+					You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +30 bonus to Perception.</td>
+					<td>Extremely Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cogitator Implant:</b>
+					Get a +10 bonus to Contemplate and Reference Lore.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Cranial Armour:</b>
+					You do not become Stunned or Bleeding Out from critical damage to the head.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Interface Port:</b>
+					You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Poor Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to. Establishing a link requires a Willpower Test and you gain 1d10 Insanity on critical failure.</td>
+					<td>Scarce</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit:</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Good Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mind Impulse Unit (Best Quality):</b>
+					Allows you to control certain machines and vehicles via a neural link. Get a +30 bonus to any Test to communicate with or control the thing you are linked to.</td>
+					<td>Extremely Rare</td>
+				</tr>
+				<tr>
+					<td><b>Subskin Armour:</b>
+					You do not become Stunned or Bleeding Out from critical damage to the body.</td>
+					<td>Scarce</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 
-<h3>Augmentations</h3>
-<table>
-<tr>
-<th>Bionic</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td><b>Augur Array (Poor Quality):</b>
-You can percieve something not normally visible to humans (heat, gases, radiation, etc; choose one). Get a +10 bonus to Perception when looking for this thing.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Augur Array:</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +10 bonus to Perception.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Augur Array (Good Quality):</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +20 bonus to Perception.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Augur Array (Best Quality):</b>
-You can adjust your vision to perceive the full range of the electromagnetic spectrum, allowing you to see various things not normally visible (heat, gases, radiation, etc.). Get a +30 bonus to Perception.</td>
-<td>Extremely Rare</td>
-</tr>
-<tr>
-<td><b>Cogitator Implant:</b>
-Get a +10 bonus to Contemplate and Reference Lore.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Cranial Armour:</b>
-You do not become Stunned or Bleeding Out from critical damage to the head.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Interface Port:</b>
-You can connect to data-slates, cogitators and other tech devices via a data cable. You get a +10 bonus to relevant Tests when doing so.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Poor Quality):</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to. Establishing a link requires a Willpower Test and you gain 1d10 Insanity on critical failure.</td>
-<td>Scarce</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit:</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +10 bonus to any Test to communicate with or control the thing you are linked to.</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Good Quality):</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +20 bonus to any Test to communicate with or control the thing you are linked to.</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Mind Impulse Unit (Best Quality):</b>
-Allows you to control certain machines and vehicles via a neural link. Get a +30 bonus to any Test to communicate with or control the thing you are linked to.</td>
-<td>Extremely Rare</td>
-</tr>
-<tr>
-<td><b>Subskin Armour:</b>
-You do not become Stunned or Bleeding Out from critical damage to the body.</td>
-<td>Scarce</td>
-</tr>
-</table>
-<p>
+	<div class="row">
+		<div class="col-2">
+			<h4 class="pt-3">
+				<a data-bs-toggle="collapse" href="#MechanicusImplants">
+					<small class="badge rounded-pill bg-secondary">▼▲</small>
+				</a>
+			</h4>
+		</div>
+		<div class="col-8">
+			<h2 class="pt-3 text-center">Mechanicus Implants</h2>
+		</div>
+	</div>
+	<div id="MechanicusImplants" class="collapse">
+		<table class="table table-sm table-dark table-striped">
+			<thead>
+				<tr>
+					<th class="text-center">Bionic</th>
+					<th>Availability</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>Mechanicus Implants:</b>
+					You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td><b>Autosanguine:</b>
+					When you Rest, you automatically pass the Toughness Test with the maximum possible Degrees of Success.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Ferric Lure:</b>
+					Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Internal Reservoir:</b>
+					You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Luminen Capacitor:</b>
+					Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
+					<td>Rare</td>
+				</tr>
+				<tr>
+					<td><b>Maglev Coils:</b>
+					You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<th class="text-center">Mechadendrites</th>
+					<td colspan=99></td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Ballistic):</b>
+					Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Manipulator):</b>
+					Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Medicae):</b>
+					Counts as a Tool (+20 bonus) used to treat wounds, perform surgery and administer drugs. Includes a set of 5 injectors.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Optical):</b>
+					Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
+					<td>Very Rare</td>
+				</tr>
+				<tr>
+					<td><b>Mechadendrite (Utility):</b>
+					Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
+					<td>Very Rare</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 
-<h3>Mechanicus Implants</h3>
-<table>
-<tr>
-<th>Bionic</th>
-<th>Requirement</th>
-<th>Availability</th>
-</tr>
-<tr>
-<td><b>Mechanicus Implants:</b>
-You can install mechadendrites (a number up to your Toughness Bonus), in addition to various other implants.</td>
-<td>Adeptus Mechanicus background</td>
-<td>-</td>
-</tr>
-<tr>
-<td><b>Autosanguine:</b>
-When you Rest, you automatically pass the Toughness Test with the maximum possible Degrees of Success.</td>
-<td>Luminen Capacitor</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Ferric Lure:</b>
-Secondary Action; Call an unsecured metal object of size 2 or less within 20m to your hand. Consumes 1 Power.</td>
-<td>Internal Reservoir</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Internal Reservoir:</b>
-You can store up to 50 Power, which can be discharged in place of the Luminen Capacitor Toughness Test and can be charged using a power outlet or the Luminen Capacitor.</td>
-<td>Luminen Capacitor</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Luminen Capacitor:</b>
-Long Action; Toughness Test; charge an item by 1 Power plus 1 per DoS; become Fatigued on critical failure.</td>
-<td>Mechanicus Implants</td>
-<td>Rare</td>
-</tr>
-<tr>
-<td><b>Maglev Coils:</b>
-You can hover up to 1m off the ground, consuming 1 Power/turn, and can move and act normally while doing so. This reduces fall damage and allows you to move in zero-gravity.</td>
-<td>Internal Reservoir</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<th>Mechadendrites</th>
-</tr>
-<tr>
-<td><b>Mechadendrite (Ballistic):</b>
-Counts as an extra arm with a Laspistol which draws power from your Internal Reservoir.</td>
-<td>Internal Reservoir</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Manipulator):</b>
-Counts as an extra arm with a +20 bonus to Strength, but is incapable of fine manipulation (typing, etc.).</td>
-<td>Mechanicus Implants</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Medicae):</b>
-Counts as a Tool (+20 bonus) used to treat wounds, perform surgery and administer drugs. Includes a set of 5 injectors.</td>
-<td>Mechanicus Implants</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Optical):</b>
-Counts as an optical Tool (+20 bonus) used to examine objects down to a microscopic level or telescopically from a distance. It can extend up to 3m and functions as an extra eye.</td>
-<td>Mechanicus Implants</td>
-<td>Very Rare</td>
-</tr>
-<tr>
-<td><b>Mechadendrite (Utility):</b>
-Counts as a Tool (+20 bonus) used to repair and maintain tech. It can contain 5 doses of Sacred Machine Oil.</td>
-<td>Mechanicus Implants</td>
-<td>Very Rare</td>
-</tr>
-</table>
-<p>
-
-
-</html>

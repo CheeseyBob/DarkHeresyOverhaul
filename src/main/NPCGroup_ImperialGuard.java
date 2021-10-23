@@ -1,3 +1,4 @@
+package main;
 class NPCGroup_ImperialGuard extends NPCGroup {
 
 	NPCGroup_ImperialGuard() {

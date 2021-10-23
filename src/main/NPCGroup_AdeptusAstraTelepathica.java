@@ -1,3 +1,4 @@
+package main;
 class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 
 	NPCGroup_AdeptusAstraTelepathica() {

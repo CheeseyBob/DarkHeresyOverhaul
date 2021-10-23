@@ -1,2 +1,0 @@
-<a href="Talents.html#!!@TALENT_CATEGORY_ID!!">!!@TALENT_CATEGORY_NAME!!</a>
-<br>

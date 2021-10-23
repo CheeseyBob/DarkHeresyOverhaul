@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_Forge extends HomeWorld {
 
 	HomeWorld_Forge() {

@@ -1,3 +1,4 @@
+package main;
 import java.util.LinkedList;
 
 abstract class NPCGroup {
@@ -5,7 +6,7 @@ abstract class NPCGroup {
 	LinkedList<NPC> npcList = new LinkedList<NPC>();
 	
 	NPCGroup(String name) {
-		this.id = DarkHeresyOverhaul.idFrom(name);
+		this.id = DHOPrinter.idFrom(name);
 		this.name = name;
 		setNPCList();
 	}

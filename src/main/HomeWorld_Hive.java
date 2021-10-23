@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_Hive extends HomeWorld {
 
 	HomeWorld_Hive() {

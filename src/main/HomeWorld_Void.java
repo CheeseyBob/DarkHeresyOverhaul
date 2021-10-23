@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_Void extends HomeWorld {
 
 	HomeWorld_Void() {

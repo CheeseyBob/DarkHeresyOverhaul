@@ -1,3 +1,4 @@
+package main;
 enum Characteristic {
 	WS, BS, S, T, Ag, Int, Per, WP, Fel;
 	

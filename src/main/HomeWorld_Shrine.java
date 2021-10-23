@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_Shrine extends HomeWorld {
 
 	HomeWorld_Shrine() {

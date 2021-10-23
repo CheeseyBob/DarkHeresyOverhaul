@@ -1,3 +1,5 @@
+package main;
+
 class NPCGroup_AdeptusMechanicus extends NPCGroup {
 
 	NPCGroup_AdeptusMechanicus() {

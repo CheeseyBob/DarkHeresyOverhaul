@@ -1,3 +1,4 @@
+package main;
 class NPCGroup_Outcasts extends NPCGroup {
 
 	NPCGroup_Outcasts() {

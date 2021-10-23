@@ -1,3 +1,5 @@
+package main;
+
 class HomeWorld_Tithe extends HomeWorld {
 
 	HomeWorld_Tithe() {
