@@ -15,25 +15,29 @@ import files.FileList;
 class DarkHeresyOverhaul {
 	
 	public static void main(String[] args) {
-		// Character Creation //
-//		printCharacterCreationFile();
+		// Characters //
 		printFile(FileList.characterCreation, "CharacterCreation.html");
 		printFile(FileList.talents, "Talents.html");
 		printFile(FileList.traits, "Traits.html");
 		printFile(FileList.bionics, "Bionics.html");
 		
-		// NPC Groups //
-		NPCGroup[] npcGroupList = {
-				new NPCGroup_AdeptusAdministratum(),
-				new NPCGroup_AdeptusArbites(),
-				new NPCGroup_AdeptusAstraTelepathica(),
-				new NPCGroup_AdeptusMechanicus(),
-				new NPCGroup_ImperialGuard(),
-				new NPCGroup_Ministorum(),
-				new NPCGroup_Outcasts()};
-		for(NPCGroup group : npcGroupList) {
+		// Playing the Game //
+		printFile(FileList.aspects, "Aspects.html");
+		
+		// Running the Game //
+		
+		// XXX NPC Groups //
+//		NPCGroup[] npcGroupList = {
+//				new NPCGroup_AdeptusAdministratum(),
+//				new NPCGroup_AdeptusArbites(),
+//				new NPCGroup_AdeptusAstraTelepathica(),
+//				new NPCGroup_AdeptusMechanicus(),
+//				new NPCGroup_ImperialGuard(),
+//				new NPCGroup_Ministorum(),
+//				new NPCGroup_Outcasts()};
+//		for(NPCGroup group : npcGroupList) {
 //			printNPCGroupFile(group);
-		}
+//		}
 	}
 	
 	private static void printFile(Printable printable, String filename) {

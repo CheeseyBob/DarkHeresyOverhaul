@@ -1,0 +1,23 @@
+			<table class="table table-sm table-dark">
+				<thead>
+					<tr>
+						<th class="text-center" colspan="2"><i>!!@ASPECT_NAME!!</i></th>
+					</tr>
+				</thead>
+				<tr>
+				<th>Bonus To</th>
+				<td>!!@ASPECT_BONUS!!</td>
+				</tr>
+				<tr>
+				<th>Penalty To</th>
+				<td>!!@ASPECT_PENALTY!!</td>
+				</tr>
+				<tr>
+				<th>Special</th>
+				<td>!!@ASPECT_SPECIAL!!</td>
+				</tr>
+				<tr>
+				<th>Overcome After</th>
+				<td>!!@ASPECT_OVERCOME!!</td>
+				</tr>
+			</table>

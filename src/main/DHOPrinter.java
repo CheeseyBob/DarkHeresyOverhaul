@@ -13,6 +13,7 @@ public class DHOPrinter {
 	private String title = "", header = "", note = "";
 	private int colSize = 1;
 	private LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
+	private Aspect aspect = null;
 	
 	// Character Creation //
 	private HomeWorld homeWorld = null;
@@ -46,6 +47,11 @@ public class DHOPrinter {
 		}
 		return idString;
 	}
+	
+	public void printAspect(Aspect aspect) {
+		this.aspect = aspect;
+		processFile("ASPECT");
+	}
 
 	@Deprecated
 	private void printCharacterSheetList() {
@@ -56,6 +62,12 @@ public class DHOPrinter {
 			pw.println();
 			pw.println();
 		}
+	}
+	
+	public void printCol_aspect(int colSize, Aspect aspect) {
+		printColTop(colSize);
+		printAspect(aspect);
+		printColTail();
 	}
 	
 	public void printCollapsibleTail() {
@@ -351,6 +363,16 @@ public class DHOPrinter {
 			return note;
 		case COL_SIZE:
 			return ""+colSize;
+		case ASPECT_NAME:
+			return aspect.name;
+		case ASPECT_BONUS:
+			return aspect.bonus;
+		case ASPECT_PENALTY:
+			return aspect.penalty;
+		case ASPECT_SPECIAL:
+			return aspect.special;
+		case ASPECT_OVERCOME:
+			return aspect.overcome;
 		case HOME_WORLD_ID:
 			return homeWorld.id;
 		case HOME_WORLD_NAME:
@@ -423,6 +445,7 @@ public class DHOPrinter {
 	
 	private enum Variable {
 		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE, COL_SIZE,
+		ASPECT_NAME, ASPECT_BONUS, ASPECT_PENALTY, ASPECT_SPECIAL, ASPECT_OVERCOME,
 		HOME_WORLD_ID, HOME_WORLD_NAME, HOME_WORLD_APTITUDE, BACKGROUND_ID, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
 		CHARACTER_ID, CHARACTER_NAME,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
