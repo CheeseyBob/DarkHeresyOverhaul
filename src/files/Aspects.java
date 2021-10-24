@@ -30,10 +30,22 @@ class Aspects implements Printable {
 		printer.printCollapsibleTop();
 		printer.printRowTop();
 		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		// TODO //
+		printer.printCol_aspect(6, Aspect.burning);
+		printer.printCol_aspect(6, Aspect.concealed);
+		printer.printCol_aspect(6, Aspect.dazzled);
+		printer.printCol_aspect(6, Aspect.disguised);
+		printer.printCol_aspect(6, Aspect.encumbered);
+		printer.printCol_aspect(6, Aspect.fatigued);
+		printer.printCol_aspect(6, Aspect.frenzied);
+		printer.printCol_aspect(6, Aspect.frightened);
+		printer.printCol_aspect(6, Aspect.grappled);
+		printer.printCol_aspect(6, Aspect.inspired);
+		printer.printCol_aspect(6, Aspect.intimidated);
+		printer.printCol_aspect(6, Aspect.pinned);
+		printer.printCol_aspect(6, Aspect.prone);
+		printer.printCol_aspect(6, Aspect.running);
+		printer.printCol_aspect(6, Aspect.stunned);
+		printer.printCol_aspect(6, Aspect.treated);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
 		printer.println();
@@ -41,11 +53,14 @@ class Aspects implements Printable {
 		printer.printHeader_collapsible("Common Aspects for Items");
 		printer.printCollapsibleTop();
 		printer.printRowTop();
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		// TODO //
+		printer.printCol_aspect(6, Aspect.concealed);
+		printer.printCol_aspect(6, Aspect.damaged);
+		printer.printCol_aspect(6, Aspect.encrypted);
+		printer.printCol_aspect(6, Aspect.jammed);
+		printer.printCol_aspect(6, Aspect.locked);
+		printer.printCol_aspect(6, Aspect.maintained);
+		printer.printCol_aspect(6, Aspect.outOfPower);
+		printer.printCol_aspect(6, Aspect.planted);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
 		printer.println();
@@ -53,11 +68,18 @@ class Aspects implements Printable {
 		printer.printHeader_collapsible("Drug/Poison Aspects");
 		printer.printCollapsibleTop();
 		printer.printRowTop();
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		// TODO //
+		printer.printCol_aspect(6, Aspect.drugged_deTox);
+		printer.printCol_aspect(6, Aspect.drugged_frenzon);
+		printer.printCol_aspect(6, Aspect.drugged_obscura);
+		printer.printCol_aspect(6, Aspect.drugged_slaught);
+		printer.printCol_aspect(6, Aspect.drugged_spook);
+		printer.printCol_aspect(6, Aspect.drugged_stimm);
+		printer.printCol_aspect(6, Aspect.poisoned_fatigue);
+		printer.printCol_aspect(6, Aspect.poisoned_fatigue_lingering);
+		printer.printCol_aspect(6, Aspect.poisoned_lethal);
+		printer.printCol_aspect(6, Aspect.poisoned_neurotoxin);
+		printer.printCol_aspect(6, Aspect.poisoned_pain);
+		printer.printCol_aspect(6, Aspect.poisoned_paralysing);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
 		printer.println();
@@ -65,11 +87,12 @@ class Aspects implements Printable {
 		printer.printHeader_collapsible("Environmental Aspects");
 		printer.printCollapsibleTop();
 		printer.printRowTop();
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		printer.printCol_aspect(6, Aspect.bleedingOut);
-		// TODO //
+		printer.printCol_aspect(6, Aspect.darkness);
+		printer.printCol_aspect(6, Aspect.difficultTerrain);
+		printer.printCol_aspect(6, Aspect.fire);
+		printer.printCol_aspect(6, Aspect.gas_x);
+		printer.printCol_aspect(6, Aspect.smoke);
+		printer.printCol_aspect(6, Aspect.weakenedVeil);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
 		printer.println();
