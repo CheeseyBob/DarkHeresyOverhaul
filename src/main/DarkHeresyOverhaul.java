@@ -20,6 +20,7 @@ class DarkHeresyOverhaul {
 		printFile(FileList.talents, "Talents.html");
 		printFile(FileList.traits, "Traits.html");
 		printFile(FileList.bionics, "Bionics.html");
+		printFile(FileList.items, "Items.html");
 		
 		// Playing the Game //
 		printFile(FileList.aspects, "Aspects.html");

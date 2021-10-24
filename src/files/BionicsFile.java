@@ -2,7 +2,7 @@ package files;
 
 import main.*;
 
-class Bionics implements Printable {
+class BionicsFile implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {

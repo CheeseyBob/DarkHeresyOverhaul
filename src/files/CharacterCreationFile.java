@@ -3,7 +3,7 @@ package files;
 import main.*;
 import main.Background.BackgroundPath;
 
-class CharacterCreation implements Printable {
+class CharacterCreationFile implements Printable {
 	
 	private String[] getBackgroundTableHeaderList() {
 		String[] list = new String[HomeWorld.list.length + 1];
@@ -138,7 +138,7 @@ class CharacterCreation implements Printable {
 		for(Role role : Role.list) {
 			printer.printColTop(3);
 			printer.printSubSubheader(role.name);
-			printer.printList(role.aptitudeList, false);
+			printer.printList(false, role.aptitudeList);
 			printer.printColTail();
 		}
 		printer.printRowTail();

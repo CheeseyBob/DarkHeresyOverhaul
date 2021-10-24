@@ -130,6 +130,15 @@ public class DHOPrinter {
 		}
 	}
 	
+	public void printList(boolean ordered, Object[] list) {
+		pw.println(ordered ? "<ol>" : "<ul>");
+		for(Object item : list) {
+			pw.println("<li>"+item+"</li>");
+		}
+		pw.println(ordered ? "</ol>" : "</ul>");
+	}
+	
+	@Deprecated
 	public void printList(Object[] list, boolean ordered) {
 		pw.println(ordered ? "<ol>" : "<ul>");
 		for(Object item : list) {
@@ -138,12 +147,20 @@ public class DHOPrinter {
 		pw.println(ordered ? "</ol>" : "</ul>");
 	}
 	
-	public void printList(LinkedList<? extends Object> list, boolean ordered) {
+	public void printList(boolean ordered, LinkedList<? extends Object> list) {
 		pw.println(ordered ? "<ol>" : "<ul>");
 		for(Object item : list) {
 			pw.println("<li>"+item+"</li>");
 		}
 		pw.println(ordered ? "</ol>" : "</ul>");
+	}
+	
+	public void printList(boolean ordered, Object item1, Object item2, Object item3) {
+		printList(ordered, new Object[] {item1, item2, item3});
+	}
+	
+	public void printList(boolean ordered, Object item1, Object item2, Object item3, Object item4) {
+		printList(ordered, new Object[] {item1, item2, item3, item4});
 	}
 	
 	public void println() {
@@ -215,6 +232,18 @@ public class DHOPrinter {
 			pw.println("<td>"+entry+"</td>");
 		}
 		pw.println("</tr>");
+	}
+	
+	public void printTableRow(String e1) {
+		printTableRow(new String[] {e1});
+	}
+	
+	public void printTableRow(String e1, String e2) {
+		printTableRow(new String[] {e1, e2});
+	}
+	
+	public void printTableRow(String e1, String e2, String e3) {
+		printTableRow(new String[] {e1, e2, e3});
 	}
 	
 	public void printTableRow(String e1, String e2, String e3, String e4) {

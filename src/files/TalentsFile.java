@@ -2,7 +2,7 @@ package files;
 
 import main.*;
 
-class Talents implements Printable {
+class TalentsFile implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {

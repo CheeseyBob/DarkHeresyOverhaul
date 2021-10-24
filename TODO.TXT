@@ -2,7 +2,6 @@
 
 >>> Convert everything to generated HTML documents which use Bootstrap
 	- replace with generated HTML document:
-		- Aspects.html
 		- all the item types
 		- PsychicPowers.html
 

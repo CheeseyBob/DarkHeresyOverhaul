@@ -2,7 +2,7 @@ package files;
 
 import main.*;
 
-class Traits implements Printable {
+class TraitsFile implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {

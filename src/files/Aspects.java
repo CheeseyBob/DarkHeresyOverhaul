@@ -19,11 +19,11 @@ class Aspects implements Printable {
 		printer.printParagraph("By default, Create Advantage Actions cannot increase the Aspect's level (AL) past the Characteristic Bonus of the Characteristic used for the Test. "
 				+ "In addition to this, Aspects cannot be upgraded past level 10.");
 		printer.println("Rule of thumb:");
-		printer.printList(new String[] {
+		printer.printList(false, new String[] {
 				"Bonuses/penalties apply only to the target. Any benefits other characters get against the target should be come from penalites to the target opposing that action (and vice versa). The exception to this is when the Aspect is providing a static difficulty to something, for example a Concealed character or a Locked container simply makes it harder to Notice or Open rather than actively opposing.",
 				"Bonuses/penalties apply to Tests but don't affect the Characteristic Bonus.",
 				"The target of an aspect should get an opportunity to oppose the creation of the Aspect, either directly (if the Aspect was created automatically) or implicitly (by opposing the Action made to create it).",
-		}, false);
+		});
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Common Aspects for Characters");
