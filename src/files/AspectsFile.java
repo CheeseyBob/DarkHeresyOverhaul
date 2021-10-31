@@ -2,7 +2,7 @@ package files;
 
 import main.*;
 
-class Aspects implements Printable {
+class AspectsFile implements Printable {
 
 	@Override
 	public void print(DHOPrinter printer) {

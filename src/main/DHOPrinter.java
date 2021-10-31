@@ -26,7 +26,8 @@ public class DHOPrinter {
 	private SpecialRule special = null;
 	private Skill skill = null;
 	private Item item = null;
-	private boolean isItemEquipped = false;
+	private static final int DEFINITION = 0, INVENTORY = 1, EQUIPPED = 2;
+	private int itemContext = DEFINITION;
 	
 	DHOPrinter(String filename) {
 		this.pw = TextFileHandler.startWritingToFile(path+filename);
@@ -70,6 +71,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, Ammo ammo) {
+		printColTop(colSize);
+		printItem(ammo);
+		printColTail();
+	}
+	
 	public void printCollapsibleTail() {
 		processFile("COLLAPSIBLE_TAIL");
 	}
@@ -89,7 +96,7 @@ public class DHOPrinter {
 
 	@Deprecated
 	private void printEquippedItemList() {
-		isItemEquipped = true;
+		itemContext = EQUIPPED;
 		if(npc.equippedItemList.isEmpty()) {
 			processFile("NO_ITEMS");
 		}
@@ -120,7 +127,7 @@ public class DHOPrinter {
 
 	@Deprecated
 	private void printInventoryList() {
-		isItemEquipped = false;
+		itemContext = INVENTORY;
 		if(npc.inventoryList.isEmpty()) {
 			processFile("NO_ITEMS");
 		}
@@ -128,6 +135,12 @@ public class DHOPrinter {
 			this.item = item;
 			processFile("ITEM");
 		}
+	}
+	
+	public void printItem(Ammo ammo) {
+		this.item = ammo;
+		this.specialRuleList = ammo.specialRuleList;
+		processFile("ITEM_AMMO");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -191,12 +204,11 @@ public class DHOPrinter {
 	public void printRowTop() {
 		processFile("ROW_TOP");
 	}
-
-	@Deprecated
+	
 	private void printSpecialRuleList() {
 		for(SpecialRule special : specialRuleList) {
 			this.special = special;
-			processFile("SPECIAL");
+			processFile("TABLE_ROW_SPECIAL_RULE");
 		}
 	}
 
@@ -461,7 +473,20 @@ public class DHOPrinter {
 		case SKILL_NAME:
 			return skill.getFullName();
 		case ITEM_NAME:
-			return item.getFullName(isItemEquipped);
+			switch(itemContext) {
+			case DEFINITION:
+				return item.name;
+			case INVENTORY:
+				return item.getFullName(false);
+			case EQUIPPED:
+				return item.getFullName(true);
+			}
+		case ITEM_SIZE:
+			return ""+item.size;
+		case ITEM_AVAILABILITY:
+			return item.getAvailability();
+		case AMMO_CAPACITY:
+			return ""+((Ammo)item).capacity;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -482,6 +507,7 @@ public class DHOPrinter {
 		SPECIAL_NAME, SPECIAL_DESCRIPTION,
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
 		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
-		SKILL_NAME, ITEM_NAME;
+		SKILL_NAME,
+		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, AMMO_CAPACITY;
 	}
 }

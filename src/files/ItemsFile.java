@@ -25,7 +25,7 @@ class ItemsFile implements Printable {
 			{"18", "110", "Massive", "Massive (Blue Whale)", "Double-Decker Bus"},
 	};
 	private static final String[] itemAvailabilityTableHeaderList = {
-			"Availability", "Modifier", "Price Bracket", "Price Roll2", "Crafting Steps"
+			"Availability", "Modifier", "Price Bracket", "Price Roll", "Crafting Steps"
 	};
 	private static final String[][] itemAvailabilityTable = {
 			{"Ubiquitous ", "Automatic ", "1 ", "1 ", "1"},

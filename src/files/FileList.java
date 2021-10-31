@@ -15,7 +15,7 @@ public class FileList {
 	public static Printable bionics = new BionicsFile();
 	// TODO - psychic powers //
 	public static Printable items = new ItemsFile();
-	// TODO - ammo //
+	public static Printable ammo = new AmmoFile();
 	// TODO - armour //
 	// TODO - consumables //
 	// TODO - melee weapons //
@@ -29,7 +29,7 @@ public class FileList {
 	// TODO - actions overview //
 	// TODO - actions in combat time //
 	// TODO - actions in downtime //
-	public static Printable aspects = new Aspects();
+	public static Printable aspects = new AspectsFile();
 	// TODO - critical damage //
 	// TODO - fear and insanity //
 	// TODO - corruption and mutation //

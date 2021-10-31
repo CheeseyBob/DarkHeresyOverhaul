@@ -1,11 +1,27 @@
 package main;
+
+import java.util.LinkedList;
+
 class Item {
 	String name;
 	int size;
+	Availability availability = null;
+	LinkedList<SpecialRule> specialRuleList = new LinkedList<SpecialRule>();
 	
 	Item(String name, int size) {
 		this.name = name;
 		this.size = size;
+	}
+	
+	Item(String name, int size, Availability availability) {
+		this.name = name;
+		this.size = size;
+		this.availability = availability;
+	}
+	
+	public String getAvailability() {
+		if(availability == null) return "N/A";
+		else return availability.toString();
 	}
 	
 	public String getFullName(boolean isItemEquipped) {
@@ -16,13 +32,18 @@ class Item {
 		}
 	}
 	
+	public Item withSpecialRule(SpecialRule specialRule) {
+		specialRuleList.add(specialRule);
+		return this;
+	}
+	
 	public Item times(int amount) {
 		return new ItemStack(this, amount);
 	}
 	
 	@Override
 	public String toString() {
-		return getFullName(false);
+		return name;
 	}
 	
 	class ItemStack extends Item {
@@ -111,34 +132,6 @@ class RangedWeapon extends Item {
 	public static final Item plasmaPistol = new Item("Plasma Pistol", 2);
 	
 	public static final Item boltPistol = new Item("Bolt Pistol", 2);
-}
-
-class Ammo extends Item {
-
-	Ammo(String name, int size) {
-		super(name, size);
-	}
-	
-	public static final Item laspistol_powerPack = new Item("Laspistol Power Pack", 1);
-	public static final Item pistol_mag = new Item("Pistol Mag", 1);
-	public static final Item pistol_arbites_mag = new Item("Arbites Pistol Mag", 1);
-	public static final Item stubber_mag = new Item("Stubber Mag", 1);
-	public static final Item autopistol_mag = new Item("Autopistol Mag", 1);
-	public static final Item lasgun_powerPack = new Item("Lasgun Power Pack", 1);
-	public static final Item pumpActionShotgun_mag = new Item("Pump-Action Shotgun Mag", 1);
-	public static final Item shotgun_arbites_mag = new Item("Arbites Shotgun Mag", 1);
-	public static final Item autostubber_mag = new Item("Autostubber Mag", 1);
-	public static final Item combatShotgun_mag = new Item("Combat Shotgun Mag", 1);
-	public static final Item flamer_canister = new Item("Flamer Canister", 1);
-	public static final Item handFlamer_canister = new Item("Hand Flamer Canister", 1);
-	public static final Item heavyStubber_mag = new Item("Heavy Stubber Mag", 2);
-	public static final Item heavyStubber_beltBox = new Item("Heavy Stubber Belt Box", 3);
-	public static final Item longLas_powerPack = new Item("Long Las Power Pack", 1);
-	public static final Item lascannon_powerPack = new Item("Lascannon Power Pack", 2);
-	public static final Item plasmaGun_canister = new Item("Plasma Gun Canister", 2);
-	public static final Item plasmaGun_tank = new Item("Plasma Gun Tank", 4);
-	public static final Item plasmaPistol_canister = new Item("Plasma Pistol Canister", 1);
-	public static final Item boltPistol_mag = new Item("Bolt Pistol Mag", 1);
 }
 
 class ThrownWeapon extends Item {

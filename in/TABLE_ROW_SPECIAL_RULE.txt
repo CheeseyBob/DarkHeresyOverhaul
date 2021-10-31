@@ -1,4 +1,4 @@
 				<tr>
-					<td><b>!!@SPECIAL_NAME!!:</b>
+					<td colspan=99><b>!!@SPECIAL_NAME!!:</b>
 					!!@SPECIAL_DESCRIPTION!!</td>
 				</tr>
