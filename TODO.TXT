@@ -2,7 +2,7 @@
 
 >>> Convert everything to generated HTML documents which use Bootstrap
 	- replace with generated HTML document:
-		- all the item types
+		- all the item types ** remember the GM notes for item creation **
 		- PsychicPowers.html
 
 >>> NPC Groups:

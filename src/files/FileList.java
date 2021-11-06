@@ -16,13 +16,13 @@ public class FileList {
 	// TODO - psychic powers //
 	public static Printable items = new ItemsFile();
 	public static Printable ammo = new AmmoFile();
-	// TODO - armour //
-	// TODO - consumables //
-	// TODO - melee weapons //
-	// TODO - ranged weapons //
-	// TODO - thrown weapons //
-	// TODO - tools //
-	// TODO - misc items //
+	public static Printable armour = new ArmourFile();
+	public static Printable consumables = new ConsumablesFile();
+	public static Printable meleeWeapons = new MeleeWeaponsFile();
+	public static Printable rangedWeapons = new RangedWeaponsFile();
+	public static Printable thrownWeapons = new ThrownWeaponsFile();
+	public static Printable tools = new ToolsFile();
+	public static Printable miscItems = new MiscItemsFile();
 	
 	// Playing the Game //
 	// TODO - fate points //

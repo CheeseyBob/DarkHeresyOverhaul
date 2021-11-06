@@ -22,6 +22,13 @@ class DarkHeresyOverhaul {
 		printFile(FileList.bionics, "Bionics.html");
 		printFile(FileList.items, "Items.html");
 		printFile(FileList.ammo, "Ammo.html");
+		printFile(FileList.armour, "Armour.html");
+		printFile(FileList.consumables, "Consumables.html");
+		printFile(FileList.meleeWeapons, "MeleeWeapons.html");
+		printFile(FileList.rangedWeapons, "RangedWeapons.html");
+		printFile(FileList.thrownWeapons, "ThrownWeapons.html");
+		printFile(FileList.tools, "Tools.html");
+		printFile(FileList.miscItems, "MiscItems.html");
 		
 		// Playing the Game //
 		printFile(FileList.aspects, "Aspects.html");
