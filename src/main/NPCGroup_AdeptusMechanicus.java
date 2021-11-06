@@ -378,7 +378,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.search.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(30));
 		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(Armour.coweledMeshArmour);
+		npc.equippedItemList.add(Armour.meshArmour_coweled);
 		npc.equippedItemList.add(MeleeWeapon.staff);
 		npc.inventoryList.add(MeleeWeapon.chainsword_mastercrafted);
 		npc.inventoryList.add(RangedWeapon.plasmaPistol);
