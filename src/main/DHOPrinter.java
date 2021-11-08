@@ -83,6 +83,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, Consumable consumable) {
+		printColTop(colSize);
+		printItem(consumable);
+		printColTail();
+	}
+	
 	public void printCollapsibleTail() {
 		processFile("COLLAPSIBLE_TAIL");
 	}
@@ -153,6 +159,12 @@ public class DHOPrinter {
 		this.item = armour;
 		this.specialRuleList = armour.specialRuleList;
 		processFile("ITEM_ARMOUR");
+	}
+	
+	public void printItem(Consumable consumable) {
+		this.item = consumable;
+		this.specialRuleList = consumable.specialRuleList;
+		processFile("ITEM_CONSUMABLE");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -501,6 +513,8 @@ public class DHOPrinter {
 			return ""+((Ammo)item).capacity;
 		case ARMOUR_AP:
 			return ""+((Armour)item).ap;
+		case CONSUMABLE_USES:
+			return ""+((Consumable)item).uses;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -522,6 +536,6 @@ public class DHOPrinter {
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
 		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
 		SKILL_NAME,
-		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, AMMO_CAPACITY, ARMOUR_AP;
+		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, AMMO_CAPACITY, ARMOUR_AP, CONSUMABLE_USES;
 	}
 }
