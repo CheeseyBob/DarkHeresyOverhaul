@@ -319,7 +319,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.equippedItemList.add(Armour.flakArmour);
 		npc.equippedItemList.add(Tool.gasMask);
 		npc.equippedItemList.add(MiscItem.infraRedGoggles);
-		npc.inventoryList.add(MeleeWeapon.chainsword_mono);
+		npc.inventoryList.add(MeleeWeapon.chainsword);
 		npc.inventoryList.add(RangedWeapon.lasgun_bayonet);
 		npc.inventoryList.add(Ammo.lasgun_powerPack.times(2));
 		npc.inventoryList.add(ThrownWeapon.fragHandGrenade.times(2));
