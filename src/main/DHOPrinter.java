@@ -83,6 +83,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, Clothing clothing) {
+		printColTop(colSize);
+		printItem(clothing);
+		printColTail();
+	}
+	
 	public void printCol_item(int colSize, Consumable consumable) {
 		printColTop(colSize);
 		printItem(consumable);
@@ -92,6 +98,12 @@ public class DHOPrinter {
 	public void printCol_item(int colSize, MeleeWeapon meleeWeapon) {
 		printColTop(colSize);
 		printItem(meleeWeapon);
+		printColTail();
+	}
+	
+	public void printCol_item(int colSize, MiscItem miscItem) {
+		printColTop(colSize);
+		printItem(miscItem);
 		printColTail();
 	}
 	
@@ -167,6 +179,12 @@ public class DHOPrinter {
 		processFile("ITEM_ARMOUR");
 	}
 	
+	public void printItem(Clothing clothing) {
+		this.item = clothing;
+		this.specialRuleList = clothing.specialRuleList;
+		processFile("ITEM_CLOTHING");
+	}
+	
 	public void printItem(Consumable consumable) {
 		this.item = consumable;
 		this.specialRuleList = consumable.specialRuleList;
@@ -177,6 +195,12 @@ public class DHOPrinter {
 		this.item = meleeWeapon;
 		this.specialRuleList = meleeWeapon.specialRuleList;
 		processFile("ITEM_MELEE_WEAPON");
+	}
+	
+	public void printItem(MiscItem miscItem) {
+		this.item = miscItem;
+		this.specialRuleList = miscItem.specialRuleList;
+		processFile("ITEM_MISC");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -521,6 +545,8 @@ public class DHOPrinter {
 			return ""+item.size;
 		case ITEM_AVAILABILITY:
 			return item.getAvailability();
+		case ITEM_DESCRIPTION:
+			return item.description;
 		case AMMO_CAPACITY:
 			return ""+((Ammo)item).capacity;
 		case ARMOUR_AP:
@@ -554,6 +580,6 @@ public class DHOPrinter {
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
 		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
 		SKILL_NAME,
-		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, AMMO_CAPACITY, ARMOUR_AP, CONSUMABLE_USES, MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS, MELEE_WEAPON_DAMAGE;
+		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, ITEM_DESCRIPTION, AMMO_CAPACITY, ARMOUR_AP, CONSUMABLE_USES, MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS, MELEE_WEAPON_DAMAGE;
 	}
 }

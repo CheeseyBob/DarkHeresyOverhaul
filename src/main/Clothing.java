@@ -1,23 +1,41 @@
 package main;
 
-class Clothing extends Item {
+public class Clothing extends Item {
 
-	Clothing(String name, int size) {
-		super(name, size);
+	Clothing(String name, int size, Availability availability) {
+		super(name, size, availability);
 	}
 	
-	public static final Item ragCastings = new Item("Rag Castings", 3);
-	public static final Item coveralls = new Item("Coveralls", 3);
-	public static final Item uniform = new Item("Uniform", 3);
-	public static final Item arbitesUniform = new Item("Arbites Uniform", 3);
-	public static final Item enforcerUniform = new Item("Enforcer Uniform", 3);
-	public static final Item militaryUniform = new Item("Military Uniform", 3);
-	public static final Item bodyglove = new Item("Bodyglove", 3);
-	public static final Item imperialRobes = new Item("Imperial Robes", 3);
-	public static final Item administratumRobes = new Item("Administratum Robes", 3);
-	public static final Item chirurgeonRobes = new Item("Chirurgeon Robes", 3);
-	public static final Item mechanicusRobes = new Item("Mechanicus Robes", 3);
-	public static final Item ministorumRobes = new Item("Ministorum Robes", 3);
-	public static final Item streetClothes = new Item("Street Clothes", 3);
-	public static final Item billowRobe = new Item("Billow Robe", 3);
+	public Clothing withSpecialRule(SpecialRule specialRule) {
+		return (Clothing)super.withSpecialRule(specialRule);
+	}
+	
+	public static final Clothing ragCastings = new Clothing("Rag Castings",
+			3, Availability.UBIQUITOUS);
+	public static final Clothing coveralls = new Clothing("Coveralls",
+			3, Availability.ABUNDANT);
+	public static final Clothing uniform = new Clothing("Uniform",
+			3, Availability.PLENTIFUL);
+	public static final Clothing arbitesUniform = new Clothing("Arbites Uniform",
+			3, Availability.PLENTIFUL);
+	public static final Clothing enforcerUniform = new Clothing("Enforcer Uniform",
+			3, Availability.PLENTIFUL);
+	public static final Clothing militaryUniform = new Clothing("Military Uniform",
+			3, Availability.PLENTIFUL);
+	public static final Clothing bodyglove = new Clothing("Bodyglove",
+			3, Availability.PLENTIFUL);
+	public static final Clothing imperialRobes = new Clothing("Imperial Robes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing administratumRobes = new Clothing("Administratum Robes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing chirurgeonRobes = new Clothing("Chirurgeon Robes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing mechanicusRobes = new Clothing("Mechanicus Robes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing ministorumRobes = new Clothing("Ministorum Robes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing streetClothes = new Clothing("Street Clothes",
+			3, Availability.PLENTIFUL);
+	public static final Clothing billowRobe = new Clothing("Billow Robe",
+			3, Availability.VERY_RARE);
 }

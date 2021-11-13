@@ -1,0 +1,19 @@
+			<table class="table table-sm table-dark">
+				<thead>
+					<tr>
+						<th class="text-center" colspan="2"><i>!!@ITEM_NAME!!</i></th>
+					</tr>
+				</thead>
+				<tr>
+					<td colspan=2>!!@ITEM_DESCRIPTION!!</td>
+				</tr>
+				<tr>
+					<th>Size</th>
+					<td>!!@ITEM_SIZE!!</td>
+				</tr>
+!SPECIAL_RULE_LIST
+				<tr>
+					<th>Availability</th>
+					<td>!!@ITEM_AVAILABILITY!!</td>
+				</tr>
+			</table>

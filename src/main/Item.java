@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 class Item {
 	String name;
+	String description;
 	int size;
 	Availability availability = null;
 	LinkedList<SpecialRule> specialRuleList = new LinkedList<SpecialRule>();
