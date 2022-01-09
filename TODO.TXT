@@ -34,6 +34,8 @@
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 	- Skills descriptions
 
+> Add formal rules for "Goal Driven Rewards" (see https://www.youtube.com/watch?v=zwpQwCWdhL8)
+
 
 	~~ Test Scenarios ~~
 
