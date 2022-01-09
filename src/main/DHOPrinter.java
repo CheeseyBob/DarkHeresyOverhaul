@@ -107,6 +107,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, RangedWeapon rangedWeapon) {
+		printColTop(colSize);
+		printItem(rangedWeapon);
+		printColTail();
+	}
+	
 	public void printCollapsibleTail() {
 		processFile("COLLAPSIBLE_TAIL");
 	}
@@ -201,6 +207,12 @@ public class DHOPrinter {
 		this.item = miscItem;
 		this.specialRuleList = miscItem.specialRuleList;
 		processFile("ITEM_MISC");
+	}
+	
+	public void printItem(RangedWeapon rangedWeapon) {
+		this.item = rangedWeapon;
+		this.specialRuleList = rangedWeapon.specialRuleList;
+		processFile("ITEM_RANGED_WEAPON");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -559,6 +571,16 @@ public class DHOPrinter {
 			return ""+((MeleeWeapon)item).hits;
 		case MELEE_WEAPON_DAMAGE:
 			return ""+((MeleeWeapon)item).damage;
+		case RANGED_WEAPON_RANGE:
+			return ""+((RangedWeapon)item).range;
+		case RANGED_WEAPON_ROF:
+			return ""+((RangedWeapon)item).rof;
+		case RANGED_WEAPON_CAPACITY:
+			return ""+((RangedWeapon)item).capacity;
+		case RANGED_WEAPON_RELOAD:
+			return ""+((RangedWeapon)item).reload;
+		case RANGED_WEAPON_DAMAGE:
+			return ""+((RangedWeapon)item).damage;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -580,6 +602,11 @@ public class DHOPrinter {
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
 		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
 		SKILL_NAME,
-		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, ITEM_DESCRIPTION, AMMO_CAPACITY, ARMOUR_AP, CONSUMABLE_USES, MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS, MELEE_WEAPON_DAMAGE;
+		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, ITEM_DESCRIPTION,
+		AMMO_CAPACITY,
+		ARMOUR_AP,
+		CONSUMABLE_USES,
+		MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS, MELEE_WEAPON_DAMAGE,
+		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD, RANGED_WEAPON_DAMAGE;
 	}
 }

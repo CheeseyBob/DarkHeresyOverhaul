@@ -15,6 +15,10 @@ import files.FileList;
 class DarkHeresyOverhaul {
 	
 	public static void main(String[] args) {
+		System.out.println("Running DarkHeresyOverhaul html generation...");
+		// Index //
+		// TODO //
+		
 		// Characters //
 		printFile(FileList.characterCreation, "CharacterCreation.html");
 		printFile(FileList.talents, "Talents.html");
@@ -47,6 +51,7 @@ class DarkHeresyOverhaul {
 //		for(NPCGroup group : npcGroupList) {
 //			printNPCGroupFile(group);
 //		}
+		System.out.println("... done.");
 	}
 	
 	private static void printFile(Printable printable, String filename) {

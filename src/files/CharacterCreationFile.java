@@ -118,13 +118,13 @@ class CharacterCreationFile implements Printable {
 				printer.printColTop(4);
 				printer.printSubSubheader(path.name);
 				printer.println("<b>Characteristic Increases</b>");
-				printer.printList(path.characteristicsIncreaseList, false);
+				printer.printList(false, path.characteristicsIncreaseList);
 				printer.println("<b>Special Rules</b>");
-				printer.printList(path.specialRuleList, false);
+				printer.printList(false, path.specialRuleList);
 				printer.println("<b>Skills</b>");
-				printer.printList(path.skillList, false);
+				printer.printList(false, path.skillList);
 				printer.println("<b>Items</b>");
-				printer.printList(path.itemList, false);
+				printer.printList(false, path.itemList);
 				printer.printColTail();
 			}
 			printer.printRowTail();
