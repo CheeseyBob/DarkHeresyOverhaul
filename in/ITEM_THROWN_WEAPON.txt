@@ -9,14 +9,6 @@
 				<td>!!@ITEM_SIZE!!</td>
 				</tr>
 				<tr>
-				<th>Bonus</th>
-				<td>!!@MELEE_WEAPON_BONUS!!</td>
-				</tr>
-				<tr>
-				<th>Hits</th>
-				<td>!!@MELEE_WEAPON_HITS!!</td>
-				</tr>
-				<tr>
 				<th>Damage</th>
 				<td>!!@WEAPON_DAMAGE!!</td>
 				</tr>

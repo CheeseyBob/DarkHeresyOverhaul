@@ -1,13 +1,12 @@
 package main;
 
-public class MeleeWeapon extends Item {
-	String bonus, hits, damage;
+public class MeleeWeapon extends Weapon {
+	String bonus, hits;
 
 	MeleeWeapon(String name, int size, String bonus, String hits, String damage, Availability availability) {
-		super(name, size, availability);
+		super(name, size, damage, availability);
 		this.bonus = bonus;
 		this.hits = hits;
-		this.damage = damage;
 	}
 	
 	public MeleeWeapon withSpecialRule(SpecialRule specialRule) {
@@ -23,8 +22,6 @@ public class MeleeWeapon extends Item {
 			"Hits cannot inflict more than the wielder's Strength Bonus in wounds.");
 	public static SpecialRule shocking = new SpecialRule("Shocking ",
 			"Each wound inflicted makes the target become Stunned.");
-	public static SpecialRule tearing = new SpecialRule("Tearing",
-			"Roll twice for damage and use the highest.");
 	public static SpecialRule unbalanced = new SpecialRule("Unbalanced",
 			"Get a -10 penalty to Parry.");
 	

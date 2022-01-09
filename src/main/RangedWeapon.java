@@ -1,15 +1,14 @@
 package main;
 
-public class RangedWeapon extends Item {
-	String range, rof, capacity, reload, damage;
+public class RangedWeapon extends Weapon {
+	String range, rof, capacity, reload;
 
 	RangedWeapon(String name, int size, String range, String rof, String capacity, String reload, String damage, Availability availability) {
-		super(name, size, availability);
+		super(name, size, damage, availability);
 		this.range = range;
 		this.rof = rof;
 		this.capacity = capacity;
 		this.reload = reload;
-		this.damage = damage;
 	}
 	
 	public RangedWeapon withSpecialRule(SpecialRule specialRule) {
@@ -17,7 +16,7 @@ public class RangedWeapon extends Item {
 	}
 	
 	// Special Rules //
-	public static SpecialRule ablative = new SpecialRule("Ablative ",
+	public static SpecialRule ablative = new SpecialRule("Ablative",
 			"Hits from this weapon damage cover, armour and other items.");
 	public static SpecialRule accurate = new SpecialRule("Accurate",
 			"Get an extra +10 bonus when you Attack after you Aim.");

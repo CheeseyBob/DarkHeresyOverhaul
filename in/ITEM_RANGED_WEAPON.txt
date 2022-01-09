@@ -9,12 +9,20 @@
 				<td>!!@ITEM_SIZE!!</td>
 				</tr>
 				<tr>
-				<th>Bonus</th>
-				<td>!!@MELEE_WEAPON_BONUS!!</td>
+				<th>Range</th>
+				<td>!!@RANGED_WEAPON_RANGE!!</td>
 				</tr>
 				<tr>
-				<th>Hits</th>
-				<td>!!@MELEE_WEAPON_HITS!!</td>
+				<th>RoF</th>
+				<td>!!@RANGED_WEAPON_ROF!!</td>
+				</tr>
+				<tr>
+				<th>Capacity</th>
+				<td>!!@RANGED_WEAPON_CAPACITY!!</td>
+				</tr>
+				<tr>
+				<th>Reload</th>
+				<td>!!@RANGED_WEAPON_RELOAD!!</td>
 				</tr>
 				<tr>
 				<th>Damage</th>

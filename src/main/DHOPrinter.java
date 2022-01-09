@@ -113,6 +113,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, ThrownWeapon thrownWeapon) {
+		printColTop(colSize);
+		printItem(thrownWeapon);
+		printColTail();
+	}
+	
 	public void printCollapsibleTail() {
 		processFile("COLLAPSIBLE_TAIL");
 	}
@@ -213,6 +219,12 @@ public class DHOPrinter {
 		this.item = rangedWeapon;
 		this.specialRuleList = rangedWeapon.specialRuleList;
 		processFile("ITEM_RANGED_WEAPON");
+	}
+	
+	public void printItem(ThrownWeapon thrownWeapon) {
+		this.item = thrownWeapon;
+		this.specialRuleList = thrownWeapon.specialRuleList;
+		processFile("ITEM_THROWN_WEAPON");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -569,8 +581,6 @@ public class DHOPrinter {
 			return ""+((MeleeWeapon)item).bonus;
 		case MELEE_WEAPON_HITS:
 			return ""+((MeleeWeapon)item).hits;
-		case MELEE_WEAPON_DAMAGE:
-			return ""+((MeleeWeapon)item).damage;
 		case RANGED_WEAPON_RANGE:
 			return ""+((RangedWeapon)item).range;
 		case RANGED_WEAPON_ROF:
@@ -579,8 +589,8 @@ public class DHOPrinter {
 			return ""+((RangedWeapon)item).capacity;
 		case RANGED_WEAPON_RELOAD:
 			return ""+((RangedWeapon)item).reload;
-		case RANGED_WEAPON_DAMAGE:
-			return ""+((RangedWeapon)item).damage;
+		case WEAPON_DAMAGE:
+			return ""+((Weapon)item).damage;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -606,7 +616,8 @@ public class DHOPrinter {
 		AMMO_CAPACITY,
 		ARMOUR_AP,
 		CONSUMABLE_USES,
-		MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS, MELEE_WEAPON_DAMAGE,
-		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD, RANGED_WEAPON_DAMAGE;
+		MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS,
+		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD,
+		WEAPON_DAMAGE;
 	}
 }
