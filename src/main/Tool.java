@@ -1,40 +1,115 @@
 package main;
 
-class Tool extends Item {
+public class Tool extends Item {
+	String bonus;
 
-	Tool(String name, int size) {
-		super(name, size);
+	Tool(String name, String description, int size, String bonus, Availability availability) {
+		super(name, size, availability);
+		this.bonus = bonus;
+		this.description = description;
 	}
 	
-	public static final Item dataSlate = new Item("Data-Slate", 1);
-	public static final Item pictRecorder = new Item("Pict Recorder", 1);
-	public static final Item writingKit = new Item("Writing Kit", 1);
-	public static final Item dataSlate_lore = new Item("Data-Slate (A Lore Area)", 1);
-	public static final Item lockpick = new Item("Lockpick", 0);
-	public static final Item psyFocus = new Item("Psy-Focus", 1);
-	public static final Item smallRelic = new Item("Small Relic", 1);
-	public static final Item scroll_lore = new Item("Scroll (A Lore Area)", 1);
-	public static final Item scroll_imperialCreed = new Item("Scroll (Imperial Creed)", 1);
-	public static final Item auspex = new Item("Auspex", 1);
-	public static final Item autoquill = new Item("Autoquill", 1);
-	public static final Item combiTool = new Item("Combi-Tool", 1);
-	public static final Item desktopAutoquill = new Item("Desktop Autoquill", 3);
-	public static final Item excruciatorKit = new Item("Excruciator Kit", 1);
-	public static final Item gasMask = new Item("Gas Mask", 2);
-	public static final Item grapnel = new Item("Grapnel", 3);
-	public static final Item lascutter = new Item("Lascutter", 1);
-	public static final Item magnoculars = new Item("Magnoculars", 1);
-	public static final Item multiKey = new Item("Multi-Key", 1);
-	public static final Item smallishRelic = new Item("Smallish Relic", 2);
-	public static final Item stummer = new Item("Stummer", 1);
-	public static final Item surgicalTools = new Item("Surgical Tools", 1);
-	public static final Item tome_lore = new Item("Tome (A Lore Area)", 2);
-	public static final Item tome_imperialCreed = new Item("Tome (Imperial Creed)", 2);
-	public static final Item cameleolineCloak = new Item("Cameleoline Cloak", 2);
-	public static final Item dataTome_lore = new Item("Data-Tome (A Lore Area)", 1);
-	public static final Item dataTome_judgement = new Item("Data-Tome (Judgement)", 1);
-	public static final Item industrialLascutter = new Item("Industrial Lascutter", 3);
-	public static final Item photoVisor = new Item("Photo-Visor", 1);
-	public static final Item relic = new Item("Relic", 3);
-	public static final Item photoContacts = new Item("Photo-Contacts", 0);
+	public Tool withSpecialRule(SpecialRule specialRule) {
+		return (Tool)super.withSpecialRule(specialRule);
+	}
+	
+	// Special Rules //
+	
+	// Worn //
+	public static final Tool gasMask = new Tool("Gas Mask",
+			"Used to protect against harmful gases.",
+			2, "+30", Availability.COMMON);
+	public static final Tool cameleolineCloak = new Tool("Cameleoline Cloak",
+			"Used to aid concealment.",
+			2, "+40", Availability.AVERAGE);
+	public static final Tool photoVisor = new Tool("Photo-Visor",
+			"Used to protect the eyes.",
+			1, "+30", Availability.AVERAGE);
+	public static final Tool photoContacts = new Tool("Photo-Contacts",
+			"Used to protect the eyes.",
+			0, "+30", Availability.SCARCE);
+	
+	// Held //
+	public static final Tool dataSlate = new Tool("Data-Slate",
+			"Used to store and display data such as text, audio and video.",
+			1, "+0", Availability.ABUNDANT);
+	public static final Tool pictRecorder = new Tool("Pict Recorder",
+			"Used to record audio and video data.",
+			1, "+0", Availability.ABUNDANT);
+	public static final Tool writingKit = new Tool("Writing Kit",
+			"Used to create written material.",
+			1, "+0", Availability.ABUNDANT);
+	public static final Tool dataSlate_lore = new Tool("Data-Slate (A Lore Area)",
+			"Used to reference the topic.",
+			1, "+10", Availability.PLENTIFUL);
+	public static final Tool lockpick = new Tool("Lockpick",
+			"Used to pick locks.",
+			0, "+0", Availability.PLENTIFUL);
+	public static final Tool psyFocus = new Tool("Psy-Focus",
+			"Used to help psykers focus their minds on the warp.",
+			1, "+10", Availability.PLENTIFUL);
+	public static final Tool smallRelic = new Tool("Small Relic",
+			"Used to help overcome fear.",
+			1, "+10", Availability.PLENTIFUL);
+	public static final Tool scroll_lore = new Tool("Scroll (A Lore Area)",
+			"Used to reference the topic.",
+			1, "+10", Availability.PLENTIFUL);
+	public static final Tool scroll_imperialCreed = new Tool("Scroll (Imperial Creed)",
+			"Used to reference the topic.",
+			1, "+10", Availability.PLENTIFUL);
+	public static final Tool auspex = new Tool("Auspex",
+			"Used to detect things not visible to human senses (gases, radiation, bio-signs, etc.).",
+			1, "+20", Availability.COMMON);
+	public static final Tool autoquill = new Tool("Autoquill",
+			"Used to create written material.",
+			1, "+20", Availability.COMMON);
+	public static final Tool combiTool = new Tool("Combi-Tool",
+			"Used to repair and maintain tech.",
+			1, "+20", Availability.COMMON);
+	public static final Tool desktopAutoquill = new Tool("Desktop Autoquill",
+			"Used to create written material.",
+			3, "+40", Availability.COMMON);
+	public static final Tool excruciatorKit = new Tool("Excruciator Kit",
+			"Used to aid in interrogation.",
+			1, "+20", Availability.COMMON);
+	public static final Tool grapnel = new Tool("Grapnel",
+			"Used to aid climbing.",
+			3, "+40", Availability.COMMON);
+	public static final Tool lascutter = new Tool("Lascutter",
+			"Used to cut through or weld shut hard materials like steel and rock.",
+			1, "+20", Availability.COMMON);
+	public static final Tool magnoculars = new Tool("Magnoculars",
+			"Used to aid viewing distant objects.",
+			1, "+20", Availability.COMMON);
+	public static final Tool multiKey = new Tool("Multi-Key",
+			"Used to pick locks.",
+			1, "+20", Availability.COMMON);
+	public static final Tool smallishRelic = new Tool("Smallish Relic",
+			"Used to help overcome fear.",
+			2, "+20", Availability.COMMON);
+	public static final Tool stummer = new Tool("Stummer",
+			"Used to aid moving silently.",
+			1, "+20", Availability.COMMON);
+	public static final Tool surgicalTools = new Tool("Surgical Tools",
+			"Used to perform surgery.",
+			1, "+20", Availability.COMMON);
+	public static final Tool tome_lore = new Tool("Tome (A Lore Area)",
+			"Used to research the topic.",
+			2, "+30", Availability.COMMON);
+	public static final Tool tome_imperialCreed = new Tool("Tome (Imperial Creed)",
+			"Used to research the topic.",
+			2, "+30", Availability.COMMON);
+	public static final Tool dataTome_lore = new Tool("Data-Tome (A Lore Area)",
+			"Used to research the topic.",
+			1, "+30", Availability.AVERAGE);
+	public static final Tool dataTome_judgement = new Tool("Data-Tome (Judgement)",
+			"Used to research the topic.",
+			1, "+30", Availability.AVERAGE);
+	public static final Tool industrialLascutter = new Tool("Industrial Lascutter",
+			"Used to cut through or weld shut hard materials like steel and rock.",
+			3, "+50", Availability.AVERAGE);
+	public static final Tool relic = new Tool("Relic",
+			"Used to help overcome fear.",
+			3, "+30", Availability.AVERAGE);
+	
 }

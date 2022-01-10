@@ -119,6 +119,12 @@ public class DHOPrinter {
 		printColTail();
 	}
 	
+	public void printCol_item(int colSize, Tool tool) {
+		printColTop(colSize);
+		printItem(tool);
+		printColTail();
+	}
+	
 	public void printCollapsibleTail() {
 		processFile("COLLAPSIBLE_TAIL");
 	}
@@ -225,6 +231,12 @@ public class DHOPrinter {
 		this.item = thrownWeapon;
 		this.specialRuleList = thrownWeapon.specialRuleList;
 		processFile("ITEM_THROWN_WEAPON");
+	}
+	
+	public void printItem(Tool tool) {
+		this.item = tool;
+		this.specialRuleList = tool.specialRuleList;
+		processFile("ITEM_TOOL");
 	}
 	
 	public void printList(boolean ordered, Object[] list) {
@@ -589,6 +601,8 @@ public class DHOPrinter {
 			return ""+((RangedWeapon)item).capacity;
 		case RANGED_WEAPON_RELOAD:
 			return ""+((RangedWeapon)item).reload;
+		case TOOL_BONUS:
+			return ""+((Tool)item).bonus;
 		case WEAPON_DAMAGE:
 			return ""+((Weapon)item).damage;
 		default:
@@ -618,6 +632,7 @@ public class DHOPrinter {
 		CONSUMABLE_USES,
 		MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS,
 		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD,
+		TOOL_BONUS,
 		WEAPON_DAMAGE;
 	}
 }
