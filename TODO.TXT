@@ -16,6 +16,8 @@
 
 >>> Psychic Powers
 
+> Rename Open Lock skill to Unlock
+
 > Lore items/talents for rituals
 
 > vacuum and zero-G environmental aspects

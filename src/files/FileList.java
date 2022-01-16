@@ -12,7 +12,7 @@ public class FileList {
 	// Characters //
 	// TODO - character sheet //
 	public static PrintableFile characterCreation = new CharacterCreationFile();
-	// TODO - character advancement //
+	public static PrintableFile characterAdvancement = new CharacterAdvancementFile();
 	public static PrintableFile talents = new TalentsFile();
 	public static PrintableFile traits = new TraitsFile();
 	public static PrintableFile bionics = new BionicsFile();
@@ -65,7 +65,7 @@ public class FileList {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
 		// TODO - character sheet //
 		list.add(characterCreation);
-		// TODO - character advancement //
+		list.add(characterAdvancement);
 		list.add(talents);
 		list.add(traits);
 		list.add(bionics);
