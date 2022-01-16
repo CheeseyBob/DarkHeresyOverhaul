@@ -18,7 +18,7 @@ public class DHOPrinter {
 	// Character Creation //
 	private HomeWorld homeWorld = null;
 	private Background background = null;
-	private Background.BackgroundPath backgroundPath = null;
+	private Background.Path backgroundPath = null;
 	
 	// NPC Groups //
 	private NPCGroup npcGroup = null;
@@ -247,15 +247,6 @@ public class DHOPrinter {
 		pw.println(ordered ? "</ol>" : "</ul>");
 	}
 	
-	@Deprecated
-	public void printList(Object[] list, boolean ordered) {
-		pw.println(ordered ? "<ol>" : "<ul>");
-		for(Object item : list) {
-			pw.println("<li>"+item+"</li>");
-		}
-		pw.println(ordered ? "</ol>" : "</ul>");
-	}
-	
 	public void printList(boolean ordered, LinkedList<? extends Object> list) {
 		pw.println(ordered ? "<ol>" : "<ul>");
 		for(Object item : list) {
@@ -278,15 +269,6 @@ public class DHOPrinter {
 	
 	public void println(String x) {
 		pw.println(x);
-	}
-
-	@Deprecated
-	private void printNPCGroupFile(NPCGroup group) {
-		npcGroup = group;
-		pw = TextFileHandler.startWritingToFile("out/NPCs-"+group.id+".html");
-		title = group.name+" NPCs";
-		processFile("NPCs-GROUP");
-		pw.close();
 	}
 	
 	public void printParagraph(String x) {

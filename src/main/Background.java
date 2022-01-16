@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Background {
 	public String id, name;
 	public String aptitude;
-	public LinkedList<BackgroundPath> backgroundPathList = new LinkedList<BackgroundPath>();
+	public LinkedList<Path> backgroundPathList = new LinkedList<Path>();
 	
 	Background(String name, String aptitude) {
 		this.id = DHOPrinter.idFrom(name);
@@ -13,18 +13,18 @@ public class Background {
 		this.aptitude = aptitude;
 	}
 	
-	public Background withStartingPaths(BackgroundPath path) {
+	public Background withStartingPaths(Path path) {
 		backgroundPathList.add(path);
 		return this;
 	}
 	
-	public Background withStartingPaths(BackgroundPath path1, BackgroundPath path2) {
+	public Background withStartingPaths(Path path1, Path path2) {
 		backgroundPathList.add(path1);
 		backgroundPathList.add(path2);
 		return this;
 	}
 	
-	public Background withStartingPaths(BackgroundPath path1, BackgroundPath path2, BackgroundPath path3) {
+	public Background withStartingPaths(Path path1, Path path2, Path path3) {
 		backgroundPathList.add(path1);
 		backgroundPathList.add(path2);
 		backgroundPathList.add(path3);
@@ -34,7 +34,7 @@ public class Background {
 	public static final Background[] list = {
 			new Background("Adeptus Administratum", "Knowledge or Social")
 			.withStartingPaths(
-					new BackgroundPath("Scholar",
+					new Path("Scholar",
 							new String[] {
 									"Intelligence +10"
 							},
@@ -58,7 +58,7 @@ public class Background {
 									MiscItem.chrono
 							}
 					),
-					new BackgroundPath("Operator",
+					new Path("Operator",
 							new String[] {
 									"Agility +5",
 									"Intelligence +10",
@@ -82,7 +82,7 @@ public class Background {
 									MiscItem.chrono
 							}
 					),
-					new BackgroundPath("Chirurgeon",
+					new Path("Chirurgeon",
 							new String[] {
 									"Intelligence +15",
 									"Perception +5"
@@ -112,7 +112,7 @@ public class Background {
 					),
 			new Background("Adeptus Arbites", "Offence or Defence")
 			.withStartingPaths(
-					new BackgroundPath("Arbitrator",
+					new Path("Arbitrator",
 							new String[] {
 									"Weapon Skill +10",
 									"Ballistic Skill +10",
@@ -154,7 +154,7 @@ public class Background {
 					),
 			new Background("Adeptus Astra Telepathica", "Defense or Psyker")
 			.withStartingPaths(
-					new BackgroundPath("xxxxxxxxxx",
+					new Path("xxxxxxxxxx",
 							new String[] {
 									
 							},
@@ -171,7 +171,7 @@ public class Background {
 					),
 			new Background("Adeptus Mechanicus", "Knowledge or Tech")
 			.withStartingPaths(
-					new BackgroundPath("Tech-Priest",
+					new Path("Tech-Priest",
 							new String[] {
 									"Toughness +5",
 									"Intelligence +10",
@@ -207,7 +207,7 @@ public class Background {
 									Tool.lascutter,
 							}
 					),
-					new BackgroundPath("Tech-Chirurgeon",
+					new Path("Tech-Chirurgeon",
 							new String[] {
 									"Intelligence +10",
 									"Perception +5",
@@ -242,7 +242,7 @@ public class Background {
 									MiscItem.glowGlobe,
 							}
 							),
-					new BackgroundPath("Tech-Militant",
+					new Path("Tech-Militant",
 							new String[] {
 									"Ballistic Skill +15",
 									"Intelligence +5",
@@ -282,7 +282,7 @@ public class Background {
 					),
 			new Background("Adeptus Ministorum", "Leadership or Social")
 			.withStartingPaths(
-					new BackgroundPath("Cleric",
+					new Path("Cleric",
 							new String[] {
 									"Weapon Skill +5",
 									"Ballistic Skill +5",
@@ -323,7 +323,7 @@ public class Background {
 					),
 			new Background("Imperial Guard", "Fieldcraft or Leadership")
 			.withStartingPaths(
-					new BackgroundPath("Veteran",
+					new Path("Veteran",
 							new String[] {
 									"Weapon Skill +10",
 									"Ballistic Skill +15",
@@ -358,7 +358,7 @@ public class Background {
 					),
 			new Background("Outcast", "Fieldcraft or Social")
 			.withStartingPaths(
-					new BackgroundPath("xxxxxxxxxx",
+					new Path("xxxxxxxxxx",
 							new String[] {
 									
 							},
@@ -384,14 +384,14 @@ public class Background {
 			{"01-30", "31-60", "61", "62-63", "64", "65", "66-95", "96-00"},
 	};
 	
-	public static class BackgroundPath {
+	public static class Path {
 		public String name;
 		public String[] characteristicsIncreaseList;
 		public Skill[] skillList;
 		public SpecialRule[] specialRuleList;
 		public Item[] itemList;
 		
-		BackgroundPath(String name, String[] characteristicsIncreaseList, Skill[] skillList, SpecialRule[] specialRuleList, Item[] equipmentList) {
+		Path(String name, String[] characteristicsIncreaseList, Skill[] skillList, SpecialRule[] specialRuleList, Item[] equipmentList) {
 			this.name = name;
 			this.characteristicsIncreaseList = characteristicsIncreaseList;
 			this.skillList = skillList;

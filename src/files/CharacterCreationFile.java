@@ -1,7 +1,6 @@
 package files;
 
 import main.*;
-import main.Background.BackgroundPath;
 
 class CharacterCreationFile implements Printable {
 	
@@ -114,7 +113,7 @@ class CharacterCreationFile implements Printable {
 			printer.printCollapsibleTop();
 			printer.printParagraph("<b>Aptitude:</b> "+background.aptitude);
 			printer.printRowTop();
-			for(BackgroundPath path : background.backgroundPathList) {
+			for(Background.Path path : background.backgroundPathList) {
 				printer.printColTop(4);
 				printer.printSubSubheader(path.name);
 				printer.println("<b>Characteristic Increases</b>");
@@ -148,16 +147,16 @@ class CharacterCreationFile implements Printable {
 		printer.printParagraph("Each character should have 8 different Aptitudes, including General. "
 				+ "If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.");
 		printer.println("<b>Equipment</b>");
-		printer.printList(new String[] {
+		printer.printList(false, new String[] {
 				"Take any Ubiquitous or Abundant items as you can want (and can carry).",
 				"You can swap out items from your background for different ones of the same availability.",
 				"You can also take any 1 Scarce item or 2 Average items.",
-		}, false);
+		});
 		printer.println("<b>Experience</b>");
-		printer.printList(new String[] {
+		printer.printList(false, new String[] {
 				"You start with 10 XP.",
 				"Buy any Advances you wish with this XP (see Character Advancement). Keep any XP you don't spend.",
-		}, false);
+		});
 		printer.println();
 		printer.println();
 		printer.printHeader("Bringing the Character to Life");
