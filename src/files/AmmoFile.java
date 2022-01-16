@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class AmmoFile implements Printable {
+class AmmoFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Ammo.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Ammo";
+	}
 	
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Ammo");
+		printer.printFileTop(title());
 		printer.printHeader_collapsible("Solid Projectile");
 		printer.printCollapsibleTop();
 		printer.printRowTop();

@@ -1,4 +1,5 @@
 package main;
+
 public class SpecialRule {
 	String name;
 	String parameter = null;

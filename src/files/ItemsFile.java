@@ -2,7 +2,7 @@ package files;
 
 import main.*;
 
-class ItemsFile implements Printable {
+class ItemsFile implements PrintableFile {
 	private static final String[][] itemSizeTable = {
 			{"0", "-70", "Trivial (Jewelery)", "Negligable (Insects)", "-"},
 			{"1", "-60", "Small (Pistol)", "Extremely Tiny (Squirrel)", "-"},
@@ -40,10 +40,20 @@ class ItemsFile implements Printable {
 			{"Near Unique ", "-50 ", "30,000-100,000 ", "1,000 x (3d10 + 30) ", "512"},
 			{"Unique ", "-60 ", "100,000+ ", "10,000 x (1d10 + 10) ", "1024"},
 	};
+	
+	@Override
+	public String filename() {
+		return "Items.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Items";
+	}
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Items");
+		printer.printFileTop(title());
 		printer.println();
 		printer.println();
 		printer.printSubheader_collapsible("Sizes");

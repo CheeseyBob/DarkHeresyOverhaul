@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class ConsumablesFile implements Printable {
+class ConsumablesFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Consumables.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Consumables";
+	}
 	
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Consumables");
+		printer.printFileTop(title());
 		printer.printHeader_collapsible("Food");
 		printer.printCollapsibleTop();
 		printer.printRowTop();

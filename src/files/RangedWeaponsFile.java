@@ -2,9 +2,9 @@ package files;
 
 import main.*;
 
-class RangedWeaponsFile implements Printable {
+class RangedWeaponsFile implements PrintableFile {
 	
-	private String[] getRangeTableRow(int row) {
+	private static String[] getRangeTableRow(int row) {
 		String[] rangeList = {
 				"CQC", "2m", "5m", "10m", "20m", "40m", "80m", "160m", "320m", "640m", "1280m"
 		};
@@ -15,8 +15,18 @@ class RangedWeaponsFile implements Printable {
 	}
 	
 	@Override
+	public String filename() {
+		return "RangedWeapons.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Ranged Weapons";
+	}
+	
+	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Ranged Weapons");
+		printer.printFileTop(title());
 		printer.printSubSubheader("Range");
 		printer.printParagraph("The maximum effective range of the weapon. Apply a bonus/penalty for the distance to the target based on the table below. If an adjacent target is helpless or unaware, use the 2m bonus instead of the CQC penalty (this stacks with the usual +30 bonus against helpless targets).");
 		printer.printTableTop("Range", "Bonus", false, false);

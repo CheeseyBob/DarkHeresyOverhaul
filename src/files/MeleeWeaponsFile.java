@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class MeleeWeaponsFile implements Printable {
+class MeleeWeaponsFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "MeleeWeapons.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Melee Weapons";
+	}
 	
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Melee Weapons");
+		printer.printFileTop(title());
 		printer.printSubSubheader("Bonus");
 		printer.printParagraph("This is the bonus you get to Weapon Skill when you Attack with the weapon.");
 		printer.printSubSubheader("Hits");

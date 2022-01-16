@@ -2,9 +2,9 @@ package files;
 
 import main.*;
 
-class ThrownWeaponsFile implements Printable {
+class ThrownWeaponsFile implements PrintableFile {
 	
-	private String[] getRangeTableRow(int row) {
+	private static String[] getRangeTableRow(int row) {
 		String[] rangeList = {
 				"CQC", "2m", "5m", "10m", "15m", "20m", "25m", "30m", "35m", "40m", "45m"
 		};
@@ -15,8 +15,18 @@ class ThrownWeaponsFile implements Printable {
 	}
 	
 	@Override
+	public String filename() {
+		return "ThrownWeapons.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Thrown Weapons";
+	}
+	
+	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Thrown Weapons");
+		printer.printFileTop(title());
 		printer.printSubSubheader("Range");
 		printer.printParagraph("You can throw an item of Size up to your Strength Bonus (or SB+1 if using both hands). The range of a throw is (2xSB - Item Size)x5m.");
 		printer.printTableTop("Range", "Bonus", false, false);

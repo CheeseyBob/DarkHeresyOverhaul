@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class TalentsFile implements Printable {
+class TalentsFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Talents.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Talents";
+	}
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Talents");
+		printer.printFileTop(title());
 		printer.printHeader_collapsible("General");
 		printer.printCollapsibleTop();
 		printer.printTableTop_talents();

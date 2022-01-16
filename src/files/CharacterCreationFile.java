@@ -2,9 +2,9 @@ package files;
 
 import main.*;
 
-class CharacterCreationFile implements Printable {
+class CharacterCreationFile implements PrintableFile {
 	
-	private String[] getBackgroundTableHeaderList() {
+	private static String[] getBackgroundTableHeaderList() {
 		String[] list = new String[HomeWorld.list.length + 1];
 		for(int i = 0; i < HomeWorld.list.length; i ++) {
 			list[i] = HomeWorld.list[i].name;
@@ -13,7 +13,7 @@ class CharacterCreationFile implements Printable {
 		return list;
 	}
 	
-	private String[] getBackgroundTableRow(int row) {
+	private static String[] getBackgroundTableRow(int row) {
 		String[] list = new String[HomeWorld.list.length + 1];
 		for(int i = 0; i < HomeWorld.list.length; i ++) {
 			list[i] = HomeWorld.backgroundRollList[i][row];
@@ -22,7 +22,7 @@ class CharacterCreationFile implements Printable {
 		return list;
 	}
 	
-	private String[] getRoleTableHeaderList() {
+	private static String[] getRoleTableHeaderList() {
 		String[] list = new String[Background.list.length + 1];
 		for(int i = 0; i < Background.list.length; i ++) {
 			list[i] = Background.list[i].name;
@@ -31,7 +31,7 @@ class CharacterCreationFile implements Printable {
 		return list;
 	}
 	
-	private String[] getRoleTableRow(int row) {
+	private static String[] getRoleTableRow(int row) {
 		String[] list = new String[Background.list.length + 1];
 		for(int i = 0; i < Background.list.length; i ++) {
 			list[i] = Background.roleRollList[i][row];
@@ -39,10 +39,20 @@ class CharacterCreationFile implements Printable {
 		list[Background.list.length] = Role.list[row].name;
 		return list;
 	}
+	
+	@Override
+	public String filename() {
+		return "CharacterCreation.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Character Creation";
+	}
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Character Creation");
+		printer.printFileTop(title());
 		printer.printHeader("Roll Up The Character");
 		printer.printParagraph("After rolling a character, you can Burn a Fate Point to bench that character and roll a new one.");
 		printer.println();

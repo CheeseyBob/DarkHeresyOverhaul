@@ -12,6 +12,8 @@ public class DHOPrinter {
 	// General //
 	private String title = "", header = "", note = "";
 	private int colSize = 1;
+	private String linkRef = "", linkName = "";
+	private boolean lineBreak = false;
 	private LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
 	private Aspect aspect = null;
 	
@@ -239,6 +241,17 @@ public class DHOPrinter {
 		processFile("ITEM_TOOL");
 	}
 	
+	public void printLink(String linkRef, String linkName, boolean lineBreak) {
+		this.linkRef = linkRef;
+		this.linkName = linkName;
+		this.lineBreak = lineBreak;
+		processFile("LINK");
+	}
+	
+	public void printLink(PrintableFile file, boolean lineBreak) {
+		printLink(file.filename(), file.title(), lineBreak);
+	}
+	
 	public void printList(boolean ordered, Object[] list) {
 		pw.println(ordered ? "<ol>" : "<ul>");
 		for(Object item : list) {
@@ -253,6 +266,10 @@ public class DHOPrinter {
 			pw.println("<li>"+item+"</li>");
 		}
 		pw.println(ordered ? "</ol>" : "</ul>");
+	}
+	
+	public void printList(boolean ordered, Object item1, Object item2) {
+		printList(ordered, new Object[] {item1, item2});
 	}
 	
 	public void printList(boolean ordered, Object item1, Object item2, Object item3) {
@@ -350,6 +367,11 @@ public class DHOPrinter {
 		processFile("TABLE_ROW_NOTE");
 	}
 	
+	public void printTableRow_psychicPower(PsychicPower psychicPower) {
+		this.special = psychicPower;
+		processFile("TABLE_ROW_PSYCHIC_POWER");
+	}
+	
 	public void printTableRow_specialRule(SpecialRule special) {
 		this.special = special;
 		processFile("TABLE_ROW_SPECIAL_RULE");
@@ -397,12 +419,20 @@ public class DHOPrinter {
 		printTableTop(new String[] {header1, header2}, wide, striped);
 	}
 	
+	public void printTableTop(String header1, String header2, String header3, boolean wide, boolean striped) {
+		printTableTop(new String[] {header1, header2, header3}, wide, striped);
+	}
+	
 	public void printTableTop(String header1, String header2, String header3, String header4, boolean wide, boolean striped) {
 		printTableTop(new String[] {header1, header2, header3, header4}, wide, striped);
 	}
 	
 	public void printTableTop_bionics() {
 		printTableTop("Bionic", "Availability", true, true);
+	}
+	
+	public void printTableTop_psychicPowers() {
+		printTableTop("Power", "Requirement", "XP", true, true);
 	}
 	
 	public void printTableTop_talents() {
@@ -482,6 +512,12 @@ public class DHOPrinter {
 			return note;
 		case COL_SIZE:
 			return ""+colSize;
+		case LINK_REF:
+			return linkRef;
+		case LINE_BREAK:
+			return lineBreak ? "<br>" : "";
+		case LINK_NAME:
+			return linkName;
 		case ASPECT_NAME:
 			return aspect.name;
 		case ASPECT_BONUS:
@@ -546,6 +582,10 @@ public class DHOPrinter {
 			return ((Talent)special).aptitude;
 		case TALENT_XP:
 			return ""+((Talent)special).xp;
+		case POWER_REQUIREMENT:
+			return ((PsychicPower)special).requirement;
+		case POWER_XP:
+			return ""+((PsychicPower)special).xp;
 		case BIONIC_AVAILABILITY:
 			return ((Bionic)special).availability;
 		case SKILL_NAME:
@@ -599,6 +639,7 @@ public class DHOPrinter {
 	
 	private enum Variable {
 		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE, COL_SIZE,
+		LINK_REF, LINK_NAME, LINE_BREAK,
 		ASPECT_NAME, ASPECT_BONUS, ASPECT_PENALTY, ASPECT_SPECIAL, ASPECT_OVERCOME,
 		HOME_WORLD_ID, HOME_WORLD_NAME, HOME_WORLD_APTITUDE, BACKGROUND_ID, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
 		CHARACTER_ID, CHARACTER_NAME,
@@ -606,6 +647,7 @@ public class DHOPrinter {
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
 		SPECIAL_NAME, SPECIAL_DESCRIPTION,
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
+		POWER_REQUIREMENT, POWER_XP,
 		BIONIC_NAME, BIONIC_DESCRIPTION, BIONIC_AVAILABILITY,
 		SKILL_NAME,
 		ITEM_NAME, ITEM_SIZE, ITEM_AVAILABILITY, ITEM_DESCRIPTION,

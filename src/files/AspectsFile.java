@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class AspectsFile implements Printable {
+class AspectsFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Aspects.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Aspects";
+	}
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Aspects");
+		printer.printFileTop(title());
 		printer.printParagraph("Aspects confer bonuses/penalties to types of actions. "
 				+ "They can also have special effects. "
 				+ "Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.");

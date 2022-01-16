@@ -16,46 +16,14 @@ class DarkHeresyOverhaul {
 	
 	public static void main(String[] args) {
 		System.out.println("Running DarkHeresyOverhaul html generation...");
-		// Index //
-		// TODO //
-		
-		// Characters //
-		printFile(FileList.characterCreation, "CharacterCreation.html");
-		printFile(FileList.talents, "Talents.html");
-		printFile(FileList.traits, "Traits.html");
-		printFile(FileList.bionics, "Bionics.html");
-		printFile(FileList.items, "Items.html");
-		printFile(FileList.ammo, "Ammo.html");
-		printFile(FileList.armour, "Armour.html");
-		printFile(FileList.consumables, "Consumables.html");
-		printFile(FileList.meleeWeapons, "MeleeWeapons.html");
-		printFile(FileList.rangedWeapons, "RangedWeapons.html");
-		printFile(FileList.thrownWeapons, "ThrownWeapons.html");
-		printFile(FileList.tools, "Tools.html");
-		printFile(FileList.miscItems, "MiscItems.html");
-		
-		// Playing the Game //
-		printFile(FileList.aspects, "Aspects.html");
-		
-		// Running the Game //
-		
-		// XXX NPC Groups //
-//		NPCGroup[] npcGroupList = {
-//				new NPCGroup_AdeptusAdministratum(),
-//				new NPCGroup_AdeptusArbites(),
-//				new NPCGroup_AdeptusAstraTelepathica(),
-//				new NPCGroup_AdeptusMechanicus(),
-//				new NPCGroup_ImperialGuard(),
-//				new NPCGroup_Ministorum(),
-//				new NPCGroup_Outcasts()};
-//		for(NPCGroup group : npcGroupList) {
-//			printNPCGroupFile(group);
-//		}
+		for(PrintableFile file : FileList.getAll()) {
+			printFile(file);
+		}
 		System.out.println("... done.");
 	}
 	
-	private static void printFile(Printable printable, String filename) {
-		DHOPrinter printer = new DHOPrinter(filename);
+	private static void printFile(PrintableFile printable) {
+		DHOPrinter printer = new DHOPrinter(printable.filename());
 		printable.print(printer);
 		printer.close();
 	}

@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class MiscItemsFile implements Printable {
+class MiscItemsFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "MiscItems.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Misc Items";
+	}
 	
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Misc Items");
+		printer.printFileTop(title());
 		printer.printHeader_collapsible("Clothing");
 		printer.printCollapsibleTop();
 		printer.printRowTop();

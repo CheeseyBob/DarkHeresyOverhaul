@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class BionicsFile implements Printable {
+class BionicsFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Bionics.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Bionics";
+	}
 
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Bionics");
+		printer.printFileTop(title());
 		printer.println("<p>Mechanically, bionics are Talents, but they cannot be aquired by spending XP. "
 				+ "Rather, they are purchased as if they are Items and must be installed by a capable chirurgeon in a proper medical facility (see <a href=\"Items.html\">Items</a> for availability of medical care).</p>");
 		printer.println("<p>The difficulty of installing a bionic is the modifier for its availability and -10 per wound. "

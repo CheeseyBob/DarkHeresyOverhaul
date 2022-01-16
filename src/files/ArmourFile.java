@@ -2,11 +2,21 @@ package files;
 
 import main.*;
 
-class ArmourFile implements Printable {
+class ArmourFile implements PrintableFile {
+	
+	@Override
+	public String filename() {
+		return "Armour.html";
+	}
+	
+	@Override
+	public String title() {
+		return "Armour";
+	}
 	
 	@Override
 	public void print(DHOPrinter printer) {
-		printer.printFileTop("Armour");
+		printer.printFileTop(title());
 		printer.printSubSubheader("Armour Points (PA)");
 		printer.printParagraph("When you take a hit, you reduce the damage by the AP of the armour you are wearing (and your Toughness Bonus).");
 		printer.printSubheader("Fitting");

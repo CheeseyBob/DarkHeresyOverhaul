@@ -1,0 +1,6 @@
+				<tr>
+					<td><b>!!@SPECIAL_NAME!!:</b>
+					!!@SPECIAL_DESCRIPTION!!</td>
+					<td>!!@POWER_REQUIREMENT!!</td>
+					<td>!!@POWER_XP!!</td>
+				</tr>
