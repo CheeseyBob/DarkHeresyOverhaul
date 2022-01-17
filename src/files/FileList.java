@@ -28,7 +28,7 @@ public class FileList {
 	public static PrintableFile miscItems = new MiscItemsFile();
 	
 	// Playing the Game //
-	// TODO - fate points //
+	public static PrintableFile fatePoints = new FatePointsFile();
 	// TODO - actions overview //
 	// TODO - actions in combat time //
 	// TODO - actions in downtime //
@@ -84,7 +84,7 @@ public class FileList {
 	
 	public static List<PrintableFile> section_playingTheGame() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		// TODO - fate points //
+		list.add(fatePoints);
 		// TODO - actions overview //
 		// TODO - actions in combat time //
 		// TODO - actions in downtime //
