@@ -119,7 +119,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 		for(int i = 0; i < actionsTable_advanced.length; i ++) {
 			printer.printTableRow(actionsTable_advanced[i]);
 		}
-		// TODO //
+		printer.printTableTail();
 		printer.println();
 		printer.println();
 		printer.printFileTail();
