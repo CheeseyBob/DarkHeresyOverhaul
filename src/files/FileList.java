@@ -30,7 +30,7 @@ public class FileList {
 	// Playing the Game //
 	public static PrintableFile fatePoints = new FatePointsFile();
 	public static PrintableFile actionsOverview = new ActionsOverviewFile();
-	// TODO - actions in combat time //
+	public static PrintableFile actionsInCombatTime = new ActionsInCombatTimeFile();
 	// TODO - actions in downtime //
 	public static PrintableFile aspects = new AspectsFile();
 	// TODO - critical damage //
@@ -86,7 +86,7 @@ public class FileList {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
 		list.add(fatePoints);
 		list.add(actionsOverview);
-		// TODO - actions in combat time //
+		list.add(actionsInCombatTime);
 		// TODO - actions in downtime //
 		list.add(aspects);
 		// TODO - critical damage //
