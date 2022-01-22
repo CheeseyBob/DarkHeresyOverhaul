@@ -34,7 +34,7 @@ public class FileList {
 	public static PrintableFile actionsInDowntime = new ActionsInDowntimeFile();
 	public static PrintableFile aspects = new AspectsFile();
 	public static PrintableFile criticalDamage = new CriticalDamageFile();
-	// TODO - fear and insanity //
+	public static PrintableFile fearAndInsanity = new FearAndInsanityFile();
 	// TODO - corruption and mutation //
 	
 	// Running the Game //
@@ -90,7 +90,7 @@ public class FileList {
 		list.add(actionsInDowntime);
 		list.add(aspects);
 		list.add(criticalDamage);
-		// TODO - fear and insanity //
+		list.add(fearAndInsanity);
 		// TODO - corruption and mutation //
 		return list;
 	}
