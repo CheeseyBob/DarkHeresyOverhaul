@@ -58,6 +58,18 @@ public class DHOPrinter {
 		this.aspect = aspect;
 		processFile("ASPECT");
 	}
+	
+	public void printCharacterSheet(NPC npc) {
+		this.npc = npc;
+		this.specialRuleList = npc.specialRuleList;
+		processFile("CHARACTER_SHEET");
+	}
+	
+	public void printCharacterSheetList(NPCGroup npcGroup) {
+		for(NPC npc : npcGroup.npcList) {
+			printCharacterSheet(npc);
+		}
+	}
 
 	@Deprecated
 	private void printCharacterSheetList() {
@@ -312,6 +324,10 @@ public class DHOPrinter {
 			this.personalityResponse = personalityResponse;
 			processFile("TABLE_ROW_PERSONALITY_RESPONSE");
 		}
+	}
+	
+	public void printRankStructure(NPCGroup npcGroup) {
+		processFile("RANK_STRUCTURE-"+npcGroup.id);
 	}
 	
 	public void printRowTail() {

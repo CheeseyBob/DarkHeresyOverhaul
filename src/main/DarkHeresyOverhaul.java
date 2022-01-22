@@ -9,7 +9,7 @@ import files.FileList;
  * Lines starting with !<command> run the command in place of that line.
  * Lines containing !!@<variable>!! have the variable inserted.
  * 
- * @author rob
+ * @author CheeseyBob
  *
  */
 class DarkHeresyOverhaul {
@@ -17,9 +17,11 @@ class DarkHeresyOverhaul {
 	public static void main(String[] args) {
 		System.out.println("Running DarkHeresyOverhaul html generation...");
 		for(PrintableFile file : FileList.getAll()) {
+			System.out.print("Generating "+file.filename()+"... ");
 			printFile(file);
+			System.out.println("done.");
 		}
-		System.out.println("... done.");
+		System.out.println("HTML file generation complete.");
 	}
 	
 	private static void printFile(PrintableFile printable) {

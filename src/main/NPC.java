@@ -1,7 +1,7 @@
 package main;
 import java.util.LinkedList;
 
-class NPC {
+public class NPC {
 	String id, name;
 	
 	int wounds, insanity, corruption;

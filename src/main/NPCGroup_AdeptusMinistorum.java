@@ -1,7 +1,7 @@
 package main;
-class NPCGroup_Ministorum extends NPCGroup {
+class NPCGroup_AdeptusMinistorum extends NPCGroup {
 
-	NPCGroup_Ministorum() {
+	NPCGroup_AdeptusMinistorum() {
 		super("Adeptus Ministorum");
 	}
 

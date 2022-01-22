@@ -39,13 +39,13 @@ public class FileList {
 	
 	// Running the Game //
 	public static PrintableFile npcs = new NPCsFile();
-	// TODO - Adeptus Administratum NPCs //
-	// TODO - Adeptus Arbites NPCs //
-	// TODO - Adeptus Astra Telepathica NPCs //
-	// TODO - Adeptus Mechanicus NPCs //
-	// TODO - Adeptus Ministorum NPCs //
-	// TODO - Imperial Guard NPCs //
-	// TODO - Outcast NPCs //
+	public static PrintableFile adeptusAdministratum = NPCGroupFile.adeptusAdministratum;
+	public static PrintableFile adeptusArbites = NPCGroupFile.adeptusArbites;
+	public static PrintableFile adeptusAstraTelepathica = NPCGroupFile.adeptusAstraTelepathica;
+	public static PrintableFile adeptusMechanicus = NPCGroupFile.adeptusMechanicus;
+	public static PrintableFile adeptusMinistorum = NPCGroupFile.adeptusMinistorum;
+	public static PrintableFile imperialGuard = NPCGroupFile.imperialGuard;
+	public static PrintableFile outcasts = NPCGroupFile.outcasts;
 	// TODO - Investigation //
 	// TODO - Lore //
 	// TODO - Overmap //
@@ -98,13 +98,13 @@ public class FileList {
 	public static List<PrintableFile> section_runningTheGame() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
 		list.add(npcs);
-		// TODO - Adeptus Administratum NPCs //
-		// TODO - Adeptus Arbites NPCs //
-		// TODO - Adeptus Astra Telepathica NPCs //
-		// TODO - Adeptus Mechanicus NPCs //
-		// TODO - Adeptus Ministorum NPCs //
-		// TODO - Imperial Guard NPCs //
-		// TODO - Outcast NPCs //
+		list.add(adeptusAdministratum);
+		list.add(adeptusArbites);
+		list.add(adeptusAstraTelepathica);
+		list.add(adeptusMechanicus);
+		list.add(adeptusMinistorum);
+		list.add(imperialGuard);
+		list.add(outcasts);
 		// TODO - Investigation //
 		// TODO - Lore //
 		// TODO - Overmap //

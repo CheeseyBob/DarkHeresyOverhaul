@@ -1,6 +1,6 @@
 package main;
 
-class NPCGroup_AdeptusAdministratum extends NPCGroup {
+public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 
 	NPCGroup_AdeptusAdministratum() {
 		super("Adeptus Administratum");
