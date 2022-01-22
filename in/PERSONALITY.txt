@@ -1,0 +1,20 @@
+<table class="table table-sm table-dark table-striped">
+				<thead>
+					<tr>
+					<th colspan="4">!!@PERSONALITY_NAME!!</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="4">!!@PERSONALITY_DISPOSITION_ZERO!!</td>
+					</tr>
+				</tbody>
+				<thead>
+					<tr>
+					<th>Skill</th><th>Modifier</th><th>Success</th><th>Failure</th>
+					</tr>
+				</thead>
+				<tbody>
+!PERSONALITY_RESPONSE_LIST
+				</tbody>
+			</table>

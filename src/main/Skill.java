@@ -1,4 +1,5 @@
 package main;
+
 class Skill {
 	String name;
 	int bonus;

@@ -38,7 +38,7 @@ public class FileList {
 	public static PrintableFile corruptionAndMutation = new CorruptionAndMutationFile();
 	
 	// Running the Game //
-	// TODO - NPCs //
+	public static PrintableFile npcs = new NPCsFile();
 	// TODO - Adeptus Administratum NPCs //
 	// TODO - Adeptus Arbites NPCs //
 	// TODO - Adeptus Astra Telepathica NPCs //
@@ -97,7 +97,7 @@ public class FileList {
 	
 	public static List<PrintableFile> section_runningTheGame() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		// TODO - NPCs //
+		list.add(npcs);
 		// TODO - Adeptus Administratum NPCs //
 		// TODO - Adeptus Arbites NPCs //
 		// TODO - Adeptus Astra Telepathica NPCs //

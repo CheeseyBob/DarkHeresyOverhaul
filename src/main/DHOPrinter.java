@@ -14,7 +14,7 @@ public class DHOPrinter {
 	private int colSize = 1;
 	private String linkRef = "", linkName = "";
 	private boolean lineBreak = false;
-	private LinkedList<SpecialRule> specialRuleList = null; // Used for NPCs and Home Worlds.
+	private LinkedList<SpecialRule> specialRuleList = null;
 	private Aspect aspect = null;
 	
 	// Character Creation //
@@ -28,6 +28,9 @@ public class DHOPrinter {
 	private SpecialRule special = null;
 	private Skill skill = null;
 	private Item item = null;
+	private Personality personality = null;
+	private Personality.SkillResponse[]  personalityResponseList = null;
+	private Personality.SkillResponse personalityResponse = null;
 	private static final int DEFINITION = 0, INVENTORY = 1, EQUIPPED = 2;
 	private int itemContext = DEFINITION;
 	
@@ -124,6 +127,12 @@ public class DHOPrinter {
 	public void printCol_item(int colSize, Tool tool) {
 		printColTop(colSize);
 		printItem(tool);
+		printColTail();
+	}
+	
+	public void printCol_personality(int colSize, Personality personality) {
+		printColTop(colSize);
+		printPersonality(personality);
 		printColTail();
 	}
 	
@@ -290,6 +299,19 @@ public class DHOPrinter {
 	
 	public void printParagraph(String x) {
 		pw.println("<p>"+x+"</p>");
+	}
+	
+	public void printPersonality(Personality personality) {
+		this.personality = personality;
+		this.personalityResponseList = personality.socialSkillResponseList;
+		processFile("PERSONALITY");
+	}
+	
+	private void printPersonalityResponseList() {
+		for(Personality.SkillResponse personalityResponse : personalityResponseList) {
+			this.personalityResponse = personalityResponse;
+			processFile("TABLE_ROW_PERSONALITY_RESPONSE");
+		}
 	}
 	
 	public void printRowTail() {
@@ -495,6 +517,9 @@ public class DHOPrinter {
 		case INVENTORY_LIST:
 			printInventoryList();
 			break;
+		case PERSONALITY_RESPONSE_LIST:
+			printPersonalityResponseList();
+			break;
 		default:
 			throw new RuntimeException("Undefined Command: "+this);
 		}
@@ -627,6 +652,18 @@ public class DHOPrinter {
 			return ""+((Tool)item).bonus;
 		case WEAPON_DAMAGE:
 			return ""+((Weapon)item).damage;
+		case PERSONALITY_NAME:
+			return personality.name;
+		case PERSONALITY_DISPOSITION_ZERO:
+			return personality.dispositionZeroDescription;
+		case PERSONALITY_RESPONSE_SKILL:
+			return personalityResponse.skill.name;
+		case PERSONALITY_RESPONSE_MODIFIER:
+			return personalityResponse.modifier;
+		case PERSONALITY_RESPONSE_SUCCESS:
+			return personalityResponse.success;
+		case PERSONALITY_RESPONSE_FAILURE:
+			return personalityResponse.failure;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -634,7 +671,8 @@ public class DHOPrinter {
 	
 	private enum Command {
 		PROCESS,
-		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST;
+		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST,
+		PERSONALITY_RESPONSE_LIST;
 	}
 	
 	private enum Variable {
@@ -657,6 +695,8 @@ public class DHOPrinter {
 		MELEE_WEAPON_BONUS, MELEE_WEAPON_HITS,
 		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD,
 		TOOL_BONUS,
-		WEAPON_DAMAGE;
+		WEAPON_DAMAGE,
+		PERSONALITY_NAME, PERSONALITY_DISPOSITION_ZERO,
+		PERSONALITY_RESPONSE_SKILL, PERSONALITY_RESPONSE_MODIFIER, PERSONALITY_RESPONSE_SUCCESS, PERSONALITY_RESPONSE_FAILURE;
 	}
 }
