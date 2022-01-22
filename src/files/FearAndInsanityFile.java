@@ -4,13 +4,13 @@ import main.*;
 
 class FearAndInsanityFile implements PrintableFile {
 	
-	private static String[][] fearRatingTable = {
+	private static final String[][] fearRatingTable = {
 			{"1", "+30"},
 			{"2", "+20"},
 			{"3", "+10"},
 			{"4", "+0"},
 	};
-	private static String[][] fearEffectsTable = {
+	private static final String[][] fearEffectsTable = {
 			{"Over 3 DoS", "You are unaffected."},
 			{"3 DoS", "You take a -10 penalty to your next Test as if you were Frightened."},
 			{"2 DoS", "You become Frightened."},
@@ -22,7 +22,7 @@ class FearAndInsanityFile implements PrintableFile {
 					+ "You also take Insanity Points equal to 1d10 plus the Fear Rating."},
 	};
 	
-	private static String[][] insanityTrack = {
+	private static final String[][] insanityTrack = {
 			{"10", "Trauma Test (+30)"},
 			{"20", "Trauma Test (+30)"},
 			{"30", "Trauma Test (+30)"},
@@ -35,7 +35,7 @@ class FearAndInsanityFile implements PrintableFile {
 			{"100", "Terminally Insane - the character becomes unplayable"},
 	};
 	
-	private static String[][] traumaEffectsTable = {
+	private static final String[][] traumaEffectsTable = {
 			{"Over 3 DoS", "You are unaffected."},
 			{"3 DoS", "You become Jumpy."},
 			{"2 DoS", "You become Withdrawn."},

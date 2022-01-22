@@ -47,7 +47,7 @@ public class FileList {
 	public static PrintableFile imperialGuard = NPCGroupFile.imperialGuard;
 	public static PrintableFile outcasts = NPCGroupFile.outcasts;
 	public static PrintableFile investigation = new InvestigationFile();
-	// TODO - Lore //
+	public static PrintableFile lore = new LoreFile();
 	// TODO - Overmap //
 	// TODO - Locations //
 	// TODO - Groups and Events //
@@ -106,7 +106,7 @@ public class FileList {
 		list.add(imperialGuard);
 		list.add(outcasts);
 		list.add(investigation);
-		// TODO - Lore //
+		list.add(lore);
 		// TODO - Overmap //
 		// TODO - Locations //
 		// TODO - Groups and Events //
