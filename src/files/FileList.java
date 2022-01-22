@@ -10,7 +10,7 @@ public class FileList {
 	public static PrintableFile indexFile = new IndexFile();
 	
 	// Characters //
-	// TODO - character sheet //
+	public static PrintableFile exampleCharacterSheet = new ExampleCharacterSheetFile();
 	public static PrintableFile characterCreation = new CharacterCreationFile();
 	public static PrintableFile characterAdvancement = new CharacterAdvancementFile();
 	public static PrintableFile talents = new TalentsFile();
@@ -63,7 +63,7 @@ public class FileList {
 	
 	public static List<PrintableFile> section_characters() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		// TODO - character sheet //
+		list.add(exampleCharacterSheet);
 		list.add(characterCreation);
 		list.add(characterAdvancement);
 		list.add(talents);

@@ -123,7 +123,7 @@ public class RangedWeapon extends Weapon {
 	public static final RangedWeapon pumpActionShotgun = new RangedWeapon("Pump-Action Shotgun",
 			3, "40m", "2", "12 Shells", "2", "1d10+3 Impact", Availability.COMMON)
 			.withSpecialRule(scatterShot);
-	public static final RangedWeapon arbitesShotgun = new RangedWeapon("Arbites Shotgun",
+	public static final RangedWeapon shotgun_arbites = new RangedWeapon("Arbites Shotgun",
 			3, "40m", "2", "12 Shells", "2", "1d10+5 Impact", Availability.AVERAGE)
 			.withSpecialRule(scatterShot);
 	public static final RangedWeapon autostubber = new RangedWeapon("Autostubber",

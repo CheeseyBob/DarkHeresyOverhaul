@@ -142,7 +142,7 @@ public class Background {
 									Clothing.arbitesUniform,
 									Armour.carapaceChestplate,
 									MeleeWeapon.shockMaul,
-									RangedWeapon.arbitesShotgun,
+									RangedWeapon.shotgun_arbites,
 									Ammo.shotgun_arbites_mag,
 									RangedWeapon.pistol_arbites,
 									Ammo.pistol_arbites_mag,

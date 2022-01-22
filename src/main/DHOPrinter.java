@@ -31,6 +31,7 @@ public class DHOPrinter {
 	private Personality personality = null;
 	private Personality.SkillResponse[]  personalityResponseList = null;
 	private Personality.SkillResponse personalityResponse = null;
+	private String aptitude = null;
 	private static final int DEFINITION = 0, INVENTORY = 1, EQUIPPED = 2;
 	private int itemContext = DEFINITION;
 	
@@ -54,6 +55,13 @@ public class DHOPrinter {
 		return idString;
 	}
 	
+	private void printAptitudeList() {
+		for(String aptitude : npc.aptitudeList) {
+			this.aptitude = aptitude;
+			processFile("APTITUDE");
+		}
+	}
+	
 	public void printAspect(Aspect aspect) {
 		this.aspect = aspect;
 		processFile("ASPECT");
@@ -65,20 +73,15 @@ public class DHOPrinter {
 		processFile("CHARACTER_SHEET");
 	}
 	
+	public void printCharacterSheet(boolean isPC, NPC character) {
+		this.npc = character;
+		this.specialRuleList = npc.specialRuleList;
+		processFile(isPC ? "CHARACTER_SHEET_PC" : "CHARACTER_SHEET");
+	}
+	
 	public void printCharacterSheetList(NPCGroup npcGroup) {
 		for(NPC npc : npcGroup.npcList) {
 			printCharacterSheet(npc);
-		}
-	}
-
-	@Deprecated
-	private void printCharacterSheetList() {
-		for(NPC npc : npcGroup.npcList) {
-			this.npc = npc;
-			this.specialRuleList = npc.specialRuleList;
-			processFile("CHARACTER_SHEET");
-			pw.println();
-			pw.println();
 		}
 	}
 	
@@ -515,9 +518,6 @@ public class DHOPrinter {
 		case PROCESS:
 			processFile(parameterList[0]);
 			break;
-		case CHARACTER_SHEET_LIST:
-			printCharacterSheetList();
-			break;
 		case RANK_STRUCTURE:
 			processFile("RANK_STRUCTURE-"+npcGroup.id);
 			break;
@@ -532,6 +532,9 @@ public class DHOPrinter {
 			break;
 		case INVENTORY_LIST:
 			printInventoryList();
+			break;
+		case APTITUDE_LIST:
+			printAptitudeList();
 			break;
 		case PERSONALITY_RESPONSE_LIST:
 			printPersonalityResponseList();
@@ -589,6 +592,8 @@ public class DHOPrinter {
 			return npc.id;
 		case CHARACTER_NAME:
 			return npc.name;
+		case CHARACTER_NOTES:
+			return npc.notes;
 		case CHARACTER_WOUNDS:
 			return ""+npc.wounds;
 		case CHARACTER_INSANITY:
@@ -680,6 +685,8 @@ public class DHOPrinter {
 			return personalityResponse.success;
 		case PERSONALITY_RESPONSE_FAILURE:
 			return personalityResponse.failure;
+		case APTITUDE_NAME:
+			return aptitude;
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}
@@ -687,7 +694,7 @@ public class DHOPrinter {
 	
 	private enum Command {
 		PROCESS,
-		RANK_STRUCTURE, CHARACTER_SHEET_LIST, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST,
+		RANK_STRUCTURE, SPECIAL_RULE_LIST, SKILL_LIST, EQUIPPED_ITEM_LIST, INVENTORY_LIST, APTITUDE_LIST,
 		PERSONALITY_RESPONSE_LIST;
 	}
 	
@@ -696,7 +703,7 @@ public class DHOPrinter {
 		LINK_REF, LINK_NAME, LINE_BREAK,
 		ASPECT_NAME, ASPECT_BONUS, ASPECT_PENALTY, ASPECT_SPECIAL, ASPECT_OVERCOME,
 		HOME_WORLD_ID, HOME_WORLD_NAME, HOME_WORLD_APTITUDE, BACKGROUND_ID, BACKGROUND_NAME, BACKGROUND_APTITUDE, BACKGROUND_PATH_NAME, BACKGROUND_PATH_COL_SIZE,
-		CHARACTER_ID, CHARACTER_NAME,
+		CHARACTER_ID, CHARACTER_NAME, CHARACTER_NOTES,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
 		SPECIAL_NAME, SPECIAL_DESCRIPTION,
@@ -713,6 +720,7 @@ public class DHOPrinter {
 		TOOL_BONUS,
 		WEAPON_DAMAGE,
 		PERSONALITY_NAME, PERSONALITY_DISPOSITION_ZERO,
-		PERSONALITY_RESPONSE_SKILL, PERSONALITY_RESPONSE_MODIFIER, PERSONALITY_RESPONSE_SUCCESS, PERSONALITY_RESPONSE_FAILURE;
+		PERSONALITY_RESPONSE_SKILL, PERSONALITY_RESPONSE_MODIFIER, PERSONALITY_RESPONSE_SUCCESS, PERSONALITY_RESPONSE_FAILURE,
+		APTITUDE_NAME;
 	}
 }

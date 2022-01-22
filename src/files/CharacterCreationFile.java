@@ -97,6 +97,18 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableTail();
 		printer.println();
 		printer.println();
+		printer.printHeader("Role");
+		printer.printParagraph("You get all the Aptitudes listed under your Role.");
+		printer.printRowTop();
+		for(Role role : Role.list) {
+			printer.printColTop(3);
+			printer.printSubSubheader(role.name);
+			printer.printList(false, role.aptitudeList);
+			printer.printColTail();
+		}
+		printer.printRowTail();
+		printer.println();
+		printer.println();
 		printer.printHeader("Home World");
 		printer.printParagraph("Choose an Aptitude and a Talent listed under your Home World.");
 		printer.println();
@@ -141,30 +153,18 @@ class CharacterCreationFile implements PrintableFile {
 			printer.println();
 			printer.println();
 		}
-		printer.printHeader("Role");
-		printer.printParagraph("You get all the Aptitudes listed under your Role.");
-		printer.printRowTop();
-		for(Role role : Role.list) {
-			printer.printColTop(3);
-			printer.printSubSubheader(role.name);
-			printer.printList(false, role.aptitudeList);
-			printer.printColTail();
-		}
-		printer.printRowTail();
-		printer.println();
-		printer.println();
 		printer.printHeader("Spend Experience and Equip Gear");
 		printer.printParagraph("Each character should have 8 different Aptitudes, including General. "
 				+ "If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.");
 		printer.println("<b>Equipment</b>");
 		printer.printList(false, new String[] {
 				"Take any Ubiquitous or Abundant items as you can want (and can carry).",
-				"You can swap out items from your background for different ones of the same availability.",
-				"You can also take any 1 Scarce item or 2 Average items.",
+				"If you wish, you can swap out items from your background for different ones of the same availability.",
+				"You can also take any 1 item of Average availability or any 2 items up to Common availability.",
 		});
 		printer.println("<b>Experience</b>");
 		printer.printList(false, new String[] {
-				"You start with 10 XP.",
+				"You start with 5 XP.",
 				"Buy any Advances you wish with this XP (see Character Advancement). Keep any XP you don't spend.",
 		});
 		printer.println();

@@ -1,0 +1,86 @@
+<div class="container-fluid pt-2">
+	<div class="card">
+		<button class="bg-secondary text-white border" data-bs-toggle="collapse" href="#!!@CHARACTER_ID!!">
+			<h4>!!@CHARACTER_NAME!!</h4>
+		</button>
+		<div id="!!@CHARACTER_ID!!" class="collapse p-2 bg-dark border">
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>Wounds: !!@CHARACTER_WOUNDS!!</th><th>Insanity: !!@CHARACTER_INSANITY!!</th><th>Corruption: !!@CHARACTER_CORRUPTION!!</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white text-center">
+				<tr>
+					<th>WS</th>
+					<th>BS</th>
+					<th>S</th>
+					<th>T</th>
+					<th>Ag</th>
+					<th>Int</th>
+					<th>Per</th>
+					<th>WP</th>
+					<th>Fel</th>
+				</tr>
+				<tr>
+					<th>!!@CHARACTER_WS!!</th>
+					<th>!!@CHARACTER_BS!!</th>
+					<th>!!@CHARACTER_S!!</th>
+					<th>!!@CHARACTER_T!!</th>
+					<th>!!@CHARACTER_AG!!</th>
+					<th>!!@CHARACTER_INT!!</th>
+					<th>!!@CHARACTER_PER!!</th>
+					<th>!!@CHARACTER_WP!!</th>
+					<th>!!@CHARACTER_FEL!!</th>
+				</tr>
+			</table>
+			
+			<table class="table text-white">
+!SPECIAL_RULE_LIST
+			</table>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Skills</b></h6>
+						<ul>
+!SKILL_LIST
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Equipped Items</b>
+						<br><small>Useable Size: SB</small></h6>
+						<ul>
+!EQUIPPED_ITEM_LIST
+						</ul>
+					</div>
+					<div class="col-md p-2 border">
+						<h6 class="text-center"><b>Inventory</b>
+						<br><small>Capacity: 14 | Max Size: SB+1</small></h6>
+						<ul>
+!INVENTORY_LIST
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid pt-2">
+				<h6 class="text-center"><b>Aptitudes</b></h6>
+				<div class="row">
+!APTITUDE_LIST
+				</div>
+			</div>
+			
+			<div class="container-fluid pt-2">
+				<h6 class="text-center"><b>Notes</b></h6>
+				<div class="pt-2">
+					<p>!!@CHARACTER_NOTES!!</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+

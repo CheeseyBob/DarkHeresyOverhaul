@@ -75,7 +75,7 @@ class RangedWeaponsFile implements PrintableFile {
 		printer.printCol_item(6, RangedWeapon.stubber);
 		printer.printCol_item(6, RangedWeapon.autopistol);
 		printer.printCol_item(6, RangedWeapon.pumpActionShotgun);
-		printer.printCol_item(6, RangedWeapon.arbitesShotgun);
+		printer.printCol_item(6, RangedWeapon.shotgun_arbites);
 		printer.printCol_item(6, RangedWeapon.autostubber);
 		printer.printCol_item(6, RangedWeapon.combatShotgun);
 		printer.printCol_item(6, RangedWeapon.huntingRifle);

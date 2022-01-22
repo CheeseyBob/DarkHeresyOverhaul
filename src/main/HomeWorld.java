@@ -30,22 +30,22 @@ public abstract class HomeWorld {
 	protected abstract void setSpecialRuleList();
 	
 	public static final HomeWorld[] list = {
-			new HomeWorld_Feral(),
-			new HomeWorld_Forge(),
-			new HomeWorld_Highborn(),
-			new HomeWorld_Hive(),
-			new HomeWorld_Shrine(),
-			new HomeWorld_Tithe(),
-			new HomeWorld_Void(),
-			new HomeWorld_War(),
+			new HomeWorld_Feral(), // 10%
+			new HomeWorld_Forge(), // 10%
+			new HomeWorld_Highborn(), // 5%
+			new HomeWorld_Hive(), // 40%
+			new HomeWorld_Shrine(), // 10%
+			new HomeWorld_Tithe(), // 10%
+			new HomeWorld_Void(), // 10%
+			new HomeWorld_War(), // 5%
 	};
 	public static final String[] rollList = {
 		"01-10",
 		"11-20",
-		"21-60",
-		"61-70",
-		"71-80",
-		"81-85",
+		"21-25",
+		"26-65",
+		"66-75",
+		"76-85",
 		"86-95",
 		"96-00",
 	};

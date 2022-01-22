@@ -37,7 +37,7 @@ public class Ammo extends Item {
 	public static final Ammo pistol_mag = new Ammo(
 			"Pistol Mag", 1, 9, Availability.ABUNDANT);
 	public static final Ammo pistol_arbites_mag = new Ammo(
-			"Arbites Pistol Mag", 1, 9, null);
+			"Arbites Pistol Mag", 1, 9, Availability.PLENTIFUL);
 	public static final Ammo pumpActionShotgun_mag = new Ammo(
 			"Pump-Action Shotgun Mag", 1, 12, Availability.ABUNDANT);
 	public static final Ammo stubber_mag = new Ammo(
