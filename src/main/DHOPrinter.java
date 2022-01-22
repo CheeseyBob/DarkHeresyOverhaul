@@ -462,7 +462,7 @@ public class DHOPrinter {
 	}
 	
 	private void processFile(String filename) {
-		LinkedList<String> lineList = TextFileHandler.readEntireFile("in/"+filename+".txt");
+		LinkedList<String> lineList = TextFileHandler.readEntireFile("in/"+filename+".template");
 		for(String line : lineList) {
 			if(line.contains("!!")){
 				processLineWithCommand(line);
