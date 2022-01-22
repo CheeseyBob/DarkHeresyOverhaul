@@ -35,7 +35,7 @@ public class FileList {
 	public static PrintableFile aspects = new AspectsFile();
 	public static PrintableFile criticalDamage = new CriticalDamageFile();
 	public static PrintableFile fearAndInsanity = new FearAndInsanityFile();
-	// TODO - corruption and mutation //
+	public static PrintableFile corruptionAndMutation = new CorruptionAndMutationFile();
 	
 	// Running the Game //
 	// TODO - NPCs //
@@ -91,7 +91,7 @@ public class FileList {
 		list.add(aspects);
 		list.add(criticalDamage);
 		list.add(fearAndInsanity);
-		// TODO - corruption and mutation //
+		list.add(corruptionAndMutation);
 		return list;
 	}
 	

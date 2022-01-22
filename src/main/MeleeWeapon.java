@@ -20,7 +20,9 @@ public class MeleeWeapon extends Weapon {
 			"Roll twice for damage and use the lowest.");
 	public static SpecialRule limitedWounds = new SpecialRule("Limited Wounds",
 			"Hits cannot inflict more than the wielder's Strength Bonus in wounds.");
-	public static SpecialRule shocking = new SpecialRule("Shocking ",
+	public static SpecialRule selfDestructive = new SpecialRule("Self-Destructive",
+			"Whenever you make an attack with this weapon, you must succeed a Toughness Test or become Bleeding Out.");
+	public static SpecialRule shocking = new SpecialRule("Shocking",
 			"Each wound inflicted makes the target become Stunned.");
 	public static SpecialRule unbalanced = new SpecialRule("Unbalanced",
 			"Get a -10 penalty to Parry.");
@@ -121,4 +123,23 @@ public class MeleeWeapon extends Weapon {
 	public static final MeleeWeapon spear_savage = new MeleeWeapon("Savage Spear",
 			3, "+10", "2", "1d10+SB+3 Rending", Availability.PLENTIFUL)
 			.withSpecialRule(balanced);
+	
+	// Attacks from Mutations //
+	public static final MeleeWeapon talons = new MeleeWeapon("Talons",
+			0, "+10", "3", "1d10+SB+CB Rending", null)
+			.withSpecialRule(limitedWounds);
+	public static final MeleeWeapon scytheArm = new MeleeWeapon("Scythe-Arm",
+			0, "+30", "2", "1d10+SB+2xCB Rending", null)
+			.withSpecialRule(balanced);
+	public static final MeleeWeapon boneBlades = new MeleeWeapon("Bone-Blades",
+			0, "+10", "3", "1d10+SB+CB Rending", null)
+			.withSpecialRule(selfDestructive);
+	public static final MeleeWeapon razorFangs = new MeleeWeapon("Razor Fangs",
+			0, "+0", "1", "1d10+SB+CB Rending", null)
+			.withSpecialRule(limitedWounds);
+	public static final MeleeWeapon tailWhip = new MeleeWeapon("Tail Whip",
+			0, "+30", "2", "1d10+SB Impact", null)
+			.withSpecialRule(blunt)
+			.withSpecialRule(limitedWounds);
+	
 }
