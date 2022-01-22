@@ -78,7 +78,7 @@ public class NPC {
 				"Homeworld: Hive World"+"<br>"
 				+ "Background: Adeptus Arbites"+"<br>"
 				+ "Role: Desperado"+"<br>"
-				+ "1 XP to spend"+"<br>";
+				+ "5XP total; 1 XP to spend"+"<br>";
 		return examplePC;
 	}
 }
