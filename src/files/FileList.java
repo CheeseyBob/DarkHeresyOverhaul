@@ -48,7 +48,7 @@ public class FileList {
 	public static PrintableFile outcasts = NPCGroupFile.outcasts;
 	public static PrintableFile investigation = new InvestigationFile();
 	public static PrintableFile lore = new LoreFile();
-	// TODO - Overmap //
+	public static PrintableFile overmap = new OvermapFile();
 	// TODO - Locations //
 	// TODO - Groups and Events //
 	
@@ -107,7 +107,7 @@ public class FileList {
 		list.add(outcasts);
 		list.add(investigation);
 		list.add(lore);
-		// TODO - Overmap //
+		list.add(overmap);
 		// TODO - Locations //
 		// TODO - Groups and Events //
 		return list;
