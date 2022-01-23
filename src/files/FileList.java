@@ -49,8 +49,8 @@ public class FileList {
 	public static PrintableFile investigation = new InvestigationFile();
 	public static PrintableFile lore = new LoreFile();
 	public static PrintableFile overmap = new OvermapFile();
-	// TODO - Locations //
-	// TODO - Groups and Events //
+	public static PrintableFile locations = new LocationsFile();
+	public static PrintableFile groupsAndEvents = new GroupsAndEventsFile();
 	
 	public static List<PrintableFile> getAll() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
@@ -108,8 +108,8 @@ public class FileList {
 		list.add(investigation);
 		list.add(lore);
 		list.add(overmap);
-		// TODO - Locations //
-		// TODO - Groups and Events //
+		list.add(locations);
+		list.add(groupsAndEvents);
 		return list;
 	}
 }
