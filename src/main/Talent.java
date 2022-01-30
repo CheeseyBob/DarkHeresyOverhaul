@@ -350,8 +350,8 @@ public class Talent extends SpecialRule {
 			"Get a +20 bonus to Search when following tracks.",
 			"-", "Perception", 2);
 	public static final Talent quickEntry = new Talent("Quick Entry",
-			"You can Open Lock in combat as a Full Action.",
-			"Open Lock (+20)", "Intelligence", 4);
+			"You can Unlock in combat as a Full Action.",
+			"Unlock (+20)", "Intelligence", 4);
 	public static final Talent spotWeakness = new Talent("Spot Weakness",
 			"Main Action Perception Test; Create an Aspect which gives a bonus.",
 			"Notice (+20)", "Perception", 8);

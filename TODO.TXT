@@ -1,7 +1,6 @@
 	~~ To Do List ~~
 
->>> Convert everything to generated HTML documents which use Bootstrap
-** remember the GM notes for item creation **
+>>> GM notes for item creation
 
 >>> NPC Groups:
 	- Astra Telepathica
@@ -15,8 +14,6 @@
 >>> Psychic Phenomena & Perils tables
 
 >>> Psychic Powers
-
-> Rename Open Lock skill to Unlock
 
 > Lore items/talents for rituals
 
