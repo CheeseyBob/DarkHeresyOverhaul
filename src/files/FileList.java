@@ -36,6 +36,7 @@ public class FileList {
 	public static PrintableFile criticalDamage = new CriticalDamageFile();
 	public static PrintableFile fearAndInsanity = new FearAndInsanityFile();
 	public static PrintableFile corruptionAndMutation = new CorruptionAndMutationFile();
+	public static PrintableFile psychicPhenomena = new PsychicPhenomenaFile();
 	
 	// Running the Game //
 	public static PrintableFile npcs = new NPCsFile();
@@ -92,6 +93,7 @@ public class FileList {
 		list.add(criticalDamage);
 		list.add(fearAndInsanity);
 		list.add(corruptionAndMutation);
+		list.add(psychicPhenomena);
 		return list;
 	}
 	

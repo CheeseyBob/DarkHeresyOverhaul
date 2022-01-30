@@ -102,6 +102,7 @@ class AspectsFile implements PrintableFile {
 		printer.printCol_aspect(6, Aspect.fire);
 		printer.printCol_aspect(6, Aspect.gas_x);
 		printer.printCol_aspect(6, Aspect.smoke);
+		printer.printCol_aspect(6, Aspect.warpStorm);
 		printer.printCol_aspect(6, Aspect.weakenedVeil);
 		printer.printRowTail();
 		printer.printCollapsibleTail();

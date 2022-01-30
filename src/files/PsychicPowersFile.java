@@ -89,6 +89,7 @@ class PsychicPowersFile implements PrintableFile {
 		printer.printHeader_collapsible("Wytchcraft");
 		printer.printCollapsibleTop();
 		printer.printTableTop_psychicPowers();
+		printer.printTableRow_psychicPower(PsychicPower.corruptingWhispers);
 		printer.printTableRow_psychicPower(PsychicPower.counter);
 		printer.printTableRow_psychicPower(PsychicPower.wytchEar);
 		printer.printTableRow_psychicPower(PsychicPower.fickle);

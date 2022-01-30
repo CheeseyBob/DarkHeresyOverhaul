@@ -229,10 +229,15 @@ public class Aspect {
 			"Anything that relies on vision:<br>Weapon Skill, Ballistic Skill, Agility and Perception Tests",
 			"Characters cannot see through the area beyond PBx1m",
 			"Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round");
+	public static final Aspect warpStorm = new Aspect("Warp Storm", 
+			"-",
+			"-",
+			"Psychic Powers automatically invoke Perils of the Warp.",
+			"Dissipate (Test 20), once per round");
 	public static final Aspect weakenedVeil = new Aspect("Weakened Veil", 
 			"Focus Power and Psychic Phenomena",
 			"-",
-			"-",
+			"",
 			"Dissipate (Test 20), once per round");
 	
 	// Mental Trauma Aspects //

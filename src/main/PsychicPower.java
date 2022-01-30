@@ -77,6 +77,9 @@ public class PsychicPower extends SpecialRule {
 	// TODO //
 	
 	// Wytchcraft //
+	public static final PsychicPower corruptingWhispers = new PsychicPower("Corrupting Whispers",
+			"	xxxxx inflict Corruption Points (target can resist with WP) xxxxx",
+			"", -1);
 	public static final PsychicPower counter = new PsychicPower("Counter",
 			"	xxxxx Oppose Focus Power xxxxx",
 			"", -1);
