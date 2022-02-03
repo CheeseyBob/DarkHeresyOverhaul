@@ -48,10 +48,10 @@ class PsychicPhenomenaFile implements PrintableFile {
 			{"68–72", "Ethereal Storm", "All characters within 1d100 metres take 1d10 Energy Damage that ignores Armour."},
 			{"73–78", "Blood Rain", "A psychic storm erupts with whipping winds and rains of blood. A Warp Storm(3) 5d10 metres across appears."},
 			{"79–82", "Cataclysmic Blast", "The psyker’s power overloads, arcing out in great bolts of warp energy. Everyone in  2d10 metres takes 1d10+5 Energy Damage and all of the psyker’s clothing and gear are destroyed, leaving them naked and smoking on the ground."},
-			{"83–86", "Mass Possession", "Daemons ravage the minds of every living thing within 1d100 metres. Every character in the area xxxxxxxxxxxxxxxxxx."},
-			{"87–90", "The Surly Bonds of Earth", "Reality buckles and all gravity within 1d100 metres reverses for 1d10 Rounds. All creatures and unattended objects begin to lift off the ground at a rate of three metres per Round. At the end of this time, reality asserts itself and everything comes crashing down, likely dealing Damage to all those affected."},
-			{"91–99", "Daemonhost", "The psyker must immediately pass a Very Hard (–30) Willpower Test or be possessed by a Daemon and become a Daemonhost! Create an Unbound Daemonhost (See Chapter XII", "Aliens, Heretics & Antagonists Antagonists) that will immediately attack. Only the destruction of the Daemonhost will free the psyker (though he may die anyway if his body is destroyed in the process). If the psyker does somehow manage to survive this result, he automatically gains 4d10 Corruption Points."},
-			{"100", "Warp Feast", "A rift in reality is torn open and the psyker is sucked into the warp with a little burping noise. He is no more."},
+			{"83–86", "Daemonic Incursion", "Daemons emerge from the warp, hungry for souls. 1d10 Chaos Furies appear, each 1d100 meters away in a random direction."},
+			{"87–90", "Reality Quake", "As reality buckles around the psyker, solid objects alternately rot, burn and freeze. Everyone and everything within 3d10m takes 2d10 Rending damage, ignoring Armour."},
+			{"91–99", "Daemonhost", "A greater daemon (Willpower 90) attempts to possess the psyker (see the Possession psychic power)."},
+			{"100", "Rending the Veil", "A great rift in reality is torn open. A Warp Rift(3) 5d10m across is created around the psyker."},
 	};
 	
 	@Override

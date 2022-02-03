@@ -11,11 +11,17 @@
 	- Astra Telepathica and Outcast Backgrounds
 	- bring the character to life section
 
->>> Psychic Phenomena & Perils tables
-    - Done up to Mass Possession
-
 >>> Psychic Powers
 
+
+> Daemonic Possession
+    - psychic power for daemons only
+    - inflicts corruption and insanity
+    - creates posessed aspect
+        - host can test WP each hour to resist
+        - corruption & insanity with each failure
+
+> Warp Rift aspect
 
 > Lore items/talents for rituals
 

@@ -229,6 +229,11 @@ public class Aspect {
 			"Anything that relies on vision:<br>Weapon Skill, Ballistic Skill, Agility and Perception Tests",
 			"Characters cannot see through the area beyond PBx1m",
 			"Dissipate (Test 10/50/90 in enclosed/open/windy area), once per round");
+	public static final Aspect warpRift = new Aspect("Warp Rift", 
+			"-",
+			"-",
+			"xxxx corruption and insanity; daemons may emerge xxxx",
+			"Dissipate (Test 20), once per round");
 	public static final Aspect warpStorm = new Aspect("Warp Storm", 
 			"-",
 			"-",
