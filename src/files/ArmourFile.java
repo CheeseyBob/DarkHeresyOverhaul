@@ -27,6 +27,7 @@ class ArmourFile implements PrintableFile {
 		printer.printCol_item(6, Armour.beastHides);
 		printer.printCol_item(6, Armour.gangLeathers);
 		printer.printCol_item(6, Armour.looseLeathers);
+		printer.printCol_item(6, Armour.heavyLeathers);
 		printer.printCol_item(6, Armour.chainCoat);
 		printer.printRowTail();
 		printer.printCollapsibleTail();

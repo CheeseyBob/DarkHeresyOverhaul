@@ -62,7 +62,7 @@ class Skill {
 	public static final Skill conceal = new Skill("Conceal");
 	public static final Skill disguise = new Skill("Disguise");
 	public static final Skill hack = new Skill("Hack");
-	public static final Skill openLock = new Skill("Open Lock");
+	public static final Skill unlock = new Skill("Unlock");
 	public static final Skill sneak = new Skill("Sneak");
 	
 	// Specialist Skills //

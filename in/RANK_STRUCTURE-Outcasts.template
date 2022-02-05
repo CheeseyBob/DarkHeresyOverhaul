@@ -7,79 +7,119 @@
 			
 			<div class="row">
 				<div class="col-12 text-center">
-					<h5>Trooper<br><small>Rank 1 | 0-5 XP</small></h5>
-					<p>Trains and assists those in higher ranks.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Enforcer<br><small>Rank 2 | 6-10 XP</small></h5>
-					<p>Keeps order in the day-to-day running of the Imperium.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Regulator<br><small>Rank 3 | 11-20 XP</small></h5>
-					<p>Takes the law to the underworld.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Investigator<br><small>Rank 4 | 21-30 XP</small></h5>
-					<p>Uncovers the truth behind crimes.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Arbitrator<br><small>Rank 5 | 31-60 XP</small></h5>
-					<p>Keeps law and order in the name of the Imperium.</p>
+					<h5>Dreg<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Scrapes by on the fringes of society.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↙</h5>
-					<h5>Proctor<br><small>Rank 6 | Militant Path | 61-80 XP</small></h5>
-					<p>Leads Arbites riot squads and suppression forces.</p>
+					<h5>Outcast<br><small>Rank 2 | Rogue Path | 6-10 XP</small></h5>
+					<p>Survives outside the bounds of society.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↘</h5>
-					<h5>Intelligencer<br><small>Rank 6 | Judicial Path | 61-80 XP</small></h5>
-					<p>Conducts investigations into major criminal activity.</p>
+					<h5>Sell-Steel<br><small>Rank 2 | Assassin Path | 6-10 XP</small></h5>
+					<p>Offers murder for a fee.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Marshall<br><small>Rank 7 | Militant Path | 81-100 XP</small></h5>
-					<p>Leads larger Arbites operations.</p>
+					<h5>Outlaw<br><small>Rank 3 | Rogue Path | 11-20 XP</small></h5>
+					<p>Provides for themselves through thievery.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Magistrate<br><small>Rank 7 | Judicial Path | 81-100 XP</small></h5>
-					<p>Judges and prosecutes cases.</p>
+					<h5>Shadesman<br><small>Rank 3 | Assassin Path | 11-20 XP</small></h5>
+					<p>Develops their talents at killing.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Lord Marshall<br><small>Rank 8 | Militant Path | 101-150 XP</small></h5>
-					<p>Presides over a Precinct Fortress.</p>
+					<h5>Renegade<br><small>Rank 4 | Rogue Path | 21-30 XP</small></h5>
+					<p>Trades in thievery and skullduggery.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Justicar<br><small>Rank 8 | Judicial Path | 101-150 XP</small></h5>
-					<p>Judges and prosecutes those in the upper echelons of Imperial society.</p>
+					<h5>Nighthawk<br><small>Rank 4 | Assassin Path | 21-30 XP</small></h5>
+					<p>Deals death silently from the darkness.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↙</h5>
+					<h5>Rogue<br><small>Rank 5 | Rogue Path | 31-60 XP</small></h5>
+					<p>Works as a professional thief.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘ ↙</h5>
+					<h5>Ganger<br><small>Rank 5 | Ganger Path | 31-60 XP</small></h5>
+					<p>Does dirty work for a Gang Boss.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↘</h5>
+					<h5>Assassin<br><small>Rank 5 | Assassin Path | 31-60 XP</small></h5>
+					<p>Uses infiltration and stealth to kill targets professionally.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Fixer<br><small>Rank 6 | Rogue Path | 61-80 XP</small></h5>
+					<p>Fences goods and tracks down items and people.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Stubjack<br><small>Rank 6 | Ganger Path | 61-80 XP</small></h5>
+					<p>Specialises in ambush, robbery and turf war.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Death Adept<br><small>Rank 6 | Assassin Path | 61-80 XP</small></h5>
+					<p>Persues killing as an art form.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Shark<br><small>Rank 7 | Rogue Path | 81-100 XP</small></h5>
+					<p>Fleeces their targets using lies and deception.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Gang Boss<br><small>Rank 7 | Ganger Path | 81-100 XP</small></h5>
+					<p>Leads gands of Cutters and Stubjacks.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Assassin at Marque<br><small>Rank 7 | Assassin Path | 81-100 XP</small></h5>
+					<p>Takes assassination contracts from the upper echelons of society.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Charlatan<br><small>Rank 8 | Rogue Path | 101-150 XP</small></h5>
+					<p>Uses subterfuge to fleece the most wealthy and powerful targets.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Gang Lord<br><small>Rank 8 | Ganger Path | 101-150 XP</small></h5>
+					<p>Leads organised gangs in high stakes operations.</p>
+				</div>
+				<div class="col-4 text-center">
+					<h5>↓</h5>
+					<h5>Lord of Assassins<br><small>Rank 8 | Assassin Path | 101-150 XP</small></h5>
+					<p>Controls guilds of assassins.</p>
 				</div>
 			</div>
 			

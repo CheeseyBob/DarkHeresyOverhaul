@@ -48,6 +48,15 @@ class ConsumablesFile implements PrintableFile {
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
+		printer.printHeader_collapsible("Poisons");
+		printer.printCollapsibleTop();
+		printer.printRowTop();
+		printer.printCol_item(6, Consumable.vial_lethalPoison_3);
+		printer.printCol_item(6, Consumable.vial_lethalPoison_5);
+		printer.printRowTail();
+		printer.printCollapsibleTail();
+		printer.println();
+		printer.println();
 		printer.printHeader_collapsible("Other");
 		printer.printCollapsibleTop();
 		printer.printRowTop();

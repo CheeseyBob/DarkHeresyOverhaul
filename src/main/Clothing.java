@@ -36,6 +36,8 @@ public class Clothing extends Item {
 			3, Availability.PLENTIFUL);
 	public static final Clothing streetClothes = new Clothing("Street Clothes",
 			3, Availability.PLENTIFUL);
+	public static final Clothing smartClothes = new Clothing("Smart Clothes",
+			3, Availability.PLENTIFUL);
 	public static final Clothing billowRobe = new Clothing("Billow Robe",
 			3, Availability.VERY_RARE);
 }

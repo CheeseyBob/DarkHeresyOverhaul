@@ -26,6 +26,7 @@ class MiscItemsFile implements PrintableFile {
 		printer.printCol_item(6, Clothing.bodyglove);
 		printer.printCol_item(6, Clothing.imperialRobes);
 		printer.printCol_item(6, Clothing.streetClothes);
+		printer.printCol_item(6, Clothing.smartClothes);
 		printer.printCol_item(6, Clothing.billowRobe);
 		printer.printRowTail();
 		printer.printCollapsibleTail();

@@ -199,6 +199,9 @@ public class Talent extends SpecialRule {
 	public static final Talent resistance = new Talent("Resistance",
 			"Get a +20 bonus to Resist this.",
 			"-", "Toughness", 2);
+	public static final Talent soundMind = new Talent("Sound Mind",
+			"Get a +20 bonus to Resist taking Insanity Points and Mental Trauma.",
+			"-", "Willpower", 4);
 	
 	// Psyker //
 	public static final Talent psyker = new Talent("Psyker",
@@ -305,7 +308,7 @@ public class Talent extends SpecialRule {
 	public static final Talent dominatingBellow = new Talent("Dominating Bellow",
 			"When you Intimidate a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.",
 			"Intimidate (+20)", "Strength", 4);
-	public static final Talent expandedNetword = new Talent("Expanded Network",
+	public static final Talent expandedNetwork = new Talent("Expanded Network",
 			"You can maintain an additional number of contacts equal to your Fellowship Bonus. You can take this Talent multiple times.",
 			"Networking", "Fellowship", 4);
 	public static final Talent haloOfCommand = new Talent("Halo of Command",
@@ -349,6 +352,9 @@ public class Talent extends SpecialRule {
 	public static final Talent tracker = new Talent("Tracker",
 			"Get a +20 bonus to Search when following tracks.",
 			"-", "Perception", 2);
+	public static final Talent tricksOfTheTrade = new Talent("Tricks of the Trade",
+			"When you Unlock, you double the aspect level that you overcome.",
+			"Unlock (+20)", "Intelligence", 4);
 	public static final Talent quickEntry = new Talent("Quick Entry",
 			"You can Unlock in combat as a Full Action.",
 			"Unlock (+20)", "Intelligence", 4);
@@ -393,7 +399,7 @@ public class Talent extends SpecialRule {
 	
 	// Knowledge //
 	public static final Talent creativeProblemSolving = new Talent("Creative Problem Solving",
-			"ou can Reference Lore (Assist) even after you failed to Identify the item or character in question.",
+			"You can Reference Lore (Assist) even after you failed to Identify the item or character in question.",
 			"Intelligence 40", "Intelligence", 8);
 	public static final Talent deepestSecrets = new Talent("Deepest Secrets",
 			"If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.",
@@ -409,13 +415,13 @@ public class Talent extends SpecialRule {
 			"-", "General", 2);
 	public static final Talent experienced = new Talent("Experienced",
 			"Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).",
-			"Knowledgable", "General", 4);
+			"Knowledgable"+UPGRADE_MARK, "General", 4);
 	public static final Talent educated = new Talent("Educated",
 			"You can Reference Scholastic Lore for this area.",
 			"Scholastic Lore (+0)", "Intelligence", 2);
 	public static final Talent expert = new Talent("Expert",
 			"For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).",
-			"Educated", "Intelligence", 4);
+			"Educated"+UPGRADE_MARK, "Intelligence", 4);
 	public static final Talent naturalExpertise = new Talent("Natural Expertise",
 			"For this area, you can Reference Common Lore instead of Reference Scholastic Lore.",
 			"Character Creation Only", "Intelligence", 4);
@@ -424,7 +430,7 @@ public class Talent extends SpecialRule {
 			"Forbidden Lore (+0)", "Intelligence", 2);
 	public static final Talent darkSecrets = new Talent("Dark Secrets",
 			"For this area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).",
-			"Unveiled Secrets", "Intelligence", 4);
+			"Unveiled Secrets"+UPGRADE_MARK, "Intelligence", 4);
 	
 	// Trades //
 	public static final Talent trade = new Talent("Trade",

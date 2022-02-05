@@ -99,6 +99,7 @@ class TalentsFile implements PrintableFile {
 		printer.printTableRow_talent(Talent.numbToPain);
 		printer.printTableRow_talent(Talent.resistance.withParameter("Specify*"));
 		printer.printTableRow_note("*Cold, Heat, Poison, Radiation, Vacuum");
+		printer.printTableRow_talent(Talent.soundMind);
 		printer.printTableTail();
 		printer.printCollapsibleTail();
 		printer.println();
@@ -154,7 +155,7 @@ class TalentsFile implements PrintableFile {
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.commanding);
 		printer.printTableRow_talent(Talent.dominatingBellow);
-		printer.printTableRow_talent(Talent.expandedNetword);
+		printer.printTableRow_talent(Talent.expandedNetwork);
 		printer.printTableRow_talent(Talent.haloOfCommand);
 		printer.printTableRow_talent(Talent.inspiring);
 		printer.printTableRow_talent(Talent.intoTheJawsOfHell);
@@ -177,6 +178,7 @@ class TalentsFile implements PrintableFile {
 		printer.printTableRow_talent(Talent.tracker);
 		printer.printTableRow_talent(Talent.quickEntry);
 		printer.printTableRow_talent(Talent.spotWeakness);
+		printer.printTableRow_talent(Talent.tricksOfTheTrade);
 		printer.printTableTail();
 		printer.printCollapsibleTail();
 		printer.println();

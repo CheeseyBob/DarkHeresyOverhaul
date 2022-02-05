@@ -122,9 +122,9 @@ public class Aspect {
 			"Use Tech");
 	public static final Aspect locked = new Aspect("Locked", 
 			"-",
-			"Open Lock",
+			"Unlock",
 			"Prevents the item being opened.",
-			"Open Lock");
+			"Unlock");
 	public static final Aspect maintained = new Aspect("Maintained", 
 			"-",
 			"-",
@@ -232,7 +232,7 @@ public class Aspect {
 	public static final Aspect warpRift = new Aspect("Warp Rift", 
 			"-",
 			"-",
-			"xxxx corruption and insanity; daemons may emerge xxxx",
+			"Characters within line of sight take AL Insanity Points. Characters in this area take 1d10+AL Corruption Points. Critical Failure to Dissipate spawns a daemon.",
 			"Dissipate (Test 20), once per round");
 	public static final Aspect warpStorm = new Aspect("Warp Storm", 
 			"-",

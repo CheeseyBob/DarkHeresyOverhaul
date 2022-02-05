@@ -34,6 +34,8 @@ public class Ammo extends Item {
 	public static final Ammo heavyStubber_beltBox = new Ammo(
 			"Heavy Stubber Belt Box", 3, 200, Availability.AVERAGE)
 			.withSpecialRule(externalAmmo);
+	public static final Ammo huntingRifle_mag = new Ammo(
+			"Hunting Rifle Mag", 1, 6, Availability.COMMON);
 	public static final Ammo pistol_mag = new Ammo(
 			"Pistol Mag", 1, 9, Availability.ABUNDANT);
 	public static final Ammo pistol_arbites_mag = new Ammo(

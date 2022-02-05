@@ -22,6 +22,8 @@ public class Consumable extends Item {
 	private static SpecialRule qualityMealRule = new SpecialRule("Full Meal",
 			"Long Action Toughness Test with +40 bonus; overcome being Fatigued (maximum 1 level).");
 
+	private static SpecialRule application_lethalPoison = new SpecialRule("Lethal Poison",
+			"After a dose is applied to a Rending Melee Weapon, the next hit which inflicts wounds makes the target become Poisoned(Lethal)(N).");
 	private static SpecialRule bioPatchRule = new SpecialRule("Bio-Patch",
 			"Get a +40 bonus to Administer Drug.");
 	private static SpecialRule dose_deTox = new SpecialRule("Dose of De-Tox",
@@ -73,6 +75,12 @@ public class Consumable extends Item {
 			2, 5, Availability.COMMON)
 			.withSpecialRule(dose_stimm)
 			.withSpecialRule(injectionMishap);
+	public static final Consumable vial_lethalPoison_3 = new Consumable("Vial of Lethal Poison (3)",
+			1, 3, Availability.COMMON)
+			.withSpecialRule(application_lethalPoison.withParameter("3"));
+	public static final Consumable vial_lethalPoison_5 = new Consumable("Vial of Lethal Poison (5)",
+			1, 3, Availability.RARE)
+			.withSpecialRule(application_lethalPoison.withParameter("5"));
 	
 	// Medkits //
 	public static final Consumable medkit = new Consumable("Medkit",

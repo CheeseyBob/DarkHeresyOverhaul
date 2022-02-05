@@ -1,17 +1,18 @@
 	~~ To Do List ~~
 
->>> GM notes for item creation
-
 >>> NPC Groups:
 	- Astra Telepathica
-	- Outcasts
-	- Misc/unranked characters such as Arbites K9s and Mechanicus Servitors
+	- unranked characters such as Arbites K9s and Mechanicus Servitors
+    - Unaligned characters (animals, xenos, etc.)
+    - Hostile groups (daemon cults, etc.)
 
 >>> Character Creation:
 	- Astra Telepathica and Outcast Backgrounds
 	- bring the character to life section
 
 >>> Psychic Powers
+
+>>> GM notes for item creation
 
 
 > Daemonic Possession
@@ -20,8 +21,6 @@
     - creates posessed aspect
         - host can test WP each hour to resist
         - corruption & insanity with each failure
-
-> Warp Rift aspect
 
 > Lore items/talents for rituals
 

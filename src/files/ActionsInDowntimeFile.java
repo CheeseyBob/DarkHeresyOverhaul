@@ -33,11 +33,11 @@ class ActionsInDowntimeFile implements PrintableFile {
 	};
 	private static String[][] actionsTable_advanced = {
 			{"Hack", "Short", "Skill", "Intelligence", "Overcome target being Encrypted"},
-			{"Open Lock", "Short", "Skill", "Intelligence", "Overcome target being Locked"},
 			{"Perform Surgery", "Long", "Skill", "Intelligence", "Reduce Characteristic Damage of Target by 1 plus 1 per DoS; always inflicts 1d10 Wounds; critical failure inflicts 1d10 Rending Critical Damage"},
 			{"Perform Surgery (Attach Bionic)", "Long", "Skill", "Intelligence", "Attach a bionic to the Target; always inflicts 1d10 Wounds; on critical failure, also inflict 1d10 Rending Critical Damage"},
 			{"Repair", "Long", "Skill", "Intelligence", "Overcome target being Damaged; consumes 1 Component per level downgraded; on critical failure, target becomes Damaged"},
 			{"Treat Wounds", "Long", "Skill", "Intelligence", "Target becomes Treated"},
+			{"Unlock", "Short", "Skill", "Intelligence", "Overcome target being Locked"},
 			{"Use Tech (Maintain)", "Long", "Skill", "Intelligence", "Target item becomes Maintained; on critical failure, target becomes Damaged"},
 			{"Wrangle", "Short", "Skill", "Fellowship", "Get a bonus to Disposition"},
 	};
