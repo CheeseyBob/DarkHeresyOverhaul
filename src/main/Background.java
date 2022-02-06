@@ -118,7 +118,7 @@ public class Background {
 							new Talent[] {
 									Talent.educated.withParameter("Judgement"),
 									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic")
+									Talent.language.withParameter("Low Gothic"),
 							},
 							new Skill[] {
 									Skill.grapple.withBonus(10),
@@ -147,19 +147,63 @@ public class Background {
 			),
 			new Background("Adeptus Astra Telepathica", "Defense or Psyker")
 			.withStartingPath(
-					new Path("xxxxxxxxxx",
+					new Path("Savant Militant",
 							new String[] {
-									
+									"Ballistic Skill +5",
+									"Willpower +15",
 							},
 							new Talent[] {
-									
+									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"),
+									Talent.language.withParameter("Low Gothic"),
+									Talent.mentalResilience,
+									Talent.psyker.withParameter("Sanctioned"),
+									Talent.psyRating2,
+									Talent.strongConnection,
 							},
 							new Skill[] {
-									
+									Skill.dodge.withBonus(10),
+									Skill.notice.withBonus(10),
+									Skill.parry.withBonus(10),
+									Skill.run.withBonus(10),
+									Skill.senseImmateruim.withBonus(10),
 							},
 							new Item[] {
-									
-							}
+									Armour.flakJacket,
+									Clothing.astraTelepathicaRobes,
+									MeleeWeapon.staff_astraTelepathica,
+									Tool.psyFocus,
+									MeleeWeapon.knife_psykanaMercyBlade,
+									RangedWeapon.laspistol,
+							},
+							"12 XP of Psychic Powers"
+					)
+			)
+			.withStartingPath(
+					new Path("Scholar Materium",
+							new String[] {
+									"Intelligence +15",
+									"Perception +5",
+									"Willpower +15",
+							},
+							new Talent[] {
+									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"),
+									Talent.language.withParameter("Low Gothic"),
+									Talent.unveiledSecrets.withParameter("Psykers"),
+									Talent.unveiledSecrets.withParameter("The Warp"),
+									Talent.psyker.withParameter("Sanctioned"),
+									Talent.psyRating2,
+							},
+							new Skill[] {
+									Skill.referenceLore.withBonus(10),
+									Skill.senseImmateruim.withBonus(10),
+							},
+							new Item[] {
+									Clothing.astraTelepathicaRobes,
+									MeleeWeapon.staff_astraTelepathica,
+									Tool.psyFocus,
+									MeleeWeapon.knife_psykanaMercyBlade,
+							},
+							"6 XP of Psychic Powers"
 					)
 			),
 			new Background("Adeptus Mechanicus", "Knowledge or Tech")
@@ -479,6 +523,7 @@ public class Background {
 		public Talent[] talentList;
 		public Bionic[] bionicList;
 		public Item[] itemList;
+		public String psychicPowerXP;
 		
 		Path(String name, String[] characteristicsIncreaseList, Talent[] talentList, Bionic[] bionicList, Skill[] skillList, Item[] equipmentList) {
 			this.name = name;
@@ -491,6 +536,11 @@ public class Background {
 		
 		Path(String name, String[] characteristicsIncreaseList, Talent[] talentList, Skill[] skillList, Item[] equipmentList) {
 			this(name, characteristicsIncreaseList, talentList, new Bionic[0], skillList, equipmentList);
+		}
+		
+		Path(String name, String[] characteristicsIncreaseList, Talent[] talentList, Skill[] skillList, Item[] equipmentList, String psychicPowerXP) {
+			this(name, characteristicsIncreaseList, talentList, new Bionic[0], skillList, equipmentList);
+			this.psychicPowerXP = psychicPowerXP;
 		}
 	}
 }

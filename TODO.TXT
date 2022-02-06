@@ -1,19 +1,19 @@
 	~~ To Do List ~~
 
 >>> NPC Groups:
-	- Astra Telepathica
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
     - Unaligned characters (animals, xenos, etc.)
     - Hostile groups (daemon cults, etc.)
 
 >>> Character Creation:
-	- Astra Telepathica Background
     - starting gelt?
 	- bring the character to life section
 
 >>> Psychic Powers
 
 >>> GM notes for item creation
+
+>>> Combine the three Lore skills into one, keeping the talents for scholastic/forbidden areas.
 
 
 > Daemonic Possession

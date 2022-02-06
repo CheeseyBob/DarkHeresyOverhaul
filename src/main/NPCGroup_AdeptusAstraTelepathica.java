@@ -40,22 +40,24 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npcList.add(npc);
 		
 		npc = new NPC("Aspirant", "30,30,30,30,30,30,30,35,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
 		npc.specialRuleList.add(Talent.psyRating2);
-		npc.specialRuleList.add(PsychicPower.restrain);
 		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticShove);
 		npc.skillList.add(Skill.senseImmateruim.withBonus(10));
 		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
 		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
 		npc.inventoryList.add(Tool.psyFocus);
 		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
 		npc.inventoryList.add(MiscItem.gelt);
-		// XP: 19/20
-		// Powers: 3 XP
+		// XP: 20/20
+		// Powers: 2 XP
 		npcList.add(npc);
 		
-		npc = new NPC("Savant Initiate", "35,35,30,30,30,30,30,40,30");
+		npc = new NPC("Savant Initiate", "30,35,30,30,30,30,30,40,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
 		npc.specialRuleList.add(Talent.psyRating2);
@@ -75,7 +77,25 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		// Powers: 6 XP
 		npcList.add(npc);
 		
-		npc = new NPC("Savant Militant", "35,35,30,30,30,30,30,45,30");
+		npc = new NPC("Scholar Initiate", "30,30,30,30,30,35,35,40,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
+		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
+		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
+		npc.specialRuleList.add(Talent.psyRating2);
+		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticShove);
+		npc.skillList.add(Skill.senseImmateruim.withBonus(10));
+		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
+		npc.inventoryList.add(Tool.psyFocus);
+		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
+		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 30/30
+		// Powers: 2 XP
+		npcList.add(npc);
+		
+		npc = new NPC("Savant Militant", "30,35,30,30,30,30,30,45,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.mentalResilience);
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
@@ -103,7 +123,30 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		// Powers: 12 XP
 		npcList.add(npc);
 		
-		npc = new NPC("Savant Warrant", "35,35,30,30,30,30,30,45,35");
+		npc = new NPC("Scholar Materium", "30,30,30,30,30,45,35,45,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
+		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("Psykers"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("The Warp"));
+		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
+		npc.specialRuleList.add(Talent.psyRating2);
+		npc.specialRuleList.add(PsychicPower.deflect);
+		npc.specialRuleList.add(PsychicPower.telekineDash);
+		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticShove);
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
+		npc.skillList.add(Skill.senseImmateruim.withBonus(10));
+		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
+		npc.inventoryList.add(Tool.psyFocus);
+		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
+		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 60/60
+		// Powers: 6 XP
+		npcList.add(npc);
+		
+		npc = new NPC("Savant Warrant", "30,35,30,30,30,30,30,45,35");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.mentalResilience);
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
@@ -132,7 +175,34 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		// Powers: 12 XP
 		npcList.add(npc);
 		
-		npc = new NPC("Savant Adjunct", "35,35,30,30,30,30,30,45,35");
+		npc = new NPC("Scholar Arcanum", "30,30,30,30,30,45,35,45,30");
+		npc.specialRuleList.add(Talent.educated.withParameter("Philosophy"));
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
+		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("Psykers"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("The Warp"));
+		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
+		npc.specialRuleList.add(Talent.psyRating2);
+		npc.specialRuleList.add(Talent.masteredPsychicPower.withParameter(PsychicPower.deflect.name));
+		npc.specialRuleList.add(Talent.subtlePsyker);
+		npc.specialRuleList.add(PsychicPower.deflect);
+		npc.specialRuleList.add(PsychicPower.restrain);
+		npc.specialRuleList.add(PsychicPower.telekineDash);
+		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticPunch);
+		npc.skillList.add(Skill.referenceLore.withBonus(20));
+		npc.skillList.add(Skill.senseImmateruim.withBonus(20));
+		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
+		npc.inventoryList.add(Tool.psyFocus);
+		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
+		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 80/80
+		// Powers: 8 XP
+		npcList.add(npc);
+		
+		npc = new NPC("Savant Adjunct", "30,35,30,30,30,30,30,45,35");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.mentalResilience);
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
@@ -161,7 +231,37 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		// Powers: 16 XP
 		npcList.add(npc);
 		
-		npc = new NPC("Savant Preceptor", "35,35,30,30,30,30,30,50,35");
+		npc = new NPC("Scholar Obscurus", "30,30,30,30,30,45,35,45,30");
+		npc.specialRuleList.add(Talent.deepestSecrets);
+		npc.specialRuleList.add(Talent.educated.withParameter("Philosophy"));
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
+		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("Daemonology"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("Psykers"));
+		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("The Warp"));
+		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
+		npc.specialRuleList.add(Talent.psyRating2);
+		npc.specialRuleList.add(Talent.masteredPsychicPower.withParameter(PsychicPower.deflect.name));
+		npc.specialRuleList.add(Talent.masteredPsychicPower.withParameter(PsychicPower.telekineDash.name));
+		npc.specialRuleList.add(Talent.subtlePsyker);
+		npc.specialRuleList.add(PsychicPower.deflect);
+		npc.specialRuleList.add(PsychicPower.restrain);
+		npc.specialRuleList.add(PsychicPower.telekineDash);
+		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticPunch);
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
+		npc.skillList.add(Skill.senseImmateruim.withBonus(20));
+		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
+		npc.inventoryList.add(Tool.psyFocus);
+		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
+		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 100/100
+		// Powers: 8 XP
+		npcList.add(npc);
+		
+		npc = new NPC("Savant Preceptor", "30,35,30,30,30,30,30,50,35");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.mentalResilience);
 		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
@@ -192,6 +292,34 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 150/150
 		// Powers: 20 XP
+		npcList.add(npc);
+		
+		npc = new NPC("Scholar Empyrean", "30,30,30,30,30,45,35,45,30");
+		npc.specialRuleList.add(Talent.deepestSecrets);
+		npc.specialRuleList.add(Talent.educated.withParameter("Philosophy"));
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
+		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
+		npc.specialRuleList.add(Talent.darkSecrets.withParameter("Daemonology + Mutants + Psykers + The Warp"));
+		npc.specialRuleList.add(Talent.psyker.withParameter("Sanctioned"));
+		npc.specialRuleList.add(Talent.psyRating3);
+		npc.specialRuleList.add(Talent.masteredPsychicPower.withParameter(PsychicPower.deflect.name+" + "+PsychicPower.telekineDash.name));
+		npc.specialRuleList.add(Talent.subtlePsyker);
+		npc.specialRuleList.add(PsychicPower.deflect);
+		npc.specialRuleList.add(PsychicPower.restrain);
+		npc.specialRuleList.add(PsychicPower.telekineDash);
+		npc.specialRuleList.add(PsychicPower.telekineShield);
+		npc.specialRuleList.add(PsychicPower.telekineticControl);
+		npc.specialRuleList.add(PsychicPower.telekineticPunch);
+		npc.skillList.add(Skill.contemplate.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
+		npc.skillList.add(Skill.senseImmateruim.withBonus(30));
+		npc.equippedItemList.add(Clothing.astraTelepathicaRobes);
+		npc.equippedItemList.add(MeleeWeapon.staff_astraTelepathica);
+		npc.inventoryList.add(Tool.psyFocus);
+		npc.inventoryList.add(MeleeWeapon.knife_psykanaMercyBlade);
+		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 148/150
+		// Powers: 8 XP
 		npcList.add(npc);
 		
 	}

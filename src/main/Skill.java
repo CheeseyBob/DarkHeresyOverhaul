@@ -45,6 +45,8 @@ public class Skill {
 	public static final Skill inquire = new Skill("Inquire");
 	public static final Skill inspect = new Skill("Inspect");
 	public static final Skill interrogate = new Skill("Interrogate");
+	public static final Skill referenceLore = new Skill("Reference Lore");
+	// TODO - combine the three lore skills into one.
 	public static final Skill referenceCommonLore = new Skill("Ref. Common Lore");
 	public static final Skill referenceForbiddenLore = new Skill("Ref. Forbidden Lore");
 	public static final Skill referenceScholasticLore = new Skill("Ref. Scholastic Lore");

@@ -193,5 +193,9 @@ class CharacterCreationFile implements PrintableFile {
 			printer.println("<b>Items</b>");
 			printer.printList(false, path.itemList);
 		}
+		if(path.psychicPowerXP != null) {
+			printer.println("<b>Psychic Powers</b>");
+			printer.printParagraph(path.psychicPowerXP);
+		}
 	}
 }
