@@ -28,6 +28,8 @@ public class Clothing extends Item {
 			3, Availability.PLENTIFUL);
 	public static final Clothing administratumRobes = new Clothing("Administratum Robes",
 			3, Availability.PLENTIFUL);
+	public static final Clothing astraTelepathicaRobes = new Clothing("Astra Telepathica Robes",
+			3, Availability.PLENTIFUL);
 	public static final Clothing chirurgeonRobes = new Clothing("Chirurgeon Robes",
 			3, Availability.PLENTIFUL);
 	public static final Clothing mechanicusRobes = new Clothing("Mechanicus Robes",

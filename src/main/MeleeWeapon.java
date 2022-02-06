@@ -102,6 +102,9 @@ public class MeleeWeapon extends Weapon {
 	public static final MeleeWeapon knife = new MeleeWeapon("Knife",
 			1, "+0", "3", "1d10+SB+1 Rending", Availability.UBIQUITOUS)
 			.withSpecialRule(limitedWounds);
+	public static final MeleeWeapon knife_psykanaMercyBlade = new MeleeWeapon("Psykana Mercy Blade",
+			1, "+0", "3", "1d10+SB+2 Rending", Availability.PLENTIFUL)
+			.withSpecialRule(limitedWounds);
 	public static final MeleeWeapon longDagger = new MeleeWeapon("Long Dagger",
 			1, "+10", "3", "1d10+SB+2 Rending", Availability.PLENTIFUL)
 			.withSpecialRule(limitedWounds);

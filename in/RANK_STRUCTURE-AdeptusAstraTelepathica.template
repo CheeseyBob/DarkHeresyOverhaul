@@ -7,79 +7,89 @@
 			
 			<div class="row">
 				<div class="col-12 text-center">
-					<h5>Trooper<br><small>Rank 1 | 0-5 XP</small></h5>
-					<p>Trains and assists those in higher ranks.</p>
+					<h5>Sanctionite<br><small>Rank 1 | 0-5 XP</small></h5>
+					<p>Watched for weakness by their mentor.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-12 text-center">
 					<h5>↓</h5>
-					<h5>Enforcer<br><small>Rank 2 | 6-10 XP</small></h5>
-					<p>Keeps order in the day-to-day running of the Imperium.</p>
+					<h5>Neonate<br><small>Rank 2 | 6-10 XP</small></h5>
+					<p>Serves as an apprentice or servant to an elder psyker or other suitable master.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-12 text-center">
 					<h5>↓</h5>
-					<h5>Regulator<br><small>Rank 3 | 11-20 XP</small></h5>
-					<p>Takes the law to the underworld.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Investigator<br><small>Rank 4 | 21-30 XP</small></h5>
-					<p>Uncovers the truth behind crimes.</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-12 text-center">
-					<h5>↓</h5>
-					<h5>Arbitrator<br><small>Rank 5 | 31-60 XP</small></h5>
-					<p>Keeps law and order in the name of the Imperium.</p>
+					<h5>Aspirant<br><small>Rank 3 | 11-20 XP</small></h5>
+					<p>Studies for future placement in the Imperial Guard, Scholastica Psykana or elsewhere.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↙</h5>
-					<h5>Proctor<br><small>Rank 6 | Militant Path | 61-80 XP</small></h5>
-					<p>Leads Arbites riot squads and suppression forces.</p>
+					<h5>Savant Initiate<br><small>Rank 4 | Militant Path | 21-30 XP</small></h5>
+					<p>Puts their destructive powers to use on the battlefield.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↘</h5>
-					<h5>Intelligencer<br><small>Rank 6 | Judicial Path | 61-80 XP</small></h5>
-					<p>Conducts investigations into major criminal activity.</p>
+					<h5>Scholar Initiate<br><small>Rank 4 | Scholastic Path | 21-30 XP</small></h5>
+					<p>Studies as an initiate at the Scholastica Psykana.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Marshall<br><small>Rank 7 | Militant Path | 81-100 XP</small></h5>
-					<p>Leads larger Arbites operations.</p>
+					<h5>Savant Militant<br><small>Rank 5 | Militant Path | 31-60 XP</small></h5>
+					<p>Takes on a greater role on the battlefield.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Magistrate<br><small>Rank 7 | Judicial Path | 81-100 XP</small></h5>
-					<p>Judges and prosecutes cases.</p>
+					<h5>Scholar Materium<br><small>Rank 5 | Scholastic Path | 31-60 XP</small></h5>
+					<p>Learns various mysteries of mind and matter.</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Lord Marshall<br><small>Rank 8 | Militant Path | 101-150 XP</small></h5>
-					<p>Presides over a Precinct Fortress.</p>
+					<h5>Savant Warrant<br><small>Rank 6 | Militant Path | 61-80 XP</small></h5>
+					<p>Takes on officer's rank in the Imperial Guard.</p>
 				</div>
 				<div class="col-6 text-center">
 					<h5>↓</h5>
-					<h5>Justicar<br><small>Rank 8 | Judicial Path | 101-150 XP</small></h5>
-					<p>Judges and prosecutes those in the upper echelons of Imperial society.</p>
+					<h5>Scholar Arcanum<br><small>Rank 6 | Scholastic Path | 61-80 XP</small></h5>
+					<p>Studies deeper theories and philosophical conjecture.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Savant Adjunct<br><small>Rank 7 | Militant Path | 81-100 XP</small></h5>
+					<p>Uses their powers to great strategic benefit on the battlefield.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Scholar Obscurus<br><small>Rank 7 | Scholastic Path | 81-100 XP</small></h5>
+					<p>Immerses themselves in obscure and forgotten lore.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Savant Preceptor<br><small>Rank 8 | Militant Path | 101-150 XP</small></h5>
+					<p>Leads the Savant Militant, protects key command staff and instructs officers.</p>
+				</div>
+				<div class="col-6 text-center">
+					<h5>↓</h5>
+					<h5>Scholar Empyrean<br><small>Rank 8 | Scholastic Path | 101-150 XP</small></h5>
+					<p>Studies the deepest mysteries of psychic ability.</p>
 				</div>
 			</div>
 			

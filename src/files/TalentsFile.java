@@ -88,13 +88,13 @@ class TalentsFile implements PrintableFile {
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.adamantiumWill);
 		printer.printTableRow_talent(Talent.constantVigilance);
-		printer.printTableRow_talent(Talent.denyTheWitch);
 		printer.printTableRow_talent(Talent.dieHard);
 		printer.printTableRow_talent(Talent.dirtyFighting);
 		printer.printTableRow_talent(Talent.disarm);
 		printer.printTableRow_talent(Talent.hardTarget);
 		printer.printTableRow_talent(Talent.ignorePain);
 		printer.printTableRow_talent(Talent.mentalFortress);
+		printer.printTableRow_talent(Talent.mentalResilience);
 		printer.printTableRow_talent(Talent.nervesOfSteel);
 		printer.printTableRow_talent(Talent.numbToPain);
 		printer.printTableRow_talent(Talent.resistance.withParameter("Specify*"));
@@ -108,7 +108,7 @@ class TalentsFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.psyker.withParameter("Specify*"));
-		printer.printTableRow_note("*Sanctioned: You aquire the Sense Immaterium Skill. Adeptus Astra Telepathica Background only.");
+		printer.printTableRow_note("*Sanctioned: You aquire the Psy Rating 1 Talent and the Sense Immaterium Skill. You take 1d10 Insanity Points. Adeptus Astra Telepathica Background only.");
 		printer.printTableRow_note("*Unsanctioned: You aquire the Sense Immaterium Skill. You gain 1d10+5 Corruption and Insanity Points.");
 		printer.printTableRow_talent(Talent.psyRating1);
 		printer.printTableRow_talent(Talent.psyRating2);
@@ -121,7 +121,6 @@ class TalentsFile implements PrintableFile {
 		printer.printTableRow_talent(Talent.powerJuggler);
 		printer.printTableRow_talent(Talent.subtlePsyker);
 		printer.printTableRow_talent(Talent.strongConnection);
-		printer.printTableRow_talent(Talent.strongMind);
 		printer.printTableRow_talent(Talent.theConstantThreat);
 		printer.printTableTail();
 		printer.printCollapsibleTail();

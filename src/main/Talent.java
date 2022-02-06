@@ -169,9 +169,6 @@ public class Talent extends SpecialRule {
 	public static final Talent constantVigilance = new Talent("Constant Vigilance",
 			"You can use Reflex to act before another character even when you are not waiting.",
 			"-", "Perception", 8);
-	public static final Talent denyTheWitch = new Talent("Deny the Witch",
-			"Get +20 to Resist psychic powers which affect your mind.",
-			"-", "Willpower", 4);
 	public static final Talent dieHard = new Talent("Die Hard",
 			"You get a +20 bonus to the Bleeding Out Toughness Test.",
 			"-", "Toughness", 2);
@@ -189,7 +186,10 @@ public class Talent extends SpecialRule {
 			"-", "Willpower", 4);
 	public static final Talent mentalFortress = new Talent("Mental Fortress",
 			"Get +30 to Resist psychic powers which affect your mind.",
-			"Deny the Witch"+UPGRADE_MARK, "Willpower", 4);
+			"Mental Resilience"+UPGRADE_MARK, "Willpower", 4);
+	public static final Talent mentalResilience = new Talent("Mental Resilience",
+			"Get +20 to Resist psychic powers which affect your mind.",
+			"-", "Willpower", 4);
 	public static final Talent nervesOfSteel = new Talent("Nerves of Steel",
 			"Get a +20 bonus to Resist being Frightened, Intimidated and Pinned.",
 			"-", "Willpower", 4);
@@ -206,14 +206,6 @@ public class Talent extends SpecialRule {
 	// Psyker //
 	public static final Talent psyker = new Talent("Psyker",
 			"You can take Psy Rating Talents and Psychic Powers.",
-			"Willpower 30", "Willpower", 4);
-	@Deprecated
-	public static final Talent sanctionedPsyker = new Talent("Sanctioned Psyker",
-			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) when you take this Talent.",
-			"Adeptus Astra Telepathica Background", "Willpower", 4);
-	@Deprecated
-	public static final Talent unsanctionedPsyker = new Talent("Unsanctioned Psyker",
-			"You can take Psy Rating Talents and Psychic Powers. You aquire the Skill Sense Immaterium(+0) and get 1d10+5 Corruption and Insanity Points when you take this Talent.",
 			"Willpower 30", "Willpower", 4);
 	public static final Talent psyRating1 = new Talent("Psy Rating 1",
 			"You can Focus Power with a Psy Rating of 1.",
@@ -245,9 +237,6 @@ public class Talent extends SpecialRule {
 	public static final Talent strongConnection = new Talent("Strong Connection",
 			"When you Focus Power, you add your Willpower Bonus to the Potency roll.",
 			"Psy Rating 1", "Willpower", 4);
-	public static final Talent strongMind = new Talent("Strong Mind",
-			"Get a +20 bonus to Resist (Mentally) against Psychic Powers.",
-			"-", "Willpower", 4);
 	public static final Talent theConstantThreat = new Talent("The Constant Threat",
 			"When a character within 10m triggers Psychic Phenomena, you can use Reflex to take your turn before the phenomena is resolved.",
 			"Adeptus Astra Telepathica Background", "Perception", 4);
