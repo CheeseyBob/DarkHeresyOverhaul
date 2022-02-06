@@ -23,26 +23,26 @@ public class Background {
 			.withStartingPath(
 					new Path("Scholar",
 							new String[] {
-									"Intelligence +10"
+									"Intelligence +10",
 							},
-							new Skill[] {
-									Skill.contemplate.withBonus(10),
-									Skill.inquire.withBonus(10),
-									Skill.inspect.withBonus(10),
-									Skill.referenceScholasticLore.withBonus(20)
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.educated.withParameter("Bureaucracy"),
 									Talent.expert.withParameter("2 Areas"),
 									Talent.knowledgable.withParameter("Administratum"),
 									Talent.language.withParameter("High Gothic + Low Gothic"),
 									Talent.specialistKnowledge,
-									Talent.trade_copyist
+									Talent.trade_copyist,
+							},
+							new Skill[] {
+									Skill.contemplate.withBonus(10),
+									Skill.inquire.withBonus(10),
+									Skill.inspect.withBonus(10),
+									Skill.referenceScholasticLore.withBonus(20),
 							},
 							new Item[] {
 									Clothing.administratumRobes,
 									Tool.dataTome_lore,
-									MiscItem.chrono
+									MiscItem.chrono,
 							}
 					)
 			)
@@ -51,24 +51,26 @@ public class Background {
 							new String[] {
 									"Agility +5",
 									"Intelligence +10",
-									"Perception +5"
+									"Perception +5",
+							},
+							new Talent[] {
+									Talent.educated.withParameter("Bureaucracy + 2 Areas"),
+									Talent.knowledgable.withParameter("Administratum + Tech"),
+									Talent.language.withParameter("High Gothic + Low Gothic"),
+									Talent.operate.withParameter("1 Vehicle Type"),
+									Talent.trade_copyist,
+							},
+							new Bionic[] {
+									Bionic.interfacePort,
 							},
 							new Skill[] {
 									Skill.inquire.withBonus(10),
 									Skill.inspect.withBonus(10),
 									Skill.referenceScholasticLore.withBonus(10)
 							},
-							new SpecialRule[] {
-									Talent.educated.withParameter("Bureaucracy + 2 Areas"),
-									Talent.knowledgable.withParameter("Administratum + Tech"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade_copyist,
-									Bionic.interfacePort
-							},
 							new Item[] {
 									Clothing.administratumRobes,
-									MiscItem.chrono
+									MiscItem.chrono,
 							}
 					)
 			)
@@ -76,7 +78,13 @@ public class Background {
 					new Path("Chirurgeon",
 							new String[] {
 									"Intelligence +15",
-									"Perception +5"
+									"Perception +5",
+							},
+							new Talent[] {
+									Talent.educated.withParameter("Bureaucracy"),
+									Talent.knowledgable.withParameter("Administratum"),
+									Talent.language.withParameter("High Gothic + Low Gothic"),
+									Talent.trade_copyist
 							},
 							new Skill[] {
 									Skill.administerDrug.withBonus(10),
@@ -84,20 +92,14 @@ public class Background {
 									Skill.inspect.withBonus(20),
 									Skill.performSurgery.withBonus(10),
 									Skill.referenceScholasticLore.withBonus(0),
-									Skill.treatWounds.withBonus(20)
-							},
-							new SpecialRule[] {
-									Talent.educated.withParameter("Bureaucracy"),
-									Talent.knowledgable.withParameter("Administratum"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.trade_copyist
+									Skill.treatWounds.withBonus(20),
 							},
 							new Item[] {
 									Clothing.chirurgeonRobes,
 									Tool.surgicalTools,
 									Consumable.qualityMedkit,
 									Consumable.injector_deTox,
-									MiscItem.chrono
+									MiscItem.chrono,
 							}
 					)
 			),
@@ -113,6 +115,11 @@ public class Background {
 									"Intelligence +5",
 									"Perception +5"
 							},
+							new Talent[] {
+									Talent.educated.withParameter("Judgement"),
+									Talent.knowledgable.withParameter("Underworld"),
+									Talent.language.withParameter("Low Gothic")
+							},
 							new Skill[] {
 									Skill.grapple.withBonus(10),
 									Skill.inquire.withBonus(10),
@@ -123,11 +130,6 @@ public class Background {
 									Skill.referenceCommonLore.withBonus(10),
 									Skill.referenceScholasticLore.withBonus(10),
 									Skill.run.withBonus(10)
-							},
-							new SpecialRule[] {
-									Talent.educated.withParameter("Judgement"),
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic")
 							},
 							new Item[] {
 									Clothing.arbitesUniform,
@@ -149,10 +151,10 @@ public class Background {
 							new String[] {
 									
 							},
-							new Skill[] {
+							new Talent[] {
 									
 							},
-							new SpecialRule[] {
+							new Skill[] {
 									
 							},
 							new Item[] {
@@ -168,19 +170,13 @@ public class Background {
 									"Intelligence +10",
 									"Perception +5",
 							},
-							new Skill[] {
-									Skill.craft.withBonus(20),
-									Skill.hack.withBonus(20),
-									Skill.inspect.withBonus(20),
-									Skill.referenceCommonLore.withBonus(10),
-									Skill.repair.withBonus(20),
-									Skill.useTech.withBonus(20),
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.experienced.withParameter("Tech"),
 									Talent.language.withParameter("Binary + Low Gothic"),
 									Talent.operate.withParameter("1 Vehicle Type"),
 									Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"),
+							},
+							new Bionic[] {
 									Bionic.ferricLure,
 									Bionic.interfacePort,
 									Bionic.luminenCapacitor,
@@ -188,6 +184,14 @@ public class Background {
 									Bionic.mechadendrite.withParameter("Manipulator/Optical/Utility"),
 									Bionic.mindImpulseUnit,
 									Bionic.vocalImplant,
+							},
+							new Skill[] {
+									Skill.craft.withBonus(20),
+									Skill.hack.withBonus(20),
+									Skill.inspect.withBonus(20),
+									Skill.referenceCommonLore.withBonus(10),
+									Skill.repair.withBonus(20),
+									Skill.useTech.withBonus(20),
 							},
 							new Item[] {
 									Clothing.mechanicusRobes,
@@ -205,6 +209,20 @@ public class Background {
 									"Intelligence +10",
 									"Perception +5",
 							},
+							new Talent[] {
+									Talent.experienced.withParameter("Tech"),
+									Talent.language.withParameter("Binary + Low Gothic"),
+									Talent.operate.withParameter("1 Vehicle Type"),
+									Talent.trade.withParameter("Chymist/Morticator/Technomat"),
+							},
+							new Bionic[] {
+									Bionic.augurArray,
+									Bionic.interfacePort,
+									Bionic.luminenCapacitor,
+									Bionic.mechanicusImplants,
+									Bionic.mechadendrite_medicae,
+									Bionic.vocalImplant,
+							},
 							new Skill[] {
 									Skill.administerDrug.withBonus(10),
 									Skill.craft.withBonus(10),
@@ -214,18 +232,6 @@ public class Background {
 									Skill.repair.withBonus(10),
 									Skill.treatWounds.withBonus(20),
 									Skill.useTech.withBonus(20),
-							},
-							new SpecialRule[] {
-									Talent.experienced.withParameter("Tech"),
-									Talent.language.withParameter("Binary + Low Gothic"),
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade.withParameter("Chymist/Morticator/Technomat"),
-									Bionic.augurArray,
-									Bionic.interfacePort,
-									Bionic.luminenCapacitor,
-									Bionic.mechanicusImplants,
-									Bionic.mechadendrite_medicae,
-									Bionic.vocalImplant,
 							},
 							new Item[] {
 									Clothing.mechanicusRobes,
@@ -242,13 +248,7 @@ public class Background {
 									"Ballistic Skill +15",
 									"Intelligence +5",
 							},
-							new Skill[] {
-									Skill.craft.withBonus(10),
-									Skill.hack.withBonus(0),
-									Skill.repair.withBonus(10),
-									Skill.useTech.withBonus(20),
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.gunslinger,
 									Talent.knowledgable.withParameter("Tech"),
 									Talent.language.withParameter("Binary + Low Gothic"),
@@ -256,6 +256,8 @@ public class Background {
 									Talent.masterGunslinger,
 									Talent.operate.withParameter("1 Vehicle Type"),
 									Talent.trade.withParameter("Armourer"),
+							},
+							new Bionic[] {
 									Bionic.interfacePort,
 									Bionic.internalReservoir,
 									Bionic.luminenCapacitor,
@@ -263,6 +265,12 @@ public class Background {
 									Bionic.mechadendrite_ballistic,
 									Bionic.mindImpulseUnit,
 									Bionic.vocalImplant,
+							},
+							new Skill[] {
+									Skill.craft.withBonus(10),
+									Skill.hack.withBonus(0),
+									Skill.repair.withBonus(10),
+									Skill.useTech.withBonus(20),
 							},
 							new Item[] {
 									Clothing.mechanicusRobes,
@@ -289,6 +297,14 @@ public class Background {
 									"Willpower +5",
 									"Fellowship +10",
 							},
+							new Talent[] {
+									Talent.experienced.withParameter("Imperial Creed"),
+									Talent.knowledgable.withParameter("Adeptus Ministorum"),
+									Talent.language.withParameter("High Gothic + Low Gothic"),
+									Talent.publicSpeaker,
+									Talent.trade_copyist,
+									Talent.trade_loremancer,
+							},
 							new Skill[] {
 									Skill.craft.withBonus(10),
 									Skill.command.withBonus(10),
@@ -297,14 +313,6 @@ public class Background {
 									Skill.persuade.withBonus(10),
 									Skill.referenceCommonLore.withBonus(10),
 									Skill.treatWounds.withBonus(0),
-							},
-							new SpecialRule[] {
-									Talent.experienced.withParameter("Imperial Creed"),
-									Talent.knowledgable.withParameter("Adeptus Ministorum"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.publicSpeaker,
-									Talent.trade_copyist,
-									Talent.trade_loremancer,
 							},
 							new Item[] {
 									Clothing.ministorumRobes,
@@ -325,20 +333,20 @@ public class Background {
 									"Strength +10",
 									"Toughness +10",
 							},
-							new Skill[] {
-									Skill.command.withBonus(10),
-									Skill.navigate.withBonus(10),
-									Skill.notice.withBonus(10),
-									Skill.reflex.withBonus(10),
-									Skill.parry.withBonus(10),
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.language.withParameter("Low Gothic"),
 									Talent.nervesOfSteel,
 									Talent.rapidReload,
 									Talent.recoilCompensation,
 									Talent.weaponFamiliarity_ranged.withParameter("Lasgun"),
 									Talent.weaponMaster_ranged.withParameter("Lasgun"),
+							},
+							new Skill[] {
+									Skill.command.withBonus(10),
+									Skill.navigate.withBonus(10),
+									Skill.notice.withBonus(10),
+									Skill.reflex.withBonus(10),
+									Skill.parry.withBonus(10),
 							},
 							new Item[] {
 									Clothing.militaryUniform,
@@ -360,15 +368,7 @@ public class Background {
 									"Perception +5",
 									"Fellowship +10",
 							},
-							new Skill[] {
-									Skill.charm.withBonus(10),
-									Skill.deceive.withBonus(10),
-									Skill.run.withBonus(10),
-									Skill.search.withBonus(10),
-									Skill.sneak.withBonus(20),
-									Skill.unlock.withBonus(20),
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.accustomedToDarkness,
 									Talent.knowledgable.withParameter("Underworld"),
 									Talent.language.withParameter("Low Gothic"),
@@ -378,13 +378,20 @@ public class Background {
 									Talent.trade_swindler,
 									Talent.tricksOfTheTrade,
 							},
+							new Skill[] {
+									Skill.charm.withBonus(10),
+									Skill.deceive.withBonus(10),
+									Skill.run.withBonus(10),
+									Skill.search.withBonus(10),
+									Skill.sneak.withBonus(20),
+									Skill.unlock.withBonus(20),
+							},
 							new Item[] {
 									Clothing.streetClothes,
 									Tool.multiKey,
 									Tool.stummer,
 									RangedWeapon.pistol,
 									MeleeWeapon.knife,
-									MiscItem.gelt,
 							}
 					)
 			)
@@ -398,6 +405,10 @@ public class Background {
 									"Agility +5",
 									"Perception +5",
 							},
+							new Talent[] {
+									Talent.knowledgable.withParameter("Underworld"),
+									Talent.language.withParameter("Low Gothic"),
+							},
 							new Skill[] {
 									Skill.dodge.withBonus(10),
 									Skill.intimidate.withBonus(20),
@@ -408,10 +419,6 @@ public class Background {
 									Skill.sneak.withBonus(10),
 									Skill.unlock.withBonus(0),
 							},
-							new SpecialRule[] {
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic"),
-							},
 							new Item[] {
 									Armour.gangLeathers,
 									Clothing.streetClothes,
@@ -419,7 +426,6 @@ public class Background {
 									Ammo.autopistol_mag,
 									MeleeWeapon.club,
 									MeleeWeapon.knife,
-									MiscItem.gelt,
 							}
 					)
 			)
@@ -431,19 +437,19 @@ public class Background {
 									"Agility +5",
 									"Perception +5",
 							},
-							new Skill[] {
-									Skill.conceal.withBonus(20),
-									Skill.deceive.withBonus(20),
-									Skill.disguise.withBonus(20),
-									Skill.sneak.withBonus(20),
-							},
-							new SpecialRule[] {
+							new Talent[] {
 									Talent.accustomedToDarkness,
 									Talent.assassinStrike,
 									Talent.carefulStrikes,
 									Talent.knowledgable.withParameter("Underworld"),
 									Talent.language.withParameter("Low Gothic"),
 									Talent.marksman,
+							},
+							new Skill[] {
+									Skill.conceal.withBonus(20),
+									Skill.deceive.withBonus(20),
+									Skill.disguise.withBonus(20),
+									Skill.sneak.withBonus(20),
 							},
 							new Item[] {
 									Clothing.streetClothes,
@@ -452,7 +458,6 @@ public class Background {
 									Ammo.huntingRifle_mag,
 									MeleeWeapon.longDagger,
 									Consumable.vial_lethalPoison_3,
-									MiscItem.gelt,
 							}
 					)
 			)
@@ -469,17 +474,23 @@ public class Background {
 	
 	public static class Path {
 		public String name;
-		public String[] characteristicsIncreaseList;
+		public String[] characteristicList;
 		public Skill[] skillList;
-		public SpecialRule[] specialRuleList;
+		public Talent[] talentList;
+		public Bionic[] bionicList;
 		public Item[] itemList;
 		
-		Path(String name, String[] characteristicsIncreaseList, Skill[] skillList, SpecialRule[] specialRuleList, Item[] equipmentList) {
+		Path(String name, String[] characteristicsIncreaseList, Talent[] talentList, Bionic[] bionicList, Skill[] skillList, Item[] equipmentList) {
 			this.name = name;
-			this.characteristicsIncreaseList = characteristicsIncreaseList;
+			this.characteristicList = characteristicsIncreaseList;
 			this.skillList = skillList;
-			this.specialRuleList = specialRuleList;
+			this.talentList = talentList;
+			this.bionicList = bionicList;
 			this.itemList = equipmentList;
+		}
+		
+		Path(String name, String[] characteristicsIncreaseList, Talent[] talentList, Skill[] skillList, Item[] equipmentList) {
+			this(name, characteristicsIncreaseList, talentList, new Bionic[0], skillList, equipmentList);
 		}
 	}
 }

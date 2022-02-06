@@ -137,15 +137,7 @@ class CharacterCreationFile implements PrintableFile {
 			printer.printRowTop();
 			for(Background.Path path : background.backgroundPathList) {
 				printer.printColTop(4);
-				printer.printSubSubheader(path.name);
-				printer.println("<b>Characteristic Increases</b>");
-				printer.printList(false, path.characteristicsIncreaseList);
-				printer.println("<b>Special Rules</b>");
-				printer.printList(false, path.specialRuleList);
-				printer.println("<b>Skills</b>");
-				printer.printList(false, path.skillList);
-				printer.println("<b>Items</b>");
-				printer.printList(false, path.itemList);
+				printBackgroundPath(path, printer);
 				printer.printColTail();
 			}
 			printer.printRowTail();
@@ -177,5 +169,29 @@ class CharacterCreationFile implements PrintableFile {
 		
 		
 		printer.printFileTail();
+	}
+	
+	private static void printBackgroundPath(Background.Path path, DHOPrinter printer) {
+		printer.printSubSubheader(path.name);
+		if(path.characteristicList.length > 0) {
+			printer.println("<b>Characteristic Advances</b>");
+			printer.printList(false, path.characteristicList);
+		}
+		if(path.talentList.length > 0) {
+			printer.println("<b>Talents</b>");
+			printer.printList(false, path.talentList);
+		}
+		if(path.bionicList.length > 0) {
+			printer.println("<b>Bionics</b>");
+			printer.printList(false, path.bionicList);
+		}
+		if(path.skillList.length > 0) {
+			printer.println("<b>Skills</b>");
+			printer.printList(false, path.skillList);
+		}
+		if(path.itemList.length > 0) {
+			printer.println("<b>Items</b>");
+			printer.printList(false, path.itemList);
+		}
 	}
 }

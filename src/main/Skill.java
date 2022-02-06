@@ -1,6 +1,7 @@
 package main;
 
-class Skill {
+
+public class Skill {
 	String name;
 	int bonus;
 	

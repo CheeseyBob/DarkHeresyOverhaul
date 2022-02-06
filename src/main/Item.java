@@ -2,7 +2,7 @@ package main;
 
 import java.util.LinkedList;
 
-class Item {
+public class Item {
 	String name;
 	String description;
 	int size;
