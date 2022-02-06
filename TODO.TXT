@@ -7,7 +7,8 @@
     - Hostile groups (daemon cults, etc.)
 
 >>> Character Creation:
-	- Astra Telepathica and Outcast Backgrounds
+	- Astra Telepathica Background
+    - gelt amounts for background paths
 	- bring the character to life section
 
 >>> Psychic Powers
