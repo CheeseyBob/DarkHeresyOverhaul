@@ -12,18 +12,6 @@ class CharacterAdvancementFile implements PrintableFile {
 			{"5th (+25)", "32 XP"},
 	};
 	
-	private static String[][] characteristicAdvanceAptitudeTable = {
-			{"Weapon Skill", "Weapon Skill", "Offence"},
-			{"Ballistic Skill", "Ballistic Skill", "Finesse"},
-			{"Strength", "Strength", "Offence"},
-			{"Toughness", "Toughness", "Defence"},
-			{"Agility", "Agility", "Finesse"},
-			{"Intelligence", "Intelligence", "Knowledge"},
-			{"Perception", "Perception", "Fieldcraft"},
-			{"Willpower", "Willpower", "Psyker"},
-			{"Fellowship", "Fellowship", "Social"},
-	};
-	
 	private static String[][] skillAdvanceXPCostTable = {
 			{"Aquire", "4 XP"},
 			{"+10", "2 XP"},
@@ -33,63 +21,6 @@ class CharacterAdvancementFile implements PrintableFile {
 	
 	private static String[] skillAdvanceTableHeaders = {
 			"Skill", "Aptitude 1", "Aptitude 2", "Basic", "Use"
-	};
-	
-	private static String[][] skillAdvanceTable_general = {
-			{"Navigate", "Intelligence", "Fieldcraft", "Yes", "Long"},
-			{"Notice", "Perception", "General", "Yes", "Passive"},
-			{"Reflex", "Perception", "General", "Yes", "Reaction"},
-			{"Run", "Agility", "General", "Yes", "Action"},
-	};
-	
-	private static String[][] skillAdvanceTable_combat = {
-			{"Dodge", "Agility", "Finesse", "Yes", "Reaction"},
-			{"Grapple", "Strength", "Offense", "Yes", "Action"},
-			{"Knock Down", "Strength", "Offense", "Yes", "Action"},
-			{"Parry", "Weapon Skill", "Defence", "Yes", "Reaction"},
-			{"Stun", "Weapon Skill", "Offense", "Yes", "Action"},
-	};
-	
-	private static String[][] skillAdvanceTable_investigation = {
-			{"Contemplate", "Intelligence", "Knowledge", "Yes", "Long"},
-			{"Inquire", "Fellowship", "Social", "Yes", "Long"},
-			{"Inspect", "Perception", "General", "Yes", "Short"},
-			{"Interrogate", "Willpower", "Social", "Yes", "Long"},
-			{"Reference Common Lore", "Intelligence", "General", "Yes", "Varies"},
-			{"Reference Forbidden Lore*", "Intelligence", "Knowledge", "No", "Varies"},
-			{"Reference Scholastic Lore*", "Intelligence", "Knowledge", "No", "Varies"},
-			{"Search", "Perception", "General", "Yes", "Short"},
-	};
-	
-	private static String[][] skillAdvanceTable_social = {
-			{"Charm", "Fellowship", "Social", "Yes", "Short"},
-			{"Command", "Fellowship", "Leadership", "Yes", "Action"},
-			{"Deceive", "Fellowship", "Social", "Yes", "Passive"},
-			{"Inspire", "Fellowship", "Leadership", "Yes", "Action"},
-			{"Intimidate", "Strength", "Social", "Yes", "Action"},
-			{"Persuade", "Fellowship", "Social", "Yes", "Short"},
-			{"Read Person", "Perception", "Social", "Yes", "Passive"},
-	};
-	
-	private static String[][] skillAdvanceTable_stealth = {
-			{"Conceal", "Agility", "Fieldcraft", "Yes", "Action"},
-			{"Disguise", "Intelligence", "Social", "Yes", "Short"},
-			{"Hack**", "Intelligence", "Tech", "No", "Short"},
-			{"Unlock", "Intelligence", "Fieldcraft", "No", "Short"},
-			{"Sneak", "Agility", "Finesse", "Yes", "Varies"},
-	};
-	
-	private static String[][] skillAdvanceTable_specialist = {
-			{"Administer Drug", "Intelligence", "Fieldcraft", "Yes", "Action"},
-			{"Craft*", "Intelligence", "Tech", "Yes", "Long"},
-			{"Haggle", "Fellowship", "Social", "Yes", "Short"},
-			{"Perform Surgery**", "Intelligence", "Knowledge", "No", "Long"},
-			{"Repair*", "Intelligence", "Tech", "Yes", "Long"},
-			{"Sense Immaterium", "Willpower", "Psyker", "No", "Passive"},
-			{"Set Trap", "Intelligence", "Fieldcraft", "Yes", "Short"},
-			{"Treat Wounds", "Intelligence", "Fieldcraft", "No", "Long"},
-			{"Use Tech", "Intelligence", "Tech", "No", "Action"},
-			{"Wrangle", "Fellowship", "Fieldcraft", "No", "Short"},
 	};
 	
 	@Override
@@ -135,9 +66,15 @@ class CharacterAdvancementFile implements PrintableFile {
 		}
 		printer.printTableTail();
 		printer.printTableTop("Characteristic", "Aptitude 1", "Aptitude 2", false, true);
-		for(int i = 0; i < characteristicAdvanceAptitudeTable.length; i ++) {
-			printer.printTableRow(characteristicAdvanceAptitudeTable[i]);
-		}
+		printCharacteristicTableRow(Characteristic.WS, printer);
+		printCharacteristicTableRow(Characteristic.BS, printer);
+		printCharacteristicTableRow(Characteristic.S, printer);
+		printCharacteristicTableRow(Characteristic.T, printer);
+		printCharacteristicTableRow(Characteristic.Ag, printer);
+		printCharacteristicTableRow(Characteristic.Int, printer);
+		printCharacteristicTableRow(Characteristic.Per, printer);
+		printCharacteristicTableRow(Characteristic.WP, printer);
+		printCharacteristicTableRow(Characteristic.Fel, printer);
 		printer.printTableTail();
 		printer.println();
 		printer.println();
@@ -150,34 +87,84 @@ class CharacterAdvancementFile implements PrintableFile {
 		printer.printTableTail();
 		printer.printTableTop(skillAdvanceTableHeaders, false, true);
 		printer.printTableRow_subheader("General Skills");
-		for(int i = 0; i < skillAdvanceTable_general.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_general[i]);
-		}
+		printSkillTableRow(Skill.navigate, printer);
+		printSkillTableRow(Skill.notice, printer);
+		printSkillTableRow(Skill.reflex, printer);
+		printSkillTableRow(Skill.run, printer);
 		printer.printTableRow_subheader("Combat Skills");
-		for(int i = 0; i < skillAdvanceTable_combat.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_combat[i]);
-		}
+		printSkillTableRow(Skill.dodge, printer);
+		printSkillTableRow(Skill.grapple, printer);
+		printSkillTableRow(Skill.knockDown, printer);
+		printSkillTableRow(Skill.parry, printer);
+		printSkillTableRow(Skill.stun, printer);
 		printer.printTableRow_subheader("Investigation Skills");
-		for(int i = 0; i < skillAdvanceTable_investigation.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_investigation[i]);
-		}
+		printSkillTableRow(Skill.contemplate, printer);
+		printSkillTableRow(Skill.inquire, printer);
+		printSkillTableRow(Skill.inspect, printer);
+		printSkillTableRow(Skill.interrogate, printer);
+		printSkillTableRowWithFootnote(Skill.referenceLore, printer, "*");
+		printSkillTableRow(Skill.search, printer);
 		printer.printTableRow_subheader("Social Skills");
-		for(int i = 0; i < skillAdvanceTable_social.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_social[i]);
-		}
+		printSkillTableRow(Skill.charm, printer);
+		printSkillTableRow(Skill.command, printer);
+		printSkillTableRow(Skill.deceive, printer);
+		printSkillTableRow(Skill.inspire, printer);
+		printSkillTableRow(Skill.intimidate, printer);
+		printSkillTableRow(Skill.persuade, printer);
+		printSkillTableRow(Skill.readPerson, printer);
 		printer.printTableRow_subheader("Stealth Skills");
-		for(int i = 0; i < skillAdvanceTable_stealth.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_stealth[i]);
-		}
+		printSkillTableRow(Skill.conceal, printer);
+		printSkillTableRow(Skill.disguise, printer);
+		printSkillTableRowWithFootnote(Skill.hack, printer, "**");
+		printSkillTableRow(Skill.unlock, printer);
+		printSkillTableRow(Skill.sneak, printer);
 		printer.printTableRow_subheader("Specialist Skills");
-		for(int i = 0; i < skillAdvanceTable_specialist.length; i ++) {
-			printer.printTableRow(skillAdvanceTable_specialist[i]);
-		}
+		printSkillTableRow(Skill.administerDrug, printer);
+		printSkillTableRowWithFootnote(Skill.craft, printer, "*");
+		printSkillTableRow(Skill.haggle, printer);
+		printSkillTableRowWithFootnote(Skill.performSurgery, printer, "**");
+		printSkillTableRowWithFootnote(Skill.repair, printer, "*");
+		printSkillTableRow(Skill.senseImmateruim, printer);
+		printSkillTableRow(Skill.setTrap, printer);
+		printSkillTableRow(Skill.treatWounds, printer);
+		printSkillTableRow(Skill.useTech, printer);
+		printSkillTableRow(Skill.wrangle, printer);
 		printer.printTableTail();
-		printer.printParagraph("*Requires a Talent for each area of use.");
+		printer.printParagraph("*Requires a Talent for each area of use (except "+Skill.referenceLore.name+" with Common Lore areas).");
 		printer.printParagraph("**Hack requires Use Tech; Perform Surgery requires Treat Wounds.");
 		printer.println();
 		printer.println();
 		printer.printFileTail();
+	}
+	
+	private static void printCharacteristicTableRow(Characteristic characteristic, DHOPrinter printer) {
+		String[] columnEntries = {
+				characteristic.fullName(),
+				characteristic.aptitude1().fullName(),
+				characteristic.aptitude2().fullName(),
+		};
+		printer.printTableRow(columnEntries);
+	}
+	
+	private static void printSkillTableRow(Skill skill, DHOPrinter printer) {
+		String[] columnEntries = {
+				skill.name,
+				skill.aptitude1.fullName(),
+				skill.aptitude2.fullName(),
+				skill.isBasic ? "Yes" : "No",
+				skill.usage,
+		};
+		printer.printTableRow(columnEntries);
+	}
+	
+	private static void printSkillTableRowWithFootnote(Skill skill, DHOPrinter printer, String footnoteMarker) {
+		String[] columnEntries = {
+				skill.name + footnoteMarker,
+				skill.aptitude1.fullName(),
+				skill.aptitude2.fullName(),
+				skill.isBasic ? "Yes" : "No",
+				skill.usage,
+		};
+		printer.printTableRow(columnEntries);
 	}
 }

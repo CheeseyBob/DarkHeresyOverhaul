@@ -56,15 +56,11 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Intimidate", "Main Action", "Basic Skill", "Strength", "Target becomes Intimidated"},
 			{"Deceive", "Passive", "Basic Skill", "Fellowship", "Come across as speaking truthfully"},
 			{"Read Person (Sense Deception)", "Passive", "Basic Skill", "Perception", "Tell whether someone is lying to you"},
-			{"Recall Common Lore (Assist)", "Main Action", "Basic Skill", "Intelligence", "Create an Aspect which gives a bonus"},
-			{"Recall Common Lore (Identify)", "Passive", "Basic Skill", "Intelligence", "Get Clues/Info"},
+			{"Reference Lore (Assist)", "Main Action", "Basic Skill", "Intelligence", "Create an Aspect which gives a bonus"},
+			{"Reference Lore (Identify)", "Passive", "Basic Skill", "Intelligence", "Get Clues/Info"},
 	};
 	private static String[][] actionsTable_advanced = {
 			{"Focus Power", "*", "Talent", "Willpower", "Use a Psychic Power"},
-			{"Reference Forbidden Lore (Assist)", "Main Action", "Skill", "Intelligence", "Create an Aspect which gives a bonus"},
-			{"Reference Forbidden Lore (Identify)", "Passive", "Skill", "Intelligence", "Get Clues/Info"},
-			{"Reference Scholastic Lore (Assist)", "Main Action", "Skill", "Intelligence", "Create an Aspect which gives a bonus"},
-			{"Reference Scholastic Lore (Identify)", "Passive", "Skill", "Intelligence", "Get Clues/Info"},
 			{"Sense Immaterium", "Passive", "Skill", "Perception", "Get Clues or Detect something"},
 			{"Treat Wounds (First Aid)", "Main Action", "Skill", "Intelligence", "Target becomes Treated (max 1 level)"},
 			{"Use Tech", "Main Action", "Skill", "Intelligence", "Use a tech item (effect depends on the item)"},

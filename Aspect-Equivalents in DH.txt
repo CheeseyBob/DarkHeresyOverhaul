@@ -1,0 +1,150 @@
+	Aspect-Equivalents in DH
+	(Need converting)
+
+Charging
+> Spend 1 action
+> Move
+> Get +10 to WS
+> Overcome after next action
+
+Grappled/Grappling
+> Spend 1 action
+> Test WS
+> Attackers get +20 to WS
+> Both characters have restricted actions
+> Overcome when grappler lets go (free action)
+> Overcome after Strength test
+
+Stunned
+> +20 WS & BS for attackers
+
+Pinned
+> Target tests WP
+> -20 BS
+> Overcome with WP Test
+> Overcome if engaged in close combat
+
+Weapon Jam
+> Weapon cannot be fired
+> Overcome with BS Test
+
+Called Shot
+> -20 BS
+> Shots hit chosen location on target
+> Overcome after shot is taken
+
+Darkness
+> -20 WS
+> -30 BS
+
+Difficult Terrain
+> -10 to -30 WS & Dodge
+
+Treacherous Environments
+(Fog/Smoke/Mud/Shallow Water/Darkness/Snow/Underbrush/Dense Crowds/Zero Gravity/Rubble/Tremors)
+> Require Agility Test for running/charging
+
+Range (Extreme Range to Point Blank)
+> -30 to +30 BS
+
+Fatigue
+> -10
+> Overcome with an hour of rest
+
+Fog/Mist/Shadow
+> -20 BS
+
+Gang Up
+> +10 to +20 WS
+
+Helpless Target
+> autosucceed WS
+> extra damage
+
+High Ground/Advantageous Position
+> +10 WS
+
+Prone
+> -10 WS & BS
+> -20 Dodge
+> +10 WS for attackers
+
+Size (Miniscule to Massive)
+> -30 to +30
+
+Unaware
+> +30 WS & BS
+
+Unarmed
+> -20 WS against armed targets
+
+Weather/Unnatural Conditions
+> -20 WS & BS
+
+Cover
+> Chance to hit cover instead of target
+
+Lost Hand
+> -20
+
+Lost Arm
+> -20
+
+Lost Eye
+> -10 BS permenantly
+> -20
+
+Lost Foot
+> -20
+
+Fire
+> Deals damage each round
+> Sets other things on fire
+
+On Fire
+> Deals damage and fatigue each round
+> WP test to act normally
+> Overcome with AG Test
+
+Holding Breath
+> Overcome after a failed Tougness Test, at which point you gain fatigue and fall unconscious
+
+Suffocating
+> Take fatigue then damage
+
+Vacuum
+> Explosive damage from depressurisation
+> Energy damage from cold/heat
+
+Lightly Wounded
+
+Heavily Wounded
+
+Critically Wounded
+
+Blood Loss
+> Chance of dying each round
+
+Broken Limbs
+
+Encumbered
+> -10
+> Slowed movement
+
+Light Source
+> Negates surrounding darkness
+
+Hovering
+> Unaffected by terrain
+
+Flying Low
+> No melee with enemies on the ground
+> -10 BS to shoot you
+
+Flying High
+> Only attack/be attacked by other creatures flying high (melee or ranged)
+
+
+
+
+
