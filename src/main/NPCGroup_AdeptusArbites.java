@@ -71,7 +71,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		npcList.add(npc);
 		
-		npc = new NPC("Arbitrator", "40,40,40,40,35,35,35,30,30");
+		npc = new NPC("Arbitrator", "40,40,40,40,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -81,8 +81,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.knockDown.withBonus(10));
 		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.equippedItemList.add(Clothing.arbitesUniform);
 		npc.equippedItemList.add(Armour.carapaceChestplate);
@@ -95,9 +94,10 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.microBead);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
+		// XP: ??/60
 		npcList.add(npc);
 		
-		npc = new NPC("Proctor", "40,40,40,40,35,35,35,30,30");
+		npc = new NPC("Proctor", "40,40,40,40,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.dominatingBellow);
 		npc.specialRuleList.add(Talent.intimidating);
 		npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
@@ -111,8 +111,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.skillList.add(Skill.intimidate.withBonus(20));
 		npc.skillList.add(Skill.knockDown.withBonus(10));
 		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.equippedItemList.add(Clothing.arbitesUniform);
 		npc.equippedItemList.add(Armour.carapaceArmour);
@@ -127,7 +126,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		npcList.add(npc);
 		
-		npc = new NPC("Intelligencer", "40,40,40,40,35,40,40,30,35");
+		npc = new NPC("Intelligencer", "40,40,40,40,35,40,40,35,40");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
 		npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
@@ -138,8 +137,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(20));
 		npc.skillList.add(Skill.notice.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(20));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.skillList.add(Skill.search.withBonus(10));
 		npc.equippedItemList.add(Clothing.arbitesUniform);
@@ -164,15 +162,14 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.skillList.add(Skill.command.withBonus(30));
-		npc.skillList.add(Skill.grapple.withBonus(10));
+		npc.skillList.add(Skill.grapple.withBonus(20));
 		npc.skillList.add(Skill.inquire.withBonus(10));
 		npc.skillList.add(Skill.inspect.withBonus(10));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.intimidate.withBonus(20));
-		npc.skillList.add(Skill.knockDown.withBonus(10));
+		npc.skillList.add(Skill.knockDown.withBonus(20));
 		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.equippedItemList.add(Clothing.arbitesUniform);
 		npc.equippedItemList.add(Armour.heavyCarapace);
@@ -195,8 +192,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(20));
 		npc.skillList.add(Skill.notice.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.skillList.add(Skill.search.withBonus(10));
 		npc.equippedItemList.add(Clothing.imperialRobes);
@@ -215,15 +211,14 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.skillList.add(Skill.command.withBonus(30));
-		npc.skillList.add(Skill.grapple.withBonus(10));
+		npc.skillList.add(Skill.grapple.withBonus(20));
 		npc.skillList.add(Skill.inquire.withBonus(10));
 		npc.skillList.add(Skill.inspect.withBonus(10));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.intimidate.withBonus(20));
-		npc.skillList.add(Skill.knockDown.withBonus(10));
+		npc.skillList.add(Skill.knockDown.withBonus(20));
 		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.equippedItemList.add(Clothing.arbitesUniform);
 		npc.equippedItemList.add(Armour.heavyCarapace);
@@ -246,9 +241,8 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.skillList.add(Skill.inspect.withBonus(10));
 		npc.skillList.add(Skill.interrogate.withBonus(30));
 		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.readPerson.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(30));
+		npc.skillList.add(Skill.readPerson.withBonus(30));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
 		npc.skillList.add(Skill.run.withBonus(10));
 		npc.skillList.add(Skill.search.withBonus(10));
 		npc.equippedItemList.add(Clothing.imperialRobes);

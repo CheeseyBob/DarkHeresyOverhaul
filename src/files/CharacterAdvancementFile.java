@@ -13,7 +13,7 @@ class CharacterAdvancementFile implements PrintableFile {
 	};
 	
 	private static String[][] skillAdvanceXPCostTable = {
-			{"Aquire", "4 XP"},
+			{"+0", "4 XP"},
 			{"+10", "2 XP"},
 			{"+20", "4 XP"},
 			{"+30", "8 XP"},
@@ -79,7 +79,7 @@ class CharacterAdvancementFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printHeader("Skills");
-		printer.printParagraph("If a Skill is labelled as basic, all characters are assumed to have the Skill at +0. This means the Skill does not need to be aquired with an Advance.");
+		printer.printParagraph("If a Skill is labelled as basic, all characters are assumed to have the Skill at +0, so the +0 advance does not need to be taken.");
 		printer.printTableTop("Advance", "XP Cost", false, true);
 		for(int i = 0; i < skillAdvanceXPCostTable.length; i ++) {
 			printer.printTableRow(skillAdvanceXPCostTable[i]);
@@ -116,8 +116,8 @@ class CharacterAdvancementFile implements PrintableFile {
 		printSkillTableRow(Skill.conceal, printer);
 		printSkillTableRow(Skill.disguise, printer);
 		printSkillTableRowWithFootnote(Skill.hack, printer, "**");
-		printSkillTableRow(Skill.unlock, printer);
 		printSkillTableRow(Skill.sneak, printer);
+		printSkillTableRow(Skill.unlock, printer);
 		printer.printTableRow_subheader("Specialist Skills");
 		printSkillTableRow(Skill.administerDrug, printer);
 		printSkillTableRowWithFootnote(Skill.craft, printer, "*");

@@ -13,8 +13,8 @@
 
 >>> GM notes for item creation
 
->>> Combine the three Lore skills into one, keeping the talents for scholastic/forbidden areas.
 
+> Remove Calixis Sector and War Common Lore areas 
 
 > Daemonic Possession
     - psychic power for daemons only

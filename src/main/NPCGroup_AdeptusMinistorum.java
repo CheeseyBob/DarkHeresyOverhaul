@@ -63,7 +63,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.inquire.withBonus(10));
 		npc.skillList.add(Skill.inspire.withBonus(10));
 		npc.skillList.add(Skill.persuade.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.treatWounds.withBonus(0));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.equippedItemList.add(Armour.chainCoat);
@@ -89,7 +89,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.inspire.withBonus(10));
 		npc.skillList.add(Skill.persuade.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.treatWounds.withBonus(0));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.inventoryList.add(MeleeWeapon.warHammer);
@@ -113,7 +113,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(20));
 		npc.skillList.add(Skill.persuade.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.treatWounds.withBonus(0));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.equippedItemList.add(Armour.chainCoat);
@@ -128,9 +128,8 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npcList.add(npc);
 		
 		npc = new NPC("Bishop", "35,35,35,35,35,35,40,35,45");
-		npc.specialRuleList.add(Talent.educated.withParameter("Occult + Theology"));
-		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Ministorum"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Occult + Theology"));
+		npc.specialRuleList.add(Talent.experienced.withParameter("Adeptus Ministorum + Imperial Creed"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
 		npc.specialRuleList.add(Talent.publicSpeaker);
 		npc.specialRuleList.add(Talent.trade_copyist);
@@ -141,8 +140,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.inspire.withBonus(20));
 		npc.skillList.add(Skill.persuade.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(20));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(20));
 		npc.skillList.add(Skill.treatWounds.withBonus(0));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.inventoryList.add(MeleeWeapon.warHammer);
@@ -167,7 +165,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(20));
 		npc.skillList.add(Skill.persuade.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.treatWounds.withBonus(10));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.equippedItemList.add(Armour.flakCoat);
@@ -184,12 +182,11 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		
 		npc = new NPC("Heirophant", "35,35,35,35,35,40,40,35,45");
 		npc.specialRuleList.add(Talent.commanding);
-		npc.specialRuleList.add(Talent.educated.withParameter("Heraldry + Occult + Philosophy"));
-		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
+		npc.specialRuleList.add(Talent.expert.withParameter("Heraldry + Occult + Philosophy"));
+		npc.specialRuleList.add(Talent.experienced.withParameter("Adeptus Ministorum + Imperial Creed"));
 		npc.specialRuleList.add(Talent.specialist.withParameter("Theology"));
 		npc.specialRuleList.add(Talent.haloOfCommand);
 		npc.specialRuleList.add(Talent.inspiring);
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Ministorum"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
 		npc.specialRuleList.add(Talent.publicSpeaker);
 		npc.specialRuleList.add(Talent.trade_copyist);
@@ -200,8 +197,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.inspire.withBonus(30));
 		npc.skillList.add(Skill.persuade.withBonus(20));
 		npc.skillList.add(Skill.readPerson.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(30));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
 		npc.skillList.add(Skill.treatWounds.withBonus(0));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.inventoryList.add(MeleeWeapon.warHammer);
@@ -226,7 +222,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.skillList.add(Skill.interrogate.withBonus(20));
 		npc.skillList.add(Skill.persuade.withBonus(10));
 		npc.skillList.add(Skill.readPerson.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.treatWounds.withBonus(10));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.equippedItemList.add(Armour.carapaceArmour);

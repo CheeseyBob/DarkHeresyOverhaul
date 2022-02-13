@@ -462,7 +462,7 @@ class LoreFile implements PrintableFile {
 		printer.printParagraph("You can Assist when your knowledge would help taking the Action against the target. For example, Common Lore (Imperial Guard) would help with getting assistance from the Guard against a dangerous xeno threat, whereas Forbidden Lore (Xenos) would help with interacting with the xeno. Common Lore (Tech) would help with getting a difficult piece of technology to work, but wouldn't help whenever you used a multi-tool to do something.");
 		printer.printParagraph("The bonus from the created Aspect can also benefit others when it makes sense (i.e. if you can convey the information).");
 		printer.printSubheader("Research");
-		printer.printParagraph("Research can only be done with Scholastic Lore or Forbidden Lore and requires access to the appropriate facilities. This could mean anything from a data-tome on the appropriate topic to an entire Administratum Archive (modifiers can be applied for different facilities).");
+		printer.printParagraph("Doing research requires access to the appropriate facilities. This could mean anything from a data-tome on the appropriate topic to an entire Administratum Archive (different modifiers will apply for different facilities).");
 		printer.printSubheader("Examples");
 		printer.printList(false, new String[] {
 				"While exploring a cave, you come across a strange xeno species. You Reference Forbidden Lore (Xenos) and successfully Identify it, revealing its more notable abilities.",

@@ -21,23 +21,24 @@ public class Background {
 	public static final Background[] list = {
 			new Background("Adeptus Administratum", "Knowledge or Social")
 			.withStartingPath(
-					new Path("Scholar",
+					new Path("Scholar", // XP: 50/50
 							new String[] {
-									"Intelligence +10",
+									"Intelligence +10", // 6 XP
 							},
 							new Talent[] {
-									Talent.educated.withParameter("Bureaucracy"),
-									Talent.specialist.withParameter("2 Areas"),
-									Talent.knowledgable.withParameter("Administratum"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.expert,
-									Talent.trade_copyist,
+									Talent.educated.withParameter("Bureaucracy"), // 2 XP
+									Talent.specialist.withParameter("3 Areas"), // 18 XP
+									Talent.knowledgable.withParameter("Administratum"), // 2 XP
+									Talent.language.withParameter("High Gothic + Low Gothic"), // 4 XP
+									Talent.peer.withParameter("Administratum"), // 2 XP
+									Talent.trade_copyist, // 2 XP
 							},
 							new Skill[] {
-									Skill.contemplate.withBonus(10),
-									Skill.inquire.withBonus(10),
-									Skill.inspect.withBonus(10),
-									Skill.referenceScholasticLore.withBonus(20),
+									Skill.contemplate.withBonus(10), // 2 XP
+									Skill.inquire.withBonus(10), // 2 XP
+									Skill.inspect.withBonus(10), // 2 XP
+									Skill.persuade.withBonus(10), // 2 XP
+									Skill.referenceLore.withBonus(20), // 6 XP
 							},
 							new Item[] {
 									Clothing.administratumRobes,
@@ -47,26 +48,29 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Operator",
+					new Path("Operator", // XP: 50/50
 							new String[] {
-									"Agility +5",
-									"Intelligence +10",
-									"Perception +5",
+									"Strength +5", // 2 XP
+									"Agility +5", // 2 XP
+									"Intelligence +10", // 6 XP
+									"Perception +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.educated.withParameter("Bureaucracy + 2 Areas"),
-									Talent.knowledgable.withParameter("Administratum + Tech"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade_copyist,
+									Talent.educated.withParameter("Bureaucracy + 2 Areas"), // 6 XP
+									Talent.knowledgable.withParameter("Administratum + Tech"), // 4 XP
+									Talent.language.withParameter("High Gothic + Low Gothic"), // 4 XP
+									Talent.operate.withParameter("2 Vehicle Types"), // 4 XP
+									Talent.peer.withParameter("Administratum"), // 2 XP
+									Talent.trade_copyist, // 2 XP
 							},
 							new Bionic[] {
 									Bionic.interfacePort,
 							},
 							new Skill[] {
-									Skill.inquire.withBonus(10),
-									Skill.inspect.withBonus(10),
-									Skill.referenceScholasticLore.withBonus(10)
+									Skill.inquire.withBonus(10), // 2 XP
+									Skill.inspect.withBonus(20), // 6 XP
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.useTech.withBonus(10), // 6 XP
 							},
 							new Item[] {
 									Clothing.administratumRobes,
@@ -75,24 +79,25 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Chirurgeon",
+					new Path("Chirurgeon", // XP: 50/50
 							new String[] {
-									"Intelligence +15",
-									"Perception +5",
+									"Intelligence +10", // 6 XP
+									"Perception +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.educated.withParameter("Bureaucracy"),
-									Talent.knowledgable.withParameter("Administratum"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.trade_copyist
+									Talent.educated.withParameter("Bureaucracy + 1 Area"), // 4 XP
+									Talent.knowledgable.withParameter("Administratum"), // 2 XP
+									Talent.language.withParameter("High Gothic + Low Gothic"), // 4 XP
+									Talent.peer.withParameter("Administratum"), // 2 XP
+									Talent.trade_copyist // 2 XP
 							},
 							new Skill[] {
-									Skill.administerDrug.withBonus(10),
-									Skill.inquire.withBonus(10),
-									Skill.inspect.withBonus(20),
-									Skill.performSurgery.withBonus(10),
-									Skill.referenceScholasticLore.withBonus(0),
-									Skill.treatWounds.withBonus(20),
+									Skill.administerDrug.withBonus(10), // 2 XP
+									Skill.inquire.withBonus(10), // 2 XP
+									Skill.inspect.withBonus(20), // 6 XP
+									Skill.performSurgery.withBonus(10), // 6 XP
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.treatWounds.withBonus(20), // 10 XP
 							},
 							new Item[] {
 									Clothing.chirurgeonRobes,
@@ -105,31 +110,32 @@ public class Background {
 			),
 			new Background("Adeptus Arbites", "Offence or Defence")
 			.withStartingPath(
-					new Path("Arbitrator",
+					new Path("Arbitrator", // XP: 50/50
 							new String[] {
-									"Weapon Skill +10",
-									"Ballistic Skill +10",
-									"Strenth + 10",
-									"Toughness +10",
-									"Agility +5",
-									"Intelligence +5",
-									"Perception +5"
+									"Weapon Skill +5", // 2 XP
+									"Ballistic Skill +5", // 2 XP
+									"Strenth + 10", // 6 XP
+									"Toughness +10", // 6 XP
+									"Agility +5", // 2 XP
+									"Intelligence +5", // 2 XP
+									"Perception +5" // 2 XP
 							},
 							new Talent[] {
-									Talent.educated.withParameter("Judgement"),
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic"),
+									Talent.educated.withParameter("Judgement"), // 2 XP
+									Talent.knowledgable.withParameter("Adeptus Arbites + Underworld"), // 4 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Adeptus Arbites"), // 2 XP
 							},
 							new Skill[] {
-									Skill.grapple.withBonus(10),
-									Skill.inquire.withBonus(10),
-									Skill.inspect.withBonus(10),
-									Skill.interrogate.withBonus(10),
-									Skill.knockDown.withBonus(10),
-									Skill.notice.withBonus(10),
-									Skill.referenceCommonLore.withBonus(10),
-									Skill.referenceScholasticLore.withBonus(10),
-									Skill.run.withBonus(10)
+									Skill.grapple.withBonus(10), // 2 XP
+									Skill.inquire.withBonus(10), // 2 XP
+									Skill.inspect.withBonus(10), // 2 XP
+									Skill.interrogate.withBonus(10), // 2 XP
+									Skill.intimidate.withBonus(10), // 2 XP
+									Skill.knockDown.withBonus(10), // 2 XP
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.run.withBonus(10), // 2 XP
+									Skill.search.withBonus(10), // 2 XP
 							},
 							new Item[] {
 									Clothing.arbitesUniform,
@@ -147,25 +153,20 @@ public class Background {
 			),
 			new Background("Adeptus Astra Telepathica", "Defense or Psyker")
 			.withStartingPath(
-					new Path("Savant Militant",
+					new Path("Savant Militant", // XP: 50/50
 							new String[] {
-									"Ballistic Skill +5",
-									"Willpower +15",
+									"Willpower +15", // 14 XP
 							},
 							new Talent[] {
-									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"),
-									Talent.language.withParameter("Low Gothic"),
-									Talent.mentalResilience,
-									Talent.psyker.withParameter("Sanctioned"),
-									Talent.psyRating2,
-									Talent.strongConnection,
+									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"), // 2 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Adeptus Astra Telepathica"), // 2 XP
+									Talent.theConstantThreat, // 4 XP
+									Talent.psyker.withParameter("Sanctioned"), // 4 XP
+									Talent.psyRating2, // 8 XP
 							},
 							new Skill[] {
-									Skill.dodge.withBonus(10),
-									Skill.notice.withBonus(10),
-									Skill.parry.withBonus(10),
-									Skill.run.withBonus(10),
-									Skill.senseImmateruim.withBonus(10),
+									Skill.senseImmateruim.withBonus(10), // 2 XP
 							},
 							new Item[] {
 									Armour.flakJacket,
@@ -179,23 +180,24 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Scholar Materium",
+					new Path("Scholar Materium", // XP: 50/50
 							new String[] {
-									"Intelligence +15",
-									"Perception +5",
-									"Willpower +15",
+									"Intelligence +10", // 6 XP
+									"Perception +5", // 2 XP
+									"Willpower +10", // 6 XP
 							},
 							new Talent[] {
-									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"),
-									Talent.language.withParameter("Low Gothic"),
-									Talent.unveiledSecrets.withParameter("Psykers"),
-									Talent.unveiledSecrets.withParameter("The Warp"),
-									Talent.psyker.withParameter("Sanctioned"),
-									Talent.psyRating2,
+									Talent.knowledgable.withParameter("Adeptus Astra Telepathica"), // 2 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Adeptus Astra Telepathica"), // 2 XP
+									Talent.unveiledSecrets.withParameter("Psykers"), // 4 XP
+									Talent.unveiledSecrets.withParameter("The Warp"), // 4 XP
+									Talent.psyker.withParameter("Sanctioned"), // 4 XP
+									Talent.psyRating2, // 8 XP
 							},
 							new Skill[] {
-									Skill.referenceLore.withBonus(10),
-									Skill.senseImmateruim.withBonus(10),
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.senseImmateruim.withBonus(10), // 2 XP
 							},
 							new Item[] {
 									Clothing.astraTelepathicaRobes,
@@ -208,17 +210,18 @@ public class Background {
 			),
 			new Background("Adeptus Mechanicus", "Knowledge or Tech")
 			.withStartingPath(
-					new Path("Tech-Priest",
+					new Path("Tech-Priest", // XP: 50/50
 							new String[] {
-									"Toughness +5",
-									"Intelligence +10",
-									"Perception +5",
+									"Toughness +5", // 2 XP
+									"Intelligence +10", // 6 XP
+									"Perception +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.experienced.withParameter("Tech"),
-									Talent.language.withParameter("Binary + Low Gothic"),
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"),
+									Talent.experienced.withParameter("Tech"), // 6 XP
+									Talent.language.withParameter("Binary Cant + Low Gothic"), // 4 XP
+									Talent.peer.withParameter("Adeptus Mechanicus"), // 2 XP
+									Talent.operate.withParameter("1 Vehicle Type"), // 2 XP
+									Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"), // 2 XP
 							},
 							new Bionic[] {
 									Bionic.ferricLure,
@@ -230,12 +233,12 @@ public class Background {
 									Bionic.vocalImplant,
 							},
 							new Skill[] {
-									Skill.craft.withBonus(20),
-									Skill.hack.withBonus(20),
-									Skill.inspect.withBonus(20),
-									Skill.referenceCommonLore.withBonus(10),
-									Skill.repair.withBonus(20),
-									Skill.useTech.withBonus(20),
+									Skill.craft.withBonus(10), // 2 XP
+									Skill.hack.withBonus(10), // 6 XP
+									Skill.inspect.withBonus(10), // 2 XP
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.repair.withBonus(10), // 2 XP
+									Skill.useTech.withBonus(20), // 10 XP
 							},
 							new Item[] {
 									Clothing.mechanicusRobes,
@@ -248,16 +251,14 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Tech-Chirurgeon",
+					new Path("Tech-Chirurgeon", // XP: 50/50
 							new String[] {
-									"Intelligence +10",
-									"Perception +5",
+									"Intelligence +10", // 6 XP
 							},
 							new Talent[] {
-									Talent.experienced.withParameter("Tech"),
-									Talent.language.withParameter("Binary + Low Gothic"),
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade.withParameter("Chymist/Morticator/Technomat"),
+									Talent.experienced.withParameter("Tech"), // 6 XP
+									Talent.language.withParameter("Binary + Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Adeptus Mechanicus"), // 2 XP
 							},
 							new Bionic[] {
 									Bionic.augurArray,
@@ -268,14 +269,14 @@ public class Background {
 									Bionic.vocalImplant,
 							},
 							new Skill[] {
-									Skill.administerDrug.withBonus(10),
-									Skill.craft.withBonus(10),
-									Skill.hack.withBonus(10),
-									Skill.inspect.withBonus(10),
-									Skill.performSurgery.withBonus(20),
-									Skill.repair.withBonus(10),
-									Skill.treatWounds.withBonus(20),
-									Skill.useTech.withBonus(20),
+									Skill.administerDrug.withBonus(10), // 2 XP
+									Skill.craft.withBonus(10), // 2 XP
+									Skill.hack.withBonus(0), // 4 XP
+									Skill.inspect.withBonus(10), // 2 XP
+									Skill.performSurgery.withBonus(10), // 6 XP
+									Skill.repair.withBonus(10), // 2 XP
+									Skill.treatWounds.withBonus(20), // 10 XP
+									Skill.useTech.withBonus(10), // 6 XP
 							},
 							new Item[] {
 									Clothing.mechanicusRobes,
@@ -285,78 +286,33 @@ public class Background {
 									MiscItem.glowGlobe,
 							}
 					)
-			)
-			.withStartingPath(
-					new Path("Tech-Militant",
-							new String[] {
-									"Ballistic Skill +15",
-									"Intelligence +5",
-							},
-							new Talent[] {
-									Talent.gunslinger,
-									Talent.knowledgable.withParameter("Tech"),
-									Talent.language.withParameter("Binary + Low Gothic"),
-									Talent.luminenShock,
-									Talent.masterGunslinger,
-									Talent.operate.withParameter("1 Vehicle Type"),
-									Talent.trade.withParameter("Armourer"),
-							},
-							new Bionic[] {
-									Bionic.interfacePort,
-									Bionic.internalReservoir,
-									Bionic.luminenCapacitor,
-									Bionic.mechanicusImplants,
-									Bionic.mechadendrite_ballistic,
-									Bionic.mindImpulseUnit,
-									Bionic.vocalImplant,
-							},
-							new Skill[] {
-									Skill.craft.withBonus(10),
-									Skill.hack.withBonus(0),
-									Skill.repair.withBonus(10),
-									Skill.useTech.withBonus(20),
-							},
-							new Item[] {
-									Clothing.mechanicusRobes,
-									Armour.meshVest,
-									MeleeWeapon.staff_mechanicus,
-									RangedWeapon.laspistol,
-									Ammo.laspistol_powerPack.times(2),
-									Tool.auspex,
-									MiscItem.lampPack,
-							}
-					)
 			),
 			new Background("Adeptus Ministorum", "Leadership or Social")
 			.withStartingPath(
-					new Path("Cleric",
+					new Path("Cleric", // XP: 50/50
 							new String[] {
-									"Weapon Skill +5",
-									"Ballistic Skill +5",
-									"Strength +5",
-									"Toughness +5",
-									"Agility +5",
-									"Intelligence +5",
-									"Perception +5",
-									"Willpower +5",
-									"Fellowship +10",
+									"Weapon Skill +5", // 2 XP
+									"Ballistic Skill +5", // 2 XP
+									"Intelligence +5", // 2 XP
+									"Perception +5", // 2 XP
+									"Willpower +5", // 2 XP
+									"Fellowship +10", // 6 XP
 							},
 							new Talent[] {
-									Talent.experienced.withParameter("Imperial Creed"),
-									Talent.knowledgable.withParameter("Adeptus Ministorum"),
-									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.publicSpeaker,
-									Talent.trade_copyist,
-									Talent.trade_loremancer,
+									Talent.experienced.withParameter("Imperial Creed"), // 6 XP
+									Talent.knowledgable.withParameter("Adeptus Ministorum"), // 2 XP
+									Talent.language.withParameter("High Gothic + Low Gothic"), // 4 XP
+									Talent.peer.withParameter("Adeptus Ministorum"), // 2 XP
+									Talent.publicSpeaker, // 4 XP
+									Talent.trade_copyist, // 2 XP
+									Talent.trade_loremancer, // 2 XP
 							},
 							new Skill[] {
-									Skill.craft.withBonus(10),
-									Skill.command.withBonus(10),
-									Skill.inquire.withBonus(10),
-									Skill.inspire.withBonus(10),
-									Skill.persuade.withBonus(10),
-									Skill.referenceCommonLore.withBonus(10),
-									Skill.treatWounds.withBonus(0),
+									Skill.command.withBonus(10), // 2 XP
+									Skill.inquire.withBonus(10), // 2 XP
+									Skill.inspire.withBonus(10), // 2 XP
+									Skill.referenceLore.withBonus(10), // 2 XP
+									Skill.treatWounds.withBonus(0), // 4 XP
 							},
 							new Item[] {
 									Clothing.ministorumRobes,
@@ -370,27 +326,28 @@ public class Background {
 			),
 			new Background("Imperial Guard", "Fieldcraft or Leadership")
 			.withStartingPath(
-					new Path("Veteran",
+					new Path("Veteran", // XP: 50/50
 							new String[] {
-									"Weapon Skill +10",
-									"Ballistic Skill +15",
-									"Strength +10",
-									"Toughness +10",
+									"Weapon Skill +10", // 6 XP
+									"Ballistic Skill +10", // 6 XP
+									"Strength +10", // 6 XP
+									"Toughness +10", // 6 XP
+									"Agility +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.language.withParameter("Low Gothic"),
-									Talent.nervesOfSteel,
-									Talent.rapidReload,
-									Talent.recoilCompensation,
-									Talent.weaponFamiliarity_ranged.withParameter("Lasgun"),
-									Talent.weaponMaster_ranged.withParameter("Lasgun"),
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.nervesOfSteel, // 4 XP
+									Talent.peer.withParameter("Imperial Guard"), // 2 XP
+									Talent.rapidReload, // 2 XP
+									Talent.weaponFamiliarity_ranged.withParameter("Lasgun"), // 2 XP
 							},
 							new Skill[] {
-									Skill.command.withBonus(10),
-									Skill.navigate.withBonus(10),
-									Skill.notice.withBonus(10),
-									Skill.reflex.withBonus(10),
-									Skill.parry.withBonus(10),
+									Skill.command.withBonus(10), // 2 XP
+									Skill.dodge.withBonus(10), // 2 XP
+									Skill.navigate.withBonus(10), // 2 XP
+									Skill.parry.withBonus(10), // 2 XP
+									Skill.reflex.withBonus(10), // 2 XP
+									Skill.run.withBonus(10), // 2 XP
 							},
 							new Item[] {
 									Clothing.militaryUniform,
@@ -405,30 +362,27 @@ public class Background {
 			),
 			new Background("Outcast", "Fieldcraft or Social")
 			.withStartingPath(
-					new Path("Rogue",
+					new Path("Rogue", // XP: 50/50
 							new String[] {
-									"Agility +10",
-									"Intelligence +5",
-									"Perception +5",
-									"Fellowship +10",
+									"Agility +10", // 6 XP
+									"Intelligence +5", // 2 XP
+									"Perception +10", // 6 XP
+									"Fellowship +10", // 6 XP
 							},
 							new Talent[] {
-									Talent.accustomedToDarkness,
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic"),
-									Talent.quickEntry,
-									Talent.sprinter,
-									Talent.trade_survivalist,
-									Talent.trade_swindler,
-									Talent.tricksOfTheTrade,
+									Talent.experienced.withParameter("Underworld"), // 6 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Underworld"), // 2 XP
+									Talent.trade_survivalist, // 2 XP
+									Talent.trade_swindler, // 2 XP
 							},
 							new Skill[] {
-									Skill.charm.withBonus(10),
-									Skill.deceive.withBonus(10),
-									Skill.run.withBonus(10),
-									Skill.search.withBonus(10),
-									Skill.sneak.withBonus(20),
-									Skill.unlock.withBonus(20),
+									Skill.charm.withBonus(10), // 2 XP
+									Skill.deceive.withBonus(10), // 2 XP
+									Skill.notice.withBonus(10), // 2 XP
+									Skill.run.withBonus(10), // 2 XP
+									Skill.sneak.withBonus(10), // 2 XP
+									Skill.unlock.withBonus(10), // 6 XP
 							},
 							new Item[] {
 									Clothing.streetClothes,
@@ -440,28 +394,27 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Ganger",
+					new Path("Ganger", // XP: 50/50
 							new String[] {
-									"Weapon Skill +10",
-									"Ballistic Skill +10",
-									"Strength +10",
-									"Toughness +10",
-									"Agility +5",
-									"Perception +5",
+									"Weapon Skill +5", // 2 XP
+									"Ballistic Skill +10", // 6 XP
+									"Strength +10", // 6 XP
+									"Toughness +10", // 6 XP
+									"Agility +5", // 2 XP
+									"Perception +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic"),
+									Talent.experienced.withParameter("Underworld"), // 6 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Underworld"), // 2 XP
 							},
 							new Skill[] {
-									Skill.dodge.withBonus(10),
-									Skill.intimidate.withBonus(20),
-									Skill.notice.withBonus(10),
-									Skill.reflex.withBonus(10),
-									Skill.run.withBonus(10),
-									Skill.search.withBonus(10),
-									Skill.sneak.withBonus(10),
-									Skill.unlock.withBonus(0),
+									Skill.dodge.withBonus(10), // 2 XP
+									Skill.intimidate.withBonus(20), // 6 XP
+									Skill.notice.withBonus(10), // 2 XP
+									Skill.reflex.withBonus(10), // 2 XP
+									Skill.run.withBonus(10), // 2 XP
+									Skill.sneak.withBonus(10), // 2 XP
 							},
 							new Item[] {
 									Armour.gangLeathers,
@@ -474,26 +427,26 @@ public class Background {
 					)
 			)
 			.withStartingPath(
-					new Path("Assassin",
+					new Path("Assassin", // XP: 50/50
 							new String[] {
-									"Weapon Skill +10",
-									"Ballistic Skill +10",
-									"Agility +5",
-									"Perception +5",
+									"Weapon Skill +10", // 6 XP
+									"Ballistic Skill +10", // 6 XP
+									"Perception +5", // 2 XP
 							},
 							new Talent[] {
-									Talent.accustomedToDarkness,
-									Talent.assassinStrike,
-									Talent.carefulStrikes,
-									Talent.knowledgable.withParameter("Underworld"),
-									Talent.language.withParameter("Low Gothic"),
-									Talent.marksman,
+									Talent.accustomedToDarkness, // 2 XP
+									Talent.assassinStrike, // 8 XP
+									Talent.knowledgable.withParameter("Underworld"), // 2 XP
+									Talent.language.withParameter("Low Gothic"), // 2 XP
+									Talent.peer.withParameter("Underworld"), // 2 XP
+									Talent.sniperShot, // 8 XP
 							},
 							new Skill[] {
-									Skill.conceal.withBonus(20),
-									Skill.deceive.withBonus(20),
-									Skill.disguise.withBonus(20),
-									Skill.sneak.withBonus(20),
+									Skill.conceal.withBonus(10), // 2 XP
+									Skill.deceive.withBonus(10), // 2 XP
+									Skill.disguise.withBonus(10), // 2 XP
+									Skill.sneak.withBonus(10), // 2 XP
+									Skill.unlock.withBonus(0), // 4 XP
 							},
 							new Item[] {
 									Clothing.streetClothes,

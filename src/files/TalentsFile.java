@@ -26,10 +26,10 @@ class TalentsFile implements PrintableFile {
 		printer.printTableRow_talent(Talent.sprinter);
 		printer.printTableRow_talent(Talent.teamFighting);
 		printer.printTableRow_talent(Talent.unarmedMaster);
-		printer.printTableRow_talent(Talent.weaponFamiliarity_melee);
-		printer.printTableRow_talent(Talent.weaponFamiliarity_ranged);
-		printer.printTableRow_talent(Talent.weaponMaster_melee);
-		printer.printTableRow_talent(Talent.weaponMaster_ranged);
+		printer.printTableRow_talent(Talent.weaponFamiliarity_melee.withParameter("Specify a melee weapon"));
+		printer.printTableRow_talent(Talent.weaponFamiliarity_ranged.withParameter("Specify a ranged weapon"));
+		printer.printTableRow_talent(Talent.weaponMaster_melee.withParameter("Specify a melee weapon"));
+		printer.printTableRow_talent(Talent.weaponMaster_ranged.withParameter("Specify a ranged weapon"));
 		printer.printTableRow_talent(Talent.wrestler);
 		printer.printTableTail();
 		printer.printCollapsibleTail();

@@ -36,19 +36,19 @@ public class Talent extends SpecialRule {
 			"-", "Weapon Skill", 2);
 	public static final Talent unarmedMaster = new Talent("Unarmed Master",
 			"Get a +10 bonus to all unarmed melee attacks.",
-			"-", "Weapon Skill", 8);
+			"-", "Weapon Skill", 6);
 	public static final Talent weaponFamiliarity_melee = new Talent("Weapon Familiarity",
-			"You can maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.",
+			"You can maintain this weapon without the Use Tech skill and it does not become Damaged on critical failure when doing so.",
 			"-", "Weapon Skill", 2);
 	public static final Talent weaponFamiliarity_ranged = new Talent("Weapon Familiarity",
-			"You can clear jams and maintain the chosen weapon without the Use Tech skill. The weapon does not become Damaged on critical failure when doing so.",
+			"You can clear jams and maintain this weapon without the Use Tech skill and it does not become Damaged on critical failure when doing so.",
 			"-", "Ballistic Skill", 2);
 	public static final Talent weaponMaster_melee = new Talent("Weapon Master",
-			"Get a +10 bonus to Weapon Skill when using the chosen melee weapon.",
-			"Weapon Familiarity", "Weapon Skill", 4);
+			"Get a +10 bonus to Weapon Skill when using this weapon. You can maintain this weapon without the Use Tech skill and it does not become Damaged on critical failure when doing so.",
+			Talent.weaponFamiliarity_melee+UPGRADE_MARK, "Weapon Skill", 4);
 	public static final Talent weaponMaster_ranged = new Talent("Weapon Master",
-			"Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon.",
-			"Weapon Familiarity", "Ballistic Skill", 4);
+			"Get a +10 bonus to Ballistic Skill when using the chosen ranged weapon. You can clear jams and maintain this weapon without the Use Tech skill and it does not become Damaged on critical failure when doing so.",
+			Talent.weaponFamiliarity_ranged+UPGRADE_MARK, "Ballistic Skill", 4);
 	public static final Talent wrestler = new Talent("Wrestler",
 			"Get a +10 bonus to Grapple per free hand.",
 			"Grapple (+20)", "Strength", 4);
@@ -397,16 +397,16 @@ public class Talent extends SpecialRule {
 			"Get a +20 bonus to "+Skill.referenceLore+" for this area.",
 			"-", "General", 2);
 	public static final Talent experienced = new Talent("Experienced",
-			"Get a +30 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			"Get a +30 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), you get double the number of points of info.",
 			Talent.knowledgable+UPGRADE_MARK, "General", 4);
 	public static final Talent educated = new Talent("Educated",
 			"You can "+Skill.referenceLore+" for this area.",
 			"-", "Intelligence", 2);
 	public static final Talent specialist = new Talent("Specialist",
-			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), you get double the number of points of info.",
 			Talent.educated+UPGRADE_MARK, "Intelligence", 4);
 	public static final Talent expert = new Talent("Expert",
-			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed and if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
+			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), you get double the number of points of info and, if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
 			Talent.specialist+UPGRADE_MARK, "Intelligence", 6);
 	public static final Talent naturalExpertise = new Talent("Natural Expertise",
 			"You treat this area as a common lore area.",
@@ -415,10 +415,10 @@ public class Talent extends SpecialRule {
 			"You can "+Skill.referenceLore+" for this area.",
 			"Forbidden Lore (+0)", "Intelligence", 4);
 	public static final Talent darkSecrets = new Talent("Dark Secrets",
-			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), you get double the number of points of info.",
 			Talent.unveiledSecrets+UPGRADE_MARK, "Intelligence", 6);
 	public static final Talent deepestSecrets = new Talent("Deepest Secrets",
-			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed and if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
+			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), you get double the number of points of info and, if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
 			Talent.darkSecrets+UPGRADE_MARK, "Intelligence", 8);
 	
 	// Trades //

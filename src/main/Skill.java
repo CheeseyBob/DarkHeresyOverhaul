@@ -71,11 +71,13 @@ public class Skill {
 			Aptitude.WP, Aptitude.Social, true, "Long");
 	public static final Skill referenceLore = new Skill("Reference Lore",
 			Aptitude.Int, Aptitude.Knowledge, true, "Varies");
-	// TODO - combine the three lore skills into one.
+	@Deprecated
 	public static final Skill referenceCommonLore = new Skill("Ref. Common Lore",
 			Aptitude.Int, Aptitude.General, true, "Varies");
+	@Deprecated
 	public static final Skill referenceForbiddenLore = new Skill("Ref. Forbidden Lore",
 			Aptitude.Int, Aptitude.Knowledge, false, "Varies");
+	@Deprecated
 	public static final Skill referenceScholasticLore = new Skill("Ref. Scholastic Lore",
 			Aptitude.Int, Aptitude.Knowledge, false, "Varies");
 	public static final Skill search = new Skill("Search",

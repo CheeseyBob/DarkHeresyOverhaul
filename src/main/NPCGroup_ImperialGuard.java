@@ -119,17 +119,18 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		npcList.add(npc);
 		
-		npc = new NPC("Veteran", "40,45,40,40,30,30,30,30,30");
+		npc = new NPC("Veteran", "40,45,40,40,30,30,30,30,30"); // 6+14+6+6=32 XP
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.nervesOfSteel);
-		npc.specialRuleList.add(Talent.rapidReload);
-		npc.specialRuleList.add(Talent.recoilCompensation);
-		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Lasgun"));
-		npc.skillList.add(Skill.command.withBonus(10));
-		npc.skillList.add(Skill.navigate.withBonus(10));
-		npc.skillList.add(Skill.notice.withBonus(10));
-		npc.skillList.add(Skill.reflex.withBonus(10));
-		npc.skillList.add(Skill.parry.withBonus(10));
+		npc.specialRuleList.add(Talent.nervesOfSteel);// 4 XP
+		npc.specialRuleList.add(Talent.rapidReload);// 2 XP
+		npc.specialRuleList.add(Talent.recoilCompensation);// 4 XP
+		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Lasgun"));// 6 XP
+		npc.skillList.add(Skill.command.withBonus(10));// 2 XP
+		npc.skillList.add(Skill.navigate.withBonus(10));// 2 XP
+		npc.skillList.add(Skill.notice.withBonus(10));// 2 XP
+		npc.skillList.add(Skill.reflex.withBonus(10));// 2 XP
+		npc.skillList.add(Skill.parry.withBonus(10));// 2 XP
 		npc.equippedItemList.add(Clothing.militaryUniform);
 		npc.equippedItemList.add(Armour.flakArmour);
 		npc.inventoryList.add(RangedWeapon.lasgun_bayonet);
@@ -138,11 +139,13 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
+		// XP: 32+2+4+2+4+6+2+2+2+2+2=60/60
 		npcList.add(npc);
 		
 		npc = new NPC("Assault Veteran", "40,45,40,40,35,30,30,30,30");
 		npc.specialRuleList.add(Talent.assaultFire);
 		npc.specialRuleList.add(Talent.hipShooting);
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.nervesOfSteel);
 		npc.specialRuleList.add(Talent.rapidReload);
@@ -167,16 +170,17 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npcList.add(npc);
 		
 		npc = new NPC("Lieutenant", "40,45,40,40,30,30,30,30,35");
-		npc.specialRuleList.add(Talent.commanding);
-		npc.specialRuleList.add(Talent.language.withParameter("Imperial Codes + Low Gothic"));
-		npc.specialRuleList.add(Talent.nervesOfSteel);
-		npc.specialRuleList.add(Talent.rapidReload);
-		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Laspistol"));
-		npc.skillList.add(Skill.command.withBonus(20));
-		npc.skillList.add(Skill.navigate.withBonus(20));
-		npc.skillList.add(Skill.notice.withBonus(20));
-		npc.skillList.add(Skill.reflex.withBonus(10));
-		npc.skillList.add(Skill.parry.withBonus(10));
+		npc.specialRuleList.add(Talent.commanding);// 4 XP
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
+		npc.specialRuleList.add(Talent.language.withParameter("Imperial Codes + Low Gothic"));// 4 XP
+		npc.specialRuleList.add(Talent.nervesOfSteel);// 4 XP
+		npc.specialRuleList.add(Talent.rapidReload);// 2 XP
+		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Laspistol"));// 6 XP
+		npc.skillList.add(Skill.command.withBonus(20));// 6 XP
+		npc.skillList.add(Skill.navigate.withBonus(20));// 6 XP
+		npc.skillList.add(Skill.notice.withBonus(20));// 6 XP
+		npc.skillList.add(Skill.reflex.withBonus(10));// 2 XP
+		npc.skillList.add(Skill.parry.withBonus(10));// 2 XP
 		npc.equippedItemList.add(Clothing.militaryUniform);
 		npc.equippedItemList.add(Armour.flakArmour);
 		npc.inventoryList.add(MeleeWeapon.longsword);
@@ -186,9 +190,11 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
+		// XP: ??/80
 		npcList.add(npc);
 		
 		npc = new NPC("Scout", "40,45,40,40,35,30,30,30,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.nervesOfSteel);
 		npc.specialRuleList.add(Talent.rapidReload);
@@ -218,6 +224,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc = new NPC("Shock Trooper", "45,45,40,40,40,30,35,30,30");
 		npc.specialRuleList.add(Talent.assaultFire);
 		npc.specialRuleList.add(Talent.hipShooting);
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.nervesOfSteel);
 		npc.specialRuleList.add(Talent.rapidReload);
@@ -271,6 +278,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npcList.add(npc);
 		
 		npc = new NPC("Marksman", "40,50,40,40,35,30,35,30,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.marksman);
 		npc.specialRuleList.add(Talent.nervesOfSteel);
@@ -303,6 +311,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.specialRuleList.add(Talent.assaultFire);
 		npc.specialRuleList.add(Talent.constantVigilance);
 		npc.specialRuleList.add(Talent.hipShooting);
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Imperial Codes + Low Gothic"));
 		npc.specialRuleList.add(Talent.nervesOfSteel);
 		npc.specialRuleList.add(Talent.rapidReload);
@@ -332,7 +341,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc = new NPC("Commander", "40,45,40,40,30,35,35,35,40");
 		npc.specialRuleList.add(Talent.commanding);
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Guard + War"));
-		npc.specialRuleList.add(Talent.specialist.withParameter("Tactica Imperialis"));
+		npc.specialRuleList.add(Talent.expert.withParameter("Tactica Imperialis"));
 		npc.specialRuleList.add(Talent.haloOfCommand);
 		npc.specialRuleList.add(Talent.intoTheJawsOfHell);
 		npc.specialRuleList.add(Talent.ironDiscipline);
@@ -343,10 +352,11 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.specialRuleList.add(Talent.rapidReload);
 		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Laspistol"));
 		npc.skillList.add(Skill.command.withBonus(30));
+		npc.skillList.add(Skill.inspire.withBonus(10));
+		npc.skillList.add(Skill.intimidate.withBonus(10));
 		npc.skillList.add(Skill.navigate.withBonus(20));
 		npc.skillList.add(Skill.notice.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(20));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(20));// 6 XP
 		npc.skillList.add(Skill.reflex.withBonus(10));
 		npc.skillList.add(Skill.parry.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
@@ -362,6 +372,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npcList.add(npc);
 		
 		npc = new NPC("Sniper", "40,55,40,40,35,30,35,30,30");
+		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.specialRuleList.add(Talent.marksman);
 		npc.specialRuleList.add(Talent.nervesOfSteel);

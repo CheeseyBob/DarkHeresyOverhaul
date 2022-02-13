@@ -144,7 +144,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.craft.withBonus(20));
 		npc.skillList.add(Skill.hack.withBonus(20));
 		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.repair.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(20));
 		npc.equippedItemList.add(Clothing.mechanicusRobes);
@@ -176,7 +176,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.hack.withBonus(20));
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(20));
 		npc.skillList.add(Skill.repair.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(20));
 		npc.equippedItemList.add(Clothing.mechanicusRobes);
@@ -211,7 +211,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.navigate.withBonus(10));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(20));
 		npc.skillList.add(Skill.repair.withBonus(30));
 		npc.skillList.add(Skill.search.withBonus(10));
 		npc.skillList.add(Skill.useTech.withBonus(30));
@@ -253,8 +253,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.inquire.withBonus(20));
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(20));
-		npc.skillList.add(Skill.referenceForbiddenLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
 		npc.skillList.add(Skill.repair.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(20));
 		npc.equippedItemList.add(Clothing.mechanicusRobes);
@@ -290,7 +289,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.navigate.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.repair.withBonus(30));
 		npc.skillList.add(Skill.search.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(30));
@@ -308,8 +307,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		
 		npc = new NPC("Magos", "30,30,40,40,40,50,65,30,30");
 		npc.insanity = 20;
-		npc.specialRuleList.add(Talent.darkSecrets.withParameter("Archeotech + The Warp"));
-		npc.specialRuleList.add(Talent.deepestSecrets);
+		npc.specialRuleList.add(Talent.deepestSecrets.withParameter("Archeotech + The Warp"));
 		npc.specialRuleList.add(Talent.educated.withParameter("Astronomy + Chymistry + Cryptology + Numerology"));
 		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
 		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
@@ -333,9 +331,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.inquire.withBonus(20));
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(20));
-		npc.skillList.add(Skill.referenceForbiddenLore.withBonus(20));
-		npc.skillList.add(Skill.referenceScholasticLore.withBonus(20));
+		npc.skillList.add(Skill.referenceLore.withBonus(30));
 		npc.skillList.add(Skill.repair.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(20));
 		npc.equippedItemList.add(Clothing.mechanicusRobes);
@@ -373,7 +369,7 @@ class NPCGroup_AdeptusMechanicus extends NPCGroup {
 		npc.skillList.add(Skill.inspect.withBonus(20));
 		npc.skillList.add(Skill.interrogate.withBonus(10));
 		npc.skillList.add(Skill.navigate.withBonus(20));
-		npc.skillList.add(Skill.referenceCommonLore.withBonus(10));
+		npc.skillList.add(Skill.referenceLore.withBonus(10));
 		npc.skillList.add(Skill.repair.withBonus(30));
 		npc.skillList.add(Skill.search.withBonus(20));
 		npc.skillList.add(Skill.useTech.withBonus(30));
