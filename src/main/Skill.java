@@ -3,7 +3,7 @@ package main;
 
 public class Skill {
 	public String name;
-	public int bonus;
+	public Integer bonus = null;
 	public Aptitude aptitude1, aptitude2;
 	public boolean isBasic;
 	public String usage;
@@ -31,7 +31,11 @@ public class Skill {
 	
 	@Override
 	public String toString() {
-		return getFullName();
+		if(bonus == null) {
+			return name;
+		} else {
+			return getFullName();
+		}
 	}
 	
 	// General Skills //

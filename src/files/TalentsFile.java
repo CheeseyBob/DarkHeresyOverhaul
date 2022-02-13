@@ -17,6 +17,7 @@ class TalentsFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
+		printer.printParagraph("When a Talent's requirement is marked with a "+Talent.UPGRADE_MARK+", this indicates the Talent is an upgrade and replaces the requirement.");
 		printer.printHeader_collapsible("General");
 		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
@@ -214,10 +215,8 @@ class TalentsFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.creativeProblemSolving);
-		printer.printTableRow_talent(Talent.deepestSecrets);
-		printer.printTableRow_talent(Talent.specialistKnowledge);
-		printer.printTableRow_talent(Talent.language.withParameter("Specify*"));
-		printer.printTableRow_note("*A language:" + "\n"
+		printer.printTableRow_talent(Talent.language.withParameter("Specify a language"));
+		printer.printTableRow_note("Languages:" + "\n"
 				+ "<ul>" + "\n"
 				+ "<li>Low Gothic: The common tongue of the Imperium.</li>" + "\n"
 				+ "<li>High Gothic: The language used by Imperial officials, clergy and nobility.</li>" + "\n"
@@ -226,9 +225,9 @@ class TalentsFile implements PrintableFile {
 				+ "<li>Chaos Marks: The symbols and signs that followers of the Ruinous Powers use to share their dark secrets.</li>" + "\n"
 				+ "<li>A Xeno Language.</li>" + "\n"
 				+ "</ul>");
-		printer.printTableRow_talent(Talent.knowledgable.withParameter("Specify*"));
-		printer.printTableRow_talent(Talent.experienced.withParameter("Specify*"));
-		printer.printTableRow_note("*A common lore area:" + "\n"
+		printer.printTableRow_talent(Talent.knowledgable.withParameter("Specify a common lore area"));
+		printer.printTableRow_talent(Talent.experienced.withParameter("Specify a common lore area"));
+		printer.printTableRow_note("Common lore areas:" + "\n"
 				+ "<ul>" + "\n"
 				+ "<li>Adeptus Administratum: The vast beaurocracy that administers the domains of the Imperium, including its labyrinthine workings, rules, traditions and dictates.</li>" + "\n"
 				+ "<li>Adeptus Arbites: The keepers of Imperial law and enforcers of loyalty to the Golden Throne, including details of rank structure, common procedures and the basic tents of Imperial justice.</li>" + "\n"
@@ -242,10 +241,11 @@ class TalentsFile implements PrintableFile {
 				+ "<li>Underworld: Crime and sedition within the Imperium, including the many organisations that operate outside the bounds of Imperial legal authorities.</li>" + "\n" 
 				+ "<li>War: The great battles, famous strategems, heroes, and notable commanders of the endless battles for and against the Imperium.</li>" + "\n"
 				+ "</ul>");
-		printer.printTableRow_talent(Talent.educated.withParameter("Specify*"));
-		printer.printTableRow_talent(Talent.expert.withParameter("Specify*"));
-		printer.printTableRow_talent(Talent.naturalExpertise.withParameter("Specify*"));
-		printer.printTableRow_note("*A scholastic lore area:" + "\n"
+		printer.printTableRow_talent(Talent.educated.withParameter("Specify a scholasic lore area"));
+		printer.printTableRow_talent(Talent.specialist.withParameter("Specify a scholasic lore area"));
+		printer.printTableRow_talent(Talent.expert.withParameter("Specify a scholasic lore area"));
+		printer.printTableRow_talent(Talent.naturalExpertise.withParameter("Specify a scholasic lore area"));
+		printer.printTableRow_note("Scholastic lore areas:" + "\n"
 				+ "<ul>" + "\n"
 				+ "<li>Astromancy: Stars, the worlds around them, cosmic phenomena and astrolithic charts.</li>" + "\n"
 				+ "<li>Beasts: The many animals and beasts found across the sector.</li>" + "\n"
@@ -260,9 +260,10 @@ class TalentsFile implements PrintableFile {
 				+ "<li>Tactica Imperialis: The codified military doctrines of the Imperial Guard, including theories of war, troop deployment and battle techniques.</li>" + "\n"
 				+ "<li>Theology: The rituals of the Ecclesiarchy, the construction of their temples and the finer points of liturgy.</li>" + "\n"
 				+ "</ul>");
-		printer.printTableRow_talent(Talent.unveiledSecrets.withParameter("Specify*"));
-		printer.printTableRow_talent(Talent.darkSecrets.withParameter("Specify*"));
-		printer.printTableRow_note("*A forbidden lore area:" + "\n"
+		printer.printTableRow_talent(Talent.unveiledSecrets.withParameter("Specify a forbidden lore area"));
+		printer.printTableRow_talent(Talent.darkSecrets.withParameter("Specify a forbidden lore area"));
+		printer.printTableRow_talent(Talent.deepestSecrets.withParameter("Specify a forbidden lore area"));
+		printer.printTableRow_note("Forbidden lore areas:" + "\n"
 				+ "<ul>" + "\n"
 				+ "<li>Archeotech: The great lost tech devices of times past, and clues to their functions and purposes.</li>" + "\n"
 				+ "<li>Daemonology: Warp entities and their twisted manifestations.</li>" + "\n"

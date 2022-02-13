@@ -388,38 +388,38 @@ public class Talent extends SpecialRule {
 	
 	// Knowledge //
 	public static final Talent creativeProblemSolving = new Talent("Creative Problem Solving",
-			"You can Reference Lore (Assist) even after you failed to Identify the item or character in question.",
+			"You can "+Skill.referenceLore+" (Assist) even after you failed to Identify the item or character in question.",
 			"Intelligence 40", "Intelligence", 8);
-	public static final Talent deepestSecrets = new Talent("Deepest Secrets",
-			"If you successfully Reference Forbidden Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.",
-			"Forbidden Lore (+20)", "Intelligence", 8);
-	public static final Talent specialistKnowledge = new Talent("Specialist Knowledge",
-			"If you successfully Reference Scholastic Lore, you can spend a Fate Point to reroll and add the Degrees of Success (you still succeed if the reroll fails). You may do this multiple times.",
-			"Scholastic Lore (+20)", "Intelligence", 8);
 	public static final Talent language = new Talent("Language",
 			"You know this language.",
 			"-", "Intelligence", 2);
 	public static final Talent knowledgable = new Talent("Knowledgable",
-			"Get a +20 bonus to Reference Common Lore for this area.",
+			"Get a +20 bonus to "+Skill.referenceLore+" for this area.",
 			"-", "General", 2);
 	public static final Talent experienced = new Talent("Experienced",
-			"Get a +20 bonus to Reference Common Lore for this area and there is no maximum number of points of info revealed when you Reference Common Lore (Identify) and the maximum aspect level is doubled when you Reference Common Lore (Assist).",
-			"Knowledgable"+UPGRADE_MARK, "General", 4);
+			"Get a +30 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			Talent.knowledgable+UPGRADE_MARK, "General", 4);
 	public static final Talent educated = new Talent("Educated",
-			"You can Reference Scholastic Lore for this area.",
-			"Scholastic Lore (+0)", "Intelligence", 2);
+			"You can "+Skill.referenceLore+" for this area.",
+			"-", "Intelligence", 2);
+	public static final Talent specialist = new Talent("Specialist",
+			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			Talent.educated+UPGRADE_MARK, "Intelligence", 4);
 	public static final Talent expert = new Talent("Expert",
-			"For this area, there is no maximum number of points of info revealed when you Reference Scholastic Lore (Identify) and the maximum aspect level is doubled when you Reference Scholastic Lore (Assist).",
-			"Educated"+UPGRADE_MARK, "Intelligence", 4);
+			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed and if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
+			Talent.specialist+UPGRADE_MARK, "Intelligence", 6);
 	public static final Talent naturalExpertise = new Talent("Natural Expertise",
-			"For this area, you can Reference Common Lore instead of Reference Scholastic Lore.",
+			"You treat this area as a common lore area.",
 			"Character Creation Only", "Intelligence", 4);
 	public static final Talent unveiledSecrets = new Talent("Unveiled Secrets",
-			"You can Reference Forbidden Lore for this area.",
-			"Forbidden Lore (+0)", "Intelligence", 2);
+			"You can "+Skill.referenceLore+" for this area.",
+			"Forbidden Lore (+0)", "Intelligence", 4);
 	public static final Talent darkSecrets = new Talent("Dark Secrets",
-			"For this area, there is no maximum number of points of info revealed when you Reference Forbidden Lore (Identify) and the maximum aspect level is doubled when you Reference Forbidden Lore (Assist).",
-			"Unveiled Secrets"+UPGRADE_MARK, "Intelligence", 4);
+			"Get a +10 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed.",
+			Talent.unveiledSecrets+UPGRADE_MARK, "Intelligence", 6);
+	public static final Talent deepestSecrets = new Talent("Deepest Secrets",
+			"Get a +20 bonus to "+Skill.referenceLore+" for this area. When you "+Skill.referenceLore+" (Identify), there is no maximum points of info revealed and if you are successful, you can spend a Fate Point to reroll and add the Degrees of Success together (you still succeed if the reroll fails and may do this multiple times).",
+			Talent.darkSecrets+UPGRADE_MARK, "Intelligence", 8);
 	
 	// Trades //
 	public static final Talent trade = new Talent("Trade",

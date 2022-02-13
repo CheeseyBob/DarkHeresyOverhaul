@@ -332,7 +332,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc = new NPC("Commander", "40,45,40,40,30,35,35,35,40");
 		npc.specialRuleList.add(Talent.commanding);
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Guard + War"));
-		npc.specialRuleList.add(Talent.expert.withParameter("Tactica Imperialis"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Tactica Imperialis"));
 		npc.specialRuleList.add(Talent.haloOfCommand);
 		npc.specialRuleList.add(Talent.intoTheJawsOfHell);
 		npc.specialRuleList.add(Talent.ironDiscipline);

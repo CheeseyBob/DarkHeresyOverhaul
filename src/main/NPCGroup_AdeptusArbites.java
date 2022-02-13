@@ -186,7 +186,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		
 		npc = new NPC("Magistrate", "40,40,40,40,35,45,40,35,35");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
-		npc.specialRuleList.add(Talent.expert.withParameter("Judgement"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Judgement"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.skillList.add(Skill.contemplate.withBonus(10));
@@ -237,10 +237,10 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		
 		npc = new NPC("Justicar", "40,40,40,40,35,45,40,35,35");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
-		npc.specialRuleList.add(Talent.expert.withParameter("Judgement"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Judgement"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.specialistKnowledge);
+		npc.specialRuleList.add(Talent.expert);
 		npc.skillList.add(Skill.contemplate.withBonus(30));
 		npc.skillList.add(Skill.inquire.withBonus(30));
 		npc.skillList.add(Skill.inspect.withBonus(10));

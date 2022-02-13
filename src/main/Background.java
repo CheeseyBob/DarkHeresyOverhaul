@@ -27,10 +27,10 @@ public class Background {
 							},
 							new Talent[] {
 									Talent.educated.withParameter("Bureaucracy"),
-									Talent.expert.withParameter("2 Areas"),
+									Talent.specialist.withParameter("2 Areas"),
 									Talent.knowledgable.withParameter("Administratum"),
 									Talent.language.withParameter("High Gothic + Low Gothic"),
-									Talent.specialistKnowledge,
+									Talent.expert,
 									Talent.trade_copyist,
 							},
 							new Skill[] {

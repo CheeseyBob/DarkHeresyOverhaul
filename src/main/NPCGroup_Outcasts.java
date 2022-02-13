@@ -260,7 +260,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		
 		npc = new NPC("Gang Boss", "40,40,40,40,40,30,35,30,40");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.expert.withParameter("Underworld"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.peer.withParameter("Underworld"));
 		npc.skillList.add(Skill.command.withBonus(20));
 		npc.skillList.add(Skill.conceal.withBonus(10));
@@ -333,7 +333,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		
 		npc = new NPC("Gang Lord", "40,40,40,40,40,40,40,40,45");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.expert.withParameter("Underworld"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Underworld"));
 		npc.specialRuleList.add(Talent.peer.withParameter("Underworld"));
 		npc.skillList.add(Skill.command.withBonus(20));
 		npc.skillList.add(Skill.conceal.withBonus(10));

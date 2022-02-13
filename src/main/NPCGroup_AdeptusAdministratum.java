@@ -74,10 +74,10 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		
 		npc = new NPC("Scholar", "30,30,30,30,30,40,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
-		npc.specialRuleList.add(Talent.expert.withParameter("2 Areas"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("2 Areas"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Administratum"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
-		npc.specialRuleList.add(Talent.specialistKnowledge);
+		npc.specialRuleList.add(Talent.expert);
 		npc.specialRuleList.add(Talent.trade_copyist);
 		npc.skillList.add(Skill.contemplate.withBonus(10));
 		npc.skillList.add(Skill.inquire.withBonus(10));
@@ -125,10 +125,10 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		
 		npc = new NPC("Lexographer", "30,30,30,30,30,45,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
-		npc.specialRuleList.add(Talent.expert.withParameter("3 Areas"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("3 Areas"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Administratum"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
-		npc.specialRuleList.add(Talent.specialistKnowledge);
+		npc.specialRuleList.add(Talent.expert);
 		npc.specialRuleList.add(Talent.trade_copyist);
 		npc.skillList.add(Skill.contemplate.withBonus(20));
 		npc.skillList.add(Skill.inquire.withBonus(10));
@@ -181,10 +181,10 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc = new NPC("Loremaster", "30,30,30,30,30,45,30,35,30");
 		npc.insanity = 4;
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
-		npc.specialRuleList.add(Talent.expert.withParameter("3 Areas"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("3 Areas"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Administratum"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
-		npc.specialRuleList.add(Talent.specialistKnowledge);
+		npc.specialRuleList.add(Talent.expert);
 		npc.specialRuleList.add(Talent.trade_copyist);
 		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("2 Areas"));
 		npc.skillList.add(Skill.contemplate.withBonus(30));
@@ -223,10 +223,10 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.specialRuleList.add(Talent.darkSecrets.withParameter("2 Areas"));
 		npc.specialRuleList.add(Talent.deepestSecrets);
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
-		npc.specialRuleList.add(Talent.expert.withParameter("3 Areas"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("3 Areas"));
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Administratum"));
 		npc.specialRuleList.add(Talent.language.withParameter("High Gothic + Low Gothic"));
-		npc.specialRuleList.add(Talent.specialistKnowledge);
+		npc.specialRuleList.add(Talent.expert);
 		npc.specialRuleList.add(Talent.trade_copyist);
 		npc.skillList.add(Skill.contemplate.withBonus(30));
 		npc.skillList.add(Skill.inquire.withBonus(10));

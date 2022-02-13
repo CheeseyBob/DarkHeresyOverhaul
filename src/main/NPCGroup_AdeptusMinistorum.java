@@ -186,7 +186,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.specialRuleList.add(Talent.commanding);
 		npc.specialRuleList.add(Talent.educated.withParameter("Heraldry + Occult + Philosophy"));
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
-		npc.specialRuleList.add(Talent.expert.withParameter("Theology"));
+		npc.specialRuleList.add(Talent.specialist.withParameter("Theology"));
 		npc.specialRuleList.add(Talent.haloOfCommand);
 		npc.specialRuleList.add(Talent.inspiring);
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Ministorum"));
