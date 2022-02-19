@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class NPC {
 	String id, name;
-	
+	int size = 7;
 	int wounds, insanity, corruption;
 	int weaponSkill, ballisticSkill, strength, toughness, agility, intelligence, perception, willpower, fellowship;
 	
@@ -34,6 +34,60 @@ public class NPC {
 		wounds = 7;
 		insanity = 0;
 		corruption = 0;
+	}
+	
+	public int getInventoryCapacity() {
+		return size*2;
+	}
+	
+	public int getInventoryMaxSize() {
+		return strength+1;
+	}
+	
+	public void setSize(int size) {
+		this.size = size;
+		this.wounds = size;
+	}
+	
+	public NPC withWounds(int wounds) {
+		this.wounds = wounds;
+		return this;
+	}
+	
+	public NPC withInsanity(int insanity) {
+		this.insanity = insanity;
+		return this;
+	}
+	
+	public NPC withCorruption(int corruption) {
+		this.corruption = corruption;
+		return this;
+	}
+	
+	public NPC withSkill(Skill skill) {
+		skillList.add(skill);
+		return this;
+	}
+	
+	public NPC withSpecialRule(SpecialRule specialRule) {
+		specialRuleList.add(specialRule);
+		specialRule.onAdd(this);
+		return this;
+	}
+	
+	public NPC withItemEquipped(Item item) {
+		equippedItemList.add(item);
+		return this;
+	}
+	
+	public NPC withItemInInventory(Item item) {
+		inventoryList.add(item);
+		return this;
+	}
+	
+	public NPC withNotes(String notes) {
+		this.notes = notes;
+		return this;
 	}
 	
 	// Example Character Sheet //

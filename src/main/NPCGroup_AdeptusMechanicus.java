@@ -1,389 +1,441 @@
 package main;
 
 class NPCGroup_AdeptusMechanicus extends NPCGroup {
+	
+	// Ranked Characters //
+	public static final NPC technographer = new NPC("Technographer",
+	        "30,30,30,30,30,30,30,30,30")
+			.withSpecialRule(Talent.knowledgable.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemInInventory(Tool.auspex)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC mechWright = new NPC("Mech-Wright",
+	        "30,30,30,30,30,30,30,30,30")
+			.withSpecialRule(Talent.knowledgable.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSkill(Skill.useTech.withBonus(0))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemInInventory(Tool.auspex)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC electroPriest = new NPC("Electro-Priest",
+	        "30,30,30,30,30,35,30,30,30")
+			.withSpecialRule(Talent.knowledgable.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSkill(Skill.hack.withBonus(0))
+			.withSkill(Skill.useTech.withBonus(0))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemInInventory(Tool.auspex)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC engineSeer = new NPC("Engine-Seer",
+	        "30,30,30,30,30,35,30,30,30")
+			.withSpecialRule(Talent.knowledgable.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSkill(Skill.craft.withBonus(10))
+			.withSkill(Skill.hack.withBonus(0))
+			.withSkill(Skill.repair.withBonus(10))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC techPriest_chirurgeon = new NPC("Tech-Priest (Chirurgeon)",
+	        "30,30,30,30,30,40,35,30,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_medicae)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.administerDrug.withBonus(10))
+			.withSkill(Skill.craft.withBonus(10))
+			.withSkill(Skill.hack.withBonus(0))
+			.withSkill(Skill.inspect.withBonus(10))
+			.withSkill(Skill.performSurgery.withBonus(20))
+			.withSkill(Skill.repair.withBonus(10))
+			.withSkill(Skill.treatWounds.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(Consumable.qualityMedkit)
+			.withItemInInventory(Tool.surgicalTools)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC techPriest_militant = new NPC("Tech-Priest (Militant)",
+	        "30,45,30,30,30,35,30,30,30")
+			.withSpecialRule(Talent.gunslinger)
+			.withSpecialRule(Talent.knowledgable.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.luminenShock)
+			.withSpecialRule(Talent.masterGunslinger)
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_ballistic)
+			.withSpecialRule(Bionic.mechadendrite_ballistic)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.craft.withBonus(10))
+			.withSkill(Skill.hack.withBonus(0))
+			.withSkill(Skill.repair.withBonus(10))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(RangedWeapon.laspistol)
+			.withItemInInventory(Ammo.laspistol_powerPack.times(2))
+			.withItemInInventory(Tool.auspex)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC techPriest = new NPC("Tech-Priest",
+	        "30,30,30,35,30,40,35,30,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.referenceLore.withBonus(10))
+			.withSkill(Skill.repair.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC technomancer = new NPC("Technomancer",
+	        "30,30,30,40,30,45,35,30,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.bionicEye_pair)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(10))
+			.withSkill(Skill.referenceLore.withBonus(20))
+			.withSkill(Skill.repair.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(Tool.dataSlate)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC mechDeacon = new NPC("Mech-Deacon",
+	        "35,35,30,35,30,40,35,30,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.bionicEye_pair)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_ballistic)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inquire.withBonus(10))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(10))
+			.withSkill(Skill.navigate.withBonus(10))
+			.withSkill(Skill.referenceLore.withBonus(20))
+			.withSkill(Skill.repair.withBonus(30))
+			.withSkill(Skill.search.withBonus(10))
+			.withSkill(Skill.useTech.withBonus(30))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(Armour.meshVest)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(RangedWeapon.plasmaPistol)
+			.withItemInInventory(Ammo.plasmaPistol_canister)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC cyberSeer = new NPC("Cyber-Seer",
+	        "30,30,30,40,30,45,35,30,30")
+			.withInsanity(2)
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Talent.unveiledSecrets.withParameter("Archeotech"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.bionicEye_pair)
+			.withSpecialRule(Bionic.bionicHearing)
+			.withSpecialRule(Bionic.bionicLungs)
+			.withSpecialRule(Bionic.cogitatorImplant)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit_goodQuality)
+			.withSpecialRule(Bionic.vocalImplant)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inquire.withBonus(20))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(20))
+			.withSkill(Skill.referenceLore.withBonus(30))
+			.withSkill(Skill.repair.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(Tool.dataSlate)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC omniprophet = new NPC("Omniprophet",
+	        "40,40,30,40,30,40,35,30,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.bionicEverything)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.maglevCoils)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_ballistic)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inquire.withBonus(10))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(10))
+			.withSkill(Skill.navigate.withBonus(20))
+			.withSkill(Skill.referenceLore.withBonus(10))
+			.withSkill(Skill.repair.withBonus(30))
+			.withSkill(Skill.search.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(30))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(Armour.meshArmour)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(MeleeWeapon.chainsword_mastercrafted)
+			.withItemInInventory(RangedWeapon.plasmaPistol)
+			.withItemInInventory(Ammo.plasmaPistol_canister)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.lampPack)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC magos = new NPC("Magos",
+	        "30,30,40,40,40,50,65,30,30")
+			.withInsanity(20)
+			.withSpecialRule(Talent.deepestSecrets.withParameter("Archeotech + The Warp"))
+			.withSpecialRule(Talent.educated.withParameter("Astronomy + Chymistry + Cryptology + Numerology"))
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray_goodQuality)
+			.withSpecialRule(Bionic.bionicEverything_goodQuality)
+			.withSpecialRule(Bionic.cogitatorImplant)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit_goodQuality)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inquire.withBonus(20))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(20))
+			.withSkill(Skill.referenceLore.withBonus(30))
+			.withSkill(Skill.repair.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(20))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(Tool.dataSlate)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
+			
+	public static final NPC magosErrant = new NPC("Magos Errant",
+	        "45,45,50,45,45,40,70,40,30")
+			.withSpecialRule(Talent.experienced.withParameter("Tech"))
+			.withSpecialRule(Talent.ferricSummons)
+			.withSpecialRule(Talent.language.withParameter("Binary + Low Gothic"))
+			.withSpecialRule(Talent.maglevTranscendence)
+			.withSpecialRule(Talent.operate_int.withParameter("1 Vehicle Type"))
+			.withSpecialRule(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"))
+			.withSpecialRule(Bionic.augurArray)
+			.withSpecialRule(Bionic.bionicEverything_goodQuality)
+			.withSpecialRule(Bionic.ferricLure)
+			.withSpecialRule(Bionic.interfacePort)
+			.withSpecialRule(Bionic.internalReservoir)
+			.withSpecialRule(Bionic.luminenCapacitor)
+			.withSpecialRule(Bionic.maglevCoils)
+			.withSpecialRule(Bionic.mechanicusImplants)
+			.withSpecialRule(Bionic.mechadendrite_ballistic)
+			.withSpecialRule(Bionic.mechadendrite_manipulator)
+			.withSpecialRule(Bionic.mechadendrite_optical)
+			.withSpecialRule(Bionic.mechadendrite_utility)
+			.withSpecialRule(Bionic.mindImpulseUnit_goodQuality)
+			.withSkill(Skill.craft.withBonus(20))
+			.withSkill(Skill.hack.withBonus(20))
+			.withSkill(Skill.inquire.withBonus(10))
+			.withSkill(Skill.inspect.withBonus(20))
+			.withSkill(Skill.interrogate.withBonus(10))
+			.withSkill(Skill.navigate.withBonus(20))
+			.withSkill(Skill.referenceLore.withBonus(10))
+			.withSkill(Skill.repair.withBonus(30))
+			.withSkill(Skill.search.withBonus(20))
+			.withSkill(Skill.useTech.withBonus(30))
+			.withItemEquipped(Clothing.mechanicusRobes)
+			.withItemEquipped(Armour.meshArmour_coweled)
+			.withItemEquipped(MeleeWeapon.staff)
+			.withItemInInventory(MeleeWeapon.chainsword_mastercrafted)
+			.withItemInInventory(RangedWeapon.plasmaPistol)
+			.withItemInInventory(Ammo.plasmaPistol_canister)
+			.withItemInInventory(Tool.combiTool)
+			.withItemInInventory(MiscItem.lampPack)
+			.withItemInInventory(Tool.lascutter)
+			.withItemInInventory(MiscItem.gelt);
 
+	// Misc Characters //
+	public static final NPC servoSkull = new NPC("Servo-Skull",
+	        "10,10,05,05,10,05,20,00,00")
+			.withSpecialRule(Trait.size_2)
+			.withSpecialRule(Trait.flight.withParameter("3"))
+			.withSpecialRule(Trait.machine)
+			.withSpecialRule(Trait.programmedBehaviour)
+			.withItemInInventory(Ammo.powerPack_small);
+	public static final NPC servoSkull_illumination = new NPC("Servo-Skull (Illumination)",
+	        "10,10,05,05,10,05,20,00,00")
+			.withSpecialRule(Trait.size_2)
+			.withSpecialRule(Trait.machine)
+			.withSpecialRule(Trait.programmedBehaviour)
+			.withSpecialRule(Trait.flight.withParameter("3"))
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withItemInInventory(Ammo.powerPack_small);
+	public static final NPC servoSkull_laudHailer = new NPC("Servo-Skull (Laud Hailer)",
+	        "10,10,05,05,10,05,20,00,00")
+			.withSpecialRule(Trait.size_2)
+			.withSpecialRule(Trait.machine)
+			.withSpecialRule(Trait.programmedBehaviour)
+			.withSpecialRule(Trait.flight.withParameter("3"))
+			.withItemInInventory(MiscItem.handVox)
+			.withItemInInventory(MiscItem.laudHailer)
+			.withItemInInventory(Ammo.powerPack_small);
+	public static final NPC servoSkull_combat = new NPC("Servo-Skull (Combat)",
+	        "10,20,05,05,10,05,20,00,00")
+			.withSpecialRule(Trait.size_2)
+			.withSpecialRule(Trait.machine)
+			.withSpecialRule(Trait.programmedBehaviour)
+			.withSpecialRule(Trait.flight.withParameter("3"))
+			.withItemEquipped(RangedWeapon.laspistol)
+			.withItemInInventory(Ammo.laspistol_powerPack)
+			.withItemInInventory(Ammo.powerPack_small);
+	
 	NPCGroup_AdeptusMechanicus() {
 		super("Adeptus Mechanicus");
-	}
-
-	@Override
-	protected void setNPCList() {
-		NPC npc;
-		
-		npc = new NPC("Technographer", "30,30,30,30,30,30,30,30,30");
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.inventoryList.add(Tool.auspex);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Mech-Wright", "30,30,30,30,30,30,30,30,30");
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.skillList.add(Skill.useTech.withBonus(0));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.inventoryList.add(Tool.auspex);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Electro-Priest", "30,30,30,30,30,35,30,30,30");
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.skillList.add(Skill.hack.withBonus(0));
-		npc.skillList.add(Skill.useTech.withBonus(0));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.inventoryList.add(Tool.auspex);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Engine-Seer", "30,30,30,30,30,35,30,30,30");
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.skillList.add(Skill.craft.withBonus(10));
-		npc.skillList.add(Skill.hack.withBonus(0));
-		npc.skillList.add(Skill.repair.withBonus(10));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Tech-Priest (Chirurgeon)", "30,30,30,30,30,40,35,30,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_medicae);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.administerDrug.withBonus(10));
-		npc.skillList.add(Skill.craft.withBonus(10));
-		npc.skillList.add(Skill.hack.withBonus(0));
-		npc.skillList.add(Skill.inspect.withBonus(10));
-		npc.skillList.add(Skill.performSurgery.withBonus(20));
-		npc.skillList.add(Skill.repair.withBonus(10));
-		npc.skillList.add(Skill.treatWounds.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(Consumable.qualityMedkit);
-		npc.inventoryList.add(Tool.surgicalTools);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Tech-Priest (Militant)", "30,45,30,30,30,35,30,30,30");
-		npc.specialRuleList.add(Talent.gunslinger);
-		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.luminenShock);
-		npc.specialRuleList.add(Talent.masterGunslinger);
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_ballistic);
-		npc.specialRuleList.add(Bionic.mechadendrite_ballistic);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.craft.withBonus(10));
-		npc.skillList.add(Skill.hack.withBonus(0));
-		npc.skillList.add(Skill.repair.withBonus(10));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(RangedWeapon.laspistol);
-		npc.inventoryList.add(Ammo.laspistol_powerPack.times(2));
-		npc.inventoryList.add(Tool.auspex);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Tech-Priest", "30,30,30,35,30,40,35,30,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.referenceLore.withBonus(10));
-		npc.skillList.add(Skill.repair.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Technomancer", "30,30,30,40,30,45,35,30,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.bionicEye_pair);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(10));
-		npc.skillList.add(Skill.referenceLore.withBonus(20));
-		npc.skillList.add(Skill.repair.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(Tool.dataSlate);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Mech-Deacon", "35,35,30,35,30,40,35,30,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.bionicEye_pair);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_ballistic);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inquire.withBonus(10));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(10));
-		npc.skillList.add(Skill.navigate.withBonus(10));
-		npc.skillList.add(Skill.referenceLore.withBonus(20));
-		npc.skillList.add(Skill.repair.withBonus(30));
-		npc.skillList.add(Skill.search.withBonus(10));
-		npc.skillList.add(Skill.useTech.withBonus(30));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(Armour.meshVest);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(RangedWeapon.plasmaPistol);
-		npc.inventoryList.add(Ammo.plasmaPistol_canister);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Cyber-Seer", "30,30,30,40,30,45,35,30,30");
-		npc.insanity = 2;
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Talent.unveiledSecrets.withParameter("Archeotech"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.bionicEye_pair);
-		npc.specialRuleList.add(Bionic.bionicHearing);
-		npc.specialRuleList.add(Bionic.bionicLungs);
-		npc.specialRuleList.add(Bionic.cogitatorImplant);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit_goodQuality);
-		npc.specialRuleList.add(Bionic.vocalImplant);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inquire.withBonus(20));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(20));
-		npc.skillList.add(Skill.referenceLore.withBonus(30));
-		npc.skillList.add(Skill.repair.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(Tool.dataSlate);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Omniprophet", "40,40,30,40,30,40,35,30,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.bionicEverything);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.maglevCoils);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_ballistic);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inquire.withBonus(10));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(10));
-		npc.skillList.add(Skill.navigate.withBonus(20));
-		npc.skillList.add(Skill.referenceLore.withBonus(10));
-		npc.skillList.add(Skill.repair.withBonus(30));
-		npc.skillList.add(Skill.search.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(30));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(Armour.meshArmour);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(MeleeWeapon.chainsword_mastercrafted);
-		npc.inventoryList.add(RangedWeapon.plasmaPistol);
-		npc.inventoryList.add(Ammo.plasmaPistol_canister);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.lampPack);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Magos", "30,30,40,40,40,50,65,30,30");
-		npc.insanity = 20;
-		npc.specialRuleList.add(Talent.deepestSecrets.withParameter("Archeotech + The Warp"));
-		npc.specialRuleList.add(Talent.educated.withParameter("Astronomy + Chymistry + Cryptology + Numerology"));
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray_goodQuality);
-		npc.specialRuleList.add(Bionic.bionicEverything_goodQuality);
-		npc.specialRuleList.add(Bionic.cogitatorImplant);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit_goodQuality);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inquire.withBonus(20));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(20));
-		npc.skillList.add(Skill.referenceLore.withBonus(30));
-		npc.skillList.add(Skill.repair.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(20));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(Tool.dataSlate);
-		npc.inventoryList.add(MiscItem.glowGlobe);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
-		npc = new NPC("Magos Errant", "45,45,50,45,45,40,70,40,30");
-		npc.specialRuleList.add(Talent.experienced.withParameter("Tech"));
-		npc.specialRuleList.add(Talent.ferricSummons);
-		npc.specialRuleList.add(Talent.language.withParameter("Binary + Low Gothic"));
-		npc.specialRuleList.add(Talent.maglevTranscendence);
-		npc.specialRuleList.add(Talent.operate_int.withParameter("1 Vehicle Type"));
-		npc.specialRuleList.add(Talent.trade.withParameter("Armourer/Mason/Shipwright/Technomat/Wright"));
-		npc.specialRuleList.add(Bionic.augurArray);
-		npc.specialRuleList.add(Bionic.bionicEverything_goodQuality);
-		npc.specialRuleList.add(Bionic.ferricLure);
-		npc.specialRuleList.add(Bionic.interfacePort);
-		npc.specialRuleList.add(Bionic.internalReservoir);
-		npc.specialRuleList.add(Bionic.luminenCapacitor);
-		npc.specialRuleList.add(Bionic.maglevCoils);
-		npc.specialRuleList.add(Bionic.mechanicusImplants);
-		npc.specialRuleList.add(Bionic.mechadendrite_ballistic);
-		npc.specialRuleList.add(Bionic.mechadendrite_manipulator);
-		npc.specialRuleList.add(Bionic.mechadendrite_optical);
-		npc.specialRuleList.add(Bionic.mechadendrite_utility);
-		npc.specialRuleList.add(Bionic.mindImpulseUnit_goodQuality);
-		npc.skillList.add(Skill.craft.withBonus(20));
-		npc.skillList.add(Skill.hack.withBonus(20));
-		npc.skillList.add(Skill.inquire.withBonus(10));
-		npc.skillList.add(Skill.inspect.withBonus(20));
-		npc.skillList.add(Skill.interrogate.withBonus(10));
-		npc.skillList.add(Skill.navigate.withBonus(20));
-		npc.skillList.add(Skill.referenceLore.withBonus(10));
-		npc.skillList.add(Skill.repair.withBonus(30));
-		npc.skillList.add(Skill.search.withBonus(20));
-		npc.skillList.add(Skill.useTech.withBonus(30));
-		npc.equippedItemList.add(Clothing.mechanicusRobes);
-		npc.equippedItemList.add(Armour.meshArmour_coweled);
-		npc.equippedItemList.add(MeleeWeapon.staff);
-		npc.inventoryList.add(MeleeWeapon.chainsword_mastercrafted);
-		npc.inventoryList.add(RangedWeapon.plasmaPistol);
-		npc.inventoryList.add(Ammo.plasmaPistol_canister);
-		npc.inventoryList.add(Tool.combiTool);
-		npc.inventoryList.add(MiscItem.lampPack);
-		npc.inventoryList.add(Tool.lascutter);
-		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
-		
+		rankedCharacterList.add(technographer);
+		rankedCharacterList.add(mechWright);
+		rankedCharacterList.add(electroPriest);
+		rankedCharacterList.add(engineSeer);
+		rankedCharacterList.add(techPriest);
+		rankedCharacterList.add(techPriest_chirurgeon);
+		rankedCharacterList.add(techPriest_militant);
+		rankedCharacterList.add(technomancer);
+		rankedCharacterList.add(mechDeacon);
+		rankedCharacterList.add(cyberSeer);
+		rankedCharacterList.add(omniprophet);
+		rankedCharacterList.add(magos);
+		rankedCharacterList.add(magosErrant);
+		miscCharacterList.add(servoSkull);
+		miscCharacterList.add(servoSkull_illumination);
+		miscCharacterList.add(servoSkull_laudHailer);
+		miscCharacterList.add(servoSkull_combat);
+		// TODO - augur servo-skull
+		// TODO - medicae servo-skull
+		// TODO - utility servo-skull
+		// TODO - pict/watcher servo-skull
+		// TODO - combat servo-skull
 	}
 }

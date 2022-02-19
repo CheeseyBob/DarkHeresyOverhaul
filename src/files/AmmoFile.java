@@ -65,6 +65,16 @@ class AmmoFile implements PrintableFile {
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
+		printer.printHeader_collapsible("Misc");
+		printer.printCollapsibleTop();
+		printer.printRowTop();
+		printer.printCol_item(6, Ammo.powerPack_small);
+		printer.printCol_item(6, Ammo.powerPack_standard);
+		printer.printCol_item(6, Ammo.powerPack_large);
+		printer.printRowTail();
+		printer.printCollapsibleTail();
+		printer.println();
+		printer.println();
 		printer.printFileTail();
 	}
 }

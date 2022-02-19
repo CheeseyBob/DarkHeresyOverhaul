@@ -24,6 +24,8 @@ public class SpecialRule {
 		return ruleWithParameter;
 	}
 	
+	protected void onAdd(NPC npc) {}
+	
 	@Override
 	public String toString() {
 		return getFullName();

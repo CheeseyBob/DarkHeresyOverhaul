@@ -14,7 +14,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.equippedItemList.add(Clothing.ragCastings);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 4/5
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Outcast", "30,30,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -24,7 +24,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 8/10
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Sell-Steel", "35,35,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -35,7 +35,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 8/10
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Outlaw", "30,30,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -50,7 +50,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 18/20
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Shadesman", "40,40,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -62,7 +62,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 18/20
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Renegade", "30,30,30,30,35,35,35,30,35");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -80,7 +80,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 28/30
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Nighthawk", "40,40,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -92,7 +92,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 28/30
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Rogue", "30,30,30,30,40,35,35,30,40");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -116,7 +116,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 58/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Ganger", "40,40,40,40,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
@@ -137,7 +137,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 58/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Assassin", "40,40,30,30,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -158,7 +158,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Consumable.vial_lethalPoison_3);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 60/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Fixer", "30,30,30,30,40,40,40,30,40");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -185,7 +185,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 80/80
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Stubjack", "40,40,40,40,40,30,35,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
@@ -206,7 +206,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 80/80
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Death Adept", "45,45,30,30,40,30,35,30,30");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -227,7 +227,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Consumable.vial_lethalPoison_3);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 80/80
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Shark", "30,30,30,30,40,40,40,30,45");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -256,7 +256,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 100/100
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Gang Boss", "40,40,40,40,40,30,35,30,40");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -279,7 +279,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 98/100
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Assassin at Marque", "45,45,30,30,40,30,35,30,40");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -300,7 +300,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 98/100
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Charlatan", "30,30,30,30,40,40,40,30,45");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -329,7 +329,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 148/150
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Gang Lord", "40,40,40,40,40,40,40,40,45");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -355,7 +355,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 148/150
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Lord of Assassins", "50,50,30,30,40,30,35,30,40");
 		npc.specialRuleList.add(Talent.accustomedToDarkness);
@@ -383,7 +383,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 150/150
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 	}
 }

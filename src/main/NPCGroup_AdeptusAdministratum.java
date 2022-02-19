@@ -16,7 +16,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.equippedItemList.add(Clothing.administratumRobes);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scrivener", "30,30,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Administratum"));
@@ -26,7 +26,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Tool.writingKit);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scribe", "30,30,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
@@ -41,7 +41,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: ??/20
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Auditor", "30,30,30,30,30,35,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + 2 Areas"));
@@ -56,7 +56,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: ??/30
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Medicator", "30,30,30,30,30,35,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
@@ -73,7 +73,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: ??/30
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar", "30,30,30,30,30,40,30,30,30");// 6 XP
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));// 2 XP
@@ -91,7 +91,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 6+2+2+4+24+2+6+2+2+2+6=58/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Operator", "30,30,35,35,35,40,35,30,35");// 2+2+2+6+2+2=16 XP
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + 3 Areas"));// 8 XP
@@ -112,7 +112,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Tool.dataSlate);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 60/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Chirurgeon", "30,30,30,30,30,45,35,30,35");// 14+2+2=18 XP
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + Chymistry"));// 4 XP
@@ -132,7 +132,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 58/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Lexographer", "30,30,30,30,30,45,30,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
@@ -148,7 +148,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Tool.dataTome_lore);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Comptroller", "30,30,30,30,35,45,35,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + 2 Areas"));
@@ -166,7 +166,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.equippedItemList.add(Clothing.administratumRobes);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Master Chirurgeon", "30,30,30,30,30,45,35,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy"));
@@ -185,7 +185,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Consumable.injector_deTox);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Loremaster", "30,30,30,30,30,45,30,35,30");
 		npc.insanity = 4;
@@ -203,7 +203,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Tool.dataTome_lore);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Logister", "30,30,30,30,35,50,35,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + 4 Areas"));
@@ -222,7 +222,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.equippedItemList.add(Clothing.administratumRobes);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Sage Loremaster", "30,30,30,30,30,50,30,40,30");
 		npc.insanity = 20;
@@ -240,7 +240,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.inventoryList.add(Tool.dataTome_lore);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Sage Logister", "30,30,30,30,35,50,35,30,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Bureaucracy + 7 Areas"));
@@ -260,7 +260,7 @@ public class NPCGroup_AdeptusAdministratum extends NPCGroup {
 		npc.equippedItemList.add(Clothing.administratumRobes);
 		npc.inventoryList.add(MiscItem.chrono);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		
 	}

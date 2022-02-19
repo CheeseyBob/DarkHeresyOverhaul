@@ -30,10 +30,19 @@ public class Trait extends SpecialRule {
 			"You can hover a short distance above the ground, and can Move N meters while doing so.");
 	public static final Trait legs = new Trait("Legs",
 			"You have N legs.");
+	public static final Trait limbless = new Trait("Limbless",
+			"You have no arms or legs.");
 	public static final Trait machine = new Trait("Machine",
 			"You do not breathe and are immune to vacuum, cold and anything which affects the mind.");
 	public static final Trait size = new Trait("Size",
 			"You are affected by the appropriate bonuses/penalties for size N. Your Maximum Wounds is N.");
+	public static final Trait size_2 = new Trait("Size 2",
+			"You get a -50 bonus for size. Your Maximum Wounds is 2.") {
+		@Override
+		protected void onAdd(NPC npc) {
+			npc.setSize(2);
+		}
+	};
 	public static final Trait slow = new Trait("Slow",
 			"You get a -N penalty to your base movement.");
 	public static final Trait sonarSense = new Trait("Sonar Sense",

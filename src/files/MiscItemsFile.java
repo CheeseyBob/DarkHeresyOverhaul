@@ -57,6 +57,7 @@ class MiscItemsFile implements PrintableFile {
 		printer.printCol_item(6, MiscItem.glowGlobe);
 		printer.printCol_item(6, MiscItem.dropHarness);
 		printer.printCol_item(6, MiscItem.handVox);
+		printer.printCol_item(6, MiscItem.laudHailer);
 		printer.printCol_item(6, MiscItem.manacles);
 		printer.printCol_item(6, MiscItem.oxygenTank);
 		printer.printCol_item(6, MiscItem.remoteDetonator);

@@ -49,6 +49,9 @@ public class MiscItem extends Item {
 	public static final MiscItem lampPack = new MiscItem("Lamp Pack",
 			"Straps to the body, creating an area of light hands-free.",
 			2, Availability.PLENTIFUL);
+	public static final MiscItem laudHailer = new MiscItem("Laud Hailer",
+			"Amplifies sound so that an entire crowd can hear a speakers words clearly.",
+			1, Availability.PLENTIFUL);
 	public static final MiscItem manacles = new MiscItem("Manacles",
 			"Can restrain a character up to Strength 40.",
 			1, Availability.PLENTIFUL);

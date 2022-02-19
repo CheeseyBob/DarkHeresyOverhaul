@@ -52,6 +52,7 @@ class RangedWeaponsFile implements PrintableFile {
 		printer.printCol_item(6, RangedWeapon.handFlamer);
 		printer.printCol_item(6, RangedWeapon.longLas);
 		printer.printCol_item(6, RangedWeapon.longLas_scoped);
+		printer.printCol_item(6, RangedWeapon.lascannon);
 		printer.printCol_item(6, RangedWeapon.plasmaGun);
 		printer.printCol_item(6, RangedWeapon.plasmaGun_feedLine);
 		printer.printCol_item(6, RangedWeapon.plasmaPistol);

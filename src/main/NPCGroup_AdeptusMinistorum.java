@@ -14,7 +14,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Initiate", "30,30,30,30,30,30,30,30,35");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Ministorum + Imperial Creed"));
@@ -22,7 +22,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.specialRuleList.add(Talent.trade_copyist);
 		npc.equippedItemList.add(Clothing.ministorumRobes);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Priest", "30,30,30,30,30,30,30,30,40");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Ministorum + Imperial Creed"));
@@ -34,7 +34,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.scroll_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Preacher", "30,30,30,30,30,30,30,30,40");
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
@@ -49,7 +49,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.scroll_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Cleric", "35,35,35,35,35,35,35,35,40");
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
@@ -74,7 +74,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.tome_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Confessor", "35,35,35,35,35,35,40,35,40");
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
@@ -97,7 +97,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.tome_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Exorcist", "40,40,35,35,35,35,35,40,40");
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
@@ -125,7 +125,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.smallRelic);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Bishop", "35,35,35,35,35,35,40,35,45");
 		npc.specialRuleList.add(Talent.specialist.withParameter("Occult + Theology"));
@@ -148,7 +148,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.tome_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Zealot", "40,40,40,40,40,35,40,40,40");
 		npc.specialRuleList.add(Talent.experienced.withParameter("Imperial Creed"));
@@ -178,7 +178,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.smallishRelic);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Heirophant", "35,35,35,35,35,40,40,35,45");
 		npc.specialRuleList.add(Talent.commanding);
@@ -205,7 +205,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.tome_imperialCreed);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Redemptionist", "50,50,40,40,40,35,40,40,40");
 		npc.specialRuleList.add(Talent.adamantiumWill);
@@ -235,7 +235,7 @@ class NPCGroup_AdeptusMinistorum extends NPCGroup {
 		npc.inventoryList.add(Tool.smallishRelic);
 		npc.inventoryList.add(new Item("Aquila Necklace", 0));
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 	}
 }

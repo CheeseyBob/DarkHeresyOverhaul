@@ -58,6 +58,15 @@ public class Ammo extends Item {
 	public static final Ammo longLas_powerPack = new Ammo(
 			"Long Las Power Pack", 1, 20, Availability.SCARCE)
 			.withSpecialRule(rechargeable);
+	public static final Ammo powerPack_small = new Ammo(
+			"Small Power Pack", 1, 20, Availability.ABUNDANT)
+			.withSpecialRule(rechargeable);
+	public static final Ammo powerPack_standard = new Ammo(
+			"Power Pack", 3, 80, Availability.COMMON)
+			.withSpecialRule(rechargeable);
+	public static final Ammo powerPack_large = new Ammo(
+			"Large Power Pack", 5, 320, Availability.SCARCE)
+			.withSpecialRule(rechargeable);
 	
 	// Flame & Plasma //
 	public static final Ammo flamer_canister = new Ammo(

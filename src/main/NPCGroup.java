@@ -3,7 +3,8 @@ import java.util.LinkedList;
 
 public abstract class NPCGroup {
 	public String id, name;
-	public LinkedList<NPC> npcList = new LinkedList<NPC>();
+	public LinkedList<NPC> rankedCharacterList = new LinkedList<NPC>();
+	public LinkedList<NPC> miscCharacterList = new LinkedList<NPC>();
 	
 	NPCGroup(String name) {
 		this.id = DHOPrinter.idFrom(name);
@@ -11,7 +12,8 @@ public abstract class NPCGroup {
 		setNPCList();
 	}
 	
-	protected abstract void setNPCList();
+	@Deprecated
+	protected void setNPCList() {}
 	
 	// NPC Groups //
 	public static final NPCGroup adeptusAdministratum = new NPCGroup_AdeptusAdministratum();

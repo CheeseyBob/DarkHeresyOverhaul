@@ -17,7 +17,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Enforcer", "35,35,35,35,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -29,7 +29,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.manacles);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Regulator", "35,35,35,35,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -48,7 +48,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.manacles);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Investigator", "35,35,35,35,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
@@ -69,7 +69,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.manacles);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Arbitrator", "40,40,40,40,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.educated.withParameter("Judgement"));
@@ -95,7 +95,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: ??/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Proctor", "40,40,40,40,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.dominatingBellow);
@@ -124,7 +124,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.microBead);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Intelligencer", "40,40,40,40,35,40,40,35,40");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
@@ -151,7 +151,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.microBead);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Marshall", "40,40,40,40,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.dominatingBellow);
@@ -179,7 +179,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.microBead);
 		npc.inventoryList.add(MiscItem.lhoSticks_quality);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Magistrate", "40,40,40,40,35,45,40,35,35");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
@@ -200,7 +200,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(Tool.dataTome_judgement);
 		npc.inventoryList.add(Tool.writingKit);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Lord Marshall", "45,45,45,50,35,35,35,35,35");
 		npc.specialRuleList.add(Talent.dominatingBellow);
@@ -228,7 +228,7 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(MiscItem.microBead);
 		npc.inventoryList.add(MiscItem.lhoSticks_quality);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Justicar", "40,40,40,40,35,45,40,35,35");
 		npc.specialRuleList.add(Talent.coordinatedInterrogation);
@@ -250,6 +250,6 @@ class NPCGroup_AdeptusArbites extends NPCGroup {
 		npc.inventoryList.add(Tool.dataTome_judgement);
 		npc.inventoryList.add(Tool.writingKit);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 	}
 }

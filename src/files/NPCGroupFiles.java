@@ -25,9 +25,15 @@ class NPCGroupFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printRankStructure(npcGroup);
-		printer.printHeader("Character Sheets");
-		printer.printCharacterSheetList(npcGroup);
+		if(!npcGroup.rankedCharacterList.isEmpty()) {
+			printer.printRankStructure(npcGroup);
+			printer.printHeader("Ranked Characters");
+			printer.printCharacterSheetList(npcGroup.rankedCharacterList);
+		}
+		if(!npcGroup.miscCharacterList.isEmpty()) {
+			printer.printHeader("Misc Characters");
+			printer.printCharacterSheetList(npcGroup.miscCharacterList);
+		}
 		printer.printFileTail();
 	}
 	

@@ -1,6 +1,7 @@
 package main;
 import java.io.PrintWriter;
 import java.util.LinkedList;
+import java.util.List;
 
 import files.TextFileHandler;
 
@@ -79,8 +80,8 @@ public class DHOPrinter {
 		processFile(isPC ? "CHARACTER_SHEET_PC" : "CHARACTER_SHEET");
 	}
 	
-	public void printCharacterSheetList(NPCGroup npcGroup) {
-		for(NPC npc : npcGroup.npcList) {
+	public void printCharacterSheetList(List<NPC> characterList) {
+		for(NPC npc : characterList) {
 			printCharacterSheet(npc);
 		}
 	}
@@ -618,6 +619,8 @@ public class DHOPrinter {
 			return ""+npc.willpower;
 		case CHARACTER_FEL:
 			return ""+npc.fellowship;
+		case CHARACTER_INV_CAPACITY:
+			return ""+npc.getInventoryCapacity();
 		case SPECIAL_NAME: case TALENT_NAME: case BIONIC_NAME:
 			return special.getFullName();
 		case SPECIAL_DESCRIPTION: case TALENT_DESCRIPTION: case BIONIC_DESCRIPTION:
@@ -706,6 +709,7 @@ public class DHOPrinter {
 		CHARACTER_ID, CHARACTER_NAME, CHARACTER_NOTES,
 		CHARACTER_WOUNDS, CHARACTER_INSANITY, CHARACTER_CORRUPTION,
 		CHARACTER_WS, CHARACTER_BS, CHARACTER_S, CHARACTER_T, CHARACTER_AG, CHARACTER_INT, CHARACTER_PER, CHARACTER_WP, CHARACTER_FEL,
+		CHARACTER_INV_CAPACITY,
 		SPECIAL_NAME, SPECIAL_DESCRIPTION,
 		TALENT_NAME, TALENT_DESCRIPTION, TALENT_REQUIREMENT, TALENT_APTITUDE, TALENT_XP,
 		POWER_REQUIREMENT, POWER_XP,

@@ -17,7 +17,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(Ammo.lasgun_powerPack.times(2));
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Guard", "35,40,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -28,7 +28,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Specialist (Armsman)", "35,45,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -42,7 +42,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Specialist (Comms)", "35,40,40,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -55,7 +55,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Specialist (Demolitions)", "35,40,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.demolitionsExpert);
@@ -71,7 +71,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Specialist (Driver)", "35,40,30,30,30,40,30,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Tech"));
@@ -84,7 +84,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Specialist (Medic)", "35,40,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.firstAider);
@@ -100,7 +100,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Sergeant", "35,45,30,30,30,30,30,30,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -117,7 +117,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MiscItem.handVox);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Veteran", "40,45,40,40,30,30,30,30,30"); // 6+14+6+6=32 XP
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
@@ -140,7 +140,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 32+2+4+2+4+6+2+2+2+2+2=60/60
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Assault Veteran", "40,45,40,40,35,30,30,30,30");
 		npc.specialRuleList.add(Talent.assaultFire);
@@ -167,7 +167,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Lieutenant", "40,45,40,40,30,30,30,30,35");
 		npc.specialRuleList.add(Talent.commanding);// 4 XP
@@ -191,7 +191,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: ??/80
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scout", "40,45,40,40,35,30,30,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
@@ -219,7 +219,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Shock Trooper", "45,45,40,40,40,30,35,30,30");
 		npc.specialRuleList.add(Talent.assaultFire);
@@ -249,7 +249,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Captain", "40,45,40,40,30,30,30,30,40");
 		npc.specialRuleList.add(Talent.commanding);
@@ -275,7 +275,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Marksman", "40,50,40,40,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
@@ -304,7 +304,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Storm Trooper", "45,45,40,40,40,30,40,35,30");
 		npc.specialRuleList.add(Talent.adamantiumWill);
@@ -336,7 +336,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Commander", "40,45,40,40,30,35,35,35,40");
 		npc.specialRuleList.add(Talent.commanding);
@@ -369,7 +369,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Sniper", "40,55,40,40,35,30,35,30,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
@@ -400,7 +400,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.lhoSticks);
 		npc.inventoryList.add(MiscItem.gelt);
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 	}
 }

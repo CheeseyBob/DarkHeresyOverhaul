@@ -22,7 +22,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 5/5
 		// Powers: 1 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Neonate", "30,30,30,30,30,30,30,35,30");
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
@@ -37,7 +37,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 9/10
 		// Powers: 1 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Aspirant", "30,30,30,30,30,30,30,35,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -54,7 +54,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 20/20
 		// Powers: 2 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Savant Initiate", "30,35,30,30,30,30,30,40,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -75,7 +75,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 30/30
 		// Powers: 6 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar Initiate", "30,30,30,30,30,35,35,40,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -92,7 +92,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 30/30
 		// Powers: 2 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Savant Militant", "30,35,30,30,30,30,30,45,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -121,7 +121,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 60/60
 		// Powers: 12 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar Materium", "30,30,30,30,30,45,35,45,30");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -143,7 +143,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 60/60
 		// Powers: 6 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Savant Warrant", "30,35,30,30,30,30,30,45,35");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -173,7 +173,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 80/80
 		// Powers: 12 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar Arcanum", "30,30,30,30,30,45,35,45,30");
 		npc.specialRuleList.add(Talent.educated.withParameter("Philosophy"));
@@ -199,7 +199,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 80/80
 		// Powers: 8 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Savant Adjunct", "30,35,30,30,30,30,30,45,35");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -229,7 +229,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 100/100
 		// Powers: 16 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar Obscurus", "30,30,30,30,30,45,35,45,30");
 		npc.specialRuleList.add(Talent.deepestSecrets);
@@ -258,7 +258,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 100/100
 		// Powers: 8 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Savant Preceptor", "30,35,30,30,30,30,30,50,35");
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Adeptus Astra Telepathica"));
@@ -292,7 +292,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 150/150
 		// Powers: 20 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 		npc = new NPC("Scholar Empyrean", "30,30,30,30,30,45,35,45,30");
 		npc.specialRuleList.add(Talent.deepestSecrets);
@@ -320,7 +320,7 @@ class NPCGroup_AdeptusAstraTelepathica extends NPCGroup {
 		npc.inventoryList.add(MiscItem.gelt);
 		// XP: 148/150
 		// Powers: 8 XP
-		npcList.add(npc);
+		rankedCharacterList.add(npc);
 		
 	}
 }
