@@ -15,6 +15,7 @@ public class Item {
 		this.id = DHOPrinter.idFrom(name);
 		this.name = name;
 		this.size = size;
+		this.availability = availability;
 		if(addToList)
 			list.add(this);
 	}
@@ -33,7 +34,7 @@ public class Item {
 	
 	public String getAvailability() {
 		if(availability == null) return "N/A";
-		else return availability.toString();
+		else return availability.getFullName();
 	}
 	
 	public String hyperlink() {

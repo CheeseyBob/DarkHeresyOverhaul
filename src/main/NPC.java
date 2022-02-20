@@ -11,7 +11,7 @@ public class NPC {
 	LinkedList<Skill> skillList = new LinkedList<Skill>();
 	LinkedList<Item> equippedItemList = new LinkedList<Item>();
 	LinkedList<Item> inventoryList = new LinkedList<Item>();
-	LinkedList<String> aptitudeList = new LinkedList<String>();
+	LinkedList<Aptitude> aptitudeList = new LinkedList<Aptitude>();
 	String notes = "";
 	
 	NPC(String name, String stats) {
@@ -49,13 +49,8 @@ public class NPC {
 		this.wounds = size;
 	}
 	
-	public NPC withWounds(int wounds) {
-		this.wounds = wounds;
-		return this;
-	}
-	
-	public NPC withInsanity(int insanity) {
-		this.insanity = insanity;
+	public NPC withAptitude(Aptitude aptitude) {
+		this.aptitudeList.add(aptitude);
 		return this;
 	}
 	
@@ -64,14 +59,8 @@ public class NPC {
 		return this;
 	}
 	
-	public NPC withSkill(Skill skill) {
-		skillList.add(skill);
-		return this;
-	}
-	
-	public NPC withSpecialRule(SpecialRule specialRule) {
-		specialRuleList.add(specialRule);
-		specialRule.onAdd(this);
+	public NPC withInsanity(int insanity) {
+		this.insanity = insanity;
 		return this;
 	}
 	
@@ -90,49 +79,53 @@ public class NPC {
 		return this;
 	}
 	
-	// Example Character Sheet //
-	public static final NPC example = exampleCharacterSheet();
-	
-	private static NPC exampleCharacterSheet() {
-		NPC examplePC = new NPC("Boebus Garvel", "46,41,34,35,35,32,35,29,33");
-		examplePC.specialRuleList.add(Talent.hipShooting);
-		examplePC.specialRuleList.add(Talent.cluesFromTheCrowds);
-		examplePC.specialRuleList.add(Talent.educated.withParameter("Judgement"));
-		examplePC.specialRuleList.add(Talent.knowledgable.withParameter("Underworld"));
-		examplePC.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
-		examplePC.skillList.add(Skill.grapple.withBonus(10));
-		examplePC.skillList.add(Skill.inquire.withBonus(10));
-		examplePC.skillList.add(Skill.inspect.withBonus(10));
-		examplePC.skillList.add(Skill.interrogate.withBonus(10));
-		examplePC.skillList.add(Skill.knockDown.withBonus(10));
-		examplePC.skillList.add(Skill.notice.withBonus(10));
-		examplePC.skillList.add(Skill.referenceCommonLore.withBonus(10));
-		examplePC.skillList.add(Skill.referenceScholasticLore.withBonus(10));
-		examplePC.skillList.add(Skill.run.withBonus(20));
-		examplePC.equippedItemList.add(Clothing.arbitesUniform);
-		examplePC.equippedItemList.add(Armour.carapaceChestplate);
-		examplePC.inventoryList.add(MeleeWeapon.shockMaul);
-		examplePC.inventoryList.add(RangedWeapon.shotgun_arbites);
-		examplePC.inventoryList.add(Ammo.shotgun_arbites_mag);
-		examplePC.inventoryList.add(RangedWeapon.pistol_arbites);
-		examplePC.inventoryList.add(Ammo.pistol_arbites_mag.times(2));
-		examplePC.inventoryList.add(MiscItem.manacles);
-		examplePC.inventoryList.add(MiscItem.microBead);
-		examplePC.inventoryList.add(MiscItem.lhoSticks);
-		examplePC.inventoryList.add(MiscItem.gelt.times(50));
-		examplePC.aptitudeList.add("General");
-		examplePC.aptitudeList.add("Offence");
-		examplePC.aptitudeList.add("Defence");
-		examplePC.aptitudeList.add("Finesse");
-		examplePC.aptitudeList.add("Ballistic Skill");
-		examplePC.aptitudeList.add("Agility");
-		examplePC.aptitudeList.add("Perception");
-		examplePC.aptitudeList.add("Fellowship");
-		examplePC.notes = 
-				"Homeworld: Hive World"+"<br>"
-				+ "Background: Adeptus Arbites"+"<br>"
-				+ "Role: Desperado"+"<br>"
-				+ "5XP total; 1 XP to spend"+"<br>";
-		return examplePC;
+	public NPC withSkill(Skill skill) {
+		skillList.add(skill);
+		return this;
 	}
+	
+	public NPC withSpecialRule(SpecialRule specialRule) {
+		specialRuleList.add(specialRule);
+		specialRule.onAdd(this);
+		return this;
+	}
+	
+	public NPC withWounds(int wounds) {
+		this.wounds = wounds;
+		return this;
+	}
+	
+	// Example Character Sheet //
+	public static final NPC example = new NPC("Example Character", "40,42,40,32,34,32,40,33,24")
+			.withAptitude(Aptitude.GENERAL)
+			.withAptitude(Aptitude.BALLISTIC_SKILL)
+			.withAptitude(Aptitude.DEFENCE)
+			.withAptitude(Aptitude.FIELDCRAFT)
+			.withAptitude(Aptitude.OFFENCE)
+			.withAptitude(Aptitude.STRENGTH)
+			.withAptitude(Aptitude.WEAPON_SKILL)
+			.withAptitude(Aptitude.WILLPOWER)
+			.withSpecialRule(Talent.accustomedToDarkness)
+			.withSpecialRule(Talent.experienced.withParameter("Underworld"))
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withSpecialRule(Talent.peer.withParameter("Underworld"))
+			.withSkill(Skill.dodge.withBonus(10))
+			.withSkill(Skill.intimidate.withBonus(20))
+			.withSkill(Skill.notice.withBonus(10))
+			.withSkill(Skill.reflex.withBonus(10))
+			.withSkill(Skill.run.withBonus(10))
+			.withSkill(Skill.sneak.withBonus(10))
+			.withItemEquipped(Armour.gangLeathers)
+			.withItemEquipped(Clothing.streetClothes)
+			.withItemInInventory(RangedWeapon.autopistol)
+			.withItemInInventory(Ammo.autopistol_mag)
+			.withItemInInventory(Ammo.autopistol_mag)
+			.withItemInInventory(MeleeWeapon.chainsword)
+			.withItemInInventory(MeleeWeapon.knife)
+			.withItemInInventory(MiscItem.glowGlobe)
+			.withNotes("Homeworld: Void Born"+"<br>"
+				+ "Background: Outcast (Ganger)"+"<br>"
+				+ "Role: Warrior"+"<br>"
+				+ "Advances: WS +5, BS +10, S +10, T +10, Ag +5, Per +5"+"<br>"
+				+ "XP: 5 total,  5 to spend"+"<br>");
 }

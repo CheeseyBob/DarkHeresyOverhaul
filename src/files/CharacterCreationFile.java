@@ -150,7 +150,7 @@ class CharacterCreationFile implements PrintableFile {
 				+ "If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.");
 		printer.println("<b>Equipment</b>");
 		printer.printList(false, new String[] {
-				"Take any Ubiquitous or Abundant items as you can want (and can carry).",
+				"Take any Ubiquitous or Abundant items as you want (and can carry).",
 				"If you wish, you can swap out items from your background for different ones of the same availability.",
 				"You can also take any 1 item of Average availability or any 2 items up to Common availability.",
 		});

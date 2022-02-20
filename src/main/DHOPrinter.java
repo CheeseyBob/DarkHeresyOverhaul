@@ -40,7 +40,7 @@ public class DHOPrinter {
 	private Personality personality = null;
 	private Personality.SkillResponse[] personalityResponseList = null;
 	private Personality.SkillResponse personalityResponse = null;
-	private String aptitude = null;
+	private Aptitude aptitude = null;
 	private static final int DEFINITION = 0, INVENTORY = 1, EQUIPPED = 2;
 	private int itemContext = DEFINITION;
 	
@@ -79,7 +79,7 @@ public class DHOPrinter {
 	}
 	
 	private void printAptitudeList() {
-		for(String aptitude : npc.aptitudeList) {
+		for(Aptitude aptitude : npc.aptitudeList) {
 			this.aptitude = aptitude;
 			processFile("APTITUDE");
 		}
@@ -721,7 +721,7 @@ public class DHOPrinter {
 		case PERSONALITY_RESPONSE_FAILURE:
 			return personalityResponse.failure;
 		case APTITUDE_NAME:
-			return aptitude;
+			return aptitude.fullName();
 		default:
 			throw new RuntimeException("Undefined Variable: "+this);
 		}

@@ -13,6 +13,10 @@ enum Availability {
 			"-20", "-30", "-40", "-50", "-60"
 	};
 	
+	public String getFullName() {
+		return this+" ("+getModifier()+")";
+	}
+	
 	public String getModifier() {
 		return MODIFIER_LIST[ordinal()];
 	}

@@ -2,8 +2,8 @@ package main;
 
 
 public enum Aptitude {
-	WS, BS, S, T, Ag, Int, Per, WP, Fel,
-	General, Offence, Finesse, Defence, Psyker, Tech, Leadership, Fieldcraft, Social, Knowledge;
+	WEAPON_SKILL, BALLISTIC_SKILL, STRENGTH, TOUGHNESS, AGILITY, INTELLIGENCE, PERCEPTION, WILLPOWER, FELLOWSHIP,
+	GENERAL, OFFENCE, FINESSE, DEFENCE, PSYKER, TECH, LEADERSHIP, FIELDCRAFT, SOCIAL, KNOWLEDGE;
 	
 	private static final String[] fullNameList = {
 			"Weapon Skill",

@@ -40,96 +40,96 @@ public class Skill {
 	
 	// General Skills //
 	public static final Skill navigate = new Skill("Navigate",
-			Aptitude.Int, Aptitude.Fieldcraft, true, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.FIELDCRAFT, true, "Long");
 	public static final Skill notice = new Skill("Notice",
-			Aptitude.Per, Aptitude.General, true, "Passive");
+			Aptitude.PERCEPTION, Aptitude.GENERAL, true, "Passive");
 	public static final Skill reflex = new Skill("Reflex",
-			Aptitude.Per, Aptitude.General, true, "Reaction");
+			Aptitude.PERCEPTION, Aptitude.GENERAL, true, "Reaction");
 	public static final Skill run = new Skill("Run",
-			Aptitude.Ag, Aptitude.General, true, "Action");
+			Aptitude.AGILITY, Aptitude.GENERAL, true, "Action");
 	
 	// Combat Skills //
 	public static final Skill dodge = new Skill("Dodge",
-			Aptitude.Ag, Aptitude.Finesse, true, "Reaction");
+			Aptitude.AGILITY, Aptitude.FINESSE, true, "Reaction");
 	public static final Skill grapple = new Skill("Grapple",
-			Aptitude.S, Aptitude.Offence, true, "Action");
+			Aptitude.STRENGTH, Aptitude.OFFENCE, true, "Action");
 	public static final Skill knockDown = new Skill("Knock Down",
-			Aptitude.S, Aptitude.Offence, true, "Action");
+			Aptitude.STRENGTH, Aptitude.OFFENCE, true, "Action");
 	public static final Skill parry = new Skill("Parry",
-			Aptitude.WS, Aptitude.Defence, true, "Reaction");
+			Aptitude.WEAPON_SKILL, Aptitude.DEFENCE, true, "Reaction");
 	public static final Skill stun = new Skill("Stun",
-			Aptitude.WS, Aptitude.Offence, true, "Action");
+			Aptitude.WEAPON_SKILL, Aptitude.OFFENCE, true, "Action");
 	
 	// Investigation Skills //
 	public static final Skill contemplate = new Skill("Contemplate",
-			Aptitude.Int, Aptitude.Knowledge, true, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.KNOWLEDGE, true, "Long");
 	public static final Skill inquire = new Skill("Inquire",
-			Aptitude.Fel, Aptitude.Social, true, "Long");
+			Aptitude.FELLOWSHIP, Aptitude.SOCIAL, true, "Long");
 	public static final Skill inspect = new Skill("Inspect",
-			Aptitude.Per, Aptitude.General, true, "Short");
+			Aptitude.PERCEPTION, Aptitude.GENERAL, true, "Short");
 	public static final Skill interrogate = new Skill("Interrogate",
-			Aptitude.WP, Aptitude.Social, true, "Long");
+			Aptitude.WILLPOWER, Aptitude.SOCIAL, true, "Long");
 	public static final Skill referenceLore = new Skill("Reference Lore",
-			Aptitude.Int, Aptitude.Knowledge, true, "Varies");
+			Aptitude.INTELLIGENCE, Aptitude.KNOWLEDGE, true, "Varies");
 	@Deprecated
 	public static final Skill referenceCommonLore = new Skill("Ref. Common Lore",
-			Aptitude.Int, Aptitude.General, true, "Varies");
+			Aptitude.INTELLIGENCE, Aptitude.GENERAL, true, "Varies");
 	@Deprecated
 	public static final Skill referenceForbiddenLore = new Skill("Ref. Forbidden Lore",
-			Aptitude.Int, Aptitude.Knowledge, false, "Varies");
+			Aptitude.INTELLIGENCE, Aptitude.KNOWLEDGE, false, "Varies");
 	@Deprecated
 	public static final Skill referenceScholasticLore = new Skill("Ref. Scholastic Lore",
-			Aptitude.Int, Aptitude.Knowledge, false, "Varies");
+			Aptitude.INTELLIGENCE, Aptitude.KNOWLEDGE, false, "Varies");
 	public static final Skill search = new Skill("Search",
-			Aptitude.Per, Aptitude.General, true, "Short");
+			Aptitude.PERCEPTION, Aptitude.GENERAL, true, "Short");
 	
 	// Social Skills //
 	public static final Skill charm = new Skill("Charm",
-			Aptitude.Fel, Aptitude.Social, true, "Short");
+			Aptitude.FELLOWSHIP, Aptitude.SOCIAL, true, "Short");
 	public static final Skill command = new Skill("Command",
-			Aptitude.Fel, Aptitude.Leadership, true, "Action");
+			Aptitude.FELLOWSHIP, Aptitude.LEADERSHIP, true, "Action");
 	public static final Skill deceive = new Skill("Deceive",
-			Aptitude.Fel, Aptitude.Social, true, "Passive");
+			Aptitude.FELLOWSHIP, Aptitude.SOCIAL, true, "Passive");
 	public static final Skill inspire = new Skill("Inspire",
-			Aptitude.Fel, Aptitude.Leadership, true, "Action");
+			Aptitude.FELLOWSHIP, Aptitude.LEADERSHIP, true, "Action");
 	public static final Skill intimidate = new Skill("Intimidate",
-			Aptitude.S, Aptitude.Social, true, "Action");
+			Aptitude.STRENGTH, Aptitude.SOCIAL, true, "Action");
 	public static final Skill persuade = new Skill("Persuade",
-			Aptitude.Fel, Aptitude.Social, true, "Short");
+			Aptitude.FELLOWSHIP, Aptitude.SOCIAL, true, "Short");
 	public static final Skill readPerson = new Skill("Read Person",
-			Aptitude.Per, Aptitude.Social, true, "Passive");
+			Aptitude.PERCEPTION, Aptitude.SOCIAL, true, "Passive");
 	
 	// Stealth Skills //
 	public static final Skill conceal = new Skill("Conceal",
-			Aptitude.Ag, Aptitude.Fieldcraft, true, "Action");
+			Aptitude.AGILITY, Aptitude.FIELDCRAFT, true, "Action");
 	public static final Skill disguise = new Skill("Disguise",
-			Aptitude.Int, Aptitude.Social, true, "Short");
+			Aptitude.INTELLIGENCE, Aptitude.SOCIAL, true, "Short");
 	public static final Skill hack = new Skill("Hack",
-			Aptitude.Int, Aptitude.Tech, false, "Short");
+			Aptitude.INTELLIGENCE, Aptitude.TECH, false, "Short");
 	public static final Skill unlock = new Skill("Unlock",
-			Aptitude.Int, Aptitude.Fieldcraft, false, "Short");
+			Aptitude.INTELLIGENCE, Aptitude.FIELDCRAFT, false, "Short");
 	public static final Skill sneak = new Skill("Sneak",
-			Aptitude.Ag, Aptitude.Finesse, true, "Varies");
+			Aptitude.AGILITY, Aptitude.FINESSE, true, "Varies");
 	
 	// Specialist Skills //
 	public static final Skill administerDrug = new Skill("Administer Drug",
-			Aptitude.Int, Aptitude.Fieldcraft, true, "Action");
+			Aptitude.INTELLIGENCE, Aptitude.FIELDCRAFT, true, "Action");
 	public static final Skill craft = new Skill("Craft",
-			Aptitude.Int, Aptitude.Tech, true, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.TECH, true, "Long");
 	public static final Skill haggle = new Skill("Haggle",
-			Aptitude.Fel, Aptitude.Social, true, "Short");
+			Aptitude.FELLOWSHIP, Aptitude.SOCIAL, true, "Short");
 	public static final Skill performSurgery = new Skill("Perform Surgery",
-			Aptitude.Int, Aptitude.Knowledge, false, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.KNOWLEDGE, false, "Long");
 	public static final Skill repair = new Skill("Repair",
-			Aptitude.Int, Aptitude.Tech, true, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.TECH, true, "Long");
 	public static final Skill senseImmateruim = new Skill("Sense Immaterium",
-			Aptitude.WP, Aptitude.Psyker, false, "Passive");
+			Aptitude.WILLPOWER, Aptitude.PSYKER, false, "Passive");
 	public static final Skill setTrap = new Skill("Set Trap",
-			Aptitude.Int, Aptitude.Fieldcraft, true, "Short");
+			Aptitude.INTELLIGENCE, Aptitude.FIELDCRAFT, true, "Short");
 	public static final Skill treatWounds = new Skill("Treat Wounds",
-			Aptitude.Int, Aptitude.Fieldcraft, false, "Long");
+			Aptitude.INTELLIGENCE, Aptitude.FIELDCRAFT, false, "Long");
 	public static final Skill useTech = new Skill("Use Tech",
-			Aptitude.Int, Aptitude.Tech, false, "Action");
+			Aptitude.INTELLIGENCE, Aptitude.TECH, false, "Action");
 	public static final Skill wrangle = new Skill("Wrangle",
-			Aptitude.Fel, Aptitude.Fieldcraft, false, "Short");
+			Aptitude.FELLOWSHIP, Aptitude.FIELDCRAFT, false, "Short");
 }

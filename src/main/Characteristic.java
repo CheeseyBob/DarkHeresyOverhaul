@@ -21,23 +21,23 @@ public enum Characteristic {
 	public Aptitude aptitude2() {
 		switch(this) {
 		case WS:
-			return Aptitude.Offence;
+			return Aptitude.OFFENCE;
 		case BS:
-			return Aptitude.Finesse;
+			return Aptitude.FINESSE;
 		case S:
-			return Aptitude.Offence;
+			return Aptitude.OFFENCE;
 		case T:
-			return Aptitude.Defence;
+			return Aptitude.DEFENCE;
 		case Ag:
-			return Aptitude.Finesse;
+			return Aptitude.FINESSE;
 		case Int:
-			return Aptitude.Knowledge;
+			return Aptitude.KNOWLEDGE;
 		case Per:
-			return Aptitude.Fieldcraft;
+			return Aptitude.FIELDCRAFT;
 		case WP:
-			return Aptitude.Psyker;
+			return Aptitude.PSYKER;
 		case Fel:
-			return Aptitude.Social;
+			return Aptitude.SOCIAL;
 		default:
 			return null;
 		}

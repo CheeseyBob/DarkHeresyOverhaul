@@ -1,6 +1,6 @@
 	~~ To Do List ~~
 
->>> NPC Groups:
+>>> NPC Groups: [can this wait until after starting the playtest?]
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
         - Ministorum cherub servitor
         - scribe servo-skull
@@ -16,8 +16,6 @@
 >>> Psychic Powers
 
 >>> GM notes for item creation
-
->>> Special rule parameter insertion into the description text.
 
 
 > Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
