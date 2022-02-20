@@ -17,7 +17,7 @@ public class Talent extends SpecialRule {
 	@Override
 	public Talent withParameter(String parameter) {
 		Talent ruleWithParameter = new Talent(name, description, requirement, aptitude, xp);
-		ruleWithParameter.parameter = parameter;
+		ruleWithParameter.setParameter(parameter);
 		return ruleWithParameter;
 	}
 	

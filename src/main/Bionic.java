@@ -11,7 +11,7 @@ public class Bionic extends SpecialRule {
 	@Override
 	public Bionic withParameter(String parameter) {
 		Bionic ruleWithParameter = new Bionic(name, description, availability);
-		ruleWithParameter.parameter = parameter;
+		ruleWithParameter.setParameter(parameter);
 		return ruleWithParameter;
 	}
 	

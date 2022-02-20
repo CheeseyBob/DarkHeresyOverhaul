@@ -21,13 +21,9 @@ class DarkHeresyOverhaul {
 		for(PrintableFile file : FileList.getAll()) {
 			printFile(file);
 		}
-		
-		//XXX//
 		for(Item item: Item.list) {
 			printFile(new ItemFile(item));
 		}
-		///////
-		
 		System.out.println("HTML file generation complete.");
 	}
 	

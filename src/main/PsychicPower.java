@@ -13,7 +13,7 @@ public class PsychicPower extends SpecialRule {
 	@Override
 	public PsychicPower withParameter(String parameter) {
 		PsychicPower ruleWithParameter = new PsychicPower(name, description, requirement, xp);
-		ruleWithParameter.parameter = parameter;
+		ruleWithParameter.setParameter(parameter);
 		return ruleWithParameter;
 	}
 	

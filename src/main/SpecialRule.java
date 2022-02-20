@@ -1,6 +1,8 @@
 package main;
 
 public class SpecialRule {
+	private static final String PARAMETER_DELIMITER = "@";
+	
 	String name;
 	String parameter = null;
 	String description;
@@ -18,9 +20,19 @@ public class SpecialRule {
 		}
 	}
 	
+	public void setParameter(String parameter) {
+		this.parameter = parameter;
+		// Insert the parameter into the description.
+		String[] descriptionChunkList = description.split(PARAMETER_DELIMITER);
+		description = descriptionChunkList[0];
+		for(int i = 1; i < descriptionChunkList.length; i ++) {
+			description += parameter+descriptionChunkList[i];
+		}
+	}
+	
 	public SpecialRule withParameter(String parameter) {
 		SpecialRule ruleWithParameter = new SpecialRule(name, description);
-		ruleWithParameter.parameter = parameter;
+		ruleWithParameter.setParameter(parameter);
 		return ruleWithParameter;
 	}
 	
