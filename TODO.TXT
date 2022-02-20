@@ -17,8 +17,6 @@
 
 >>> GM notes for item creation
 
->>> Convert various references into hyperlinks (items, npc, etc.)
-
 >>> Special rule parameter insertion into the description text.
 
 
@@ -79,6 +77,7 @@ biomancy power - inflict characteristic damage
 
 
 archeotech item which removes corruption
+archeotech item - nullification sphere (penalty to psykers nearby)
 
 
 

@@ -1,16 +1,24 @@
 package main;
+
+import java.io.File;
 import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.List;
 
 import files.TextFileHandler;
 
+
 public class DHOPrinter {
+	// Parameters //
+	private static final String INPUT_FILE_EXTENSION = ".in";
+	private static final boolean USE_CDN = false;
+	
 	// Printing //
 	private PrintWriter pw = null;
 	public String path = "out/";
 	
 	// General //
+	private int pathDepth = 0;
 	private String title = "", header = "", note = "";
 	private int colSize = 1;
 	private String linkRef = "", linkName = "";
@@ -30,7 +38,7 @@ public class DHOPrinter {
 	private Skill skill = null;
 	private Item item = null;
 	private Personality personality = null;
-	private Personality.SkillResponse[]  personalityResponseList = null;
+	private Personality.SkillResponse[] personalityResponseList = null;
 	private Personality.SkillResponse personalityResponse = null;
 	private String aptitude = null;
 	private static final int DEFINITION = 0, INVENTORY = 1, EQUIPPED = 2;
@@ -38,10 +46,19 @@ public class DHOPrinter {
 	
 	DHOPrinter(String filename) {
 		this.pw = TextFileHandler.startWritingToFile(path+filename);
+		this.pathDepth = pathDepth(filename);
 	}
 	
 	public void close() {
 		pw.close();
+	}
+	
+	private String assetsDirectory() {
+		String assetsDirectory = "assets";
+		for(int i = 0; i < pathDepth; i ++) {
+			assetsDirectory = "../"+assetsDirectory;
+		}
+		return assetsDirectory;
 	}
 	
 	public static String idFrom(String string) {
@@ -54,6 +71,11 @@ public class DHOPrinter {
 			}
 		}
 		return idString;
+	}
+	
+	private static int pathDepth(String filename) {
+		String[] splitPath = filename.split(File.separator);
+		return splitPath.length - 1;
 	}
 	
 	private void printAptitudeList() {
@@ -185,9 +207,17 @@ public class DHOPrinter {
 		processFile("FILE_TAIL");
 	}
 	
-	public void printFileTop(String title) {
+	public void printFileTop(String title, boolean printNav, boolean printTitle) {
 		this.title = title;
-		processFile("FILE_TOP");
+		processFile(USE_CDN ? "FILE_TOP_CDN" : "FILE_TOP_NOCDN");
+		if(printNav)
+			processFile("FILE_NAV");
+		if(printTitle)
+			processFile("FILE_TITLE");
+	}
+	
+	public void printFileTop(String title) {
+		printFileTop(title, true, true);
 	}
 	
 	public void printHeader(String header) {
@@ -279,8 +309,8 @@ public class DHOPrinter {
 	
 	public void printList(boolean ordered, Object[] list) {
 		pw.println(ordered ? "<ol>" : "<ul>");
-		for(Object item : list) {
-			pw.println("<li>"+item+"</li>");
+		for(Object obj : list) {
+			pw.println("<li>"+obj+"</li>");
 		}
 		pw.println(ordered ? "</ol>" : "</ul>");
 	}
@@ -482,7 +512,7 @@ public class DHOPrinter {
 	}
 	
 	private void processFile(String filename) {
-		LinkedList<String> lineList = TextFileHandler.readEntireFile("in/"+filename+".template");
+		LinkedList<String> lineList = TextFileHandler.readEntireFile("in/"+filename+INPUT_FILE_EXTENSION);
 		for(String line : lineList) {
 			if(line.contains("!!")){
 				processLineWithCommand(line);
@@ -547,6 +577,8 @@ public class DHOPrinter {
 	
 	private String valueOf(Variable variable) {
 		switch (variable) {
+		case ASSETS_DIRECTORY:
+			return assetsDirectory();
 		case TITLE:
 			return title;
 		case HEADER:
@@ -644,9 +676,9 @@ public class DHOPrinter {
 			case DEFINITION:
 				return item.name;
 			case INVENTORY:
-				return item.getFullName(false);
+				return item.nameInInventory();
 			case EQUIPPED:
-				return item.getFullName(true);
+				return item.nameWhenEquipped();
 			}
 		case ITEM_SIZE:
 			return ""+item.size;
@@ -702,6 +734,7 @@ public class DHOPrinter {
 	}
 	
 	private enum Variable {
+		ASSETS_DIRECTORY,
 		TITLE, HEADER, HEADER_ID, SUBHEADER, SUBHEADER_ID, NOTE, COL_SIZE,
 		LINK_REF, LINK_NAME, LINE_BREAK,
 		ASPECT_NAME, ASPECT_BONUS, ASPECT_PENALTY, ASPECT_SPECIAL, ASPECT_OVERCOME,

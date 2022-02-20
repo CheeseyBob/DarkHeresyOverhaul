@@ -9,12 +9,8 @@ public class Armour extends Item {
 	}
 	
 	@Override
-	public String getFullName(boolean isItemEquipped) {
-		if(isItemEquipped) {
-			return name+"<br>["+ap+"]";
-		} else {
-			return name+" ["+size+"]";
-		}
+	public String nameWhenEquipped() {
+		return super.nameWhenEquipped()+"<br>["+ap+"]";
 	}
 	
 	public Armour withSpecialRule(SpecialRule specialRule) {

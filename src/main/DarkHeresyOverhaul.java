@@ -1,6 +1,8 @@
 package main;
 
 import files.FileList;
+import files.ItemFile;
+
 
 /**
  * Program for compiling the documentation for Dark Heresy Overhaul as an HTML document.
@@ -17,16 +19,23 @@ class DarkHeresyOverhaul {
 	public static void main(String[] args) {
 		System.out.println("Running DarkHeresyOverhaul html generation...");
 		for(PrintableFile file : FileList.getAll()) {
-			System.out.print("Generating "+file.filename()+"... ");
 			printFile(file);
-			System.out.println("done.");
 		}
+		
+		//XXX//
+		for(Item item: Item.list) {
+			printFile(new ItemFile(item));
+		}
+		///////
+		
 		System.out.println("HTML file generation complete.");
 	}
 	
-	private static void printFile(PrintableFile printable) {
-		DHOPrinter printer = new DHOPrinter(printable.filename());
-		printable.print(printer);
+	private static void printFile(PrintableFile file) {
+		System.out.print("Generating "+file.filename()+"... ");
+		DHOPrinter printer = new DHOPrinter(file.filename());
+		file.print(printer);
 		printer.close();
+		System.out.println("done.");
 	}
 }
