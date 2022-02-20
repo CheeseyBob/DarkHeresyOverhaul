@@ -10,7 +10,6 @@
     - Hostile groups (daemon cults, etc.)
 
 >>> Character Creation:
-    - starting gelt?
 	- bring the character to life section
 
 >>> Psychic Powers

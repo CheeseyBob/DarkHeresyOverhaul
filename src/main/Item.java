@@ -54,20 +54,23 @@ public class Item {
 		return this;
 	}
 	
-	public Item times(int amount) {
+	public Item times(String amount) {
 		return new ItemStack(this, amount);
+	}
+	
+	public Item times(int amount) {
+		return new ItemStack(this, ""+amount);
 	}
 	
 	@Override
 	public String toString() {
 		return hyperlink();
-		//return name;
 	}
 	
 	class ItemStack extends Item {
-		int amount;
+		String amount;
 		
-		ItemStack(Item item, int amount){
+		ItemStack(Item item, String amount){
 			super(item.name, item.size, null, false);
 			this.amount = amount;
 		}

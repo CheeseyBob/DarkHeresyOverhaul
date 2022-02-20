@@ -44,6 +44,7 @@ public class Background {
 									Clothing.administratumRobes,
 									Tool.dataTome_lore,
 									MiscItem.chrono,
+									MiscItem.gelt.times("2d10+20"),
 							}
 					)
 			)
@@ -75,6 +76,7 @@ public class Background {
 							new Item[] {
 									Clothing.administratumRobes,
 									MiscItem.chrono,
+									MiscItem.gelt.times("2d10+20"),
 							}
 					)
 			)
@@ -105,6 +107,7 @@ public class Background {
 									Consumable.qualityMedkit,
 									Consumable.injector_deTox,
 									MiscItem.chrono,
+									MiscItem.gelt.times("2d10+20"),
 							}
 					)
 			),
@@ -147,7 +150,8 @@ public class Background {
 									Ammo.pistol_arbites_mag,
 									MiscItem.manacles,
 									MiscItem.handVox,
-									MiscItem.lhoSticks
+									MiscItem.lhoSticks,
+									MiscItem.gelt.times("2d10+10"),
 							}
 					)
 			),
@@ -175,6 +179,7 @@ public class Background {
 									Tool.psyFocus,
 									MeleeWeapon.knife_psykanaMercyBlade,
 									RangedWeapon.laspistol,
+									MiscItem.gelt.times("2d10+20"),
 							},
 							"12 XP of Psychic Powers"
 					)
@@ -204,6 +209,7 @@ public class Background {
 									MeleeWeapon.staff_astraTelepathica,
 									Tool.psyFocus,
 									MeleeWeapon.knife_psykanaMercyBlade,
+									MiscItem.gelt.times("2d10+20"),
 							},
 							"6 XP of Psychic Powers"
 					)
@@ -247,6 +253,7 @@ public class Background {
 									Tool.combiTool,
 									MiscItem.glowGlobe,
 									Tool.lascutter,
+									MiscItem.gelt.times("2d10+30"),
 							}
 					)
 			)
@@ -284,6 +291,7 @@ public class Background {
 									Consumable.qualityMedkit,
 									Tool.surgicalTools,
 									MiscItem.glowGlobe,
+									MiscItem.gelt.times("2d10+30"),
 							}
 					)
 			),
@@ -321,6 +329,7 @@ public class Background {
 									MeleeWeapon.shortsword_ecclesiarchy,
 									Tool.tome_imperialCreed,
 									new Item("Aquilla Necklace", 0),
+									MiscItem.gelt.times("2d10+40"),
 							}
 					)
 			),
@@ -357,6 +366,7 @@ public class Background {
 									ThrownWeapon.fragHandGrenade,
 									MeleeWeapon.knife,
 									MiscItem.lhoSticks,
+									MiscItem.gelt.times("2d10+10"),
 							}
 					)
 			),
@@ -390,6 +400,7 @@ public class Background {
 									Tool.stummer,
 									RangedWeapon.pistol,
 									MeleeWeapon.knife,
+									MiscItem.gelt.times("3d10"),
 							}
 					)
 			)
@@ -423,6 +434,7 @@ public class Background {
 									Ammo.autopistol_mag,
 									MeleeWeapon.club,
 									MeleeWeapon.knife,
+									MiscItem.gelt.times("3d10"),
 							}
 					)
 			)
@@ -455,6 +467,7 @@ public class Background {
 									Ammo.huntingRifle_mag,
 									MeleeWeapon.longDagger,
 									Consumable.vial_lethalPoison_3,
+									MiscItem.gelt.times("3d10"),
 							}
 					)
 			)
