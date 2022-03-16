@@ -17,9 +17,17 @@
 >>> GM notes for item creation
 
 
+> Different roll for NPC Disposition? Middle of 3d100?
+
+> Add some encountered locations for things like major power conduits, comms hubs, flora
+
+> Rethink having shops selling weapons - this should be a black market thing
+
+> More thought into navigating difficult terrain - difficulty modifiers?
+
 > Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
 
-> Remove Calixis Sector and War Common Lore areas 
+> ? Remove Calixis Sector and War Common Lore areas 
 
 > Can probably rework Fear Ratings to be more straightforward.
 
@@ -83,22 +91,28 @@ Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks w
 Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its long toungue to grab prey which gets too close. Size(5); Unnatural Senses(10m) and high Perception; Strength 30; crushing bite attack with large bonus to Strength; good concealment.
 
 
+> Make map stamps/tokens for terrain elements and objects which could be added to a battlemap.
+    - pillars
+    - lamp posts
+    - substations
+    - piles of rubble/refuse
+    - water/chemical spills
+    > Use square tokens (or maybe other non-round shapes) for objects (esp. interactable oblects like doors)
+> Characters
+    > Make more token icons in the 40k rough ink style.
+    > Make some generic character portraits.
+
+
+
 	~~ MapTool ~~
 
-> Character sheet XP and Advance log
-> Character sheet "edit mode" for removing/editing values (main section)
+Use Fog of War to obscure PC vision. Reveal areas manually.
+Don't bother using vision blocking?
 
+> Use separate maps for different floors.
+       - Make a macro for sending the selected token to another map.
+> Forget about complex/restrictive character sheets, just let the PCs write what they want.
+    - possibly with links to bring up item cards?
 
-Make a "training course" in MapTool
-> Melee combat
-> Ranged combat
-> Mixed combat
-> Sniping
-> Grenades
-> Fire
-> Stealth
-> Setting up defences
-> Mobility (using grapnels etc.)
-> Scenario where a Lascutter can be used(?)
 
 

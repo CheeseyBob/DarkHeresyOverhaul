@@ -109,6 +109,7 @@ public class NPC {
 			.withSpecialRule(Talent.experienced.withParameter("Underworld"))
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withSpecialRule(Talent.peer.withParameter("Underworld"))
+			.withSpecialRule(Talent.recoilCompensation)
 			.withSkill(Skill.dodge.withBonus(10))
 			.withSkill(Skill.intimidate.withBonus(20))
 			.withSkill(Skill.notice.withBonus(10))
@@ -127,5 +128,5 @@ public class NPC {
 				+ "Background: Outcast (Ganger)"+"<br>"
 				+ "Role: Warrior"+"<br>"
 				+ "Advances: WS +5, BS +10, S +10, T +10, Ag +5, Per +5"+"<br>"
-				+ "XP: 5 total,  5 to spend"+"<br>");
+				+ "XP: 5 total,  3 to spend"+"<br>");
 }
