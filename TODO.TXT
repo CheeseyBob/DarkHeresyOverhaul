@@ -1,6 +1,13 @@
 	~~ To Do List ~~
 
->>> NPC Groups: [can this wait until after starting the playtest?]
+>>> Character Creation:
+	- bring the character to life section
+
+>>> How to gain XP:
+	- PCs submit reports to their Inquisitor
+    - If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
+
+>>> NPC Groups: [can wait until after starting the playtest]
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
         - Ministorum cherub servitor
         - scribe servo-skull
@@ -9,27 +16,29 @@
     - Unaligned characters (animals, xenos, etc.)
     - Hostile groups (daemon cults, etc.)
 
->>> Character Creation:
-	- bring the character to life section
+>>> Psychic Powers [can wait until after starting the playtest]
 
->>> Psychic Powers
+>>> GM notes for item creation [can wait until after starting the playtest]
 
->>> GM notes for item creation
 
+> Can probably rework Fear Ratings to be more straightforward.
 
 > Different roll for NPC Disposition? Middle of 3d100?
 
 > Add some encountered locations for things like major power conduits, comms hubs, flora
 
+> Add some guides for creating and spicing up battlemaps
+    - Cover features (pillars, rubble, tech boxes (what's the word for these?), etc.
+    - Verticality? Stairs/ramps/ledges/etc.
+
 > Rethink having shops selling weapons - this should be a black market thing
 
 > More thought into navigating difficult terrain - difficulty modifiers?
+    - Smog
 
 > Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
 
 > ? Remove Calixis Sector and War Common Lore areas 
-
-> Can probably rework Fear Ratings to be more straightforward.
 
 > Daemonic Possession
     - psychic power for daemons only
@@ -42,11 +51,13 @@
 
 > vacuum and zero-G environmental aspects
 
-> Think about how mounts/mounted combat will work. Also interactions with beasts in general.
+> Interactions with beasts
+	- Also think about how mounts/mounted combat will work [post-playtest] 
 
 > More Fieldcraft Talents
 	- stuff about Beasts / wrangling / mounted combat
     - stuff relating to stealth skills
+    - more stuff about unlocking/security/thievery/breaking-and-entering
 
 > More NPC personality tables
 

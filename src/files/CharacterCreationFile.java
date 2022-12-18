@@ -164,6 +164,36 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printHeader("Bringing the Character to Life");
 		printer.printParagraph("xxxxxxxx");
 		
+		// ...
+		
+		printer.println("<b>Age</b>");
+		printer.printParagraph("xxxxxxxx");
+		
+		printer.println("<b>Appearance - Build</b>");
+		printer.printParagraph("[Feral World: Rangy / Lean / Muscular / Squat / Strapping]");
+		printer.printParagraph("[Hive World: Runt / Scrawny / Wiry / Lanky / Brawny]");
+		printer.printParagraph("[Imperial World: Slender / Svelte / Fit / Well-Built / Stocky]");
+		printer.printParagraph("[Void Born: Skeletal / Stunted / Gaunt / Gangling / Spindly]");
+		
+		printer.println("<b>Appearance - Colouration</b>");
+		printer.printParagraph("xxxxxxxx");
+		
+		printer.println("<b>Appearance - Quirls</b>");
+		printer.printParagraph("xxxxxxxx");
+		
+		printer.println("<b>Subculture</b>");
+		printer.printParagraph("[Feral World superstitions / Hive subcultures / Void Born ship traditions / etc.]");
+		
+		printer.println("<b>Divination</b>");
+		printer.printParagraph("[this should just be a prompt for backstory/roleplaying with no effect on stats]");
+		printer.printParagraph("[combine the 1e and 2e tables]");
+		
+		printer.println("<b>Nature</b>");
+		printer.printParagraph("[personality / desire / hate]");
+		
+		printer.println("<b>Name</b>");
+		printer.printParagraph("xxxxxxxx");
+		
 		
 		// TODO //
 		
