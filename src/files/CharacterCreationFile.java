@@ -40,6 +40,55 @@ class CharacterCreationFile implements PrintableFile {
 		return list;
 	}
 	
+	private static String[][] divinationsList = {
+			{"01-02", "Thought begets Heresy."},
+			{"03-04", "Heresy begets Retribution."},
+			{"05-06", "Do not ask why you serve, only how."},
+			{"07-08", "Only the insane have strength enough to prosper."},
+			{"09-10", "Innocence is an illusion."},
+			{"11-12", "Dark dreams lie upon the heart."},
+			{"13-14", "The pain of the bullet is ecstasy compared to damnation."},
+			{"15-16", "The soul wavers in the Void."},
+			{"17-18", "Darkness stalks us all."},
+			{"19-20", "Mutation without; corruption within."},
+			{"21-22", "The alien speaks naught but lies."},
+			{"23-24", "Even one who has nothing can still offer his life."},
+			{"25-27", "Truth is subjective."},
+			{"28-29", "What is worth doing is worth dying for."},
+			{"30-31", "A wandering mind will find itself in dark places."},
+			{"32-33", "The light of the Emperor gives us strength."},
+			{"34-37", "Violence solves everything."},
+			{"38-39", "There are no civillians in the battle for survival."},
+			{"40-41", "To war is human."},
+			{"42-43", "An unbroken spirit serves the Emperor until death."},
+			{"44-45", "Ignorance is a blessing."},
+			{"46-47", "Humans must die so that humanity can endure."},
+			{"48-49", "Suffering is naught but an instructor."},
+			{"50-51", "There is nothing to fear but failure."},
+			{"52-54", "The wise learn from the deaths of others."},
+			{"55-56", "A suspicious mind is a safe mind."},
+			{"57-58", "Be watchful; be wary."},
+			{"59-62", "Trust in your fear."},
+			{"63-64", "There is no substitute for zeal."},
+			{"65-66", "To admit defeat is to be defeated."},
+			{"67-68", "Both strength and weakness come from within."},
+			{"69-70", "Victory is its own reward."},
+			{"71-72", "Destruction brings salvation."},
+			{"73-74", "It is better to die for the Emperor than live for yourself."},
+			{"75-78", "Never forgive; never forget."},
+			{"79-80", "Doubt not your strength."},
+			{"81-82", "Faith is a shield."},
+			{"83-84", "Serve only the Emperor's will."},
+			{"85-86", "Trust in the Emperor."},
+			{"87-88", "Obey without question; command without doubt."},
+			{"89-90", "Success is measured in blood."},
+			{"91-94", "The truth is terrible to bear."},
+			{"95-96", "Hatred is the Emperor’s greatest gift."},
+			{"97-98", "Only in death does duty end."},
+			{"99-00", "Everything you have been told is a lie."},
+	};
+
+	
 	@Override
 	public String filename() {
 		return "CharacterCreation.html";
@@ -190,67 +239,7 @@ class CharacterCreationFile implements PrintableFile {
 
 		printer.printSubheader_collapsible("Divinations");
 		printer.printCollapsibleTop();
-		printer.printRowTop();
-		printer.printColTop(6);
-		printer.printTableTop("d100", "Divination", false, true);
-		printer.printTableRow("xx-xx", "Mutation without; corruption within.");
-		printer.printTableRow("xx-xx", "Only the insane have strength enough to prosper.");
-		printer.printTableRow("xx-xx", "Innocence is an illusion.");
-		printer.printTableRow("xx-xx", "Dark dreams lie upon the heart.");
-		printer.printTableRow("xx-xx", "The pain of the bullet is ecstasy compared to damnation.");
-		printer.printTableRow("xx-xx", "The soul wavers in the Void.");
-		printer.printTableRow("xx-xx", "Darkness stalks us all.");
-		printer.printTableRow("xx-xx", "The alien speaks naught but lies.");
-		printer.printTableRow("xx-xx", "Fight the enemy without.");
-		printer.printTableRow("xx-xx", "Find the enemy within.");
-		printer.printTableRow("xx-xx", "Fear the enemy beyond.");
-		printer.printTableRow("xx-xx", "Even one who has nothing can still offer his life.");
-		printer.printTableRow("xx-xx", "Truth is subjective.");
-		printer.printTableRow("xx-xx", "What is worth doing is worth dying for.");
-		printer.printTableRow("xx-xx", "A wandering mind will find itself in dark places.");
-		printer.printTableRow("xx-xx", "Stray not from the light of the Emperor.");
-		printer.printTableRow("xx-xx", "There are no civillians in the battle for survival.");
-		printer.printTableRow("xx-xx", "Violence solves everything.");
-		printer.printTableRow("xx-xx", "Die with your spirit unbroken.");
-		printer.printTableRow("xx-xx", "To war is human.");
-		printer.printTableRow("xx-xx", "A boon to your allies is a bane to your enemies.");
-		printer.printTableRow("xx-xx", "Ignorance is a blessing.");
-		printer.printTableRow("xx-xx", "Humans must die so that humanity can endure.");
-		printer.printTableRow("xx-xx", "In the darkness, follow the light of Terra.");
-		printer.printTableRow("xx-xx", "Suffering is naught but an instructor.");
-		printer.printTableRow("xx-xx", "There is nothing to fear but failure.");
-		printer.printTableTail();
-		printer.printColTail();
-		printer.printColTop(6);
-		printer.printTableTop("d100", "Divination", false, true);
-		printer.printTableRow("xx-xx", "Thought begets Heresy.");
-		printer.printTableRow("xx-xx", "Heresy begets Retribution.");
-		printer.printTableRow("xx-xx", "Do not ask why you serve, only how.");
-		printer.printTableRow("xx-xx", "The wise learn from the deaths of others.");
-		printer.printTableRow("xx-xx", "A suspicious mind is a healthy mind.");
-		printer.printTableRow("xx-xx", "There is no substitute for zeal.");
-		printer.printTableRow("xx-xx", "To admit defeat is to be defeated.");
-		printer.printTableRow("xx-xx", "Both strength and weakness come from within.");
-		printer.printTableRow("xx-xx", "Victory is its own reward.");
-		printer.printTableRow("xx-xx", "Be watchful; be wary.");
-		printer.printTableRow("xx-xx", "Trust in your fear.");
-		printer.printTableRow("xx-xx", "Destruction brings salvation.");
-		printer.printTableRow("xx-xx", "It is better to die for the Emperor than live for yourself.");
-		printer.printTableRow("xx-xx", "Never forgive; never forget.");
-		printer.printTableRow("xx-xx", "Doubt not your strength.");
-		printer.printTableRow("xx-xx", "Faith is a shield.");
-		printer.printTableRow("xx-xx", "Serve only the Emperor's will.");
-		printer.printTableRow("xx-xx", "Better crippled in body than corrupt in mind.");
-		printer.printTableRow("xx-xx", "Trust in the Emperor.");
-		printer.printTableRow("xx-xx", "Obey without question; command without doubt.");
-		printer.printTableRow("xx-xx", "Success is measured in blood.");
-		printer.printTableRow("xx-xx", "The truth is terrible to bear.");
-		printer.printTableRow("xx-xx", "Hatred is the Emperor’s greatest gift.");
-		printer.printTableRow("xx-xx", "Only in death does duty end.");
-		printer.printTableRow("xx-xx", "Everything you have been told is a lie.");
-		printer.printTableTail();
-		printer.printColTail();
-		printer.printRowTail();
+		printDivinationsTable(1, printer);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
@@ -294,5 +283,20 @@ class CharacterCreationFile implements PrintableFile {
 			printer.println("<b>Psychic Powers</b>");
 			printer.printParagraph(path.psychicPowerXP);
 		}
+	}
+	
+	private static void printDivinationsTable(int numberOfColumns, DHOPrinter printer) {
+		printer.printRowTop();
+		int rowsPerColumn = divinationsList.length / numberOfColumns;
+		for(int c = 0; c < numberOfColumns; c ++) {
+			printer.printColTop(12/numberOfColumns);
+			printer.printTableTop("d100", "Divination", false, true);
+			for(int i = c*rowsPerColumn; i < (c+1)*rowsPerColumn; i ++) {
+				printer.printTableRow(divinationsList[i][0], divinationsList[i][1]);
+			}
+			printer.printTableTail();
+			printer.printColTail();
+		}
+		printer.printRowTail();
 	}
 }
