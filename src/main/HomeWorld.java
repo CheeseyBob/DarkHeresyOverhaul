@@ -2,9 +2,19 @@ package main;
 import java.util.LinkedList;
 
 public abstract class HomeWorld {
-	public String id, name;
+	public String id, name, roll;
 	public Characteristic bonusCharacteristic1, bonusCharacteristic2, penaltyCharacteristic;
 	public LinkedList<SpecialRule> specialRuleList = new LinkedList<SpecialRule>();
+	public String[] ageTable;
+	public String[] buildTable;
+	public String[] complexionTable;
+	public String[] eyesTable;
+	public String[] hairTable;
+	public String[] quirksTable;
+	public String[][] subcultureTable = {
+			{"xx-xx", "xxxxxxxx"},
+			{"xx-xx", "xxxxxxxx"}
+	};
 	
 	HomeWorld(String name, Characteristic bonus1, Characteristic bonus2, Characteristic penalty) {
 		this.id = DHOPrinter.idFrom(name);
@@ -40,14 +50,14 @@ public abstract class HomeWorld {
 			new HomeWorld_War(), // 5%
 	};
 	public static final String[] rollList = {
-		"01-10",
-		"11-20",
-		"21-25",
-		"26-65",
-		"66-75",
-		"76-85",
-		"86-95",
-		"96-00",
+			"01-10",
+			"11-20",
+			"21-25",
+			"26-65",
+			"66-75",
+			"76-85",
+			"86-95",
+			"96-00",
 	};
 	public static final String[][] backgroundRollList = {
 			{"01-05", "06-10", "11-20", "21-25", "25-40", "41-80", "81-00"},
@@ -58,5 +68,18 @@ public abstract class HomeWorld {
 			{"01-10", "11-15", "16-25", "26-35", "36-45", "46-85", "86-00"},
 			{"01-10", "11-20", "21-60", "61-75", "76-80", "81-85", "86-00"},
 			{"01-05", "06-10", "11-25", "26-30", "31-40", "41-75", "76-00"},
-		};
+	};
+	
+	public static class QuirksTable {
+		public static String[] rollList = {
+				"01-10", "11-20", "21-30", "31-40", "41-50", "51-60", "61-70", "71-80", "81-90", "91-00"};
+		
+		public static String[] top() {
+			String[] list = new String[HomeWorld.list.length + 1];
+			list[0] = "d100";
+			for(int i = 0; i < HomeWorld.list.length; i ++)
+				list[i+1] = HomeWorld.list[i].name;
+			return list;
+		}
+	}
 }

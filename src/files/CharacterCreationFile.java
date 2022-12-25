@@ -40,6 +40,14 @@ class CharacterCreationFile implements PrintableFile {
 		return list;
 	}
 	
+	private static String[] getQuirksTableRow(int row) {
+		String[] list = new String[HomeWorld.list.length + 1];
+		list[0] = HomeWorld.QuirksTable.rollList[row];
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			list[i+1] = HomeWorld.list[i].quirksTable[row];
+		return list;
+	}
+	
 	private static String[][] divinationsList = {
 			{"01-02", "Thought begets Heresy."},
 			{"03-04", "Heresy begets Retribution."},
@@ -107,7 +115,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printSubheader("Determine Home World");
-		printer.printTableTop("d100", "Home World", "Bonus", "Penalty", false, true);
+		printer.printTableTop(false, true, "d100", "Home World", "Bonus", "Penalty");
 		for(int i = 0; i < HomeWorld.list.length; i ++) {
 			printer.printTableRow(
 					HomeWorld.rollList[i],
@@ -131,7 +139,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printSubheader("Determine Background");
-		printer.printTableTop(getBackgroundTableHeaderList(), true, true);
+		printer.printTableTop(true, true, getBackgroundTableHeaderList());
 		for(int i = 0; i < Background.list.length; i ++) {
 			printer.printTableRow(getBackgroundTableRow(i));
 		}
@@ -139,7 +147,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printSubheader("Determine Role");
-		printer.printTableTop(getRoleTableHeaderList(), true, true);
+		printer.printTableTop(true, true, getRoleTableHeaderList());
 		for(int i = 0; i < Role.list.length; i ++) {
 			printer.printTableRow(getRoleTableRow(i));
 		}
@@ -166,7 +174,7 @@ class CharacterCreationFile implements PrintableFile {
 			printer.printSubheader_collapsible(homeWorld.name);
 			printer.printCollapsibleTop();
 			printer.printParagraph("<b>Aptitude:</b> "+homeWorld.getAptitudes());
-			printer.printTableTop("", true, false);
+			printer.printTableTop(true, false, "");
 			for(SpecialRule special : homeWorld.specialRuleList) {
 				printer.printTableRow_specialRule(special);
 			}
@@ -211,45 +219,64 @@ class CharacterCreationFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printHeader("Bringing the Character to Life");
-		printer.printParagraph("xxxxxxxx");
-		
-		// ...
-		
-		printer.println("<b>Age</b>");
-		printer.printParagraph("xxxxxxxx");
-		
-		printer.println("<b>Appearance - Build</b>");
-		printer.printParagraph("[Feral World: Rangy / Lean / Muscular / Squat / Strapping]");
-		printer.printParagraph("[Hive World: Runt / Scrawny / Wiry / Lanky / Brawny]");
-		printer.printParagraph("[Imperial World: Slender / Svelte / Fit / Well-Built / Stocky]");
-		printer.printParagraph("[Void Born: Skeletal / Stunted / Gaunt / Gangling / Spindly]");
-		
-		printer.println("<b>Appearance - Colouration</b>");
-		printer.printParagraph("xxxxxxxx");
-		
-		printer.println("<b>Appearance - Quirls</b>");
-		printer.printParagraph("xxxxxxxx");
-		
-		printer.println("<b>Subculture</b>");
-		printer.printParagraph("[Feral World superstitions / Hive subcultures / Void Born ship traditions / etc.]");
-		
-		printer.println("<b>Divination</b>");
-		printer.printParagraph("[this should just be a prompt for backstory/roleplaying with no effect on stats]");
-		printer.printParagraph("[combine the 1e and 2e tables]");
+		printer.printParagraph("The tables in this section are purely to help bring the character to life and have no direct mechanical effects. "
+				+ "You may reroll, pick a result, or even come up with something not listed, if you so desire.");
 
-		printer.printSubheader_collapsible("Divinations");
-		printer.printCollapsibleTop();
-		printDivinationsTable(1, printer);
-		printer.printCollapsibleTail();
-		printer.println();
-		printer.println();
+		printer.printSubheader("Age");
+		printer.printTableTop(false, true, "Home World", "Youth", "Adult", "Mature", "Aged");
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			printer.printTableRow(HomeWorld.list[i].ageTable);
+		printer.printTableTail();
+
+		printer.printSubheader("Build");
+		printer.printTableTop(false, true, "Home World", "Scrawny", "Slender", "Lanky", "Squat", "Fit", "Tall", "Stocky", "Brawny", "Strapping");
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			printer.printTableRow(HomeWorld.list[i].buildTable);
+		printer.printTableTail();
+
+		printer.printSubheader("Complexion");
+		printer.printTableTop(false, true, "Home World", "Dark", "Tan", "Light", "Pale");
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			printer.printTableRow(HomeWorld.list[i].complexionTable);
+		printer.printTableTail();
+
+		printer.printSubheader("Eyes");
+		printer.printTableTop(false, true, "Home World", "Brown", "Green", "Blue", "Grey", "Yellow", "Black", "Red", "Violet");
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			printer.printTableRow(HomeWorld.list[i].eyesTable);
+		printer.printTableTail();
+
+		printer.printSubheader("Hair");
+		printer.printTableTop(false, true, "Home World", "Black", "Brown", "Blonde", "Grey", "Red", "Ginger", "White", "Dyed");
+		for(int i = 0; i < HomeWorld.list.length; i ++)
+			printer.printTableRow(HomeWorld.list[i].hairTable);
+		printer.printTableTail();
+
+		printer.printSubheader("Quirks");
+		printer.printTableTop(true, true, HomeWorld.QuirksTable.top());
+		for(int i = 0; i < HomeWorld.QuirksTable.rollList.length; i ++)
+			printer.printTableRow(getQuirksTableRow(i));
+		printer.printTableTail();
+
+		printer.printSubheader("Subculture");
+		/*XXX*/printer.printParagraph("[Feral World superstitions / Hive subcultures / Void Born ship traditions / etc.]");
+		printer.printRowTop();
+		for(HomeWorld homeworld : HomeWorld.list) {
+			printer.printColTop(6);
+			printer.printSubSubheader(homeworld.name);
+			printSubcultureTable(homeworld, printer);
+			printer.printColTail();
+		}
+		printer.printRowTail();
 		
-		printer.println("<b>Nature</b>");
+		printer.printSubheader("Nature");
 		printer.printParagraph("[personality / desire / hate]");
-		
-		printer.println("<b>Name</b>");
-		printer.printParagraph("xxxxxxxx");
-		
+
+		printer.printSubheader("Name");
+		printer.printParagraph("[just put in the name tables from the rulebook]");
+
+		printer.printSubheader("Divinations");
+		printDivinationsTable(1, printer);
 		
 		// TODO //
 		
@@ -285,12 +312,19 @@ class CharacterCreationFile implements PrintableFile {
 		}
 	}
 	
+	private static void printSubcultureTable(HomeWorld homeworld, DHOPrinter printer) {
+		printer.printTableTop(false, true);
+		for(int i = 0; i < homeworld.subcultureTable.length; i ++)
+			printer.printTableRow(homeworld.subcultureTable[i]);
+		printer.printTableTail();
+	}
+	
 	private static void printDivinationsTable(int numberOfColumns, DHOPrinter printer) {
 		printer.printRowTop();
 		int rowsPerColumn = divinationsList.length / numberOfColumns;
 		for(int c = 0; c < numberOfColumns; c ++) {
 			printer.printColTop(12/numberOfColumns);
-			printer.printTableTop("d100", "Divination", false, true);
+			printer.printTableTop(false, true, "d100", "Divination");
 			for(int i = c*rowsPerColumn; i < (c+1)*rowsPerColumn; i ++) {
 				printer.printTableRow(divinationsList[i][0], divinationsList[i][1]);
 			}

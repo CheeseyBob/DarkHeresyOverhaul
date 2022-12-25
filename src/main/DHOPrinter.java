@@ -468,47 +468,52 @@ public class DHOPrinter {
 		processFile("TABLE_TAIL");
 	}
 	
-	public void printTableTop(String[] headerList, boolean wide, boolean striped) {
+	public void printTableTop(boolean wide, boolean striped, String... headers) {
 		String tableType = wide ? "_WIDE" : "_NARROW";
 		tableType += striped ? "_STRIPED" : "_UNSTRIPED";
 		processFile("TABLE_TOP"+tableType);
-		for(String header : headerList) {
+		for(String header : headers) {
 			this.header = header;
 			processFile("TABLE_HEADER");
 		}
 		processFile("TABLE_BODY_TOP");
 	}
 	
-	public void printTableTop(boolean wide, boolean striped) {
-		printTableTop(new String[] {}, wide, striped);
+	@Deprecated
+	public void printTableTop(String[] headerList, boolean wide, boolean striped) {
+		printTableTop(wide, striped, headerList);
 	}
 	
+	@Deprecated
 	public void printTableTop(String header1, boolean wide, boolean striped) {
 		printTableTop(new String[] {header1}, wide, striped);
 	}
 	
+	@Deprecated
 	public void printTableTop(String header1, String header2, boolean wide, boolean striped) {
 		printTableTop(new String[] {header1, header2}, wide, striped);
 	}
 	
+	@Deprecated
 	public void printTableTop(String header1, String header2, String header3, boolean wide, boolean striped) {
 		printTableTop(new String[] {header1, header2, header3}, wide, striped);
 	}
 	
+	@Deprecated
 	public void printTableTop(String header1, String header2, String header3, String header4, boolean wide, boolean striped) {
 		printTableTop(new String[] {header1, header2, header3, header4}, wide, striped);
 	}
 	
 	public void printTableTop_bionics() {
-		printTableTop("Bionic", "Availability", true, true);
+		printTableTop(true, true, "Bionic", "Availability");
 	}
 	
 	public void printTableTop_psychicPowers() {
-		printTableTop("Power", "Requirement", "XP", true, true);
+		printTableTop(true, true, "Power", "Requirement", "XP");
 	}
 	
 	public void printTableTop_talents() {
-		printTableTop("Talent", "Requirement", "Aptitude", "XP", true, true);
+		printTableTop(true, true, "Talent", "Requirement", "Aptitude", "XP");
 	}
 	
 	private void processFile(String filename) {
