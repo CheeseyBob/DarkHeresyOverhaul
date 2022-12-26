@@ -207,16 +207,16 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printParagraph("Each character should have 8 different Aptitudes, including General. "
 				+ "If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.");
 		printer.println("<b>Equipment</b>");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Take any Ubiquitous or Abundant items as you want (and can carry).",
 				"If you wish, you can swap out items from your background for different ones of the same availability.",
-				"You can also take any 1 item of Average availability or any 2 items up to Common availability.",
-		});
+				"You can also take any 1 item of Average availability or any 2 items up to Common availability."
+		);
 		printer.println("<b>Experience</b>");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"You start with 5 XP.",
-				"Buy any Advances you wish with this XP (see Character Advancement). Keep any XP you don't spend.",
-		});
+				"Buy any Advances you wish with this XP (see Character Advancement). Keep any XP you don't spend."
+		);
 		printer.println();
 		printer.println();
 		printer.printHeader("Bringing the Character to Life");
@@ -248,7 +248,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableTail();
 
 		printer.printSubheader("Hair");
-		printer.printTableTop(false, true, "Home World", "Black", "Brown", "Blonde", "Grey", "Red", "Ginger", "White", "Dyed");
+		printer.printTableTop(false, true, "Home World", "Black", "Brown", "Blonde", "Grey", "Ginger", "White", "Dyed");
 		for(int i = 0; i < HomeWorld.list.length; i ++)
 			printer.printTableRow(HomeWorld.list[i].hairTable);
 		printer.printTableTail();
@@ -269,6 +269,7 @@ class CharacterCreationFile implements PrintableFile {
 			printer.printColTail();
 		}
 		printer.printRowTail();
+		// TODO ...
 		
 		printer.printSubheader("Nature");
 		
@@ -333,9 +334,13 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableRow("77-88", "A chance to gain power");
 		printer.printTableRow("89-00", "Nothing more than a job");
 		printer.printTableTail();
+
 		
-		printer.printSubheader("Name");
-		printer.printSubSubheader("Male Names");
+		printer.printHeader("Name the Character");
+		printer.printParagraph("Finally, name the character. You can either use the tables below or come up with a name yourself.");
+		
+		printer.printSubheader_collapsible("Male Names");
+		printer.printCollapsibleTop();
 		printer.printTableTop(true, true, "d100", "Primitive", "Low", "High", "Archaic", "Informal");
 		printer.printTableRow("01–03", "Arl", "Barak", "Atellus", "Alaric", "Able");
 		printer.printTableRow("04–06", "Bruul", "Cain", "Brutis", "Attilas", "Bones");
@@ -368,8 +373,10 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableRow("94–96", "Yarn", "Zaddion", "Victus", "Zane", "Stubber");
 		printer.printTableRow("97–00", "Zek", "Zuriel", "Xanthis", "Zarkov", "Verbal");
 		printer.printTableTail();
+		printer.printCollapsibleTail();
 		
-		printer.printSubSubheader("Female Names");
+		printer.printSubheader_collapsible("Female Names");
+		printer.printCollapsibleTop();
 		printer.printTableTop(true, true, "d100", "Primitive", "Low", "High", "Archaic", "Informal");
 		printer.printTableRow("01–03", "Arla", "Akadia", "Atella", "Aenid", "Alpha");
 		printer.printTableRow("04–06", "Brulla", "Chaldia", "Brutilla", "Albia", "Blaze");
@@ -402,6 +409,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableRow("94–96", "Yarni", "Xantippe", "Xanthia", "Walperga", "Trix");
 		printer.printTableRow("90–00", "Zekka", "Ziapatra", "Zethina", "Zetkin", "Zee");
 		printer.printTableTail();
+		printer.printCollapsibleTail();
 
 		//printer.printSubheader("Divinations");
 		//printDivinationsTable(1, printer);
