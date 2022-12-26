@@ -115,13 +115,14 @@ class CharacterCreationFile implements PrintableFile {
 		printer.println();
 		printer.println();
 		printer.printSubheader("Determine Home World");
-		printer.printTableTop(false, true, "d100", "Home World", "Bonus", "Penalty");
+		printer.printTableTop(false, true, "d100", "Home World", "Bonus 1", "Bonus 2", "Penalty");
 		for(int i = 0; i < HomeWorld.list.length; i ++) {
 			printer.printTableRow(
 					HomeWorld.rollList[i],
 					HomeWorld.list[i].name,
-					HomeWorld.list[i].getCharacteristicBonus(),
-					HomeWorld.list[i].getCharacteristicPenalty());
+					HomeWorld.list[i].bonusCharacteristic1.fullName(),
+					HomeWorld.list[i].bonusCharacteristic2.fullName(),
+					HomeWorld.list[i].penaltyCharacteristic.fullName());
 		}
 		printer.printTableTail();
 		printer.println();
@@ -270,16 +271,140 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printRowTail();
 		
 		printer.printSubheader("Nature");
-		printer.printParagraph("[personality / desire / hate]");
+		
+		printer.printTableTop(false, true, "d100", "What do they desire?");
+		printer.printTableRow("01-10", "Only to stay alive");
+		printer.printTableRow("11-17", "Ensure their loved ones are saved");
+		printer.printTableRow("18-24", "A moment of peace and quiet");
+		printer.printTableRow("25-31", "The favour of a loved one");
+		printer.printTableRow("32-38", "The betterment of mankind");
+		printer.printTableRow("39-45", "The blessings of the God-Emperor");
+		printer.printTableRow("46-52", "Truth");
+		printer.printTableRow("53-59", "Justice");
+		printer.printTableRow("60-66", "Vengeance for a loved one");
+		printer.printTableRow("67-73", "The sector cleansed of heresy");
+		printer.printTableRow("74-80", "Mankind’s survival, over individual lives");
+		printer.printTableRow("81-87", "Wealth and riches");
+		printer.printTableRow("88-94", "Power and glory");
+		printer.printTableRow("95-00", "Violence and death");
+		printer.printTableTail();
+		
+		printer.printTableTop(false, true, "d100", "What do they despise?");
+		printer.printTableRow("01-10", "The Dark Powers");
+		printer.printTableRow("11-20", "Cults");
+		printer.printTableRow("21-30", "Xenos");
+		printer.printTableRow("31-40", "Mutants");
+		printer.printTableRow("41-50", "Wytches");
+		printer.printTableRow("51-60", "Traitors");
+		printer.printTableRow("61-70", "Blasphemers");
+		printer.printTableRow("71-77", "War");
+		printer.printTableRow("78-85", "Being wrong");
+		printer.printTableRow("86-92", "Losing a fight");
+		printer.printTableRow("93-00", "A flaw in themselves");
+		printer.printTableTail();
+		
+		printer.printTableTop(false, true, "d100", "What are they willing to sacrifice?");
+		printer.printTableRow("01-20", "Others, but not themselves");
+		printer.printTableRow("21-40", "Their flesh, but not their mind");
+		printer.printTableRow("41-60", "Their life, but not their honour");
+		printer.printTableRow("61-80", "Everything but their faith");
+		printer.printTableRow("81-00", "Even their very soul");
+		printer.printTableTail();
 
+		printer.printTableTop(false, true, "d100", "How did they meet their inquisitor?");
+		printer.printTableRow("01-05", "Chosen due to an Administratum error");
+		printer.printTableRow("06-15", "Sold as chattle");
+		printer.printTableRow("16-30", "Hired as a mercenary");
+		printer.printTableRow("31-45", "Fought in a battle together");
+		printer.printTableRow("46-60", "A chance meeting");
+		printer.printTableRow("61-75", "Uncovered heresy and informed the inquisition");
+		printer.printTableRow("76-85", "Accused the inquisitor of heresy");
+		printer.printTableRow("86-95", "Selected by their employer for inquisitorial service");
+		printer.printTableRow("96-00", "Sought out for recruitment");
+		printer.printTableTail();
+
+		printer.printTableTop(false, true, "d100", "What does the inquisition mean to them?");
+		printer.printTableRow("01-12", "A duty to defend the Imperium");
+		printer.printTableRow("13-24", "A chance to serve a worthy cause");
+		printer.printTableRow("25-36", "A holy role ordained by the Emperor");
+		printer.printTableRow("37-50", "A position of respect");
+		printer.printTableRow("51-64", "Orders to be followed without question");
+		printer.printTableRow("65-76", "Orders which must be followed or else");
+		printer.printTableRow("77-88", "A chance to gain power");
+		printer.printTableRow("89-00", "Nothing more than a job");
+		printer.printTableTail();
+		
 		printer.printSubheader("Name");
-		printer.printParagraph("[just put in the name tables from the rulebook]");
+		printer.printSubSubheader("Male Names");
+		printer.printTableTop(true, true, "d100", "Primitive", "Low", "High", "Archaic", "Informal");
+		printer.printTableRow("01–03", "Arl", "Barak", "Atellus", "Alaric", "Able");
+		printer.printTableRow("04–06", "Bruul", "Cain", "Brutis", "Attilas", "Bones");
+		printer.printTableRow("07–09", "Dar", "Dariel", "Callidon", "Barbosa", "Crisis");
+		printer.printTableRow("10–13", "Frak", "Eli", "Castus", "Cortez", "Cutter");
+		printer.printTableRow("14–16", "Fral", "Enoch", "Drustos", "Constantine", "Dekko");
+		printer.printTableRow("17–20", "Garm", "Frastus", "Flavion", "Cromwell", "Dakka");
+		printer.printTableRow("21–23", "Grish", "Gaius", "Gallus", "Dorn", "Frag");
+		printer.printTableRow("24–27", "Grak", "Garvel", "Haxtes", "Drake", "Flair");
+		printer.printTableRow("28–30", "Hak", "Hastus", "Intios", "Eisen", "Finial");
+		printer.printTableRow("31–33", "Jarr", "Ignace", "Jastilus", "Ferrus", "Grim");
+		printer.printTableRow("34–37", "Kar", "Ishmael", "Kaltos", "Grendel", "Gob");
+		printer.printTableRow("38–40", "Kaarl", "Jericus", "Litilus", "Guilliman", "Gunner");
+		printer.printTableRow("41–44", "Krell", "Klightus", "Lupus", "Havelock", "Hack");
+		printer.printTableRow("45–47", "Lek", "Lazerus", "Mallear", "Iacton", "Jakes");
+		printer.printTableRow("48–50", "Mar", "Mordeci", "Metalus", "Jaghatai", "Krak");
+		printer.printTableRow("51–54", "Mir", "Mithras", "Nihilius", "Khan", "Lug");
+		printer.printTableRow("55–57", "Narl", "Nicodemus", "Novus", "Leman", "Mongrel");
+		printer.printTableRow("58–60", "Orl", "Pontius", "Octus", "Lionus", "Plex");
+		printer.printTableRow("61–63", "Phrenz", "Quint", "Praetus", "Magnus", "Rat");
+		printer.printTableRow("64–66", "Quarl", "Rabalias", "Quintos", "Mercutio", "Red");
+		printer.printTableRow("67–69", "Roth", "Reestheus", "Raltus", "Nixios", "Sawney");
+		printer.printTableRow("70–72", "Ragaa", "Silvanus", "Ravion", "Ramirez", "Scab");
+		printer.printTableRow("73–75", "Stig", "Solomon", "Regis", "Serghar", "Scammer");
+		printer.printTableRow("76–79", "Strang", "Thaddius", "Severus", "Sigismund", "Skive");
+		printer.printTableRow("80–82", "Thak", "Titus", "Silon", "Tybalt", "Shanks");
+		printer.printTableRow("83–85", "Ulth", "Uriah", "Tauron", "Vern", "Shiv");
+		printer.printTableRow("86–89", "Varn", "Varnias", "Trantor", "Wolfe", "Sham");
+		printer.printTableRow("90–93", "Wrax", "Xerxes", "Venris", "Wollsey", "Stern");
+		printer.printTableRow("94–96", "Yarn", "Zaddion", "Victus", "Zane", "Stubber");
+		printer.printTableRow("97–00", "Zek", "Zuriel", "Xanthis", "Zarkov", "Verbal");
+		printer.printTableTail();
+		
+		printer.printSubSubheader("Female Names");
+		printer.printTableTop(true, true, "d100", "Primitive", "Low", "High", "Archaic", "Informal");
+		printer.printTableRow("01–03", "Arla", "Akadia", "Atella", "Aenid", "Alpha");
+		printer.printTableRow("04–06", "Brulla", "Chaldia", "Brutilla", "Albia", "Blaze");
+		printer.printTableRow("07–09", "Darl", "Cyrine", "Callidia", "Borgia", "Blue");
+		printer.printTableRow("10–13", "Fraka", "Diona", "Castella", "Cimbria", "Cat");
+		printer.printTableRow("14–16", "Fraal", "Deatrix", "Drustilla", "Devi", "Calamity");
+		printer.printTableRow("17–20", "Garma", "Ethina", "Flavia", "Ephese", "Dame");
+		printer.printTableRow("21–23", "Grisha", "Ephrael", "Gallia", "Euphrati", "Dice");
+		printer.printTableRow("24–27", "Graki", "Fenria", "Haxta", "Inez", "Flair");
+		printer.printTableRow("28–30", "Haka", "Gaia", "Intias", "Imperatrice", "Gold");
+		printer.printTableRow("31–33", "Jarra", "Galatia", "Jestilla", "Jemadar", "Gunner");
+		printer.printTableRow("34–37", "Karna", "Hazael", "Kalta", "Jezail", "Hack");
+		printer.printTableRow("38–40", "Kaarli", "Isha", "Litila", "Joss", "Halo");
+		printer.printTableRow("41–44", "Krella", "Ishta", "Lupa", "Kadis", "Lady");
+		printer.printTableRow("45–47", "Lekka", "Jedia", "Mallia", "Kali", "Luck");
+		printer.printTableRow("48–50", "Marlla", "Judicca", "Meta", "Lethe", "Modesty");
+		printer.printTableRow("51–54", "Mira", "Lyra", "Nihila", "Mae", "Moll");
+		printer.printTableRow("55–57", "Narla", "Magdela", "Novia", "Millicent", "Pistol");
+		printer.printTableRow("58–60", "Orla", "Narcia", "Octia", "Merica", "Plex");
+		printer.printTableRow("61–63", "Phrix", "Ophilia", "Praetia", "Midkiff", "Pris");
+		printer.printTableRow("64–66", "Quali", "Phebia", "Quintilla", "Megehra", "Rat");
+		printer.printTableRow("67–69", "Rotha", "Qualia", "Raltia", "Odessa", "Red");
+		printer.printTableRow("70–72", "Ragaana", "Rhia", "Ravia", "Orlean", "Ruby");
+		printer.printTableRow("73–75", "Stigga", "Salomis", "Regia", "Plath", "Scarlet");
+		printer.printTableRow("76–79", "Stranga", "Solaria", "Scythia", "Severine", "Spike");
+		printer.printTableRow("80–82", "Thakka", "Thyratia", "Sila", "Thiopia", "Steel");
+		printer.printTableRow("83–85", "Ultha", "Thebe", "Taura", "Thrace", "Starr");
+		printer.printTableRow("86–89", "Varna", "Uriel", "Trantia", "Tzarine", "Trauma");
+		printer.printTableRow("90–93", "Wraxa", "Veyda", "Venria", "Venus", "Trick");
+		printer.printTableRow("94–96", "Yarni", "Xantippe", "Xanthia", "Walperga", "Trix");
+		printer.printTableRow("90–00", "Zekka", "Ziapatra", "Zethina", "Zetkin", "Zee");
+		printer.printTableTail();
 
-		printer.printSubheader("Divinations");
-		printDivinationsTable(1, printer);
-		
-		// TODO //
-		
+		//printer.printSubheader("Divinations");
+		//printDivinationsTable(1, printer);
 		
 		printer.printFileTail();
 	}

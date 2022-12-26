@@ -4,7 +4,7 @@ class HomeWorld_Shrine extends HomeWorld {
 
 	HomeWorld_Shrine() {
 		super("Shrine World", Characteristic.WP, Characteristic.Fel, Characteristic.Per);
-		ageTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		ageTable = new String[] {name, "01-40", "41-80", "81-95", "96-00"};
 		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

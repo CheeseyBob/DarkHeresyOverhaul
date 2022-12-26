@@ -4,7 +4,7 @@ class HomeWorld_Highborn extends HomeWorld {
 
 	HomeWorld_Highborn() {
 		super("Highborn", Characteristic.Int, Characteristic.Fel, Characteristic.T);
-		ageTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		ageTable = new String[] {name, "01-30", "31-70", "71-90", "91-00"};
 		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

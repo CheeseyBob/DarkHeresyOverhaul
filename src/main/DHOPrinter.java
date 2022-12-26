@@ -307,7 +307,7 @@ public class DHOPrinter {
 		printLink(file.filename(), file.title(), lineBreak);
 	}
 	
-	public void printList(boolean ordered, Object[] list) {
+	public void printList(boolean ordered, Object... list) {
 		pw.println(ordered ? "<ol>" : "<ul>");
 		for(Object obj : list) {
 			pw.println("<li>"+obj+"</li>");
@@ -321,18 +321,6 @@ public class DHOPrinter {
 			pw.println("<li>"+item+"</li>");
 		}
 		pw.println(ordered ? "</ol>" : "</ul>");
-	}
-	
-	public void printList(boolean ordered, Object item1, Object item2) {
-		printList(ordered, new Object[] {item1, item2});
-	}
-	
-	public void printList(boolean ordered, Object item1, Object item2, Object item3) {
-		printList(ordered, new Object[] {item1, item2, item3});
-	}
-	
-	public void printList(boolean ordered, Object item1, Object item2, Object item3, Object item4) {
-		printList(ordered, new Object[] {item1, item2, item3, item4});
 	}
 	
 	public void println() {
@@ -405,28 +393,12 @@ public class DHOPrinter {
 		processFile("SUBSUBHEADER");
 	}
 	
-	public void printTableRow(String[] entryList) {
+	public void printTableRow(String... entryList) {
 		pw.println("<tr>");
 		for(String entry : entryList) {
 			pw.println("<td>"+entry+"</td>");
 		}
 		pw.println("</tr>");
-	}
-	
-	public void printTableRow(String e1) {
-		printTableRow(new String[] {e1});
-	}
-	
-	public void printTableRow(String e1, String e2) {
-		printTableRow(new String[] {e1, e2});
-	}
-	
-	public void printTableRow(String e1, String e2, String e3) {
-		printTableRow(new String[] {e1, e2, e3});
-	}
-	
-	public void printTableRow(String e1, String e2, String e3, String e4) {
-		printTableRow(new String[] {e1, e2, e3, e4});
 	}
 	
 	public void printTableRow_bionic(Bionic bionic) {

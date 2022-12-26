@@ -4,7 +4,7 @@ class HomeWorld_Forge extends HomeWorld {
 
 	HomeWorld_Forge() {
 		super("Forge World", Characteristic.T, Characteristic.Int, Characteristic.Ag);
-		ageTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		ageTable = new String[] {name, "01-45", "46-85", "86-95", "96-00"};
 		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

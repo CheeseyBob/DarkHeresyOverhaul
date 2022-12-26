@@ -4,7 +4,7 @@ class HomeWorld_Tithe extends HomeWorld {
 
 	HomeWorld_Tithe() {
 		super("Tithe World", Characteristic.S, Characteristic.Ag, Characteristic.Int);
-		ageTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		ageTable = new String[] {name, "01-40", "41-80", "81-95", "96-00"};
 		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

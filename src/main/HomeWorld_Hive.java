@@ -5,7 +5,7 @@ class HomeWorld_Hive extends HomeWorld {
 	HomeWorld_Hive() {
 		super("Hive World", Characteristic.Per, Characteristic.Fel, Characteristic.T);
 		ageTable = new String[] {name, "01-30", "31-85", "86-95", "96-00"};
-		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		buildTable = new String[] {name, "01-20", "21-40", "41-45", "46-60", "61-70", "71-73", "74-88", "89-98", "99-00"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		hairTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

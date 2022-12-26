@@ -4,7 +4,7 @@ class HomeWorld_War extends HomeWorld {
 
 	HomeWorld_War() {
 		super("War World", Characteristic.Ag, Characteristic.Per, Characteristic.Fel);
-		ageTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		ageTable = new String[] {name, "01-65", "66-95", "96-98", "99-00"};
 		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};

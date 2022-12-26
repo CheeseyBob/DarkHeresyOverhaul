@@ -5,7 +5,7 @@ class HomeWorld_Void extends HomeWorld {
 	HomeWorld_Void() {
 		super("Void Born", Characteristic.Int, Characteristic.WP, Characteristic.S);
 		ageTable = new String[] {name, "01-40", "41-70", "71-90", "91-00"};
-		buildTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
+		buildTable = new String[] {name, "01-20", "21-40", "41-60", "61-70", "71-80", "81-90", "91-95", "96-98", "99-00"};
 		complexionTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		eyesTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
 		hairTable = new String[] {name, "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx", "xx-xx"};
