@@ -36,6 +36,7 @@ class ToolsFile implements PrintableFile {
 		printer.printCol_item(6, Tool.dataSlate);
 		printer.printCol_item(6, Tool.pictRecorder);
 		printer.printCol_item(6, Tool.writingKit);
+		printer.printCol_item(6, Tool.dataSlate_biolock);
 		printer.printCol_item(6, Tool.dataSlate_lore);
 		printer.printCol_item(6, Tool.lockpick);
 		printer.printCol_item(6, Tool.psyFocus);

@@ -208,7 +208,7 @@ class CharacterCreationFile implements PrintableFile {
 				+ "If you took the same Aptitude more than once, you can choose any Characteristic as an Aptitude to make up for this.");
 		printer.println("<b>Equipment</b>");
 		printer.printList(false,
-				"Take any Ubiquitous or Abundant items as you want (and can carry).",
+				"Take any Ubiquitous or Abundant items you want (and can carry).",
 				"If you wish, you can swap out items from your background for different ones of the same availability.",
 				"You can also take any 1 item of Average availability or any 2 items up to Common availability."
 		);
@@ -230,7 +230,7 @@ class CharacterCreationFile implements PrintableFile {
 		printer.printTableTail();
 
 		printer.printSubheader("Build");
-		printer.printTableTop(false, true, "Home World", "Scrawny", "Slender", "Lanky", "Squat", "Fit", "Tall", "Stocky", "Brawny", "Strapping");
+		printer.printTableTop(false, true, "Home World", "Small", "Slim", "Lanky", "Short", "Average", "Tall", "Stocky", "Broad", "Large");
 		for(int i = 0; i < HomeWorld.list.length; i ++)
 			printer.printTableRow(HomeWorld.list[i].buildTable);
 		printer.printTableTail();
@@ -253,14 +253,32 @@ class CharacterCreationFile implements PrintableFile {
 			printer.printTableRow(HomeWorld.list[i].hairTable);
 		printer.printTableTail();
 
-		printer.printSubheader("Quirks");
+		printer.printSubheader("Quirk");
 		printer.printTableTop(true, true, HomeWorld.QuirksTable.top());
 		for(int i = 0; i < HomeWorld.QuirksTable.rollList.length; i ++)
 			printer.printTableRow(getQuirksTableRow(i));
 		printer.printTableTail();
 
+		/*
 		printer.printSubheader("Subculture");
-		/*XXX*/printer.printParagraph("[Feral World superstitions / Hive subcultures / Void Born ship traditions / etc.]");
+		// Feral World superstitions:
+		 * Intense respect for animals
+		 * Suspicion of technology
+		 * Honourable Fighter
+		// Forge World ???:
+		// Highborn ???:
+		// Hive World subcultures:
+		 * 
+		// Shrine World ???:
+		// Tithe World industry:
+		 * Mining
+		// Void Born ships:
+		 * Orbital statin
+		// War World conflict:
+		 * Xenos
+		 * Seditionists
+		 * Daemonic cult
+		
 		printer.printRowTop();
 		for(HomeWorld homeworld : HomeWorld.list) {
 			printer.printColTop(6);
@@ -269,7 +287,7 @@ class CharacterCreationFile implements PrintableFile {
 			printer.printColTail();
 		}
 		printer.printRowTail();
-		// TODO ...
+		*/
 		
 		printer.printSubheader("Nature");
 		

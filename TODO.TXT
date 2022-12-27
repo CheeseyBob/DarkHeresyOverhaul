@@ -1,11 +1,15 @@
 	~~ To Do List ~~
 
 >>> Character Creation:
-	- bring the character to life section
+	- GM determines starting Gelt and other resources according to campaign
+		- E.g. more Gelt if accommodation is not provided.
+
+>>> More thought into navigating difficult terrain - difficulty modifiers?
 
 >>> How to gain XP:
 	- PCs submit reports to their Inquisitor
-    - If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
+		- Should this just be for bonus gelt?
+    	- If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
 
 >>> NPC Groups: [can wait until after starting the playtest]
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
@@ -32,9 +36,6 @@
     - Verticality? Stairs/ramps/ledges/etc.
 
 > Rethink having shops selling weapons - this should be a black market thing
-
-> More thought into navigating difficult terrain - difficulty modifiers?
-    - Smog
 
 > Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
 

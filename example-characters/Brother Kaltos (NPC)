@@ -1,0 +1,52 @@
+#Name: Brother Kaltos of the Chapel of Seven Promises
+
+A small, mature man with dark skin, ginger hair and bright green eyes. He smells faintly of bleach.
+
+Wounds: 0/7
+Insanity: 0
+Corruption: 0
+
+#Characteristics:
+WS  BS  S   T   Ag  Int Per WP  Fel
+30 	30 	30 	25 	30 	30 	35 	30 	45
+
+#Skills:
+- Inquire (+10)
+- Inspire (+10)
+
+#Talents:
+- Experienced (Imperial Creed)
+- Knowledgable (Adeptus Ministorum)
+- Language (High Gothic + Low Gothic)
+- Public Speaker
+- Trade (Copyist)
+- Trade (Loremancer)
+
+#Equipped Items (useable 1H: size SB; useable 2H: size SB+1):
+[3] Ministorum Robes
+
+#Inventory (capacity: 14 | max size: SB+1):
+[1] Scroll (Imperial Creed)
+[0] Aquila Necklace
+[0] Gelt
+
+#Notes:
+Home World: Hive World
+Background: Adeptus 
+Role: NPC
+
+Age: Mature
+Build: Small
+Complexion: Dark
+Eyes: Green
+Hair: Ginger
+Quirk: Chemical Smell
+
+Nature:
+Desires only to stay alive.
+Despises cults.
+Willing to sacrifice their life, but not their honour.
+Sought out for recruitment - inquisition needed a trusted contact in this part of Hive Klysus.
+The inquisition means a chance to serve a worthy cause - perhaps more worthy than the ministorum?
+
+

@@ -14,6 +14,8 @@ public class Tool extends Item {
 	}
 	
 	// Special Rules //
+	public static final SpecialRule bioLock = new SpecialRule("Bio-Lock",
+			"A biometric security device prevents this item being used by unauthorised characters.");
 	
 	// Worn //
 	public static final Tool gasMask = new Tool("Gas Mask",
@@ -33,6 +35,10 @@ public class Tool extends Item {
 	public static final Tool dataSlate = new Tool("Data-Slate",
 			"Used to store and display data such as text, audio and video.",
 			1, "+0", Availability.ABUNDANT);
+	public static final Tool dataSlate_biolock = new Tool("Bio-locked Data-Slate",
+			"Used to store and display data such as text, audio and video.",
+			1, "+0", Availability.PLENTIFUL)
+			.withSpecialRule(bioLock);
 	public static final Tool pictRecorder = new Tool("Pict Recorder",
 			"Used to record audio and video data.",
 			1, "+0", Availability.ABUNDANT);

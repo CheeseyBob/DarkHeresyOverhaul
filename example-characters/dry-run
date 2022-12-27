@@ -1,0 +1,38 @@
+> Start at a Spaceport
+> Given a data-slate with Inquisitorial Briefing
+> First task is to navigate to a certain chapel and rendezvous with a certain trusted contact who will provide lodging.
+--> Test to travel
+--> Test to confirm contact's identity
+
+
+Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are also directions to the chapel from the spaceport, and details about the hive's Inquisitorial Offices - a sub-complex of Administratum Spire Gamma.
+
+
+The PCs - Plex of Xalibar and Castus of Tygress III - step out of the disembarkation tunnel from the ship after it arrives in Port Algernon of Hive Klysus, Samson IV. They decide to head for the Chapel of Seven Promises straight away, using the directions in the Inquisitorial Briefing. Plex takes the lead in navigating.
+
+
+> Navigate: Test Intelligence (30)
+
+
+*** Doesn't really make sense to use navigation difficulty from destination area if failure means getting lost and moving into a different area. On the other hand, it doesn't make sense to use navigation difficulty for origin area if failure means getting caught in the dangerous terrain of the target area.
+
+
+*** Changes to Navigation/Travel ***
+
+Basic navigation:
+- No modifier
+- Failure => Travel takes +1 hour
+- Critical failure => become lost
+
+Polluted (N):
+- N 'hits' to defend.
+- Failure => Caught in pollution
+- Critical failure => Caught in pollution + become lost
+
+*change Heavily polluted -> Polluted (2 or higher)
+
+Collapsed (N); Flooded (N); Dark (N):
+- Modifier -10N
+
+* change Totally collapsed, Totally flooded, etc. -> N>=2
+

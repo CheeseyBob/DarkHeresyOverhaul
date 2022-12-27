@@ -358,6 +358,9 @@ public class Talent extends SpecialRule {
 	public static final Talent cluesFromTheCrowds = new Talent("Clues from the Crowds",
 			"Get a +20 bonus to Inquire when gathering information from a crowd of people.",
 			"-", "Perception", 4);
+	public static final Talent confessor = new Talent("Confessor",
+			"You can Read Person (Gain Insight) using Fellowship instead of Perception.",
+			"-", "Fellowship", 4);
 	public static final Talent conversationalist = new Talent("Conversationalist",
 			"Get a +10 bonus to all Fellowship Tests when interacting with a single individual.",
 			"-", "Fellowship", 8);
@@ -370,9 +373,6 @@ public class Talent extends SpecialRule {
 	public static final Talent delicateInterrogation = new Talent("Delicate Interrogation",
 			"You can Interrogate instead of Inquire when obtaining information from a target through conversation (though you get no bonuses from interrogation tools).",
 			"Interrogate (+20)", "Willpower", 6);
-	public static final Talent entrapment = new Talent("Entrapment",
-			"You can Read Person (Gain Insight) using Fellowship instead of Perception.",
-			"-", "Fellowship", 4);
 	public static final Talent faceInACrowd = new Talent("Face in a Crowd",
 			"You can use Fellowship instead of Agility when you Sneak in a populated area.",
 			"-", "Fellowship", 2);

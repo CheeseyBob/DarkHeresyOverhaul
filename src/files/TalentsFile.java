@@ -188,11 +188,11 @@ class TalentsFile implements PrintableFile {
 		printer.printTableTop_talents();
 		printer.printTableRow_talent(Talent.charming);
 		printer.printTableRow_talent(Talent.cluesFromTheCrowds);
+		printer.printTableRow_talent(Talent.confessor);
 		printer.printTableRow_talent(Talent.conversationalist);
 		printer.printTableRow_talent(Talent.coordinatedInterrogation);
 		printer.printTableRow_talent(Talent.coverUp);
 		printer.printTableRow_talent(Talent.delicateInterrogation);
-		printer.printTableRow_talent(Talent.entrapment);
 		printer.printTableRow_talent(Talent.faceInACrowd);
 		printer.printTableRow_talent(Talent.logicalCommunicator);
 		printer.printTableRow_talent(Talent.persuasive);
