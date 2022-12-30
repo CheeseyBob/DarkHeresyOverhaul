@@ -23,7 +23,7 @@ public class Talent extends SpecialRule {
 	
 	// General //
 	public static final Talent intimidating = new Talent("Intimidating",
-			"When you Intimidate, the maximum aspect level is double your Strength Bonus.",
+			"Get an extra Degree of Success when you Intimidate.",
 			"Intimidate (+20)", "Strength", 4);
 	public static final Talent rapidReload = new Talent("Rapid Reload",
 			"When you Reload, you get double the steps towards reloading your firearm.",
@@ -141,7 +141,7 @@ public class Talent extends SpecialRule {
 			"Get an extra +10 bonus to Attack (Ranged) when you do so Carefully or after you Focus.",
 			"-", "Ballistic Skill", 4);
 	public static final Talent martialArtist = new Talent("Martial Artist",
-			"The Hits stat of your unarmed attacks are doubled.",
+			"Double the Hits stat of your unarmed attacks.",
 			"-", "Weapon Skill", 4);
 	public static final Talent masterGunslinger = new Talent("Master Gunslinger",
 			"Get a +10 bonus to all ranged attacks when using multiple weapons.",
@@ -173,7 +173,7 @@ public class Talent extends SpecialRule {
 			"You get a +20 bonus to the Bleeding Out Toughness Test.",
 			"-", "Toughness", 2);
 	public static final Talent dirtyFighting = new Talent("Dirty Fighting",
-			"When you Stun, the maximum aspect level is double your Weapon Skill Bonus.",
+			"Get an extra Degree of Success when you Stun.",
 			"Stun (+20)", "Weapon Skill", 4);
 	public static final Talent disarm = new Talent("Disarm",
 			"Main Action; Weapon Skill Test; Target drops wielded item.",
@@ -292,7 +292,7 @@ public class Talent extends SpecialRule {
 	
 	// Leadership //
 	public static final Talent commanding = new Talent("Commanding",
-			"When you Command, the maximum bonus to the target's Disposition is doubled, to FBx20.",
+			"Get an extra Degree of Success when you Command.",
 			"Command (+20)", "Fellowship", 4);
 	public static final Talent dominatingBellow = new Talent("Dominating Bellow",
 			"When you Intimidate a group, instead of splitting Degrees of Success amongst the targets, all targets up to FBx10m away are affected as if they were the only target.",
@@ -304,7 +304,7 @@ public class Talent extends SpecialRule {
 			"You can affect those up to FBx100m away when you Command or Inspire.",
 			"Public Speaker + Fellowship 40", "Fellowship", 8);
 	public static final Talent inspiring = new Talent("Inspiring",
-			"When you Inspire, the maximum aspect level is doubled, to FBx2.",
+			"Get an extra Degree of Success when you Inspire.",
 			"Inspire (+20)", "Fellowship", 4);
 	public static final Talent intoTheJawsOfHell = new Talent("Into the Jaws of Hell",
 			"Allies within FBx10m who can see you get a +20 bonus to Resist being or becoming Frightened, Intimidated or Pinned.",
@@ -353,7 +353,7 @@ public class Talent extends SpecialRule {
 	
 	// Social //
 	public static final Talent charming = new Talent("Charming",
-			"When you Charm, you double the increase to the target's Disposition.",
+			"Get an extra Degree of Success when you Charm.",
 			"Charm (+20)", "Fellowship", 4);
 	public static final Talent cluesFromTheCrowds = new Talent("Clues from the Crowds",
 			"Get a +20 bonus to Inquire when gathering information from a crowd of people.",
@@ -380,7 +380,7 @@ public class Talent extends SpecialRule {
 			"You can Persuade using Intelligence instead of Fellowship.",
 			"Intelligence 30", "Intelligence", 4);
 	public static final Talent persuasive = new Talent("Persuasive",
-			"When you Persuade, the maximum bonus to the target's Disposition is doubled, to FBx20.",
+			"Get an extra Degree of Success when you Persuade.",
 			"Persuade (+20)", "Fellowship", 4);
 	public static final Talent peer = new Talent("Peer",
 			"Get +20 to all Disposition tests when interacting with members of the chosen group.",

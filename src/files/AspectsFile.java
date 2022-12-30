@@ -41,6 +41,7 @@ class AspectsFile implements PrintableFile {
 		printer.printRowTop();
 		printer.printCol_aspect(6, Aspect.bleedingOut);
 		printer.printCol_aspect(6, Aspect.burning);
+		printer.printCol_aspect(6, Aspect.charmed);
 		printer.printCol_aspect(6, Aspect.concealed);
 		printer.printCol_aspect(6, Aspect.dazzled);
 		printer.printCol_aspect(6, Aspect.disguised);

@@ -18,12 +18,12 @@ class IndexFile implements PrintableFile {
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
 		printer.printParagraph("This is an adaptation of the Dark Heresy rules system (drawing from both first and second edition) with the following goals:");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Reduce unneccesary rules complexity (especially from the player perspective).",
 				"Give more structure to non-combat activities (especially from the GM perspective).",
 				"Generally make the rules more cohesive, to make it easier for the GM to make rulings and to make it possible to play using a fiction-first approach.",
-				"Remove or work around anything which removes player agency (like turn-skipping and forced actions).",
-		});
+				"Remove or work around anything which removes player agency (like turn-skipping and forced actions)."
+		);
 		printer.println();
 		printer.println();
 		printer.printHeader("Contents");

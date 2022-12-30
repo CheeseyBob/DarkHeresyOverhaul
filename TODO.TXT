@@ -1,5 +1,10 @@
 	~~ To Do List ~~
 
+>>> NPC Disposition & Personalities:
+	- Remove "Success" column from personality tables - Charm is the only social interaction skill that will increase Disposition
+	- More NPC personality tables
+	- Procedure for assigning personalities to NPCs
+
 >>> Surprise in encounters
 
 >>> Character Creation:
@@ -17,8 +22,8 @@
         - scribe servo-skull
         - messenger servo-skull
         - various other servitors
-    - Unaligned characters (animals, xenos, etc.)
-    - Hostile groups (daemon cults, etc.)
+    - Unaligned characters (citizens, animals, xeno beasts, etc.)
+    - Hostile groups (daemon cults, xeno factions, etc.)
 
 >>> Items
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
@@ -31,11 +36,6 @@
 
 > Can probably rework Fear Ratings to be more straightforward.
 
->>> NPC Disposition & Personalities:
-	- Different roll for NPC Disposition? Middle of 3d100?
-	- More NPC personality tables
-	- Rethink/simplify Charm and Disposition changes - "depends on personality" is weird; personality should just give a modifier to Charm?
-
 > Add some encountered locations for things like major power conduits, comms hubs, flora
 
 > Add some guides for creating and spicing up battlemaps
@@ -43,8 +43,6 @@
     - Verticality? Stairs/ramps/ledges/etc.
 
 > Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
-
-> Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
 
 > ? Remove Calixis Sector and War Common Lore areas 
 

@@ -16,7 +16,7 @@ class ActionsInDowntimeFile implements PrintableFile {
 			{"Sneak (Follow Closely)", "Long", "Basic Skill", "Agility", "Follow a target unseen for 1 hour; spotted on failure; lose target on critical failure"},
 	};
 	private static String[][] actionsTable_basic = {
-			{"Charm", "Short", "Basic Skill", "Fellowship", "Increase target's Disposition (amount depends on personality)"},
+			{"Charm", "Short", "Basic Skill", "Fellowship", "Target becomes Charmed"},
 			{"Contemplate", "Long", "Basic Skill", "Intelligence", "Obtain Leads"},
 			{"Craft", "Long", "Basic Skill", "Intelligence", "Get progress towards crafting"},
 			{"Disguise", "Short", "Basic Skill", "Intelligence", "Become Disguised"},
@@ -62,7 +62,8 @@ class ActionsInDowntimeFile implements PrintableFile {
 				+ "When a turn-time Action is taken, it can usually be assumed to have a +30 bonus from a Full Action Focus and doing the Action Carefully. "
 				+ "Extended actions take multiple hours.");
 		printer.printParagraph(
-				"When characters work together, resolve the Action separately for each character and combine Degrees of Success.");
+				"When characters work together, resolve the Action separately for each character and combine Degrees of Success. "
+				+ "The number of characters able to work together on the same Action is capped at the Fellowship Bonus of the character taking the lead.");
 		printer.printHeader("Actions Summary");
 		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("Movement Actions");

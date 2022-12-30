@@ -39,6 +39,7 @@ public class FileList {
 	public static PrintableFile psychicPhenomena = new PsychicPhenomenaFile();
 	
 	// Running the Game //
+	public static PrintableFile proceduresOfPlay = new ProceduresOfPlayFile();
 	public static PrintableFile npcs = new NPCsFile();
 	public static PrintableFile adeptusAdministratum = NPCGroupFile.adeptusAdministratum;
 	public static PrintableFile adeptusArbites = NPCGroupFile.adeptusArbites;
@@ -99,6 +100,7 @@ public class FileList {
 	
 	public static List<PrintableFile> section_runningTheGame() {
 		List<PrintableFile> list = new LinkedList<PrintableFile>();
+		list.add(proceduresOfPlay);
 		list.add(npcs);
 		list.add(adeptusAdministratum);
 		list.add(adeptusArbites);

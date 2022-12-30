@@ -204,7 +204,7 @@ class TalentsFile implements PrintableFile {
 				+ "<li>Adeptus Astra Telepathica: The organisation that trains and sanctions Imperial psykers.</li>" + "\n"
 				+ "<li>Adeptus Mechanicus: The disciples of the Machine God, who are the preservers and fabricators of technology.</li>" + "\n" 
 				+ "<li>Adeptus Ministorum: The keepers of faith in the Emperor's divinity, also known as the Ecclesiarchy.</li>" + "\n"
-				+ "<li>Imperial Guard: The Imperium's immesurable armies, fighting andless battles across the galaxy.</li>" + "\n"
+				+ "<li>Imperial Guard: The Imperium's immesurable armies, fighting endless battles across the galaxy.</li>" + "\n"
 				+ "<li>Underworld: The many organisations that operate outside the bounds of Imperial legal authorities.</li>" + "\n"
 				+ "</ul>");
 		printer.printTableTail();

@@ -28,6 +28,11 @@ public class Aspect {
 			"-",
 			"Prevents effects of Darkness up to ALx1m away. The target takes 1d10+AL Energy damage once per turn. If the target dies, they create an area of Fire.",
 			"Agility Test");
+	public static final Aspect charmed = new Aspect("Charmed", 
+			"Disposition Tests",
+			"-",
+			"When downgrading after an hour, permenantly increase the target's Disposition by 1.",
+			"Once per hour, or the charmer acts hostile.");
 	public static final Aspect concealed = new Aspect("Concealed", 
 			"-",
 			"Notice or Search vs target",

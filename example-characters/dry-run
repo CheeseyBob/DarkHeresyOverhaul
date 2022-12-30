@@ -4,31 +4,84 @@
 --> Test to travel
 --> Test to confirm contact's identity
 
+> Date/time at the start of the game is M41.Y023.500.1 (halfway through the year 40,023).
 
-GM: "Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are also directions to the chapel from the spaceport, and details about the hive's Inquisitorial Offices - a sub-complex of Administratum Spire Gamma."
+GM: "Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are directions to the chapel from the spaceport - it's a 3 hour trip on foot. There are also details about the hive's Inquisitorial Offices, which are a sub-complex of Administratum Spire Gamma - quite far away from the areas of the hive you've been assigned to."
 
 "You step out of the disembarkation tunnel from the ship after it arrives in Port Algernon of Hive Klysus, Samson IV."
 
 PCs: "We'll head for the Chapel of Seven Promises straight away, following the directions we were given. Plex takes the lead in navigating."
 
-~~~ with rules to-be ~~~
-
-Finding the new location with directions is just a Navigation Challenge (1), which needs to be Overcome with Navigate.
+The PCs want to travel to an unvisited location, but they have good directions, so this will be a Navigation Challenge (1).
 
 > Navigate: Test Intelligence (30): roll of 39 => Failure
 
-GM: "It's tough to keep to the directions - you find yourselves swept around by the thronging crowds of people in the main thoroughfares, then when you duck into a quieter side-street, the twists and turns become too much to follow and end up having to back-track. After about an hour, you haven't made much progress, but at least you don't feel lost yet."
+> Roll to see when encounters happen: 6 and 5 => the Encounter happens shortly before the Location Encounter.
+
+The Location Encounter can't be a repeat, as there are no known locations here, so a new Location is rolled and added.
+
+> Upper Hive Encountered Locations: 47 => Shop selling pets (including approved xenos)
+
+> Upper Hive Encounters: 58 => Servo-skulls doing surveillance
+
+GM: "It's tough to keep to the directions - you find yourselves swept around by the thronging crowds of people in the main thoroughfares. You notice a small swarm of servo-skulls above the crowd, slowly drifting around with their camera lenses pointed down at the people below."
+
+GM: "Ducking into a quieter side-street, you walk past a shop named "Orlean's Critters", with various live animals on display, either caged or chained up. Castus actually recognises one small bird native to Tygress III."
+
+> Time advances to M41.Y023.500.2
+
+GM: "As you keep going, the twists and turns become too much to follow and you keep ending up having to back-track. After about an hour, you haven't made much progress, but you don't feel lost yet."
 
 PCs: "We'll keep at it, but Plex and Castus will work together on navigating."
 
 > Navigate: Test Intelligence:
     - Castus: 42: roll of 27 => Success + 2 DoS
     - Plex: 30: roll of 77 => Failure
-> PCs Overcome the Navigation Challenge.
+    => PCs Overcome the Navigation Challenge.
+
+> Roll to see when encounters happen: 4 and 8 => Location Encounter first.
+
+> Roll to see if the Location is a repeat: 1 => Orlean's Critters
+
+> Upper Hive Encounters: 66 => Servitors cleaning the streets
+
+GM: "Realising where you went wrong, you walk back past Orlean's Critters again and take a different turning this time. The path starts to widen and you pass a pair of servitors sweeping rubbish of the floor. The route becomes crowded again as the path widens further still and twists downwards. You notice yourselves walking with the flow of the crowd now as you descend deeper into the hive."
+
+> Time advances to M41.Y023.500.3
+
+> Middle Hive Main Locations: 52 => Local enforcer headquarters
+
+GM: "You start to pick up on the sound of gunshots ahead, but the crowd seems to pay it no mind. The path then splits in several directions at once, with the main route forward signposted as "Cabris Enforcer HQ" - now quite clearly the origin of the gutshots, which continue at a fairly steady pace."
+
+PCs are on the next leg of their journey, so there is a new Navigation Challenge (1).
+
+> Navigate: Test Intelligence:
+    - Castus: 42: roll of 13 => Success + 1 DoS
+    - Plex: 30: roll of 99 => Critical Failure
+    => PCs Overcome the Navigation Challenge (getting lost is overridden by navigating successfully).
+
+> Roll to see when encounters happen: 7 and 10 => Location Encounter first.
+
+The Location Encounter can't be a repeat, as there are no known locations here, so a new Location is rolled and added.
+
+> Middle Hive Encountered Locations: 68 => Eatery
+
+> Middle Hive Encounters: 23 => Gamblers
+
+GM: "As the directions take you down a series of winding passages, you come back out into a fairly wide, crowded corridor where you notice a somewhat ramshackle establishment with a big sign above the door saying "Zek's". It looks like some sort of eatery - there's even a couple of tables outside by the door, one of which has someone hunched over a plate of something. As you pass by, it definitely smells like... food. Probably smells pretty good to Plex, not so much to Castus."
+
+PCs: "Plex quickly goes in to ask if they do take-out."
+
+> NPC Disposition: .....
+
+GM: "There's only a few small tables inside too, so it looks like they do. The proprietor is a short man with hair dyed red, white and blue like toothpaste. He has dark skin, covered in grime, and grey eyes. He introduces himself as Zek [PERSONALITY ETC.]"
+
+[also then a bit of aquiring items]
 
 
+*** NPC personalities and disposition ***
 
-~~~~~~~~~~~~~~~~~~~~
+
 
 
 
