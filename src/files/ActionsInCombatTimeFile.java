@@ -79,22 +79,43 @@ class ActionsInCombatTimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printParagraph("Each character can take 1 Main Action and 1 Secondary Action on their turn (in any order). Anything involving a Test will typically be a Main Action; anything simple enough to not need a test will typically be a Secondary Action. A character can take Full Action, which is equivalent to a combined Main Action and Secondary Action, instead of taking those actions separately.");
-		printer.printParagraph("Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and take Passive Actions any number of times. Reactions cover things done in opposition to another character's Action. Passive Action covers anything which doesn't require the character to do anything (for example, resisting fear).");
-		printer.printParagraph("In general, a Main Action is a Test to either hit a target with an attack, create an advantage, or overcome an Aspect. You can take any Secondary Action instead of a Main Action.");
+		printer.printParagraph(
+				"Each character can take 1 Main Action and 1 Secondary Action on their turn (in any order). "
+				+ "Anything involving a Test will typically be a Main Action; anything simple enough to not need a test will typically be a Secondary Action. "
+				+ "A character can take Full Action, which is equivalent to a combined Main Action and Secondary Action, instead of taking those actions separately.");
+		printer.printParagraph("Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and take Passive Actions any number of times. "
+				+ "Reactions cover things done in opposition to another character's Action. "
+				+ "Passive Action covers anything which doesn't require the character to do anything (for example, resisting fear).");
+		printer.printParagraph("In general, a Main Action is a Test to either hit a target with an attack, create an advantage, or overcome an Aspect. "
+				+ "You can take any Secondary Action instead of a Main Action.");
 		printer.printParagraph("A Secondary Action is either a simple action which doesn't require a Test, or a supplementary action which gives a temporary ±10 modifier to something.");
-		printer.printParagraph("A Full Action is an improved Main Action - either with a +10 bonus to the Test, or with Degrees of Success giving some extra effect. Alternatively, any Secondary Action can be taken as a Full Action - this applies the effect twice, but counts as a single Action.");
-		printer.printParagraph("Reactions and Passive Actions are a Test to oppose another character's Action or to overcome an Aspect on the character. Alternatively, a Reaction can be a +10 bonus to something.");
+		printer.printParagraph("A Full Action is an improved Main Action - either with a +10 bonus to the Test, or with Degrees of Success giving some extra effect. "
+				+ "Alternatively, any Secondary Action can be taken as a Full Action - this applies the effect twice, but counts as a single Action.");
+		printer.printParagraph("Reactions and Passive Actions are a Test to oppose another character's Action or to overcome an Aspect on the character. "
+				+ "Alternatively, a Reaction can be a +10 bonus to something.");
 		printer.printSubheader("Stacking Bonuses");
-		printer.printParagraph("The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. This doesn't apply to taking the same Secondary Action twice in one turn, as doing so counts as a single action giving a ±20 bonus/penalty until your next Action or Reaction. Bonuses you get from Advantages last until the Advantage is overcome somehow. All bonuses and penalties stack.");
+		printer.printParagraph("The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. "
+				+ "This doesn't apply to taking the same Secondary Action twice in one turn, as doing so counts as a single action giving a ±20 bonus/penalty until your next Action or Reaction. "
+				+ "Bonuses you get from Advantages last until the Advantage is overcome somehow. "
+				+ "All bonuses and penalties stack.");
 		printer.printSubheader("Waiting");
-		printer.printParagraph("You can choose to Wait until some point between the end of your turn and the start of your next turn to take your Action. Declare the action you will take during your turn; choose the moment to take that action as it happens. Use Reflexes to resolve your action before another character's if both characters are trying to act at the same time. For example, you may choose to shoot at an enemy when they pop out of cover on their turn. This would be waiting with a Ranged Attack action and you would make a Test to see if your shot is resolved before their action.");
+		printer.printParagraph("You can choose to Wait until some point between the end of your turn and the start of your next turn to take your Action. "
+				+ "Declare the action you will take during your turn; choose the moment to take that action as it happens. "
+				+ "Use Reflexes to resolve your action before another character's if both characters are trying to act at the same time. "
+				+ "For example, you may choose to shoot at an enemy when they pop out of cover on their turn. "
+				+ "This would be waiting with a Ranged Attack action and you would make a Test to see if your shot is resolved before their action.");
 		printer.printSubheader("Moving Past Opponents");
-		printer.printParagraph("If your movement puts you adjacent to another character at any point (besides the spot where you started), they can choose to take their next turn immediately (before you continue your movement), unless you end your movement at that point. This applies to the entire movement on your turn, not just a single Move Secondary Action.");
+		printer.printParagraph("If your movement puts you adjacent to another character at any point (besides the spot where you started), they can choose to take their next turn immediately (before you continue your movement), unless you end your movement at that point. "
+				+ "This applies to the entire movement on your turn, not just a single Move Secondary Action.");
 		printer.printSubheader("Slow Movement");
-		printer.printParagraph("If your Agility Bonus is 0, then you can still Move 1m, but you cannot Run. If your Agility is 0, then you are unable to move.");
+		printer.printParagraph("If your Agility Bonus is 0, then you can still Move 1m, but you cannot Run. "
+				+ "If your Agility is 0, then you are unable to move.");
+		printer.printSubheader("Teamwork");
+		printer.printParagraph("The first way to work together is to take an action which confirs a bonus to the other character, or a penalty to their intended target. "
+				+ "The other way to work together is to simply perform the same Action with the same Target. "
+				+ "If doing the latter, the characters working together can act simultaneously by Waiting, in which case Degress of Success can be combined.");
 		printer.printHeader("Actions Summary");
-		printer.printTableTop(actionsTableHeaders, true, true);
+		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("Fight Actions");
 		for(int i = 0; i < actionsTable_fight.length; i ++) {
 			printer.printTableRow(actionsTable_fight[i]);

@@ -9,8 +9,9 @@ class ActionsInDowntimeFile implements PrintableFile {
 	};
 	private static String[][] actionsTable_movement = {
 			{"Travel", "Long", "Basic", "-", "Travel for 1 hour"},
-			{"Haul", "Long", "Basic", "Strength", "Travel for 1 hour while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel"},
-			{"Navigate", "Long", "Basic Skill", "Intelligence", "Travel for 1 hour through difficult terrain (effects determined by terrain)"},
+			{"Haul", "Long", "Basic", "Strength", "Travel while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel"},
+			{"Navigate", "Long", "Basic Skill", "Intelligence", "Overcome a Navigation Challenge, then Travel"},
+			{"Navigate (Avoid Hazard)", "Long", "Basic Skill", "Intelligence", "Oppose a Navigation Hazard during Travel"},
 			{"Sneak (Follow Carefully)", "Long", "Basic Skill", "Agility", "Follow a target unseen for 1 hour; lose target on failure; spotted on critical failure"},
 			{"Sneak (Follow Closely)", "Long", "Basic Skill", "Agility", "Follow a target unseen for 1 hour; spotted on failure; lose target on critical failure"},
 	};
@@ -54,9 +55,16 @@ class ActionsInDowntimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printParagraph("Any reasonable number of Short or turn-time Actions can be done without spending an hour. A Short Action can be done as a Long action with a +20 bonus. A Long Action can be done as a Short Action with a -20 penalty (unless it involves travel). When a turn-time Action is taken, it can usually be assumed to have a +30 bonus from a Full Action Focus and doing the Action Carefully. Extended actions take multiple hours.");
+		printer.printParagraph(
+				"Any reasonable number of Short or turn-time Actions can be done without spending an hour. "
+				+ "A Short Action can be done as a Long action with a +20 bonus. "
+				+ "A Long Action can be done as a Short Action with a -20 penalty (unless it involves travel). "
+				+ "When a turn-time Action is taken, it can usually be assumed to have a +30 bonus from a Full Action Focus and doing the Action Carefully. "
+				+ "Extended actions take multiple hours.");
+		printer.printParagraph(
+				"When characters work together, resolve the Action separately for each character and combine Degrees of Success.");
 		printer.printHeader("Actions Summary");
-		printer.printTableTop(actionsTableHeaders, true, true);
+		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("Movement Actions");
 		for(int i = 0; i < actionsTable_movement.length; i ++) {
 			printer.printTableRow(actionsTable_movement[i]);

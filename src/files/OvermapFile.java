@@ -4,12 +4,6 @@ import main.*;
 
 class OvermapFile implements PrintableFile {
 	
-	private static final String[][] difficultTerrainTable = {
-			{"Polluted or heavily polluted", "Travel", "Travel<br>(caught in pollution)", "Travel<br>(caught in pollution)"},
-			{"Poorly lit or no power", "Travel", "Travel<br>(become lost)", "Travel<br>(become lost)"},
-			{"Partially collapsed or flooded", "Travel", "Travel<br>(takes 2 hours)", "No progess<br>(takes 1 hour)"},
-			{"Totally collapsed or flooded", "Travel<br>(takes 2 hours)", "No progess<br>(takes 1 hour)", "Progess appears impossible<br>(takes 1 hour)"},
-	};
 	private static final String[][] gettingLostTable = {
 			{"01-10", "Travel up a layer"},
 			{"11-20", "Travel 2 areas left of the intended area"},
@@ -265,55 +259,115 @@ class OvermapFile implements PrintableFile {
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
 		printer.printParagraph("The map is divided into three vertical layers:");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Upper Hive",
 				"Middle Hive",
-				"Underhive",
-		});
+				"Underhive"
+		);
 		printer.printParagraph("Each layer is divided into areas, arranged as a hex grid. Each area has:");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"One Main Location",
 				"A list of additional locations",
-				"One or more states of Disrepair (for the Underhive)",
-		});
-		printer.printParagraph("The Main Location and Disrepair should be determined when the area is generated. Additional locations are added as they are encountered.");
-		printer.printParagraph("Travelling to an adjacent area or between layers takes an hour. Once in an area, travelling to a specific location takes an hour, except the Main Location, which takes a negligible amount of time. So travelling to a specific location in an adjacent area takes 2 hours, for example. Apply navigation difficulties for the area being moved into.");
-		printer.printParagraph("Each hour of travelling, there is one Location Encounter and one Encounter. Roll a d10. On a roll of 1, the Encounter and Location Encounter happen together. If not travelling, there is no Location Encounter and the Encounter only occurs on a roll of 1.");
-		printer.printParagraph("Before rolling a Location Encounter, roll a d10. On a 10, or if the number rolled is higher than the number of additional locations listed for the area, roll a new Encountered Location and add it to the list. Otherwise, count down the list by the rolled number (wrapping if needed) from the last location encountered to determine which location is encountered. For (non-location) Encounters, simply roll on the Encounter table.");
+				"One or more states of Disrepair (for the Underhive)"
+		);
+		printer.printParagraph("The Main Location (and Disrepair if applicable) should be determined when the area is generated. "
+				+ "Additional locations are added as they are encountered.");
+		
 		printer.printParagraph("<i>The GM may wish to roll results for the Encounter and Location Encounter tables ahead of time, in order to save time preparing the encounters.</i>");
-		printer.printSubheader("Procedure");
-		printer.printList(true, new String[] {
-				"PCs decide what they are doing - note whether it is travel or non-travel.",
-				"Use naviation difficulties for the area being moved into.",
-				"Resolve this action. Failure to Navigate may change the area moved to if the characters become lost or make no progress.",
-				"Determine whether the encounters happen together (if travelling) or at all (if not travelling).",
-				"Determine if the Location Encounter is a repeat.",
-				"Determine non-repeat encounters using the tables for the area moved into.",
-				"Determine encounter distance and NPC disposition (if relevant).",
+		
+		printer.printSubheader_collapsible("Procedure for Travel");
+		printer.printCollapsibleTop();
+		printer.printParagraph("Travelling to an adjacent area or between layers takes an hour. "
+				+ "Arriving in an area equates to arriving at the Main Location for that area. "
+				+ "Once in an area, travelling to a specific location takes an hour. "
+				+ "So travelling to a location in an adjacent area takes 2 hours, for example.");
+		printer.printSubSubheader("1 - Is there a Navigation Challenge or Navigation Hazard?");
+		printer.println(
+				"If so, resolve the characters' Navigate Action(s). "
+				+ "Note progress against any Navigation Challenge and whether the characters have become lost.");
+		printer.printSubSubheader("2 - When/where do the encounters happen?");
+		printer.println("There is one Location Encounter and one regular Encounter. "
+				+ "Roll a d10 for each - the encounter with the lowest roll occurs first; doubles means they happen together.");
+		printer.printSubSubheader("3 - Is the Location Encounter a repeat?");
+		printer.println("Roll a d10. If this position in the list of encountered locations for this area is empty, roll a new Encountered Location and add it to the list. "
+				+ "Otherwise, the location in the rolled position is encountered.");
+		printer.printSubSubheader("3 - Roll up the encounters");
+		printer.println("Use the tables for the area the characters are currently in.");
+		printer.printSubSubheader("4 - Resolve the encounters");
+		printer.printSubSubheader("5 - Advance time");
+		printer.println("Whether the characters continue travelling or abandon the travel to do something else after the encounter, time advances by an hour.");
+		printer.printSubSubheader("6 - Resolve the Travel");
+		printer.println("If the characters are lost, use the table to determine where they end up.");
+		printer.println("Otherwise, if the characters don't still have a Navigation Challenge to overcome, they Travel successfully: "
+				+ "If their destination is in the same area, then they arrive. "
+				+ "Otherwise, they move into the adjacent area in their intended direction.");
+		printer.printCollapsibleTail();
+		
+		printer.printSubheader_collapsible("Procedure for Non-Travel");
+		printer.printCollapsibleTop();
+		printer.printSubSubheader("1 - Does an encounter happen?");
+		printer.println("Roll a d10. On a roll of 1, there is an Encounter.");
+		printer.printSubSubheader("2 - Roll up the encounter");
+		printer.printSubSubheader("3 - Resolve the encounter");
+		printer.printSubSubheader("4 - Resolve the non-travel Action");
+		printer.println("If the characters decide to abandon the Action they were performing after the encounter, skip advancing time and don't roll another encounter for this hour.");
+		printer.printSubSubheader("5 - Advance time");
+		printer.printCollapsibleTail();
+		
+		
+		printer.printSubheader_collapsible("Procedure for Encounters");
+		printer.printCollapsibleTop();
+		printer.printList(false,
+				"Determine encounter distance using the table.",
+				"Determine NPC disposition (if relevant).",
 				"Determine whether the party and/or encountered party is surprised (if relevant).",
-				"Run the encounter.",
-		});
-		printer.printSubSubheader("Navigate Difficult or Dangerous Areas");
-		printer.printTableTop("Area", "Success", "Failure", "Critical Failure", false, true);
-		for(int i = 0; i < difficultTerrainTable.length; i ++) {
-			printer.printTableRow(difficultTerrainTable[i]);
-		}
+				"Run the encounter."
+		);		
+		printer.printSubSubheader("Encounter Distance");
+		printer.printTableTop(false, true, "Area", "Distance");
+		printer.printTableRow("Upper Hive", "6d10m");
+		printer.printTableRow("Middle Hive", "5d10m");
+		printer.printTableRow("Underhive", "4d10m");
+		printer.printTableRow("Collapsed (1-5)", "3d10m");
+		printer.printTableRow("Collapsed (6-10)", "2d10m");
 		printer.printTableTail();
-		printer.printSubSubheader("Getting Lost");
-		printer.printTableTop("Roll", "Effect", false, true);
+		printer.printCollapsibleTail();
+		
+
+		printer.printSubheader_collapsible("Navigation Challenges and Navigation Hazards");
+		printer.printCollapsibleTop();
+		printer.printSubSubheader("Navigation Challenges");
+		// TODO ...
+		printer.printList(false,
+				"If there is a Navigation Challenge, the characters must Navigate successfully in order to Overcome this and Travel.",
+				"If there is a Navigation Hazard, the characters must Navigate successfully to avoid the hazard, assuming they are capable of doing so - radiation, for example, would automatically affect characters who cannot detect it.",
+				"Otherwise, no Test is required to Travel.");
+		printer.println("Examples of different levels of Navigation Challenge:");
+		printer.printList(false,
+				"Navigation Challenge (1) - following directions to a new location.",
+				"Navigation Challenge (2) - retracing steps when lost.",
+				"Navigation Challenge (3) - following unclear directions.",
+				"Navigation Challenge (N) - disrepair in the area, e.g. Collapsed(N), Flooded(N), Dark(N).");
+		
+		printer.printSubSubheader("Navigation Hazards");
+		printer.printList(false,
+				"Sewage",
+				"Toxic liquid",
+				"Toxic gas",
+				"Radiation");
+		// TODO ...
+		printer.printCollapsibleTail();
+		
+		printer.printSubheader_collapsible("Getting Lost");
+		printer.printCollapsibleTop();
+		printer.printTableTop(false, true, "Roll", "Effect");
 		for(int i = 0; i < gettingLostTable.length; i ++) {
 			printer.printTableRow(gettingLostTable[i]);
 		}
 		printer.printTableRow_note("Treat invalid results as going in circles.");
 		printer.printTableTail();
-		printer.printSubSubheader("Encounter Distance");
-		printer.printTableTop("Area", "Distance", false, true);
-		for(int i = 0; i < encounterDistanceTable.length; i ++) {
-			printer.printTableRow(encounterDistanceTable[i]);
-		}
-		printer.printTableTail();
-		printer.println();
-		printer.println();
+		printer.printCollapsibleTail();
+		
 		printMapLayerTables(printer, "Upper Hive",
 				null,
 				mainLocationsTable_upperHive,
@@ -354,7 +408,7 @@ class OvermapFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		if(disrepairTable != null) {
 			printer.printSubSubheader(name+" Disrepair");
-			printer.printTableTop("Roll", "Disrepair", true, true);
+			printer.printTableTop(true, true, "Roll", "Disrepair");
 			for(int i = 0; i < disrepairTable.length; i ++) {
 				printer.printTableRow(disrepairTable[i]);
 			}
@@ -362,7 +416,7 @@ class OvermapFile implements PrintableFile {
 		}
 		if(mainLocationsTable != null) {
 			printer.printSubSubheader(name+" Main Locations");
-			printer.printTableTop("Roll", "Location", true, true);
+			printer.printTableTop(true, true, "Roll", "Location");
 			for(int i = 0; i < mainLocationsTable.length; i ++) {
 				printer.printTableRow(mainLocationsTable[i]);
 			}
@@ -370,7 +424,7 @@ class OvermapFile implements PrintableFile {
 		}
 		if(encounteredLocations != null) {
 			printer.printSubSubheader(name+" Encountered Locations");
-			printer.printTableTop("Roll", "Location", true, true);
+			printer.printTableTop(true, true, "Roll", "Location");
 			for(int i = 0; i < encounteredLocations.length; i ++) {
 				printer.printTableRow(encounteredLocations[i]);
 			}
@@ -378,7 +432,7 @@ class OvermapFile implements PrintableFile {
 		}
 		if(encountersTable != null) {
 			printer.printSubSubheader(name+" Encounters");
-			printer.printTableTop("Roll", "Encounter", true, true);
+			printer.printTableTop(true, true, "Roll", "Encounter");
 			for(int i = 0; i < encountersTable.length; i ++) {
 				printer.printTableRow(encountersTable[i]);
 			}

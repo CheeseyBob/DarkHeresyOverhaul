@@ -1,10 +1,10 @@
 	~~ To Do List ~~
 
+>>> Navigation Hazards need details
+
 >>> Character Creation:
 	- GM determines starting Gelt and other resources according to campaign
 		- E.g. more Gelt if accommodation is not provided.
-
->>> More thought into navigating difficult terrain - difficulty modifiers?
 
 >>> How to gain XP:
 	- PCs submit reports to their Inquisitor
@@ -24,6 +24,9 @@
 
 >>> GM notes for item creation [can wait until after starting the playtest]
 
+> What happened to active reload??
+
+> Add sights/sounds/smells characters would notice around main locations & encountered locations.
 
 > Can probably rework Fear Ratings to be more straightforward.
 
@@ -35,7 +38,9 @@
     - Cover features (pillars, rubble, tech boxes (what's the word for these?), etc.
     - Verticality? Stairs/ramps/ledges/etc.
 
-> Rethink having shops selling weapons - this should be a black market thing
+> Rethink/simplify Charm and Disposition changes - "depends on personality" is weird; personality should just give a modifier to Charm?
+
+> Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
 
 > Consider the special rule pattern: "Get +1 DoS on a successful ___ Test."
 
