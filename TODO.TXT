@@ -1,6 +1,6 @@
 	~~ To Do List ~~
 
->>> Navigation Hazards need details
+>>> Surprise in encounters
 
 >>> Character Creation:
 	- GM determines starting Gelt and other resources according to campaign
@@ -20,7 +20,8 @@
     - Unaligned characters (animals, xenos, etc.)
     - Hostile groups (daemon cults, etc.)
 
->>> Psychic Powers [can wait until after starting the playtest]
+>>> Items
+	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
 
 >>> GM notes for item creation [can wait until after starting the playtest]
 
@@ -30,15 +31,16 @@
 
 > Can probably rework Fear Ratings to be more straightforward.
 
-> Different roll for NPC Disposition? Middle of 3d100?
+>>> NPC Disposition & Personalities:
+	- Different roll for NPC Disposition? Middle of 3d100?
+	- More NPC personality tables
+	- Rethink/simplify Charm and Disposition changes - "depends on personality" is weird; personality should just give a modifier to Charm?
 
 > Add some encountered locations for things like major power conduits, comms hubs, flora
 
 > Add some guides for creating and spicing up battlemaps
     - Cover features (pillars, rubble, tech boxes (what's the word for these?), etc.
     - Verticality? Stairs/ramps/ledges/etc.
-
-> Rethink/simplify Charm and Disposition changes - "depends on personality" is weird; personality should just give a modifier to Charm?
 
 > Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
 
@@ -56,6 +58,7 @@
 > Lore items/talents for rituals
 
 > vacuum and zero-G environmental aspects
+> Navigation Hazard for lack of oxygen?
 
 > Interactions with beasts
 	- Also think about how mounts/mounted combat will work [post-playtest] 
@@ -65,14 +68,14 @@
     - stuff relating to stealth skills
     - more stuff about unlocking/security/thievery/breaking-and-entering
 
-> More NPC personality tables
-
 > See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
 
 > Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
 	- Skills descriptions
 
 > Add formal rules for "Goal Driven Rewards" (see https://www.youtube.com/watch?v=zwpQwCWdhL8)
+
+>>> Psychic Powers [can wait until after starting the playtest]
 
 
 	~~ Test Scenarios ~~

@@ -31,50 +31,6 @@ PCs: "We'll keep at it, but Plex and Castus will work together on navigating."
 ~~~~~~~~~~~~~~~~~~~~
 
 
-*** Doesn't really make sense to use navigation difficulty from destination area if failure means getting lost and moving into a different area. On the other hand, it doesn't make sense to use navigation difficulty for origin area if failure means getting caught in the dangerous terrain of the target area.
-
-
-*** Changes to Navigation/Travel ***
-
-- Travel uses stats of the area the PCs are currently in.
-- Travel to a location in a hex is its own step. E.g. travelling from hex A to location X in an adjacent hex B involves (1) Travel from hex A to hex B, then (2) Travel within hex B to location X. (1) uses modifiers from hex A, while (2) uses modifiers from hex B.
-
-* Roll separately for each challenge (navigation, pollution, etc.).
-    - E.g. if the PCs travel through an area with Radiation but have no way of detecting it, they can't avoid it with their navigate roll.
-
-* List examples of navigation challenges of different levels
-    - Navigation Challenge (1) - following directions.
-    - Navigation Challenge (2) - retracing steps when lost.
-    - Navigation Challenge (3) - following unclear directions.
-
-Navigation challenge (N):
-- N 'hits' to defend.
-- Failure => Travel takes +1 hour
-- Critical failure => become lost
-
-Polluted (N):
-- N 'hits' to defend.
-- Failure => Caught in pollution
-- Critical failure => Caught in pollution
-
-*change Heavily polluted -> Polluted (2 or higher)
-
-Collapsed (N); Flooded (N); Dark (N):
-- Modifier -10N
-
-* change Totally collapsed, Totally flooded, etc. -> N>=2
-
-
-*** What it should look like ***
-
-> Determine obstacles to smooth travel:
-    - Navigation challenge (add ratings from different sources together)
-    - Hazards (treat each hazard type separately)
-
-> If there is a Navigation Challenge, the characters Navigate to Overcome this before 
-
-> For each hazard, the characters Navigate to oppose, assuming they are capable of trying to avoid the hazard - radiation, for example, would automatically affect characters who cannot detect it.
-
 
 
 

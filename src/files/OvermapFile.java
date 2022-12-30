@@ -13,13 +13,6 @@ class OvermapFile implements PrintableFile {
 			{"81-90", "Travel 2 areas right of the intended area"},
 			{"91-00", "Travel down a layer"},
 	};
-	private static final String[][] encounterDistanceTable = {
-			{"Upper Hive", "6d10m"},
-			{"Middle Hive", "5d10m"},
-			{"Underhive", "4d10m"},
-			{"Collapsed Area", "3d10m"},
-			{"Totally Collapsed Area", "2d10m"},
-	};
 	
 	private static final String[][] mainLocationsTable_upperHive = {
 			{"01-50", "Noble Spire"},
@@ -135,28 +128,39 @@ class OvermapFile implements PrintableFile {
 			{"99", "Kill Squad Troopers enforcing an execution warrant"},
 			{"00", "Unsactioned psyker energance"},
 	};
-	
+
 	private static final String[][] disrepairTable_underhive = {
+			{"all", "Dark (1d10)"},
 			{"01-10", "Roll twice and combine the results"},
-			{"11-20", "partially collapsed"},
-			{"21-25", "totally collapsed"},
-			{"26-35", "partially flooded"},
-			{"36-40", "totally flooded"},
-			{"41-48", "polluted (sewage)"},
-			{"49-50", "heavily polluted (sewage)"},
-			{"51-58", "polluted (toxic liquid)"},
-			{"59-60", "heavily polluted (toxic liquid)"},
-			{"61-68", "polluted (toxic gas)"},
-			{"69-70", "heavily polluted (toxic gas)"},
-			{"71-78", "polluted (radiation)"},
-			{"79-80", "heavily polluted (radiation)"},
-			{"81-95", "Poorly lit"},
-			{"96-00", "No power"},
+			{"11-30", "Collapsed (1d10)"},
+			{"31-40", "Flooded (1d10)"},
+			{"41-50", "Sewage (1d10)"},
+			{"51-52", "Toxic Liquid (Fatigue) (1d10)"},
+			{"53-54", "Toxic Liquid (Lingering Fatigue) (1d10)"},
+			{"55-56", "Toxic Liquid (Lethal) (1d10)"},
+			{"57-58", "Toxic Liquid (Lingering Lethal) (1d10)"},
+			{"59-60", "Toxic Liquid (Neurotoxin) (1d10)"},
+			{"61-62", "Toxic Liquid (Lingering Neurotoxin) (1d10)"},
+			{"63-64", "Toxic Liquid (Convulsions) (1d10)"},
+			{"65-66", "Toxic Liquid (Pain) (1d10)"},
+			{"67-68", "Toxic Liquid (Paralysis) (1d10)"},
+			{"69-70", "Toxic Liquid (Lingering Paralysis) (1d10)"},
+			{"71-72", "Toxic Gas (Fatigue) (1d10)"},
+			{"73-74", "Toxic Gas (Lingering Fatigue) (1d10)"},
+			{"75-76", "Toxic Gas (Lethal) (1d10)"},
+			{"77-78", "Toxic Gas (Lingering Lethal) (1d10)"},
+			{"79-80", "Toxic Gas (Neurotoxin) (1d10)"},
+			{"81-82", "Toxic Gas (Lingering Neurotoxin) (1d10)"},
+			{"83-84", "Toxic Gas (Convulsions) (1d10)"},
+			{"85-86", "Toxic Gas (Pain) (1d10)"},
+			{"87-88", "Toxic Gas (Paralysis) (1d10)"},
+			{"89-90", "Toxic Gas (Lingering Paralysis) (1d10)"},
+			{"91-00", "Radiation (1d10)"}
 	};
 	private static final String[][] mainLocationsTable_underhive = {
 			{"01-85", "Old abandoned site (roll on the Middle Hive Main Location table)"},
 			{"86-90", "Ancient abandoned site (roll on the Upper Hive Main Location table)"},
-			{"91-00", "Major vertical interchange (multiple passages downwards)"},
+			{"91-00", "Major vertical interchange (1d10 passages downwards to Hive Floor Locations)"},
 	};
 	private static final String[][] encounteredLocations_underhive = {
 			{"01-05", "Roll twice and combine the results"},
@@ -209,9 +213,11 @@ class OvermapFile implements PrintableFile {
 	};
 	
 	private static final String[][] disrepairTable_hiveFloor = {
-			{"01-50", "No power and totally collapsed, in addition to the disrepair of the above underhive area"},
-			{"51-80", "No power and totally collapsed, in addition to the disrepair of the above underhive area, but the disrepair is worse (partially flooded becomes totally flooded, etc.)"},
-			{"81-00", "No power and totally collapsed, in addition to the disrepair of the above underhive area, but the disrepair is worse (roll an additional effect on the Underhive Disrepair table)"},
+			{"all", "Dark (10)"},
+			{"all", "Collapsed (1d10)"},
+			{"01-40", "The same disrepair of the above underhive area"},
+			{"41-80", "The same disrepair of the above underhive area, upgraded by 1d10"},
+			{"81-00", "The same disrepair of the above underhive area, plus another roll on the Underhive Disrepair table"},
 	};
 	private static final String[][] encounteredLocations_hiveFloor = {
 			{"01-05", "Roll twice and combine the results"},
@@ -336,13 +342,16 @@ class OvermapFile implements PrintableFile {
 
 		printer.printSubheader_collapsible("Navigation Challenges and Navigation Hazards");
 		printer.printCollapsibleTop();
+		printer.printParagraph(
+				"In addition to affecting Travel, the Navigation Challenges from disrepair and any Navigation Hazards will have a presence in encounters.");
 		printer.printSubSubheader("Navigation Challenges");
 		// TODO ...
-		printer.printList(false,
-				"If there is a Navigation Challenge, the characters must Navigate successfully in order to Overcome this and Travel.",
-				"If there is a Navigation Hazard, the characters must Navigate successfully to avoid the hazard, assuming they are capable of doing so - radiation, for example, would automatically affect characters who cannot detect it.",
-				"Otherwise, no Test is required to Travel.");
-		printer.println("Examples of different levels of Navigation Challenge:");
+		printer.printParagraph(
+				"If there is a Navigation Challenge, the characters must Navigate to Overcome this if they are trying to Travel. "
+				+ "Success and each Degree of Success overcomes one level of the Navigation Challenge. "
+				+ "If all levels of the Navigation Challenge are Overcome, then the Navigate Action includes Travel."
+				+ "Otherwise, the characters do not Travel - an hour passes and they can Navigate again, keeping their progress from before. "
+				+ "On a Critical Failure, the characters become lost.");
 		printer.printList(false,
 				"Navigation Challenge (1) - following directions to a new location.",
 				"Navigation Challenge (2) - retracing steps when lost.",
@@ -350,11 +359,23 @@ class OvermapFile implements PrintableFile {
 				"Navigation Challenge (N) - disrepair in the area, e.g. Collapsed(N), Flooded(N), Dark(N).");
 		
 		printer.printSubSubheader("Navigation Hazards");
+		printer.printParagraph(
+				"For each Navigation Hazard, the characters Navigate to avoid it, assuming they are capable of doing so. "
+				+ "Radiation, for example, would automatically affect characters who cannot detect it. "
+				+ "In addition to affecting Travel, a Navigation Hazard will also be present in encounters.");
 		printer.printList(false,
-				"Sewage",
-				"Toxic liquid",
-				"Toxic gas",
-				"Radiation");
+				"Sewage (N) - become "+Aspect.diseased+" (N), where X is a Characteristic chosen by rolling a d10 (reroll twice on a 10).",
+				"Toxic Gas/Liquid (Fatigue) (N) - become "+Aspect.poisoned_fatigue+" (N).",
+				"Toxic Gas/Liquid (Lingering Fatigue) (N) - become "+Aspect.poisoned_fatigue_lingering+" (N).",
+				"Toxic Gas/Liquid (Lethal) (N) - become "+Aspect.poisoned_lethal+" (N).",
+				"Toxic Gas/Liquid (Lingering Lethal) (N) - become "+Aspect.poisoned_lethal_lingering+" (N).",
+				"Toxic Gas/Liquid (Neurotoxin) (N) - become "+Aspect.poisoned_neurotoxin+" (N).",
+				"Toxic Gas/Liquid (Lingering Neurotoxin) (N) - become "+Aspect.poisoned_neurotoxin_lingering+" (N).",
+				"Toxic Gas/Liquid (Convulsions) (N) - become "+Aspect.poisoned_convulsions+" (N).",
+				"Toxic Gas/Liquid (Pain) (N) - become "+Aspect.poisoned_pain+" (N).",
+				"Toxic Gas/Liquid (Paralysis) (N) - become "+Aspect.poisoned_paralysing+" (N).",
+				"Toxic Gas/Liquid (Lingering Paralysis) (N) - become "+Aspect.poisoned_paralysing_lingering+" (N).",
+				"Radiation (N) - become "+Aspect.poisoned_radiation+" (N).");
 		// TODO ...
 		printer.printCollapsibleTail();
 		

@@ -1,8 +1,8 @@
 package main;
 
 public class Aspect {
-	String name;
-	String bonus, penalty, special, overcome;
+	public String name;
+	public String bonus, penalty, special, overcome;
 	
 	public Aspect(String name, String bonus, String penalty, String special, String overcome) {
 		this.name = name;
@@ -187,21 +187,53 @@ public class Aspect {
 			"-",
 			"If the target fails to Resist, they take Strength and Toughness Damage equal to the aspect level.",
 			"Resist (Physically), once per turn");
+	public static final Aspect poisoned_lethal_lingering = new Aspect("Poisoned (Lingering Lethal)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they take Strength and Toughness Damage equal to the aspect level.",
+			"Resist (Physically), once per hour");
 	public static final Aspect poisoned_neurotoxin = new Aspect("Poisoned (Neurotoxin)", 
 			"-",
 			"-",
 			"If the target fails to Resist, they take Intelligence, Perception and Willpower Damage equal to the aspect level.",
 			"Resist (Physically), once per turn");
-	public static final Aspect poisoned_paralysing = new Aspect("Poisoned (Paralyzing)", 
+	public static final Aspect poisoned_neurotoxin_lingering = new Aspect("Poisoned (Lingering Neurotoxin)", 
 			"-",
 			"-",
-			"If the target fails to Resist, they take Weapon Skill, Ballistic Skill and Agility Damage equal to the aspect level.",
+			"If the target fails to Resist, they take Intelligence, Perception and Willpower Damage equal to the aspect level.",
+			"Resist (Physically), once per hour");
+	public static final Aspect poisoned_convulsions = new Aspect("Poisoned (Convulsions)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they become Knocked Down.",
 			"Resist (Physically), once per turn");
 	public static final Aspect poisoned_pain = new Aspect("Poisoned (Pain)", 
 			"-",
 			"-",
 			"If the target fails to Resist, they become Stunned (maximum level is this aspect level).",
 			"Resist (Physically), once per turn");
+	public static final Aspect poisoned_paralysing = new Aspect("Poisoned (Paralysis)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they take Weapon Skill, Ballistic Skill and Agility Damage equal to the aspect level.",
+			"Resist (Physically), once per turn");
+	public static final Aspect poisoned_paralysing_lingering = new Aspect("Poisoned (Lingering Paralysis)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they take Weapon Skill, Ballistic Skill and Agility Damage equal to the aspect level.",
+			"Resist (Physically), once per hour");
+	public static final Aspect poisoned_radiation = new Aspect("Poisoned (Radiation)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they take Characteristic Damage equal to the aspect level on all Characteristics.",
+			"Resist (Physically), once per hour");
+	
+	// Disease Aspects //
+	public static final Aspect diseased = new Aspect("Diseased (X)", 
+			"-",
+			"-",
+			"If the target fails to Resist, they take X Characteristic Damage equal to the aspect level and the aspect is upgraded one level.",
+			"Resist (Physically), once per Rest");
 	
 	// Environmental Aspects //
 	public static final Aspect darkness = new Aspect("Darkness", 
