@@ -121,7 +121,7 @@ class NPCsFile implements PrintableFile {
 		printer.printHeader_collapsible("Creatures");
 		printer.printCollapsibleTop();
 		printer.printParagraph(
-				"For non-intelligent creatures, their Disposition and Personality will be determined by their species, as noted on their character sheet.");
+				"For non-intelligent creatures, their Disposition and Personality is determined by their species, as noted on their character sheet.");
 
 		printer.printSubSubheader("Personality");
 		printer.printParagraph(
@@ -141,7 +141,8 @@ class NPCsFile implements PrintableFile {
 		printer.printSubheader("Attention");
 		printer.printParagraph(
 				"Sometimes, the PCs might gain Attention from a hostile group. "
-				+ "This triggers the hostile group to undertake some kind of action against the PCs. "
+				+ "Determine which group this is randomly, unless it makes sense for it to be a particular group. "
+				+ "Attention triggers the hostile group to undertake some kind of action against the PCs. "
 				+ "This escalates each time the same group does this, on a scale from 1-10.");
 		printer.printList(false,
 				"1 - The group is curious about the PCs and tries to gather information on them (scouts, spies, etc.).",
@@ -156,8 +157,22 @@ class NPCsFile implements PrintableFile {
 		);
 		
 		printer.printSubheader("Subtlety");
-		printer.printParagraph("After the PCs go out and about in public, make a Subtlety Test - the PC's Subtlety Characteristic is determined by Table 8-3 in the Second Edition rulebook. If they fail, the PCs gain Attention from a random hostile group.");
-		// TODO - add the subtlety table
+		printer.printParagraph(
+				"After the PCs go out and about in public, make a Subtlety Test. "
+				+ "Determine the PC's Subtlety Characteristic using the table. "
+				+ "If they fail, the PCs gain Attention from a hostile group.");
+		printer.printTableTop(false, true, "Subtlety", "Example");
+		printer.printTableRow("01-10", "Loudly announce their every move in the name of the Inquisition");
+		printer.printTableRow("11-20", "Use their reputation and openly wear symbols of the Inquisition");
+		printer.printTableRow("21-30", "Openly attack suspects to subdue them for interrogation");
+		printer.printTableRow("31-40", "Respond to violence in kind with impressive weaponry");
+		printer.printTableRow("41-50", "Neither conceal their business, nor draw extra attention");
+		printer.printTableRow("51-60", "Trail and observe targets and inquire amongst their aquaintances");
+		printer.printTableRow("61-70", "Take measures to keep their presence unknown and avoid violent engagements");
+		printer.printTableRow("71-80", "Conceal their presence or identity until it is time to strike");
+		printer.printTableRow("81-90", "Operate under detailed false identities to bring down their enemies from within");
+		printer.printTableRow("91-00", "Hidden or disguised so perfectly that none suspect their true nature");
+		printer.printTableTail();
 		
 		printer.printSubheader("Commanding Subordinates");
 		printer.printParagraph("A character can Command NPCs:");
@@ -169,7 +184,10 @@ class NPCsFile implements PrintableFile {
 		printer.printParagraph("In either case, Command gives a bonus to the target's Disposition, which they then Test. If the Disposition Test is successful, they either follow your orders or overcome the Aspect.");
 		
 		printer.printSubheader("Reinforcement Characters");
-		printer.printParagraph("Once an NPC's Disposition reaches 100, they become available as a reinforcement character. A reinforcement character can be chosen to play instead of a new or benched character. When doing so, determine the reason the NPC is joining the PCs and ............");
+		printer.printParagraph(
+				"Once an NPC's Disposition reaches 100, they become available as a reinforcement character. "
+				+ "A reinforcement character can be chosen to play instead of a new or benched character. "
+				+ "When doing so, determine the reason the NPC is joining the PCs and ............");
 		
 		printer.printFileTail();
 	}
