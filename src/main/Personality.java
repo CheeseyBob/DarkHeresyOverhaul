@@ -1,8 +1,8 @@
 package main;
 
 public class Personality {
-	String name, description;
-	String dispositionZeroDescription;
+	public String name, description;
+	public String dispositionZeroDescription;
 	SkillResponse[] socialSkillResponseList;
 	
 	Personality(String name,
@@ -146,5 +146,37 @@ public class Personality {
 			new SkillResponse(Skill.intimidate, "+0", "-10"),
 			new SkillResponse(Skill.persuade, "+0", "-5"),
 			new SkillResponse(Skill.readPerson, "+0", "-0")
+	);
+	
+	// Creature Personalities //
+	public static final Personality creature_aggressive = new Personality("Aggressive",
+			"Angry and easily provoked.",
+			"Attacks.",
+			new SkillResponse(Skill.wrangle, "-20", "-20")
+	);
+	public static final Personality creature_inquisitive = new Personality("Inquisitive",
+			"Curious, yet somewhat cautious.",
+			"Backs away and keeps its distance.",
+			new SkillResponse(Skill.wrangle, "+10", "-10")
+	);
+	public static final Personality creature_friendly = new Personality("Friendly",
+			"Bold and curious, often initiating interactions",
+			"Flees in a moping and dejected manner.",
+			new SkillResponse(Skill.wrangle, "+20", "-5")
+	);
+	public static final Personality creature_passive = new Personality("Passive",
+			"Uninterested by what goes on around it.",
+			"Becomes unresponsive.",
+			new SkillResponse(Skill.wrangle, "+0", "-5")
+	);
+	public static final Personality creature_skittish = new Personality("Skittish",
+			"Constantly alert and ready to bolt.",
+			"Flees in a panic.",
+			new SkillResponse(Skill.wrangle, "-20", "-20")
+	);
+	public static final Personality creature_unpredictable = new Personality("Unpredictable",
+			"Friendly, yet easily provoked.",
+			"Attacks.",
+			new SkillResponse(Skill.wrangle, "-20", "-20")
 	);
 }

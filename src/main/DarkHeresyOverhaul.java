@@ -1,7 +1,6 @@
 package main;
 
-import files.FileList;
-import files.ItemFile;
+import files.Files;
 
 
 /**
@@ -18,11 +17,8 @@ class DarkHeresyOverhaul {
 	
 	public static void main(String[] args) {
 		System.out.println("Running DarkHeresyOverhaul html generation...");
-		for(PrintableFile file : FileList.getAll()) {
+		for(PrintableFile file : Files.getAll()) {
 			printFile(file);
-		}
-		for(Item item: Item.list) {
-			printFile(new ItemFile(item));
 		}
 		System.out.println("HTML file generation complete.");
 	}

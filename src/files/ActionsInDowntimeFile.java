@@ -39,7 +39,8 @@ class ActionsInDowntimeFile implements PrintableFile {
 			{"Treat Wounds", "Long", "Skill", "Intelligence", "Target becomes Treated"},
 			{"Unlock", "Short", "Skill", "Intelligence", "Overcome target being Locked"},
 			{"Use Tech (Maintain)", "Long", "Skill", "Intelligence", "Target item becomes Maintained; on critical failure, target becomes Damaged"},
-			{"Wrangle", "Short", "Skill", "Fellowship", "Get a bonus to Disposition"},
+			{"Wrangle (Charm)", "Short", "Skill", "Fellowship", "Target becomes Charmed"},
+			{"Wrangle (Intimidate)", "Short", "Skill", "Strength", "Target becomes Intimidated"},
 	};
 	
 	@Override

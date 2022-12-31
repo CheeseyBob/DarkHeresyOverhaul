@@ -1,12 +1,14 @@
 package files;
 
-import java.util.LinkedList;
+import java.lang.reflect.Field;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import main.Item;
 import main.PrintableFile;
 
-public class FileList {
-	// Index Page / Contents //
+public class Files {
+	// Index Page & Contents //
 	public static PrintableFile indexFile = new IndexFile();
 	
 	// Characters //
@@ -54,66 +56,24 @@ public class FileList {
 	public static PrintableFile locations = new LocationsFile();
 	public static PrintableFile groupsAndEvents = new GroupsAndEventsFile();
 	
+	// Cards //
+	public static class Cards {
+		public static List<PrintableFile> itemList = Item.list.stream().map(ItemFile::new).collect(Collectors.toList());
+	}
+	
 	public static List<PrintableFile> getAll() {
-		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		list.add(indexFile);
-		list.addAll(section_characters());
-		list.addAll(section_playingTheGame());
-		list.addAll(section_runningTheGame());
+		List<PrintableFile> list = List.of(Files.class.getFields()).stream()
+				.map(Files::toPrintableFile)
+				.collect(Collectors.toList());
+		list.addAll(Cards.itemList);
 		return list;
 	}
 	
-	public static List<PrintableFile> section_characters() {
-		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		list.add(exampleCharacterSheet);
-		list.add(characterCreation);
-		list.add(characterAdvancement);
-		list.add(talents);
-		list.add(traits);
-		list.add(bionics);
-		list.add(psychicPowers);
-		list.add(items);
-		list.add(ammo);
-		list.add(armour);
-		list.add(consumables);
-		list.add(meleeWeapons);
-		list.add(rangedWeapons);
-		list.add(thrownWeapons);
-		list.add(tools);
-		list.add(miscItems);
-		return list;
-	}
-	
-	public static List<PrintableFile> section_playingTheGame() {
-		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		list.add(fatePoints);
-		list.add(actionsOverview);
-		list.add(actionsInCombatTime);
-		list.add(actionsInDowntime);
-		list.add(aspects);
-		list.add(criticalDamage);
-		list.add(fearAndInsanity);
-		list.add(corruptionAndMutation);
-		list.add(psychicPhenomena);
-		return list;
-	}
-	
-	public static List<PrintableFile> section_runningTheGame() {
-		List<PrintableFile> list = new LinkedList<PrintableFile>();
-		list.add(proceduresOfPlay);
-		list.add(npcs);
-		list.add(adeptusAdministratum);
-		list.add(adeptusArbites);
-		list.add(adeptusAstraTelepathica);
-		list.add(adeptusMechanicus);
-		list.add(adeptusMinistorum);
-		list.add(imperialGuard);
-		list.add(outcasts);
-		list.add(investigation);
-		list.add(lore);
-		list.add(overmap);
-		list.add(locations);
-		list.add(groupsAndEvents);
-		return list;
+	private static PrintableFile toPrintableFile(Field field) {
+		try {
+			return (PrintableFile)field.get(null);
+		} catch (IllegalArgumentException | IllegalAccessException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }

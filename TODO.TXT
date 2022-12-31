@@ -1,8 +1,5 @@
 	~~ To Do List ~~
 
->>> NPC Disposition & Personalities:
-	- Procedure for assigning personalities to NPCs
-
 >>> Surprise in encounters
 
 >>> Character Creation:
@@ -61,6 +58,9 @@
 
 > More Fieldcraft Talents
 	- stuff about Beasts / wrangling / mounted combat
+		- allow character to wrangle disposition zero creatures
+		- Whisperer (X): particular affinity for a specific species
+	- stuff about hunting/trapping/butchering
     - stuff relating to stealth skills
     - more stuff about unlocking/security/thievery/breaking-and-entering
 

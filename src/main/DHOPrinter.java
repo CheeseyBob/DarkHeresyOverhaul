@@ -216,6 +216,10 @@ public class DHOPrinter {
 			processFile("FILE_TITLE");
 	}
 	
+	public void printFileTop(PrintableFile file) {
+		printFileTop(file.title());
+	}
+	
 	public void printFileTop(String title) {
 		printFileTop(title, true, true);
 	}
