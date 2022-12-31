@@ -24,22 +24,6 @@ class ItemsFile implements PrintableFile {
 			{"17", "100", "Massive (40 Foot Container)", "Massive", "Bus"},
 			{"18", "110", "Massive", "Massive (Blue Whale)", "Double-Decker Bus"},
 	};
-	private static final String[] itemAvailabilityTableHeaderList = {
-			"Availability", "Modifier", "Price Bracket", "Price Roll", "Crafting Steps"
-	};
-	private static final String[][] itemAvailabilityTable = {
-			{"Ubiquitous ", "Automatic ", "1 ", "1 ", "1"},
-			{"Abundant ", "+30 ", "1-10 ", "1d10 ", "2"},
-			{"Plentiful ", "+20 ", "10-30 ", "1d10+10 ", "4"},
-			{"Common ", "+10 ", "30-100 ", "3d10+30 ", "8"},
-			{"Average ", "+0 ", "100-300 ", "10 x (1d10 + 10) ", "16"},
-			{"Scarce ", "-10 ", "300-1000 ", "10 x (3d10 + 30) ", "32"},
-			{"Rare ", "-20 ", "1000-3000 ", "100 x (1d10 + 10) ", "64"},
-			{"Very Rare ", "-30 ", "3000-10,000 ", "100 x (3d10 + 30) ", "128"},
-			{"Extremely Rare ", "-40 ", "10,000-30,000 ", "1,000 x (1d10 + 10) ", "256"},
-			{"Near Unique ", "-50 ", "30,000-100,000 ", "1,000 x (3d10 + 30) ", "512"},
-			{"Unique ", "-60 ", "100,000+ ", "10,000 x (1d10 + 10) ", "1024"},
-	};
 	
 	@Override
 	public String filename() {
@@ -58,9 +42,9 @@ class ItemsFile implements PrintableFile {
 		printer.println();
 		printer.printSubheader_collapsible("Sizes");
 		printer.printCollapsibleTop();
-		printer.printTableTop(new String[] {
-				"Size", "Bonus", "Items", "Characters", "Vehicles", ""
-		}, true, true);
+		printer.printTableTop(true, true, 
+				"Size", "Bonus", "Items", "Characters", "Vehicles"
+		);
 		for(int size = 0; size <= 18; size ++) {
 			printer.printTableRow(itemSizeTable[size]);
 		}
@@ -72,7 +56,7 @@ class ItemsFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		printer.printParagraph("A character can carry items whose sizes add up to at most 2x the character's size. Each carried item can have size up to SB+1.");
 		printer.printParagraph("In addition to this, a character have equipped clothing, armour and other items, and can hold an item in each hand.");
-		printer.printTableTop("Item Size", "Held Item", false, true);
+		printer.printTableTop(false, true, "Item Size", "Held Item");
 		printer.printTableRow("SB", "use without penalty");
 		printer.printTableRow("SB+1", "use with -20 penalty");
 		printer.printTableRow("SB+2", "can carry but not use");
@@ -86,7 +70,14 @@ class ItemsFile implements PrintableFile {
 		printer.println();
 		printer.printSubheader_collapsible("Money and Availability");
 		printer.printCollapsibleTop();
-		printer.printTableTop("Social Class", "Baseline Gelt/Day", "Peak Gelt/Day", "Description", true, true);
+		printer.printTableTop(false, true, "Availability", "Modifier", "Price Bracket", "Price Roll", "Crafting Steps");
+		for(Availability availability : Availability.values())
+			printer.printTableRow(availability.name, availability.modifier, availability.priceBracket, availability.priceRoll, availability.craftingSteps);
+		printer.printTableTail();
+		printer.println();
+		printer.println();
+		printer.printSubSubheader("Social Classes");
+		printer.printTableTop(true, true, "Social Class", "Baseline Gelt/Day", "Peak Gelt/Day", "Description");
 		printer.printTableRow("Outcasts", "-", "-", "Those that have no rightful place within the structure of Imperial society, living below even the lowest classes.");
 		printer.printTableRow("Drudging Classes", "5", "10", "Those that work in the fields, manufactorums and hives of the Imperium, by far making up the bulk of mankind.");
 		printer.printTableRow("Military Class", "10", "20", "Those that fight.");
@@ -99,37 +90,29 @@ class ItemsFile implements PrintableFile {
 		printer.printTableTail();
 		printer.println();
 		printer.println();
-		printer.printTableTop(itemAvailabilityTableHeaderList, false, true);
-		for(int i = 0; i < 11; i ++) {
-			printer.printTableRow(itemAvailabilityTable[i]);
-		}
-		printer.printTableTail();
-		printer.println();
-		printer.println();
-		printer.printTableTop("Services (1 Day's Work)", "Availability", false, true);
+		printer.printSubSubheader("Services");
+		printer.printTableTop(false, true, "Service", "Availability");
+		printer.printTableRow_subheader("Work (1 Day)");
 		printer.printTableRow("Labourer", "Abundant");
 		printer.printTableRow("Soldier", "Plentiful");
 		printer.printTableRow("Skilled Artisan", "Common");
-		printer.printTableTail();
-		printer.printTableTop("Provisions (1 Meal)", "Availability", false, true);
+		printer.printTableRow_subheader("Provisions (1 Meal)");
+		printer.printTableRow_note("<i>See Consumables - Food</i>");
 		printer.printTableRow("Poor (Vermin Meat, Hydro-Fungus, Silt Ale)", "Ubiquitous");
 		printer.printTableRow("Standard (Nutri-Paste, Round of Amasec)", "Abundant");
 		printer.printTableRow("Good (Roasted Vex Worm, Quality Amasec)", "Plentiful");
 		printer.printTableRow("Best (Vintage Amasec)", "Common");
-		printer.printTableTail();
-		printer.printTableTop("Accomodation (1 Night)", "Availability", false, true);
+		printer.printTableRow_subheader("Accomodation (1 Night)");
 		printer.printTableRow("Poor (Hab Sleeper Capsule)", "Abundant");
 		printer.printTableRow("Standard (Small Lodge Room)", "Plentiful");
 		printer.printTableRow("Good (Spacious Lodgings)", "Common");
 		printer.printTableRow("Best (Grand Hall Lodgings)", "Average");
-		printer.printTableTail();
-		printer.printTableTop("Transportation (1 Journey)", "Availability", false, true);
+		printer.printTableRow_subheader("Transportation (1 Journey)");
 		printer.printTableRow("Poor (Sub-level Conveyer)", "Abundant");
 		printer.printTableRow("Standard (Light Civ Ground Vehicle, Atmospheric Flight)", "Plentiful");
 		printer.printTableRow("Good (Long Distance Atmospheric Flight)", "Common");
 		printer.printTableRow("Best (Low Orbital Flight, Sedan Chair)", "Average");
-		printer.printTableTail();
-		printer.printTableTop("Medical Care (1 Day/Visit)", "Availability", false, true);
+		printer.printTableRow_subheader("Medical Care (1 Day/Visit)");
 		printer.printTableRow("Poor (Feral World Shaman)", "Plentiful");
 		printer.printTableRow("Standard (Trained Medic)", "Common");
 		printer.printTableRow("Good (Trained Doctor, Med-Servitor)", "Average");
@@ -143,18 +126,18 @@ class ItemsFile implements PrintableFile {
 		printer.printParagraph("Characters can aquire items and services either through payment and barter, or by using their influence and authority to requisition what is needed. First, they must locate someone or somewhere which has the desired item available.");
 		printer.printParagraph("To find a suitable location in the overmap area, use Inquire or Search (or simply Travel to a previously found location). The item's availability modifier applies to this roll. The type of area will also affect the difficulty and the potential outcomes.");
 		printer.println("<b>Trade:</b>");
-		printer.printList(true, new String[] {
+		printer.printList(true,
 				"Roll to determine the starting price (selling items uses the bracket below the buying price).",
 				"Haggle to determine discount (optional).",
 				"Make the trade."
-		});
+		);
 		printer.println("<b>Requisition:</b>");
-		printer.printList(true, new String[] {
+		printer.printList(true,
 				"Either Command or Persuade the NPC (possibly after Intimidating or having to Deceive). Succeeding here will give a bonus to their Disposition (critical failure a penalty).",
 				"The NPC makes a Disposition Test. This is modified by the justification given (see the below table), the availability of the item and whether you reveal you are working for the Inquisition (+30).",
 				"If the Disposition Test is successful, the NPC gives you the item(s)."
-		});
-		printer.printTableTop("Justification", "Modifier", false, true);
+		);
+		printer.printTableTop(false, true, "Justification", "Modifier");
 		printer.printTableRow("nonsensical", "automatic failure");
 		printer.printTableRow("none or very poor", "-30");
 		printer.printTableRow("poor", "-10");
@@ -168,19 +151,19 @@ class ItemsFile implements PrintableFile {
 		printer.printSubheader_collapsible("Crafting and Repair");
 		printer.printCollapsibleTop();
 		printer.println("<b>Crafting:</b>");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Materials: a number of components equal to the size of the item.",
 				"Designs: tech items require designs.",
 				"Difficulty: apply the availability modifier to the Craft Test.",
 				"The steps of progress needed to complete the item given in the item availability table.",
-				"For particularly lengthy crafting projects, make one roll each day and multiply the number of steps of progress by the number of hours worked.",
-		});
+				"For particularly lengthy crafting projects, make one roll each day and multiply the number of steps of progress by the number of hours worked."
+		);
 		printer.println("<b>Repair:</b>");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Materials: each level of the Damaged aspect that is overcome consumes 1 component.",
 				"Designs: not required for repairs.",
-				"Difficulty: apply the availability modifier to the Craft Test.",
-		});
+				"Difficulty: apply the availability modifier to the Craft Test."
+		);
 		printer.printParagraph("Crafting materials are Size 1 and have an availability two steps higher than the item they are for. Designs have an availability one lower than the item and generally come in the form of info on a data-slate.");
 		printer.printCollapsibleTail();
 		printer.println();

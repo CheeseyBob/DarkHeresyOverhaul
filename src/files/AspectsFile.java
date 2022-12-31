@@ -17,16 +17,19 @@ class AspectsFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printParagraph("Aspects confer bonuses/penalties to types of actions. "
+		printer.printParagraph(
+				"Aspects confer bonuses/penalties to types of actions. "
 				+ "They can also have special effects. "
 				+ "Characters can place Aspects on things by taking Create Advantage actions and can remove Aspects by taking Overcome actions.");
-		printer.printParagraph("By default, the bonus/penalty applied by an Aspect is ±10. "
+		printer.printParagraph(
+				"By default, the bonus/penalty applied by an Aspect is ±10. "
 				+ "An Aspect can be upgraded to a higher bonus/penalty, in increments of ±10. "
 				+ "When a duplcate of an Aspect is to be created, the existing Aspect is instead upgraded. "
 				+ "When an upgraded Aspect is overcome, it is downgraded by one increment instead of being removed. "
 				+ "For example, if a character who is Stunned becomes Stunned again, they end up with a single Stunned(2) Aspect. "
 				+ "If they successfully Resist Stun, they end up merely Stunned and must Resist Stun again to remove the Aspect.");
-		printer.printParagraph("By default, Create Advantage Actions cannot increase the Aspect's level (AL) past the Characteristic Bonus of the Characteristic used for the Test. "
+		printer.printParagraph(
+				"By default, Create Advantage Actions cannot increase the Aspect's level (AL) past the Characteristic Bonus of the Characteristic used for the Test (after modifiers). "
 				+ "In addition to this, Aspects cannot be upgraded past level 10.");
 		printer.println("Rule of thumb:");
 		printer.printList(false,
@@ -97,6 +100,7 @@ class AspectsFile implements PrintableFile {
 		printer.printCol_aspect(6, Aspect.poisoned_paralysing_lingering);
 		printer.printCol_aspect(6, Aspect.poisoned_radiation);
 		printer.printCol_aspect(6, Aspect.diseased);
+		printer.printCol_aspect(6, Aspect.inebriated);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
 		printer.println();

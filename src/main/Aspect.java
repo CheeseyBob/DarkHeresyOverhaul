@@ -232,6 +232,11 @@ public class Aspect {
 			"-",
 			"If the target fails to Resist, they take Characteristic Damage equal to the aspect level on all Characteristics.",
 			"Resist (Physically), once per hour");
+	public static final Aspect inebriated = new Aspect("Inebriated", 
+			"-",
+			"Anything requiring focus:<br>Weapon Skill, Ballistic Skill, Agility, Intelligence, Perception, Willpower and Fellowship Tests.",
+			"-",
+			"Resist (Physically), once per hour");
 	
 	// Disease Aspects //
 	public static final Aspect diseased = new Aspect("Diseased (X)", 

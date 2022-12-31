@@ -38,6 +38,7 @@
     - Verticality? Stairs/ramps/ledges/etc.
 
 > Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
+> Places to find hirelings.
 
 > ? Remove Calixis Sector and War Common Lore areas 
 

@@ -13,14 +13,20 @@ public class Consumable extends Item {
 	}
 	
 	// Special Rules //
+	private static SpecialRule alcohol = new SpecialRule("Alcohol",
+			"Become "+Aspect.inebriated+" when consuming this item.");
 	private static SpecialRule recafRule = new SpecialRule("Recaf",
 			"Get a +20 bonus to overcome being Fatigued.");
-	private static SpecialRule fullMealRule = new SpecialRule("Full Meal",
+	private static SpecialRule mealRule_rations = new SpecialRule("Meal (Rations)",
+			"Long Action Toughness Test; overcome being Fatigued (maximum 1 level).");
+	private static SpecialRule mealRule_poor = new SpecialRule("Meal (Poor)",
 			"Long Action Toughness Test with +20 bonus; overcome being Fatigued (maximum 1 level).");
 	private static SpecialRule mealRule = new SpecialRule("Meal",
-			"Long Action Toughness Test; overcome being Fatigued (maximum 1 level).");
-	private static SpecialRule qualityMealRule = new SpecialRule("Full Meal",
 			"Long Action Toughness Test with +40 bonus; overcome being Fatigued (maximum 1 level).");
+	private static SpecialRule impressive1 = new SpecialRule("Impressive",
+			"Get a +10 bonus to Charm when given to the target.");
+	private static SpecialRule impressive2 = new SpecialRule("Very Impressive",
+			"Get a +20 bonus to Charm when given to the target.");
 
 	private static SpecialRule application_lethalPoison = new SpecialRule("Lethal Poison",
 			"After a dose is applied to a Rending Melee Weapon, the next hit which inflicts wounds makes the target become Poisoned(Lethal)(N).");
@@ -47,15 +53,38 @@ public class Consumable extends Item {
 	public static final Consumable canOfRecaf = new Consumable("Can of Recaf",
 			1, 1, Availability.UBIQUITOUS)
 			.withSpecialRule(recafRule);
-	public static final Consumable fullMeal = new Consumable("Full Meal",
-			1, 1, Availability.UBIQUITOUS)
-			.withSpecialRule(fullMealRule);
 	public static final Consumable rationBox = new Consumable("Ration Box",
 			1, 3, Availability.UBIQUITOUS)
-			.withSpecialRule(mealRule);
-	public static final Consumable qualityMeal = new Consumable("Quality Meal",
+			.withSpecialRule(mealRule_rations);
+	public static final Consumable booze_poor = new Consumable("Can of Booze (Poor)",
+			1, 1, Availability.UBIQUITOUS)
+			.withSpecialRule(alcohol);
+	public static final Consumable booze_standard = new Consumable("Bottle of Booze (Standard)",
+			2, 3, Availability.ABUNDANT)
+			.withSpecialRule(alcohol)
+			.withSpecialRule(impressive1);
+	public static final Consumable booze_good = new Consumable("Bottle of Booze (Good)",
+			2, 3, Availability.PLENTIFUL)
+			.withSpecialRule(alcohol)
+			.withSpecialRule(impressive2);
+	public static final Consumable booze_best = new Consumable("Bottle of Booze (Best)",
+			2, 3, Availability.COMMON)
+			.withSpecialRule(alcohol)
+			.withSpecialRule(impressive2);
+	public static final Consumable meal_poor = new Consumable("Meal (Poor)",
+			1, 1, Availability.UBIQUITOUS)
+			.withSpecialRule(mealRule_poor);
+	public static final Consumable meal_standard = new Consumable("Meal (Standard)",
 			1, 1, Availability.ABUNDANT)
-			.withSpecialRule(qualityMealRule);
+			.withSpecialRule(mealRule);
+	public static final Consumable meal_good = new Consumable("Meal (Good)",
+			1, 1, Availability.PLENTIFUL)
+			.withSpecialRule(mealRule)
+			.withSpecialRule(impressive1);
+	public static final Consumable meal_best = new Consumable("Meal (Best)",
+			1, 1, Availability.COMMON)
+			.withSpecialRule(mealRule)
+			.withSpecialRule(impressive2);
 	
 	// Drugs //
 	public static final Consumable bioPatch_stimm = new Consumable("Bio-Patch (Stimm)",
