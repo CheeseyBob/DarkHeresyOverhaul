@@ -1,8 +1,6 @@
 	~~ To Do List ~~
 
 >>> NPC Disposition & Personalities:
-	- Remove "Success" column from personality tables - Charm is the only social interaction skill that will increase Disposition
-	- More NPC personality tables
 	- Procedure for assigning personalities to NPCs
 
 >>> Surprise in encounters

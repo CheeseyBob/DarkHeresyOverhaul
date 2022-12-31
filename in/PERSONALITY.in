@@ -6,12 +6,15 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td colspan="4">!!@PERSONALITY_DISPOSITION_ZERO!!</td>
+						<td colspan="4">!!@PERSONALITY_DESCRIPTION!!</td>
+					</tr>
+					<tr>
+						<td colspan="3">0 Disposition: !!@PERSONALITY_DISPOSITION_ZERO!!</td>
 					</tr>
 				</tbody>
 				<thead>
 					<tr>
-					<th>Skill</th><th>Modifier</th><th>Success</th><th>Failure</th>
+					<th>Skill</th><th>Modifier</th><th>Failure</th>
 					</tr>
 				</thead>
 				<tbody>

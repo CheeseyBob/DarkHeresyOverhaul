@@ -687,14 +687,14 @@ public class DHOPrinter {
 			return ""+((Weapon)item).damage;
 		case PERSONALITY_NAME:
 			return personality.name;
+		case PERSONALITY_DESCRIPTION:
+			return personality.description;
 		case PERSONALITY_DISPOSITION_ZERO:
 			return personality.dispositionZeroDescription;
 		case PERSONALITY_RESPONSE_SKILL:
 			return personalityResponse.skill.name;
 		case PERSONALITY_RESPONSE_MODIFIER:
 			return personalityResponse.modifier;
-		case PERSONALITY_RESPONSE_SUCCESS:
-			return personalityResponse.success;
 		case PERSONALITY_RESPONSE_FAILURE:
 			return personalityResponse.failure;
 		case APTITUDE_NAME:
@@ -733,7 +733,7 @@ public class DHOPrinter {
 		RANGED_WEAPON_RANGE, RANGED_WEAPON_ROF, RANGED_WEAPON_CAPACITY, RANGED_WEAPON_RELOAD,
 		TOOL_BONUS,
 		WEAPON_DAMAGE,
-		PERSONALITY_NAME, PERSONALITY_DISPOSITION_ZERO,
+		PERSONALITY_NAME, PERSONALITY_DESCRIPTION, PERSONALITY_DISPOSITION_ZERO,
 		PERSONALITY_RESPONSE_SKILL, PERSONALITY_RESPONSE_MODIFIER, PERSONALITY_RESPONSE_SUCCESS, PERSONALITY_RESPONSE_FAILURE,
 		APTITUDE_NAME;
 	}

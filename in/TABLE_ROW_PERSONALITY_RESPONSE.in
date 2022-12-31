@@ -1,6 +1,5 @@
 					<tr>
 						<td>!!@PERSONALITY_RESPONSE_SKILL!!</td>
 						<td>!!@PERSONALITY_RESPONSE_MODIFIER!!</td>
-						<td>!!@PERSONALITY_RESPONSE_SUCCESS!!</td>
 						<td>!!@PERSONALITY_RESPONSE_FAILURE!!</td>
 					</tr>
