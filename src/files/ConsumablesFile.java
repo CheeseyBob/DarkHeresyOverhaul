@@ -21,8 +21,8 @@ class ConsumablesFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		printer.printRowTop();
 		printer.printCol_item(6, Consumable.canOfRecaf);
-		printer.printCol_item(6, Consumable.booze_poor);
 		printer.printCol_item(6, Consumable.meal_poor);
+		printer.printCol_item(6, Consumable.booze_poor);
 		printer.printCol_item(6, Consumable.rationBox);
 		printer.printCol_item(6, Consumable.booze_standard);
 		printer.printCol_item(6, Consumable.meal_standard);

@@ -1,5 +1,9 @@
 	~~ To Do List ~~
 
+>>> Overmap:
+	- Add sights/sounds/smells characters would notice around locations & encounters.
+	- Add character number rolls to encounters
+
 >>> Surprise in encounters
 
 >>> Character Creation:
@@ -26,8 +30,6 @@
 >>> GM notes for item creation [can wait until after starting the playtest]
 
 > What happened to active reload??
-
-> Add sights/sounds/smells characters would notice around main locations & encountered locations.
 
 > Can probably rework Fear Ratings to be more straightforward.
 

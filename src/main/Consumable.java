@@ -71,17 +71,17 @@ public class Consumable extends Item {
 			2, 3, Availability.COMMON)
 			.withSpecialRule(alcohol)
 			.withSpecialRule(impressive2);
-	public static final Consumable meal_poor = new Consumable("Meal (Poor)",
+	public static final Consumable meal_poor = new Consumable("Boxed Meal (Poor)",
 			1, 1, Availability.UBIQUITOUS)
 			.withSpecialRule(mealRule_poor);
-	public static final Consumable meal_standard = new Consumable("Meal (Standard)",
+	public static final Consumable meal_standard = new Consumable("Boxed Meal (Standard)",
 			1, 1, Availability.ABUNDANT)
 			.withSpecialRule(mealRule);
-	public static final Consumable meal_good = new Consumable("Meal (Good)",
+	public static final Consumable meal_good = new Consumable("Boxed Meal (Good)",
 			1, 1, Availability.PLENTIFUL)
 			.withSpecialRule(mealRule)
 			.withSpecialRule(impressive1);
-	public static final Consumable meal_best = new Consumable("Meal (Best)",
+	public static final Consumable meal_best = new Consumable("Boxed Meal (Best)",
 			1, 1, Availability.COMMON)
 			.withSpecialRule(mealRule)
 			.withSpecialRule(impressive2);

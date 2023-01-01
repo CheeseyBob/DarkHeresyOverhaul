@@ -64,7 +64,7 @@ PCs are on the next leg of their journey, so there is a new Navigation Challenge
 
 The Location Encounter can't be a repeat, as there are no known locations here, so a new Location is rolled and added.
 
-> Middle Hive Encountered Locations: 68 => Eatery
+> Middle Hive Encountered Locations: 72 => Eatery
 
 > Middle Hive Encounters: 23 => Gamblers
 
@@ -74,14 +74,56 @@ PCs: "Plex quickly goes in to ask if they do take-out."
 
 Zek is meeting the PCs, so will Read Person to determine whether he realises they are Inquisitors before rolling for Disposition.
 
+Does Zek realise the PCs are with the Inquisition?
 > Read Person (Gain Insight): Test Perception (30): roll of 76 => Failure
-> Disposition: 58
 
 GM: "There's only a few small tables inside too, so it looks like they do. The proprietor is a short man with hair dyed red, white and blue like toothpaste. He has dark skin, covered in grime, and grey eyes. He introduces himself warmly as Zek. The food on offer is essentially an attempt to put a bit of life into the standard, bland, mass-produced nutri-paste that feeds most of the drudging classes on any given hive world - Standard Quality food. He also sells cans of Recaf."
 
 > Price for a Meal (Standard): Abundant: 6 Gelt
 > Price for a Can of Recaf: Ubiquitous: 1 Gelt
 
+GM: "A meal is 6 Gelt and a can of recaf is 1 Gelt."
+
+PCs: "Plex will get a meal and a can of recaf."
+
+GM: "Your food's ready in a just couple of minutes. Continuing on your way, a few turns later you have to fight to squeeze past a crowd who have stopped to watch something. Peering through the crowd, it looks like there's a few people playing dice together and they're getting quite animated about it."
+
+PCs: "We won't get involved."
+
+> Time advances to M41.Y023.500.4
+
+> Middle Hive Main Locations: 7 => Manufactorum (producing plasteel)
+
+GM: "Not long after that you come to another major intersection. It feels warm, moreso even than what you would expect from the packed crowds, and there is a faint metallic smell in the air. The rumble of machinery is also somewhat louder here than before. The directions give you a route around this area - the Machestus Manufactorum - to the chapel, which should be about an hour away now."
+
+PCs are on the next leg of their journey, so there is a new Navigation Challenge (1).
+
+> Navigate: Test Intelligence:
+    - Castus: 42: roll of 98 => Critical Failure
+    - Plex: 30: roll of 85 => Failure
+    => Critical Failure => PCs become lost
+
+> Lost: 29 => invalid => Travel in circles (don't change area)
+
+> Encounter order: 9 and 6 => Location Encounter second
+
+> Repeat location: 9 => new location
+
+> Middle Hive Encountered Locations: 25 => Enforcer station
+
+> Middle Hive Encounters: 47 => Street vendors (9) selling food
+
+GM: "You do your best to follow the directions, but the passages become increasingly maze-like and you find yourselves unable to even backtrack to the path you were following. In your attempts to do so, you end up coming out into a wider passage, somewhat crowded, and are once again hit with the smell of food - this time it's a bit fresher, but rather fungal. You soon notice the smell is coming from a long row of street vendors - nine of them."
+
+PCs: "We could try asking them for directions."
+
+NPC Mook: Flair, street vendor (fungal patties)
+A stocky young woman with grimy pale skin and messy shoulder-length hair, dyed blue to match her eyes.
+Disposition: 59
+Personality: Vacant
+
+Does Flair realise the PCs are with the Inquisition?
+> Read Person (Gain Insight): Test Perception (25): 81 => Failure
 
 
 

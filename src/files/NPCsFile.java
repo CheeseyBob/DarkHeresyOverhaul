@@ -4,13 +4,6 @@ import main.*;
 
 class NPCsFile implements PrintableFile {
 	
-	private static String[][] startingDispositionTable = {
-			{"Servant of the Imperium", "50+2d10"},
-			{"Awe of the Inquisition", "60+2d10"},
-			{"Hatred of the Inquisition", "20+2d10"},
-			{"Other or unaware who PCs are", "40+2d10"},
-	};
-	
 	private static String[][] obscurityTable = {
 			{"Ubiquitous", "Automatic", "Ordinary citizens"},
 			{"Legendary", "+30", "The God-Emperor; Space Marines"},
@@ -78,15 +71,20 @@ class NPCsFile implements PrintableFile {
 		printer.printCollapsibleTop();
 		
 		printer.printSubSubheader("Disposition");
+		printer.println("When the NPC is created:");
+		printer.printList(false,
+				"Determine their Disposition: 2d10+40",
+				"Determine their Personality using the table.");
 		printer.println("When the NPC first encounters the PCs:");
 		printer.printList(true,
 				"Read Person to determine whether they realise who the PCs are.",
-				"Set their Disposition according to the table.",
+				"Modify their Disposition according to the table.",
 				"If the NPC realises and is hostile to the Inquisition, the PCs gain Attention.");
-		printer.printTableTop(false, true, "NPC", "Disposition");
-		for(int i = 0; i < startingDispositionTable.length; i ++) {
-			printer.printTableRow(startingDispositionTable[i]);
-		}
+		printer.printTableTop(false, true, "NPC", "Disposition Change");
+		printer.printTableRow("Servant of the Imperium", "+10");
+		printer.printTableRow("Awe of the Inquisition", "+20");
+		printer.printTableRow("Hatred of the Inquisition", "-20");
+		printer.printTableRow("Other or unaware who PCs are", "+0");
 		printer.printTableTail();
 		
 		printer.printSubSubheader("Personality");

@@ -54,7 +54,7 @@ class ProceduresOfPlayFile implements PrintableFile {
 		printer.println("Use the tables for the area the characters are currently in.");
 		printer.printSubSubheader("4 - Resolve the encounters");
 		printer.printSubSubheader("5 - Advance time");
-		printer.println("Whether the characters continue travelling or abandon the travel to do something else after the encounter, time advances by an hour.");
+		printer.println("After the encounters, whether the characters continue travelling or abandon the travel to do something else, time advances by an hour.");
 		printer.printSubSubheader("6 - Resolve the Travel");
 		printer.println("If the characters are lost, use the table to determine where they end up.");
 		printer.println("Otherwise, if the characters don't still have a Navigation Challenge to overcome, they Travel successfully: "
@@ -100,7 +100,7 @@ class ProceduresOfPlayFile implements PrintableFile {
 		printer.printParagraph(
 				"If there is a Navigation Challenge, the characters must Navigate to Overcome this if they are trying to Travel. "
 				+ "Success and each Degree of Success overcomes one level of the Navigation Challenge. "
-				+ "If all levels of the Navigation Challenge are Overcome, then the Navigate Action includes Travel."
+				+ "If all levels of the Navigation Challenge are Overcome, then the Navigate Action includes Travel. "
 				+ "Otherwise, the characters do not Travel - an hour passes and they can Navigate again, keeping their progress from before. "
 				+ "On a Critical Failure, the characters become lost.");
 		printer.printList(false,
