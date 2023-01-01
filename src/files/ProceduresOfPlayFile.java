@@ -4,16 +4,6 @@ import main.*;
 
 class ProceduresOfPlayFile implements PrintableFile {
 	
-	private static final String[][] gettingLostTable = {
-			{"01-10", "Travel up a layer"},
-			{"11-20", "Travel 2 areas left of the intended area"},
-			{"21-45", "Travel 1 area left of the intended area"},
-			{"46-55", "Travel in circles (don't change area)"},
-			{"56-80", "Travel 1 area right of the intended area"},
-			{"81-90", "Travel 2 areas right of the intended area"},
-			{"91-00", "Travel down a layer"},
-	};
-	
 	@Override
 	public String filename() {
 		return "ProceduresOfPlay.html";
@@ -33,52 +23,38 @@ class ProceduresOfPlayFile implements PrintableFile {
 				+ "If so, follow the Procedure for Travel; otherwise follow the Procedure for Non-Travel. "
 				+ "When necessary, play can slow down to Combat Time for as long as is required to resolve the situation, "
 				+ "but this will always be an ignorable amount of time with regards to the passage of hours.");
-		
-		printer.printSubheader_collapsible("Procedure for Travel");
-		printer.printCollapsibleTop();
 		printer.printParagraph(
-				"Travelling to an adjacent area or between layers takes an hour. "
-				+ "Arriving in an area equates to arriving at the Main Location for that area. "
-				+ "Once in an area, travelling to a specific location takes an hour. "
-				+ "So travelling to a location in an adjacent area takes 2 hours, for example.");
-		printer.printSubSubheader("1 - Is there a Navigation Challenge or Navigation Hazard?");
-		printer.println("If so, resolve the characters' Navigate Action(s). "
-				+ "Note progress against any Navigation Challenge and whether the characters have become lost.");
-		printer.printSubSubheader("2 - When/where do the encounters happen?");
-		printer.println("There is one Location Encounter and one regular Encounter. "
-				+ "Roll a d10 for each - the encounter with the lowest roll occurs first; doubles means they happen together.");
-		printer.printSubSubheader("3 - Is the Location Encounter a repeat?");
-		printer.println("Roll a d10. If this position in the list of encountered locations for this area is empty, roll a new Encountered Location and add it to the list. "
-				+ "Otherwise, the location in the rolled position is encountered.");
-		printer.printSubSubheader("3 - Roll up the encounters");
-		printer.println("Use the tables for the area the characters are currently in.");
-		printer.printSubSubheader("4 - Resolve the encounters");
-		printer.printSubSubheader("5 - Advance time");
-		printer.println("After the encounters, whether the characters continue travelling or abandon the travel to do something else, time advances by an hour.");
-		printer.printSubSubheader("6 - Resolve the Travel");
-		printer.println("If the characters are lost, use the table to determine where they end up.");
-		printer.println("Otherwise, if the characters don't still have a Navigation Challenge to overcome, they Travel successfully: "
-				+ "If their destination is in the same area, then they arrive. "
-				+ "Otherwise, they move into the adjacent area in their intended direction.");
-		printer.printCollapsibleTail();
+				"Resolve any Short Actions the characters wish to take as they decide to take them. "
+				+ "When the characters have decided what Long Actions they are taking, run the following procedure.");
 		
-		printer.printSubheader_collapsible("Procedure for Non-Travel");
-		printer.printCollapsibleTop();
-		printer.printSubSubheader("1 - Does an encounter happen?");
-		printer.println("Roll a d10. On a roll of 1, there is an Encounter.");
-		printer.printSubSubheader("2 - Roll up the encounter");
-		printer.printSubSubheader("3 - Resolve the encounter");
-		printer.printSubSubheader("4 - Resolve the non-travel Action");
-		printer.println("If the characters decide to abandon the Action they were performing after the encounter, skip advancing time and don't roll another encounter for this hour.");
-		printer.printSubSubheader("5 - Advance time");
-		printer.printCollapsibleTail();
+		printer.printSubSubheader("1 - Determine if/when encounters happen");
+		printer.printList(false,
+				"<b>Travelling:</b> "
+				+ "Roll one d10 for the Location Encounter and one for the regular Encounter. "
+				+ "The encounter with the highest roll occurs first; "
+				+ "doubles means they happen together. "
+				+ "Treat each Navigation Hazard as an Encounter, using the Aspect Level to determine when it occurs.",
+				"<b>Not Travelling:</b> "
+				+ "Roll a d10. On a roll of 10, there is an Encounter. "
+				+ "There are no Location Encounters.");
+		printer.printSubSubheader("2 - Roll up the encounters");
+		printer.printParagraph(
+				"Before rolling the Location Encounter, roll a d10 to see if is new or previously visited: "
+				+ "If the list of locations for that Area is smaller than the rolled number, it's new; "
+				+ "otherwise it's the location at the rolled number in the list.");
+		printer.printSubSubheader("3 - Resolve the encounters");
+		printer.printParagraph(
+				"Either in Combat-Time (if appropriate), with Short Actions, or simply discribing it and moving on. "
+				+ "If the characters abort their Long Action for a different one, resolve this in the next hour.");
+		printer.printSubSubheader("4 - Advance time");
+		printer.printParagraph("Even if the characters abort their Long Action.");
+		printer.printSubSubheader("5 - Resolve the Actions");
 		
 		printer.printSubheader_collapsible("Procedure for Encounters");
 		printer.printCollapsibleTop();
 		printer.printList(false,
 				"Determine encounter distance using the table.",
-				"Determine NPC disposition (if relevant).",
-				"Determine whether the party and/or encountered party is surprised (if relevant).",
+				"If relevant, determine whether the party and/or encountered party is surprised.",
 				"Run the encounter."
 		);		
 		printer.printSubSubheader("Encounter Distance");
@@ -91,12 +67,14 @@ class ProceduresOfPlayFile implements PrintableFile {
 		printer.printTableTail();
 		printer.printCollapsibleTail();
 		
-		printer.printSubheader_collapsible("Navigation Challenges and Navigation Hazards");
+		printer.printSubheader_collapsible("Travel");
 		printer.printCollapsibleTop();
 		printer.printParagraph(
-				"In addition to affecting Travel, the Navigation Challenges from disrepair and any Navigation Hazards will have a presence in encounters.");
+				"Travelling to an adjacent area or between layers takes an hour. "
+				+ "Arriving in an area equates to arriving at the Main Location for that area. "
+				+ "Once in an area, travelling to a specific location takes an hour. "
+				+ "So travelling to a location in an adjacent area takes 2 hours, for example.");
 		printer.printSubSubheader("Navigation Challenges");
-		// TODO ...
 		printer.printParagraph(
 				"If there is a Navigation Challenge, the characters must Navigate to Overcome this if they are trying to Travel. "
 				+ "Success and each Degree of Success overcomes one level of the Navigation Challenge. "
@@ -105,7 +83,7 @@ class ProceduresOfPlayFile implements PrintableFile {
 				+ "On a Critical Failure, the characters become lost.");
 		printer.printList(false,
 				"Navigation Challenge (1) - following directions to a new location.",
-				"Navigation Challenge (2) - retracing steps when lost.",
+				"Navigation Challenge (2) - overcome being lost.",
 				"Navigation Challenge (3) - following unclear directions.",
 				"Navigation Challenge (N) - disrepair in the area, e.g. Collapsed(N), Flooded(N), Dark(N).");
 		
@@ -127,15 +105,20 @@ class ProceduresOfPlayFile implements PrintableFile {
 				"Toxic Gas/Liquid (Paralysis) (N) - become "+Aspect.poisoned_paralysing+" (N).",
 				"Toxic Gas/Liquid (Lingering Paralysis) (N) - become "+Aspect.poisoned_paralysing_lingering+" (N).",
 				"Radiation (N) - become "+Aspect.poisoned_radiation+" (N).");
-		// TODO ...
-		printer.printCollapsibleTail();
 		
-		printer.printSubheader_collapsible("Getting Lost");
-		printer.printCollapsibleTop();
+		printer.printSubSubheader("Getting Lost");
+		printer.printParagraph("Being lost means the characters Travel according to the table below, instead of where they intended. "
+				+ "They then face a Navigation Challenge (2) in which Failure results in Travel using the table below. "
+				+ "If the characters encounter a known Location while lost, they are no longer lost "
+				+ "(this doesn't apply to Main Locations - knowing which Area they are in doesn't mean they aren't lost).");
 		printer.printTableTop(false, true, "Roll", "Effect");
-		for(int i = 0; i < gettingLostTable.length; i ++) {
-			printer.printTableRow(gettingLostTable[i]);
-		}
+		printer.printTableRow("01-10", "Travel up a layer");
+		printer.printTableRow("11-20", "Travel 2 areas left of the intended area");
+		printer.printTableRow("21-45", "Travel 1 area left of the intended area");
+		printer.printTableRow("46-55", "Travel in circles (don't change area)");
+		printer.printTableRow("56-80", "Travel 1 area right of the intended area");
+		printer.printTableRow("81-90", "Travel 2 areas right of the intended area");
+		printer.printTableRow("91-00", "Travel down a layer");
 		printer.printTableRow_note("Treat invalid results as going in circles.");
 		printer.printTableTail();
 		printer.printCollapsibleTail();
