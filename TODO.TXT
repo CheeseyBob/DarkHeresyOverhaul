@@ -4,6 +4,8 @@
 	- Add sights/sounds/smells characters would notice around locations & encounters.
 	- Add character number rolls to encounters
 
+> See if Extended Actions can be removed - only Rest uses this.
+
 >>> Surprise in encounters
 
 >>> Character Creation:

@@ -118,14 +118,58 @@ GM: "You do your best to follow the directions, but the passages become increasi
 PCs: "We could try asking them for directions."
 
 NPC Mook: Flair, street vendor (fungal patties)
-A stocky young woman with grimy pale skin and messy shoulder-length hair, dyed blue to match her eyes.
+Young; stocky; pale; blue eyes; dyed hair; grimy skin
 Disposition: 59
 Personality: Vacant
 
 Does Flair realise the PCs are with the Inquisition?
 > Read Person (Gain Insight): Test Perception (25): 81 => Failure
 
+GM: "You approach one of the street vendors - a stocky young woman with grimy pale skin and messy shoulder-length hair, dyed blue to match her eyes. She greets you with a slight smile, but it seems like she's looking right through you."
 
+Will she be willing to offer directions to the PCs?
+> Test Disposition (59): roll of 22 => Success
+
+Does she actually know where the Chapel of Seven Promises is?
+Obscurity is Average (+0) for the locals
+> Reference Lore (Assist): 
+    - Obscurity is Average => +0
+    - Main Action as a Short Action => +30
+    => Test Intelligence (25) +30: 55 vs 98 => Critical Failure
+
+Flair: "No idea, sorry"
+
+PCs: "Just ask all of them? Might as well just keep asking until we get some directions."
+
+Does an encounter happen: 4 => no
+
+> Forcing Success: 55 => Success + 5 Degrees of Success
+
+The GM also decides this warrants a Subtlely Test, determining their Subtlety Characteristic to be 45.
+> Test Subtlety: 45 vs 63 => Failure => Gain Attention
+
+The GM will deal with the gain of Attention later.
+
+GM: "You ask a whole bunch of people and get a pretty good idea of where you are and where you need to go. You'll get a +50 bonus."
+
+> Time advances to M41.Y023.500.5
+
+The PCs are still lost, which is a Navigation Challenge (2) in addition to the Navigation Challenge (1) of getting to their destination.
+
+> Navigate: Test Intelligence + 50:
+    - Castus: 42 + 50: 92 vs 92 => Success + 9 Degrees of Success
+    - Plex: 30 + 50: 80 vs 40 => Success + 4 Degrees of Success
+    => Success + 13 Degrees of Success
+
+> Encounter order: 7 and 9 => Location Encounter first
+
+> Repeat location: 7 => no
+
+> Middle Hive Encountered Locations: 86 => Cheap pub with rooms - Poor Accomodation and Provisions (food & booze)
+
+> Middle Hive Encounters: 91 => Enforcers (2) escorting a detainee to the cells
+
+GM: "Walking with confidence, you easily navigate your way through twists and turns that would have eluded you before. You get back to a main thoroughfare circling around the manufactorum and pass by a run-down drinking establishment called The Broken Drum (or at least you guess that's what it's called - there are some letters missing from the sign). Making a turn onto the last stretch before the chapel, you pass a pair of local enforcers dragging someone off - the crowd parts around them a little. Finally, you turn into a quiet alleyway and see the entrance to the Chapel of Seven Promises ahead of you."
 
 
 

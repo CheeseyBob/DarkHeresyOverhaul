@@ -9,7 +9,7 @@ class ActionsInDowntimeFile implements PrintableFile {
 	};
 	private static String[][] actionsTable_movement = {
 			{"Travel", "Long", "Basic", "-", "Travel for 1 hour"},
-			{"Haul", "Long", "Basic", "Strength", "Travel while carrying a heavy object; on failure, become Fatigued after Travel; on critical failure, become Fatigued before Travel"},
+			{"Haul", "Long", "Basic", "Strength", "Travel while carrying a heavy object; on failure, Travel and become Fatigued; on critical failure, become Fatigued and don't Travel"},
 			{"Navigate", "Long", "Basic Skill", "Intelligence", "Overcome a Navigation Challenge, then Travel"},
 			{"Navigate (Avoid Hazard)", "Long", "Basic Skill", "Intelligence", "Oppose a Navigation Hazard during Travel"},
 			{"Sneak (Follow Carefully)", "Long", "Basic Skill", "Agility", "Follow a target unseen for 1 hour; lose target on failure; spotted on critical failure"},
@@ -56,15 +56,27 @@ class ActionsInDowntimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
+		printer.println("Outside of Combat-Time, time is divided into hour-long segments; each Action a character takes is either:");
+		printer.printList(false,
+				"Short Action - takes an insignificant portion of the hour.",
+				"Long Action - takes the hour.",
+				"Extended Action - takes multiple hours.");
 		printer.printParagraph(
-				"Any reasonable number of Short or turn-time Actions can be done without spending an hour. "
-				+ "A Short Action can be done as a Long action with a +20 bonus. "
-				+ "A Long Action can be done as a Short Action with a -20 penalty (unless it involves travel). "
-				+ "When a turn-time Action is taken, it can usually be assumed to have a +30 bonus from a Full Action Focus and doing the Action Carefully. "
-				+ "Extended actions take multiple hours.");
+				"Any Combat-Time Action can be taken as a Short Action. "
+				+ "When doing so, it usually makes sense to have a +30 bonus from doing the Action Carefully after a Full Action Focus.");
+		printer.printParagraph(
+				"A Short Action can be done as a Long action with a +20 bonus. "
+				+ "A Long Action can be done as a Short Action with a -20 penalty, if it makes sense that it would be possible "
+				+ "(nothing involving travel can be done as a Short Action, for example). ");
+		printer.printSubSubheader("Teamwork");
 		printer.printParagraph(
 				"When characters work together, resolve the Action separately for each character and combine Degrees of Success. "
 				+ "The number of characters able to work together on the same Action is capped at the Fellowship Bonus of the character taking the lead.");
+		printer.printSubSubheader("Forcing Success, a.k.a. 'Take the Hour'");
+		printer.printParagraph(
+				"Sometimes characters will want to keep trying something until they succeed. "
+				+ "For Short Actions where there is no consequence for Failure or Critical Failure, "
+				+ "this can be done as a Long Action which automatically succeeds with the maximum Degrees of Success.");
 		printer.printHeader("Actions Summary");
 		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("Movement Actions");
