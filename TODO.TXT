@@ -6,6 +6,8 @@
 	- Add locations for transport links
 	- Upper Hive Encountered Locations - Garden?
 
+> Change Obscurity from an NPC stat to a general GM guide table for Lore
+
 > See if Extended Actions can be removed - only Rest uses this.
 
 >>> Surprise in encounters

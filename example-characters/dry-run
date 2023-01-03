@@ -14,58 +14,51 @@ PCs: "We'll head for the Chapel of Seven Promises straight away, following the d
 
 The PCs want to travel to an unvisited location, but they have good directions, so this will be a Navigation Challenge (1).
 
-> Navigate: Test Intelligence (30): roll of 39 => Failure
-
-> Roll to see when encounters happen: 6 and 5 => the Encounter happens shortly before the Location Encounter.
-
-The Location Encounter can't be a repeat, as there are no known locations here, so a new Location is rolled and added.
-
+Travelling:
+> Encounter order: 6 and 5 => the Encounter happens shortly before the Location Encounter.
+> Repeat Location: no known locations here => new
 > Upper Hive Encountered Locations: 47 => Shop selling pets (including approved xenos)
-
 > Upper Hive Encounters: 58 => Servo-skulls doing surveillance
 
-GM: "It's tough to keep to the directions - you find yourselves swept around by the thronging crowds of people in the main thoroughfares. You notice a small swarm of servo-skulls above the crowd, slowly drifting around with their camera lenses pointed down at the people below."
+GM: "You find yourselves swept around by the thronging crowds of people in the main thoroughfares. You notice a small swarm of servo-skulls above the crowd, slowly drifting around with their camera lenses pointed down at the people below."
 
 GM: "Ducking into a quieter side-street, you walk past a shop named "Orlean's Critters", with various live animals on display, either caged or chained up. Castus actually recognises one small bird native to Tygress III."
 
 > Time advances to M41.Y023.500.2
 
+> Navigate: Test Intelligence (30): roll of 39 => Failure
+
 GM: "As you keep going, the twists and turns become too much to follow and you keep ending up having to back-track. After about an hour, you haven't made much progress, but you don't feel lost yet."
 
 PCs: "We'll keep at it, but Plex and Castus will work together on navigating."
+
+Travelling:
+> Encounter order: 4 and 8 => Location first.
+> Repeat Location: 1 => Orlean's Critters
+> Upper Hive Encounters: 66 => Servitors cleaning the streets
+
+GM: "You walk past Orlean's Critters again and take a different turning this time. The path starts to widen and you pass a pair of servitors sweeping rubbish of the floor." 
+
+> Time advances to M41.Y023.500.3
 
 > Navigate: Test Intelligence:
     - Castus: 42: roll of 27 => Success + 2 DoS
     - Plex: 30: roll of 77 => Failure
     => PCs Overcome the Navigation Challenge.
 
-> Roll to see when encounters happen: 4 and 8 => Location Encounter first.
+GM: "The route becomes crowded again as the path widens further still and twists downwards. You notice yourselves walking with the flow of the crowd now as you descend deeper into the hive."
 
-> Roll to see if the Location is a repeat: 1 => Orlean's Critters
-
-> Upper Hive Encounters: 66 => Servitors cleaning the streets
-
-GM: "Realising where you went wrong, you walk back past Orlean's Critters again and take a different turning this time. The path starts to widen and you pass a pair of servitors sweeping rubbish of the floor. The route becomes crowded again as the path widens further still and twists downwards. You notice yourselves walking with the flow of the crowd now as you descend deeper into the hive."
-
-> Time advances to M41.Y023.500.3
-
+Travel to new Area (Middle Hive)
 > Middle Hive Main Locations: 52 => Local enforcer headquarters
 
 GM: "You start to pick up on the sound of gunshots ahead, but the crowd seems to pay it no mind. The path then splits in several directions at once, with the main route forward signposted as "Cabris Enforcer HQ" - now quite clearly the origin of the gutshots, which continue at a fairly steady pace."
 
 PCs are on the next leg of their journey, so there is a new Navigation Challenge (1).
 
-> Navigate: Test Intelligence:
-    - Castus: 42: roll of 13 => Success + 1 DoS
-    - Plex: 30: roll of 99 => Critical Failure
-    => PCs Overcome the Navigation Challenge (getting lost is overridden by navigating successfully).
-
-> Roll to see when encounters happen: 7 and 10 => Location Encounter first.
-
-The Location Encounter can't be a repeat, as there are no known locations here, so a new Location is rolled and added.
-
+Travelling:
+> Encounter order: 7 and 10 => Location Encounter first.
+> Repeat Location: no known locations here => new
 > Middle Hive Encountered Locations: 72 => Eatery
-
 > Middle Hive Encounters: 23 => Gamblers
 
 GM: "As the directions take you down a series of winding passages, you come back out into a fairly wide, crowded corridor where you notice a somewhat ramshackle establishment with a big sign above the door saying "Zek's". It looks like some sort of eatery - there's even a couple of tables outside by the door, one of which has someone hunched over a plate of something. As you pass by, it definitely smells like... food. Probably smells pretty good to Plex, not so much to Castus."
@@ -92,30 +85,26 @@ PCs: "We won't get involved."
 
 > Time advances to M41.Y023.500.4
 
+> Navigate: Test Intelligence:
+    - Castus: 42: roll of 13 => Success + 1 DoS
+    - Plex: 30: roll of 99 => Critical Failure
+    => PCs Overcome the Navigation Challenge (getting lost is overridden by navigating successfully).
+
 > Middle Hive Main Locations: 7 => Manufactorum (producing plasteel)
 
 GM: "Not long after that you come to another major intersection. It feels warm, moreso even than what you would expect from the packed crowds, and there is a faint metallic smell in the air. The rumble of machinery is also somewhat louder here than before. The directions give you a route around this area - the Machestus Manufactorum - to the chapel, which should be about an hour away now."
 
 PCs are on the next leg of their journey, so there is a new Navigation Challenge (1).
 
-> Navigate: Test Intelligence:
-    - Castus: 42: roll of 98 => Critical Failure
-    - Plex: 30: roll of 85 => Failure
-    => Critical Failure => PCs become lost
-
-> Lost: 29 => invalid => Travel in circles (don't change area)
-
+Travelling:
 > Encounter order: 9 and 6 => Location Encounter second
-
 > Repeat location: 9 => new location
-
 > Middle Hive Encountered Locations: 25 => Enforcer station
-
 > Middle Hive Encounters: 47 => Street vendors (9) selling food
 
-GM: "You do your best to follow the directions, but the passages become increasingly maze-like and you find yourselves unable to even backtrack to the path you were following. In your attempts to do so, you end up coming out into a wider passage, somewhat crowded, and are once again hit with the smell of food - this time it's a bit fresher, but rather fungal. You soon notice the smell is coming from a long row of street vendors - nine of them."
+GM: "You go down a wider passage, somewhat crowded, and are once again hit with the smell of food - this time it's a bit fresher, but rather fungal. You soon notice the smell is coming from a long row of street vendors - nine of them."
 
-PCs: "We could try asking them for directions."
+PCs: "We could try asking them for help with directions."
 
 NPC Mook: Flair, street vendor (fungal patties)
 Young; stocky; pale; blue eyes; dyed hair; grimy skin
@@ -141,7 +130,13 @@ Flair: "No idea, sorry"
 
 PCs: "Just ask all of them? Might as well just keep asking until we get some directions."
 
-Does an encounter happen: 4 => no
+> Skipping the Location Encounter
+> Time advances to M41.Y023.500.5
+
+Not Travelling
+> Encounter: 4 => no
+
+> Time advances to M41.Y023.500.6
 
 > Forcing Success: 55 => Success + 5 Degrees of Success
 
@@ -150,35 +145,174 @@ The GM also decides this warrants a Subtlely Test, determining their Subtlety Ch
 
 The GM will deal with the gain of Attention later.
 
-GM: "You ask a whole bunch of people and get a pretty good idea of where you are and where you need to go. You'll get a +50 bonus."
+GM: "You ask a whole bunch of people and get a good sense of where you are and where you need to go. You'll get a +50 bonus."
 
-> Time advances to M41.Y023.500.5
+Travelling:
+> Encounter order: 7 and 9 => Location Encounter first
+> Repeat Location: 7 => no
+> Middle Hive Encountered Locations: 86 => Cheap pub with rooms - Poor Accomodation and Provisions (food & booze)
+> Middle Hive Encounters: 91 => Enforcers (2) escorting a detainee to the cells
 
-The PCs are still lost, which is a Navigation Challenge (2) in addition to the Navigation Challenge (1) of getting to their destination.
+GM: "Walking with confidence, navigate your way through various twists and turns. You get back to a main thoroughfare circling around the manufactorum and pass by a run-down drinking establishment called The Broken Drum. At least you guess that's what it's called - there are some letters missing from the sign."
+
+GM: "Making a turn onto what should be the last stretch before the chapel, you pass a pair of local enforcers dragging someone off - the crowd parts around them a little."
+
+> Time advances to M41.Y023.500.7
 
 > Navigate: Test Intelligence + 50:
     - Castus: 42 + 50: 92 vs 92 => Success + 9 Degrees of Success
     - Plex: 30 + 50: 80 vs 40 => Success + 4 Degrees of Success
     => Success + 13 Degrees of Success
 
-> Encounter order: 7 and 9 => Location Encounter first
-
-> Repeat location: 7 => no
-
-> Middle Hive Encountered Locations: 86 => Cheap pub with rooms - Poor Accomodation and Provisions (food & booze)
-
-> Middle Hive Encounters: 91 => Enforcers (2) escorting a detainee to the cells
-
-GM: "Walking with confidence, you easily navigate your way through twists and turns that would have eluded you before. You get back to a main thoroughfare circling around the manufactorum and pass by a run-down drinking establishment called The Broken Drum (or at least you guess that's what it's called - there are some letters missing from the sign). Making a turn onto the last stretch before the chapel, you pass a pair of local enforcers dragging someone off - the crowd parts around them a little."
-
-> Time advances to M41.Y023.500.6
-
 GM: "Finally, you turn into a quiet alleyway and see the entrance to the Chapel of Seven Promises ahead of you."
 
+PCs: "We'll go straight in."
 
-*** Wouldn't it make more sene for the encounters to happen before the Navigation is resolved? 
 
 
+**** Really need stuff for properly fleshing out locations ****
+
+> Table should supply details that give a good impression for narrative description and can combine with a random map to use the location in combat.
+
+Sorts of things to potentially include:
+    - activity levels - how busy is it & variations to this in place/time (hotspots of activity)
+    - traps / treasure / secrets
+    - guards / patrols / vision arcs
+    - noises / shadows / hiding places
+    - things associated to NPCs (esp. nobles)
+    - lead-up / surrounding area
+    - wildlife / vermin / plants / fungus
+    - cleanliness / grime
+    - materials / textures
+
+Central details:
+    - light fixtures / chandeliers
+    - doors / windows
+    - disrepair / rubble
+    - seating / tables / other furniture
+    - statues / gargoyles
+    - machinery / pipework
+
+* Set-dressing should reinforce/highligh the location's purpose, but should also include something not obvious or unexpected to keep things interesting.
+
+
+** What it should look like **
+
+> General Description
+    -> Exterior
+        - Damaged
+        - New
+        - Filthy
+        - Well-kept
+        - Gaudy
+        - Inconspicuous
+        - Secluded
+        -
+        -
+        -
+    -> Interior
+        - Damaged
+        - New
+        - Filthy
+        - Well-kept
+        - Gaudy/ornate
+        - Unadorned
+        - Dingy
+        - Brightly lit
+        - 
+        - 
+    -> Notable Feature [ordered d100 table; underhive -> disadvantage; upper-hive -> advantage]
+        - Large statue
+        - Several statues
+        - Caged creature
+        - Loose creature
+        - Tree
+        - Large plant
+        - Disco-ball
+        - Large brazier
+        - Small pool
+        - Water feature
+        - Awkwardly-placed pillars
+        - Built around a huge pillar
+        - Large inscribed slab 
+        - Alcove with a shrine
+        - Sarcophagus
+        - Large boulder
+        - Hunk of broken machinery
+        - Terrarium
+        - Aquarium
+        - Dividing curtain
+        - Dividing screen
+        - Large pict-display (TV screen)
+        - Large holographic display
+        - Arcade game cabinet
+
+        - Wall-mural
+        - Floor mozaic
+        - Glass floor
+        - Ceiling art
+        - Mirror ceiling
+        - Sloping floor
+        - Grafitti
+        - Vibrantly painted
+
+        - Raised dais
+        - Stage
+        - Pit
+        - Deep channel
+
+        - Hanging beads
+        - Hanging ribbons
+        - Intrusive pipework
+        - Large sports trophy
+        - Weapon display rack
+        - War trophy/trophies
+        - Row of skulls
+        - Bookshelves
+        - Little knickknacks everywhere
+        - Covered in fungus
+        - No furniture
+
+        - Fairy-lights
+        - RGB lighting
+        - Dazzling sun-globe
+
+        - Loud music
+        - Soft music
+        - Silent
+        - Smoke-filled
+        - Incense / perfume
+        - Chemical smell
+        - Strong draft
+        - Intermittent shaking
+        - Uncomfortably hot
+        - Chilled air
+
+* Exterior + Notable Feature + Vibe/Ambience ??
+
+> Occupants [this kinda has to be defined seperately for each location]
+    - Number of ordinary occupants
+    - Head/leader NPC
+    - Guests
+    - Servitors
+    - Small creatures
+> Secrets
+    - A street urchin lives here in a secret room
+    - Artifact hidden in plain sight
+    - Something here dulls psychic powers
+    - Something here strengthens psychic powers
+
+resources:
+https://www.dndspeak.com/2022/08/09/100-unique-dragon-hoards/
+https://www.dndspeak.com/2022/07/20/100-dungeon-dressings/
+https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
+https://www.dndspeak.com/2019/06/26/100-secrets-a-hamlet-or-village-conceals-from-outsiders/
+
+
+
+** Some of these could be interesting for occult/daemonic rituals/etc.
+https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
+- burn an effegy of something to summon a daemonic item
 
 
 
