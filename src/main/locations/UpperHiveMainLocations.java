@@ -2,34 +2,28 @@ package main.locations;
 
 
 public class UpperHiveMainLocations  {
-	public static final Location nobleSpire = new Location("Noble Spire",
+	public static final MainLocation nobleSpire = new MainLocation("Noble Spire",
 			"House ___ Spire",
-			"");
-	public static final Location spaceport = new Location("Spaceport",
+			"Quiet; plenty of security; wide and open; ornate; well lit; lots of windows",
+			"Plazas; gardens; drinking and dining establishments; entertainment venues; standard/good/best accomodation");
+	public static final MainLocation spaceport = new MainLocation("Spaceport",
 			"Port ___",
-			"");
-	public static final Location pdfComplex = new Location("Planetary Defence Force Complex",
-			"___",
-			"");
-	public static final Location adeptusArbitesPrecinctFortress = new Location("Adeptus Arbites Precinct-Fortress",
+			"Bustling; frequent rumbling of spacecraft",
+			"Landing bays; warehouses; security checkpoints; comms-stations; offices; poor/standard/good accomodation");
+	public static final MainLocation pdfComplex = new MainLocation("Planetary Defence Force Complex",
+			"Camp ___",
+			"[description]",
+			"[locations]");
+	public static final MainLocation adeptusArbitesPrecinctFortress = new MainLocation("Adeptus Arbites Precinct-Fortress",
 			"Fort ___",
-			"");
-	public static final Location adeptusMinistorumCathedralComplex = new Location("Adeptus Ministorum Cathedral-Complex",
+			"[description]",
+			"[locations]");
+	public static final MainLocation adeptusMinistorumCathedralComplex = new MainLocation("Adeptus Ministorum Cathedral-Complex",
 			"The Cathedral of Saint ___",
-			"");
-	public static final Location adeptusMechanicusSpire = new Location("Adeptus Mechanicus Spire",
-			"___",
-			"");
-	public static final Location adeptusAdministratumSpire = new Location("Adeptus Administratum Spire",
-			"___",
-			"");
-	public static final Location magistratumBloodsquare = new Location("Magistratum Bloodsquare",
-			"___",
-			"");
-	public static final Location adeptusAstraTelepathicaSpire = new Location("Adeptus Astra Telepathica Spire",
-			"___",
-			"");
-	public static final Location staduim = new Location("Stadium",
+			"[description]",
+			"[locations]");
+	public static final MainLocation staduim = new MainLocation("Stadium",
 			"The ___ Arena | The ___ Stadium",
-			"");
+			"[description]",
+			"[locations]");
 }

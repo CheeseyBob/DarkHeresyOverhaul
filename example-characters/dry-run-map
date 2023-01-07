@@ -1,36 +1,57 @@
-- Upper Hive -
+## Map ##
+
+# Upper Hive #
 
 [1]
 
 
-- Middle Hive -
+# Middle Hive #
 
 [1][2]
 
 
-- Underhive -
+# Underhive #
 
 [1]
 
 
-- Upper Hive Areas -
+## Key ##
 
-[1] Port Algernon (SPaceport):
-- Orlean's Critters (Pet Shop)
+# Upper Hive Areas #
+
+[1] Port Algernon (Spaceport):
+
+> Orlean's Critters (Pet Shop)
+    - Description: New exterior; well-kept interior; Large brazier
+    - Secret: Unbeknownst to the others, one of the residents is in posession of a daemonic artifact.
 
 
-- Middle Hive Areas -
+# Middle Hive Areas #
 
 [1] Cabris (Enforcer HQ)
-- Zek's (Eatery)
 
-[2] Machestus Manufactorum (producing plasteel):
-- The Chapel of Seven Promises (Ministorum temple)
-- Enforcer station
-- The Broken Drum (Cheap pub with rooms)
+> Zek's (Eatery - Standard Provisions)
+    - Description: Inconspicuous exterior; hanging beads; dividing screen
+    - Secret: Unbeknownst to the residents, this location is home to a wytch.
+
+[2] Manufactorum Machestus (producing plasteel):
+
+> The Chapel of Seven Promises (Ministorum temple)
+    - Description: Secluded; Hanging ribbons; Large statue
+    - Secret: Unbeknownst to the others, one of the residents is consorting with a wytch.
+
+> The Mosh Pit (Cheap pub with rooms)
+    - Description: Secluded; Loud music; Pit
+    - Secret: Unbeknownst to the others, one of the residents is consorting with a wytch.
+
+[unassigned]
+
+> Enforcer station
+    - Description: Inconspicuous; sloping floor; large trophy
+    - Secret: Unbeknownst to the others, one or more of them are working for a local gang.
 
 
-- Underhive Areas -
+# Underhive Areas #
 
 [1] ???
 

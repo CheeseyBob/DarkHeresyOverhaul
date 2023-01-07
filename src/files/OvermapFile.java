@@ -39,10 +39,10 @@ class OvermapFile implements PrintableFile {
 	private static final String[][] encountersTable_upperHive = {
 			{"01-10", "Roll twice and combine the results"},
 			{"11-15", "Quiet streets"},
-			{"16-40", "Procession of nobles"},
+			{"16-40", "Procession of nobles (Ld10 + Hd10 servants + 2d10 guards"},
 			{"41-50", "Procession of ministorum priests"},
-			{"51-60", "Servo-skulls doing surveillance"},
-			{"61-70", "Servitors cleaning the streets"},
+			{"51-60", "Servo-skulls (1d10) doing surveillance [quiet]"},
+			{"61-70", "Servitors (1d10) cleaning the streets"},
 			{"71-74", "Cherub servitor delivering a message-scroll"},
 			{"75", "Cherub servitor delivering an item"},
 			{"76-80", "Tech-priests maintaining infrastructure"},
@@ -76,7 +76,7 @@ class OvermapFile implements PrintableFile {
 	private static final String[][] encounteredLocations_middleHive = {
 			{"01-05", "Roll twice and combine the results"},
 			{"06-10", "Reroll - this is a front for organized crime"},
-			{"11-18", "Ministorum shrine 'a shrine to saint ___'"},
+			{"11-18", "Ministorum shrine"},
 			{"19-20", "Ministorum temple 'a temple to saint ___'"},
 			{"21-30", "Enforcer station"},
 			{"31-40", "Shop selling food"},
@@ -94,7 +94,7 @@ class OvermapFile implements PrintableFile {
 			{"01-10", "Roll twice and combine the results"},
 			{"11-15", "Street urchins (1d10)"},
 			{"16-20", "Beggars (1d10)"},
-			{"21-23", "Gamblers (Ld10)"},
+			{"21-23", "Gamblers (Ld10) [small crowd]"},
 			{"24-26", "Entertainers (Ld10) performing stunts (juggling knives, etc.)"},
 			{"27-30", "Entertainers (Ld10) busking"},
 			{"31-37", "Scum (Ld10) brawling"},
@@ -269,7 +269,7 @@ class OvermapFile implements PrintableFile {
 		);
 		printer.printParagraph("The Main Location (and Disrepair if applicable) should be determined when the Area is generated. "
 				+ "Additional locations are added as they are encountered.");
-		printer.printParagraph("<i>The GM may wish to roll results for the Encounter and Location Encounter tables ahead of time, in order to save time preparing the encounters.</i>");
+		printer.printParagraph("<i>The GM should roll some results for each table ahead of time, in order to save time during play.</i>");
 		
 		printMapLayerTables(printer, "Upper Hive",
 				null,

@@ -19,9 +19,15 @@ class LocationsFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
+		printer.println("When rolling a new encountered location, determine the following:");
+		printer.printList(false,
+				"Description",
+				"Occupants",
+				"Secrets");
 
-		printer.printSubSubheader("Location Descriptions");
-		printer.println("When rolling a new location, roll on the Exterior Description, the Ambience and the Notable Feature tables.");
+		printer.printSubheader_collapsible("Description");
+		printer.printCollapsibleTop();
+		printer.println("Roll on the Exterior Description, the Ambience and the Notable Feature tables.");
 		printer.printList(false,
 				"Upper Hive - roll two d100 and use the highest result.",
 				"Middle Hive - roll one d100.",
@@ -89,7 +95,7 @@ class LocationsFile implements PrintableFile {
 		printer.printTableRow("42-43", "Large inscribed slab");
 		printer.printTableRow("44-46", "Wall-mural");
 		printer.printTableRow("47-48", "Disco-ball");
-		printer.printTableRow("49-50", "Large sports trophy");
+		printer.printTableRow("49-50", "Large trophy (sports, etc.)");
 		printer.printTableRow("51-55", "Several statues");
 		printer.printTableRow("56-60", "Large statue");
 		printer.printTableRow("61-63", "Large pict-display (TV screen)");
@@ -111,37 +117,106 @@ class LocationsFile implements PrintableFile {
 		printer.printTableRow("97-98", "Large plant");
 		printer.printTableRow("99-00", "Tree");
 		printer.printTableTail();
-		
-		// TODO ...
+		printer.printCollapsibleTail();
+
+		printer.printSubheader("Occupants");
+		printer.printParagraph("The residents and regular guests for a location are dependent on the location type as specified below.");
+
+		printer.printSubheader_collapsible("Secrets");
+		printer.printCollapsibleTop();
+		printer.printTableTop(false, true, "d100", "Secret");
+		printer.printTableRow("1-8", "Nothing unusual here.");
+		printer.printTableRow("9", "Unbeknownst to the others, one of them is hiding from the Adeptus Arbites for past crimes.");
+		printer.printTableRow("10", "The residents are sheltering a fugitive who is being hunted by the Adeptus Arbites.");
+		printer.printTableRow("11", "Unbeknownst to the residents, this location contains a piece of restricted Adeptus Mechanicus technology.");
+		printer.printTableRow("12-13", "Unbeknownst to the others, one of the residents fled the Adeptus Mechanicus.");
+		printer.printTableRow("14", "Unbeknownst to the residents, this location contains a lost Adeptus Ministorum relic.");
+		printer.printTableRow("15-16", "Unbeknownst to the others, one of the residents fled the Adeptus Ministorum");
+		printer.printTableRow("17-18", "They have evaded the Administratum Auditors and haven't ever paid their proper tithes.");
+		printer.printTableRow("19-20", "Unbeknownst to the residents, this location contains a stash of treasure from a noble house.");
+		printer.printTableRow("21-22", "Unbeknownst to the others, one of them is a disgraced noble.");
+		printer.printTableRow("23", "The residents are sheltering a disgraced noble.");
+		printer.printTableRow("24", "The residents are slaves to a cruel noble.");
+		printer.printTableRow("25-26", "Unbeknownst to the others, one of them is a PDF deserter.");
+		printer.printTableRow("27", "The residents are all PDF deserters.");
+		printer.printTableRow("28-29", "Unbeknownst to the others, one of them is wanted by the local enforcers.");
+		printer.printTableRow("30", "The residents are sheltering a fugitive from the local enforcers.");
+		printer.printTableRow("31-32", "Unbeknownst to the residents, this location houses a nest of vermin.");
+		printer.printTableRow("33", "Unbeknownst to the others, one or more of the residents keep a nest of vermin here.");
+		printer.printTableRow("34", "The residents keep a nest of vermin here.");
+		printer.printTableRow("35-36", "Unbeknownst to the others, one or more of them are working for a local gang.");
+		printer.printTableRow("37-38", "The residents are, under duress, cooperating with a local gang.");
+		printer.printTableRow("39", "This location has been taken over by a local gang.");
+		printer.printTableRow("40-41", "Unbeknownst to the others, one of them is an assassin or bounty hunter.");
+		printer.printTableRow("42-43", "The residents run this location as a gathering spot for assassins and bounty hunters.");
+		printer.printTableRow("44", "The residents live second lives as assassins and bounty hunters.");
+		printer.printTableRow("45", "Unbeknownst to the residents, this location is utilised by a criminal cartel.");
+		printer.printTableRow("46-47", "Unbeknownst to the others, one or more of the residents are working for a criminal cartel.");
+		printer.printTableRow("48-49", "The residents are, under duress, cooperating with a criminal cartel.");
+		printer.printTableRow("50", "This location is a front for a criminal cartel.");
+		printer.printTableRow("51-52", "Unbeknownst to the others, one of the residents is a mutant.");
+		printer.printTableRow("53-54", "The residents are harbouring one or more mutants.");
+		printer.printTableRow("55", "Some of the residents are mutants. The others do their utmost to cover up this fact.");
+		printer.printTableRow("56", "The residents are mutants.");
+		printer.printTableRow("57", "Unbeknownst to the residents, this location contains a piece of heretical technology.");
+		printer.printTableRow("58", "Unbeknownst to the others, one of the residents is a heretek.");
+		printer.printTableRow("59", "The residents are practising tech-heresy.");
+		printer.printTableRow("60-61", "Unbeknownst to the others, one of the residents is an unsanctioned psyker.");
+		printer.printTableRow("62", "The residents are harbouring one or more unsanctioned psykers.");
+		printer.printTableRow("63", "The residents are unsanctioned psykers.");
+		printer.printTableRow("64-65", "Unbeknownst to the residents, this location contains a forgotten heretical text.");
+		printer.printTableRow("66-67", "Unbeknownst to the residents, this location is used as a meeting place for a heretical cult.");
+		printer.printTableRow("68-69", "Unbeknownst to the others, one of the residents belongs to a heretical cult.");
+		printer.printTableRow("70", "The residents belong to a heretical cult.");
+		printer.printTableRow("71-72", "Unbeknownst to the residents, this location is used as a meeting place for a xeno worshipping cult.");
+		printer.printTableRow("73-74", "Unbeknownst to the others, one of the residents belongs to a xeno worshipping cult.");
+		printer.printTableRow("75", "The residents belong to a xeno worshipping cult.");
+		printer.printTableRow("76", "Unbeknownst to the residents, there is a forgotten daemonic alter on the premises.");
+		printer.printTableRow("77-78", "Unbeknownst to the residents, this location is used as a meeting place for a daemon worshipping cult.");
+		printer.printTableRow("79-80", "Unbeknownst to the others, one of the residents belongs to a daemon worshipping cult.");
+		printer.printTableRow("81", "The residents belong to a daemon worshipping cult.");
+		printer.printTableRow("82-83", "Unbeknownst to the others, one or more of the residents are seditionists.");
+		printer.printTableRow("84", "The residents are seditionists.");
+		printer.printTableRow("85", "Unbeknownst to the residents, this location is home to a wytch.");
+		printer.printTableRow("86-87", "Unbeknownst to the others, one of the residents is consorting with a wytch.");
+		printer.printTableRow("88", "The residents consort with a wytch.");
+		printer.printTableRow("89-90", "Unbeknownst to the residents, this location contains a xeno-tech item or weapon.");
+		printer.printTableRow("91-92", "Unbeknownst to the residents, this location is home to a proscribed xeno.");
+		printer.printTableRow("93-94", "Unbeknownst to the others, one of the residents is consorting with a proscribed xeno (sentient).");
+		printer.printTableRow("95-96", "Unbeknownst to the others, one of the residents is harboring a proscribed xeno (non-sentient).");
+		printer.printTableRow("97", "The residents are harbouring one or more proscribed xenos.");
+		printer.printTableRow("98", "Unbeknownst to the residents, this location contains a daemonic artifact.");
+		printer.printTableRow("99", "Unbeknownst to the others, one of the residents is in posession of a daemonic artifact.");
+		printer.printTableRow("100", "The residents make use of a daemonic artifact contained in this location.");
+		printer.printTableTail();
+		printer.printCollapsibleTail();
 		
 		printer.printHeader_collapsible("Upper Hive Main Locations");
 		printer.printCollapsibleTop();
 		printLocation(UpperHiveMainLocations.nobleSpire, printer);
 		printLocation(UpperHiveMainLocations.spaceport, printer);
-		printLocation(UpperHiveMainLocations.pdfComplex, printer);
-		printLocation(UpperHiveMainLocations.adeptusArbitesPrecinctFortress, printer);
-		printLocation(UpperHiveMainLocations.adeptusMinistorumCathedralComplex, printer);
-		printLocation(UpperHiveMainLocations.adeptusMechanicusSpire, printer);
-		printLocation(UpperHiveMainLocations.adeptusAdministratumSpire, printer);
-		printLocation(UpperHiveMainLocations.magistratumBloodsquare, printer);
-		printLocation(UpperHiveMainLocations.adeptusAstraTelepathicaSpire, printer);
-		printLocation(UpperHiveMainLocations.staduim, printer);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.printHeader_collapsible("Upper Hive Encountered Locations");
 		printer.printCollapsibleTop();
-		printLocation(UpperHiveEncounteredLocations.arbiteCheckpoint, printer);
+		printLocation(UpperHiveEncounteredLocations.shop_pets, printer);
 		// TODO //
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.printHeader_collapsible("Middle Hive Main Locations");
 		printer.printCollapsibleTop();
+		printLocation(MiddleHiveMainLocations.manufactorum_plasteel, printer);
+		printLocation(MiddleHiveMainLocations.enforcerHeadquarters, printer);
 		// TODO //
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.printHeader_collapsible("Middle Hive Encountered Locations");
 		printer.printCollapsibleTop();
-		printLocation(MiddleHiveEncounteredLocations.ministorumshrine, printer);
+		printLocation(MiddleHiveEncounteredLocations.ministorumShrine, printer);
+		printLocation(MiddleHiveEncounteredLocations.ministorumTemple, printer);
+		printLocation(MiddleHiveEncounteredLocations.enforcerStation, printer);
+		printLocation(MiddleHiveEncounteredLocations.eatery_standard, printer);
+		printLocation(MiddleHiveEncounteredLocations.cheapPubWithRooms, printer);
 		// TODO //
 		printer.printCollapsibleTail();
 		printer.println();
@@ -163,9 +238,18 @@ class LocationsFile implements PrintableFile {
 		printer.printFileTail();
 	}
 	
+	private void printLocation(MainLocation location, DHOPrinter printer) {
+		printer.printSubheader(location.name);
+		printer.printParagraph("Name: "+location.namingPattern);
+		printer.printParagraph("<i>"+location.description+"</i>");
+		printer.printParagraph("Locations: "+location.locations);
+	}
+	
 	private void printLocation(Location location, DHOPrinter printer) {
 		printer.printSubheader(location.name);
 		printer.printParagraph("Name: "+location.namingPattern);
-		printer.printParagraph(location.description);
+		printer.printParagraph("<i>"+location.description+"</i>");
+		printer.printParagraph("Residents: "+location.residents);
+		printer.printParagraph("Guests: "+location.guests);
 	}
 }

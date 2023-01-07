@@ -1,9 +1,3 @@
-> Start at a Spaceport
-> Given a data-slate with Inquisitorial Briefing
-> First task is to navigate to a certain chapel and rendezvous with a certain trusted contact who will provide lodging.
---> Test to travel
---> Test to confirm contact's identity
-
 > Date/time at the start of the game is M41.Y023.500.1 (halfway through the year 40,023).
 
 GM: "Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are directions to the chapel from the spaceport - it's a 3 hour trip on foot. There are also details about the hive's Inquisitorial Offices, which are a sub-complex of Administratum Spire Gamma - quite far away from the areas of the hive you've been assigned to."
@@ -22,7 +16,9 @@ Travelling:
 
 GM: "You find yourselves swept around by the thronging crowds of people in the main thoroughfares. You notice a small swarm of servo-skulls above the crowd, slowly drifting around with their camera lenses pointed down at the people below."
 
-GM: "Ducking into a quieter side-street, you walk past a shop named "Orlean's Critters", with various live animals on display, either caged or chained up. Castus actually recognises one small bird native to Tygress III."
+GM: "Ducking into a quieter side-street, you hear quite a cacophony of animal noises ahead of you."
+
+GM: "As you get closer, it becomes clear the racket is coming from a shop with various live animals on display, either caged or chained up. The exterior looks like it's been recently done-up; there's a large sign across the front which reads "Orlean's Critters" in elaborate caligraphy with various decorative images around it. Castus actually recognises one small bird on display that is native to Tygress III."
 
 > Time advances to M41.Y023.500.2
 
@@ -58,10 +54,10 @@ PCs are on the next leg of their journey, so there is a new Navigation Challenge
 Travelling:
 > Encounter order: 7 and 10 => Location Encounter first.
 > Repeat Location: no known locations here => new
-> Middle Hive Encountered Locations: 72 => Eatery
+> Middle Hive Encountered Locations: 72 => Eatery - Standard Provisions
 > Middle Hive Encounters: 23 => Gamblers
 
-GM: "As the directions take you down a series of winding passages, you come back out into a fairly wide, crowded corridor where you notice a somewhat ramshackle establishment with a big sign above the door saying "Zek's". It looks like some sort of eatery - there's even a couple of tables outside by the door, one of which has someone hunched over a plate of something. As you pass by, it definitely smells like... food. Probably smells pretty good to Plex, not so much to Castus."
+GM: "As the directions take you down a series of winding passages, you come back out into a fairly wide, crowded corridor where you notice the smell of hot food on the air. Your nose points you towards the entrance to what looks like just another hab-block, except for the open door and a small sign which reads "Zek's". Peering in, it looks like some sort of eatery."
 
 PCs: "Plex quickly goes in to ask if they do take-out."
 
@@ -70,7 +66,7 @@ Zek is meeting the PCs, so will Read Person to determine whether he realises the
 Does Zek realise the PCs are with the Inquisition?
 > Read Person (Gain Insight): Test Perception (30): roll of 76 => Failure
 
-GM: "There's only a few small tables inside too, so it looks like they do. The proprietor is a short man with hair dyed red, white and blue like toothpaste. He has dark skin, covered in grime, and grey eyes. He introduces himself warmly as Zek. The food on offer is essentially an attempt to put a bit of life into the standard, bland, mass-produced nutri-paste that feeds most of the drudging classes on any given hive world - Standard Quality food. He also sells cans of Recaf."
+GM: "There's a few small tables inside, but it looks like they do takeout as well. The proprietor is a short man with hair dyed red, white and blue like toothpaste. He has dark skin, covered in grime, and grey eyes. He introduces himself warmly as Zek. The food on offer is essentially an attempt to put a bit of life into the standard, bland, mass-produced nutri-paste that feeds most of the drudging classes on any given hive world - Standard Quality food. He also sells cans of Recaf."
 
 > Price for a Meal (Standard): Abundant: 6 Gelt
 > Price for a Can of Recaf: Ubiquitous: 1 Gelt
@@ -79,7 +75,9 @@ GM: "A meal is 6 Gelt and a can of recaf is 1 Gelt."
 
 PCs: "Plex will get a meal and a can of recaf."
 
-GM: "Your food's ready in a just couple of minutes. Continuing on your way, a few turns later you have to fight to squeeze past a crowd who have stopped to watch something. Peering through the crowd, it looks like there's a few people playing dice together and they're getting quite animated about it."
+GM: "As Zek's cooking, he seems briefly bothered by not being able to find something. Nevertheless, your food is ready in just a few minutes."
+
+GM: "Continuing on your way, a few turns later you have to fight to squeeze past a crowd who have stopped to watch something. Peering through the crowd, it looks like there's a few people playing dice together and they're getting quite animated about it."
 
 PCs: "We won't get involved."
 
@@ -92,7 +90,7 @@ PCs: "We won't get involved."
 
 > Middle Hive Main Locations: 7 => Manufactorum (producing plasteel)
 
-GM: "Not long after that you come to another major intersection. It feels warm, moreso even than what you would expect from the packed crowds, and there is a faint metallic smell in the air. The rumble of machinery is also somewhat louder here than before. The directions give you a route around this area - the Machestus Manufactorum - to the chapel, which should be about an hour away now."
+GM: "Not long after that you come to another major intersection. It feels warm, moreso even than what you would expect from the packed crowds, and the air takes on the smell of hot plastic and metal. The rumble of machinery is also noticeably louder here than before. The directions give you a route round this area - Manufactorum Machestus - to the chapel, which should be about an hour away now."
 
 PCs are on the next leg of their journey, so there is a new Navigation Challenge (1).
 
@@ -153,7 +151,7 @@ Travelling:
 > Middle Hive Encountered Locations: 86 => Cheap pub with rooms - Poor Accomodation and Provisions (food & booze)
 > Middle Hive Encounters: 91 => Enforcers (2) escorting a detainee to the cells
 
-GM: "Walking with confidence, navigate your way through various twists and turns. You get back to a main thoroughfare circling around the manufactorum and pass by a run-down drinking establishment called The Broken Drum. At least you guess that's what it's called - there are some letters missing from the sign."
+GM: "Walking with confidence, navigate your way through various twists and turns. You get back to a main thoroughfare circling around the manufactorum and pass by an alleyway with Loud music echoing out from it. Down the alley you can see a drinking establishment called The Mosh Pit."
 
 GM: "Making a turn onto what should be the last stretch before the chapel, you pass a pair of local enforcers dragging someone off - the crowd parts around them a little."
 
@@ -168,146 +166,56 @@ GM: "Finally, you turn into a quiet alleyway and see the entrance to the Chapel 
 
 PCs: "We'll go straight in."
 
+--> Map
+
+--> Test to confirm contact's identity
+
+--> Resolve the PCs gaining Attention
 
 
 **** Really need stuff for properly fleshing out locations ****
 
 > Table should supply details that give a good impression for narrative description and can combine with a random map to use the location in combat.
 
-Sorts of things to potentially include:
-    - activity levels - how busy is it & variations to this in place/time (hotspots of activity)
-    - traps / treasure / secrets
-    - guards / patrols / vision arcs
-    - noises / shadows / hiding places
-    - things associated to NPCs (esp. nobles)
-    - lead-up / surrounding area
-    - wildlife / vermin / plants / fungus
-    - cleanliness / grime
-    - materials / textures
-
-Central details:
-    - light fixtures / chandeliers
-    - doors / windows
-    - disrepair / rubble
-    - seating / tables / other furniture
-    - statues / gargoyles
-    - machinery / pipework
-
-* Set-dressing should reinforce/highligh the location's purpose, but should also include something not obvious or unexpected to keep things interesting.
-
 
 ** What it should look like **
 
-> General Description
-    -> Exterior
-        - Damaged
-        - New
-        - Filthy
-        - Well-kept
-        - Gaudy
-        - Inconspicuous
-        - Secluded
-        -
-        -
-        -
-    -> Interior
-        - Damaged
-        - New
-        - Filthy
-        - Well-kept
-        - Gaudy/ornate
-        - Unadorned
-        - Dingy
-        - Brightly lit
-        - 
-        - 
-    -> Notable Feature [ordered d100 table; underhive -> disadvantage; upper-hive -> advantage]
-        - Large statue
-        - Several statues
-        - Caged creature
-        - Loose creature
-        - Tree
-        - Large plant
-        - Disco-ball
-        - Large brazier
-        - Small pool
-        - Water feature
-        - Awkwardly-placed pillars
-        - Built around a huge pillar
-        - Large inscribed slab 
-        - Alcove with a shrine
-        - Sarcophagus
-        - Large boulder
-        - Hunk of broken machinery
-        - Terrarium
-        - Aquarium
-        - Dividing curtain
-        - Dividing screen
-        - Large pict-display (TV screen)
-        - Large holographic display
-        - Arcade game cabinet
+> Name
 
-        - Wall-mural
-        - Floor mozaic
-        - Glass floor
-        - Ceiling art
-        - Mirror ceiling
-        - Sloping floor
-        - Grafitti
-        - Vibrantly painted
+> Description
+    - Exterior Description
+    - Ambience
+    - Notable Feature
 
-        - Raised dais
-        - Stage
-        - Pit
-        - Deep channel
-
-        - Hanging beads
-        - Hanging ribbons
-        - Intrusive pipework
-        - Large sports trophy
-        - Weapon display rack
-        - War trophy/trophies
-        - Row of skulls
-        - Bookshelves
-        - Little knickknacks everywhere
-        - Covered in fungus
-        - No furniture
-
-        - Fairy-lights
-        - RGB lighting
-        - Dazzling sun-globe
-
-        - Loud music
-        - Soft music
-        - Silent
-        - Smoke-filled
-        - Incense / perfume
-        - Chemical smell
-        - Strong draft
-        - Intermittent shaking
-        - Uncomfortably hot
-        - Chilled air
-
-* Exterior + Notable Feature + Vibe/Ambience ??
-
-> Occupants [this kinda has to be defined seperately for each location]
-    - Number of ordinary occupants
-    - Head/leader NPC
+> Occupants
+    - Residents
     - Guests
-    - Servitors
-    - Small creatures
+
 > Secrets
-    - A street urchin lives here in a secret room
-    - Artifact hidden in plain sight
-    - Something here dulls psychic powers
-    - Something here strengthens psychic powers
+** probably another big d100 table like Notable Features
+consider:
+* traps
+* treasure
+* guards/patrols/vision-arcs
+* security systems
+* hiding places / shadows
+* secret rooms and passages
+* things associated to NPCs (esp. nobles)
+ideas:
+- A street urchin lives here in a secret room
+- Artifact hidden in plain sight
+- Something here dulls psychic powers
+- Something here strengthens psychic powers
+
+IDEAL - just adapt this:
+https://www.dndspeak.com/2019/06/26/100-secrets-a-hamlet-or-village-conceals-from-outsiders/
+-> notes in file: todo-secrets
+
 
 resources:
 https://www.dndspeak.com/2022/08/09/100-unique-dragon-hoards/
 https://www.dndspeak.com/2022/07/20/100-dungeon-dressings/
 https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
-https://www.dndspeak.com/2019/06/26/100-secrets-a-hamlet-or-village-conceals-from-outsiders/
-
 
 
 ** Some of these could be interesting for occult/daemonic rituals/etc.

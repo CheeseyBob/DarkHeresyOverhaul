@@ -1,5 +1,13 @@
 	~~ To Do List ~~
 
+>>> Locations:
+	- Change 'Main Locations' to 'Areas' and add Area-specific locations (e.g. warehouses and landing bays in a Spaceport).
+	- Add Occupants rolls for each Location type.
+		- Ordinary occupants
+		- Head/leader NPC
+		- Servitors
+		- Small creatures
+
 >>> Overmap:
 	- Add sights/sounds/smells characters would notice around locations & encounters.
 	- Add character number rolls to encounters
