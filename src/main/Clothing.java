@@ -14,6 +14,8 @@ public class Clothing extends Item {
 			3, Availability.UBIQUITOUS);
 	public static final Clothing coveralls = new Clothing("Coveralls",
 			3, Availability.ABUNDANT);
+	public static final Clothing drabGarb = new Clothing("Drab Garb",
+			3, Availability.ABUNDANT);
 	public static final Clothing uniform = new Clothing("Uniform",
 			3, Availability.PLENTIFUL);
 	public static final Clothing arbitesUniform = new Clothing("Arbites Uniform",
@@ -38,8 +40,14 @@ public class Clothing extends Item {
 			3, Availability.PLENTIFUL);
 	public static final Clothing streetClothes = new Clothing("Street Clothes",
 			3, Availability.PLENTIFUL);
+	public static final Clothing fancyClothes = new Clothing("Fancy Clothes",
+			3, Availability.COMMON);
 	public static final Clothing smartClothes = new Clothing("Smart Clothes",
-			3, Availability.PLENTIFUL);
+			3, Availability.COMMON);
+	public static final Clothing elegantClothes = new Clothing("Elegant Clothes",
+			3, Availability.AVERAGE);
+	public static final Clothing resplendentClothes = new Clothing("Resplendent Clothes",
+			3, Availability.SCARCE);
 	public static final Clothing billowRobe = new Clothing("Billow Robe",
-			3, Availability.VERY_RARE);
+			4, Availability.VERY_RARE);
 }

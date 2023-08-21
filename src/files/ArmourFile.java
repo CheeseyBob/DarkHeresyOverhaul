@@ -17,7 +17,7 @@ class ArmourFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printSubSubheader("Armour Points (PA)");
+		printer.printSubSubheader("Armour Points (AP)");
 		printer.printParagraph("When you take a hit, you reduce the damage by the AP of the armour you are wearing (and your Toughness Bonus).");
 		printer.printSubheader("Fitting");
 		printer.printParagraph("Armour items are assumed to fit size 7 characters (humans). Where this is not the case, the item should have a special rule (and the item size changed accordingly).");
