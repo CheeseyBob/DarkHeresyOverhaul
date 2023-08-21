@@ -1,4 +1,5 @@
 > Date/time at the start of the game is M41.Y023.500.1 (halfway through the year 40,023).
+> PCs: Plex of Xalibar, Castus of Tygress III.
 
 GM: "Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are directions to the chapel from the spaceport - it's a 3 hour trip on foot. There are also details about the hive's Inquisitorial Offices, which are a sub-complex of Administratum Spire Gamma - quite far away from the areas of the hive you've been assigned to."
 
@@ -164,63 +165,59 @@ GM: "Making a turn onto what should be the last stretch before the chapel, you p
 
 GM: "Finally, you turn into a quiet alleyway and see the entrance to the Chapel of Seven Promises ahead of you."
 
+> Location: Ministorum Chapel
+    - "Large alter hall with pews; side rooms with small alters; rooms for preacher/priests"
+> Description (Middle Hive => 1d100):
+    - Exterior (64): Well-kept
+    - Ambience (22): Run-down
+    - Notable Feature (83): Small pool
+> Occupants:
+    - Residents: 1 Adeptus Ministorum Peacher; 6 (1d10) Adeptus Ministorum Priests
+    - Guests: 16 (3d10) Citizens
+> Secrets (69): Unbeknownst to the others, one of the residents belongs to a heretical cult.
+
+=> The Chapel of Seven Promises is a Ministorum chapel to Saint Samson, namesake of this planet. Specifically, the chapel is dedicated to a fable about Samson making seven promises to the Emperor on the shores of the water world Cyprian's Gate, after the reclamation of the Hazeroth subsector. The first promise was to keep the other six a secret known only to the Emperor and himself, and, true to his word, nobody knows what the others were.
+
+The priests here meditate around a small pool, representing the shores of Cyprian's Gate, in the hopes of learning through revelation what Saint Samson's promises were. Following in the Saint's footsteps, they share their knowledge with no one. They also spend so much time staring at the water they don't really take much care of the place, other than the facade.
+
+Unbeknownst to the others, one of the priests had a chaos-induced revelation about all six secret promises, which is leading him into a Slaaneshi cult.
+
+
+GM: "The chapel exterior stands out from the surrounding buildings with its crisp, clean stonework and polished metal door, which has a few lines of High Gothic etched into it."
+
 PCs: "We'll go straight in."
 
---> Map
+GM: "As you head in, you gradually notice that the interior is not as well kept as the front. In fact, it's pretty run down - cracked tiles, some broken light fixtures, that sort of thing. What you notice immediately, however, is the small pool in the middle of the large, four-pillared main hall, around which the rows of pews are arranged - cheap plasteel benches - with a number of citizens quietly sitting and praying. Around the edge of the pool, a few priests are kneeling in meditation with their gazes transfixed on the (what looks like) water. At the far end of the pool is an alter with a preacher reading out some passage in High Gothic."
 
---> Test to confirm contact's identity
+PCs: "Kastus knows High Gothic."
 
---> Resolve the PCs gaining Attention
+GM: "Ah, well - it's a sermon about Saint Samson, making promises to the God Emperor, and looking for strength and meaning within yourself."
 
+PCs: "We'll go around the back of the pews, take a seat close to the alter and wait for him to finish speaking. Does he match the description of Brother Kaltos?"
 
-**** Really need stuff for properly fleshing out locations ****
+GM: "He does - a small, mature man with dark skin, ginger hair and bright green eyes. You recognise him from the image in the inquisitorial briefing. He wraps up his speech in a minute or two, speaking slowly and deliberately and somewhat softly, although he's able to project his voice clearly across the room. He carefully rolls up his scroll (he wasn't actually looking at it while making the speech) and walks over to you."
 
-> Table should supply details that give a good impression for narrative description and can combine with a random map to use the location in combat.
+Brother Kaltos: "I believe you two have an appointment, is that correct?"
 
+Castus: "Indeed it is."
 
-** What it should look like **
+Brother Kaltos: "Please, follow me."
 
-> Name
+GM: "He leads you around to a door on the other side of the hall, which opens into a small room lit only by a handful of candles on an alter. There's a couple of chairs in the corner, but otherwise the room looks empty. He ushers you in with a slight bow and closes the door behind you."
 
-> Description
-    - Exterior Description
-    - Ambience
-    - Notable Feature
+Brother Kaltos: "Ok, to business. May I see your credentials?"
 
-> Occupants
-    - Residents
-    - Guests
-
-> Secrets
-** probably another big d100 table like Notable Features
-consider:
-* traps
-* treasure
-* guards/patrols/vision-arcs
-* security systems
-* hiding places / shadows
-* secret rooms and passages
-* things associated to NPCs (esp. nobles)
-ideas:
-- A street urchin lives here in a secret room
-- Artifact hidden in plain sight
-- Something here dulls psychic powers
-- Something here strengthens psychic powers
-
-IDEAL - just adapt this:
-https://www.dndspeak.com/2019/06/26/100-secrets-a-hamlet-or-village-conceals-from-outsiders/
--> notes in file: todo-secrets
+Plex: "Wait, Castus, we should make sure this is really Brother Kaltos."
 
 
-resources:
-https://www.dndspeak.com/2022/08/09/100-unique-dragon-hoards/
-https://www.dndspeak.com/2022/07/20/100-dungeon-dressings/
-https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
+--> Test to confirm Brother Kaltos' identity
 
+--> Brother Kaltos gives the PCs a room to stay in temporarily
 
-** Some of these could be interesting for occult/daemonic rituals/etc.
-https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
-- burn an effegy of something to summon a daemonic item
+--> PCs go looking around the underhive (test fight mechanics)
+
+--> Resolve the PCs gaining Attention at the end of the session
+
 
 
 

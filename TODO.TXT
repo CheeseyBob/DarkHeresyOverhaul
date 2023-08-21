@@ -37,21 +37,62 @@
         - various other servitors
     - Unaligned characters (citizens, animals, xeno beasts, etc.)
     - Hostile groups (daemon cults, xeno factions, etc.)
+    - From 1E Dramatis Personae:
+    	? Astropath?
+    	X Bounty Hunter (Sell-Steel / Shadesman / Nighthawk) 
+    	O Cult Initiate/Fanatic/Magus
+    	O Citizen
+    	O Combat Servitor
+    	O Dissolute Noble
+    	O Enforcer
+    	O Entertainer
+    	...
 
 >>> Items
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
 
->>> GM notes for item creation [can wait until after starting the playtest]
+>>> GM notes for item creation
+    *[can wait until after starting the playtest]
+
+> Trait: Sound Constitution - bonus to maximum wounds.
 
 > What happened to active reload??
 
+> Change Run action into: Roll to Create Advantage Run then Move 3 times.
+> Run Aspect:
+    - Bonus to Move
+    - Bonus to Run action
+    - Penalty to ??
+    - Overcome at end of turn if Run action not taken.
+
 > Can probably rework Fear Ratings to be more straightforward.
+> Receiving insanity - DoS of Resist(Mental) gives amount to reduce by.
 
 > Add some encountered locations for things like major power conduits, comms hubs, flora
+    *[can wait until after starting the playtest]
 
-> Add some guides for creating and spicing up battlemaps
-    - Cover features (pillars, rubble, tech boxes (what's the word for these?), etc.
-    - Verticality? Stairs/ramps/ledges/etc.
+> More stuff to spice up location maps
+    - traps
+    - treasure
+    - security systems / guards
+    - hiding places / shadows
+    - secret rooms and passages
+    - verticality? stairs/ramps/ledges/etc.
+    - street furniture
+        - pillars
+        - low walls
+        - railings
+        - billboards
+        - lamp-posts
+        - tech-boxes (power/comms/etc.)
+        - maintenance hatches/passages
+        - garages / servitor bays
+        - piles of rubble (obstacle/cover)
+        - strewn loose rubble (difficult terrain)
+        - large pipes
+        - flooding / liquid spills
+> Create guides/procedures for spicing up battlemaps
+    *[can wait until after starting the playtest]
 
 > Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
 > Places to find hirelings.
@@ -71,7 +112,7 @@
 > Navigation Hazard for lack of oxygen?
 
 > Interactions with beasts
-	- Also think about how mounts/mounted combat will work [post-playtest] 
+    *I think this is pretty much covered by the NPC interaction stuff already?
 
 > More Fieldcraft Talents
 	- stuff about Beasts / wrangling / mounted combat
@@ -88,7 +129,11 @@
 
 > Add formal rules for "Goal Driven Rewards" (see https://www.youtube.com/watch?v=zwpQwCWdhL8)
 
->>> Psychic Powers [can wait until after starting the playtest]
+>>> Psychic Powers
+    *[can wait until after starting the playtest]
+
+> Think about how mounts/mounted combat will work
+    *[can wait until after starting the playtest]
 
 
 	~~ Test Scenarios ~~
@@ -106,8 +151,6 @@
 
 	~~ Memos ~~
 
-receiving insanity - DoS of Resist(Mental) gives amount to reduce by.
-
 
 wytchcraft power - inflict corruption
 telepathy power - inflict insanity
@@ -123,6 +166,8 @@ Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks w
 
 Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its long toungue to grab prey which gets too close. Size(5); Unnatural Senses(10m) and high Perception; Strength 30; crushing bite attack with large bonus to Strength; good concealment.
 
+Burn an effegy of something to summon a daemonic item
+
 
 > Make map stamps/tokens for terrain elements and objects which could be added to a battlemap.
     - pillars
@@ -136,16 +181,16 @@ Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its
     > Make some generic character portraits.
 
 
+> Resources / further reading:
+https://www.dndspeak.com/2022/08/09/100-unique-dragon-hoards/
+https://www.dndspeak.com/2022/07/20/100-dungeon-dressings/
+https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
+    *Some of these could be interesting for occult/daemonic rituals/etc.
+
+
 
 	~~ MapTool ~~
 
-Use Fog of War to obscure PC vision. Reveal areas manually.
-Don't bother using vision blocking?
-
-> Use separate maps for different floors.
-       - Make a macro for sending the selected token to another map.
-> Forget about complex/restrictive character sheets, just let the PCs write what they want.
-    - possibly with links to bring up item cards?
-
-
+- Create a way to easily move player tokens between maps.
+- Merge the overmap maps into one map with the ability to switch levels.
 
