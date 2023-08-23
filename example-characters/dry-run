@@ -197,6 +197,10 @@ PCs: "We'll go around the back of the pews, take a seat close to the alter and w
 
 GM: "He does - a small, mature man with dark skin, ginger hair and bright green eyes. You recognise him from the image in the inquisitorial briefing. He wraps up his speech in a minute or two, speaking slowly and deliberately and somewhat softly, although he's able to project his voice clearly across the room. He carefully rolls up his scroll (he wasn't actually looking at it while making the speech) and walks over to you."
 
+Brother Kaltos:
+> Disposition: 2d10+40 +10 = 60
+> Personality: Cardinal
+
 Brother Kaltos: "I believe you two have an appointment, is that correct?"
 
 Castus: "Indeed it is."
@@ -207,10 +211,24 @@ GM: "He leads you around to a door on the other side of the hall, which opens in
 
 Brother Kaltos: "Ok, to business. May I see your credentials?"
 
-Plex: "Wait, Castus, we should make sure this is really Brother Kaltos."
+Plex: "Wait. Castus, we should make sure this is really Brother Kaltos."
+
+PCs: "Plex takes out the data-slate with the inquisitorial briefing and tries to use the information on Brother Kaltos to check if this is really him."
+
+Inspect: Test Perception (40): roll of 65 => Failure
+Inspect: Test Perception (27): roll of 48 => Failure
+> Clue: Not yet sure if the preacher is Brother Kaltos.
+
+PCs: "We've got time, we'll take the hour to make sure."
+
+> Time advances to M41.Y023.500.8
+
+Inspect: Test Perception (40): Forcing Success => Success + 4 Degrees of Success => 4 clues
+> Brother Kaltos' Disposition is reduced by 5
+> Clue: The preacher at the Chapel of Seven Promises is definitely Brother Kaltos.
+> Clue: Inspection of Brother Kaltos revealed no further clues.
 
 
---> Test to confirm Brother Kaltos' identity
 
 --> Brother Kaltos gives the PCs a room to stay in temporarily
 
