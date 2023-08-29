@@ -20,12 +20,11 @@ class ProceduresOfPlayFile implements PrintableFile {
 		printer.printParagraph(
 				"Time is divided into hour-long segments. "
 				+ "Each hour, determine what the PCs will be doing for that hour and whether it involves travelling. "
-				+ "If so, follow the Procedure for Travel; otherwise follow the Procedure for Non-Travel. "
-				+ "When necessary, play can slow down to Combat Time for as long as is required to resolve the situation, "
-				+ "but this will always be an ignorable amount of time with regards to the passage of hours.");
+				+ "When the characters have decided what Long Actions they are taking, follow the below procedure.");
 		printer.printParagraph(
 				"Resolve any Short Actions the characters wish to take as they decide to take them. "
-				+ "When the characters have decided what Long Actions they are taking, run the following procedure.");
+				+ "When necessary, play can slow down to Combat Time for as long as is required to resolve the situation. "
+				+ "Short Actions and periods of Combat Time will always be an ignorable amount of time with regards to the passage of hours.");
 		
 		printer.printSubSubheader("1 - Determine if/when encounters happen");
 		printer.printList(false,
@@ -39,9 +38,11 @@ class ProceduresOfPlayFile implements PrintableFile {
 				+ "There are no Location Encounters.");
 		printer.printSubSubheader("2 - Roll up the encounters");
 		printer.printParagraph(
-				"Before rolling the Location Encounter, roll a d10 to see if is new or previously visited: "
+				"For the Location Encounter, first roll a d10 to see if is new or previously visited: "
 				+ "If the list of locations for that Area is smaller than the rolled number, it's new; "
 				+ "otherwise it's the location at the rolled number in the list.");
+		printer.printParagraph(
+				"Roll on the Encountered Location table and Encounter table for the area the characters are currently in, even if they are travelling (travel will be resolved at the end).");
 		printer.printSubSubheader("3 - Resolve the encounters");
 		printer.printParagraph(
 				"Either in Combat-Time (if appropriate), with Short Actions, or simply discribing it and moving on. "
@@ -49,6 +50,7 @@ class ProceduresOfPlayFile implements PrintableFile {
 		printer.printSubSubheader("4 - Advance time");
 		printer.printParagraph("Even if the characters abort their Long Action.");
 		printer.printSubSubheader("5 - Resolve the Actions");
+		printer.printParagraph("If the characters successfully travel to a new area they haven't been to before, roll on the Main Location table to determine the Main Location for that area.");
 		
 		printer.printSubheader_collapsible("Procedure for Encounters");
 		printer.printCollapsibleTop();
