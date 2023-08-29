@@ -3,7 +3,12 @@
 
 GM: "Before sending you on your mission, the Inquisitor gave you each 150 Gelt and a bio-locked data-slate with your Inquisitorial Briefing. Amongst other things, the briefing contains details of a trusted contact - a Ministorum Preacher called Brother Kaltos at the Chapel of Seven Promises. He has been informed of your arrival and has been instructed to provide lodging for you until you find your own safehouse. There are directions to the chapel from the spaceport - it's a 3 hour trip on foot. There are also details about the hive's Inquisitorial Offices, which are a sub-complex of Administratum Spire Gamma - quite far away from the areas of the hive you've been assigned to."
 
-"You step out of the disembarkation tunnel from the ship after it arrives in Port Algernon of Hive Klysus, Samson IV."
+Objectives:
+> Get to your room at the Chapel of Seven Promises (1 XP)
+> Begin your fist investigation (1 XP)
+
+
+GM: "Port Algernon of Hive Klysus, Samson IV, the Hazeroth Subsector of the Calixis Sector, Segmentum Obscurus. You step out of the disembarkation tunnel from the ship and into the crowded corridors of the hive city."
 
 PCs: "We'll head for the Chapel of Seven Promises straight away, following the directions we were given. Plex takes the lead in navigating."
 
@@ -224,13 +229,48 @@ PCs: "We've got time, we'll take the hour to make sure."
 > Time advances to M41.Y023.500.8
 
 Inspect: Test Perception (40): Forcing Success => Success + 4 Degrees of Success => 4 clues
-> Brother Kaltos' Disposition is reduced by 5
 > Clue: The preacher at the Chapel of Seven Promises is definitely Brother Kaltos.
 > Clue: Inspection of Brother Kaltos revealed no further clues.
+> Brother Kaltos' Disposition is reduced by 5
+
+GM: "After a lengthy inspection, you verify that this is indeed Brother Kaltos. You can tell you've stretched his patience a bit, but he remains polite. After briefly verifying your inquisitorial credentials, he ushers you through the far door of the room."
+
+Brother Kaltos: "Very well acolytes, this way please."
+
+GM: "The back door of the room opens into a corridor with several doors. He leads you to one of them and pulls out a key to open it. The room is a reasonable size, lit bit slightly dingy, and empty other than two sleeping mats laid out at the far end."
+
+Brother Kaltos: "This is an old storeroom I've had repurposed for you. You're welcome to to use it as you wish and for as long as you need, though I would recommend finding a more permenant base of operations once you've got to know the area. This key will get you into the room and also the side entrance to the Chapel."
+
+GM: "He hands you over the key, then takes you around to show you some of the back rooms of the Chapel."
+
+Brother Kaltos: "This is the door to my quarters. If you need me, come to me directly. Please don't bother the priests while they are praying in the main hall... Down here is the side entrance to the Chapel... Ok, I shall leave you to your business. Praise the Emperor."
+
+GM: "He signs the aquila and departs."
+
+GM: "Ok, so you've completed your first quest - finding the Chapel of Seven Promises - so you gain 1 XP. You have a few more XP you can earn from getting to know the area."
+
+Objective completed:
+> Get to your room at the Chapel of Seven Promises (1 XP)
+New objectives:
+> Discover 5 Middle Hive Locations (1 XP)
+> Discover 5 Upper Hive Locations (1 XP)
+> Discover 5 Underhive Locations (1 XP)
+> Find and move to your own safehouse (3 XP)
+
+Plex: "Let's go down to the underhive!"
+
+Travelling:
+> Encounter order: 3 and 5 => Location Encounter is after the Encounter
+> Repeat Location: 6 (2 known locations) => new
+> Middle Hive Encountered Locations: 49 => Black-market dealer selling weapons and armour
+> Middle Hive Encounters: 93 => Enforcers (Ld10 = 2) escorting a detainee to the cells
+
+NPC (dealer):
+Fixer
+NPC (customer):
+Shadesman
 
 
-
---> Brother Kaltos gives the PCs a room to stay in temporarily
 
 --> PCs go looking around the underhive (test fight mechanics)
 

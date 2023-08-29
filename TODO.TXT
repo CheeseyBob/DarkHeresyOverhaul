@@ -7,12 +7,15 @@
 		- Head/leader NPC
 		- Servitors
 		- Small creatures
+    - Middle Hive Encountered Location - Black market dealer (besides weapons)
 
 >>> Overmap:
 	- Add sights/sounds/smells characters would notice around locations & encounters.
 	- Add character number rolls to encounters
 	- Add locations for transport links
 	- Upper Hive Encountered Locations - Garden?
+    - Underhive encounters - People around a campfire
+    - Review encounter verbs: Betraying, worshipping, enslaving, travelling to see, fleeing, negotiating with, killing
 
 > Change Obscurity from an NPC stat to a general GM guide table for Lore
 
@@ -55,6 +58,8 @@
     *[can wait until after starting the playtest]
 
 > Trait: Sound Constitution - bonus to maximum wounds.
+
+> Mutation for reducing Size.
 
 > What happened to active reload??
 
@@ -192,5 +197,4 @@ https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
 	~~ MapTool ~~
 
 - Create a way to easily move player tokens between maps.
-- Merge the overmap maps into one map with the ability to switch levels.
 
