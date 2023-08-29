@@ -215,9 +215,16 @@ class LocationsFile implements PrintableFile {
 		printLocation(MiddleHiveEncounteredLocations.ministorumShrine, printer);
 		printLocation(MiddleHiveEncounteredLocations.ministorumTemple, printer);
 		printLocation(MiddleHiveEncounteredLocations.enforcerStation, printer);
+		printLocation(MiddleHiveEncounteredLocations.shop_food, printer);
+		printLocation(MiddleHiveEncounteredLocations.shop_clothing, printer);
+		printLocation(MiddleHiveEncounteredLocations.dealer_weapons, printer);
+		printLocation(MiddleHiveEncounteredLocations.shop_tech, printer);
+		printLocation(MiddleHiveEncounteredLocations.shop_specialist, printer);
+		printLocation(MiddleHiveEncounteredLocations.eatery_poor, printer);
 		printLocation(MiddleHiveEncounteredLocations.eatery_standard, printer);
+		printLocation(MiddleHiveEncounteredLocations.shadyBar, printer);
 		printLocation(MiddleHiveEncounteredLocations.cheapPubWithRooms, printer);
-		// TODO //
+		printLocation(MiddleHiveEncounteredLocations.pubWithRooms, printer);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.printHeader_collapsible("Underhive Main Locations");
