@@ -1,5 +1,7 @@
 	~~ To Do List ~~
 
+"Bear in mind the principle that anything can be attempted."
+
 >>> Locations:
 	- Change 'Main Locations' to 'Areas' and add Area-specific locations (e.g. warehouses and landing bays in a Spaceport).
 	- Add Occupants rolls for each Location type.

@@ -228,7 +228,7 @@ PCs: "We've got time, we'll take the hour to make sure."
 
 > Time advances to M41.Y023.500.8
 
-Inspect: Test Perception (40): Forcing Success => Success + 4 Degrees of Success => 4 clues
+Inspect: Test Perception (40): Forcing Success => Success + 4 Degrees of Success => 5 clues
 > Clue: The preacher at the Chapel of Seven Promises is definitely Brother Kaltos.
 > Clue: Inspection of Brother Kaltos revealed no further clues.
 > Brother Kaltos' Disposition is reduced by 5
@@ -265,10 +265,15 @@ Travelling:
 > Middle Hive Encountered Locations: 49 => Black-market dealer selling weapons and armour
 > Middle Hive Encounters: 93 => Enforcers (Ld10 = 2) escorting a detainee to the cells
 
-NPC (dealer):
-Fixer
-NPC (customer):
-Shadesman
+NPC (dealer): "Cain"
+> Fixer
+> Adult; small; dark skin; brown eyes; brown hair; tattoos
+> Personality: Cardinal
+
+NPC (customer): "Shiv"
+> Shadesman
+> Adult; small; pale; grey eyes; brown hair; bullet scar
+> Personality: Bilious
 
 
 

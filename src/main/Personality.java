@@ -177,6 +177,6 @@ public class Personality {
 	public static final Personality creature_unpredictable = new Personality("Unpredictable",
 			"Friendly, yet easily provoked.",
 			"Attacks.",
-			new SkillResponse(Skill.wrangle, "-20", "-20")
+			new SkillResponse(Skill.wrangle, "+10", "-20")
 	);
 }

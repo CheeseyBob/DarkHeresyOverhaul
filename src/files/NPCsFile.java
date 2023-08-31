@@ -31,7 +31,7 @@ class NPCsFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(this);
-		printer.println("NPCs come in two types ");
+		printer.println("NPCs come in two types:");
 		printer.printList(false,
 				"Unique - characters who are important as individuals. "
 				+ "Their character sheet should be created using the PC character creation process, altering things where needed.",
@@ -46,39 +46,14 @@ class NPCsFile implements PrintableFile {
 				"This represents the NPC's feelings towards the PCs. "
 				+ "When an NPC's decision-making would be affected by this, make a Disposition Test to determine the decision. "
 				+ "Take into account Degrees of Success or Critical Failure if it makes sense.");
-		
-		printer.printSubSubheader("Personality");
-		printer.println("Each NPC has a Personality table which determines:");
-		printer.printList(false,
-				"The broad strokes of how the NPC acts.",
-				"How they act when their Disposition reaches 0.",
-				"Modifiers to social interaction Actions targetting them.",
-				"How their Disposition changes on Failure of these Actions (apply double this change on Critical Failure).");
-		
-		printer.printSubSubheader("Obscurity");
 		printer.printParagraph(
-				"This applies a bonus/penalty to Recall Lore about the NPC. "
-				+ "For Unique characters, this means that specific individual. "
-				+ "For Mooks, this means lore about their position/rank, rather than them as an individual. ");
-		printer.printTableTop(false, true, "Obscurity", "Modifier", "Example");
-		for(int i = 0; i < obscurityTable.length; i ++) {
-			printer.printTableRow(obscurityTable[i]);
-		}
-		printer.printTableTail();
-
-
-		printer.printHeader_collapsible("People");
-		printer.printCollapsibleTop();
-		
-		printer.printSubSubheader("Disposition");
-		printer.println("When the NPC is created:");
-		printer.printList(false,
-				"Determine their Disposition: 2d10+40",
-				"Determine their Personality using the table.");
-		printer.println("When the NPC first encounters the PCs:");
+				"Disposition is determined when the NPC first encounters the PCs. "
+				+ "For non-intelligent creatures, determine their Disposition as noted on the character sheet for that species. "
+				+ "For people, determine their Disposition as follows.");
 		printer.printList(true,
+				"Roll 2d10+40.",
 				"Read Person to determine whether they realise who the PCs are.",
-				"Modify their Disposition according to the table.",
+				"Modify their Disposition according to the table below.",
 				"If the NPC realises and is hostile to the Inquisition, the PCs gain Attention.");
 		printer.printTableTop(false, true, "NPC", "Disposition Change");
 		printer.printTableRow("Servant of the Imperium", "+10");
@@ -88,6 +63,18 @@ class NPCsFile implements PrintableFile {
 		printer.printTableTail();
 		
 		printer.printSubSubheader("Personality");
+		printer.println("Each NPC has a Personality table which determines:");
+		printer.printList(false,
+				"The broad strokes of how the NPC acts.",
+				"How they act when their Disposition reaches 0.",
+				"Modifiers to social interaction Actions targetting them.",
+				"How their Disposition changes on Failure of these Actions (apply double this change on Critical Failure).");
+		
+		printer.println("When the NPC is created:");
+		printer.printList(false,
+				"If the NPC is a person, determine their Personality using the table below.",
+				"If the NPC is a non-sentient creature, determine their Personality as noted on the character sheet for that species.");
+		
 		printer.printTableTop(false, true, "d100", "Personality");
 		printer.printTableRow("01-10", Personality.bilious.name);
 		printer.printTableRow("11-20", Personality.cardinal.name);
@@ -101,6 +88,20 @@ class NPCsFile implements PrintableFile {
 		printer.printTableRow("91-00", Personality.vacant.name);
 		printer.printTableTail();
 		
+		printer.printSubSubheader("Obscurity");
+		printer.printParagraph(
+				"This applies a bonus/penalty to Recall Lore about the NPC. "
+				+ "For Unique characters, this means that specific individual. "
+				+ "For Mooks, this means lore about their position/rank, rather than them as an individual. ");
+		printer.printTableTop(false, true, "Obscurity", "Modifier", "Example");
+		for(int i = 0; i < obscurityTable.length; i ++) {
+			printer.printTableRow(obscurityTable[i]);
+		}
+		printer.printTableTail();
+
+
+		printer.printHeader_collapsible("Personalities for People");
+		printer.printCollapsibleTop();
 		printer.printRowTop();
 		printer.printCol_personality(6, Personality.bilious);
 		printer.printCol_personality(6, Personality.cardinal);
@@ -113,17 +114,11 @@ class NPCsFile implements PrintableFile {
 		printer.printCol_personality(6, Personality.supine);
 		printer.printCol_personality(6, Personality.vacant);
 		printer.printRowTail();
-		
 		printer.printCollapsibleTail();
+		
 
-		printer.printHeader_collapsible("Creatures");
+		printer.printHeader_collapsible("Personalities for Creatures");
 		printer.printCollapsibleTop();
-		printer.printParagraph(
-				"For non-intelligent creatures, their Disposition and Personality is determined by their species, as noted on their character sheet.");
-
-		printer.printSubSubheader("Personality");
-		printer.printParagraph(
-				"Personality tables are different for creatures, as "+Skill.wrangle+" is the only relevant interaction Skill.");
 		printer.printRowTop();
 		printer.printCol_personality(6, Personality.creature_aggressive);
 		printer.printCol_personality(6, Personality.creature_friendly);
@@ -132,8 +127,8 @@ class NPCsFile implements PrintableFile {
 		printer.printCol_personality(6, Personality.creature_skittish);
 		printer.printCol_personality(6, Personality.creature_unpredictable);
 		printer.printRowTail();
-		
 		printer.printCollapsibleTail();
+		
 		
 		printer.printHeader("NPC Interactions");
 		printer.printSubheader("Attention");
