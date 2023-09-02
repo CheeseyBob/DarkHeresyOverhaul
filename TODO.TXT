@@ -34,6 +34,19 @@
 		- Should this just be for bonus gelt?
     	- If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
 
+>>> NPCs:
+    - Morale
+        - Willpower Test (Fear Test?)
+        - Roll on:
+            - first contact (are they willing to fight at all)
+            - first blood
+                - groups: first KO
+                - solo NPCs: fist (major?) wound
+            - half strength
+                - groups: half of the group KO'd
+                - solo NPCs: half wounds / Critical Damage?
+                
+
 >>> NPC Groups: [can wait until after starting the playtest]
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
         - Ministorum cherub servitor
@@ -58,6 +71,8 @@
 
 >>> GM notes for item creation
     *[can wait until after starting the playtest]
+
+> Change spending a Fate Point from a re-roll to an auto-pass?
 
 > Trait: Sound Constitution - bonus to maximum wounds.
 

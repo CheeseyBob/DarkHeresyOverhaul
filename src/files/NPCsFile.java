@@ -34,11 +34,13 @@ class NPCsFile implements PrintableFile {
 		printer.println("NPCs come in two types:");
 		printer.printList(false,
 				"Unique - characters who are important as individuals. "
-				+ "Their character sheet should be created using the PC character creation process, altering things where needed.",
+				+ "Their character sheet should be created using the PC character creation process, altering things where needed. "
+				+ "In combat, these characters may persevere after taking Critical Damage.",
 				"Mooks - defined more by their role than as individuals. "
-				+ "They can be given individual names and descriptions, but their stats are just a standard NPC character sheet.");
+				+ "They can be given individual names and descriptions, but their stats are just a standard NPC character sheet. "
+				+ "In combat, these characters will \"go down\" once they take Critical Damage.");
 		printer.printParagraph(
-				"In addition to the usual stats that PCs have, NPCs have three special stats: "
+				"In addition to the usual stats that PCs have, NPCs have three additional stats: "
 				+ "Disposition, Personality and Obscurity.");
 		
 		printer.printSubSubheader("Disposition");
@@ -183,5 +185,12 @@ class NPCsFile implements PrintableFile {
 				+ "When doing so, determine the reason the NPC is joining the PCs and ............");
 		
 		printer.printFileTail();
+		
+		
+		printer.printHeader("Morale");
+		printer.printParagraph(
+				"xxxxx. "
+				+ "xxxxx. "
+				+ "xxxxx.");
 	}
 }
