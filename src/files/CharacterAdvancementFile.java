@@ -37,35 +37,35 @@ class CharacterAdvancementFile implements PrintableFile {
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
 		printer.printParagraph("Each different Advance has an XP cost and two associated Aptitudes. When you take an Advance, the amount of XP you spend depends on how many matching Aptitudes you have:");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"Both Aptitues: you spend half the written XP cost.",
 				"One Aptitue: you spend the written XP cost.",
-				"Neither Aptitue: you spend double the written XP cost.",
-		});
+				"Neither Aptitue: you spend double the written XP cost."
+		);
 		printer.printParagraph("There are three different kinds of Advance:");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"<b>Characteristic Advances</b> increase a Characteristic by 5. You can take this up to 5 times for each Characteristic, with the XP cost going up each time. The XP costs and associated Aptitudes are shown in the tables below.",
 				"<b>Skill Advances</b> increase the bonus for a Skill by 10, or aquire a non-basic skill at a +0 bonus. You can take this up to a +30 bonus for each skill. Skills, their XP costs and associated Aptitudes are shown in the tables below.",
-				"<b>Talent Advances</b> give your character the benefit of a Talent. Talents, their XP costs and associated Aptitudes are listed in the Talents section.",
-		});
+				"<b>Talent Advances</b> give your character the benefit of a Talent. Talents, their XP costs and associated Aptitudes are listed in the Talents section."
+		);
 		printer.println();
 		printer.println();
 		printer.printHeader("Advancement After Character Creation");
 		printer.printParagraph("During play, taking Advances should be justified by the character's actions in one of the following ways.");
-		printer.printList(false, new String[] {
+		printer.printList(false,
 				"<b>Experience:</b> After the character uses a Characteristic or Skill, they can take an Advance for that Characteristic or Skill.",
 				"<b>Inspiration:</b> Before taking an action, you can spend a Fate Point to allow the character to take a Talent Advance and then use that Talent.",
-				"<b>Training:</b> The character can spend time training or studying. If they have access to the appropriate resources, a successful Long Action Test using the appropriate Characteristic allows them to take any Advance.",
-		});
+				"<b>Training:</b> The character can spend time training or studying. If they have access to the appropriate resources, a successful Long Action Test using the appropriate Characteristic allows them to take any Advance."
+		);
 		printer.println();
 		printer.println();
 		printer.printHeader("Characteristics");
-		printer.printTableTop("Advance", "XP Cost", false, true);
+		printer.printTableTop(false, true, "Advance", "XP Cost");
 		for(int i = 0; i < characteristicAdvanceXPCostTable.length; i ++) {
 			printer.printTableRow(characteristicAdvanceXPCostTable[i]);
 		}
 		printer.printTableTail();
-		printer.printTableTop("Characteristic", "Aptitude 1", "Aptitude 2", false, true);
+		printer.printTableTop(false, true, "Characteristic", "Aptitude 1", "Aptitude 2");
 		printCharacteristicTableRow(Characteristic.WS, printer);
 		printCharacteristicTableRow(Characteristic.BS, printer);
 		printCharacteristicTableRow(Characteristic.S, printer);
@@ -80,12 +80,12 @@ class CharacterAdvancementFile implements PrintableFile {
 		printer.println();
 		printer.printHeader("Skills");
 		printer.printParagraph("If a Skill is labelled as basic, all characters are assumed to have the Skill at +0, so the +0 advance does not need to be taken.");
-		printer.printTableTop("Advance", "XP Cost", false, true);
+		printer.printTableTop(false, true, "Advance", "XP Cost");
 		for(int i = 0; i < skillAdvanceXPCostTable.length; i ++) {
 			printer.printTableRow(skillAdvanceXPCostTable[i]);
 		}
 		printer.printTableTail();
-		printer.printTableTop(skillAdvanceTableHeaders, false, true);
+		printer.printTableTop(false, true, skillAdvanceTableHeaders);
 		printer.printTableRow_subheader("General Skills");
 		printSkillTableRow(Skill.navigate, printer);
 		printSkillTableRow(Skill.notice, printer);

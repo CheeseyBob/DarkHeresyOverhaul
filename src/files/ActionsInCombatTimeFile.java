@@ -61,7 +61,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 	};
 	private static String[][] actionsTable_advanced = {
 			{"Focus Power", "*", "Talent", "Willpower", "Use a Psychic Power"},
-			{"Sense Immaterium", "Passive", "Skill", "Perception", "Get Clues or Detect something"},
+			{"Sense Immaterium", "Passive", "Skill", "Willpower", "Get Clues or Detect something"},
 			{"Treat Wounds (First Aid)", "Main Action", "Skill", "Intelligence", "Target becomes Treated (max 1 level)"},
 			{"Use Tech", "Main Action", "Skill", "Intelligence", "Use a tech item (effect depends on the item)"},
 	};
