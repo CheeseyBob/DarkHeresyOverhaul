@@ -13,6 +13,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.specialRuleList.add(Talent.language.withParameter("Low Gothic"));
 		npc.equippedItemList.add(Clothing.ragCastings);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Ubiquitous (Automatic)"
+				+ "<br>Awe of the Inquisition";
 		// XP: 4/5
 		rankedCharacterList.add(npc);
 		
@@ -23,6 +25,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.equippedItemList.add(Clothing.ragCastings);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Ubiquitous (Automatic)"
+				+ "<br>Awe of the Inquisition";
 		// XP: 8/10
 		rankedCharacterList.add(npc);
 		
@@ -34,6 +38,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 8/10
 		rankedCharacterList.add(npc);
 		
@@ -49,6 +55,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.lockpick);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 18/20
 		rankedCharacterList.add(npc);
 		
@@ -61,6 +69,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 18/20
 		rankedCharacterList.add(npc);
 		
@@ -79,6 +89,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 28/30
 		rankedCharacterList.add(npc);
 		
@@ -91,6 +103,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(Ammo.pistol_mag);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 28/30
 		rankedCharacterList.add(npc);
 		
@@ -115,6 +129,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 58/60
 		rankedCharacterList.add(npc);
 		
@@ -136,6 +152,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.club);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Prevalent (+20)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 58/60
 		rankedCharacterList.add(npc);
 		
@@ -157,6 +175,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.longDagger);
 		npc.inventoryList.add(Consumable.vial_lethalPoison_3);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Obscure (-20)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 60/60
 		rankedCharacterList.add(npc);
 		
@@ -184,6 +204,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 80/80
 		rankedCharacterList.add(npc);
 		
@@ -205,6 +227,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Ammo.autostubber_mag);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Average (+0)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 80/80
 		rankedCharacterList.add(npc);
 		
@@ -226,6 +250,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(MeleeWeapon.longDagger);
 		npc.inventoryList.add(Consumable.vial_lethalPoison_3);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Very Obscure (-30)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 80/80
 		rankedCharacterList.add(npc);
 		
@@ -255,6 +281,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 100/100
 		rankedCharacterList.add(npc);
 		
@@ -278,6 +306,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 98/100
 		rankedCharacterList.add(npc);
 		
@@ -299,6 +329,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Consumable.vial_lethalPoison_5);
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Extremely Obscure (-40)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 98/100
 		rankedCharacterList.add(npc);
 		
@@ -328,6 +360,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.dataSlate);
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 148/150
 		rankedCharacterList.add(npc);
 		
@@ -354,6 +388,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(RangedWeapon.pistol);
 		npc.inventoryList.add(MeleeWeapon.knife);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Niche (-10)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 148/150
 		rankedCharacterList.add(npc);
 		
@@ -382,6 +418,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		npc.inventoryList.add(Tool.dataSlate);
 		npc.inventoryList.add(Tool.multiKey);
 		npc.inventoryList.add(MiscItem.gelt);
+		npc.notes = "Obscurity: Extremely Obscure (-40)"
+				+ "<br>Hatred of the Inquisition";
 		// XP: 150/150
 		rankedCharacterList.add(npc);
 		

@@ -6,14 +6,14 @@ class NPCsFile implements PrintableFile {
 	
 	private static String[][] obscurityTable = {
 			{"Ubiquitous", "Automatic", "Ordinary citizens"},
-			{"Legendary", "+30", "The God-Emperor; Space Marines"},
-			{"Famous", "+20", "A major Saint; -"},
+			{"Commonplace/Legendary", "+30", "Vermin / The God Emperor; Space Marines"},
+			{"Prevalent/Famous", "+20", "Ministorum Preachers / a major Saint"},
 			{"Well Known", "+10", "A planetary govenor; standard Imperial Guard troops"},
 			{"Average", "+0", "-; -"},
 			{"Niche", "-10", "-; -"},
 			{"Obscure", "-20", "-; a major xeno faction"},
 			{"Very Obscure", "-30", "-; -"},
-			{"Extremely Obscure", "-40", "-; -"},
+			{"Extremely Obscure", "-40", "Lord of Assassins; -"},
 			{"Nearly Forgotten", "-50", "-; -"},
 			{"Forgotten", "-60", "An ancient Daemon; an extinct xeno species"},
 	};
@@ -54,7 +54,7 @@ class NPCsFile implements PrintableFile {
 				+ "For people, determine their Disposition as follows.");
 		printer.printList(true,
 				"Roll 2d10+40.",
-				"Read Person to determine whether they realise who the PCs are.",
+				"Reference Lore (Identify) to determine whether they realise who the PCs are. If the PCs are disguised, this also needs to be overcome.",
 				"Modify their Disposition according to the table below.",
 				"If the NPC realises and is hostile to the Inquisition, the PCs gain Attention.");
 		printer.printTableTop(false, true, "NPC", "Disposition Change");

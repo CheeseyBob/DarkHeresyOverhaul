@@ -2,6 +2,8 @@
 
 "Bear in mind the principle that anything can be attempted."
 
+!! Rethink the forcing-success thing.
+
 >>> Locations:
 	- Change 'Main Locations' to 'Areas' and add Area-specific locations (e.g. warehouses and landing bays in a Spaceport).
 	- Add Occupants rolls for each Location type.
@@ -56,15 +58,41 @@
     - Unaligned characters (citizens, animals, xeno beasts, etc.)
     - Hostile groups (daemon cults, xeno factions, etc.)
     - From 1E Dramatis Personae:
-    	? Astropath?
-    	X Bounty Hunter (Sell-Steel / Shadesman / Nighthawk) 
-    	O Cult Initiate/Fanatic/Magus
-    	O Citizen
-    	O Combat Servitor
-    	O Dissolute Noble
-    	O Enforcer
-    	O Entertainer
-    	...
+    	- Astropath [?]
+    	- Bounty Hunter [Sell-Steel / Shadesman / Nighthawk]
+    	- Cult Initiate/Fanatic/Magus [-]
+    	- Citizen [-]
+    	- Combat Servitor [-]
+    	- Dissolute Noble [-]
+    	- Enforcer [-]
+    	- Entertainer [-]
+        - Furnace Worker [-]
+        - Gun Servitor [-]
+        - Heretek [-]
+        - Industrial or Heavy Repair Servitor [-]
+        - Kill Squad Trooper [Storm Trooper]
+        - Heavy [-]
+        - Merchant Magnate [-]
+        - Ministorum Preacher [Preacher]
+        - Mutant [-]
+        - Mutant Abomination [-]
+        - Ratting [-]
+        - Recidivist [-]
+        - Scribe [Scribe]
+        - Scum [Outlaw / Sell-steel]
+        - Servitor Drone [-]
+        - Skulker [Renegade / Rogue]
+        - Slaughterman [-]
+        - Tech Adept [Mech-Wright / Electro-Priest / Engine-Seer]
+        - Witch [-]
+    - Animals and Vermin:
+        - Beast of Burden [-]
+        - Ferocious Creature [-]
+        - Flying Creature [-]
+        - Slithering Creature [-]
+        - Walking Creature [-]
+    - The beastial and the Alien: ...
+    - From Beyond: ...
 
 >>> Items
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
