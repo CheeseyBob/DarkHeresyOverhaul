@@ -27,8 +27,7 @@ class IndexFile implements PrintableFile {
 		
 		printer.printHeader("Contents");
 		printer.printRowTop();
-		printSectionContents(printer,
-				"Characters",
+		printSectionContents(printer, 3, "Characters",
 				Files.exampleCharacterSheet,
 				Files.characterCreation,
 				Files.characterAdvancement,
@@ -45,8 +44,7 @@ class IndexFile implements PrintableFile {
 				Files.thrownWeapons,
 				Files.tools,
 				Files.miscItems);
-		printSectionContents(printer,
-				"Playing the Game",
+		printSectionContents(printer, 3, "Playing the Game",
 				Files.fatePoints,
 				Files.actionsOverview,
 				Files.actionsInCombatTime,
@@ -56,29 +54,29 @@ class IndexFile implements PrintableFile {
 				Files.fearAndInsanity,
 				Files.corruptionAndMutation,
 				Files.psychicPhenomena);
-		printSectionContents(printer,
-				"Running the Game",
+		printSectionContents(printer, 3, "Running the Game",
 				Files.proceduresOfPlay,
 				Files.npcs,
+				Files.investigation,
+				Files.lore,
+				Files.overmap,
+				Files.locations,
+				Files.groupsAndEvents);
+		printSectionContents(printer, 3, "NPC Stats",
 				Files.adeptusAdministratum,
 				Files.adeptusArbites,
 				Files.adeptusAstraTelepathica,
 				Files.adeptusMechanicus,
 				Files.adeptusMinistorum,
 				Files.imperialGuard,
-				Files.outcasts,
-				Files.investigation,
-				Files.lore,
-				Files.overmap,
-				Files.locations,
-				Files.groupsAndEvents);
+				Files.outcasts);
 		printer.printRowTail();
 		
 		printer.printFileTail();
 	}
 	
-	private void printSectionContents(DHOPrinter printer, String sectionTitle, PrintableFile... files) {
-		printer.printColTop(4);
+	private void printSectionContents(DHOPrinter printer, int cols, String sectionTitle, PrintableFile... files) {
+		printer.printColTop(cols);
 		printer.printSubheader(sectionTitle);
 		for(PrintableFile file : files)
 			printer.printLink(file, true);

@@ -33,10 +33,10 @@ public class MiddleHiveEncounteredLocations {
 			"1 Fixer (Outcasts)",
 			"1 random Outcast");
 	public static final Location shop_tech = new Location("Shop selling tech items",
-			"____",
-			"[description]",
-			"[residents]",
-			"[guests]");
+			"____ Contraptions/Devices/Gadgets/Gizmos/Tech",
+			"Smell of plastic; shelves; counter; storeroom; small office",
+			"1 Citizen with Trade (Merchant)",
+			"1d10 - 5 Citizens");
 	public static final Location shop_specialist = new Location("Specialist shop selling a specific kind of item",
 			"____",
 			"[description]",

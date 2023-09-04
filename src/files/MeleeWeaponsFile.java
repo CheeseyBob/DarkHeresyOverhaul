@@ -57,7 +57,9 @@ class MeleeWeaponsFile implements PrintableFile {
 		printer.printCol_item(6, MeleeWeapon.chainsword);
 		printer.printCol_item(6, MeleeWeapon.chainsword_mastercrafted);
 		printer.printCol_item(6, MeleeWeapon.knife);
+		printer.printCol_item(6, MeleeWeapon.knife_mono);
 		printer.printCol_item(6, MeleeWeapon.longDagger);
+		printer.printCol_item(6, MeleeWeapon.longDagger_mono);
 		printer.printCol_item(6, MeleeWeapon.longsword);
 		printer.printCol_item(6, MeleeWeapon.longsword_mono);
 		printer.printCol_item(6, MeleeWeapon.shortsword);
