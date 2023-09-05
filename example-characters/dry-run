@@ -381,7 +381,31 @@ Shopkeeper Lazerus [Heretek disguised as Citizen]
 
 GM: "There's a shop selling tech items in this area: Lazerus Gadgets."
 
+PCs: "Great, we'll head straight there."
 
+Travelling:
+> Encounter order: 8 and 8 => Location Encounter is at the same time as the Encounter
+> Repeat Location: roll of 4 (3 known locations) => new
+> Middle Hive Encountered Locations: roll of 23 => Enforcer station
+> Middle Hive Encounters: roll of 39 => Scum (Ld10+1 = 2) knife-fighting
+
+
+Middle Hive Encountered Locations: Enforcer station
+> Exterior Description: roll of 43 => Inconspicuous
+> Ambience: roll of 18 => Filthy
+> Notable Feature: roll of 53 => Several statues
+> Residents: 1d10=1 Enforcers
+> Guests: 1d10-7=2 Dregs (detainees)
+> Secrets: roll of 1 => Nothing unusual here
+> Name: Station Aureus 12
+
+
+--> Map for Station Aureus 12
+
+
+
+Encounter: Two knife-wielding scum are trying to bust their buddies out of the cells while there's only one Enforcer manning the station. 
+> Distance: Middle Hive => 5d10m = 24m
 
 
 

@@ -64,11 +64,11 @@
     	- Citizen [-]
     	- Combat Servitor [-]
     	- Dissolute Noble [-]
-    	- Enforcer [-]
+    	- Enforcer [Enforcer (Arbites)]
     	- Entertainer [-]
         - Furnace Worker [-]
         - Gun Servitor [-]
-        - Heretek [-]
+        - Heretek [Heretek]
         - Industrial or Heavy Repair Servitor [-]
         - Kill Squad Trooper [Storm Trooper]
         - Heavy [-]
@@ -97,8 +97,10 @@
 >>> Items
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
 
->>> GM notes for item creation
-    *[can wait until after starting the playtest]
+>>> GM notes for item creation [can wait until after starting the playtest]
+    - Mastercrafted (Melee Weapon): Bonus +1; Hits +1; Damage +1; Availability -3
+    - Mastercrafted (Ranged Weapon): Range +1; Damage +1; + Reliable; Availability -3
+    - Mono (Melee Weapon): + Rending
 
 > Change spending a Fate Point from a re-roll to an auto-pass?
 
