@@ -58,6 +58,11 @@ public class RangedWeapon extends Weapon {
 			1, "80m", "2", "12 Power", "2", "1d10+1 Energy", Availability.PLENTIFUL)
 			.withSpecialRule(electricPower.withParameter("1"))
 			.withSpecialRule(reliable);
+	public static final RangedWeapon laspistol_heretek = new RangedWeapon("Heretek Laspistol",
+			1, "320m", "1", "12 Power", "2", "1d10+5 Energy", Availability.RARE)
+			.withSpecialRule(electricPower.withParameter("3"))
+			.withSpecialRule(overcharge.withParameter("3"))
+			.withSpecialRule(overheats);
 	public static final RangedWeapon lasgun = new RangedWeapon("Lasgun",
 			3, "160m", "3", "18 Power", "2", "1d10+2 Energy", Availability.COMMON)
 			.withSpecialRule(electricPower.withParameter("1"))

@@ -19,16 +19,16 @@ public class Tool extends Item {
 	
 	// Worn //
 	public static final Tool gasMask = new Tool("Gas Mask",
-			"Used to protect against harmful gases.",
+			"Wearable. Used to protect against harmful gases.",
 			2, "+30", Availability.COMMON);
 	public static final Tool cameleolineCloak = new Tool("Cameleoline Cloak",
-			"Used to aid concealment.",
+			"Wearable. Used to aid concealment.",
 			2, "+40", Availability.AVERAGE);
 	public static final Tool photoVisor = new Tool("Photo-Visor",
-			"Used to protect the eyes.",
+			"Wearable. Used to protect the eyes.",
 			1, "+30", Availability.AVERAGE);
 	public static final Tool photoContacts = new Tool("Photo-Contacts",
-			"Used to protect the eyes.",
+			"Wearable. Used to protect the eyes.",
 			0, "+30", Availability.SCARCE);
 	
 	// Held //
@@ -66,6 +66,9 @@ public class Tool extends Item {
 	public static final Tool auspex = new Tool("Auspex",
 			"Used to detect things not visible to human senses (gases, radiation, bio-signs, etc.).",
 			1, "+20", Availability.COMMON);
+	public static final Tool auspex_heretek = new Tool("Heretek Heads-Up Auspex",
+			"Wearable. Used to detect things not visible to human senses (gases, radiation, bio-signs, etc.).",
+			2, "+30", Availability.RARE);
 	public static final Tool autoquill = new Tool("Autoquill",
 			"Used to create written material.",
 			1, "+20", Availability.COMMON);

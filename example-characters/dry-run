@@ -142,6 +142,7 @@ Not Travelling
 
 > Time advances to M41.Y023.500.6
 
+[!DEPRECATED]
 > Forcing Success: 55 => Success + 5 Degrees of Success
 
 The GM also decides this warrants a Subtlely Test, determining their Subtlety Characteristic to be 45.
@@ -228,6 +229,7 @@ PCs: "We've got time, we'll take the hour to make sure."
 
 > Time advances to M41.Y023.500.8
 
+[!DEPRECATED]
 Inspect: Test Perception (40): Forcing Success => Success + 4 Degrees of Success => 5 clues
 > Clue: The preacher at the Chapel of Seven Promises is definitely Brother Kaltos.
 > Clue: Inspection of Brother Kaltos revealed no further clues.
@@ -275,12 +277,120 @@ NPC (customer): "Shiv"
 > Adult; small; pale; grey eyes; brown hair; bullet scar
 > Personality: Bilious
 
+GM: "You leave the Chapel and wander around looking for passages leading down to the underhive. You spot a promising side-passage leading downwards. Following it, you pass a pair of enforcers literally dragging a barely-conscious dreg back the other way. They eye you suspiciously as you pass."
+
+PCs: "Castus signs the auqila at them with a respectful nod."
+
+GM: "That seems to be enough for them to lose interest in you. Continuing downwards into a quieter area, you spot a side door open further down ahead of you and two figures come out, exchange a couple of words and then head off in different directions, with one of them pausing briefly to lock the door."
+
+PCs: "Is there anything notable about them?"
+
+GM: "They're clearly outcasts, not ordinary citizens. You could potentially identify them using Reference Lore. They would come under Underworld, which is Common Lore so anyone has a chance to know."
+
+PCs: "Plex has "Experienced (Underworld)" and Castus has +20 to Reference Lore, so we'll work together."
+
+Shadesman:
+Reference Lore (Identify): Test Intelligence + NPC's Obscurity (+0)
+    - Castus: Test Intelligence (42 +20 +0 = 62): roll of 88 => Failure
+    - Plex: Test Intelligence (30 +30 +0 = 60): roll of 9 => Success
+    => Success + 0 DoS
+
+GM: "You recognise the first one as a Shadesman, a low-level hired killer."
+
+Fixer:
+Reference Lore (Identify): Test Intelligence + NPC's Obscurity (-10)
+    - Castus: Test Intelligence (42) +20 -10: roll of 27 => Success + 2 Dos
+    - Plex: Test Intelligence (30) +30 -10: roll of 25 => Success + 2 DoS
+    => Success + 4 DoS
+
+GM: "You recognise the other as a Fixer, an experienced underworld type who is typically involved in fencing goods."
+
+PCs: "They could be a useful contact. Plex will go ahead and try to get their attention, acting casually. She's got Peer(Underworld), so will get +20 to all Disposition tests."
+
+Determine Disposition for Fixer Cain:
+> 2d10 + 40 = 48
+> Reference Lore (Identify): Test Intelligence (40): roll of 29 => Success
+> Fixer Cain realises they're inquisitors
+> Disposition reduced by 20 to 28
+> PCs gain Attention
+
+Fixer Cain: "What do you want?"
+
+GM: "He slows his pace a bit and looks you up and down. Doesn't seem very happy about being approached, but also seems willing to hear you out."
+
+PCs: "Plex will try to, put him at ease, make him know I'm more interested in checking what he has to offer that ratting him out."
+
+GM: "Charm?"
+
+PCs: "Yeah."
+
+GM: "Ok, you'll get a +10 modifier."
+
+Charm: Test Fellowship (29 +10 = 39): roll of 4 => Success
+> Fixer Cain becomes Charmed
+
+GM: "You chat for a bit and he seems a bit less on guard."
+
+Plex: "I think we might be able to do some business. What have you got to offer?"
+
+Test Disposition (28 + 20 + 10 = 58): roll of 47 => Success + 4 DoS
+
+Fixer Cain: "Stub. Las. That sort of thing. Get some protection in too from time to time. I'll wager you're more interested in buying than selling?"
+
+Plex: "Probably. How can I contact you?"
+
+Fixer Cain: "Just drop by. I'm usually around, or not far away."
+
+GM: "He stops at a junction."
+
+Fixer Cain: "Well, I look forward to doing business."
+
+Plex: "Later."
+
+GM: "You continue on your way to the Underhive?"
+
+PCs: "Yeah."
+
+GM: "You take the passage heading downwards and he leaves in the other direction."
+
+> Time advances to M41.Y023.500.9
+
+Travel to new Area (Underhive)
+> Disrepair: roll of 30 => Dark (1d10 = 9) and Collapsed (1d10 = 3)
+> Main Location: roll of 57 => Old abandoned site (Local enforcer headquarters)
+
+GM: "As you head further downwards into the depths of the hive, the passageways become increasingly derelict and devoid of people. You reach a point where to go further down you have to go down a long passage that is almost completely unlit."
+
+Castus: "We should get some kind of light source first."
+
+Plex: "Agreed."
+
+PCs: "Checking the map on our data-slate, can we see somewhere to buy a light nearby?"
+
+Middle Hive Encountered Locations: Shop selling tech items
+> Exterior Description: roll of 67 => Well-kept
+> Ambience: roll of 11 => No furniture
+> Notable Feature: roll of 5 => Deep channel
+> Residents: 1 Citizen with Trade (Merchant)
+> Guests: 1d10-5 = 0 Citizens (Shoppers)
+> Secrets: roll of 58 => Unbeknownst to the others, one of the residents is a heretek.
+
+Shopkeeper Lazerus [Heretek disguised as Citizen]
+> Slim young man with outrageous blonde hair, light skin and grey eyes.
+> Cardinal Personality
+
+GM: "There's a shop selling tech items in this area: Lazerus Gadgets."
+
+
+
+
 
 
 --> PCs go looking around the underhive (test fight mechanics)
 
---> Resolve the PCs gaining Attention at the end of the session
+--> Resolve the PCs gaining Attention (x2) at the end of the session
 
+--> PCs go to see Fixer Cain to buy some weapons
 
 
 

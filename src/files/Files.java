@@ -50,6 +50,7 @@ public class Files {
 	public static PrintableFile adeptusMinistorum = NPCGroupFile.adeptusMinistorum;
 	public static PrintableFile imperialGuard = NPCGroupFile.imperialGuard;
 	public static PrintableFile outcasts = NPCGroupFile.outcasts;
+	public static PrintableFile heretics = NPCGroupFile.heretics;
 	public static PrintableFile investigation = new InvestigationFile();
 	public static PrintableFile lore = new LoreFile();
 	public static PrintableFile overmap = new OvermapFile();

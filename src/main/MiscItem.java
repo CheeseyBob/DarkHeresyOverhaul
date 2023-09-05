@@ -65,7 +65,7 @@ public class MiscItem extends Item {
 			"Can be used to breathe from oxygen tanks.",
 			2, Availability.PLENTIFUL);
 	public static final MiscItem explosiveCharge = new MiscItem("Explosive Charge",
-			"Use Tech to become Planted, after which the detonator can be used to blow the charges: Everything within N meters takes a hit, where N is the number of charges, dealing Nd10+8 Explosive damage minus 1 per meter of distance to the target.",
+			"Use Tech to become Planted, after which the detonator can be used to blow the charges: Everything within N meters takes a hit, where N is the number of charges, dealing Nd10+10 Explosive damage minus 1 per meter of distance to the target.",
 			1, Availability.COMMON)
 			.withSpecialRule(ablative);
 	public static final MiscItem explosiveCollar = new MiscItem("Explosive Collar",

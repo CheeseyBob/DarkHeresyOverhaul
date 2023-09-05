@@ -45,4 +45,5 @@ class NPCGroupFile implements PrintableFile {
 	public static final NPCGroupFile adeptusMinistorum = new NPCGroupFile(NPCGroup.adeptusMinistorum);
 	public static final NPCGroupFile imperialGuard = new NPCGroupFile(NPCGroup.imperialGuard);
 	public static final NPCGroupFile outcasts = new NPCGroupFile(NPCGroup.outcasts);
+	public static final NPCGroupFile heretics = new NPCGroupFile(NPCGroup.heretics);
 }

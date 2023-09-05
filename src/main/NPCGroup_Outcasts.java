@@ -398,37 +398,29 @@ class NPCGroup_Outcasts extends NPCGroup {
 	// XP: 150/150
 
 	// Misc Characters //
-	public static final NPC heretek = new NPC("Heretek", "30,30,30,30,30,30,30,30,30")
-			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
-			.withItemEquipped(Clothing.drabGarb)
-			.withItemInInventory(MeleeWeapon.knife_mono)
-			.withItemInInventory(Tool.dataSlate_biolock)
-			.withItemInInventory(MiscItem.gelt)
-			.withNotes("Obscurity: Obscure (-20)"
-					+ "<br>Hatred of the Inquisition");
-	// XP: 0
+	
 
-		NPCGroup_Outcasts() {
-			super("Outcasts");
-			rankedCharacterList.add(dreg);
-			rankedCharacterList.add(outcast);
-			rankedCharacterList.add(sellSteel);
-			rankedCharacterList.add(outlaw);
-			rankedCharacterList.add(shadesman);
-			rankedCharacterList.add(renegade);
-			rankedCharacterList.add(nighthawk);
-			rankedCharacterList.add(rogue);
-			rankedCharacterList.add(ganger);
-			rankedCharacterList.add(assassin);
-			rankedCharacterList.add(fixer);
-			rankedCharacterList.add(stubjack);
-			rankedCharacterList.add(deathAdept);
-			rankedCharacterList.add(shark);
-			rankedCharacterList.add(gangBoss);
-			rankedCharacterList.add(assassinAtMarque);
-			rankedCharacterList.add(charlatan);
-			rankedCharacterList.add(gangLord);
-			rankedCharacterList.add(lordOfAssassins);
-			miscCharacterList.add(heretek);
-		}
+	NPCGroup_Outcasts() {
+		super("Outcasts");
+		rankedCharacterList.add(dreg);
+		rankedCharacterList.add(outcast);
+		rankedCharacterList.add(sellSteel);
+		rankedCharacterList.add(outlaw);
+		rankedCharacterList.add(shadesman);
+		rankedCharacterList.add(renegade);
+		rankedCharacterList.add(nighthawk);
+		rankedCharacterList.add(rogue);
+		rankedCharacterList.add(ganger);
+		rankedCharacterList.add(assassin);
+		rankedCharacterList.add(fixer);
+		rankedCharacterList.add(stubjack);
+		rankedCharacterList.add(deathAdept);
+		rankedCharacterList.add(shark);
+		rankedCharacterList.add(gangBoss);
+		rankedCharacterList.add(assassinAtMarque);
+		rankedCharacterList.add(charlatan);
+		rankedCharacterList.add(gangLord);
+		rankedCharacterList.add(lordOfAssassins);
+		//miscCharacterList.add(xxx);
+	}
 }

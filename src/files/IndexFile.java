@@ -68,6 +68,7 @@ class IndexFile implements PrintableFile {
 				Files.adeptusAstraTelepathica,
 				Files.adeptusMechanicus,
 				Files.adeptusMinistorum,
+				Files.heretics,
 				Files.imperialGuard,
 				Files.outcasts);
 		printer.printRowTail();

@@ -29,7 +29,7 @@ class RangedWeaponsFile implements PrintableFile {
 		printer.printFileTop(title());
 		printer.printSubSubheader("Range");
 		printer.printParagraph("The maximum effective range of the weapon. Apply a bonus/penalty for the distance to the target based on the table below. If an adjacent target is helpless or unaware, use the 2m bonus instead of the CQC penalty (this stacks with the usual +30 bonus against helpless targets).");
-		printer.printTableTop("Range", "Bonus", false, false);
+		printer.printTableTop(false, false, "Range", "Bonus");
 		for(int i = 0; i < 11; i ++) {
 			printer.printTableRow(getRangeTableRow(i));
 		}

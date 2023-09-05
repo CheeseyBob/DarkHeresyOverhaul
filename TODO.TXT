@@ -21,9 +21,9 @@
     - Underhive encounters - People around a campfire
     - Review encounter verbs: Betraying, worshipping, enslaving, travelling to see, fleeing, negotiating with, killing
 
-> Change Obscurity from an NPC stat to a general GM guide table for Lore
-
 > See if Extended Actions can be removed - only Rest uses this.
+
+> Is the action Use Tech (Maintain) really needed?
 
 >>> Surprise in encounters
 
@@ -108,6 +108,8 @@
 
 > What happened to active reload??
 
+> Should Darkness be able to give a -100 penalty? Maybe cap at level 5?
+
 > Change Run action into: Roll to Create Advantage Run then Move 3 times.
 > Run Aspect:
     - Bonus to Move
@@ -144,7 +146,6 @@
 > Create guides/procedures for spicing up battlemaps
     *[can wait until after starting the playtest]
 
-> Rethink having shops selling weapons - this should be a black market thing outside of the Upper Hive
 > Places to find hirelings.
 
 > ? Remove Calixis Sector and War Common Lore areas 
@@ -201,37 +202,29 @@
 
 	~~ Memos ~~
 
-
-wytchcraft power - inflict corruption
-telepathy power - inflict insanity
-biomancy power - inflict characteristic damage
-
-
-archeotech item which removes corruption
-archeotech item - nullification sphere (penalty to psykers nearby)
+Ideas for psychic powers:
+> wytchcraft power - inflict corruption
+> telepathy power - inflict insanity
+> biomancy power - inflict characteristic damage
 
 
-
-Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
-
-Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its long toungue to grab prey which gets too close. Size(5); Unnatural Senses(10m) and high Perception; Strength 30; crushing bite attack with large bonus to Strength; good concealment.
-
-Burn an effegy of something to summon a daemonic item
+Ideas for archeotech items:
+> Purifier - removes corruption
+> Nullification Sphere - penalty to psykers nearby
+> Absolute Stummer - creates an area of complete silence; prolonged use causes Fatigue
 
 
-> Make map stamps/tokens for terrain elements and objects which could be added to a battlemap.
-    - pillars
-    - lamp posts
-    - substations
-    - piles of rubble/refuse
-    - water/chemical spills
-    > Use square tokens (or maybe other non-round shapes) for objects (esp. interactable oblects like doors)
-> Characters
-    > Make more token icons in the 40k rough ink style.
-    > Make some generic character portraits.
+Ideas for NPCs:
+> Fire Daemon: always Burning; uses the Burning level instead of Wounds; attacks with Ignite and more powerful versions can manipulate surrounding Fire. Lesser versions need to stay within areas of Fire to persist.
+
+> Cave Barnacle: immobile xeno which grows on cave walls, waiting to shoot out its long toungue to grab prey which gets too close. Size(5); Unnatural Senses(10m) and high Perception; Strength 30; crushing bite attack with large bonus to Strength; good concealment.
 
 
-> Resources / further reading:
+Ideas for rituals:
+> Burn an effegy of something to summon a daemonic item
+
+
+Resources / further reading:
 https://www.dndspeak.com/2022/08/09/100-unique-dragon-hoards/
 https://www.dndspeak.com/2022/07/20/100-dungeon-dressings/
 https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
@@ -241,5 +234,14 @@ https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
 
 	~~ MapTool ~~
 
-- Create a way to easily move player tokens between maps.
+> Create a way to easily move player tokens between maps.
+
+> Make map stamps/tokens for terrain elements and objects which could be added to a battlemap.
+    - pillars
+    - lamp posts
+    - substations
+    - piles of rubble/refuse
+    - water/chemical spills
+    > Use square tokens (or maybe other non-round shapes) for objects (esp. interactable oblects like doors)
+
 
