@@ -43,19 +43,22 @@ public class Files {
 	// Running the Game //
 	public static PrintableFile proceduresOfPlay = new ProceduresOfPlayFile();
 	public static PrintableFile npcs = new NPCsFile();
+	public static PrintableFile investigation = new InvestigationFile();
+	public static PrintableFile lore = new LoreFile();
+	public static PrintableFile overmap = new OvermapFile();
+	public static PrintableFile locations = new LocationsFile();
+	public static PrintableFile groupsAndEvents = new GroupsAndEventsFile();
+	
+	// NPC Stats //
 	public static PrintableFile adeptusAdministratum = NPCGroupFile.adeptusAdministratum;
 	public static PrintableFile adeptusArbites = NPCGroupFile.adeptusArbites;
 	public static PrintableFile adeptusAstraTelepathica = NPCGroupFile.adeptusAstraTelepathica;
 	public static PrintableFile adeptusMechanicus = NPCGroupFile.adeptusMechanicus;
 	public static PrintableFile adeptusMinistorum = NPCGroupFile.adeptusMinistorum;
 	public static PrintableFile imperialGuard = NPCGroupFile.imperialGuard;
+	public static PrintableFile citizens = NPCGroupFile.citizens;
 	public static PrintableFile outcasts = NPCGroupFile.outcasts;
 	public static PrintableFile heretics = NPCGroupFile.heretics;
-	public static PrintableFile investigation = new InvestigationFile();
-	public static PrintableFile lore = new LoreFile();
-	public static PrintableFile overmap = new OvermapFile();
-	public static PrintableFile locations = new LocationsFile();
-	public static PrintableFile groupsAndEvents = new GroupsAndEventsFile();
 	
 	// Cards //
 	public static class Cards {

@@ -22,6 +22,7 @@ public abstract class NPCGroup {
 	public static final NPCGroup adeptusMechanicus = new NPCGroup_AdeptusMechanicus();
 	public static final NPCGroup adeptusMinistorum = new NPCGroup_AdeptusMinistorum();
 	public static final NPCGroup imperialGuard = new NPCGroup_ImperialGuard();
+	public static final NPCGroup citizens = new NPCGroup_Citizens();
 	public static final NPCGroup outcasts = new NPCGroup_Outcasts();
 	public static final NPCGroup heretics = new NPCGroup_Heretics();
 }

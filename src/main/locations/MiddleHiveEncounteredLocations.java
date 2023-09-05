@@ -14,9 +14,9 @@ public class MiddleHiveEncounteredLocations {
 			"3d10 citizens");
 	public static final Location enforcerStation = new Location("Enforcer station",
 			"Station ____",
-			"[description]",
-			"1d10 enforcers",
-			"1d10-8 detainees");
+			"Lookout post; mess room; small armoury; holding cell",
+			"1d10 Enforcers",
+			"1d10-7 Rank 1-3 Outcasts (detainees)");
 	public static final Location shop_food = new Location("Shop selling food",
 			"____",
 			"[description]",
