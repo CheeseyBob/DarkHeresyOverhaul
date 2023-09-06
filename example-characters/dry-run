@@ -387,7 +387,7 @@ Travelling:
 > Encounter order: 8 and 8 => Location Encounter is at the same time as the Encounter
 > Repeat Location: roll of 4 (3 known locations) => new
 > Middle Hive Encountered Locations: roll of 23 => Enforcer station
-> Middle Hive Encounters: roll of 39 => Scum (Ld10+1 = 2) knife-fighting
+> Middle Hive Encounters: roll of 39 => Scum knife-fighting in the street (Ld10+1 = 2 Dregs)
 
 
 Middle Hive Encountered Locations: Enforcer station
@@ -399,16 +399,49 @@ Middle Hive Encountered Locations: Enforcer station
 > Secrets: roll of 1 => Nothing unusual here
 > Name: Station Aureus 12
 
-
---> Map for Station Aureus 12
-
-
-
 Encounter: Two knife-wielding scum are trying to bust their buddies out of the cells while there's only one Enforcer manning the station. 
 > Distance: Middle Hive => 5d10m = 24m
 
 
+********
+Movement
 
+Move (Secondary) - AB meters
+Move (Full) - 2*AB meters
+Run (Main) - AB meters then become Running
+Run (Full) - 2*AB meters then become Running
+
+Example: AB = 3
+Move (Secondary) - 3m
+Move (Full) - 6m
+Run (Main) - 3m -> 6m
+Run (Full) - 6m -> 12m
+-- DH --
+Half Move - 3m
+Full Move - 6m
+Run - 18m
+
+Alternative:
+Move (Secondary) - AB meters
+Move (Full) - 2*AB meters
+Run (Main) - Become Running then 2*AB meters
+Run (Full) - Become Running then 3*AB meters
+
+Charge (Full) - 3*AB meters then attack
+
+Example: AB = 3
+Move (Secondary) - 3m
+Move (Full) - 6m
+Run (Main) - 6-12m -> 12m
+Run (Full) - 9-18m -> 18m
+
+Charge (Full) - 9-18m then attack
+
+
+
+********
+
+--> Make some alternate Dreg charsheets with reduced stats (addict wasters, diseased scavvies, etc.)
 
 --> PCs go looking around the underhive (test fight mechanics)
 

@@ -54,6 +54,7 @@
     *[can wait until after starting the playtest]
 
 >>> Items
+    - Put links to the individual item cards in the items pages
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
     - Items for rituals
 
