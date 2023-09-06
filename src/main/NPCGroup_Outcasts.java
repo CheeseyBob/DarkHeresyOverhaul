@@ -2,12 +2,12 @@ package main;
 class NPCGroup_Outcasts extends NPCGroup {
 	
 	// Ranked Characters //
-	public static final NPC dreg = new NPC("Dreg", "23,23,23,23,23,23,23,23,23")
+	public static final NPC dreg = new NPC("Dreg", "23,23,23,28,28,23,23,23,23")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withItemEquipped(Clothing.ragCastings)
 			.withNotes("Obscurity: Ubiquitous (Automatic)"
 					+ "<br>Disposition: Awe of the Inquisition (+20)");
-	// XP: 0/5; base Characteristic rolls: 23
+	// XP: 4/5; base Characteristic rolls: 23
 
 	public static final NPC outcast = new NPC("Outcast", "28,28,28,28,33,28,33,28,28")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
@@ -397,21 +397,21 @@ class NPCGroup_Outcasts extends NPCGroup {
 	// XP: 150/150
 
 	// Misc Characters //
-	public static final NPC lunatic = new NPC("Lunatic", "25,25,25,25,30,16,25,20,10")
+	public static final NPC lunatic = new NPC("Lunatic", "25,25,25,25,30,15,25,20,10")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withItemEquipped(Clothing.ragCastings)
 			.withItemInInventory(MeleeWeapon.knife)
 			.withNotes("Obscurity: Ubiquitous (Automatic)"
-					+ "<br>Disposition: Awe of the Inquisition (+20)"
+					+ "<br>Disposition: Other (+0)"
 					+ "<br>Personality: Unhinged");
 
-	public static final NPC scavvy = new NPC("Scavvy", "18,18,25,25,25,16,25,20,10")
+	public static final NPC scavvy = new NPC("Scavvy", "20,20,25,25,25,25,25,20,10")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withItemEquipped(Clothing.ragCastings)
 			.withNotes("Obscurity: Ubiquitous (Automatic)"
 					+ "<br>Disposition: Awe of the Inquisition (+20)");
 
-	public static final NPC waster = new NPC("Waster", "18,18,25,30,30,16,25,20,10") // TODO
+	public static final NPC waster = new NPC("Waster", "20,20,25,30,30,15,25,20,10") // TODO
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withSkill(Skill.administerDrug.withBonus(20))
 			.withItemEquipped(Clothing.ragCastings)

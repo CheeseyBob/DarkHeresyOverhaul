@@ -7,63 +7,76 @@ class ActionsInCombatTimeFile implements PrintableFile {
 	private static String[] actionsTableHeaders = {
 			"Action", "Type", "Requirement", "Test", "Result"
 	};
+	private static String[][] actionsTable_general = {
+			{"[Action] Carefully", "Full Action", "Basic", "*", "Main Action with a +10 bonus"},
+
+			{"Distract", "Secondary Action", "Basic", "-", "Give a -10 penalty to an Action or Reaction"},
+			{"Focus", "Secondary Action", "Basic", "-", "Get a +10 bonus to an Action or Reaction"},
+			{"Use Inventory", "Secondary Action", "Basic", "-", "Take out, put away, place or pick up items; 1 per hand"},
+
+			{"Brace", "Reaction", "Basic", "-", "Get a +10 bonus to a passive Reaction"},
+			{"Reflex", "Reaction", "Basic Skill", "Perception", "Act before another character when waiting"},
+
+			{"Wait to [Action]", "*", "Basic", "*", "Take the chosen Action later in the round"},
+	};
+	private static String[][] actionsTable_movement = {
+			{"Run", "Main Action", "Basic Skill", "Agility", "Become Running , then Move 2 times"},
+
+			{"Drag Heavy Object", "Full Action", "Basic", "Strength", "Move target 1m; +1m per DoS"},
+			{"Move And [Action]", "Full Action", "Basic", "*", "Move and [Main/Secondary Action] during the movement."},
+			{"Run (Full)", "Full Action", "Basic Skill", "Agility", "Become Running , then Move 3 times"},
+
+			{"Move", "Secondary Action", "Basic", "-", "Move up to Movement (AB)"},
+	};
 	private static String[][] actionsTable_fight = {
 			{"Attack (Melee)", "Main Action", "Basic", "Weapon Skill", "Target takes a hit"},
-			{"Attack Repeatedly (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); extra hit per DoS"},
-			{"Attack Heavily (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); +1 damage per DoS"},
-			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
-			{"Charge", "Full Action", "Basic", "Weapon Skill", "Move twice then Attack (Melee); +1 damage per bonus movement"},
 			{"Attack (Ranged)", "Main Action", "Basic", "Ballistic Skill", "Target takes a hit"},
-			{"Attack Repeatedly (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); extra hit per DoS"},
-			{"Attack Precisely (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); -10 penalty to target's Cover per DoS"},
 			{"Grapple", "Main Action", "Basic Skill", "Strength", "Target becomes Grappled"},
 			{"Grapple (Break)", "Main Action", "Basic Skill", "Strength", "Overcome Grappled"},
 			{"Knock Down", "Main Action", "Basic Skill", "Strength", "Target becomes Prone"},
-			{"Tackle", "Full Action", "Basic Skill", "Strength", "Move twice then Knock Down; +10 bonus per bonus movement"},
 			{"Stun", "Main Action", "Basic Skill", "Weapon Skill", "Target becomes Stunned"},
+
+			{"Attack Repeatedly (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); extra hit per DoS"},
+			{"Attack Heavily (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); +1 damage per DoS"},
+			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
+			{"Charge", "Full Action", "Basic", "Weapon Skill", "Move 3 times then Attack (Melee); +1 damage per level of Running"},
+			{"Attack Repeatedly (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); extra hit per DoS"},
+			{"Attack Precisely (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); -10 penalty to target's Cover per DoS"},
+			{"Tackle", "Full Action", "Basic Skill", "Strength", "Move twice then Knock Down; +10 bonus per bonus movement"},
+
 			{"Reload", "Secondary Action", "Basic", "-", "Get 1 step towards reloading a firearm"},
+
 			{"Duck", "Reaction", "Basic", "Cover", "Use Cover with a +10 bonus, then get Full Cover"},
 			{"Dodge", "Reaction", "Basic Skill", "Agility", "Avoid ranged hits"},
 			{"Parry", "Reaction", "Basic Skill", "Weapon Skill", "Avoid melee hits"},
 			{"Steady", "Reaction", "Basic", "Strength", "Oppose becoming Prone"},
+
+			{"Resist (Mentally)", "Passive", "Basic", "Willpower", "Oppose becoming or overcome being Frenzied, Frightened, Pinned, etc."},
+			{"Resist (Physically)", "Passive", "Basic", "Toughness", "Oppose becoming or overcome being Poisoned, Stunned, etc."},
 			{"Use Cover", "Passive", "Basic", "Cover", "Avoid ranged hits"},
 	};
-	private static String[][] actionsTable_movement = {
-			{"Drag Heavy Object", "Full Action", "Basic", "Strength", "Move target 1m; +1m per DoS"},
-			{"Move", "Secondary Action", "Basic", "-", "Move up to Movement (AB)"},
-			{"Move And [Action]", "Full Action", "Basic", "*", "Move and [Main/Secondary Action] during the movement."},
-			{"Run", "Main Action", "Basic Skill", "Agility", "Move then become Running"},
-			{"Run (Full)", "Full Action", "Basic Skill", "Agility", "Move twice then become Running"},
-	};
 	private static String[][] actionsTable_stealth = {
-			{"Sneak", "Main Action", "Basic Skill", "Agility", "Avoid being noticed during your next Action"},
 			{"Conceal (Self)", "Main Action", "Basic Skill", "Agility", "Become Concealed"},
 			{"Conceal (Object)", "Main Action", "Basic Skill", "Intelligence", "Target becomes Concealed"},
-	};
-	private static String[][] actionsTable_general = {
-			{"[Action] Carefully", "Full Action", "Basic", "*", "Main Action with a +10 bonus"},
-			{"Use Inventory", "Secondary Action", "Basic", "-", "Take out, put away, place or pick up items; 1 per hand"},
-			{"Focus", "Secondary Action", "Basic", "-", "Get a +10 bonus to an Action or Reaction"},
-			{"Distract", "Secondary Action", "Basic", "-", "Give a -10 penalty to an Action or Reaction"},
-			{"Brace", "Reaction", "Basic", "-", "Get a +10 bonus to a passive Reaction"},
-			{"Reflex", "Reaction", "Basic Skill", "Perception", "Act before another character when waiting"},
+			{"Sneak", "Main Action", "Basic Skill", "Agility", "Avoid being noticed during your next Action [needs some thought]"},
+
+			{"Deceive", "Passive", "Basic Skill", "Fellowship", "Come across as speaking truthfully"},
 			{"Notice", "Passive", "Basic Skill", "Perception", "Get Clues or Detect something"},
-			{"Resist (Physically)", "Passive", "Basic", "Toughness", "Oppose becoming or overcome being Poisoned, Stunned, etc."},
-			{"Resist (Mentally)", "Passive", "Basic", "Willpower", "Oppose becoming or overcome being Frenzied, Frightened, Pinned, etc."},
+			{"Read Person (Sense Deception)", "Passive", "Basic Skill", "Perception", "Tell whether someone is lying to you"},
+	};
+	private static String[][] actionsTable_other = {
 			{"Administer Drug", "Main Action", "Basic Skill", "Intelligence", "Use a drug item (effect depends on the item)"},
 			{"Command", "Main Action", "Basic Skill", "Fellowship", "Get a bonus to Disposition"},
 			{"Inspire", "Main Action", "Basic Skill", "Fellowship", "Target becomes Inspired"},
 			{"Intimidate", "Main Action", "Basic Skill", "Strength", "Target becomes Intimidated"},
-			{"Deceive", "Passive", "Basic Skill", "Fellowship", "Come across as speaking truthfully"},
-			{"Read Person (Sense Deception)", "Passive", "Basic Skill", "Perception", "Tell whether someone is lying to you"},
 			{"Reference Lore (Assist)", "Main Action", "Basic Skill", "Intelligence", "Create an Aspect which gives a bonus"},
-			{"Reference Lore (Identify)", "Passive", "Basic Skill", "Intelligence", "Get Clues/Info"},
-	};
-	private static String[][] actionsTable_advanced = {
-			{"Focus Power", "*", "Talent", "Willpower", "Use a Psychic Power"},
-			{"Sense Immaterium", "Passive", "Skill", "Willpower", "Get Clues or Detect something"},
 			{"Treat Wounds (First Aid)", "Main Action", "Skill", "Intelligence", "Target becomes Treated (max 1 level)"},
 			{"Use Tech", "Main Action", "Skill", "Intelligence", "Use a tech item (effect depends on the item)"},
+
+			{"Reference Lore (Identify)", "Passive", "Basic Skill", "Intelligence", "Get Clues/Info"},
+			{"Sense Immaterium", "Passive", "Skill", "Willpower", "Get Clues or Detect something"},
+
+			{"Focus Power", "*", "Talent", "Willpower", "Use a Psychic Power"},
 	};
 	
 	@Override
@@ -116,25 +129,25 @@ class ActionsInCombatTimeFile implements PrintableFile {
 				+ "If doing the latter, the characters working together can act simultaneously by Waiting, in which case Degress of Success can be combined.");
 		printer.printHeader("Actions Summary");
 		printer.printTableTop(true, true, actionsTableHeaders);
-		printer.printTableRow_subheader("Fight Actions");
-		for(int i = 0; i < actionsTable_fight.length; i ++) {
-			printer.printTableRow(actionsTable_fight[i]);
+		printer.printTableRow_subheader("General Actions");
+		for(int i = 0; i < actionsTable_general.length; i ++) {
+			printer.printTableRow(actionsTable_general[i]);
 		}
 		printer.printTableRow_subheader("Movement Actions");
 		for(int i = 0; i < actionsTable_movement.length; i ++) {
 			printer.printTableRow(actionsTable_movement[i]);
 		}
+		printer.printTableRow_subheader("Fight Actions");
+		for(int i = 0; i < actionsTable_fight.length; i ++) {
+			printer.printTableRow(actionsTable_fight[i]);
+		}
 		printer.printTableRow_subheader("Stealth Actions");
 		for(int i = 0; i < actionsTable_stealth.length; i ++) {
 			printer.printTableRow(actionsTable_stealth[i]);
 		}
-		printer.printTableRow_subheader("General Actions");
-		for(int i = 0; i < actionsTable_general.length; i ++) {
-			printer.printTableRow(actionsTable_general[i]);
-		}
-		printer.printTableRow_subheader("Advanced Actions");
-		for(int i = 0; i < actionsTable_advanced.length; i ++) {
-			printer.printTableRow(actionsTable_advanced[i]);
+		printer.printTableRow_subheader("Other Actions");
+		for(int i = 0; i < actionsTable_other.length; i ++) {
+			printer.printTableRow(actionsTable_other[i]);
 		}
 		printer.printTableTail();
 		printer.println();
