@@ -12,7 +12,6 @@ class ActionsInCombatTimeFile implements PrintableFile {
 
 			{"Distract", "Secondary Action", "Basic", "-", "Give a -10 penalty to an Action or Reaction"},
 			{"Focus", "Secondary Action", "Basic", "-", "Get a +10 bonus to an Action or Reaction"},
-			{"Use Inventory", "Secondary Action", "Basic", "-", "Take out, put away, place or pick up items; 1 per hand"},
 
 			{"Brace", "Reaction", "Basic", "-", "Get a +10 bonus to a passive Reaction"},
 			{"Reflex", "Reaction", "Basic Skill", "Perception", "Act before another character when waiting"},
@@ -34,20 +33,20 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Grapple", "Main Action", "Basic Skill", "Strength", "Target becomes Grappled"},
 			{"Grapple (Break)", "Main Action", "Basic Skill", "Strength", "Overcome Grappled"},
 			{"Knock Down", "Main Action", "Basic Skill", "Strength", "Target becomes Prone"},
-			{"Stun", "Main Action", "Basic Skill", "Weapon Skill", "Target becomes Stunned"},
+			{"Stun", "Main Action", "Basic Skill", "Weapon Skill", "Target becomes Stunned [may remove]"},
 
-			{"Attack Repeatedly (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); extra hit per DoS"},
 			{"Attack Heavily (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); +1 damage per DoS"},
-			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
-			{"Charge", "Full Action", "Basic", "Weapon Skill", "Move 3 times then Attack (Melee); +1 damage per level of Running"},
+			{"Attack Repeatedly (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); extra hit per DoS"},
 			{"Attack Repeatedly (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); extra hit per DoS"},
 			{"Attack Precisely (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); -10 penalty to target's Cover per DoS"},
-			{"Tackle", "Full Action", "Basic Skill", "Strength", "Move twice then Knock Down; +10 bonus per bonus movement"},
+			{"Charge (Attack)", "Full Action", "Basic", "Weapon Skill", "Move 3 times then Attack (Melee); +1 damage per level of Running"},
+			{"Charge (Knock Down)", "Full Action", "Basic Skill", "Strength", "Move 3 times then Knock Down; +10 bonus per level of Running"},
+			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
 
 			{"Reload", "Secondary Action", "Basic", "-", "Get 1 step towards reloading a firearm"},
 
+			{"Dodge", "Reaction", "Basic Skill", "Agility", "Avoid ranged or melee hits"},
 			{"Duck", "Reaction", "Basic", "Cover", "Use Cover with a +10 bonus, then get Full Cover"},
-			{"Dodge", "Reaction", "Basic Skill", "Agility", "Avoid ranged hits"},
 			{"Parry", "Reaction", "Basic Skill", "Weapon Skill", "Avoid melee hits"},
 			{"Steady", "Reaction", "Basic", "Strength", "Oppose becoming Prone"},
 
@@ -109,7 +108,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 		printer.printSubheader("Stacking Bonuses");
 		printer.printParagraph("The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. "
 				+ "This doesn't apply to taking the same Secondary Action twice in one turn, as doing so counts as a single action giving a ±20 bonus/penalty until your next Action or Reaction. "
-				+ "Bonuses you get from Advantages last until the Advantage is overcome somehow. "
+				+ "Bonuses you get from Advantages last until the Advantage is overcome. "
 				+ "All bonuses and penalties stack.");
 		printer.printSubheader("Waiting");
 		printer.printParagraph("You can choose to Wait until some point between the end of your turn and the start of your next turn to take your Action. "
@@ -127,6 +126,14 @@ class ActionsInCombatTimeFile implements PrintableFile {
 		printer.printParagraph("The first way to work together is to take an action which confirs a bonus to the other character, or a penalty to their intended target. "
 				+ "The other way to work together is to simply perform the same Action with the same Target. "
 				+ "If doing the latter, the characters working together can act simultaneously by Waiting, in which case Degress of Success can be combined.");
+		printer.printSubheader("Interacting with items, objects and the inventory");
+		printer.printParagraph("A character can make a number of Interactions up to their Agility Bonus each turn. "
+				+ "A character can take a Secondary Action to make a further AB Interactions. "
+				+ "Interactions with objects are things like opening/closing doors, etc. "
+				+ "A more complex interaction with an item/object may take a whole Secondary Action or Full Action. "
+				+ "Inventory Interactions are things like picking up, placing, putting away and taking out items of a usable size. "
+				+ "Larger objects would take a whole Secondary Action to equip/unequip.");
+	
 		printer.printHeader("Actions Summary");
 		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("General Actions");

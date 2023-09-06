@@ -102,7 +102,7 @@ public class Talent extends SpecialRule {
 	
 	// Finesse //
 	public static final Talent agileFighter = new Talent("Agile Fighter",
-			"You can Dodge melee attacks.",
+			"You can Dodge melee attacks. [needs changing]",
 			"-", "Agility", 4);
 	public static final Talent agileStrike = new Talent("Agile Strike",
 			"Full Action; Move twice and Attack (Melee) during the movement.",

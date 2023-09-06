@@ -31,10 +31,10 @@ class ActionsOverviewFile implements PrintableFile {
 		printer.printHeader("Attack");
 		printer.printParagraph("The procedure for resolving an Attack action is as follows:");
 		printer.printList(true,
-				"Determine how many hits there are and which weapons they come from.",
-				"Determine how many hits are affected by the defence."
+				"Determine how many hits there are.",
+				"Determine how many hits are avoided by the defence."
 		);
-		printer.printParagraph("Then, for each hit:");
+		printer.printParagraph("Then, for each hit not avoided:");
 		printer.printList(true,
 				"Determine damage.",
 				"Apply that damage to the target."

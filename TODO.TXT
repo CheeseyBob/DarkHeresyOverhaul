@@ -2,39 +2,94 @@
 
 "Bear in mind the principle that anything can be attempted."
 
-!! Rethink the forcing-success thing.
+> Surprise in encounters
 
->>> Locations:
-	- Change 'Main Locations' to 'Areas' and add Area-specific locations (e.g. warehouses and landing bays in a Spaceport).
-	- Add Occupants rolls for each Location type.
-		- Ordinary occupants
-		- Head/leader NPC
-		- Servitors
-		- Small creatures
-    - Middle Hive Encountered Location - Black market dealer (besides weapons)
+> Create guides/procedures for spicing up battlemaps
+    *[can wait until after starting the playtest]
 
->>> Overmap:
-	- Add sights/sounds/smells characters would notice around locations & encounters.
-	- Add character number rolls to encounters
-	- Add locations for transport links
-	- Upper Hive Encountered Locations - Garden?
-    - Underhive encounters - People around a campfire
-    - Review encounter verbs: Betraying, worshipping, enslaving, travelling to see, fleeing, negotiating with, killing
+> ? Remove Calixis Sector and War Common Lore areas 
 
-> See if Extended Actions can be removed - only Rest uses this.
+> Daemonic Possession
+    - psychic power for daemons only
+    - inflicts corruption and insanity
+    - creates posessed aspect
+        - host can test WP each hour to resist
+        - corruption & insanity with each failure
 
-> Is the action Use Tech (Maintain) really needed?
+> See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
 
->>> Surprise in encounters
+> Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
+	- Skills descriptions
+
+> Think about how mounts/mounted combat will work
+    *[can wait until after starting the playtest]
+
 
 >>> Character Creation:
 	- GM determines starting Gelt and other resources according to campaign
 		- E.g. more Gelt if accommodation is not provided.
 
->>> How to gain XP:
-	- PCs submit reports to their Inquisitor
-		- Should this just be for bonus gelt?
-    	- If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
+>>> Character Advancement:
+    - How to gain XP:
+	    - PCs submit reports to their Inquisitor?
+		    - Should this just be for bonus gelt?
+    	    - If the PCs lie in their report, have an NPC make a Test to see if this raises suspicion from the Inquisition.
+                - Alternatively, have them be praised for killing the "heretics" (innocent civilians).
+        - Add formal rules for "Goal Driven Rewards" (see https://www.youtube.com/watch?v=zwpQwCWdhL8)
+
+>>> Talents:
+    - Lore talents for rituals?
+    - More Fieldcraft Talents
+	    - stuff about Beasts / wrangling / mounted combat
+		    - allow character to wrangle disposition zero creatures
+		    - Whisperer (X): particular affinity for a specific species
+	    - stuff about hunting/trapping/butchering
+        - stuff relating to stealth skills
+        - more stuff about unlocking/security/thievery/breaking-and-entering
+
+>>> Traits:
+    - Sound Constitution - bonus to maximum wounds.
+
+>>> Psychic Powers:
+    *[can wait until after starting the playtest]
+
+>>> Items
+	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
+    - Items for rituals
+
+>>> GM notes for item creation [can wait until after starting the playtest]
+    - Mastercrafted (Melee Weapon): Bonus +1; Hits +1; Damage +1; Availability -3
+    - Mastercrafted (Ranged Weapon): Range +1; Damage +1; + Reliable; Availability -3
+    - Mono (Melee Weapon): + Rending
+
+>>> Fate Points:
+    - Change spending a Fate Point from a re-roll to an auto-pass?
+
+>>> Actions:
+    - Review Cover mechanics
+    - Rethink the forcing-success thing.
+    - See if Extended Actions can be removed - only Rest uses this.
+    - Is the action Use Tech (Maintain) really needed?
+    - Is the action Stun needed? Does it even make narrative sense?
+    - Change Dodge to avoid both ranged and melee hits - will affect the Agile Fighter Talent
+    - What happened to active reload??
+    - Review Sneaking / the Sneak Action - Sneaking Aspect?? 
+
+>>> Aspects:
+    - Should Darkness be able to give a -100 penalty? Maybe cap at level 5?
+    - vacuum and zero-G environmental aspects
+    - Navigation Hazard for lack of oxygen?
+
+>>> Critical Damage:
+
+>>> Fear and Insanity:
+    - Can probably rework Fear Ratings to be more straightforward.
+    - Receiving insanity - DoS of Resist(Mental) gives amount to reduce by.
+
+>>> Corruption and Mutation:
+    - Mutation for reducing Size.
+
+>>> Psychic Phenomena:
 
 >>> NPCs:
     - Morale
@@ -47,7 +102,26 @@
             - half strength
                 - groups: half of the group KO'd
                 - solo NPCs: half wounds / Critical Damage?
-                
+
+>>> Overmap:
+	- Add sights/sounds/smells characters would notice around locations & encounters.
+	- Add character number rolls to encounters
+	- Add locations for transport links
+    - Add some encountered locations for things like major power conduits, comms hubs, flora
+        *[can wait until after starting the playtest]
+	- Upper Hive Encountered Locations - Garden?
+    - Underhive encounters - People around a campfire
+    - Review encounter verbs: Betraying, worshipping, enslaving, travelling to see, fleeing, negotiating with, killing
+
+>>> Locations:
+	- Change 'Main Locations' to 'Areas' and add Area-specific locations (e.g. warehouses and landing bays in a Spaceport).
+	- Add Occupants rolls for each Location type.
+		- Ordinary occupants
+		- Head/leader NPC
+		- Servitors
+		- Small creatures
+    - Middle Hive Encountered Location - Black market dealer (besides weapons)
+    - Places to find hirelings.
 
 >>> NPC Groups: [can wait until after starting the playtest]
 	- unranked characters such as Arbites K9s and Mechanicus Servitors
@@ -94,106 +168,14 @@
     - The beastial and the Alien: ...
     - From Beyond: ...
 
->>> Items
-	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
-
->>> GM notes for item creation [can wait until after starting the playtest]
-    - Mastercrafted (Melee Weapon): Bonus +1; Hits +1; Damage +1; Availability -3
-    - Mastercrafted (Ranged Weapon): Range +1; Damage +1; + Reliable; Availability -3
-    - Mono (Melee Weapon): + Rending
-
-> Change spending a Fate Point from a re-roll to an auto-pass?
-
-> Trait: Sound Constitution - bonus to maximum wounds.
-
-> Mutation for reducing Size.
-
-> What happened to active reload??
-
-> Should Darkness be able to give a -100 penalty? Maybe cap at level 5?
-
-> Change Run action into: Roll to Create Advantage Run then Move 3 times.
-> Run Aspect:
-    - Bonus to Move
-    - Bonus to Run action
-    - Penalty to ??
-    - Overcome at end of turn if Run action not taken.
-
-> Can probably rework Fear Ratings to be more straightforward.
-> Receiving insanity - DoS of Resist(Mental) gives amount to reduce by.
-
-> Add some encountered locations for things like major power conduits, comms hubs, flora
-    *[can wait until after starting the playtest]
-
-> More stuff to spice up location maps
-    - traps
-    - treasure
-    - security systems / guards
-    - hiding places / shadows
-    - secret rooms and passages
-    - verticality? stairs/ramps/ledges/etc.
-    - street furniture
-        - pillars
-        - low walls
-        - railings
-        - billboards
-        - lamp-posts
-        - tech-boxes (power/comms/etc.)
-        - maintenance hatches/passages
-        - garages / servitor bays
-        - piles of rubble (obstacle/cover)
-        - strewn loose rubble (difficult terrain)
-        - large pipes
-        - flooding / liquid spills
-> Create guides/procedures for spicing up battlemaps
-    *[can wait until after starting the playtest]
-
-> Places to find hirelings.
-
-> ? Remove Calixis Sector and War Common Lore areas 
-
-> Daemonic Possession
-    - psychic power for daemons only
-    - inflicts corruption and insanity
-    - creates posessed aspect
-        - host can test WP each hour to resist
-        - corruption & insanity with each failure
-
-> Lore items/talents for rituals
-
-> vacuum and zero-G environmental aspects
-> Navigation Hazard for lack of oxygen?
-
-> Interactions with beasts
-    *I think this is pretty much covered by the NPC interaction stuff already?
-
-> More Fieldcraft Talents
-	- stuff about Beasts / wrangling / mounted combat
-		- allow character to wrangle disposition zero creatures
-		- Whisperer (X): particular affinity for a specific species
-	- stuff about hunting/trapping/butchering
-    - stuff relating to stealth skills
-    - more stuff about unlocking/security/thievery/breaking-and-entering
-
-> See if I can work in the Modus Operandi table (see Idea Box) into the NPC/Groups and Events stuff - it could produce some cool results.
-
-> Write a player's guide with general info (e.g. about the general paradigm of Overcome/Create Advantage/Defend)
-	- Skills descriptions
-
-> Add formal rules for "Goal Driven Rewards" (see https://www.youtube.com/watch?v=zwpQwCWdhL8)
-
->>> Psychic Powers
-    *[can wait until after starting the playtest]
-
-> Think about how mounts/mounted combat will work
-    *[can wait until after starting the playtest]
-
 
 	~~ Test Scenarios ~~
 
-> Demonstration of cover & pinning
+> Demonstration of cover, move-and-shoot and reflex
 
-> Demonstration of charging and melee
+> Demonstration of pinning
+
+> Demonstration of running, charging and melee
 
 > Shootout in Darkness with Energy damage / Fire weapons.
 
@@ -238,12 +220,28 @@ https://www.dndspeak.com/2019/04/10/100-interesting-temples-and-monasteries/
 
 > Create a way to easily move player tokens between maps.
 
-> Make map stamps/tokens for terrain elements and objects which could be added to a battlemap.
-    - pillars
-    - lamp posts
-    - substations
-    - piles of rubble/refuse
-    - water/chemical spills
-    > Use square tokens (or maybe other non-round shapes) for objects (esp. interactable oblects like doors)
+> Redo channels to be compatible with doorways and expand the tileset to allow flexible creation of side-rooms, service tunnels, etc.
+
+> More stuff to spice up location maps
+    - traps
+    - treasure
+    - security systems / guards
+    - hiding places / shadows
+    - secret rooms and passages
+    - verticality? stairs/ramps/ledges/etc.
+    - street furniture
+        - pillars
+        - low walls
+        - railings
+        - billboards
+        - lamp-posts
+        - tech-boxes (power/comms/etc.)
+        - machinery
+        - maintenance hatches/passages
+        - garages / servitor bays
+        - piles of rubble (obstacle/cover)
+        - strewn loose rubble (difficult terrain)
+        - large pipes
+        - water/chemical flooding/spills
 
 
