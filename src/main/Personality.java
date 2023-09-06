@@ -135,6 +135,18 @@ public class Personality {
 			new SkillResponse(Skill.persuade, "+10", "-5"),
 			new SkillResponse(Skill.readPerson, "+10", "-5")
 	);
+	public static final Personality unhinged = new Personality("Unhinged",
+			"Completely insane.",
+			"d10: 1-3: becomes hostile 4-5: screams uncontrolably 6-7: flees 8-0: raves incoherently.",
+			new SkillResponse(Skill.charm, "-20", "-10"),
+			new SkillResponse(Skill.command, "+10", "-20"),
+			new SkillResponse(Skill.deceive, "+20", "-20"),
+			new SkillResponse(Skill.inspire, "+0", "-10"),
+			new SkillResponse(Skill.inquire, "-20", "-10"),
+			new SkillResponse(Skill.intimidate, "+0", "-20"),
+			new SkillResponse(Skill.persuade, "-10", "-10"),
+			new SkillResponse(Skill.readPerson, "-20", "-10")
+	);
 	public static final Personality vacant = new Personality("Vacant",
 			"Hardly a personality at all.",
 			"Becomes unresponsive.",

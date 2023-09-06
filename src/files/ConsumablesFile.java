@@ -39,6 +39,7 @@ class ConsumablesFile implements PrintableFile {
 		printer.printRowTop();
 		printer.printCol_item(6, Consumable.bioPatch_stimm);
 		printer.printCol_item(6, Consumable.injector_deTox);
+		printer.printCol_item(6, Consumable.injector_obscura);
 		printer.printCol_item(6, Consumable.injector_stimm);
 		printer.printCol_item(6, Consumable.multiInjector_stimm);
 		printer.printRowTail();

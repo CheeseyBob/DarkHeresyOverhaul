@@ -2,15 +2,14 @@ package main;
 class NPCGroup_Outcasts extends NPCGroup {
 	
 	// Ranked Characters //
-	public static final NPC dreg = new NPC("Dreg", "30,30,30,30,35,30,35,30,30")
+	public static final NPC dreg = new NPC("Dreg", "23,23,23,23,23,23,23,23,23")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withItemEquipped(Clothing.ragCastings)
-			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Ubiquitous (Automatic)"
-					+ "<br>Awe of the Inquisition");
-	// XP: 4/5
+					+ "<br>Disposition: Awe of the Inquisition (+20)");
+	// XP: 0/5; base Characteristic rolls: 23
 
-	public static final NPC outcast = new NPC("Outcast", "30,30,30,30,35,30,35,30,30")
+	public static final NPC outcast = new NPC("Outcast", "28,28,28,28,33,28,33,28,28")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withSpecialRule(Talent.trade_survivalist)
 			.withSkill(Skill.run.withBonus(10))
@@ -18,8 +17,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Ubiquitous (Automatic)"
-					+ "<br>Awe of the Inquisition");
-	// XP: 8/10
+					+ "<br>Disposition: Awe of the Inquisition (+20)");
+	// XP: 8/10; base Characteristic rolls: 28
 
 	public static final NPC sellSteel = new NPC("Sell-Steel", "35,35,30,30,35,30,35,30,30")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
@@ -30,7 +29,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Ammo.pistol_mag)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 8/10
 
 	public static final NPC outlaw = new NPC("Outlaw", "30,30,30,30,35,30,35,30,30")
@@ -46,7 +45,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 18/20
 
 	public static final NPC shadesman = new NPC("Shadesman", "40,40,30,30,35,30,35,30,30")
@@ -59,7 +58,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Ammo.pistol_mag)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 18/20
 
 	public static final NPC renegade = new NPC("Renegade", "30,30,30,30,35,35,35,30,35")
@@ -78,7 +77,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 28/30
 
 	public static final NPC nighthawk = new NPC("Nighthawk", "40,40,30,30,35,30,35,30,30")
@@ -91,7 +90,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Ammo.pistol_mag)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 28/30
 
 	public static final NPC rogue = new NPC("Rogue", "30,30,30,30,40,35,35,30,40")
@@ -116,7 +115,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 58/60
 
 	public static final NPC ganger = new NPC("Ganger", "40,40,40,40,35,30,35,30,30")
@@ -138,7 +137,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Prevalent (+20)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 58/60
 
 	public static final NPC assassin = new NPC("Assassin", "40,40,30,30,35,30,35,30,30")
@@ -160,7 +159,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Consumable.vial_lethalPoison_3)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Obscure (-20)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 60/60
 
 	public static final NPC fixer = new NPC("Fixer", "30,30,30,30,40,40,40,30,40")
@@ -188,7 +187,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 80/80
 
 	public static final NPC stubjack = new NPC("Stubjack", "40,40,40,40,40,30,35,30,30")
@@ -210,7 +209,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Average (+0)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 80/80
 
 	public static final NPC deathAdept = new NPC("Death Adept", "45,45,30,30,40,30,35,30,30")
@@ -232,7 +231,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Consumable.vial_lethalPoison_3)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Very Obscure (-30)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 80/80
 
 	public static final NPC shark = new NPC("Shark", "30,30,30,30,40,40,40,30,45")
@@ -262,7 +261,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 100/100
 
 	public static final NPC gangBoss = new NPC("Gang Boss", "40,40,40,40,40,30,35,30,40")
@@ -286,7 +285,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 98/100
 
 	public static final NPC assassinAtMarque = new NPC("Assassin at Marque", "45,45,30,30,40,30,35,30,40")
@@ -308,7 +307,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Tool.multiKey)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Extremely Obscure (-40)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 98/100
 
 	public static final NPC charlatan = new NPC("Charlatan", "30,30,30,30,40,40,40,30,45")
@@ -338,7 +337,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Tool.multiKey)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 148/150
 
 	public static final NPC gangLord = new NPC("Gang Lord", "40,40,40,40,40,40,40,40,45")
@@ -365,7 +364,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(MeleeWeapon.knife)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Niche (-10)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 148/150
 	
 	public static final NPC lordOfAssassins = new NPC("Lord of Assassins", "50,50,30,30,40,30,35,30,40")
@@ -394,10 +393,31 @@ class NPCGroup_Outcasts extends NPCGroup {
 			.withItemInInventory(Tool.multiKey)
 			.withItemInInventory(MiscItem.gelt)
 			.withNotes("Obscurity: Extremely Obscure (-40)"
-					+ "<br>Hatred of the Inquisition");
+					+ "<br>Disposition: Hatred of the Inquisition (-20)");
 	// XP: 150/150
 
 	// Misc Characters //
+	public static final NPC lunatic = new NPC("Lunatic", "25,25,25,25,30,16,25,20,10")
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withItemEquipped(Clothing.ragCastings)
+			.withItemInInventory(MeleeWeapon.knife)
+			.withNotes("Obscurity: Ubiquitous (Automatic)"
+					+ "<br>Disposition: Awe of the Inquisition (+20)"
+					+ "<br>Personality: Unhinged");
+
+	public static final NPC scavvy = new NPC("Scavvy", "18,18,25,25,25,16,25,20,10")
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withItemEquipped(Clothing.ragCastings)
+			.withNotes("Obscurity: Ubiquitous (Automatic)"
+					+ "<br>Disposition: Awe of the Inquisition (+20)");
+
+	public static final NPC waster = new NPC("Waster", "18,18,25,30,30,16,25,20,10") // TODO
+			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
+			.withSkill(Skill.administerDrug.withBonus(20))
+			.withItemEquipped(Clothing.ragCastings)
+			.withItemInInventory(Consumable.injector_obscura)
+			.withNotes("Obscurity: Ubiquitous (Automatic)"
+					+ "<br>Disposition: Awe of the Inquisition (+20)");
 	
 
 	NPCGroup_Outcasts() {
@@ -421,6 +441,8 @@ class NPCGroup_Outcasts extends NPCGroup {
 		rankedCharacterList.add(charlatan);
 		rankedCharacterList.add(gangLord);
 		rankedCharacterList.add(lordOfAssassins);
-		//miscCharacterList.add(xxx);
+		miscCharacterList.add(lunatic);
+		miscCharacterList.add(scavvy);
+		miscCharacterList.add(waster);
 	}
 }

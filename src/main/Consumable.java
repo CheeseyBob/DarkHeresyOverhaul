@@ -34,9 +34,11 @@ public class Consumable extends Item {
 			"Get a +40 bonus to Administer Drug.");
 	private static SpecialRule dose_deTox = new SpecialRule("Dose of De-Tox",
 			"Allows Administer Drug to make the target Drugged(De-Tox)(N).");
-	private static SpecialRule dose_stimm = new SpecialRule("Dose of Stimm ",
+	private static SpecialRule dose_obscura = new SpecialRule("Dose of Obscura",
+			"Allows Administer Drug to make the target Drugged(Obscura)(N).");
+	private static SpecialRule dose_stimm = new SpecialRule("Dose of Stimm",
 			"Allows Administer Drug to make the target Drugged(Stimm)(N).");
-	private static SpecialRule injectionMishap = new SpecialRule("Injection Mishap ",
+	private static SpecialRule injectionMishap = new SpecialRule("Injection Mishap",
 			"If Administer Drug fails, the aspect is downgraded. On a critical failure, the target takes 1d10-TB wounds.");
 	private static SpecialRule safeMisapplication = new SpecialRule("Safe Misapplication",
 			"If Administer Drug fails, no aspect is created.");
@@ -95,6 +97,10 @@ public class Consumable extends Item {
 	public static final Consumable injector_deTox = new Consumable("Injector (De-Tox)",
 			1, 1, Availability.COMMON)
 			.withSpecialRule(dose_deTox.withParameter("3"))
+			.withSpecialRule(injectionMishap);
+	public static final Consumable injector_obscura = new Consumable("Injector (Obscura)",
+			1, 1, Availability.PLENTIFUL)
+			.withSpecialRule(dose_obscura.withParameter("3"))
 			.withSpecialRule(injectionMishap);
 	public static final Consumable injector_stimm = new Consumable("Injector (Stimm)",
 			1, 1, Availability.PLENTIFUL)

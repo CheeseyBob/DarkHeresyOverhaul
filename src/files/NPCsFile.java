@@ -87,7 +87,8 @@ class NPCsFile implements PrintableFile {
 		printer.printTableRow("61-70", Personality.phlegmatic.name);
 		printer.printTableRow("71-80", Personality.sanguine.name);
 		printer.printTableRow("81-90", Personality.supine.name);
-		printer.printTableRow("91-00", Personality.vacant.name);
+		printer.printTableRow("91-98", Personality.vacant.name);
+		printer.printTableRow("99-00", Personality.unhinged.name);
 		printer.printTableTail();
 		
 		printer.printSubSubheader("Obscurity");
@@ -114,6 +115,7 @@ class NPCsFile implements PrintableFile {
 		printer.printCol_personality(6, Personality.phlegmatic);
 		printer.printCol_personality(6, Personality.sanguine);
 		printer.printCol_personality(6, Personality.supine);
+		printer.printCol_personality(6, Personality.unhinged);
 		printer.printCol_personality(6, Personality.vacant);
 		printer.printRowTail();
 		printer.printCollapsibleTail();
