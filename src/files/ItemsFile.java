@@ -64,7 +64,9 @@ class ItemsFile implements PrintableFile {
 		printer.printTableRow("SB+4", "can Drag only");
 		printer.printTableRow("SB+5", "cannot pick up");
 		printer.printTableTail();
-		printer.printParagraph("For items held with multiple hands, treat SB as 1 higher. Aditionally, a ranged weapon can be braced against terrain or a bipod/tripod as a Secondary Action, in which case treat SB as 1 higher.");
+		printer.printParagraph("For items held with multiple hands, treat SB as 1 higher. "
+				+ "This applies to Melee Weapon damage as well as the above table. ");
+		printer.printParagraph("Aditionally, a Ranged Weapon can be braced against terrain or a bipod/tripod, in which case treat SB as 1 higher on the above table.");
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();

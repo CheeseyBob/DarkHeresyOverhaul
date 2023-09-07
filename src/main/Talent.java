@@ -88,7 +88,7 @@ public class Talent extends SpecialRule {
 			"When you Tackle, you can spend Degrees of Success to continue moving, potentially to a new target. You can continue until you run out of movement or Degrees of Success.",
 			"Knock Down (+20)", "Strength", 4);
 	public static final Talent strongAttacks = new Talent("Strong Attacks",
-			"Use double your Strength Bonus for damage when using a melee weapon two-handed.",
+			"Use double your Strength Bonus for damage when using a melee weapon two-handed, instead of the usual SB+1.",
 			"-", "Strength", 4);
 	public static final Talent stunningBlow = new Talent("Stunning Blow",
 			"Full Action; Attack (Melee) with a weapon which does Impact damage; Target becomes Stunned for each Degree of Success (up to Strength Bonus).",

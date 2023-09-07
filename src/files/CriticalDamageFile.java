@@ -196,7 +196,7 @@ class CriticalDamageFile implements PrintableFile {
 		printer.printRowTop();
 		printer.printColTop(6);
 		printer.printSubheader("Humanoids");
-		printer.printTableTop("d10", "Location", false, true);
+		printer.printTableTop(false, true, "d10", "Location");
 		for(int i = 0; i < locationTable.length; i ++) {
 			printer.printTableRow(locationTable[i]);
 		}
@@ -205,12 +205,12 @@ class CriticalDamageFile implements PrintableFile {
 		printer.println();
 		printer.printColTop(6);
 		printer.printSubheader("Non-Humanoids");
-		printer.printList(true, new String[] {
+		printer.printList(true,
 				"Roll a d10 for each arm. On a 10, that arm is hit.",
 				"If an arm is not hit, roll a d10 for each leg. On a 10, that leg is hit.",
 				"If a leg is not hit, roll a d10 for each head. On a 10, that head is hit.",
-				"If a head is not hit, the body is hit",
-		});
+				"If a head is not hit, the body is hit"
+		);
 		printer.printColTail();
 		printer.println();
 		printer.printRowTail();
@@ -218,50 +218,50 @@ class CriticalDamageFile implements PrintableFile {
 		printer.println();
 		printer.printHeader_collapsible("Chemical");
 		printer.printCollapsibleTop();
-		printCriticalDamageEffectsTables(printer, effectsTable_chemical_arm, effectsTable_chemical_body, effectsTable_chemical_head, effectsTable_chemical_leg);
+		printCriticalDamageEffectsTables(printer, "Chemical", effectsTable_chemical_arm, effectsTable_chemical_body, effectsTable_chemical_head, effectsTable_chemical_leg);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Energy");
 		printer.printCollapsibleTop();
-		printCriticalDamageEffectsTables(printer, effectsTable_energy_arm, effectsTable_energy_body, effectsTable_energy_head, effectsTable_energy_leg);
+		printCriticalDamageEffectsTables(printer, "Energy", effectsTable_energy_arm, effectsTable_energy_body, effectsTable_energy_head, effectsTable_energy_leg);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Explosive");
 		printer.printCollapsibleTop();
-		printCriticalDamageEffectsTables(printer, effectsTable_explosive_arm, effectsTable_explosive_body, effectsTable_explosive_head, effectsTable_explosive_leg);
+		printCriticalDamageEffectsTables(printer, "Explosive", effectsTable_explosive_arm, effectsTable_explosive_body, effectsTable_explosive_head, effectsTable_explosive_leg);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Impact");
 		printer.printCollapsibleTop();
-		printCriticalDamageEffectsTables(printer, effectsTable_impact_arm, effectsTable_impact_body, effectsTable_impact_head, effectsTable_impact_leg);
+		printCriticalDamageEffectsTables(printer, "Impact", effectsTable_impact_arm, effectsTable_impact_body, effectsTable_impact_head, effectsTable_impact_leg);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printHeader_collapsible("Rending");
 		printer.printCollapsibleTop();
-		printCriticalDamageEffectsTables(printer, effectsTable_rending_arm, effectsTable_rending_body, effectsTable_rending_head, effectsTable_rending_leg);
+		printCriticalDamageEffectsTables(printer, "Rending", effectsTable_rending_arm, effectsTable_rending_body, effectsTable_rending_head, effectsTable_rending_leg);
 		printer.printCollapsibleTail();
 		printer.println();
 		printer.println();
 		printer.printFileTail();
 	}
 	
-	private void printCriticalDamageEffectsTables(DHOPrinter printer, String[][] arm, String[][] body, String[][] head, String[][] leg) {
+	private void printCriticalDamageEffectsTables(DHOPrinter printer, String type, String[][] arm, String[][] body, String[][] head, String[][] leg) {
 		printer.printRowTop();
-		printCriticalDamageEffectsTable(printer, "Arm", arm);
-		printCriticalDamageEffectsTable(printer, "Body", body);
-		printCriticalDamageEffectsTable(printer, "Head", head);
-		printCriticalDamageEffectsTable(printer, "Leg", leg);
+		printCriticalDamageEffectsTable(printer, type, "Arm", arm);
+		printCriticalDamageEffectsTable(printer, type, "Body", body);
+		printCriticalDamageEffectsTable(printer, type, "Head", head);
+		printCriticalDamageEffectsTable(printer, type, "Leg", leg);
 		printer.printRowTail();
 	}
 	
-	private void printCriticalDamageEffectsTable(DHOPrinter printer, String name, String[][] table) {
+	private void printCriticalDamageEffectsTable(DHOPrinter printer, String type, String location, String[][] table) {
 		printer.printColTop(6);
-		printer.printSubSubheader("Chemical Critical Damage Effects - "+name);
-		printer.printTableTop("Damage", "Effect", true, true);
+		printer.printSubSubheader(type+" Critical Damage Effects - "+location);
+		printer.printTableTop(true, true, "Damage", "Effect");
 		for(int i = 0; i < table.length; i ++) {
 			printer.printTableRow(table[i]);
 		}
