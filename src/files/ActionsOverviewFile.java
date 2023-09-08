@@ -88,8 +88,12 @@ class ActionsOverviewFile implements PrintableFile {
 		
 		
 		printer.printHeader("Create Advantage");
-		printer.printParagraph("Create Advantage involves making a Test to place an Aspect on something. This may be opposed by another character (generally the target of the action). The Aspect confers a ±10 modifier to something and may prevent or allow certain actions. The Aspect lasts until it is Overcome.");
-		printer.printParagraph("Duplicate Aspects attached to the same thing combine into a single upgraded Aspect. Each time an Aspect is upgraded, the modifier it confers increases by ±10.");
+		printer.printParagraph("Create Advantage involves making a Test to place an Aspect on something. "
+				+ "This may be opposed by another character (generally the target of the action). "
+				+ "The Aspect confers a ±10 modifier to something and may prevent or allow certain actions. "
+				+ "The Aspect lasts until it is Overcome.");
+		printer.printParagraph("Duplicate Aspects attached to the same thing combine into a single upgraded Aspect. "
+				+ "Each time an Aspect is upgraded, the modifier it confers increases by ±10.");
 		printer.printParagraph("Each degree of Success on the Test upgrades the Aspect by another level. The maximum level an Aspect can reach in this way is the Characteristic Bonus of the Characteristic used in the Test.");
 		
 		printer.printSubSubheader("Assist");
@@ -105,8 +109,13 @@ class ActionsOverviewFile implements PrintableFile {
 		
 		
 		printer.printHeader("Overcome");
-		printer.printParagraph("Overcome involves making a Test to overcome something (anything which isn't covered by other mechanics). Depending on what is being attempted, success on the Test may mean the obstacle is overcome, or it may mean some increment of progress towards the goal has been achieved. If it makes sense, each Degree of Success gives an additional increment of progress (decide what increments make the most sense for each situation).");
-		printer.printParagraph("For overcoming Aspects, a success on the Test means the Aspect gets downgraded one step, plus one per Degree of Success, to a maximum of the Characteristic Bonus of the Characteristic used for the Test. Downgrading an unupgraded Aspect means it is completely overcome and is removed.");
+		printer.printParagraph("Overcome involves making a Test to overcome something (anything which isn't covered by other mechanics). "
+				+ "Depending on what is being attempted, success on the Test may mean the obstacle is overcome, "
+				+ "or it may mean some increment of progress towards the goal has been achieved. "
+				+ "If it makes sense, each Degree of Success gives an additional increment of progress "
+				+ "(decide what increments make the most sense for each situation).");
+		printer.printParagraph("For overcoming Aspects, a success on the Test means the Aspect gets downgraded one step, plus one per Degree of Success. "
+				+ "Downgrading a level 1 Aspect means it is completely overcome and is removed.");
 		
 		printer.printSubSubheader("Crafting");
 		printer.printParagraph("Craft to get steps of progress towards creating an item.");

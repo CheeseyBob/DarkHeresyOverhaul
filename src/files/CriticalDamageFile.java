@@ -165,7 +165,7 @@ class CriticalDamageFile implements PrintableFile {
 			{"1-2", "Become Stunned and Bleeding Out"},
 			{"3-4", "Become Stunned(2) and Bleeding Out(2); 1d10 Fellowship damage"},
 			{"5-6", "Become Stunned(3) and Bleeding Out(3); permenantly reduce Fellowship by 1d10 (if 9-10, gain Lost Eye)"},
-			{"7-8", "Become Stunned(4) and Bleeding Out(4); permenantly reduce Fellowship by 1d10+5 (if 9-12, gain Lost Eye, if 13-15, gain Mute, if 16-20, gain Blind)"},
+			{"7-8", "Become Stunned(4) and Bleeding Out(4); permenantly reduce Fellowship by 1d10+5 (if 9-11, gain Lost Eye, if 12-13, gain Mute, if 14-15, gain Blind)"},
 			{"9-10", "Immediate death"},
 			{"11+", "Immediate death"},
 	};
@@ -191,7 +191,12 @@ class CriticalDamageFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printParagraph("When a character's Wounds exceed their Maximum Wounds, any damage they take causes Critical Damage in addition to inflicting Wounds - this includes the hit which first causes them to exceed their Maximum Wounds. Determine the location hit and apply the result from the relevant table. If the hit location would be a missing limb, consider the body to be hit. ");
+		printer.printParagraph("When a character's Wounds exceed their Maximum Wounds, any damage they take causes Critical Damage in addition to inflicting Wounds"
+				+ " - this includes the hit which first causes them to exceed their Maximum Wounds. "
+				+ "Determine the location hit and apply the result from the relevant table. "
+				+ "If the hit location would be a missing limb, consider the body to be hit. ");
+		printer.printParagraph("When Critical Damage results in a character's Aspect being upgraded, unlike a Create Advantage Action, this isn't limited by any Characteristic Bonus.");
+		
 		printer.printHeader("Critical Damage Location");
 		printer.printRowTop();
 		printer.printColTop(6);
