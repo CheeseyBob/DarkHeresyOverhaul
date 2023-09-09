@@ -135,41 +135,6 @@ class NPCsFile implements PrintableFile {
 		
 		
 		printer.printHeader("NPC Interactions");
-		printer.printSubheader("Attention");
-		printer.printParagraph(
-				"Sometimes, the PCs might gain Attention from a hostile group. "
-				+ "Determine which group this is randomly, unless it makes sense for it to be a particular group. "
-				+ "Attention triggers the hostile group to undertake some kind of action against the PCs. "
-				+ "This escalates each time the same group does this, on a scale from 1-10.");
-		printer.printList(false,
-				"1 - The group is curious about the PCs and tries to gather information on them (scouts, spies, etc.).",
-				"10 - The PCs are the group's number one enemy and they dedicate as many resources to destroying the PCs as they can."
-		);
-		printer.println("The PCs can gain Attention in a few different ways:");
-		printer.printList(false,
-				"The PCs fail a Subtlety Test after going about their business.",
-				"The PCs make a big scene in public.",
-				"The PCs interact with a hostile NPC who realises who they are.",
-				"The PCs engage in conflict with a hostile group."
-		);
-		
-		printer.printSubheader("Subtlety");
-		printer.printParagraph(
-				"After the PCs go out and about in public, make a Subtlety Test. "
-				+ "Determine the PC's Subtlety Characteristic using the table. "
-				+ "If they fail, the PCs gain Attention from a hostile group.");
-		printer.printTableTop(false, true, "Subtlety", "Example");
-		printer.printTableRow("01-10", "Loudly announce their every move in the name of the Inquisition");
-		printer.printTableRow("11-20", "Use their reputation and openly wear symbols of the Inquisition");
-		printer.printTableRow("21-30", "Openly attack suspects to subdue them for interrogation");
-		printer.printTableRow("31-40", "Respond to violence in kind with impressive weaponry");
-		printer.printTableRow("41-50", "Neither conceal their business, nor draw extra attention");
-		printer.printTableRow("51-60", "Trail and observe targets and inquire amongst their aquaintances");
-		printer.printTableRow("61-70", "Take measures to keep their presence unknown and avoid violent engagements");
-		printer.printTableRow("71-80", "Conceal their presence or identity until it is time to strike");
-		printer.printTableRow("81-90", "Operate under detailed false identities to bring down their enemies from within");
-		printer.printTableRow("91-00", "Hidden or disguised so perfectly that none suspect their true nature");
-		printer.printTableTail();
 		
 		printer.printSubheader("Commanding Subordinates");
 		printer.printParagraph("A character can Command NPCs:");

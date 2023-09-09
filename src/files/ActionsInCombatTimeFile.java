@@ -35,7 +35,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Attack Repeatedly (Melee)", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); extra hit per DoS"},
 			{"Attack Repeatedly (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); extra hit per DoS"},
 			{"Attack Precisely (Ranged)", "Full Action", "Basic", "Ballistic Skill", "Attack (Ranged); -10 penalty to target's Cover per DoS"},
-			{"Charge (Attack)", "Full Action", "Basic", "Weapon Skill", "Move 3 times then Attack (Melee); +1 damage per level of Running"},
+			{"Charge (Attack)", "Full Action", "Basic", "Weapon Skill", "Move 3 times then Attack (Melee); +1 damage per 5m moved"},
 
 			{"Reload", "Secondary Action", "Basic", "-", "Get 1 step towards reloading a firearm"},
 
@@ -53,7 +53,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Knock Down", "Main Action", "Basic Skill", "Strength", "Target becomes Prone"},
 			{"Stun", "Main Action", "Basic Skill", "Weapon Skill", "Target becomes Stunned [may remove]"},
 
-			{"Charge (Knock Down)", "Full Action", "Basic Skill", "Strength", "Move 3 times then Knock Down; +10 bonus per level of Running"},
+			{"Charge (Knock Down)", "Full Action", "Basic Skill", "Strength", "Move 3 times then Knock Down; +10 bonus per 5m moved"},
 			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
 
 			{"Steady", "Reaction", "Basic", "Strength", "Oppose becoming Prone"},
