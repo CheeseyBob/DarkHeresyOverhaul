@@ -403,49 +403,48 @@ Encounter: Two knife-wielding scum are trying to bust their buddies out of the c
 > Distance: Middle Hive => 5d10m = 24m
 
 
-********
-Movement
+GM: "About half way there, you hear a sudden commotion in the crowds ahead of you. A couple of screams. Looking through the crowd, you see an enforcer on the floor in a pool of blood and two figures running off down a side passage."
 
-Move (Secondary) - AB meters
-Move (Full) - 2*AB meters
-Run (Main) - AB meters then become Running
-Run (Full) - 2*AB meters then become Running
+PCs: "We run after them."
 
-Example: AB = 3
-Move (Secondary) - 3m
-Move (Full) - 6m
-Run (Main) - 3m -> 6m
-Run (Full) - 6m -> 12m
--- DH --
-Half Move - 3m
-Full Move - 6m
-Run - 18m
+GM: "Ok, we'll go to Combat Time."
 
-Alternative:
-Move (Secondary) - AB meters
-Move (Full) - 2*AB meters
-Run (Main) - Become Running then 2*AB meters
-Run (Full) - Become Running then 3*AB meters
+***
 
-Charge (Full) - 3*AB meters then attack
+Encounter plays out
+> Clue: Two Dregs attacked an Enforcer at Station Aureus 12
+> GM grants 1 XP for first combat encounter
+> PCs gain Attention
 
-Example: AB = 3
-Move (Secondary) - 3m
-Move (Full) - 6m
-Run (Main) - 6-12m -> 12m
-Run (Full) - 9-18m -> 18m
+***
 
-Charge (Full) - 9-18m then attack
+End of the session: resolve Happenings and Attention
+
+Happenings: roll of 1 => Development of Happening 1:
+Luuctum, an Eldar-worshipping cult, has stolen the armour of Bishop Stupravi Supernus from the crypts of the Cathedral of Saint Drusus. The relic is in fact Eldar rune armour.
+> roll of 38 => Event
+> Event: roll of 52 => Heretical ideas being spread
+Cult Luuctum is curculating a rumour that Bishop Stupravi Supernus has risen from the dead. He was paranoid of death due to knowledge of the Enemy Beyond, so when he learned of Eldar Waystones / Spirit Stones, he became obsessed with trying to obtain one to preserve his soul. He eventually managed to obtain a set of rune armour from a fallen Warlock, which he secretly kept and was interred with when he died about 20 years ago. Cult Luuctum follow his heretical writings and wish to bring him back, contact the Eldar and protect their own souls.
 
 
+Attention from Dregs: 1
+A Lunatic who spotted them killing the two Dregs at Station Aureus 12 is following them, taking notes and sketches, believing them to be some kind of prophetic arrival.
 
-********
+Attention from Criminal Cartels: 1
+Fixer Cain, who realised they were inquisitors when they approached him, is suspicious of why they are here and has sent a pair of Renegades to follow them and see what they're up to.
 
---> Make some alternate Dreg charsheets with reduced stats (addict wasters, diseased scavvies, etc.)
+Attention from Cult Luuctum: 1
+The cult has learned of their arrival and has a Confessor to track down their base of operations.
 
---> PCs go looking around the underhive (test fight mechanics)
+***
 
---> Resolve the PCs gaining Attention (x2) at the end of the session
+Start of the next session
+
+
+
+--> PCs buy a light source
+
+--> PCs go looking around the underhive
 
 --> PCs go to see Fixer Cain to buy some weapons
 

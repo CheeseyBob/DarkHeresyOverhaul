@@ -2,12 +2,26 @@
 
 "Bear in mind the principle that anything can be attempted."
 
+> Rethink a few things:
+    - Attacks with multiple weapons should sum the bonuses (makes sense that it would be easier to hit)
+    - This should include punches/kicks
+    - Kicks should have a +0 bonus instead of +10
+    - Knives should have a +10 bonus instead of +0
+
 > Surprise in encounters
+
+> Should Prone even be an Aspect? What would happen to the Knock Down Action? Become Stunned and/or moved some distance?
+
+> Should passive opposition to Aspects happen at the start or end of the character's turn?
 
 > Create guides/procedures for spicing up battlemaps
     *[can wait until after starting the playtest]
 
 > ? Remove Calixis Sector and War Common Lore areas 
+
+> Moving through a Mob - Test Agility with a +10 bonus for each Mob AL below the mob's area (e.g. 4x4 Mob(14) is +20 bonus)
+    - By extension, Test Agility with no modifier to move past a solo character.
+> Mob attacks - multiply for each adjacent point in the mob area.
 
 > Daemonic Possession
     - psychic power for daemons only
@@ -49,11 +63,14 @@
 
 >>> Traits:
     - Sound Constitution - bonus to maximum wounds.
+    - Just A Body
+    - Just A Head
 
 >>> Psychic Powers:
     *[can wait until after starting the playtest]
 
 >>> Items
+    - Haemostatic powder Consumable for bonus to Treat Wounds (First Aid).
     - Put links to the individual item cards in the items pages
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
     - Items for rituals
@@ -69,12 +86,13 @@
 >>> Actions:
     - Review Cover mechanics
     - Rethink the forcing-success thing.
+    - What happened to active reload??
+    - Review Sneaking / the Sneak Action - Sneaking Aspect?? 
     - See if Extended Actions can be removed - only Rest uses this.
     - Is the action Use Tech (Maintain) really needed?
     - Is the action Stun needed? Does it even make narrative sense?
     - Change Dodge to avoid both ranged and melee hits - will affect the Agile Fighter Talent
-    - What happened to active reload??
-    - Review Sneaking / the Sneak Action - Sneaking Aspect?? 
+    - Rename 
 
 >>> Aspects:
     - Should Darkness be able to give a -100 penalty? Maybe cap at level 5?
@@ -97,9 +115,11 @@
         - Willpower Test (Fear Test?)
         - Roll on:
             - first contact (are they willing to fight at all)
+                - +40 bonus?
             - first blood
                 - groups: first KO
                 - solo NPCs: fist (major?) wound
+                - +20 bonus?
             - half strength
                 - groups: half of the group KO'd
                 - solo NPCs: half wounds / Critical Damage?
@@ -178,6 +198,8 @@
 
 > Demonstration of running, charging and melee
 
+> Demonstration of Bleeding Out / Treat Wounds (First Aid) allied NPC gets shot by a sniper-assassin
+
 > Shootout in Darkness with Energy damage / Fire weapons.
 
 > Something in vacuum & zero gravity
@@ -187,16 +209,33 @@
 
 	~~ Memos ~~
 
+> Daemonic curse/pact where the victim's soul is slowly sucked away, but they can regain their vigour by causing others to suffer.
+
+
+Khorne: Violence, murder, and bloodshed. Also Bravery, honesty, and honor.
+Tzeench: Scheming, mutation, and betrayal. Also hope, change, and adaptation
+Nurgle: sickness, decay, and death. Also fortitude, family, and acceptance.
+Slaanesh: Suffering, excess, and pain. Also love, art, and beauty.
+
+
 Ideas for psychic powers:
-> wytchcraft power - inflict corruption
-> telepathy power - inflict insanity
-> biomancy power - inflict characteristic damage
+> wytchcraft powers
+    - inflict corruption
+> telepathy power
+    - inflict insanity
+    - Disorientate: target counts as Helpless (opponents get +30 bonus against them) until the start of their next turn.
+> biomancy power
+    - inflict characteristic damage
 
 
 Ideas for archeotech items:
 > Purifier - removes corruption
 > Nullification Sphere - penalty to psykers nearby
 > Absolute Stummer - creates an area of complete silence; prolonged use causes Fatigue
+
+
+Ideas for daemonic artefacts:
+> Slaneshi artwork that is so transfixingly beautiful that it makes the viewer go insane.
 
 
 Ideas for NPCs:
