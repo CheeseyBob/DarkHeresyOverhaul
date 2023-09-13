@@ -95,8 +95,13 @@ class ActionsInCombatTimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
+		printer.printParagraph("In Combat Time, the characters in the scene each take turns one after the other. "
+				+ "The first character to take their turn in a scene is whoever the GM determines acts first (this may call for Notice or Reflex Tests). "
+				+ "The PCs' turns all happen consecutively in whatever order the players see fit. "
+				+ "Similarly, the NPCs' turns all happen consecutively as determined by the GM. "
+				+ "Once all characters have taken a turn, keep going in the same order until there is no need for Combat Time anymore.");
 		printer.printParagraph(
-				"Each character can take 1 Main Action and 1 Secondary Action on their turn (in any order). "
+				"On their turn, each character can take 1 Main Action and 1 Secondary Action (in any order). "
 				+ "Anything involving a Test will typically be a Main Action; anything simple enough to not need a test will typically be a Secondary Action. "
 				+ "A character can take Full Action, which is equivalent to a combined Main Action and Secondary Action, instead of taking those actions separately.");
 		printer.printParagraph("Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and take Passive Actions any number of times. "
