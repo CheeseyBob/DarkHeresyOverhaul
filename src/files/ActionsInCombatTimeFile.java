@@ -137,11 +137,6 @@ class ActionsInCombatTimeFile implements PrintableFile {
 		printer.printParagraph("If your Agility Bonus is 0, then you can still Move 1m, but you cannot Run. "
 				+ "If your Agility is 0, then you are unable to move.");
 		
-		printer.printSubheader("Teamwork");
-		printer.printParagraph("The first way to work together is to take an action which confirs a bonus to the other character, or a penalty to their intended target. "
-				+ "The other way to work together is to simply perform the same Action with the same Target. "
-				+ "If doing the latter, the characters working together can act simultaneously by Waiting, in which case Degress of Success can be combined.");
-		
 		printer.printSubheader("Interacting with items, objects and the inventory");
 		printer.printParagraph("A character can make a number of Interactions up to their Agility Bonus each turn. "
 				+ "A character can take a Secondary Action to make a further AB Interactions. "

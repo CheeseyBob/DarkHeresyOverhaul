@@ -17,7 +17,8 @@ class ActionsOverviewFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printHeader("Tests");
+		
+		printer.printSubheader("Tests");
 		printer.printParagraph("A Characteristic Test (for some Characteristic) is done as follows:");
 		printer.printList(true,
 				"Roll a d100 and compare to the Characteristic (plus/minus modifiers).",
@@ -25,6 +26,19 @@ class ActionsOverviewFile implements PrintableFile {
 				"If the roll is > 90 + Characteristic Bonus, the Test is a critical failure.",
 				"Otherwise the test is a failure.",
 				"If the Test is a success, the Degrees of Success = tens digit of the roll."
+		);
+		
+		printer.printSubheader("Teamwork");
+		printer.printParagraph("The first way to work together is to take an action which confirs a bonus to the other character, or a penalty to their intended target. "
+				+ "The other way to work together is to simply perform the same Action with the same Target. "
+				+ "If doing the latter, the characters working together can act simultaneously (by Waiting, if in Combat Time), in which case Degress of Success can be combined.");
+		
+		printer.printSubheader("Types of Action");
+		printer.printParagraph("There are three types of Action which require a Test:");
+		printer.printList(false,
+				"Attack",
+				"Create Advantage",
+				"Overcome"
 		);
 		
 		
