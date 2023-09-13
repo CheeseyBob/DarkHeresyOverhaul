@@ -258,5 +258,7 @@ class LocationsFile implements PrintableFile {
 		printer.printParagraph("<i>"+location.description+"</i>");
 		printer.printParagraph("Residents: "+location.residents);
 		printer.printParagraph("Guests: "+location.guests);
+		if(location.notes != null)
+			printer.printParagraph(location.notes);
 	}
 }

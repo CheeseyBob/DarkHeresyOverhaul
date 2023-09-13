@@ -428,17 +428,86 @@ Cult Luuctum is curculating a rumour that Bishop Stupravi Supernus has risen fro
 
 
 Attention from Dregs: 1
-A Lunatic who spotted them killing the two Dregs at Station Aureus 12 is following them, taking notes and sketches, believing them to be some kind of prophetic arrival.
+A Madman who spotted them killing the two Dregs at Station Aureus 12 is following them, taking notes and sketches, believing them to be some kind of prophetic arrival.
 
 Attention from Criminal Cartels: 1
 Fixer Cain, who realised they were inquisitors when they approached him, is suspicious of why they are here and has sent a pair of Renegades to follow them and see what they're up to.
 
 Attention from Cult Luuctum: 1
-The cult has learned of their arrival and has a Confessor to track down their base of operations.
+The cult has learned of their arrival and has sent a Confessor to track down their base of operations.
 
 ***
 
 Start of the next session
+
+> Time advances to M41.Y023.501.0
+
+> Navigate: Test Intelligence:
+    - Castus: Test Intelligence (42): roll of 14 => Success + 1 DoS
+    - Plex: Test Intelligence (30): roll of 29 => Success + 2 DoS
+    => PCs Overcome the Navigation Challenge
+
+GM: "The rest of the way to Lazerus Gadgets is uneventful. You arrive just behind two other citizens who enter the shop ahead of you. As you walk through the door, you see the shop floor has a rather odd layout - no furniture save for a raised platform, about chest high, across the centre of the room, which looks more like part of the floor than a countertop, on which an assortment of tech items are haphazardly arranged. There are five other shoppers inside, one of whom is talking to (presumably) Lazerus - a slim young man with outrageous blond hair and fancy clothes."
+
+PCs: "We'll look for some kind of light source - a Glow Globe or a Lamp Pack."
+
+
+Glow Globe: Abundant (+30)
+Lamp Pack: Plentiful (+20)
+
+
+** Determining items available at a shop
+
+Abundant +30
+Plentiful +20
+Common +10
+Average +0
+Scarce -10
+Rare -20
+Very Rare -30
+Extremely Rare -40
+Near Unique -50
+Unique -60
+
+Characteristic 0
+Abundant 30%
+Plentiful 20%
+Common 10%
+Average 0%
+
+Characteristic 10
+Abundant 40%
+Plentiful 30%
+Common 20%
+Average 10%
+Scarce 0%
+
+Characteristic 20
+Abundant 50%
+Plentiful 40%
+Common 30%
+Average 20%
+Scarce 10%
+Rare 0%
+
+
+Sells [Melee Weapons] up to [Scarce] with Availability 50
+Abundant 80%
+Plentiful 70%
+Common 60%
+Average 50%
+Scarce 40%
+
+If the Availability Test is a Failure (except Critical Failure), a lower availability variant of the desired item will be available if the increased Availability Modifier would have led to Success.
+
+For example, ...
+
+
+
+Commercial Hub
+    - No End of Shops: Can keep making Availability Tests every hour until the desired item is found.
+
+**
 
 
 

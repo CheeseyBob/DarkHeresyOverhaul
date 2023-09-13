@@ -125,8 +125,13 @@ class ItemsFile implements PrintableFile {
 		printer.println();
 		printer.printSubheader_collapsible("Aquiring Items - Purchase and Requisition");
 		printer.printCollapsibleTop();
-		printer.printParagraph("Characters can aquire items and services either through payment and barter, or by using their influence and authority to requisition what is needed. First, they must locate someone or somewhere which has the desired item available.");
-		printer.printParagraph("To find a suitable location in the overmap area, use Inquire or Search (or simply Travel to a previously found location). The item's availability modifier applies to this roll. The type of area will also affect the difficulty and the potential outcomes.");
+		printer.printParagraph("Characters can aquire items and services either through payment and barter, "
+				+ "or by using their influence and authority to requisition what is needed. "
+				+ "First, they must locate someone or somewhere which has the desired item available.");
+		printer.printParagraph("To find a suitable location in the overmap area, "
+				+ "use Inquire or Search (or simply Travel to a previously found location). "
+				+ "The item's availability modifier applies to this roll. "
+				+ "The type of area will also affect the difficulty and the potential outcomes.");
 		printer.println("<b>Trade:</b>");
 		printer.printList(true,
 				"Roll to determine the starting price (selling items uses the bracket below the buying price).",

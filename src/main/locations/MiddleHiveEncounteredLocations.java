@@ -19,24 +19,28 @@ public class MiddleHiveEncounteredLocations {
 			"1d10-7 Rank 1-3 Outcasts (detainees)");
 	public static final Location shop_food = new Location("Shop selling food",
 			"____",
-			"[description]",
-			"[residents]",
-			"[guests]");
+			"large room with shelves and counter; storeroom with crates; small office",
+			"1-3 Citizens",
+			"1d10 Citizens",
+			"Sells Food up to Plentiful with Availability 50");
 	public static final Location shop_clothing = new Location("Shop selling clothing and apparel",
 			"____",
-			"[description]",
-			"[residents]",
-			"[guests]");
+			"large room with shelves, dressing rooms and counter; storeroom with crates; small office",
+			"1-3 Citizens",
+			"1d10 Citizens",
+			"Sells Clothing up to Common");
 	public static final Location dealer_weapons = new Location("Black-market dealer selling weapons and armour",
 			"____'s Place (no public name)",
-			"[description]",
-			"1 Fixer (Outcasts)",
-			"1 random Outcast");
+			"small room with counter, locked storeroom with locked chests",
+			"1 Fixer",
+			"1 random Outcast",
+			"Sells Weapons and Armour up to Rare with Availability 35");
 	public static final Location shop_tech = new Location("Shop selling tech items",
 			"____ Contraptions/Devices/Gadgets/Gizmos/Tech",
 			"Smell of plastic; shelves; counter; storeroom; small office",
 			"1 Citizen with Trade (Merchant)",
-			"1d10 - 5 Citizens");
+			"1d10 - 5 Citizens",
+			"Sells Tools and Misc Items up to Scarce with Availability 50");
 	public static final Location shop_specialist = new Location("Specialist shop selling a specific kind of item",
 			"____",
 			"[description]",

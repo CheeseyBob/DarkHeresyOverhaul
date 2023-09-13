@@ -397,7 +397,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 	// XP: 150/150
 
 	// Misc Characters //
-	public static final NPC lunatic = new NPC("Lunatic", "25,25,25,25,30,15,25,20,10")
+	public static final NPC madman = new NPC("Madman", "25,25,25,25,30,15,25,20,10")
 			.withSpecialRule(Talent.language.withParameter("Low Gothic"))
 			.withItemEquipped(Clothing.ragCastings)
 			.withItemInInventory(MeleeWeapon.knife)
@@ -441,7 +441,7 @@ class NPCGroup_Outcasts extends NPCGroup {
 		rankedCharacterList.add(charlatan);
 		rankedCharacterList.add(gangLord);
 		rankedCharacterList.add(lordOfAssassins);
-		miscCharacterList.add(lunatic);
+		miscCharacterList.add(madman);
 		miscCharacterList.add(scavvy);
 		miscCharacterList.add(waster);
 	}
