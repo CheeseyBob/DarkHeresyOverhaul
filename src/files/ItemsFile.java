@@ -126,16 +126,42 @@ class ItemsFile implements PrintableFile {
 		printer.printSubheader_collapsible("Aquiring Items - Purchase and Requisition");
 		printer.printCollapsibleTop();
 		printer.printParagraph("Characters can aquire items and services either through payment and barter, "
-				+ "or by using their influence and authority to requisition what is needed. "
-				+ "First, they must locate someone or somewhere which has the desired item available.");
-		printer.printParagraph("To find a suitable location in the overmap area, "
-				+ "use Inquire or Search (or simply Travel to a previously found location). "
-				+ "The item's availability modifier applies to this roll. "
-				+ "The type of area will also affect the difficulty and the potential outcomes.");
+				+ "or by using their influence and authority to requisition what is needed. ");
+		printer.printParagraph("First, they must locate someone or somewhere which has the desired item available. "
+				+ "If they know of a potential location, they can simply travel there. "
+				+ "Alternatively, they can Inquire about where such a place might be "
+				+ "(the item's availability modifier applies to this roll). ");
+		printer.printParagraph("When at a location where the desired item may be available, "
+				+ "Test Availability to determine whether the item is available there. "
+				+ "Appropriate locations will have an Availability Chracteristic, "
+				+ "or if not then use 50 as a baseline, "
+				+ "which is then modified my the item's Availability modifier.");
+		printer.printParagraph("On a Success, the item is available at that location at that time "
+				+ "(reroll on subsequent visits if a reasonable amout of time has passed). "
+				+ "The Degrees of Success determine the quantity of the item that is available, "
+				+ "as indicated in the table below. "
+				+ "In addition to this, they could be offered higher quality variants of the desired item "
+				+ "(for a higher price, of course), "
+				+ "with the Degrees of Success indicating how many Availability levels lower the variant might be.");
+		printer.printParagraph("On a Failure, the item is not available. "
+				+ "However, a lower quality variant of the item may be available if using the Availability modifier of the variant would have been a Success.");
+		printer.printTableTop(false, true, "DoS", "Number Available");
+		printer.printTableRow("Success", "1");
+		printer.printTableRow("1", "2-3");
+		printer.printTableRow("2", "4-7");
+		printer.printTableRow("3", "8-15");
+		printer.printTableRow("4", "16-31");
+		printer.printTableRow("5", "32-63");
+		printer.printTableRow("6", "64-127");
+		printer.printTableRow("7", "128-255");
+		printer.printTableRow("8", "256-511");
+		printer.printTableRow("9", "512+");
+		printer.printTableTail();
+		
 		printer.println("<b>Trade:</b>");
 		printer.printList(true,
 				"Roll to determine the starting price (selling items uses the bracket below the buying price).",
-				"Haggle to determine discount (optional).",
+				"(Optional) Haggle to determine discount.",
 				"Make the trade."
 		);
 		printer.println("<b>Requisition:</b>");
