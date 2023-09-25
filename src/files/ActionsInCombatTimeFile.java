@@ -54,7 +54,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Stun", "Main Action", "Basic Skill", "Weapon Skill", "Target becomes Stunned [may remove]"},
 
 			{"Charge (Knock Down)", "Full Action", "Basic Skill", "Strength", "Move 3 times then Knock Down; +10 bonus per 5m moved"},
-			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee); move target 1m + 1m per DoS"},
+			{"Manoeuvre", "Full Action", "Basic", "Weapon Skill", "Attack (Melee) then Move self and Target"},
 
 			{"Steady", "Reaction", "Basic", "Strength", "Oppose becoming Prone"},
 	};
@@ -73,7 +73,7 @@ class ActionsInCombatTimeFile implements PrintableFile {
 			{"Inspire", "Main Action", "Basic Skill", "Fellowship", "Target becomes Inspired"},
 			{"Intimidate", "Main Action", "Basic Skill", "Strength", "Target becomes Intimidated"},
 			{"Reference Lore (Assist)", "Main Action", "Basic Skill", "Intelligence", "Create an Aspect which gives a bonus"},
-			{"Treat Wounds (First Aid)", "Main Action", "Skill", "Intelligence", "Target becomes Treated (max 1 level)"},
+			{"Treat Wounds (First Aid)", "Main Action", "Skill", "Intelligence", "Overcome the Target being Bleeding Out"},
 			{"Use Tech", "Main Action", "Skill", "Intelligence", "Use a tech item (effect depends on the item)"},
 
 			{"Reference Lore (Identify)", "Passive", "Basic Skill", "Intelligence", "Get Clues/Info"},
@@ -95,25 +95,25 @@ class ActionsInCombatTimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.printParagraph("In Combat Time, the characters in the scene each take turns one after the other. "
+		printer.printParagraph(
+				"In Combat Time, the characters in the scene each take turns one after the other. "
 				+ "The first character to take their turn in a scene is whoever the GM determines acts first (this may call for Notice or Reflex Tests). "
 				+ "The PCs' turns all happen consecutively in whatever order the players see fit. "
 				+ "Similarly, the NPCs' turns all happen consecutively as determined by the GM. "
 				+ "Once all characters have taken a turn, keep going in the same order until there is no need for Combat Time anymore.");
 		printer.printParagraph(
-				"On their turn, each character can take 1 Main Action and 1 Secondary Action (in any order). "
-				+ "Anything involving a Test will typically be a Main Action; anything simple enough to not need a test will typically be a Secondary Action. "
-				+ "A character can take Full Action, which is equivalent to a combined Main Action and Secondary Action, instead of taking those actions separately.");
-		printer.printParagraph("Additionally, between the start of their turn and the start of their next turn, each character can take 1 Reaction and take Passive Actions any number of times. "
-				+ "Reactions cover things done in opposition to another character's Action. "
-				+ "Passive Action covers anything which doesn't require the character to do anything (for example, resisting fear).");
-		printer.printParagraph("In general, a Main Action is a Test to either hit a target with an attack, create an advantage, or overcome an Aspect. "
-				+ "You can take any Secondary Action instead of a Main Action.");
-		printer.printParagraph("A Secondary Action is either a simple action which doesn't require a Test, or a supplementary action which gives a temporary ±10 modifier to something.");
-		printer.printParagraph("A Full Action is an improved Main Action - either with a +10 bonus to the Test, or with Degrees of Success giving some extra effect. "
-				+ "Alternatively, any Secondary Action can be taken as a Full Action - this applies the effect twice, but counts as a single Action.");
-		printer.printParagraph("Reactions and Passive Actions are a Test to oppose another character's Action or to overcome an Aspect on the character. "
-				+ "Alternatively, a Reaction can be a +10 bonus to something.");
+				"On their turn, a character can take 1 Main Action and 1 Secondary Action (in any order). "
+				+ "Alternatively, the character can take 1 Full Action (which is equivalent to a combined Main Action and Secondary Action), or 2 Secondary Actions. "
+				+ "Additionally, between the start of their turn and the start of their next turn, a character can take 1 Reaction and take Passive Actions any number of times.");
+		printer.printList(false,
+				"A Main Action involves a Test to either (a) hit a target with an Attack, (b) Create an Advantage, or (c) Overcome something. ", 
+				"A Secondary Action is a supplementary action which gives a one-time ±10 modifier to something or some other simple action which doesn't require a Test. ",
+				"A Full Action is an improved Main Action - either with a +10 bonus to the Test, or with Degrees of Success giving some extra effect. ",
+				"A Reaction is done to oppose to another character's Action. ",
+				"A Passive Action is any action which doesn't require the character to do anything. ");
+		printer.printParagraph(
+				"A character can take the same Secondary Action twice on their turn, "
+				+ "which can be counted as a single Full Action giving a one-time modifier of ±20 instead of ±10, if applicable.");
 
 		printer.printSubheader("Stacking Bonuses");
 		printer.printParagraph("The bonuses/penalties from the actions you take are temporary - they last until the next Action or Reaction you take. "

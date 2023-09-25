@@ -38,8 +38,11 @@ public class MiscItem extends Item {
 			"Can be used to play the classic board game.",
 			2, Availability.ABUNDANT);
 	public static final MiscItem glowGlobe = new MiscItem("Glow Globe",
-			"Creates an area of light.",
+			"Creates an area of light. Roll a d100 each hour of use; on a 100 this item becomes Out of Power.",
 			1, Availability.ABUNDANT);
+	public static final MiscItem glowGlobe_unreliable = new MiscItem("Unreliable Glow Globe",
+			"Creates an area of light. Roll a d100 each hour of use; on a 91+ this item becomes Out of Power.",
+			1, Availability.UBIQUITOUS);
 	public static final MiscItem dropHarness = new MiscItem("Drop Harness",
 			"Can be used to rappel safely down vertical drops.",
 			2, Availability.PLENTIFUL);

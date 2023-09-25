@@ -107,8 +107,8 @@ class ActionsOverviewFile implements PrintableFile {
 				+ "The Aspect confers a ±10 modifier to something and may prevent or allow certain actions. "
 				+ "The Aspect lasts until it is Overcome.");
 		printer.printParagraph("Duplicate Aspects attached to the same thing combine into a single upgraded Aspect. "
-				+ "Each time an Aspect is upgraded, the modifier it confers increases by ±10.");
-		printer.printParagraph("Each degree of Success on the Test upgrades the Aspect by another level. The maximum level an Aspect can reach in this way is the Characteristic Bonus of the Characteristic used in the Test.");
+				+ "Each time an Aspect is upgraded, the modifier it confers increases by ±10. "
+				+ "The maximum level an Aspect can reach in this way is the Characteristic Bonus of the Characteristic used in the Test (including modifiers).");
 		
 		printer.printSubSubheader("Assist");
 		printer.printParagraph("Reference Lore to create an Aspect which gives a bonus to something, such as decrypting a message, operating an archeotech device, parrying attacks from a xeno beast.");
@@ -127,9 +127,9 @@ class ActionsOverviewFile implements PrintableFile {
 				+ "Depending on what is being attempted, success on the Test may mean the obstacle is overcome, "
 				+ "or it may mean some increment of progress towards the goal has been achieved. "
 				+ "If it makes sense, each Degree of Success gives an additional increment of progress "
-				+ "(decide what increments make the most sense for each situation).");
-		printer.printParagraph("For overcoming Aspects, a success on the Test means the Aspect gets downgraded one step, plus one per Degree of Success. "
-				+ "Downgrading a level 1 Aspect means it is completely overcome and is removed.");
+				+ "(decide what increments make the most sense for each situation). "
+				+ "For overcoming Aspects, a Success means the Aspect gets either downgraded one step (regardless of Degrees of Success), "
+				+ "or removed if it was not upgraded.");
 		
 		printer.printSubSubheader("Crafting");
 		printer.printParagraph("Craft to get steps of progress towards creating an item.");

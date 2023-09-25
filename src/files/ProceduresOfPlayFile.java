@@ -38,11 +38,11 @@ class ProceduresOfPlayFile implements PrintableFile {
 				+ "There are no Location Encounters.");
 		printer.printSubSubheader("2 - Roll up the encounters");
 		printer.printParagraph(
-				"For the Location Encounter, first roll a d10 to see if is new or previously visited: "
-				+ "If the list of locations for that Area is smaller than the rolled number, it's new; "
-				+ "otherwise it's the location at the rolled number in the list.");
-		printer.printParagraph(
-				"Roll on the Encountered Location table and Encounter table for the area the characters are currently in, even if they are travelling (travel will be resolved at the end).");
+				"Encounters are determined based on the Area the characters are currently in, even if they are travelling (travel will be resolved at the end). "
+				+ "Roll on the Encounter table. "
+				+ "For the Location Encounter, first roll a d10 to see if is new or previously visited: "
+				+ "If the list of locations for that Area is smaller than the rolled number, Roll on the Encountered Location table; "
+				+ "otherwise it's the location at the rolled number in the list. ");
 		printer.printSubSubheader("3 - Resolve the encounters");
 		printer.printParagraph(
 				"Either in Combat-Time (if appropriate), with Short Actions, or simply discribing it and moving on. "

@@ -77,7 +77,7 @@ class OvermapFile implements PrintableFile {
 			{"01-05", "Roll twice and combine the results"},
 			{"06-10", "Reroll - this is a front for organized crime"},
 			{"11-18", "Ministorum shrine"},
-			{"19-20", "Ministorum temple 'a temple to saint ___'"},
+			{"19-20", "Ministorum temple"},
 			{"21-30", "Enforcer station"},
 			{"31-40", "Shop selling food"},
 			{"41-45", "Shop selling clothing and apparel"},
@@ -116,7 +116,7 @@ class OvermapFile implements PrintableFile {
 			{"94-95", "Enforcers (Ld10) roughing someone up"},
 			{"96-97", "Enforcers (Ld10) searching a building"},
 			{"98", "Arbitrators (Ld10) escorting a captured psyker to the cells"},
-			{"99", "Kill Squad Troopers (Ld10) enforcing an execution warrant"},
+			{"99", "Kill Squad Troopers enforcing an execution warrant (Ld10 Storm Troopers)"},
 			{"00", "Unsactioned psyker activity"},
 	};
 

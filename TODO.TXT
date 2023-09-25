@@ -71,6 +71,7 @@
 
 >>> Items
     - Haemostatic powder Consumable for bonus to Treat Wounds (First Aid).
+    - Consumables for recovering Characteristic Damage for each Characteristic
     - Put links to the individual item cards in the items pages
 	- Force weapons - stat them like non-force equivalents, except they ignore armour and toughness.
     - Items for rituals
@@ -88,7 +89,6 @@
     - Rethink the forcing-success thing.
     - What happened to active reload??
     - Review Sneaking / the Sneak Action - Sneaking Aspect?? 
-    - See if Extended Actions can be removed - only Rest uses this.
     - Is the action Use Tech (Maintain) really needed?
     - Is the action Stun needed? Does it even make narrative sense?
     - Change Dodge to avoid both ranged and melee hits - will affect the Agile Fighter Talent

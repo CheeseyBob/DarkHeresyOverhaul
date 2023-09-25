@@ -100,14 +100,14 @@ public class Aspect {
 			"The target takes an Action other than Run.");
 	public static final Aspect stunned = new Aspect("Stunned", 
 			"-",
-			"Anything requiring focus:<br>Weapon Skill, Ballistic Skill, Agility, Intelligence Perception, Willpower and Fellowship Tests.",
+			"Anything requiring focus:<br>Weapon Skill, Ballistic Skill, Agility, Intelligence, Perception, Willpower and Fellowship Tests.",
 			"-",
 			"Resist (Physically), once per turn");
 	public static final Aspect treated = new Aspect("Treated", 
 			"Rest",
 			"-",
-			"Prevents the effects of Bleeding Out",
-			"Rest; taking Wounds");
+			"-",
+			"Rest");
 	
 	// Common Aspects for Items //
 	public static final Aspect damaged = new Aspect("Damaged", 
@@ -155,18 +155,18 @@ public class Aspect {
 	public static final Aspect drugged_frenzon = new Aspect("Drugged (Frenzon)", 
 			"-",
 			"-",
-			"The target becomes Frenzied along with this aspect and cannot overcome Frenzied until this aspect is overcome.",
-			"Resist (Physically), once per turn");
+			"The target becomes Frenzied (up to AL) once per turn.",
+			"Resist (Physically), once per turn; 1 Intelligence Damage on Critical Failure");
 	public static final Aspect drugged_obscura = new Aspect("Drugged (Obscura)", 
 			"-",
 			"Anything which relies upon vision:<br> Weapon Skill, Ballistic Skill, Agility and Perception Tests.",
 			"-",
-			"Resist (Physically), once per hour");
+			"Resist (Physically), once per hour; 1 Intelligence Damage on Critical Failure");
 	public static final Aspect drugged_slaught = new Aspect("Drugged (Slaught)", 
 			"Agility and Perception",
 			"-",
-			"On critical failure to Resist, the target takes 1 Agility damage and 1 Perception damage.",
-			"Resist (Physically), once per turn");
+			"",
+			"Resist (Physically), once per turn; 1 Agility Damage and 1 Perception Damage on Critical Failure");
 	public static final Aspect drugged_spook = new Aspect("Drugged (Spook)", 
 			"-",
 			"-",
@@ -175,8 +175,8 @@ public class Aspect {
 	public static final Aspect drugged_stimm = new Aspect("Drugged (Stimm)", 
 			"-",
 			"-",
-			"Prevents penalties from Bleeding Out, Fatigue and Stunned.",
-			"Resist (Physically), once per turn");
+			"Prevents penalties from being Fatigued and Stunned.",
+			"Resist (Physically), once per turn; 1 Toughness Damage on Critical Failure");
 	public static final Aspect poisoned_fatigue = new Aspect("Poisoned (Fatigue)", 
 			"-",
 			"-",

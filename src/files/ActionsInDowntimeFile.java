@@ -27,7 +27,7 @@ class ActionsInDowntimeFile implements PrintableFile {
 			{"Persuade", "Short", "Basic Skill", "Fellowship", "Get a bonus to Disposition"},
 			{"Read Person (Gain Insight)", "Short", "Basic Skill", "Perception", "Get Info"},
 			{"Reference Lore (Research)", "Long", "Basic Skill", "Intelligence", "Get Clues/Info"},
-			{"Rest", "Extended", "Basic", "Toughness", "Takes 10-TB hours; Overcome Bleeding Out completely; reduce Wounds"},
+			{"Rest", "Long", "Basic", "Toughness", "Recover a Wound"},
 			{"Search", "Short", "Basic Skill", "Perception", "Get Clues/items"},
 			{"Set Trap", "Short", "Basic Skill", "Intelligence", "Create an environmental aspect"},
 	};
@@ -56,27 +56,22 @@ class ActionsInDowntimeFile implements PrintableFile {
 	@Override
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
-		printer.println("Outside of Combat-Time, time is divided into hour-long segments; each Action a character takes is either:");
-		printer.printList(false,
-				"Short Action - takes an insignificant portion of the hour.",
-				"Long Action - takes the hour.",
-				"Extended Action - takes multiple hours.");
+		printer.printParagraph("Outside of Combat-Time, time is divided into hour-long segments; each Action a character takes is either a Short Action or a Long Action.");
 		printer.printParagraph(
-				"Any Combat-Time Action can be taken as a Short Action. "
-				+ "When doing so, it usually makes sense to have a +30 bonus from doing the Action Carefully after a Full Action Focus.");
+				"A Short Action takes an insignificant portion of the hour. "
+				+ "A Short Action can be done as a Long action with a +20 bonus. "
+				+ "Any Combat-Time Action can be taken as a Short Action - "
+				+ "when doing so, it usually makes sense to have a +30 bonus from doing the Action Carefully after a Full Action Focus.");
 		printer.printParagraph(
-				"A Short Action can be done as a Long action with a +20 bonus. "
+				"A Long Action takes the hour. "
 				+ "A Long Action can be done as a Short Action with a -20 penalty, if it makes sense that it would be possible "
-				+ "(nothing involving travel can be done as a Short Action, for example). ");
+				+ "(Travel, for example, would not).");
 		printer.printSubSubheader("Teamwork");
 		printer.printParagraph(
 				"When characters work together, resolve the Action separately for each character and combine Degrees of Success. "
-				+ "The number of characters able to work together on the same Action is capped at the Fellowship Bonus of the character taking the lead.");
-		printer.printSubSubheader("Forcing Success, a.k.a. 'Take the Hour'");
-		printer.printParagraph(
-				"Sometimes characters will want to keep trying something until they succeed. "
-				+ "For Short Actions where there is no consequence for Failure or Critical Failure, "
-				+ "this can be done as a Long Action which automatically succeeds with the maximum Degrees of Success.");
+				+ "The number of characters able to work together on the same Action is capped at the Fellowship Bonus of the character taking the lead. "
+				+ "If the results are a mixure of Success, Failure and/or Critical Failure, "
+				+ "then apply the effect of any Failures and/or Critical Failures unless doing so would negate the Success.");
 		printer.printHeader("Actions Summary");
 		printer.printTableTop(true, true, actionsTableHeaders);
 		printer.printTableRow_subheader("Movement Actions");
