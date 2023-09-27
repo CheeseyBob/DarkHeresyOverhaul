@@ -182,7 +182,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.reflex.withBonus(10));// 2 XP
 		npc.skillList.add(Skill.parry.withBonus(10));// 2 XP
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.carapaceChestplate);
 		npc.inventoryList.add(MeleeWeapon.longsword);
 		npc.inventoryList.add(RangedWeapon.laspistol);
 		npc.inventoryList.add(Ammo.laspistol_powerPack.times(2));
@@ -210,7 +210,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.run.withBonus(20));
 		npc.skillList.add(Skill.sneak.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.flakCoat);
 		npc.inventoryList.add(RangedWeapon.lasgun_bayonet);
 		npc.inventoryList.add(Ammo.lasgun_powerPack.times(3));
 		npc.inventoryList.add(Tool.grapnel);
@@ -266,7 +266,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.reflex.withBonus(10));
 		npc.skillList.add(Skill.parry.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.carapaceArmour);
 		npc.inventoryList.add(MeleeWeapon.longsword);
 		npc.inventoryList.add(RangedWeapon.laspistol);
 		npc.inventoryList.add(Ammo.laspistol_powerPack.times(2));
@@ -295,7 +295,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.run.withBonus(20));
 		npc.skillList.add(Skill.sneak.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.flakCoat);
 		npc.inventoryList.add(RangedWeapon.longLas);
 		npc.inventoryList.add(Ammo.longLas_powerPack.times(3));
 		npc.inventoryList.add(Tool.grapnel);
@@ -313,7 +313,6 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.specialRuleList.add(Talent.hipShooting);
 		npc.specialRuleList.add(Talent.knowledgable.withParameter("Imperial Guard"));// 2 XP
 		npc.specialRuleList.add(Talent.language.withParameter("Imperial Codes + Low Gothic"));
-		npc.specialRuleList.add(Talent.nervesOfSteel);
 		npc.specialRuleList.add(Talent.rapidReload);
 		npc.specialRuleList.add(Talent.recoilCompensation);
 		npc.specialRuleList.add(Talent.weaponMaster_ranged.withParameter("Lasgun"));
@@ -325,7 +324,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.run.withBonus(20));
 		npc.skillList.add(Skill.parry.withBonus(30));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.carapaceArmour);
 		npc.equippedItemList.add(Tool.gasMask);
 		npc.equippedItemList.add(MiscItem.infraRedGoggles);
 		npc.inventoryList.add(MeleeWeapon.chainsword);
@@ -360,7 +359,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.reflex.withBonus(10));
 		npc.skillList.add(Skill.parry.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.heavyCarapace);
 		npc.inventoryList.add(MeleeWeapon.longsword_mono);
 		npc.inventoryList.add(RangedWeapon.laspistol);
 		npc.inventoryList.add(Ammo.laspistol_powerPack.times(2));
@@ -391,7 +390,7 @@ class NPCGroup_ImperialGuard extends NPCGroup {
 		npc.skillList.add(Skill.run.withBonus(20));
 		npc.skillList.add(Skill.sneak.withBonus(10));
 		npc.equippedItemList.add(Clothing.militaryUniform);
-		npc.equippedItemList.add(Armour.flakArmour);
+		npc.equippedItemList.add(Armour.flakCoat);
 		npc.inventoryList.add(RangedWeapon.longLas_scoped);
 		npc.inventoryList.add(Ammo.longLas_powerPack.times(3));
 		npc.inventoryList.add(Tool.grapnel);

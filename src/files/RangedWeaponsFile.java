@@ -28,20 +28,27 @@ class RangedWeaponsFile implements PrintableFile {
 	public void print(DHOPrinter printer) {
 		printer.printFileTop(title());
 		printer.printSubSubheader("Range");
-		printer.printParagraph("The maximum effective range of the weapon. Apply a bonus/penalty for the distance to the target based on the table below. If an adjacent target is helpless or unaware, use the 2m bonus instead of the CQC penalty (this stacks with the usual +30 bonus against helpless targets).");
+		printer.printParagraph(
+				"The maximum effective range of the weapon. "
+				+ "Apply a bonus/penalty for the distance to the target based on the table below. "
+				+ "If an adjacent target is helpless or unaware, use the 2m bonus instead of the CQC penalty (this stacks with the usual +30 bonus against helpless targets).");
 		printer.printTableTop(false, false, "Range", "Bonus");
 		for(int i = 0; i < 11; i ++) {
 			printer.printTableRow(getRangeTableRow(i));
 		}
 		printer.printTableTail();
 		printer.printSubSubheader("Rate of Fire (RoF)");
-		printer.printParagraph("This is the maximum number of shots fired by the weapon in one turn. One shot is fired when you Attack, whereas Attack Repeatedly fires a number of shots equal to the weapon's RoF.");
+		printer.printParagraph(
+				"Number of shots fired by the weapon when you Attack Repeatedly. "
+				+ "If you Attack, one shot is fired.");
 		printer.printSubSubheader("Capacity");
 		printer.printParagraph("How much ammo the weapon can hold.");
 		printer.printSubSubheader("Reload");
-		printer.printParagraph("How many Secondary Actions it takes to reload the weapon. You can also Reload as a Main Action to speed this up.");
+		printer.printParagraph("How many Secondary Actions it takes to reload the weapon.");
 		printer.printSubSubheader("Damage");
-		printer.printParagraph("The damage the target takes from each hit. The Type determines how effective armour is and what effects there are if critical damage is inflicted.");
+		printer.printParagraph(
+				"The damage the target takes from each hit. "
+				+ "The Type determines what effects there are if Critical Damage is inflicted, and can affect the effectiveness of Armour.");
 		printer.printHeader_collapsible("Energy");
 		printer.printCollapsibleTop();
 		printer.printRowTop();

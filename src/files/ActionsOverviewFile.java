@@ -33,6 +33,19 @@ class ActionsOverviewFile implements PrintableFile {
 				+ "The other way to work together is to simply perform the same Action with the same Target. "
 				+ "If doing the latter, the characters working together can act simultaneously (by Waiting, if in Combat Time), in which case Degress of Success can be combined.");
 		
+		printer.printSubSubheader("Unaware Targets");
+		printer.printParagraph(
+				"If you Attack (Ranged) an unaware target, you get a +30 bonus. "
+				+ "If you Attack (Melee) an unaware target, you get a +60 bonus. ");
+		
+		printer.printSubSubheader("Weapon Jams");
+		printer.printParagraph(
+				"When you fire a ranged weapon, if the number of shots fired that turn plus the roll is higher than 100, the weapon becomes Jammed.");
+		
+		printer.printSubSubheader("Powered Items");
+		printer.printParagraph(
+				"When you use a powered weapon or tool and suffer a Critical Failure, the item becomes Out Of Power.");
+		
 		printer.printSubheader("Types of Action");
 		printer.printParagraph("There are three types of Action which require a Test:");
 		printer.printList(false,
@@ -60,14 +73,25 @@ class ActionsOverviewFile implements PrintableFile {
 				+ "Some kinds of Attack actions can give multiple hits - these are capped by the Rate of Fire or Hits stats of the weapon used.");
 		
 		printer.printSubSubheader("Attacks Using Multiple Weapons");
-		printer.printParagraph("If the attack was made using multiple weapons and/or against multiple targets, make one Test using the weapon/target which gives the lowest modifier. Assign hits to each weapon as you wish, not exceeding the Hits/RoF stat for each weapon.");
-		printer.printParagraph("If a character makes an attack with a mixture of ranged and melee weapons (for example, using a sword and pistol in close combat), then use the lower of the attacking character's Ballistic Skill and Weapon Skill to determine hits.");
+		printer.printParagraph(
+				"You can Attack using multiple weapons and/or against multiple targets. "
+				+ "Apply the modifiers for the weapon which gives the highest modifier and target which gives the lowest modifier. "
+				+ "Assign hits to each weapon as you wish, not exceeding the Hits/RoF stat for each weapon.");
+		printer.printParagraph(
+				"You can Attack with a mixture of ranged and melee weapons (for example, using a sword and pistol in close combat). "
+				+ "Use the lower of the Ballistic Skill and Weapon Skill for the Test.");
 		
 		printer.printSubSubheader("Targeting Specific Locations");
-		printer.printParagraph("If a character wishes to target a specific location (e.g. a character's arm) simply treat that as the target - use the Size bonus/penalty for the size of the area being targeted.");
+		printer.printParagraph("If a character wishes to target a specific location (e.g. a character's arm) simply treat that as the target. "
+				+ "Use the Size bonus/penalty for the size of the area being targeted. ");
 		
 		printer.printSubSubheader("Firing Into Melee");
-		printer.printParagraph("If you are firing at a target engaged in melee combat, each adjacent character makes a Cover Test with Cover Characteristic 50 plus a modifier for the Size difference between themselves and the target. Each character takes one hit plus one per Degree of Success - if the character is directly between you and the target, these hits come from the hits you scored in your Ballistic Skill Test; otherwise these hits come from your misses.");
+		printer.printParagraph(
+				"If you are firing at a target engaged in melee combat, each adjacent character makes a Cover Test with Cover Characteristic 50, "
+				+ "plus the modifier for the Size difference between themselves and the target. "
+				+ "Each character takes one hit plus one per Degree of Success - "
+				+ "if the character is directly between you and the target, these hits come from the hits you scored in your Ballistic Skill Test; "
+				+ "otherwise these hits come from your misses.");
 		
 		printer.printSubheader("Determining Hits Affected By Defence");
 		printer.printParagraph("If the attack is opposed, the opposing character makes a Test to determine how many hits are affected by the defence. A success affects one hit plus one for each Degree of Success. For Reactions, such as Dodge or Parry, each affected hit is removed. For Passive Opposition, such as Cover, each affected hit has its damage reduced by some amount when it is applied to the target.");
@@ -91,14 +115,14 @@ class ActionsOverviewFile implements PrintableFile {
 		);
 		
 		printer.printSubSubheader("Damaging Cover and Items");
-		printer.printParagraph("Some weapons can damage cover. When a piece of cover is hit by such a weapon, the AP is reduced by the damage at the same time as the damage is reduced by the AP. Once the AP reaches 0, the cover is destroyed.");
-		printer.printParagraph("When an item is hit by such a weapon, give it an AP value using the table. For each multiple of the AP value it takes in damage, the item becomes Damaged. Worn armour becomes Damaged if the damage exceeds the AP.");
-		
-		printer.printSubSubheader("Weapon Jams");
-		printer.printParagraph("Whenever you fire a ranged weapon, if the number of shots fired that turn plus the roll is higher than 100, the weapon becomes Jammed.");
-		
-		printer.printSubSubheader("Powered Items");
-		printer.printParagraph("When you use a powered weapon or tool and suffer a critical failure, the item becomes Out Of Power.");
+		printer.printParagraph(
+				"Some weapons can damage cover. "
+				+ "When a piece of cover is hit by such a weapon, the AP is reduced by the damage at the same time as the damage is reduced by the AP. "
+				+ "Once the AP reaches 0, the cover is destroyed.");
+		printer.printParagraph(
+				"When an item is hit by such a weapon, give it an AP value using the table. "
+				+ "For each multiple of the AP value it takes in damage, the item becomes Damaged. "
+				+ "Worn armour becomes Damaged if the damage exceeds the AP.");
 		
 		
 		printer.printHeader("Create Advantage");
